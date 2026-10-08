@@ -1,0 +1,26 @@
+{
+  "entrenamiento": [
+    {"consumo_kwh": 9, "revision": 0},
+    {"consumo_kwh": 12, "revision": 0},
+    {"consumo_kwh": 14, "revision": 0},
+    {"consumo_kwh": 17, "revision": 1},
+    {"consumo_kwh": 19, "revision": 1},
+    {"consumo_kwh": 22, "revision": 1}
+  ],
+  "prueba": [
+    {"consumo_kwh": 10, "revision": 0},
+    {"consumo_kwh": 13, "revision": 0},
+    {"consumo_kwh": 15, "revision": 0},
+    {"consumo_kwh": 17, "revision": 1},
+    {"consumo_kwh": 20, "revision": 1},
+    {"consumo_kwh": 24, "revision": 1}
+  ],
+  "cambio_contexto": [
+    {"consumo_kwh": 16, "revision": 0},
+    {"consumo_kwh": 18, "revision": 0},
+    {"consumo_kwh": 21, "revision": 0},
+    {"consumo_kwh": 23, "revision": 1},
+    {"consumo_kwh": 25, "revision": 1},
+    {"consumo_kwh": 27, "revision": 1}
+  ]
+}

@@ -1,6 +1,6 @@
 # Unidad 0 — Preparación del entorno y forma de trabajar
 
-[Volver al índice](../README.md)
+[Siguiente unidad: qué es la inteligencia artificial](../unidad01-que-es-ia/README.md) · [Volver al índice](../README.md)
 
 Un proyecto de inteligencia artificial depende de algo más que un modelo. Necesita datos, programas, herramientas y una manera de comprobar lo que ocurre. En esta unidad prepararás el entorno y ejecutarás una primera práctica reproducible.
 
@@ -495,7 +495,7 @@ Las credenciales y los datos personales requieren tratamiento aparte. Antes de c
 
 Preparaste el entorno, localizaste los datos, ejecutaste una práctica y documentaste su resultado. El análisis produce un total de 108 kWh y dos alertas con la regla `consumo > 16`. Esa salida se entiende porque los datos, la regla y el procedimiento son explícitos.
 
-El siguiente tema de la ruta es **qué es la inteligencia artificial**. Consulta su disponibilidad en el índice del curso.
+Continúa con la [Unidad 1 — Qué es la inteligencia artificial](../unidad01-que-es-ia/README.md).
 
 ## Referencias
 
@@ -505,4 +505,4 @@ El siguiente tema de la ruta es **qué es la inteligencia artificial**. Consulta
 - [Python 3.12: estadísticas](https://docs.python.org/3.12/library/statistics.html).
 - [Python 3.12: huellas criptográficas](https://docs.python.org/3.12/library/hashlib.html).
 
-[Volver al índice](../README.md)
+[Siguiente unidad: qué es la inteligencia artificial](../unidad01-que-es-ia/README.md) · [Volver al índice](../README.md)

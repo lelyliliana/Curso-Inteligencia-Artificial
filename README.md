@@ -36,7 +36,7 @@ La secuencia comprende **36 unidades, de la 0 a la 35**. Los enlaces llevan a ma
 | Unidad | Tema |
 |---|---|
 | 0 | [Preparación del entorno y forma de trabajar](unidad00-entorno/README.md) |
-| 1 | Qué es la inteligencia artificial |
+| 1 | [Qué es la inteligencia artificial](unidad01-que-es-ia/README.md) |
 | 2 | Del problema al proyecto de IA |
 | 3 | Matemática aplicada: vectores, matrices y optimización |
 | 4 | Probabilidad y estadística |
@@ -126,9 +126,9 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-La **Unidad 0** incluye guía de entorno, diagnóstico, análisis de un CSV sintético, ejercicios, solución del reto y registro reproducible de resultados. Los demás temas tienen su alcance definido en esta ruta y están pendientes de desarrollo.
+Las **unidades 0 y 1** están publicadas con explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. La Unidad 0 prepara el entorno y analiza un CSV; la Unidad 1 distingue reglas, aprendizaje, generación y evaluación mediante dos prácticas. Las unidades 2 a 35 tienen su alcance definido y están pendientes de desarrollo.
 
-El curso completo requiere desarrollar y revisar las 36 unidades. Esta publicación inicial permite comenzar por la preparación del entorno.
+El curso completo requiere desarrollar y revisar las 36 unidades. El material disponible permite comenzar por la preparación del entorno y los fundamentos de IA.
 
 ## Autora
 
