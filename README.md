@@ -38,7 +38,7 @@ La secuencia comprende **36 unidades, de la 0 a la 35**. Los enlaces llevan a ma
 | 0 | [Preparación del entorno y forma de trabajar](unidad00-entorno/README.md) |
 | 1 | [Qué es la inteligencia artificial](unidad01-que-es-ia/README.md) |
 | 2 | [Del problema al proyecto de IA](unidad02-proyecto-ia/README.md) |
-| 3 | Matemática aplicada: vectores, matrices y optimización |
+| 3 | [Matemática aplicada: vectores, matrices y optimización](unidad03-matematica-aplicada/README.md) |
 | 4 | Probabilidad y estadística |
 
 ### Bloque 2 — IA simbólica y datos
@@ -126,9 +126,9 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-Las **unidades 0, 1 y 2** están publicadas con explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. La Unidad 0 prepara el entorno; la Unidad 1 introduce los enfoques de IA; la Unidad 2 desarrolla la formulación de proyectos, la disponibilidad de datos y la comparación de decisiones. Las unidades 3 a 35 tienen su alcance definido y están pendientes de desarrollo.
+Las **unidades 0, 1, 2 y 3** están publicadas con explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. La Unidad 0 prepara el entorno; la Unidad 1 introduce los enfoques de IA; la Unidad 2 desarrolla la formulación de proyectos; la Unidad 3 conecta vectores, matrices, pérdidas y gradientes con un ajuste numérico reproducible. Las unidades 4 a 35 tienen su alcance definido y están pendientes de desarrollo.
 
-El curso completo requiere desarrollar y revisar las 36 unidades. El material disponible permite preparar el entorno, comprender los enfoques de IA y formular un proyecto aplicado.
+El curso completo requiere desarrollar y revisar las 36 unidades. El material disponible permite preparar el entorno, comprender los enfoques de IA, formular un proyecto aplicado y explicar los cálculos de una predicción y su entrenamiento.
 
 ## Autora
 

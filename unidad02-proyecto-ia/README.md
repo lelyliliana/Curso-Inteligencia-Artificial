@@ -1,6 +1,6 @@
 # Unidad 2 — Del problema al proyecto de IA
 
-[Unidad anterior: qué es la IA](../unidad01-que-es-ia/README.md) · [Volver al índice](../README.md)
+[Unidad anterior: qué es la IA](../unidad01-que-es-ia/README.md) · [Volver al índice](../README.md) · [Siguiente unidad: matemática aplicada](../unidad03-matematica-aplicada/README.md)
 
 «Quiero hacer algo con inteligencia artificial» expresa interés por una tecnología, pero todavía no define un proyecto. Para avanzar necesitamos una dificultad concreta, un usuario, una salida útil y una manera de comprobar si la propuesta mejora la situación.
 
@@ -486,7 +486,7 @@ La formulación conecta necesidad, usuario, datos, salida y evaluación. La fich
 
 En el caso sintético, propuestas con 75 % de exactitud tuvieron costos y cargas diferentes. Con capacidad de cuatro y los costos elegidos, `> 20` resultó candidata exploratoria. Esa conclusión no prueba ahorro energético ni autoriza una aplicación real.
 
-La siguiente unidad de la ruta estudia **matemática aplicada: vectores, matrices y optimización**. Consulta su disponibilidad en el índice.
+Continúa con la [Unidad 3 — Matemática aplicada: vectores, matrices y optimización](../unidad03-matematica-aplicada/README.md), donde conectarás la representación de datos con predicciones, pérdidas y actualizaciones de parámetros.
 
 ## Referencias
 
@@ -498,4 +498,4 @@ Las guías siguientes sustentan la formulación y el enfoque de evaluación. Los
 4. Google for Developers. *Rules of Machine Learning*. [Guía](https://developers.google.com/machine-learning/guides/rules-of-ml/).
 5. NIST (2023). *Artificial Intelligence Risk Management Framework, AI RMF 1.0*. [Documento](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf).
 
-[Unidad anterior](../unidad01-que-es-ia/README.md) · [Volver al índice](../README.md)
+[Unidad anterior](../unidad01-que-es-ia/README.md) · [Volver al índice](../README.md) · [Siguiente unidad](../unidad03-matematica-aplicada/README.md)
