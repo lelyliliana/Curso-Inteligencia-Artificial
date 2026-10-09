@@ -1,0 +1,35 @@
+{
+  "nombre": "Apoyo a la revisión de consumo en un laboratorio ficticio",
+  "problema": "La persona operadora recibe doce registros y dispone de cuatro revisiones por lote. Necesita ordenar la atención sin pasar por alto casos relevantes.",
+  "usuario": "Persona operadora del laboratorio ficticio",
+  "decision": "A las 10:00 elegir hasta cuatro casos para revisión humana antes de las 14:00. El sistema no desconecta equipos.",
+  "unidad_analisis": "Un registro de una zona del laboratorio durante una jornada",
+  "instante_decision": "10:00 de la jornada observada",
+  "salida": {
+    "tipo": "clasificacion",
+    "descripcion": "Etiqueta propuesta revisar/no revisar; la persona operadora confirma la selección.",
+    "horizonte": "Revisión antes de las 14:00 de la misma jornada"
+  },
+  "variables": [
+    {
+      "nombre": "consumo_parcial_kwh",
+      "descripcion": "Lectura acumulada y recibida hasta las 10:00, en kWh",
+      "disponible_en_decision": true
+    }
+  ],
+  "referencia": {
+    "definicion": "Etiqueta ficticia de si el caso merece revisión, asignada por la autora para la simulación",
+    "procedencia": "Datos sintéticos; en un proyecto real se requiere una revisión independiente y un criterio acordado"
+  },
+  "linea_base": "No señalar ningún caso; además comparar reglas fijas con umbrales 18, 20 y 22",
+  "criterios_exito": [
+    {"metrica": "Costo didáctico total", "objetivo": "Al menos 20 % menor que la línea base en una evaluación independiente"},
+    {"metrica": "Casos señalados por lote", "objetivo": "Como máximo cuatro"}
+  ],
+  "restricciones": "CPU, datos pequeños, revisión humana obligatoria y ausencia de acciones físicas automáticas",
+  "revision_humana": "La persona operadora revisa la lectura original y decide si inspeccionar. Puede corregir una recomendación y registrar el motivo.",
+  "fuera_alcance": "Diagnóstico de averías, desconexión de equipos y recomendaciones técnicas para instalaciones reales",
+  "plan_evaluacion": "Comparación exploratoria en el lote sintético; el proyecto real reservaría otros días y zonas sin usarlos para elegir la regla",
+  "permisos_datos": "El archivo sintético se creó para el curso y no contiene datos personales",
+  "hipotesis_pendientes": "Se desconoce si la lectura parcial basta para identificar casos relevantes y si cuatro revisiones es una capacidad adecuada en uso real"
+}

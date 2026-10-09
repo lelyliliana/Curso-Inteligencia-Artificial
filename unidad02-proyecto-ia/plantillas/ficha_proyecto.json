@@ -1,0 +1,19 @@
+{
+  "nombre": "",
+  "problema": "",
+  "usuario": "",
+  "decision": "",
+  "unidad_analisis": "",
+  "instante_decision": "",
+  "salida": {"tipo": "", "descripcion": "", "horizonte": ""},
+  "variables": [{"nombre": "", "descripcion": "", "disponible_en_decision": null}],
+  "referencia": {"definicion": "", "procedencia": ""},
+  "linea_base": "",
+  "criterios_exito": [{"metrica": "", "objetivo": ""}],
+  "restricciones": "",
+  "revision_humana": "",
+  "fuera_alcance": "",
+  "plan_evaluacion": "",
+  "permisos_datos": "",
+  "hipotesis_pendientes": ""
+}

@@ -1,6 +1,6 @@
 # Unidad 1 — Qué es la inteligencia artificial
 
-[Unidad anterior: preparación del entorno](../unidad00-entorno/README.md) · [Volver al índice](../README.md)
+[Unidad anterior: preparación del entorno](../unidad00-entorno/README.md) · [Siguiente unidad: proyecto de IA](../unidad02-proyecto-ia/README.md) · [Volver al índice](../README.md)
 
 Una aplicación calcula promedios. Otra reconoce imágenes. Una tercera responde preguntas sobre documentos. Las tres usan programas, pero no realizan el mismo tipo de trabajo ni necesitan la misma técnica.
 
@@ -486,7 +486,7 @@ Una propuesta puede obtener una buena valoración si concluye que la necesidad s
 
 La IA reúne diferentes enfoques y tareas. En los ejemplos observaste un parámetro escrito, un parámetro ajustado con datos y texto producido con plantillas. También comprobaste que un ajuste correcto sobre casos sintéticos puede perder utilidad cuando cambia el criterio del problema.
 
-La próxima unidad de la ruta desarrolla **cómo pasar del problema al proyecto de IA**. Consulta su disponibilidad en el índice.
+Continúa con la [Unidad 2 — Del problema al proyecto de IA](../unidad02-proyecto-ia/README.md).
 
 ## Referencias
 
@@ -501,4 +501,4 @@ Estas fuentes fundamentan las definiciones y los hitos. Los casos, datos y prác
 7. McCarthy, J., Minsky, M., Rochester, N. y Shannon, C. (1955). *A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence*. [Propuesta original](https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html).
 8. Vaswani, A. et al. (2017). *Attention Is All You Need*. [Artículo](https://arxiv.org/abs/1706.03762).
 
-[Unidad anterior](../unidad00-entorno/README.md) · [Volver al índice](../README.md)
+[Unidad anterior](../unidad00-entorno/README.md) · [Siguiente unidad: proyecto de IA](../unidad02-proyecto-ia/README.md) · [Volver al índice](../README.md)
