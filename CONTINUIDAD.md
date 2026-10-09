@@ -21,10 +21,11 @@ La revisión inicial ejecutó correctamente 19 programas de ejemplos y solucione
 | Unidad 7 | Desarrollada y comprobada | Dos laboratorios, CSV y JSON documentados, diez ejercicios resueltos, reto, ficha y 19 pruebas |
 | Unidad 8 | Desarrollada y comprobada | Dos laboratorios, corrección sintética explícita, trazabilidad, diez ejercicios resueltos, reto, informe y 20 pruebas |
 | Unidad 9 | Desarrollada y comprobada | Dos laboratorios, datos regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 21 pruebas |
-| Verificación común | Disponible para las unidades 0–9 | [verificar_curso.py](herramientas/verificar_curso.py) |
-| Unidades 10–35 | Pendientes de desarrollo | Alcance conservado en el índice |
+| Unidad 10 | Desarrollada y comprobada | Dos laboratorios, seis CSV regenerables, protocolo de selección y cierre, diez ejercicios resueltos, reto, informe y 24 pruebas |
+| Verificación común | Disponible para las unidades 0–10 | [verificar_curso.py](herramientas/verificar_curso.py) |
+| Unidades 11–35 | Pendientes de desarrollo | Alcance conservado en el índice |
 
-La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2` y la Unidad 8 en `59ed8df`. Esta entrega incorpora la Unidad 9 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 10: flujo de aprendizaje y líneas base**. Quedan 26 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
+La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df` y la Unidad 9 en `56df425`. Esta entrega incorpora la Unidad 10 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 11: regresión**. Quedan 25 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
 
 ## Enfoque que se conserva
 
@@ -42,7 +43,7 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 | Unidades | Trabajo pendiente | Evidencia al cerrar el hito |
 |---|---|---|
 | 7–9 | Desarrollo terminado; reto integrador disponible | Datos documentados, preparación trazable y exploración con figuras e informe reproducible |
-| 10–13 | Flujo de aprendizaje, líneas base, regresión, clasificación, árboles y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
+| 10–13 | Unidad 10 terminada; pendientes regresión, clasificación, árboles y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
 | 14–18 | Agrupamiento, anomalías, características, validación, métricas e interpretabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
 | 19–24 | Redes, PyTorch, visión, lenguaje, tiempo, recomendación y refuerzo | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
 | 25–31 | Generación, inferencia, prompts, embeddings, RAG, herramientas, adaptación y multimodalidad | Evaluaciones con casos verificables, citas y límites de permisos y recursos |
@@ -51,21 +52,23 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 
 Antes de desarrollar cada unidad, verificar documentación primaria de las bibliotecas y servicios que vaya a utilizar. Fijar y registrar las versiones que realmente se prueben; no asumir que una API o descarga futura conserva el mismo funcionamiento.
 
-## Siguiente entrega concreta — Unidad 10
+## Siguiente entrega concreta — Unidad 11
 
-Pregunta guía: **¿cómo organizar un experimento predictivo y saber si un modelo mejora una referencia sencilla?**
+Pregunta guía: **¿cómo aprender una relación numérica y comprobar si mejora una línea base en casos no utilizados para ajustar?**
 
 Alcance propuesto, todavía no implementado:
 
-1. Definir unidad de predicción, objetivo, horizonte e información disponible al decidir.
-2. Distinguir entrenamiento, validación y prueba; justificar partición aleatoria, por tiempo o por grupo según el problema.
-3. Separar ajuste de transformaciones y aplicación, retomando las unidades 7 y 8.
-4. Construir líneas base sencillas para regresión y clasificación, aprendidas únicamente del conjunto permitido.
-5. Introducir métricas mínimas apropiadas, comparación sobre los mismos casos y análisis de errores; reservar el desarrollo amplio para unidades posteriores.
-6. Documentar protocolo, supuestos, semillas si hay azar y registro de experimentos sin usar prueba para seleccionar.
-7. Dos laboratorios reproducibles, ejercicios resueltos y reto con informe de comparación y límites.
+1. Formular regresión numérica, entradas y objetivo con unidades, disponibilidad y alcance definidos.
+2. Desarrollar regresión lineal sencilla: intercepto, pendiente, predicción, residuos y mínimos cuadrados con un ejemplo manual.
+3. Comparar el modelo con referencias pertinentes bajo el flujo de la Unidad 10; no elegir con prueba.
+4. Interpretar MAE, RMSE y residuos; introducir R² con sus límites si resulta necesario, sin agotar la Unidad 17.
+5. Examinar supuestos, valores extremos, extrapolación y confusión entre asociación y causalidad.
+6. Retomar ajuste de transformaciones solo con entrenamiento y mostrar dónde pueden surgir filtración o sobreajuste.
+7. Dos laboratorios reproducibles, gráficos si ayudan a interpretar residuos, ejercicios resueltos y reto con comparación y limitaciones.
 
-La Unidad 9 conserva las fuentes de 7–8 y añade 48 casos sintéticos separados para visualizar patrones. No reutilizarlos automáticamente como una población apta para modelado: definir datos y generación acordes con cada experimento. Mantener explícita la diferencia entre demostración del procedimiento y rendimiento útil en datos reales. Declarar y comprobar toda nueva dependencia antes de incorporarla.
+La Unidad 10 añade dos conjuntos sintéticos independientes: 32 pronósticos diarios con cortes temporales y 64 avisos de ocho equipos separados por grupo. La ejecución común lee solo entrenamiento y validación; `--evaluar-prueba` abre prueba después de seleccionar y no reajusta. Se comprueban casos idénticos entre candidatos, disponibilidad de etiquetas en los cortes y separación de equipos. Las pruebas de invariancia alteran objetivos de prueba y verifican que no cambien ajuste, selección ni predicciones. No hay dependencias nuevas ni azar.
+
+La prueba de la Unidad 10 es pública y sus resultados didácticos son conocidos. No reutilizarla automáticamente para seleccionar modelos nuevos en la Unidad 11 y después presentarla como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
 
 La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 y NumPy 2.2.6, probadas con Python 3.12.3 en un entorno virtual limpio. Los resúmenes de texto siguen usando biblioteca estándar; la exportación de gráficos y las 21 pruebas nuevas requieren esos paquetes. El [registro del entorno](unidad09-exploracion-visualizacion/recursos/entorno-verificado.txt) conserva las versiones transitivas y los informes JSON anotan fuente, parámetros y versiones principales. Las tres figuras se revisaron visualmente.
 
@@ -92,7 +95,7 @@ python -m pip install -r unidad09-exploracion-visualizacion/requirements.txt
 python herramientas/verificar_curso.py
 ```
 
-Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 45 ejecuciones de programas y variantes y las 82 pruebas de las unidades 5, 6, 7, 8 y 9. Las ejecuciones incluyen la exportación de ambas prácticas gráficas a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias de la Unidad 9. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–9; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
+Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 53 ejecuciones de programas y variantes y las 106 pruebas de las unidades 5 a 10. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias de la Unidad 9. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–10; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
 
 La comprobación de enlaces no valida URLs externas ni fragmentos `#ancla`. Ejecutar programas con éxito no demuestra que toda explicación sea correcta ni que se obtenga utilidad en una población real.
 

@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 9.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 10.
 
 La Unidad 9 requiere sus dependencias gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 9
+ULTIMA_UNIDAD = 10
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -80,6 +80,10 @@ def main():
                     esperado = "S3 | 4 | 1 | 1 | 0 | 3 | 0.000"
                 elif programa.name == "02_explorar_grupos.py":
                     esperado = "Correlación global: 0.845"
+                elif programa.name == "01_lineas_base_regresion.py":
+                    esperado = "Seleccionado por mae: persistencia"
+                elif programa.name == "02_lineas_base_clasificacion.py":
+                    esperado = "Seleccionado por f1: por_senal"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -93,6 +97,8 @@ def main():
     imputacion = "unidad08-preparacion-datos/ejemplos/02_imputar_sin_filtracion.py"
     explorar_lecturas = "unidad09-exploracion-visualizacion/ejemplos/01_explorar_lecturas.py"
     explorar_grupos = "unidad09-exploracion-visualizacion/ejemplos/02_explorar_grupos.py"
+    base_regresion = "unidad10-flujo-lineas-base/ejemplos/01_lineas_base_regresion.py"
+    base_clasificacion = "unidad10-flujo-lineas-base/ejemplos/02_lineas_base_clasificacion.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -110,6 +116,8 @@ def main():
         ([explorar_lecturas, "--correcciones", "unidad08-preparacion-datos/datos/correcciones_verificadas.json"], "S2 | 4 | 4 | 4 | 0 | 0 | 9.500"),
         ([explorar_grupos, "--intervalos", "4"], "Frecuencias: 0, 24, 0, 24"),
         ([explorar_grupos, "--intervalos", "16"], "Correlación global: 0.845"),
+        ([base_regresion, "--evaluar-prueba"], "mae=2.250 | rmse=2.354 | sesgo=1.250"),
+        ([base_clasificacion, "--evaluar-prueba"], "exactitud=0.938 | precision=1.000 | recobrado=0.800 | f1=0.889"),
     ]
     for comando, esperado in variantes:
         ejecutar(comando, esperado)
@@ -118,6 +126,11 @@ def main():
         for i, programa in enumerate((explorar_lecturas, explorar_grupos)):
             ejecutar([programa, "--salida", Path(carpeta) / str(i)], "Exportación:")
             ejecutados += 1
+        for i, programa in enumerate((base_regresion, base_clasificacion)):
+            for cierre in (False, True):
+                extras = ["--evaluar-prueba"] if cierre else []
+                ejecutar([programa, *extras, "--salida", Path(carpeta) / f"base-{i}-{cierre}"], "Exportación:")
+                ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:
         pruebas = unidad / "pruebas"

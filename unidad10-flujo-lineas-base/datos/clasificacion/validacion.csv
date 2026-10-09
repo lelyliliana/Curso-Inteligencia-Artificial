@@ -1,0 +1,17 @@
+caso_id,equipo_id,senal_previa,fallo_24h
+C05-01,E05,baja,0
+C05-02,E05,baja,0
+C05-03,E05,baja,0
+C05-04,E05,baja,0
+C05-05,E05,baja,0
+C05-06,E05,baja,0
+C05-07,E05,alta,1
+C05-08,E05,alta,1
+C06-01,E06,baja,0
+C06-02,E06,baja,0
+C06-03,E06,baja,0
+C06-04,E06,baja,0
+C06-05,E06,baja,0
+C06-06,E06,baja,0
+C06-07,E06,alta,1
+C06-08,E06,alta,0

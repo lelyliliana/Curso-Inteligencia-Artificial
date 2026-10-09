@@ -334,7 +334,7 @@ Antes de avanzar, comprueba que puedes:
 - [ ] Separar una descripción, una hipótesis y una afirmación causal.
 - [ ] Entregar el reto con sus fuentes y limitaciones.
 
-La siguiente unidad prevista es la **Unidad 10 — Flujo de aprendizaje y líneas base**: convertir una pregunta predictiva en un procedimiento de partición, entrenamiento y evaluación. Todavía está pendiente de desarrollo.
+La siguiente es la [Unidad 10 — Flujo de aprendizaje y líneas base](../unidad10-flujo-lineas-base/README.md): convertir una pregunta predictiva en un procedimiento de partición, entrenamiento y evaluación.
 
 ## Fuentes y recursos
 
@@ -347,4 +347,4 @@ Las referencias primarias se consultaron el 9 de octubre de 2026. Las explicacio
 - [Matplotlib 3.10.8: líneas con valores ausentes](https://matplotlib.org/3.10.8/gallery/lines_bars_and_markers/masked_demo.html).
 - [Datos, esquema y generación](datos/README.md), [figuras y reproducción](recursos/README.md), [soluciones](soluciones/README.md).
 
-[Volver al índice](../README.md)
+[Unidad siguiente](../unidad10-flujo-lineas-base/README.md) · [Volver al índice](../README.md)
