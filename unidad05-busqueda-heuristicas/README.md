@@ -711,7 +711,7 @@ La búsqueda transforma una formulación de estados y acciones en una secuencia 
 
 Las garantías dependen de costos, espacio de estados, heurística y manejo de repeticiones. Los laboratorios mostraron rutas válidas pero costosas, una solución de costo mínimo, reapertura con heurística inconsistente y el efecto de una cota que sobreestima.
 
-La siguiente unidad de la ruta estudia **conocimiento, reglas y restricciones**. Consulta su disponibilidad en el índice.
+Continúa con la [Unidad 6 — Conocimiento, reglas y restricciones](../unidad06-conocimiento-reglas/README.md).
 
 ## Referencias y lecturas
 

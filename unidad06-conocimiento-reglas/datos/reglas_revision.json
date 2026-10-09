@@ -1,0 +1,10 @@
+{
+  "hechos": ["lectura_alta", "sensor_verificado", "edificio_ocupado", "tecnico_disponible"],
+  "reglas": [
+    {"id": "r1", "si": ["lectura_alta", "sensor_verificado"], "entonces": "revisar_consumo"},
+    {"id": "r2", "si": ["revisar_consumo", "edificio_ocupado"], "entonces": "priorizar_revision"},
+    {"id": "r3", "si": ["priorizar_revision", "tecnico_disponible"], "entonces": "proponer_visita"},
+    {"id": "r4", "si": ["mantenimiento_programado"], "entonces": "posponer_visita"}
+  ],
+  "incompatibles": [["proponer_visita", "posponer_visita"]]
+}

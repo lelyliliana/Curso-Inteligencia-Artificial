@@ -1,0 +1,8 @@
+{
+  "dominios": {"datos": [1, 2, 3], "reglas": [1, 2, 3], "revision": [1, 2, 3]},
+  "restricciones": [
+    {"a": "datos", "op": "<", "b": "reglas"},
+    {"a": "datos", "op": "!=", "b": "revision"},
+    {"a": "reglas", "op": "!=", "b": "revision"}
+  ]
+}
