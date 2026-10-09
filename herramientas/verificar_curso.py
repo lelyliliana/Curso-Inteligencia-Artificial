@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 7.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 8.
 
 Solo biblioteca estándar; no instala paquetes ni accede a servicios externos.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -13,7 +13,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 7
+ULTIMA_UNIDAD = 8
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -71,6 +71,10 @@ def main():
                     esperado = "Cobertura de claves: 10/12 = 83.33%"
                 elif programa.name == "02_auditar_disponibilidad.py":
                     esperado = "Entradas disponibles: e01, e03"
+                elif programa.name == "01_preparar_lecturas.py":
+                    esperado = "Preparados: 8; duplicados: 1; cuarentena: 3"
+                elif programa.name == "02_imputar_sin_filtracion.py":
+                    esperado = "Ajuste solo con entrenamiento: mediana=20; mínimo=18; máximo=22"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -80,6 +84,8 @@ def main():
     horarios = "unidad06-conocimiento-reglas/ejemplos/02_organizar_talleres.py"
     perfil = "unidad07-obtencion-datos/ejemplos/01_perfilar_lecturas.py"
     disponibilidad = "unidad07-obtencion-datos/ejemplos/02_auditar_disponibilidad.py"
+    preparacion = "unidad08-preparacion-datos/ejemplos/01_preparar_lecturas.py"
+    imputacion = "unidad08-preparacion-datos/ejemplos/02_imputar_sin_filtracion.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -92,6 +98,8 @@ def main():
         ([perfil, "--fin", "2026-09-05"], "Cobertura de claves: 10/15 = 66.67%"),
         ([disponibilidad, "--decision", "2026-09-05T09:10:00+00:00"], "Entradas disponibles: e01, e02, e03"),
         ([disponibilidad, "--decision", "2026-09-05T04:00:00-05:00"], "Entradas disponibles: e01, e03"),
+        ([preparacion, "--correcciones", "unidad08-preparacion-datos/datos/correcciones_verificadas.json"], "Preparados: 9; duplicados: 1; cuarentena: 2"),
+        ([imputacion, "--comparar-filtracion"], "Ajuste incorrecto: mediana=22; mínimo=18; máximo=40"),
     ]
     for comando, esperado in variantes:
         ejecutar(comando, esperado)

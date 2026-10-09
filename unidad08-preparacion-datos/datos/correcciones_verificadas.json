@@ -1,0 +1,15 @@
+{
+  "sha256_origen": "9c47b2dc1a45dde7e9395fce06d9a9f10917fa14bc002c55060e8d9f220f1e5e",
+  "cambios": [
+    {
+      "registro": 8,
+      "fecha": "2026-09-03",
+      "sensor_id": "S2",
+      "campo": "consumo_kwh",
+      "antes": "-2",
+      "despues": "10",
+      "evidencia": "ACTA-SIM-001",
+      "motivo": "El acta sintética adicional del ejercicio fija 10 kWh como valor de referencia de esta lectura; no se deduce del valor -2."
+    }
+  ]
+}

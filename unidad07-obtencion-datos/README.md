@@ -488,7 +488,7 @@ Comprender datos exige saber qué representan, de dónde vienen, qué casos cubr
 
 El CSV permitió comprobar calidad y cobertura; el JSON mostró cómo reconstruir disponibilidad temporal bajo un esquema de roles. La ficha reúne esas comprobaciones con el contexto del proyecto y las preguntas pendientes.
 
-La siguiente unidad es **calidad y preparación de datos**: transformaciones justificadas, tratamiento de problemas y conservación del proceso. Consulta su disponibilidad en el índice.
+Continúa con la [Unidad 8 — Calidad y preparación de datos](../unidad08-preparacion-datos/README.md): transformaciones justificadas, tratamiento de problemas y conservación del proceso.
 
 ## Referencias y lecturas
 

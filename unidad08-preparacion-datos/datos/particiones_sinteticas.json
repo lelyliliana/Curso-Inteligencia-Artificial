@@ -1,0 +1,15 @@
+{
+  "variable": "temperatura_c",
+  "unidad": "grados Celsius",
+  "entrenamiento": [
+    {"id": "t1", "valor": 18},
+    {"id": "t2", "valor": 20},
+    {"id": "t3", "valor": null},
+    {"id": "t4", "valor": 22}
+  ],
+  "validacion": [
+    {"id": "v1", "valor": 30},
+    {"id": "v2", "valor": null},
+    {"id": "v3", "valor": 40}
+  ]
+}
