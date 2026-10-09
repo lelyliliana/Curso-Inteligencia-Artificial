@@ -24,10 +24,11 @@ La revisión inicial ejecutó correctamente 19 programas de ejemplos y solucione
 | Unidad 10 | Desarrollada y comprobada | Dos laboratorios, seis CSV regenerables, protocolo de selección y cierre, diez ejercicios resueltos, reto, informe y 24 pruebas |
 | Unidad 11 | Desarrollada y comprobada | Dos laboratorios, sensibilidad a un extremo, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 26 pruebas |
 | Unidad 12 | Desarrollada y comprobada | Dos laboratorios, paso manual de gradiente, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 28 pruebas |
-| Verificación común | Disponible para las unidades 0–12 | [verificar_curso.py](herramientas/verificar_curso.py) |
-| Unidades 13–35 | Pendientes de desarrollo | Alcance conservado en el índice |
+| Unidad 13 | Desarrollada y comprobada | Dos laboratorios, Gini manual y sensibilidad, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 30 pruebas |
+| Verificación común | Disponible para las unidades 0–13 | [verificar_curso.py](herramientas/verificar_curso.py) |
+| Unidades 14–35 | Pendientes de desarrollo | Alcance conservado en el índice |
 
-La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260` y la Unidad 11 en `e04adc8`. Esta entrega incorpora la Unidad 12 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 13: árboles y ensambles**. Quedan 23 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
+La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8` y la Unidad 12 en `61a73f5`. Esta entrega incorpora la Unidad 13 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 14: agrupamiento y detección de anomalías**. Quedan 22 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
 
 ## Enfoque que se conserva
 
@@ -45,7 +46,7 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 | Unidades | Trabajo pendiente | Evidencia al cerrar el hito |
 |---|---|---|
 | 7–9 | Desarrollo terminado; reto integrador disponible | Datos documentados, preparación trazable y exploración con figuras e informe reproducible |
-| 10–13 | Unidades 10 a 12 terminadas; pendientes árboles y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
+| 10–13 | Desarrollo terminado: líneas base, regresión, clasificación y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
 | 14–18 | Agrupamiento, anomalías, características, validación, métricas e interpretabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
 | 19–24 | Redes, PyTorch, visión, lenguaje, tiempo, recomendación y refuerzo | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
 | 25–31 | Generación, inferencia, prompts, embeddings, RAG, herramientas, adaptación y multimodalidad | Evaluaciones con casos verificables, citas y límites de permisos y recursos |
@@ -54,19 +55,20 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 
 Antes de desarrollar cada unidad, verificar documentación primaria de las bibliotecas y servicios que vaya a utilizar. Fijar y registrar las versiones que realmente se prueben; no asumir que una API o descarga futura conserva el mismo funcionamiento.
 
-## Siguiente entrega concreta — Unidad 13
+## Siguiente entrega concreta — Unidad 14
 
-Pregunta guía: **¿cómo construir decisiones por particiones y comprobar qué aporta combinar varios árboles?**
+Pregunta guía: **¿cómo encontrar grupos y casos inusuales, y evaluar qué significan sin confundirlos con etiquetas verdaderas?**
 
 Alcance propuesto, todavía no implementado:
 
-1. Explicar nodos, condiciones, hojas y predicciones con un árbol pequeño que pueda recorrerse a mano.
-2. Introducir un criterio de partición con ejemplo numérico y justificar controles de complejidad como profundidad o casos mínimos por hoja.
-3. Comparar árboles de distinta complejidad con referencias previas mediante entrenamiento, validación y prueba separados.
-4. Mostrar sobreajuste, inestabilidad de un árbol y límites de extrapolación e interpretación.
-5. Introducir ensambles: agregación de árboles, bosque aleatorio y distinción conceptual frente a boosting, sin confundir sus mecanismos.
-6. Documentar versiones y aleatoriedad reproducible si se incorporan bibliotecas o muestreos; verificar el modelo con una referencia independiente cuando sea útil.
-7. Dos laboratorios, figuras legibles, ejercicios resueltos y reto con comparación de errores, complejidad y límites.
+1. Distinguir agrupamiento de clasificación y anomalía de error confirmado o evento peligroso.
+2. Introducir distancia, escala y centros con un ejemplo manual de agrupamiento; explicar límites ante grupos de forma o densidad diferente.
+3. Ajustar transformaciones y modelos solo con los datos permitidos; diferenciar análisis exploratorio de asignación de casos nuevos y documentar el protocolo.
+4. Comparar configuraciones con evidencia de cohesión, separación, estabilidad e interpretación, sin tratar una métrica interna como prueba de utilidad real.
+5. Mostrar una puntuación de anomalía y una regla explícita de priorización; analizar sensibilidad, casos normales marcados y anomalías no detectadas cuando exista referencia sintética conocida.
+6. Preparar datos nuevos, semillas y versiones verificadas, dos laboratorios, figuras, ejercicios resueltos y reto con evaluación y límites claros.
+
+La Unidad 13 incorpora dos escenarios sintéticos nuevos: una franja con una señal y una región con dos. Introduce scikit-learn, Gini ponderado, recorridos, controles de crecimiento e inestabilidad; compara mayoría, árboles, bagging y bosque con selección por F1 de validación. Los ensambles promedian probabilidades y la convención de empate de la biblioteca se distingue de la Unidad 12. Prueba se abre solo después de elegir, sin reajuste con validación. Se documentan semillas, remuestreo, rangos, huellas y límites de los resúmenes exportados. Las tres figuras PNG/SVG se revisaron visualmente. Sus 30 pruebas incluyen una referencia exhaustiva de cortes, promedio independiente de probabilidades, invariancia ante información no permitida, reproducción de datos y correspondencia entre figuras y resultados.
 
 La Unidad 12 incorpora dos escenarios sintéticos nuevos de clasificación binaria. Implementa una regresión logística de una entrada con gradiente completo, escalado de entrenamiento y penalización explícita. Compara mayoría y siempre positivo; en el escenario desbalanceado selecciona entre tres umbrales que conservan probabilidades y parámetros. La selección usa F1 de validación; prueba se abre después y evalúa solo al elegido. Se explican pérdida, clase positiva, métricas indefinidas, calibración y carácter determinista de los datos. Las tres figuras PNG/SVG se revisaron visualmente. Sus 28 pruebas incluyen cálculo manual, diferencias finitas, referencia independiente por Newton, invariancia frente a etiquetas de prueba y correspondencia de gráficos y resultados.
 
@@ -74,9 +76,9 @@ La Unidad 11 incorpora datos sintéticos nuevos de ciclos de operación: un caso
 
 La Unidad 10 añade dos conjuntos sintéticos independientes: 32 pronósticos diarios con cortes temporales y 64 avisos de ocho equipos separados por grupo. La ejecución común lee solo entrenamiento y validación; `--evaluar-prueba` abre prueba después de seleccionar y no reajusta. Se comprueban casos idénticos entre candidatos, disponibilidad de etiquetas en los cortes y separación de equipos. Las pruebas de invariancia alteran objetivos de prueba y verifican que no cambien ajuste, selección ni predicciones. No hay dependencias nuevas ni azar.
 
-Las pruebas de las unidades 10 a 12 son públicas y sus resultados didácticos son conocidos. No reutilizarlas automáticamente para seleccionar modelos nuevos en la Unidad 13 y después presentarlas como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
+Las pruebas de las unidades 10 a 13 son públicas y sus resultados didácticos son conocidos. No reutilizarlas automáticamente para seleccionar modelos nuevos en unidades posteriores y después presentarlas como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
 
-La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 y NumPy 2.2.6, probadas con Python 3.12.3 en un entorno virtual limpio. Sus resúmenes de texto usan biblioteca estándar; su exportación de gráficos y sus 21 pruebas requieren esos paquetes. Las unidades 11 y 12 reutilizan esas versiones: polinomios y logística requieren NumPy; las figuras, Matplotlib. No se incorpora scikit-learn como dependencia en estas entregas. El [registro del entorno](unidad09-exploracion-visualizacion/recursos/entorno-verificado.txt) conserva las versiones transitivas; los informes JSON anotan fuentes, parámetros y versiones principales.
+La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 y NumPy 2.2.6, probadas con Python 3.12.3 en un entorno virtual limpio. Sus resúmenes de texto usan biblioteca estándar; su exportación de gráficos y sus 21 pruebas requieren esos paquetes. Las unidades 11 y 12 reutilizan esas versiones: polinomios y logística requieren NumPy; las figuras, Matplotlib. La Unidad 13 incorpora scikit-learn 1.9.1, probado con Python 3.12.3 y las mismas versiones numéricas y gráficas en otro entorno virtual limpio. Su [registro completo del entorno](unidad13-arboles-ensambles/recursos/entorno-verificado.txt) añade las dependencias transitivas, incluida SciPy 1.18.1. Se conserva también el [registro del entorno anterior](unidad09-exploracion-visualizacion/recursos/entorno-verificado.txt). Los informes JSON anotan fuentes, parámetros y versiones principales.
 
 ## Criterios para considerar lista una unidad
 
@@ -97,11 +99,11 @@ La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 
 Desde la raíz del curso:
 
 ```bash
-python -m pip install -r unidad12-clasificacion/requirements.txt
+python -m pip install -r unidad13-arboles-ensambles/requirements.txt
 python herramientas/verificar_curso.py
 ```
 
-Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 73 ejecuciones de programas y variantes y las 160 pruebas de las unidades 5 a 12. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas de las unidades 9, 11 y 12. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–12; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
+Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 84 ejecuciones de programas y variantes y las 190 pruebas de las unidades 5 a 13. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas y scikit-learn indicados en los requisitos de la Unidad 13. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–13; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
 
 La comprobación de enlaces no valida URLs externas ni fragmentos `#ancla`. Ejecutar programas con éxito no demuestra que toda explicación sea correcta ni que se obtenga utilidad en una población real.
 

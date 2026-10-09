@@ -1,0 +1,4 @@
+# Dependencias numéricas y gráficas ya usadas en el curso.
+-r ../unidad09-exploracion-visualizacion/requirements.txt
+# Primera unidad que usa estimadores de scikit-learn.
+scikit-learn==1.9.1

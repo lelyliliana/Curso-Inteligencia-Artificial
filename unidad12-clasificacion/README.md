@@ -367,7 +367,7 @@ Las 28 pruebas cubren fórmulas manuales, estabilidad numérica, gradientes medi
 - [ ] Distingo probabilidad estimada, calibración y certeza.
 - [ ] Cierro sin volver a elegir con prueba y documento límites.
 
-La siguiente entrega prevista es la **Unidad 13 — Árboles y ensambles**, todavía pendiente de desarrollo. Introducirá decisiones por particiones y combinaciones de modelos, conservando el protocolo de evaluación.
+Continúa con la [Unidad 13 — Árboles y ensambles](../unidad13-arboles-ensambles/README.md): decisiones por particiones, controles de complejidad, bagging y bosques aleatorios, conservando la separación entre ajuste, selección y prueba.
 
 ## Referencias
 

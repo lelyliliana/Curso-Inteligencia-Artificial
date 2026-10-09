@@ -3,3 +3,4 @@
 unidad09-exploracion-visualizacion/recursos/**/*.svg -whitespace linguist-generated=true
 unidad11-regresion/recursos/**/*.svg -whitespace linguist-generated=true
 unidad12-clasificacion/recursos/**/*.svg -whitespace linguist-generated=true
+unidad13-arboles-ensambles/recursos/**/*.svg -whitespace linguist-generated=true

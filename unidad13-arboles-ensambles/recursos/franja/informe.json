@@ -1,0 +1,4627 @@
+{
+  "protocolo": "arboles-v1",
+  "experimento": "franja",
+  "semilla_modelos": 13,
+  "versiones": {
+    "python": "3.12.3",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1",
+    "matplotlib": "3.10.8"
+  },
+  "entradas": [
+    "senal_a"
+  ],
+  "rangos_entrenamiento": {
+    "senal_a": [
+      0.625,
+      99.375
+    ]
+  },
+  "fuentes": {
+    "entrenamiento": {
+      "archivo": "entrenamiento.csv",
+      "sha256": "73148ab1aaa953541d4030186538c860d32364da7ab30536b3bffc5eb1eb3cb6",
+      "n": 80,
+      "positivos": 33
+    },
+    "validacion": {
+      "archivo": "validacion.csv",
+      "sha256": "831cecc7ffa69b2dba7aed3d7be61cd2e6c42d12ae79ed7fba10bca07a3be6cd",
+      "n": 40,
+      "positivos": 16
+    }
+  },
+  "modelos": {
+    "mayoria": {
+      "tipo": "DummyClassifier",
+      "parametros": {
+        "constant": null,
+        "random_state": null,
+        "strategy": "prior"
+      },
+      "clases": [
+        0,
+        1
+      ],
+      "frecuencias": [
+        0.5875,
+        0.4125
+      ]
+    },
+    "arbol_1": {
+      "tipo": "DecisionTreeClassifier",
+      "parametros": {
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 1,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "random_state": 13,
+        "splitter": "best"
+      },
+      "clases": [
+        0,
+        1
+      ],
+      "arboles": [
+        {
+          "profundidad": 1,
+          "hojas": 2,
+          "nodos": 3,
+          "semilla": 13,
+          "sha256_estructura": "2e3b0b37afbc6de0b631f3573d4a2e81bc29e1c8616b95b1fba7e8e5c480e28f"
+        }
+      ]
+    },
+    "arbol_3": {
+      "tipo": "DecisionTreeClassifier",
+      "parametros": {
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 3,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 5,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "random_state": 13,
+        "splitter": "best"
+      },
+      "clases": [
+        0,
+        1
+      ],
+      "arboles": [
+        {
+          "profundidad": 3,
+          "hojas": 7,
+          "nodos": 13,
+          "semilla": 13,
+          "sha256_estructura": "f5403830a216a924f5a5b24288430dc5c6818550168fb2930a98aeb38b43e8db"
+        }
+      ]
+    },
+    "arbol_libre": {
+      "tipo": "DecisionTreeClassifier",
+      "parametros": {
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "random_state": 13,
+        "splitter": "best"
+      },
+      "clases": [
+        0,
+        1
+      ],
+      "arboles": [
+        {
+          "profundidad": 6,
+          "hojas": 17,
+          "nodos": 33,
+          "semilla": 13,
+          "sha256_estructura": "cc7abf0c9ecec068a571a200778fc0cb530ffcb89a1d87d31b20cbdf96ff370a"
+        }
+      ]
+    }
+  },
+  "criterio": {
+    "metrica": "f1",
+    "clase_positiva": 1,
+    "sentido": "maximizar",
+    "orden_desempate": [
+      "mayoria",
+      "arbol_1",
+      "arbol_3",
+      "arbol_libre"
+    ],
+    "reajuste_con_validacion": false,
+    "decision": "mayor probabilidad; empate de clases a 0"
+  },
+  "entrenamiento": {
+    "mayoria": {
+      "metricas": {
+        "n": 80,
+        "VP": 0,
+        "VN": 47,
+        "FP": 0,
+        "FN": 33,
+        "positivos": 33,
+        "exactitud": 0.5875,
+        "precision": null,
+        "recobrado": 0.0,
+        "f1": 0.0
+      },
+      "predicciones": [
+        {
+          "caso_id": "franja-entrenamiento-001",
+          "senal_a": 0.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-002",
+          "senal_a": 1.875,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-003",
+          "senal_a": 3.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-004",
+          "senal_a": 4.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-005",
+          "senal_a": 5.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-006",
+          "senal_a": 6.875,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-007",
+          "senal_a": 8.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-008",
+          "senal_a": 9.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-009",
+          "senal_a": 10.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-010",
+          "senal_a": 11.875,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-011",
+          "senal_a": 13.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-012",
+          "senal_a": 14.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-013",
+          "senal_a": 15.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-014",
+          "senal_a": 16.875,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-015",
+          "senal_a": 18.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-016",
+          "senal_a": 19.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-017",
+          "senal_a": 20.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-018",
+          "senal_a": 21.875,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-019",
+          "senal_a": 23.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-020",
+          "senal_a": 24.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-021",
+          "senal_a": 25.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-022",
+          "senal_a": 26.875,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-023",
+          "senal_a": 28.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-024",
+          "senal_a": 29.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-025",
+          "senal_a": 30.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-026",
+          "senal_a": 31.875,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-027",
+          "senal_a": 33.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-028",
+          "senal_a": 34.375,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-029",
+          "senal_a": 35.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-030",
+          "senal_a": 36.875,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-031",
+          "senal_a": 38.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-032",
+          "senal_a": 39.375,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-033",
+          "senal_a": 40.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-034",
+          "senal_a": 41.875,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-035",
+          "senal_a": 43.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-036",
+          "senal_a": 44.375,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-037",
+          "senal_a": 45.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-038",
+          "senal_a": 46.875,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-039",
+          "senal_a": 48.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-040",
+          "senal_a": 49.375,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-041",
+          "senal_a": 50.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-042",
+          "senal_a": 51.875,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-043",
+          "senal_a": 53.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-044",
+          "senal_a": 54.375,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-045",
+          "senal_a": 55.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-046",
+          "senal_a": 56.875,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-047",
+          "senal_a": 58.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-048",
+          "senal_a": 59.375,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-049",
+          "senal_a": 60.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-050",
+          "senal_a": 61.875,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-051",
+          "senal_a": 63.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-052",
+          "senal_a": 64.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-053",
+          "senal_a": 65.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-054",
+          "senal_a": 66.875,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-055",
+          "senal_a": 68.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-056",
+          "senal_a": 69.375,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-057",
+          "senal_a": 70.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-058",
+          "senal_a": 71.875,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-059",
+          "senal_a": 73.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-060",
+          "senal_a": 74.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-061",
+          "senal_a": 75.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-062",
+          "senal_a": 76.875,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-063",
+          "senal_a": 78.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-064",
+          "senal_a": 79.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-065",
+          "senal_a": 80.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-066",
+          "senal_a": 81.875,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-067",
+          "senal_a": 83.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-068",
+          "senal_a": 84.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-069",
+          "senal_a": 85.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-070",
+          "senal_a": 86.875,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-071",
+          "senal_a": 88.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-072",
+          "senal_a": 89.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-073",
+          "senal_a": 90.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-074",
+          "senal_a": 91.875,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-075",
+          "senal_a": 93.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-076",
+          "senal_a": 94.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-077",
+          "senal_a": 95.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-078",
+          "senal_a": 96.875,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-079",
+          "senal_a": 98.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-080",
+          "senal_a": 99.375,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "arbol_1": {
+      "metricas": {
+        "n": 80,
+        "VP": 31,
+        "VN": 22,
+        "FP": 25,
+        "FN": 2,
+        "positivos": 33,
+        "exactitud": 0.6625,
+        "precision": 0.5535714285714286,
+        "recobrado": 0.9393939393939394,
+        "f1": 0.6966292134831461
+      },
+      "predicciones": [
+        {
+          "caso_id": "franja-entrenamiento-001",
+          "senal_a": 0.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-002",
+          "senal_a": 1.875,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-003",
+          "senal_a": 3.125,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-004",
+          "senal_a": 4.375,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-005",
+          "senal_a": 5.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-006",
+          "senal_a": 6.875,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-007",
+          "senal_a": 8.125,
+          "real": 1,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-008",
+          "senal_a": 9.375,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-009",
+          "senal_a": 10.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-010",
+          "senal_a": 11.875,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-011",
+          "senal_a": 13.125,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-012",
+          "senal_a": 14.375,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-013",
+          "senal_a": 15.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-014",
+          "senal_a": 16.875,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-015",
+          "senal_a": 18.125,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-016",
+          "senal_a": 19.375,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-017",
+          "senal_a": 20.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-018",
+          "senal_a": 21.875,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-019",
+          "senal_a": 23.125,
+          "real": 1,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-020",
+          "senal_a": 24.375,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-021",
+          "senal_a": 25.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-022",
+          "senal_a": 26.875,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-023",
+          "senal_a": 28.125,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-024",
+          "senal_a": 29.375,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-025",
+          "senal_a": 30.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-026",
+          "senal_a": 31.875,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-027",
+          "senal_a": 33.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-028",
+          "senal_a": 34.375,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-029",
+          "senal_a": 35.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-030",
+          "senal_a": 36.875,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-031",
+          "senal_a": 38.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-032",
+          "senal_a": 39.375,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-033",
+          "senal_a": 40.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-034",
+          "senal_a": 41.875,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-035",
+          "senal_a": 43.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-036",
+          "senal_a": 44.375,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-037",
+          "senal_a": 45.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-038",
+          "senal_a": 46.875,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-039",
+          "senal_a": 48.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-040",
+          "senal_a": 49.375,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-041",
+          "senal_a": 50.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-042",
+          "senal_a": 51.875,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-043",
+          "senal_a": 53.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-044",
+          "senal_a": 54.375,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-045",
+          "senal_a": 55.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-046",
+          "senal_a": 56.875,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-047",
+          "senal_a": 58.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-048",
+          "senal_a": 59.375,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-049",
+          "senal_a": 60.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-050",
+          "senal_a": 61.875,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-051",
+          "senal_a": 63.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-052",
+          "senal_a": 64.375,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-053",
+          "senal_a": 65.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-054",
+          "senal_a": 66.875,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-055",
+          "senal_a": 68.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-056",
+          "senal_a": 69.375,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-057",
+          "senal_a": 70.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-058",
+          "senal_a": 71.875,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-059",
+          "senal_a": 73.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-060",
+          "senal_a": 74.375,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-061",
+          "senal_a": 75.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-062",
+          "senal_a": 76.875,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-063",
+          "senal_a": 78.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-064",
+          "senal_a": 79.375,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-065",
+          "senal_a": 80.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-066",
+          "senal_a": 81.875,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-067",
+          "senal_a": 83.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-068",
+          "senal_a": 84.375,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-069",
+          "senal_a": 85.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-070",
+          "senal_a": 86.875,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-071",
+          "senal_a": 88.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-072",
+          "senal_a": 89.375,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-073",
+          "senal_a": 90.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-074",
+          "senal_a": 91.875,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-075",
+          "senal_a": 93.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-076",
+          "senal_a": 94.375,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-077",
+          "senal_a": 95.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-078",
+          "senal_a": 96.875,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-079",
+          "senal_a": 98.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-080",
+          "senal_a": 99.375,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "arbol_3": {
+      "metricas": {
+        "n": 80,
+        "VP": 29,
+        "VN": 44,
+        "FP": 3,
+        "FN": 4,
+        "positivos": 33,
+        "exactitud": 0.9125,
+        "precision": 0.90625,
+        "recobrado": 0.8787878787878788,
+        "f1": 0.8923076923076924
+      },
+      "predicciones": [
+        {
+          "caso_id": "franja-entrenamiento-001",
+          "senal_a": 0.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-002",
+          "senal_a": 1.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-003",
+          "senal_a": 3.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-004",
+          "senal_a": 4.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-005",
+          "senal_a": 5.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-006",
+          "senal_a": 6.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-007",
+          "senal_a": 8.125,
+          "real": 1,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-008",
+          "senal_a": 9.375,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-009",
+          "senal_a": 10.625,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-010",
+          "senal_a": 11.875,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-011",
+          "senal_a": 13.125,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-012",
+          "senal_a": 14.375,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-013",
+          "senal_a": 15.625,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-014",
+          "senal_a": 16.875,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-015",
+          "senal_a": 18.125,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-016",
+          "senal_a": 19.375,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-017",
+          "senal_a": 20.625,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-018",
+          "senal_a": 21.875,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-019",
+          "senal_a": 23.125,
+          "real": 1,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-020",
+          "senal_a": 24.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-021",
+          "senal_a": 25.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-022",
+          "senal_a": 26.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-023",
+          "senal_a": 28.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-024",
+          "senal_a": 29.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-025",
+          "senal_a": 30.625,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-026",
+          "senal_a": 31.875,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-027",
+          "senal_a": 33.125,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-028",
+          "senal_a": 34.375,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-029",
+          "senal_a": 35.625,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-030",
+          "senal_a": 36.875,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-031",
+          "senal_a": 38.125,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-032",
+          "senal_a": 39.375,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-033",
+          "senal_a": 40.625,
+          "real": 0,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-034",
+          "senal_a": 41.875,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-035",
+          "senal_a": 43.125,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-036",
+          "senal_a": 44.375,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-037",
+          "senal_a": 45.625,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-038",
+          "senal_a": 46.875,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-039",
+          "senal_a": 48.125,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-040",
+          "senal_a": 49.375,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-041",
+          "senal_a": 50.625,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-042",
+          "senal_a": 51.875,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-043",
+          "senal_a": 53.125,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-044",
+          "senal_a": 54.375,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-045",
+          "senal_a": 55.625,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-046",
+          "senal_a": 56.875,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-047",
+          "senal_a": 58.125,
+          "real": 0,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-048",
+          "senal_a": 59.375,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-049",
+          "senal_a": 60.625,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-050",
+          "senal_a": 61.875,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-051",
+          "senal_a": 63.125,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-052",
+          "senal_a": 64.375,
+          "real": 0,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-053",
+          "senal_a": 65.625,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-054",
+          "senal_a": 66.875,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-055",
+          "senal_a": 68.125,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-056",
+          "senal_a": 69.375,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-057",
+          "senal_a": 70.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-058",
+          "senal_a": 71.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-059",
+          "senal_a": 73.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-060",
+          "senal_a": 74.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-061",
+          "senal_a": 75.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-062",
+          "senal_a": 76.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-063",
+          "senal_a": 78.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-064",
+          "senal_a": 79.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-065",
+          "senal_a": 80.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-066",
+          "senal_a": 81.875,
+          "real": 1,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-067",
+          "senal_a": 83.125,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-068",
+          "senal_a": 84.375,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-069",
+          "senal_a": 85.625,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-070",
+          "senal_a": 86.875,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-071",
+          "senal_a": 88.125,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-072",
+          "senal_a": 89.375,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-073",
+          "senal_a": 90.625,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-074",
+          "senal_a": 91.875,
+          "real": 1,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-075",
+          "senal_a": 93.125,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-076",
+          "senal_a": 94.375,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-077",
+          "senal_a": 95.625,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-078",
+          "senal_a": 96.875,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-079",
+          "senal_a": 98.125,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-080",
+          "senal_a": 99.375,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "arbol_libre": {
+      "metricas": {
+        "n": 80,
+        "VP": 33,
+        "VN": 47,
+        "FP": 0,
+        "FN": 0,
+        "positivos": 33,
+        "exactitud": 1.0,
+        "precision": 1.0,
+        "recobrado": 1.0,
+        "f1": 1.0
+      },
+      "predicciones": [
+        {
+          "caso_id": "franja-entrenamiento-001",
+          "senal_a": 0.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-002",
+          "senal_a": 1.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-003",
+          "senal_a": 3.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-004",
+          "senal_a": 4.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-005",
+          "senal_a": 5.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-006",
+          "senal_a": 6.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-007",
+          "senal_a": 8.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-008",
+          "senal_a": 9.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-009",
+          "senal_a": 10.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-010",
+          "senal_a": 11.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-011",
+          "senal_a": 13.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-012",
+          "senal_a": 14.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-013",
+          "senal_a": 15.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-014",
+          "senal_a": 16.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-015",
+          "senal_a": 18.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-016",
+          "senal_a": 19.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-017",
+          "senal_a": 20.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-018",
+          "senal_a": 21.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-019",
+          "senal_a": 23.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-020",
+          "senal_a": 24.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-021",
+          "senal_a": 25.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-022",
+          "senal_a": 26.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-023",
+          "senal_a": 28.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-024",
+          "senal_a": 29.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-025",
+          "senal_a": 30.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-026",
+          "senal_a": 31.875,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-027",
+          "senal_a": 33.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-028",
+          "senal_a": 34.375,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-029",
+          "senal_a": 35.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-030",
+          "senal_a": 36.875,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-031",
+          "senal_a": 38.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-032",
+          "senal_a": 39.375,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-033",
+          "senal_a": 40.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-034",
+          "senal_a": 41.875,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-035",
+          "senal_a": 43.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-036",
+          "senal_a": 44.375,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-037",
+          "senal_a": 45.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-038",
+          "senal_a": 46.875,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-039",
+          "senal_a": 48.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-040",
+          "senal_a": 49.375,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-041",
+          "senal_a": 50.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-042",
+          "senal_a": 51.875,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-043",
+          "senal_a": 53.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-044",
+          "senal_a": 54.375,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-045",
+          "senal_a": 55.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-046",
+          "senal_a": 56.875,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-047",
+          "senal_a": 58.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-048",
+          "senal_a": 59.375,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-049",
+          "senal_a": 60.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-050",
+          "senal_a": 61.875,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-051",
+          "senal_a": 63.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-052",
+          "senal_a": 64.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-053",
+          "senal_a": 65.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-054",
+          "senal_a": 66.875,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-055",
+          "senal_a": 68.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-056",
+          "senal_a": 69.375,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-057",
+          "senal_a": 70.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-058",
+          "senal_a": 71.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-059",
+          "senal_a": 73.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-060",
+          "senal_a": 74.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-061",
+          "senal_a": 75.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-062",
+          "senal_a": 76.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-063",
+          "senal_a": 78.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-064",
+          "senal_a": 79.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-065",
+          "senal_a": 80.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-066",
+          "senal_a": 81.875,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-067",
+          "senal_a": 83.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-068",
+          "senal_a": 84.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-069",
+          "senal_a": 85.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-070",
+          "senal_a": 86.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-071",
+          "senal_a": 88.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-072",
+          "senal_a": 89.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-073",
+          "senal_a": 90.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-074",
+          "senal_a": 91.875,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-075",
+          "senal_a": 93.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-076",
+          "senal_a": 94.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-077",
+          "senal_a": 95.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-078",
+          "senal_a": 96.875,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-079",
+          "senal_a": 98.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-entrenamiento-080",
+          "senal_a": 99.375,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    }
+  },
+  "validacion": {
+    "mayoria": {
+      "metricas": {
+        "n": 40,
+        "VP": 0,
+        "VN": 24,
+        "FP": 0,
+        "FN": 16,
+        "positivos": 16,
+        "exactitud": 0.6,
+        "precision": null,
+        "recobrado": 0.0,
+        "f1": 0.0
+      },
+      "predicciones": [
+        {
+          "caso_id": "franja-validacion-001",
+          "senal_a": 0.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-002",
+          "senal_a": 3.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-003",
+          "senal_a": 5.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-004",
+          "senal_a": 8.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-005",
+          "senal_a": 10.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-006",
+          "senal_a": 13.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-007",
+          "senal_a": 15.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-008",
+          "senal_a": 18.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-009",
+          "senal_a": 20.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-010",
+          "senal_a": 23.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-011",
+          "senal_a": 25.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-012",
+          "senal_a": 28.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-013",
+          "senal_a": 30.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-014",
+          "senal_a": 33.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-015",
+          "senal_a": 35.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-016",
+          "senal_a": 38.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-017",
+          "senal_a": 40.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-018",
+          "senal_a": 43.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-019",
+          "senal_a": 45.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-020",
+          "senal_a": 48.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-021",
+          "senal_a": 50.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-022",
+          "senal_a": 53.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-023",
+          "senal_a": 55.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-024",
+          "senal_a": 58.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-025",
+          "senal_a": 60.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-026",
+          "senal_a": 63.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-027",
+          "senal_a": 65.625,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-028",
+          "senal_a": 68.125,
+          "real": 1,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-029",
+          "senal_a": 70.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-030",
+          "senal_a": 73.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-031",
+          "senal_a": 75.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-032",
+          "senal_a": 78.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-033",
+          "senal_a": 80.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-034",
+          "senal_a": 83.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-035",
+          "senal_a": 85.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-036",
+          "senal_a": 88.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-037",
+          "senal_a": 90.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-038",
+          "senal_a": 93.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-039",
+          "senal_a": 95.625,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-040",
+          "senal_a": 98.125,
+          "real": 0,
+          "probabilidad_1": 0.4125,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "arbol_1": {
+      "metricas": {
+        "n": 40,
+        "VP": 15,
+        "VN": 11,
+        "FP": 13,
+        "FN": 1,
+        "positivos": 16,
+        "exactitud": 0.65,
+        "precision": 0.5357142857142857,
+        "recobrado": 0.9375,
+        "f1": 0.6818181818181818
+      },
+      "predicciones": [
+        {
+          "caso_id": "franja-validacion-001",
+          "senal_a": 0.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-002",
+          "senal_a": 3.125,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-003",
+          "senal_a": 5.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-004",
+          "senal_a": 8.125,
+          "real": 1,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-005",
+          "senal_a": 10.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-006",
+          "senal_a": 13.125,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-007",
+          "senal_a": 15.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-008",
+          "senal_a": 18.125,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-009",
+          "senal_a": 20.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-010",
+          "senal_a": 23.125,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-011",
+          "senal_a": 25.625,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-012",
+          "senal_a": 28.125,
+          "real": 0,
+          "probabilidad_1": 0.08333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-013",
+          "senal_a": 30.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-014",
+          "senal_a": 33.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-015",
+          "senal_a": 35.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-016",
+          "senal_a": 38.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-017",
+          "senal_a": 40.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-018",
+          "senal_a": 43.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-019",
+          "senal_a": 45.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-020",
+          "senal_a": 48.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-021",
+          "senal_a": 50.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-022",
+          "senal_a": 53.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-023",
+          "senal_a": 55.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-024",
+          "senal_a": 58.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-025",
+          "senal_a": 60.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-026",
+          "senal_a": 63.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-027",
+          "senal_a": 65.625,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-028",
+          "senal_a": 68.125,
+          "real": 1,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-029",
+          "senal_a": 70.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-030",
+          "senal_a": 73.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-031",
+          "senal_a": 75.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-032",
+          "senal_a": 78.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-033",
+          "senal_a": 80.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-034",
+          "senal_a": 83.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-035",
+          "senal_a": 85.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-036",
+          "senal_a": 88.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-037",
+          "senal_a": 90.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-038",
+          "senal_a": 93.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-039",
+          "senal_a": 95.625,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-040",
+          "senal_a": 98.125,
+          "real": 0,
+          "probabilidad_1": 0.5535714285714286,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "arbol_3": {
+      "metricas": {
+        "n": 40,
+        "VP": 15,
+        "VN": 23,
+        "FP": 1,
+        "FN": 1,
+        "positivos": 16,
+        "exactitud": 0.95,
+        "precision": 0.9375,
+        "recobrado": 0.9375,
+        "f1": 0.9375
+      },
+      "predicciones": [
+        {
+          "caso_id": "franja-validacion-001",
+          "senal_a": 0.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-002",
+          "senal_a": 3.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-003",
+          "senal_a": 5.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-004",
+          "senal_a": 8.125,
+          "real": 1,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-005",
+          "senal_a": 10.625,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-006",
+          "senal_a": 13.125,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-007",
+          "senal_a": 15.625,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-008",
+          "senal_a": 18.125,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-009",
+          "senal_a": 20.625,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-010",
+          "senal_a": 23.125,
+          "real": 0,
+          "probabilidad_1": 0.15384615384615385,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-011",
+          "senal_a": 25.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-012",
+          "senal_a": 28.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-013",
+          "senal_a": 30.625,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-014",
+          "senal_a": 33.125,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-015",
+          "senal_a": 35.625,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-016",
+          "senal_a": 38.125,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-017",
+          "senal_a": 40.625,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-018",
+          "senal_a": 43.125,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-019",
+          "senal_a": 45.625,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-020",
+          "senal_a": 48.125,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-021",
+          "senal_a": 50.625,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-022",
+          "senal_a": 53.125,
+          "real": 1,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-023",
+          "senal_a": 55.625,
+          "real": 0,
+          "probabilidad_1": 0.9545454545454546,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-024",
+          "senal_a": 58.125,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-025",
+          "senal_a": 60.625,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-026",
+          "senal_a": 63.125,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-027",
+          "senal_a": 65.625,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-028",
+          "senal_a": 68.125,
+          "real": 1,
+          "probabilidad_1": 0.8,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-029",
+          "senal_a": 70.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-030",
+          "senal_a": 73.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-031",
+          "senal_a": 75.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-032",
+          "senal_a": 78.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-033",
+          "senal_a": 80.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-034",
+          "senal_a": 83.125,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-035",
+          "senal_a": 85.625,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-036",
+          "senal_a": 88.125,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-037",
+          "senal_a": 90.625,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-038",
+          "senal_a": 93.125,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-039",
+          "senal_a": 95.625,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-040",
+          "senal_a": 98.125,
+          "real": 0,
+          "probabilidad_1": 0.13333333333333333,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "arbol_libre": {
+      "metricas": {
+        "n": 40,
+        "VP": 14,
+        "VN": 22,
+        "FP": 2,
+        "FN": 2,
+        "positivos": 16,
+        "exactitud": 0.9,
+        "precision": 0.875,
+        "recobrado": 0.875,
+        "f1": 0.875
+      },
+      "predicciones": [
+        {
+          "caso_id": "franja-validacion-001",
+          "senal_a": 0.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-002",
+          "senal_a": 3.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-003",
+          "senal_a": 5.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-004",
+          "senal_a": 8.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-005",
+          "senal_a": 10.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-006",
+          "senal_a": 13.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-007",
+          "senal_a": 15.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-008",
+          "senal_a": 18.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-009",
+          "senal_a": 20.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-010",
+          "senal_a": 23.125,
+          "real": 0,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-011",
+          "senal_a": 25.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-012",
+          "senal_a": 28.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-013",
+          "senal_a": 30.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-014",
+          "senal_a": 33.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-015",
+          "senal_a": 35.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-016",
+          "senal_a": 38.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-017",
+          "senal_a": 40.625,
+          "real": 1,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-018",
+          "senal_a": 43.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-019",
+          "senal_a": 45.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-020",
+          "senal_a": 48.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-021",
+          "senal_a": 50.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-022",
+          "senal_a": 53.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-023",
+          "senal_a": 55.625,
+          "real": 0,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-024",
+          "senal_a": 58.125,
+          "real": 1,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-025",
+          "senal_a": 60.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-026",
+          "senal_a": 63.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-027",
+          "senal_a": 65.625,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-028",
+          "senal_a": 68.125,
+          "real": 1,
+          "probabilidad_1": 1.0,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-029",
+          "senal_a": 70.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-030",
+          "senal_a": 73.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-031",
+          "senal_a": 75.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-032",
+          "senal_a": 78.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-033",
+          "senal_a": 80.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-034",
+          "senal_a": 83.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-035",
+          "senal_a": 85.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-036",
+          "senal_a": 88.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-037",
+          "senal_a": 90.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-038",
+          "senal_a": 93.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-039",
+          "senal_a": 95.625,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "franja-validacion-040",
+          "senal_a": 98.125,
+          "real": 0,
+          "probabilidad_1": 0.0,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    }
+  },
+  "seleccionado": "arbol_3",
+  "prueba": null,
+  "consulta": null,
+  "reglas": {
+    "arbol_1": "|--- senal_a <= 30.000\n|   |--- class: 0\n|--- senal_a >  30.000\n|   |--- class: 1\n",
+    "arbol_3": "|--- senal_a <= 30.000\n|   |--- senal_a <= 7.500\n|   |   |--- class: 0\n|   |--- senal_a >  7.500\n|   |   |--- senal_a <= 23.750\n|   |   |   |--- class: 0\n|   |   |--- senal_a >  23.750\n|   |   |   |--- class: 0\n|--- senal_a >  30.000\n|   |--- senal_a <= 70.000\n|   |   |--- senal_a <= 57.500\n|   |   |   |--- class: 1\n|   |   |--- senal_a >  57.500\n|   |   |   |--- class: 1\n|   |--- senal_a >  70.000\n|   |   |--- senal_a <= 81.250\n|   |   |   |--- class: 0\n|   |   |--- senal_a >  81.250\n|   |   |   |--- class: 0\n",
+    "arbol_libre": "|--- senal_a <= 30.000\n|   |--- senal_a <= 7.500\n|   |   |--- class: 0\n|   |--- senal_a >  7.500\n|   |   |--- senal_a <= 8.750\n|   |   |   |--- class: 1\n|   |   |--- senal_a >  8.750\n|   |   |   |--- senal_a <= 22.500\n|   |   |   |   |--- class: 0\n|   |   |   |--- senal_a >  22.500\n|   |   |   |   |--- senal_a <= 23.750\n|   |   |   |   |   |--- class: 1\n|   |   |   |   |--- senal_a >  23.750\n|   |   |   |   |   |--- class: 0\n|--- senal_a >  30.000\n|   |--- senal_a <= 70.000\n|   |   |--- senal_a <= 57.500\n|   |   |   |--- senal_a <= 41.250\n|   |   |   |   |--- senal_a <= 40.000\n|   |   |   |   |   |--- class: 1\n|   |   |   |   |--- senal_a >  40.000\n|   |   |   |   |   |--- class: 0\n|   |   |   |--- senal_a >  41.250\n|   |   |   |   |--- class: 1\n|   |   |--- senal_a >  57.500\n|   |   |   |--- senal_a <= 58.750\n|   |   |   |   |--- class: 0\n|   |   |   |--- senal_a >  58.750\n|   |   |   |   |--- senal_a <= 63.750\n|   |   |   |   |   |--- class: 1\n|   |   |   |   |--- senal_a >  63.750\n|   |   |   |   |   |--- senal_a <= 65.000\n|   |   |   |   |   |   |--- class: 0\n|   |   |   |   |   |--- senal_a >  65.000\n|   |   |   |   |   |   |--- class: 1\n|   |--- senal_a >  70.000\n|   |   |--- senal_a <= 81.250\n|   |   |   |--- class: 0\n|   |   |--- senal_a >  81.250\n|   |   |   |--- senal_a <= 82.500\n|   |   |   |   |--- class: 1\n|   |   |   |--- senal_a >  82.500\n|   |   |   |   |--- senal_a <= 91.250\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- senal_a >  91.250\n|   |   |   |   |   |--- senal_a <= 92.500\n|   |   |   |   |   |   |--- class: 1\n|   |   |   |   |   |--- senal_a >  92.500\n|   |   |   |   |   |   |--- class: 0\n"
+  }
+}

@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 12.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 13.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 12
+ULTIMA_UNIDAD = 13
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -96,6 +96,12 @@ def main():
                     esperado = "Seleccionado por F1 de validación: logistica_020"
                 elif programa.name == "03_paso_manual.py":
                     esperado = "Probabilidades: 0.475021, 0.524979"
+                elif programa.name == "01_controlar_complejidad.py":
+                    esperado = "Seleccionado por F1 de validación: arbol_3"
+                elif programa.name == "02_comparar_ensambles.py":
+                    esperado = "Seleccionado por F1 de validación: bagging"
+                elif programa.name == "03_corte_e_inestabilidad.py":
+                    esperado = "una etiqueta cambiada: corte=3.500; clase para x=4: 1"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -115,6 +121,8 @@ def main():
     regresion_curva = "unidad11-regresion/ejemplos/02_comparar_complejidad.py"
     logistica = "unidad12-clasificacion/ejemplos/01_aprender_logistica.py"
     umbrales = "unidad12-clasificacion/ejemplos/02_comparar_umbrales.py"
+    arboles = "unidad13-arboles-ensambles/ejemplos/01_controlar_complejidad.py"
+    ensambles = "unidad13-arboles-ensambles/ejemplos/02_comparar_ensambles.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -140,6 +148,10 @@ def main():
         ([logistica, "--evaluar-prueba"], "VP=12; VN=20; FP=4; FN=4; F1=0.750"),
         ([umbrales, "--evaluar-prueba"], "VP=8; VN=74; FP=17; FN=1; F1=0.471"),
         ([logistica, "--senal", "100"], "señal=100; p(1)=0.913; clase=1; fuera del rango de entrenamiento: sí"),
+        ([arboles, "--evaluar-prueba"], "VP=16; VN=22; FP=0; FN=2; F1=0.941"),
+        ([ensambles, "--evaluar-prueba"], "VP=28; VN=74; FP=14; FN=4; F1=0.757"),
+        ([arboles, "--consulta", "100"], "Consulta: p(1)=0.133; clase=0; fuera del rango de entrenamiento: sí"),
+        ([ensambles, "--semilla", "29"], "Semilla de modelos: 29"),
     ]
     for comando, esperado in variantes:
         ejecutar(comando, esperado)
@@ -162,6 +174,11 @@ def main():
             for cierre in (False, True):
                 extras = ["--evaluar-prueba"] if cierre else []
                 ejecutar([programa, *extras, "--salida", Path(carpeta) / f"clasificacion-{i}-{cierre}", "--graficos"], "Exportación:")
+                ejecutados += 1
+        for i, programa in enumerate((arboles, ensambles)):
+            for cierre in (False, True):
+                extras = ["--evaluar-prueba"] if cierre else []
+                ejecutar([programa, *extras, "--salida", Path(carpeta) / f"arboles-{i}-{cierre}", "--graficos"], "Exportación:")
                 ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:
