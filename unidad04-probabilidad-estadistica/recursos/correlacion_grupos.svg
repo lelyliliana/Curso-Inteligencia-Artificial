@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="450" viewBox="0 0 760 450" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Correlación global y dentro de dos grupos sintéticos</title>
+  <desc id="descripcion">Grupo A: pares 1,10; 2,9; 3,8. Grupo B: 7,30; 8,29; 9,28. En cada grupo y disminuye cuando x aumenta. Al reunirlos, la asociación global es positiva. La recta global es y igual a 3.034483 x más 3.827586. No se interpreta causalmente.</desc>
+  <rect width="760" height="450" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172b4d">
+    <text x="380" y="27" text-anchor="middle" font-size="20" font-weight="bold">La agregación cambia la asociación</text>
+    <g stroke="#e1e7ee" stroke-width="1">
+      <path d="M80 300H680 M80 260H680 M80 220H680 M80 180H680 M80 140H680 M80 100H680 M80 60H680"/>
+      <path d="M200 50V340 M320 50V340 M440 50V340 M560 50V340 M680 50V340"/>
+    </g>
+    <path d="M80 50V340H680" stroke="#172b4d" stroke-width="2" fill="none"/>
+    <g font-size="13" text-anchor="end">
+      <text x="70" y="345">0</text><text x="70" y="305">5</text><text x="70" y="265">10</text>
+      <text x="70" y="225">15</text><text x="70" y="185">20</text><text x="70" y="145">25</text>
+      <text x="70" y="105">30</text><text x="70" y="65">35</text>
+    </g>
+    <g font-size="13" text-anchor="middle">
+      <text x="80" y="360">0</text><text x="200" y="360">2</text><text x="320" y="360">4</text>
+      <text x="440" y="360">6</text><text x="560" y="360">8</text><text x="680" y="360">10</text>
+    </g>
+    <text x="382" y="383" text-anchor="middle" font-size="14">x: variable ilustrativa</text>
+    <text x="24" y="199" transform="rotate(-90 24 199)" text-anchor="middle" font-size="14">y: variable ilustrativa</text>
+    <path d="M80 309.379312L680 66.620688" stroke="#7a3eb1" stroke-width="2.5" stroke-dasharray="8 6" fill="none"/>
+    <path d="M140 260L260 276" stroke="#b65a00" stroke-width="3" fill="none"/>
+    <path d="M500 100L620 116" stroke="#007e77" stroke-width="3" fill="none"/>
+    <g fill="#b65a00" stroke="#fff" stroke-width="1.5"><circle cx="140" cy="260" r="6"/><circle cx="200" cy="268" r="6"/><circle cx="260" cy="276" r="6"/></g>
+    <g fill="#007e77" stroke="#fff" stroke-width="1.5"><circle cx="500" cy="100" r="6"/><circle cx="560" cy="108" r="6"/><circle cx="620" cy="116" r="6"/></g>
+    <text x="215" y="246" text-anchor="middle" font-size="14">Grupo A: r = −1</text>
+    <text x="565" y="86" text-anchor="middle" font-size="14">Grupo B: r = −1</text>
+    <path d="M106 407H146" stroke="#7a3eb1" stroke-width="2.5" stroke-dasharray="8 6"/>
+    <text x="157" y="412" font-size="14">Recta global: r ≈ 0.940330</text>
+    <text x="380" y="438" text-anchor="middle" font-size="13">Seis pares fabricados. Asociación no implica causalidad.</text>
+  </g>
+</svg>

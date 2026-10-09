@@ -1,6 +1,6 @@
 # Unidad 3 — Matemática aplicada: vectores, matrices y optimización
 
-[Unidad anterior: del problema al proyecto](../unidad02-proyecto-ia/README.md) · [Volver al índice](../README.md)
+[Unidad anterior: del problema al proyecto](../unidad02-proyecto-ia/README.md) · [Volver al índice](../README.md) · [Siguiente unidad: probabilidad y estadística](../unidad04-probabilidad-estadistica/README.md)
 
 Un modelo recibe números, calcula una salida y, durante el entrenamiento, modifica sus parámetros para reducir una pérdida. Para comprender ese proceso necesitamos saber cómo se organizan los números, qué operaciones son válidas y qué significa mejorar una función.
 
@@ -766,7 +766,7 @@ Los vectores organizan características; las matrices reúnen observaciones y pe
 
 En los laboratorios calculamos predicciones, observamos diferentes trayectorias y ajustamos una relación sintética exacta. El resultado demuestra el procedimiento bajo esas condiciones. La formulación, los datos y la evaluación siguen siendo necesarios para construir una aplicación útil.
 
-La siguiente unidad de la ruta estudia **probabilidad y estadística**. Consulta su disponibilidad en el índice.
+Continúa con la [Unidad 4 — Probabilidad y estadística](../unidad04-probabilidad-estadistica/README.md), donde interpretarás variación de datos, probabilidades condicionadas e incertidumbre de estimaciones.
 
 ## Referencias y lecturas
 
@@ -777,4 +777,4 @@ Los ejemplos, datos y desarrollos numéricos son material educativo propio. Las 
 3. Google for Developers. *Machine Learning Crash Course*. [Descenso de gradiente](https://developers.google.com/machine-learning/crash-course/linear-regression/gradient-descent).
 4. Google for Developers. *Machine Learning Crash Course*. [Hiperparámetros y tasa de aprendizaje](https://developers.google.com/machine-learning/crash-course/linear-regression/hyperparameters).
 
-[Unidad anterior](../unidad02-proyecto-ia/README.md) · [Volver al índice](../README.md)
+[Unidad anterior](../unidad02-proyecto-ia/README.md) · [Volver al índice](../README.md) · [Siguiente unidad](../unidad04-probabilidad-estadistica/README.md)
