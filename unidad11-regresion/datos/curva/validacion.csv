@@ -1,0 +1,10 @@
+caso_id,horas_planificadas,consumo_kwh
+curva-validacion-01,1.00,5.55000
+curva-validacion-02,2.00,8.20000
+curva-validacion-03,3.00,11.55000
+curva-validacion-04,4.00,17.20000
+curva-validacion-05,5.00,23.55000
+curva-validacion-06,6.00,32.20000
+curva-validacion-07,7.00,41.55000
+curva-validacion-08,8.00,53.20000
+curva-validacion-09,9.00,65.55000

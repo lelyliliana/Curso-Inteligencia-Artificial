@@ -1,0 +1,1121 @@
+{
+  "protocolo": "regresion-v1",
+  "experimento": "lineal",
+  "versiones": {
+    "python": "3.12.3",
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6"
+  },
+  "fuentes": {
+    "entrenamiento": {
+      "archivo": "entrenamiento.csv",
+      "sha256": "83103bf874f2eacc3bc9cdf9bcd0da08b5c15aae1a15fa440b540da241a2193d",
+      "n": 24
+    },
+    "validacion": {
+      "archivo": "validacion.csv",
+      "sha256": "dc89671f7596f8bc23a34d5d330582592a4374335e99114994ea04aa192020c0",
+      "n": 12
+    }
+  },
+  "modelos": {
+    "mediana": {
+      "tipo": "constante",
+      "coeficientes": [
+        12.0
+      ],
+      "centro": 0.0,
+      "escala": 1.0,
+      "rango_x": [
+        1.0,
+        8.0
+      ]
+    },
+    "media": {
+      "tipo": "constante",
+      "coeficientes": [
+        12.0
+      ],
+      "centro": 0.0,
+      "escala": 1.0,
+      "rango_x": [
+        1.0,
+        8.0
+      ]
+    },
+    "recta": {
+      "tipo": "recta",
+      "coeficientes": [
+        3.0,
+        2.0
+      ],
+      "centro": 0.0,
+      "escala": 1.0,
+      "rango_x": [
+        1.0,
+        8.0
+      ]
+    }
+  },
+  "entrenamiento": {
+    "mediana": {
+      "metricas": {
+        "n": 24,
+        "mae": 4.0,
+        "rmse": 4.594199241072014,
+        "sesgo": 0.0,
+        "r2": 0.0
+      },
+      "predicciones": [
+        {
+          "caso_id": "lineal-entrenamiento-01",
+          "horas_planificadas": 1.0,
+          "real": 4.6,
+          "prediccion": 12.0,
+          "residuo": -7.4,
+          "error_absoluto": 7.4,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-02",
+          "horas_planificadas": 1.0,
+          "real": 5.0,
+          "prediccion": 12.0,
+          "residuo": -7.0,
+          "error_absoluto": 7.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-03",
+          "horas_planificadas": 1.0,
+          "real": 5.4,
+          "prediccion": 12.0,
+          "residuo": -6.6,
+          "error_absoluto": 6.6,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-04",
+          "horas_planificadas": 2.0,
+          "real": 6.6,
+          "prediccion": 12.0,
+          "residuo": -5.4,
+          "error_absoluto": 5.4,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-05",
+          "horas_planificadas": 2.0,
+          "real": 7.0,
+          "prediccion": 12.0,
+          "residuo": -5.0,
+          "error_absoluto": 5.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-06",
+          "horas_planificadas": 2.0,
+          "real": 7.4,
+          "prediccion": 12.0,
+          "residuo": -4.6,
+          "error_absoluto": 4.6,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-07",
+          "horas_planificadas": 3.0,
+          "real": 8.6,
+          "prediccion": 12.0,
+          "residuo": -3.4000000000000004,
+          "error_absoluto": 3.4000000000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-08",
+          "horas_planificadas": 3.0,
+          "real": 9.0,
+          "prediccion": 12.0,
+          "residuo": -3.0,
+          "error_absoluto": 3.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-09",
+          "horas_planificadas": 3.0,
+          "real": 9.4,
+          "prediccion": 12.0,
+          "residuo": -2.5999999999999996,
+          "error_absoluto": 2.5999999999999996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-10",
+          "horas_planificadas": 4.0,
+          "real": 10.6,
+          "prediccion": 12.0,
+          "residuo": -1.4000000000000004,
+          "error_absoluto": 1.4000000000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-11",
+          "horas_planificadas": 4.0,
+          "real": 11.0,
+          "prediccion": 12.0,
+          "residuo": -1.0,
+          "error_absoluto": 1.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-12",
+          "horas_planificadas": 4.0,
+          "real": 11.4,
+          "prediccion": 12.0,
+          "residuo": -0.5999999999999996,
+          "error_absoluto": 0.5999999999999996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-13",
+          "horas_planificadas": 5.0,
+          "real": 12.6,
+          "prediccion": 12.0,
+          "residuo": 0.5999999999999996,
+          "error_absoluto": 0.5999999999999996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-14",
+          "horas_planificadas": 5.0,
+          "real": 13.0,
+          "prediccion": 12.0,
+          "residuo": 1.0,
+          "error_absoluto": 1.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-15",
+          "horas_planificadas": 5.0,
+          "real": 13.4,
+          "prediccion": 12.0,
+          "residuo": 1.4000000000000004,
+          "error_absoluto": 1.4000000000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-16",
+          "horas_planificadas": 6.0,
+          "real": 14.6,
+          "prediccion": 12.0,
+          "residuo": 2.5999999999999996,
+          "error_absoluto": 2.5999999999999996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-17",
+          "horas_planificadas": 6.0,
+          "real": 15.0,
+          "prediccion": 12.0,
+          "residuo": 3.0,
+          "error_absoluto": 3.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-18",
+          "horas_planificadas": 6.0,
+          "real": 15.4,
+          "prediccion": 12.0,
+          "residuo": 3.4000000000000004,
+          "error_absoluto": 3.4000000000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-19",
+          "horas_planificadas": 7.0,
+          "real": 16.6,
+          "prediccion": 12.0,
+          "residuo": 4.600000000000001,
+          "error_absoluto": 4.600000000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-20",
+          "horas_planificadas": 7.0,
+          "real": 17.0,
+          "prediccion": 12.0,
+          "residuo": 5.0,
+          "error_absoluto": 5.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-21",
+          "horas_planificadas": 7.0,
+          "real": 17.4,
+          "prediccion": 12.0,
+          "residuo": 5.399999999999999,
+          "error_absoluto": 5.399999999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-22",
+          "horas_planificadas": 8.0,
+          "real": 18.6,
+          "prediccion": 12.0,
+          "residuo": 6.600000000000001,
+          "error_absoluto": 6.600000000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-23",
+          "horas_planificadas": 8.0,
+          "real": 19.0,
+          "prediccion": 12.0,
+          "residuo": 7.0,
+          "error_absoluto": 7.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-24",
+          "horas_planificadas": 8.0,
+          "real": 19.4,
+          "prediccion": 12.0,
+          "residuo": 7.399999999999999,
+          "error_absoluto": 7.399999999999999,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "media": {
+      "metricas": {
+        "n": 24,
+        "mae": 4.0,
+        "rmse": 4.594199241072014,
+        "sesgo": 0.0,
+        "r2": 0.0
+      },
+      "predicciones": [
+        {
+          "caso_id": "lineal-entrenamiento-01",
+          "horas_planificadas": 1.0,
+          "real": 4.6,
+          "prediccion": 12.0,
+          "residuo": -7.4,
+          "error_absoluto": 7.4,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-02",
+          "horas_planificadas": 1.0,
+          "real": 5.0,
+          "prediccion": 12.0,
+          "residuo": -7.0,
+          "error_absoluto": 7.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-03",
+          "horas_planificadas": 1.0,
+          "real": 5.4,
+          "prediccion": 12.0,
+          "residuo": -6.6,
+          "error_absoluto": 6.6,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-04",
+          "horas_planificadas": 2.0,
+          "real": 6.6,
+          "prediccion": 12.0,
+          "residuo": -5.4,
+          "error_absoluto": 5.4,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-05",
+          "horas_planificadas": 2.0,
+          "real": 7.0,
+          "prediccion": 12.0,
+          "residuo": -5.0,
+          "error_absoluto": 5.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-06",
+          "horas_planificadas": 2.0,
+          "real": 7.4,
+          "prediccion": 12.0,
+          "residuo": -4.6,
+          "error_absoluto": 4.6,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-07",
+          "horas_planificadas": 3.0,
+          "real": 8.6,
+          "prediccion": 12.0,
+          "residuo": -3.4000000000000004,
+          "error_absoluto": 3.4000000000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-08",
+          "horas_planificadas": 3.0,
+          "real": 9.0,
+          "prediccion": 12.0,
+          "residuo": -3.0,
+          "error_absoluto": 3.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-09",
+          "horas_planificadas": 3.0,
+          "real": 9.4,
+          "prediccion": 12.0,
+          "residuo": -2.5999999999999996,
+          "error_absoluto": 2.5999999999999996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-10",
+          "horas_planificadas": 4.0,
+          "real": 10.6,
+          "prediccion": 12.0,
+          "residuo": -1.4000000000000004,
+          "error_absoluto": 1.4000000000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-11",
+          "horas_planificadas": 4.0,
+          "real": 11.0,
+          "prediccion": 12.0,
+          "residuo": -1.0,
+          "error_absoluto": 1.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-12",
+          "horas_planificadas": 4.0,
+          "real": 11.4,
+          "prediccion": 12.0,
+          "residuo": -0.5999999999999996,
+          "error_absoluto": 0.5999999999999996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-13",
+          "horas_planificadas": 5.0,
+          "real": 12.6,
+          "prediccion": 12.0,
+          "residuo": 0.5999999999999996,
+          "error_absoluto": 0.5999999999999996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-14",
+          "horas_planificadas": 5.0,
+          "real": 13.0,
+          "prediccion": 12.0,
+          "residuo": 1.0,
+          "error_absoluto": 1.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-15",
+          "horas_planificadas": 5.0,
+          "real": 13.4,
+          "prediccion": 12.0,
+          "residuo": 1.4000000000000004,
+          "error_absoluto": 1.4000000000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-16",
+          "horas_planificadas": 6.0,
+          "real": 14.6,
+          "prediccion": 12.0,
+          "residuo": 2.5999999999999996,
+          "error_absoluto": 2.5999999999999996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-17",
+          "horas_planificadas": 6.0,
+          "real": 15.0,
+          "prediccion": 12.0,
+          "residuo": 3.0,
+          "error_absoluto": 3.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-18",
+          "horas_planificadas": 6.0,
+          "real": 15.4,
+          "prediccion": 12.0,
+          "residuo": 3.4000000000000004,
+          "error_absoluto": 3.4000000000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-19",
+          "horas_planificadas": 7.0,
+          "real": 16.6,
+          "prediccion": 12.0,
+          "residuo": 4.600000000000001,
+          "error_absoluto": 4.600000000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-20",
+          "horas_planificadas": 7.0,
+          "real": 17.0,
+          "prediccion": 12.0,
+          "residuo": 5.0,
+          "error_absoluto": 5.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-21",
+          "horas_planificadas": 7.0,
+          "real": 17.4,
+          "prediccion": 12.0,
+          "residuo": 5.399999999999999,
+          "error_absoluto": 5.399999999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-22",
+          "horas_planificadas": 8.0,
+          "real": 18.6,
+          "prediccion": 12.0,
+          "residuo": 6.600000000000001,
+          "error_absoluto": 6.600000000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-23",
+          "horas_planificadas": 8.0,
+          "real": 19.0,
+          "prediccion": 12.0,
+          "residuo": 7.0,
+          "error_absoluto": 7.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-24",
+          "horas_planificadas": 8.0,
+          "real": 19.4,
+          "prediccion": 12.0,
+          "residuo": 7.399999999999999,
+          "error_absoluto": 7.399999999999999,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "recta": {
+      "metricas": {
+        "n": 24,
+        "mae": 0.2666666666666666,
+        "rmse": 0.3265986323710903,
+        "sesgo": 0.0,
+        "r2": 0.9949463044851548
+      },
+      "predicciones": [
+        {
+          "caso_id": "lineal-entrenamiento-01",
+          "horas_planificadas": 1.0,
+          "real": 4.6,
+          "prediccion": 5.0,
+          "residuo": -0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-02",
+          "horas_planificadas": 1.0,
+          "real": 5.0,
+          "prediccion": 5.0,
+          "residuo": 0.0,
+          "error_absoluto": 0.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-03",
+          "horas_planificadas": 1.0,
+          "real": 5.4,
+          "prediccion": 5.0,
+          "residuo": 0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-04",
+          "horas_planificadas": 2.0,
+          "real": 6.6,
+          "prediccion": 7.0,
+          "residuo": -0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-05",
+          "horas_planificadas": 2.0,
+          "real": 7.0,
+          "prediccion": 7.0,
+          "residuo": 0.0,
+          "error_absoluto": 0.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-06",
+          "horas_planificadas": 2.0,
+          "real": 7.4,
+          "prediccion": 7.0,
+          "residuo": 0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-07",
+          "horas_planificadas": 3.0,
+          "real": 8.6,
+          "prediccion": 9.0,
+          "residuo": -0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-08",
+          "horas_planificadas": 3.0,
+          "real": 9.0,
+          "prediccion": 9.0,
+          "residuo": 0.0,
+          "error_absoluto": 0.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-09",
+          "horas_planificadas": 3.0,
+          "real": 9.4,
+          "prediccion": 9.0,
+          "residuo": 0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-10",
+          "horas_planificadas": 4.0,
+          "real": 10.6,
+          "prediccion": 11.0,
+          "residuo": -0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-11",
+          "horas_planificadas": 4.0,
+          "real": 11.0,
+          "prediccion": 11.0,
+          "residuo": 0.0,
+          "error_absoluto": 0.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-12",
+          "horas_planificadas": 4.0,
+          "real": 11.4,
+          "prediccion": 11.0,
+          "residuo": 0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-13",
+          "horas_planificadas": 5.0,
+          "real": 12.6,
+          "prediccion": 13.0,
+          "residuo": -0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-14",
+          "horas_planificadas": 5.0,
+          "real": 13.0,
+          "prediccion": 13.0,
+          "residuo": 0.0,
+          "error_absoluto": 0.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-15",
+          "horas_planificadas": 5.0,
+          "real": 13.4,
+          "prediccion": 13.0,
+          "residuo": 0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-16",
+          "horas_planificadas": 6.0,
+          "real": 14.6,
+          "prediccion": 15.0,
+          "residuo": -0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-17",
+          "horas_planificadas": 6.0,
+          "real": 15.0,
+          "prediccion": 15.0,
+          "residuo": 0.0,
+          "error_absoluto": 0.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-18",
+          "horas_planificadas": 6.0,
+          "real": 15.4,
+          "prediccion": 15.0,
+          "residuo": 0.40000000000000036,
+          "error_absoluto": 0.40000000000000036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-19",
+          "horas_planificadas": 7.0,
+          "real": 16.6,
+          "prediccion": 17.0,
+          "residuo": -0.3999999999999986,
+          "error_absoluto": 0.3999999999999986,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-20",
+          "horas_planificadas": 7.0,
+          "real": 17.0,
+          "prediccion": 17.0,
+          "residuo": 0.0,
+          "error_absoluto": 0.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-21",
+          "horas_planificadas": 7.0,
+          "real": 17.4,
+          "prediccion": 17.0,
+          "residuo": 0.3999999999999986,
+          "error_absoluto": 0.3999999999999986,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-22",
+          "horas_planificadas": 8.0,
+          "real": 18.6,
+          "prediccion": 19.0,
+          "residuo": -0.3999999999999986,
+          "error_absoluto": 0.3999999999999986,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-23",
+          "horas_planificadas": 8.0,
+          "real": 19.0,
+          "prediccion": 19.0,
+          "residuo": 0.0,
+          "error_absoluto": 0.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-entrenamiento-24",
+          "horas_planificadas": 8.0,
+          "real": 19.4,
+          "prediccion": 19.0,
+          "residuo": 0.3999999999999986,
+          "error_absoluto": 0.3999999999999986,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    }
+  },
+  "validacion": {
+    "mediana": {
+      "metricas": {
+        "n": 12,
+        "mae": 3.05,
+        "rmse": 3.5716476123305707,
+        "sesgo": -0.9999999999999999,
+        "r2": -0.08505812305075122
+      },
+      "predicciones": [
+        {
+          "caso_id": "lineal-validacion-01",
+          "horas_planificadas": 1.5,
+          "real": 5.7,
+          "prediccion": 12.0,
+          "residuo": -6.3,
+          "error_absoluto": 6.3,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-02",
+          "horas_planificadas": 1.5,
+          "real": 6.3,
+          "prediccion": 12.0,
+          "residuo": -5.7,
+          "error_absoluto": 5.7,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-03",
+          "horas_planificadas": 2.5,
+          "real": 7.7,
+          "prediccion": 12.0,
+          "residuo": -4.3,
+          "error_absoluto": 4.3,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-04",
+          "horas_planificadas": 2.5,
+          "real": 8.3,
+          "prediccion": 12.0,
+          "residuo": -3.6999999999999993,
+          "error_absoluto": 3.6999999999999993,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-05",
+          "horas_planificadas": 3.5,
+          "real": 9.7,
+          "prediccion": 12.0,
+          "residuo": -2.3000000000000007,
+          "error_absoluto": 2.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-06",
+          "horas_planificadas": 3.5,
+          "real": 10.3,
+          "prediccion": 12.0,
+          "residuo": -1.6999999999999993,
+          "error_absoluto": 1.6999999999999993,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-07",
+          "horas_planificadas": 4.5,
+          "real": 11.7,
+          "prediccion": 12.0,
+          "residuo": -0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-08",
+          "horas_planificadas": 4.5,
+          "real": 12.3,
+          "prediccion": 12.0,
+          "residuo": 0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-09",
+          "horas_planificadas": 5.5,
+          "real": 13.7,
+          "prediccion": 12.0,
+          "residuo": 1.6999999999999993,
+          "error_absoluto": 1.6999999999999993,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-10",
+          "horas_planificadas": 5.5,
+          "real": 14.3,
+          "prediccion": 12.0,
+          "residuo": 2.3000000000000007,
+          "error_absoluto": 2.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-11",
+          "horas_planificadas": 6.5,
+          "real": 15.7,
+          "prediccion": 12.0,
+          "residuo": 3.6999999999999993,
+          "error_absoluto": 3.6999999999999993,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-12",
+          "horas_planificadas": 6.5,
+          "real": 16.3,
+          "prediccion": 12.0,
+          "residuo": 4.300000000000001,
+          "error_absoluto": 4.300000000000001,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "media": {
+      "metricas": {
+        "n": 12,
+        "mae": 3.05,
+        "rmse": 3.5716476123305707,
+        "sesgo": -0.9999999999999999,
+        "r2": -0.08505812305075122
+      },
+      "predicciones": [
+        {
+          "caso_id": "lineal-validacion-01",
+          "horas_planificadas": 1.5,
+          "real": 5.7,
+          "prediccion": 12.0,
+          "residuo": -6.3,
+          "error_absoluto": 6.3,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-02",
+          "horas_planificadas": 1.5,
+          "real": 6.3,
+          "prediccion": 12.0,
+          "residuo": -5.7,
+          "error_absoluto": 5.7,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-03",
+          "horas_planificadas": 2.5,
+          "real": 7.7,
+          "prediccion": 12.0,
+          "residuo": -4.3,
+          "error_absoluto": 4.3,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-04",
+          "horas_planificadas": 2.5,
+          "real": 8.3,
+          "prediccion": 12.0,
+          "residuo": -3.6999999999999993,
+          "error_absoluto": 3.6999999999999993,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-05",
+          "horas_planificadas": 3.5,
+          "real": 9.7,
+          "prediccion": 12.0,
+          "residuo": -2.3000000000000007,
+          "error_absoluto": 2.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-06",
+          "horas_planificadas": 3.5,
+          "real": 10.3,
+          "prediccion": 12.0,
+          "residuo": -1.6999999999999993,
+          "error_absoluto": 1.6999999999999993,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-07",
+          "horas_planificadas": 4.5,
+          "real": 11.7,
+          "prediccion": 12.0,
+          "residuo": -0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-08",
+          "horas_planificadas": 4.5,
+          "real": 12.3,
+          "prediccion": 12.0,
+          "residuo": 0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-09",
+          "horas_planificadas": 5.5,
+          "real": 13.7,
+          "prediccion": 12.0,
+          "residuo": 1.6999999999999993,
+          "error_absoluto": 1.6999999999999993,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-10",
+          "horas_planificadas": 5.5,
+          "real": 14.3,
+          "prediccion": 12.0,
+          "residuo": 2.3000000000000007,
+          "error_absoluto": 2.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-11",
+          "horas_planificadas": 6.5,
+          "real": 15.7,
+          "prediccion": 12.0,
+          "residuo": 3.6999999999999993,
+          "error_absoluto": 3.6999999999999993,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-12",
+          "horas_planificadas": 6.5,
+          "real": 16.3,
+          "prediccion": 12.0,
+          "residuo": 4.300000000000001,
+          "error_absoluto": 4.300000000000001,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "recta": {
+      "metricas": {
+        "n": 12,
+        "mae": 0.3000000000000005,
+        "rmse": 0.3000000000000005,
+        "sesgo": 7.401486830834377e-17,
+        "r2": 0.9923447689254323
+      },
+      "predicciones": [
+        {
+          "caso_id": "lineal-validacion-01",
+          "horas_planificadas": 1.5,
+          "real": 5.7,
+          "prediccion": 6.0,
+          "residuo": -0.2999999999999998,
+          "error_absoluto": 0.2999999999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-02",
+          "horas_planificadas": 1.5,
+          "real": 6.3,
+          "prediccion": 6.0,
+          "residuo": 0.2999999999999998,
+          "error_absoluto": 0.2999999999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-03",
+          "horas_planificadas": 2.5,
+          "real": 7.7,
+          "prediccion": 8.0,
+          "residuo": -0.2999999999999998,
+          "error_absoluto": 0.2999999999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-04",
+          "horas_planificadas": 2.5,
+          "real": 8.3,
+          "prediccion": 8.0,
+          "residuo": 0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-05",
+          "horas_planificadas": 3.5,
+          "real": 9.7,
+          "prediccion": 10.0,
+          "residuo": -0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-06",
+          "horas_planificadas": 3.5,
+          "real": 10.3,
+          "prediccion": 10.0,
+          "residuo": 0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-07",
+          "horas_planificadas": 4.5,
+          "real": 11.7,
+          "prediccion": 12.0,
+          "residuo": -0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-08",
+          "horas_planificadas": 4.5,
+          "real": 12.3,
+          "prediccion": 12.0,
+          "residuo": 0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-09",
+          "horas_planificadas": 5.5,
+          "real": 13.7,
+          "prediccion": 14.0,
+          "residuo": -0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-10",
+          "horas_planificadas": 5.5,
+          "real": 14.3,
+          "prediccion": 14.0,
+          "residuo": 0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-11",
+          "horas_planificadas": 6.5,
+          "real": 15.7,
+          "prediccion": 16.0,
+          "residuo": -0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "lineal-validacion-12",
+          "horas_planificadas": 6.5,
+          "real": 16.3,
+          "prediccion": 16.0,
+          "residuo": 0.3000000000000007,
+          "error_absoluto": 0.3000000000000007,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    }
+  },
+  "seleccionado": "recta",
+  "prueba": null,
+  "consulta": null,
+  "criterio": {
+    "metrica": "mae",
+    "sentido": "minimizar",
+    "orden_desempate": [
+      "mediana",
+      "media",
+      "recta"
+    ],
+    "reajuste_con_validacion": false
+  }
+}

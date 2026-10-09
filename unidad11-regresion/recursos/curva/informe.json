@@ -1,0 +1,1089 @@
+{
+  "protocolo": "regresion-v1",
+  "experimento": "curva",
+  "versiones": {
+    "python": "3.12.3",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.8"
+  },
+  "fuentes": {
+    "entrenamiento": {
+      "archivo": "entrenamiento.csv",
+      "sha256": "22442bdf5ca8327906645ce27e13646bd2803ee8bad6f2d217e3b1f5ecd9ffb9",
+      "n": 10
+    },
+    "validacion": {
+      "archivo": "validacion.csv",
+      "sha256": "8bddfd350632d4927379f86a214042ea294419f092310dcfce085d8c8f3cbb5b",
+      "n": 9
+    }
+  },
+  "modelos": {
+    "mediana": {
+      "tipo": "constante",
+      "coeficientes": [
+        23.8875
+      ],
+      "centro": 0.0,
+      "escala": 1.0,
+      "rango_x": [
+        0.5,
+        9.5
+      ]
+    },
+    "media": {
+      "tipo": "constante",
+      "coeficientes": [
+        29.9375
+      ],
+      "centro": 0.0,
+      "escala": 1.0,
+      "rango_x": [
+        0.5,
+        9.5
+      ]
+    },
+    "recta": {
+      "tipo": "recta",
+      "coeficientes": [
+        -7.732196969696965,
+        7.533939393939393
+      ],
+      "centro": 0.0,
+      "escala": 1.0,
+      "rango_x": [
+        0.5,
+        9.5
+      ]
+    },
+    "cuadratica": {
+      "tipo": "polinomio",
+      "coeficientes": [
+        23.840624999999992,
+        33.9027272727273,
+        14.965056818181836
+      ],
+      "centro": 5.0,
+      "escala": 4.5,
+      "rango_x": [
+        0.5,
+        9.5
+      ]
+    },
+    "grado9": {
+      "tipo": "polinomio",
+      "coeficientes": [
+        23.705856323242067,
+        40.40120553152906,
+        14.569814104353782,
+        -146.79207798549575,
+        11.939688720698674,
+        743.9804516601715,
+        -26.95840576171326,
+        -1258.045205775683,
+        15.430546613418691,
+        654.7556265694768
+      ],
+      "centro": 5.0,
+      "escala": 4.5,
+      "rango_x": [
+        0.5,
+        9.5
+      ]
+    }
+  },
+  "entrenamiento": {
+    "mediana": {
+      "metricas": {
+        "n": 10,
+        "mae": 18.849999999999998,
+        "rmse": 23.1102790982714,
+        "sesgo": 6.049999999999999,
+        "r2": -0.07357545240284824
+      },
+      "predicciones": [
+        {
+          "caso_id": "curva-entrenamiento-01",
+          "horas_planificadas": 0.5,
+          "real": 4.3875,
+          "prediccion": 23.8875,
+          "residuo": -19.5,
+          "error_absoluto": 19.5,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-02",
+          "horas_planificadas": 1.5,
+          "real": 7.2875,
+          "prediccion": 23.8875,
+          "residuo": -16.6,
+          "error_absoluto": 16.6,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-03",
+          "horas_planificadas": 2.5,
+          "real": 9.2875,
+          "prediccion": 23.8875,
+          "residuo": -14.6,
+          "error_absoluto": 14.6,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-04",
+          "horas_planificadas": 3.5,
+          "real": 14.8875,
+          "prediccion": 23.8875,
+          "residuo": -9.0,
+          "error_absoluto": 9.0,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-05",
+          "horas_planificadas": 4.5,
+          "real": 19.5875,
+          "prediccion": 23.8875,
+          "residuo": -4.300000000000001,
+          "error_absoluto": 4.300000000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-06",
+          "horas_planificadas": 5.5,
+          "real": 28.1875,
+          "prediccion": 23.8875,
+          "residuo": 4.300000000000001,
+          "error_absoluto": 4.300000000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-07",
+          "horas_planificadas": 6.5,
+          "real": 35.9875,
+          "prediccion": 23.8875,
+          "residuo": 12.099999999999998,
+          "error_absoluto": 12.099999999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-08",
+          "horas_planificadas": 7.5,
+          "real": 48.0875,
+          "prediccion": 23.8875,
+          "residuo": 24.2,
+          "error_absoluto": 24.2,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-09",
+          "horas_planificadas": 8.5,
+          "real": 58.6875,
+          "prediccion": 23.8875,
+          "residuo": 34.8,
+          "error_absoluto": 34.8,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-10",
+          "horas_planificadas": 9.5,
+          "real": 72.9875,
+          "prediccion": 23.8875,
+          "residuo": 49.099999999999994,
+          "error_absoluto": 49.099999999999994,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "media": {
+      "metricas": {
+        "n": 10,
+        "mae": 19.2,
+        "rmse": 22.304315725885875,
+        "sesgo": -7.105427357601002e-16,
+        "r2": 0.0
+      },
+      "predicciones": [
+        {
+          "caso_id": "curva-entrenamiento-01",
+          "horas_planificadas": 0.5,
+          "real": 4.3875,
+          "prediccion": 29.9375,
+          "residuo": -25.55,
+          "error_absoluto": 25.55,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-02",
+          "horas_planificadas": 1.5,
+          "real": 7.2875,
+          "prediccion": 29.9375,
+          "residuo": -22.65,
+          "error_absoluto": 22.65,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-03",
+          "horas_planificadas": 2.5,
+          "real": 9.2875,
+          "prediccion": 29.9375,
+          "residuo": -20.65,
+          "error_absoluto": 20.65,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-04",
+          "horas_planificadas": 3.5,
+          "real": 14.8875,
+          "prediccion": 29.9375,
+          "residuo": -15.05,
+          "error_absoluto": 15.05,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-05",
+          "horas_planificadas": 4.5,
+          "real": 19.5875,
+          "prediccion": 29.9375,
+          "residuo": -10.350000000000001,
+          "error_absoluto": 10.350000000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-06",
+          "horas_planificadas": 5.5,
+          "real": 28.1875,
+          "prediccion": 29.9375,
+          "residuo": -1.75,
+          "error_absoluto": 1.75,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-07",
+          "horas_planificadas": 6.5,
+          "real": 35.9875,
+          "prediccion": 29.9375,
+          "residuo": 6.049999999999997,
+          "error_absoluto": 6.049999999999997,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-08",
+          "horas_planificadas": 7.5,
+          "real": 48.0875,
+          "prediccion": 29.9375,
+          "residuo": 18.15,
+          "error_absoluto": 18.15,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-09",
+          "horas_planificadas": 8.5,
+          "real": 58.6875,
+          "prediccion": 29.9375,
+          "residuo": 28.75,
+          "error_absoluto": 28.75,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-10",
+          "horas_planificadas": 9.5,
+          "real": 72.9875,
+          "prediccion": 29.9375,
+          "residuo": 43.05,
+          "error_absoluto": 43.05,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "recta": {
+      "metricas": {
+        "n": 10,
+        "mae": 4.720000000000001,
+        "rmse": 5.404673622865397,
+        "sesgo": -2.4868995751603505e-15,
+        "r2": 0.9412833678175675
+      },
+      "predicciones": [
+        {
+          "caso_id": "curva-entrenamiento-01",
+          "horas_planificadas": 0.5,
+          "real": 4.3875,
+          "prediccion": -3.965227272727268,
+          "residuo": 8.352727272727268,
+          "error_absoluto": 8.352727272727268,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-02",
+          "horas_planificadas": 1.5,
+          "real": 7.2875,
+          "prediccion": 3.568712121212126,
+          "residuo": 3.7187878787878734,
+          "error_absoluto": 3.7187878787878734,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-03",
+          "horas_planificadas": 2.5,
+          "real": 9.2875,
+          "prediccion": 11.102651515151518,
+          "residuo": -1.815151515151518,
+          "error_absoluto": 1.815151515151518,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-04",
+          "horas_planificadas": 3.5,
+          "real": 14.8875,
+          "prediccion": 18.636590909090913,
+          "residuo": -3.7490909090909135,
+          "error_absoluto": 3.7490909090909135,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-05",
+          "horas_planificadas": 4.5,
+          "real": 19.5875,
+          "prediccion": 26.170530303030304,
+          "residuo": -6.583030303030306,
+          "error_absoluto": 6.583030303030306,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-06",
+          "horas_planificadas": 5.5,
+          "real": 28.1875,
+          "prediccion": 33.704469696969696,
+          "residuo": -5.516969696969696,
+          "error_absoluto": 5.516969696969696,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-07",
+          "horas_planificadas": 6.5,
+          "real": 35.9875,
+          "prediccion": 41.238409090909094,
+          "residuo": -5.250909090909097,
+          "error_absoluto": 5.250909090909097,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-08",
+          "horas_planificadas": 7.5,
+          "real": 48.0875,
+          "prediccion": 48.772348484848486,
+          "residuo": -0.6848484848484873,
+          "error_absoluto": 0.6848484848484873,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-09",
+          "horas_planificadas": 8.5,
+          "real": 58.6875,
+          "prediccion": 56.30628787878788,
+          "residuo": 2.3812121212121227,
+          "error_absoluto": 2.3812121212121227,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-10",
+          "horas_planificadas": 9.5,
+          "real": 72.9875,
+          "prediccion": 63.84022727272727,
+          "residuo": 9.147272727272728,
+          "error_absoluto": 9.147272727272728,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "cuadratica": {
+      "metricas": {
+        "n": 10,
+        "mae": 0.5830303030302992,
+        "rmse": 0.611658203227715,
+        "sesgo": 4.440892098500626e-16,
+        "r2": 0.9992479619733845
+      },
+      "predicciones": [
+        {
+          "caso_id": "curva-entrenamiento-01",
+          "horas_planificadas": 0.5,
+          "real": 4.3875,
+          "prediccion": 4.902954545454531,
+          "residuo": -0.5154545454545305,
+          "error_absoluto": 0.5154545454545305,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-02",
+          "horas_planificadas": 1.5,
+          "real": 7.2875,
+          "prediccion": 6.524772727272712,
+          "residuo": 0.7627272727272878,
+          "error_absoluto": 0.7627272727272878,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-03",
+          "horas_planificadas": 2.5,
+          "real": 9.2875,
+          "prediccion": 9.624621212121195,
+          "residuo": -0.33712121212119506,
+          "error_absoluto": 0.33712121212119506,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-04",
+          "horas_planificadas": 3.5,
+          "real": 14.8875,
+          "prediccion": 14.202499999999986,
+          "residuo": 0.6850000000000129,
+          "error_absoluto": 0.6850000000000129,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-05",
+          "horas_planificadas": 4.5,
+          "real": 19.5875,
+          "prediccion": 20.25840909090908,
+          "residuo": -0.6709090909090811,
+          "error_absoluto": 0.6709090909090811,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-06",
+          "horas_planificadas": 5.5,
+          "real": 28.1875,
+          "prediccion": 27.79234848484848,
+          "residuo": 0.3951515151515217,
+          "error_absoluto": 0.3951515151515217,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-07",
+          "horas_planificadas": 6.5,
+          "real": 35.9875,
+          "prediccion": 36.80431818181818,
+          "residuo": -0.816818181818185,
+          "error_absoluto": 0.816818181818185,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-08",
+          "horas_planificadas": 7.5,
+          "real": 48.0875,
+          "prediccion": 47.29431818181819,
+          "residuo": 0.7931818181818073,
+          "error_absoluto": 0.7931818181818073,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-09",
+          "horas_planificadas": 8.5,
+          "real": 58.6875,
+          "prediccion": 59.2623484848485,
+          "residuo": -0.574848484848502,
+          "error_absoluto": 0.574848484848502,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-10",
+          "horas_planificadas": 9.5,
+          "real": 72.9875,
+          "prediccion": 72.70840909090913,
+          "residuo": 0.2790909090908684,
+          "error_absoluto": 0.2790909090908684,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "grado9": {
+      "metricas": {
+        "n": 10,
+        "mae": 3.5837999234900053e-13,
+        "rmse": 5.80123510282728e-13,
+        "sesgo": 8.748557434046234e-14,
+        "r2": 1.0
+      },
+      "predicciones": [
+        {
+          "caso_id": "curva-entrenamiento-01",
+          "horas_planificadas": 0.5,
+          "real": 4.3875,
+          "prediccion": 4.387500000001175,
+          "residuo": -1.1750600492632657e-12,
+          "error_absoluto": 1.1750600492632657e-12,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-02",
+          "horas_planificadas": 1.5,
+          "real": 7.2875,
+          "prediccion": 7.287499999999813,
+          "residuo": 1.865174681370263e-13,
+          "error_absoluto": 1.865174681370263e-13,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-03",
+          "horas_planificadas": 2.5,
+          "real": 9.2875,
+          "prediccion": 9.28750000000012,
+          "residuo": -1.2079226507921703e-13,
+          "error_absoluto": 1.2079226507921703e-13,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-04",
+          "horas_planificadas": 3.5,
+          "real": 14.8875,
+          "prediccion": 14.887500000000058,
+          "residuo": -5.861977570020827e-14,
+          "error_absoluto": 5.861977570020827e-14,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-05",
+          "horas_planificadas": 4.5,
+          "real": 19.5875,
+          "prediccion": 19.587499999999892,
+          "residuo": 1.0658141036401503e-13,
+          "error_absoluto": 1.0658141036401503e-13,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-06",
+          "horas_planificadas": 5.5,
+          "real": 28.1875,
+          "prediccion": 28.18749999999989,
+          "residuo": 1.1013412404281553e-13,
+          "error_absoluto": 1.1013412404281553e-13,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-07",
+          "horas_planificadas": 6.5,
+          "real": 35.9875,
+          "prediccion": 35.98749999999985,
+          "residuo": 1.4921397450962104e-13,
+          "error_absoluto": 1.4921397450962104e-13,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-08",
+          "horas_planificadas": 7.5,
+          "real": 48.0875,
+          "prediccion": 48.087499999999764,
+          "residuo": 2.3447910280083306e-13,
+          "error_absoluto": 2.3447910280083306e-13,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-09",
+          "horas_planificadas": 8.5,
+          "real": 58.6875,
+          "prediccion": 58.68749999999991,
+          "residuo": 9.237055564881302e-14,
+          "error_absoluto": 9.237055564881302e-14,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-entrenamiento-10",
+          "horas_planificadas": 9.5,
+          "real": 72.9875,
+          "prediccion": 72.98749999999865,
+          "residuo": 1.3500311979441904e-12,
+          "error_absoluto": 1.3500311979441904e-12,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    }
+  },
+  "validacion": {
+    "mediana": {
+      "metricas": {
+        "n": 9,
+        "mae": 16.704166666666666,
+        "rmse": 20.42726978072313,
+        "sesgo": 4.840277777777779,
+        "r2": -0.059486054905027785
+      },
+      "predicciones": [
+        {
+          "caso_id": "curva-validacion-01",
+          "horas_planificadas": 1.0,
+          "real": 5.55,
+          "prediccion": 23.8875,
+          "residuo": -18.3375,
+          "error_absoluto": 18.3375,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-02",
+          "horas_planificadas": 2.0,
+          "real": 8.2,
+          "prediccion": 23.8875,
+          "residuo": -15.6875,
+          "error_absoluto": 15.6875,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-03",
+          "horas_planificadas": 3.0,
+          "real": 11.55,
+          "prediccion": 23.8875,
+          "residuo": -12.337499999999999,
+          "error_absoluto": 12.337499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-04",
+          "horas_planificadas": 4.0,
+          "real": 17.2,
+          "prediccion": 23.8875,
+          "residuo": -6.6875,
+          "error_absoluto": 6.6875,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-05",
+          "horas_planificadas": 5.0,
+          "real": 23.55,
+          "prediccion": 23.8875,
+          "residuo": -0.3374999999999986,
+          "error_absoluto": 0.3374999999999986,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-06",
+          "horas_planificadas": 6.0,
+          "real": 32.2,
+          "prediccion": 23.8875,
+          "residuo": 8.312500000000004,
+          "error_absoluto": 8.312500000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-07",
+          "horas_planificadas": 7.0,
+          "real": 41.55,
+          "prediccion": 23.8875,
+          "residuo": 17.662499999999998,
+          "error_absoluto": 17.662499999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-08",
+          "horas_planificadas": 8.0,
+          "real": 53.2,
+          "prediccion": 23.8875,
+          "residuo": 29.312500000000004,
+          "error_absoluto": 29.312500000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-09",
+          "horas_planificadas": 9.0,
+          "real": 65.55,
+          "prediccion": 23.8875,
+          "residuo": 41.662499999999994,
+          "error_absoluto": 41.662499999999994,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "media": {
+      "metricas": {
+        "n": 9,
+        "mae": 17.37638888888889,
+        "rmse": 19.88236629738355,
+        "sesgo": -1.2097222222222221,
+        "r2": -0.0037157450915239476
+      },
+      "predicciones": [
+        {
+          "caso_id": "curva-validacion-01",
+          "horas_planificadas": 1.0,
+          "real": 5.55,
+          "prediccion": 29.9375,
+          "residuo": -24.3875,
+          "error_absoluto": 24.3875,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-02",
+          "horas_planificadas": 2.0,
+          "real": 8.2,
+          "prediccion": 29.9375,
+          "residuo": -21.7375,
+          "error_absoluto": 21.7375,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-03",
+          "horas_planificadas": 3.0,
+          "real": 11.55,
+          "prediccion": 29.9375,
+          "residuo": -18.3875,
+          "error_absoluto": 18.3875,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-04",
+          "horas_planificadas": 4.0,
+          "real": 17.2,
+          "prediccion": 29.9375,
+          "residuo": -12.7375,
+          "error_absoluto": 12.7375,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-05",
+          "horas_planificadas": 5.0,
+          "real": 23.55,
+          "prediccion": 29.9375,
+          "residuo": -6.387499999999999,
+          "error_absoluto": 6.387499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-06",
+          "horas_planificadas": 6.0,
+          "real": 32.2,
+          "prediccion": 29.9375,
+          "residuo": 2.262500000000003,
+          "error_absoluto": 2.262500000000003,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-07",
+          "horas_planificadas": 7.0,
+          "real": 41.55,
+          "prediccion": 29.9375,
+          "residuo": 11.612499999999997,
+          "error_absoluto": 11.612499999999997,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-08",
+          "horas_planificadas": 8.0,
+          "real": 53.2,
+          "prediccion": 29.9375,
+          "residuo": 23.262500000000003,
+          "error_absoluto": 23.262500000000003,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-09",
+          "horas_planificadas": 9.0,
+          "real": 65.55,
+          "prediccion": 29.9375,
+          "residuo": 35.6125,
+          "error_absoluto": 35.6125,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "recta": {
+      "metricas": {
+        "n": 9,
+        "mae": 4.043055555555556,
+        "rmse": 4.507346092740142,
+        "sesgo": -1.2097222222222244,
+        "r2": 0.9484158346163285
+      },
+      "predicciones": [
+        {
+          "caso_id": "curva-validacion-01",
+          "horas_planificadas": 1.0,
+          "real": 5.55,
+          "prediccion": -0.1982575757575713,
+          "residuo": 5.748257575757571,
+          "error_absoluto": 5.748257575757571,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-02",
+          "horas_planificadas": 2.0,
+          "real": 8.2,
+          "prediccion": 7.335681818181822,
+          "residuo": 0.8643181818181773,
+          "error_absoluto": 0.8643181818181773,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-03",
+          "horas_planificadas": 3.0,
+          "real": 11.55,
+          "prediccion": 14.869621212121217,
+          "residuo": -3.3196212121212163,
+          "error_absoluto": 3.3196212121212163,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-04",
+          "horas_planificadas": 4.0,
+          "real": 17.2,
+          "prediccion": 22.40356060606061,
+          "residuo": -5.203560606060609,
+          "error_absoluto": 5.203560606060609,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-05",
+          "horas_planificadas": 5.0,
+          "real": 23.55,
+          "prediccion": 29.9375,
+          "residuo": -6.387499999999999,
+          "error_absoluto": 6.387499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-06",
+          "horas_planificadas": 6.0,
+          "real": 32.2,
+          "prediccion": 37.4714393939394,
+          "residuo": -5.271439393939396,
+          "error_absoluto": 5.271439393939396,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-07",
+          "horas_planificadas": 7.0,
+          "real": 41.55,
+          "prediccion": 45.00537878787879,
+          "residuo": -3.455378787878793,
+          "error_absoluto": 3.455378787878793,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-08",
+          "horas_planificadas": 8.0,
+          "real": 53.2,
+          "prediccion": 52.53931818181818,
+          "residuo": 0.6606818181818213,
+          "error_absoluto": 0.6606818181818213,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-09",
+          "horas_planificadas": 9.0,
+          "real": 65.55,
+          "prediccion": 60.07325757575757,
+          "residuo": 5.476742424242424,
+          "error_absoluto": 5.476742424242424,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "cuadratica": {
+      "metricas": {
+        "n": 9,
+        "mae": 0.19030092592593098,
+        "rmse": 0.21534780928285974,
+        "sesgo": -0.03961489898989602,
+        "r2": 0.9998822514651843
+      },
+      "predicciones": [
+        {
+          "caso_id": "curva-validacion-01",
+          "horas_planificadas": 1.0,
+          "real": 5.55,
+          "prediccion": 5.529109848484836,
+          "residuo": 0.020890151515163602,
+          "error_absoluto": 0.020890151515163602,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-02",
+          "horas_planificadas": 2.0,
+          "real": 8.2,
+          "prediccion": 7.889943181818165,
+          "residuo": 0.3100568181818346,
+          "error_absoluto": 0.3100568181818346,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-03",
+          "horas_planificadas": 3.0,
+          "real": 11.55,
+          "prediccion": 11.728806818181804,
+          "residuo": -0.178806818181803,
+          "error_absoluto": 0.178806818181803,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-04",
+          "horas_planificadas": 4.0,
+          "real": 17.2,
+          "prediccion": 17.045700757575744,
+          "residuo": 0.15429924242425486,
+          "error_absoluto": 0.15429924242425486,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-05",
+          "horas_planificadas": 5.0,
+          "real": 23.55,
+          "prediccion": 23.840624999999992,
+          "residuo": -0.2906249999999915,
+          "error_absoluto": 0.2906249999999915,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-06",
+          "horas_planificadas": 6.0,
+          "real": 32.2,
+          "prediccion": 32.11357954545454,
+          "residuo": 0.08642045454546121,
+          "error_absoluto": 0.08642045454546121,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-07",
+          "horas_planificadas": 7.0,
+          "real": 41.55,
+          "prediccion": 41.864564393939396,
+          "residuo": -0.31456439393939917,
+          "error_absoluto": 0.31456439393939917,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-08",
+          "horas_planificadas": 8.0,
+          "real": 53.2,
+          "prediccion": 53.09357954545456,
+          "residuo": 0.10642045454544302,
+          "error_absoluto": 0.10642045454544302,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-09",
+          "horas_planificadas": 9.0,
+          "real": 65.55,
+          "prediccion": 65.80062500000003,
+          "residuo": -0.25062500000002785,
+          "error_absoluto": 0.25062500000002785,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "grado9": {
+      "metricas": {
+        "n": 9,
+        "mae": 2.8082333034939624,
+        "rmse": 4.453236875390234,
+        "sesgo": -0.012822469075427279,
+        "r2": 0.9496469028167946
+      },
+      "predicciones": [
+        {
+          "caso_id": "curva-validacion-01",
+          "horas_planificadas": 1.0,
+          "real": 5.55,
+          "prediccion": 14.488522338867122,
+          "residuo": -8.938522338867124,
+          "error_absoluto": 8.938522338867124,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-02",
+          "horas_planificadas": 2.0,
+          "real": 8.2,
+          "prediccion": 5.96097106933593,
+          "residuo": 2.2390289306640696,
+          "error_absoluto": 2.2390289306640696,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-03",
+          "horas_planificadas": 3.0,
+          "real": 11.55,
+          "prediccion": 12.761056518554824,
+          "residuo": -1.2110565185548232,
+          "error_absoluto": 1.2110565185548232,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-04",
+          "horas_planificadas": 4.0,
+          "real": 17.2,
+          "prediccion": 16.713778686523398,
+          "residuo": 0.4862213134766016,
+          "error_absoluto": 0.4862213134766016,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-05",
+          "horas_planificadas": 5.0,
+          "real": 23.55,
+          "prediccion": 23.705856323242067,
+          "residuo": -0.155856323242066,
+          "error_absoluto": 0.155856323242066,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-06",
+          "horas_planificadas": 6.0,
+          "real": 32.2,
+          "prediccion": 32.188851928710825,
+          "residuo": 0.011148071289177608,
+          "error_absoluto": 0.011148071289177608,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-07",
+          "horas_planificadas": 7.0,
+          "real": 41.55,
+          "prediccion": 40.96979675292948,
+          "residuo": 0.5802032470705143,
+          "error_absoluto": 0.5802032470705143,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-08",
+          "horas_planificadas": 8.0,
+          "real": 53.2,
+          "prediccion": 55.589315795898244,
+          "residuo": -2.3893157958982414,
+          "error_absoluto": 2.3893157958982414,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "curva-validacion-09",
+          "horas_planificadas": 9.0,
+          "real": 65.55,
+          "prediccion": 56.28725280761695,
+          "residuo": 9.262747192383046,
+          "error_absoluto": 9.262747192383046,
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    }
+  },
+  "seleccionado": "cuadratica",
+  "prueba": null,
+  "consulta": null,
+  "criterio": {
+    "metrica": "mae",
+    "sentido": "minimizar",
+    "orden_desempate": [
+      "mediana",
+      "media",
+      "recta",
+      "cuadratica",
+      "grado9"
+    ],
+    "reajuste_con_validacion": false
+  }
+}

@@ -1,0 +1,2 @@
+# Reutiliza las versiones numérica y gráfica comprobadas en la Unidad 9.
+-r ../unidad09-exploracion-visualizacion/requirements.txt

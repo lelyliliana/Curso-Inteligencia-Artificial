@@ -390,7 +390,7 @@ Las 24 pruebas incluyen cálculos manuales de métricas, casos sin positivos, da
 - [ ] Registro el cierre sin elegir otra vez sobre prueba.
 - [ ] Distingo reproducibilidad del código y utilidad fuera de esta demostración.
 
-La siguiente entrega prevista es la **Unidad 11 — Regresión**, todavía pendiente de desarrollo. Comparará modelos numéricos con referencias sencillas dentro de un procedimiento de evaluación explícito.
+Continúa con la [Unidad 11 — Regresión](../unidad11-regresion/README.md): aprenderás a ajustar modelos numéricos, compararlos con referencias sencillas e interpretar residuos, extrapolación y sobreajuste.
 
 ## Referencias
 

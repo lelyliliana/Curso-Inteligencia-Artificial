@@ -1,0 +1,11 @@
+caso_id,horas_planificadas,consumo_kwh
+curva-entrenamiento-01,0.50,4.38750
+curva-entrenamiento-02,1.50,7.28750
+curva-entrenamiento-03,2.50,9.28750
+curva-entrenamiento-04,3.50,14.88750
+curva-entrenamiento-05,4.50,19.58750
+curva-entrenamiento-06,5.50,28.18750
+curva-entrenamiento-07,6.50,35.98750
+curva-entrenamiento-08,7.50,48.08750
+curva-entrenamiento-09,8.50,58.68750
+curva-entrenamiento-10,9.50,72.98750

@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 10.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 11.
 
 La Unidad 9 requiere sus dependencias gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 10
+ULTIMA_UNIDAD = 11
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -84,6 +84,12 @@ def main():
                     esperado = "Seleccionado por mae: persistencia"
                 elif programa.name == "02_lineas_base_clasificacion.py":
                     esperado = "Seleccionado por f1: por_senal"
+                elif programa.name == "01_ajustar_recta.py":
+                    esperado = "Seleccionado por MAE de validación: recta"
+                elif programa.name == "02_comparar_complejidad.py":
+                    esperado = "Seleccionado por MAE de validación: cuadratica"
+                elif programa.name == "03_sensibilidad_extremo.py":
+                    esperado = "perturbado: intercepto=1.333; pendiente=2.556; MAE validación=0.933"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -99,6 +105,8 @@ def main():
     explorar_grupos = "unidad09-exploracion-visualizacion/ejemplos/02_explorar_grupos.py"
     base_regresion = "unidad10-flujo-lineas-base/ejemplos/01_lineas_base_regresion.py"
     base_clasificacion = "unidad10-flujo-lineas-base/ejemplos/02_lineas_base_clasificacion.py"
+    regresion_lineal = "unidad11-regresion/ejemplos/01_ajustar_recta.py"
+    regresion_curva = "unidad11-regresion/ejemplos/02_comparar_complejidad.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -118,6 +126,9 @@ def main():
         ([explorar_grupos, "--intervalos", "16"], "Correlación global: 0.845"),
         ([base_regresion, "--evaluar-prueba"], "mae=2.250 | rmse=2.354 | sesgo=1.250"),
         ([base_clasificacion, "--evaluar-prueba"], "exactitud=0.938 | precision=1.000 | recobrado=0.800 | f1=0.889"),
+        ([regresion_lineal, "--evaluar-prueba"], "MAE=0.200; RMSE=0.200; R²=0.997"),
+        ([regresion_curva, "--evaluar-prueba"], "MAE=0.141; RMSE=0.167; R²=1.000"),
+        ([regresion_lineal, "--horas", "10"], "10 h -> 23.000 kWh; fuera del rango de entrenamiento: sí"),
     ]
     for comando, esperado in variantes:
         ejecutar(comando, esperado)
@@ -130,6 +141,11 @@ def main():
             for cierre in (False, True):
                 extras = ["--evaluar-prueba"] if cierre else []
                 ejecutar([programa, *extras, "--salida", Path(carpeta) / f"base-{i}-{cierre}"], "Exportación:")
+                ejecutados += 1
+        for i, programa in enumerate((regresion_lineal, regresion_curva)):
+            for cierre in (False, True):
+                extras = ["--evaluar-prueba"] if cierre else []
+                ejecutar([programa, *extras, "--salida", Path(carpeta) / f"regresion-{i}-{cierre}", "--graficos"], "Exportación:")
                 ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:
