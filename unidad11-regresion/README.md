@@ -387,7 +387,7 @@ Las 26 pruebas comprueban ajuste frente a cálculos manuales y a un solucionador
 - [ ] Detecto sobreajuste y conservo la transformación aprendida.
 - [ ] Documento un cierre sin volver a seleccionar con prueba.
 
-La siguiente entrega prevista es la **Unidad 12 — Clasificación**, todavía pendiente de desarrollo. Introducirá modelos que predicen clases y conectará sus salidas con probabilidades, umbrales y errores de decisión.
+Continúa con la [Unidad 12 — Clasificación](../unidad12-clasificacion/README.md): aprenderás regresión logística y conectarás sus probabilidades estimadas con umbrales, matrices de confusión y errores de decisión.
 
 ## Referencias
 

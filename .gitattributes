@@ -2,3 +2,4 @@
 # Se conserva la salida del renderizador y se identifica como archivo generado.
 unidad09-exploracion-visualizacion/recursos/**/*.svg -whitespace linguist-generated=true
 unidad11-regresion/recursos/**/*.svg -whitespace linguist-generated=true
+unidad12-clasificacion/recursos/**/*.svg -whitespace linguist-generated=true

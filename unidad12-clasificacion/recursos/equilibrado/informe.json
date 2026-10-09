@@ -1,0 +1,3544 @@
+{
+  "protocolo": "clasificacion-v1",
+  "experimento": "equilibrado",
+  "versiones": {
+    "python": "3.12.3",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.8"
+  },
+  "fuentes": {
+    "entrenamiento": {
+      "archivo": "entrenamiento.csv",
+      "sha256": "6ef224d9776b8cd9640d8aae5ec2ea8f9ecbac14ef295a14db8ae79e82363543",
+      "n": 80,
+      "positivos": 36
+    },
+    "validacion": {
+      "archivo": "validacion.csv",
+      "sha256": "67cfb9eb07e6962741fbc262eb884e9e6022e303e16b249abe03f0acc354aad9",
+      "n": 40,
+      "positivos": 18
+    }
+  },
+  "modelo_logistico": {
+    "intercepto": -0.3063747976499242,
+    "coeficiente": 1.529815544421928,
+    "centro": 50.0,
+    "escala": 28.722813232690143,
+    "rango_x": [
+      5.0,
+      95.0
+    ],
+    "tasa": 0.2,
+    "iteraciones": 3000,
+    "penalizacion": 0.01,
+    "norma_gradiente_final": 5.491050626755996e-16,
+    "historial": [
+      {
+        "paso": 0,
+        "objetivo": 0.6931471805599453
+      },
+      {
+        "paso": 100,
+        "objetivo": 0.48545865649731845
+      },
+      {
+        "paso": 200,
+        "objetivo": 0.48495188491230284
+      },
+      {
+        "paso": 300,
+        "objetivo": 0.4849471660026447
+      },
+      {
+        "paso": 400,
+        "objetivo": 0.48494711791140227
+      },
+      {
+        "paso": 500,
+        "objetivo": 0.48494711741693053
+      },
+      {
+        "paso": 600,
+        "objetivo": 0.48494711741184193
+      },
+      {
+        "paso": 700,
+        "objetivo": 0.4849471174117894
+      },
+      {
+        "paso": 800,
+        "objetivo": 0.48494711741178903
+      },
+      {
+        "paso": 900,
+        "objetivo": 0.48494711741178886
+      },
+      {
+        "paso": 1000,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 1100,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 1200,
+        "objetivo": 0.484947117411789
+      },
+      {
+        "paso": 1300,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 1400,
+        "objetivo": 0.484947117411789
+      },
+      {
+        "paso": 1500,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 1600,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 1700,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 1800,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 1900,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 2000,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 2100,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 2200,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 2300,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 2400,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 2500,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 2600,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 2700,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 2800,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 2900,
+        "objetivo": 0.4849471174117889
+      },
+      {
+        "paso": 3000,
+        "objetivo": 0.4849471174117889
+      }
+    ]
+  },
+  "referencia": {
+    "frecuencia_positiva": 0.45,
+    "clase_mayoritaria": 0
+  },
+  "candidatos": {
+    "mayoria": {
+      "umbral": null
+    },
+    "siempre_1": {
+      "umbral": null
+    },
+    "logistica_050": {
+      "umbral": 0.5
+    }
+  },
+  "criterio": {
+    "metrica": "f1",
+    "clase_positiva": 1,
+    "sentido": "maximizar",
+    "orden_desempate": [
+      "mayoria",
+      "siempre_1",
+      "logistica_050"
+    ],
+    "reajuste_con_validacion": false
+  },
+  "entrenamiento": {
+    "mayoria": {
+      "metricas": {
+        "n": 80,
+        "VP": 0,
+        "VN": 44,
+        "FP": 0,
+        "FN": 36,
+        "positivos": 36,
+        "exactitud": 0.55,
+        "precision": null,
+        "recobrado": 0.0,
+        "f1": 0.0,
+        "perdida_log": 0.6881388137135884
+      },
+      "predicciones": [
+        {
+          "caso_id": "equilibrado-entrenamiento-001",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-002",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-003",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-004",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-005",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-006",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-007",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-008",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-009",
+          "senal_previa": 15.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-010",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-011",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-012",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-013",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-014",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-015",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-016",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-017",
+          "senal_previa": 25.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-018",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-019",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-020",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-021",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-022",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-023",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-024",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-025",
+          "senal_previa": 35.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-026",
+          "senal_previa": 35.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-027",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-028",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-029",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-030",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-031",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-032",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-033",
+          "senal_previa": 45.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-034",
+          "senal_previa": 45.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-035",
+          "senal_previa": 45.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-036",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-037",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-038",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-039",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-040",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-041",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-042",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-043",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-044",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-045",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-046",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-047",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-048",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-049",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-050",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-051",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-052",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-053",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-054",
+          "senal_previa": 65.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-055",
+          "senal_previa": 65.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-056",
+          "senal_previa": 65.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-057",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-058",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-059",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-060",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-061",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-062",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-063",
+          "senal_previa": 75.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-064",
+          "senal_previa": 75.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-065",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-066",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-067",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-068",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-069",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-070",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-071",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-072",
+          "senal_previa": 85.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-073",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-074",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-075",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-076",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-077",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-078",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-079",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-080",
+          "senal_previa": 95.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "siempre_1": {
+      "metricas": {
+        "n": 80,
+        "VP": 36,
+        "VN": 0,
+        "FP": 44,
+        "FN": 0,
+        "positivos": 36,
+        "exactitud": 0.45,
+        "precision": 0.45,
+        "recobrado": 1.0,
+        "f1": 0.6206896551724138,
+        "perdida_log": null
+      },
+      "predicciones": [
+        {
+          "caso_id": "equilibrado-entrenamiento-001",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-002",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-003",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-004",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-005",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-006",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-007",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-008",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-009",
+          "senal_previa": 15.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-010",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-011",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-012",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-013",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-014",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-015",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-016",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-017",
+          "senal_previa": 25.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-018",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-019",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-020",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-021",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-022",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-023",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-024",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-025",
+          "senal_previa": 35.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-026",
+          "senal_previa": 35.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-027",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-028",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-029",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-030",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-031",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-032",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-033",
+          "senal_previa": 45.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-034",
+          "senal_previa": 45.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-035",
+          "senal_previa": 45.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-036",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-037",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-038",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-039",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-040",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-041",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-042",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-043",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-044",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-045",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-046",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-047",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-048",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-049",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-050",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-051",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-052",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-053",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-054",
+          "senal_previa": 65.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-055",
+          "senal_previa": 65.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-056",
+          "senal_previa": 65.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-057",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-058",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-059",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-060",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-061",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-062",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-063",
+          "senal_previa": 75.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-064",
+          "senal_previa": 75.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-065",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-066",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-067",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-068",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-069",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-070",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-071",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-072",
+          "senal_previa": 85.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-073",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-074",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-075",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-076",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-077",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-078",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-079",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-080",
+          "senal_previa": 95.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "logistica_050": {
+      "metricas": {
+        "n": 80,
+        "VP": 25,
+        "VN": 37,
+        "FP": 7,
+        "FN": 11,
+        "positivos": 36,
+        "exactitud": 0.775,
+        "precision": 0.78125,
+        "recobrado": 0.6944444444444444,
+        "f1": 0.7352941176470589,
+        "perdida_log": 0.47324543941201413
+      },
+      "predicciones": [
+        {
+          "caso_id": "equilibrado-entrenamiento-001",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.0627886122582949,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-002",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.0627886122582949,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-003",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.0627886122582949,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-004",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.0627886122582949,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-005",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.0627886122582949,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-006",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.0627886122582949,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-007",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.0627886122582949,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-008",
+          "senal_previa": 5.0,
+          "real": 0,
+          "probabilidad_1": 0.0627886122582949,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-009",
+          "senal_previa": 15.0,
+          "real": 1,
+          "probabilidad_1": 0.10242905741116215,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-010",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.10242905741116215,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-011",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.10242905741116215,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-012",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.10242905741116215,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-013",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.10242905741116215,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-014",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.10242905741116215,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-015",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.10242905741116215,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-016",
+          "senal_previa": 15.0,
+          "real": 0,
+          "probabilidad_1": 0.10242905741116215,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-017",
+          "senal_previa": 25.0,
+          "real": 1,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-018",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-019",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-020",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-021",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-022",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-023",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-024",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-025",
+          "senal_previa": 35.0,
+          "real": 1,
+          "probabilidad_1": 0.24874910302878536,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-026",
+          "senal_previa": 35.0,
+          "real": 1,
+          "probabilidad_1": 0.24874910302878536,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-027",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.24874910302878536,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-028",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.24874910302878536,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-029",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.24874910302878536,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-030",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.24874910302878536,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-031",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.24874910302878536,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-032",
+          "senal_previa": 35.0,
+          "real": 0,
+          "probabilidad_1": 0.24874910302878536,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-033",
+          "senal_previa": 45.0,
+          "real": 1,
+          "probabilidad_1": 0.3606183128505714,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-034",
+          "senal_previa": 45.0,
+          "real": 1,
+          "probabilidad_1": 0.3606183128505714,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-035",
+          "senal_previa": 45.0,
+          "real": 1,
+          "probabilidad_1": 0.3606183128505714,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-036",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": 0.3606183128505714,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-037",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": 0.3606183128505714,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-038",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": 0.3606183128505714,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-039",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": 0.3606183128505714,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-040",
+          "senal_previa": 45.0,
+          "real": 0,
+          "probabilidad_1": 0.3606183128505714,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-041",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": 0.4899843165310833,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-042",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": 0.4899843165310833,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-043",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": 0.4899843165310833,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-044",
+          "senal_previa": 55.0,
+          "real": 1,
+          "probabilidad_1": 0.4899843165310833,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-045",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": 0.4899843165310833,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-046",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": 0.4899843165310833,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-047",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": 0.4899843165310833,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-048",
+          "senal_previa": 55.0,
+          "real": 0,
+          "probabilidad_1": 0.4899843165310833,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-049",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": 0.6207058597968704,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-050",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": 0.6207058597968704,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-051",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": 0.6207058597968704,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-052",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": 0.6207058597968704,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-053",
+          "senal_previa": 65.0,
+          "real": 1,
+          "probabilidad_1": 0.6207058597968704,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-054",
+          "senal_previa": 65.0,
+          "real": 0,
+          "probabilidad_1": 0.6207058597968704,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-055",
+          "senal_previa": 65.0,
+          "real": 0,
+          "probabilidad_1": 0.6207058597968704,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-056",
+          "senal_previa": 65.0,
+          "real": 0,
+          "probabilidad_1": 0.6207058597968704,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-057",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.7359762372670232,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-058",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.7359762372670232,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-059",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.7359762372670232,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-060",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.7359762372670232,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-061",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.7359762372670232,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-062",
+          "senal_previa": 75.0,
+          "real": 1,
+          "probabilidad_1": 0.7359762372670232,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-063",
+          "senal_previa": 75.0,
+          "real": 0,
+          "probabilidad_1": 0.7359762372670232,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-064",
+          "senal_previa": 75.0,
+          "real": 0,
+          "probabilidad_1": 0.7359762372670232,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-065",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.8260334357387649,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-066",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.8260334357387649,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-067",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.8260334357387649,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-068",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.8260334357387649,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-069",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.8260334357387649,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-070",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.8260334357387649,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-071",
+          "senal_previa": 85.0,
+          "real": 1,
+          "probabilidad_1": 0.8260334357387649,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-072",
+          "senal_previa": 85.0,
+          "real": 0,
+          "probabilidad_1": 0.8260334357387649,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-073",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.8899651860029145,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-074",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.8899651860029145,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-075",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.8899651860029145,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-076",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.8899651860029145,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-077",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.8899651860029145,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-078",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.8899651860029145,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-079",
+          "senal_previa": 95.0,
+          "real": 1,
+          "probabilidad_1": 0.8899651860029145,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-entrenamiento-080",
+          "senal_previa": 95.0,
+          "real": 0,
+          "probabilidad_1": 0.8899651860029145,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    }
+  },
+  "validacion": {
+    "mayoria": {
+      "metricas": {
+        "n": 40,
+        "VP": 0,
+        "VN": 22,
+        "FP": 0,
+        "FN": 18,
+        "positivos": 18,
+        "exactitud": 0.55,
+        "precision": null,
+        "recobrado": 0.0,
+        "f1": 0.0,
+        "perdida_log": 0.6881388137135884
+      },
+      "predicciones": [
+        {
+          "caso_id": "equilibrado-validacion-001",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-002",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-003",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-004",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-005",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-006",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-007",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-008",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-009",
+          "senal_previa": 25.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-010",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-011",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-012",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-013",
+          "senal_previa": 34.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-014",
+          "senal_previa": 34.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-015",
+          "senal_previa": 34.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-016",
+          "senal_previa": 34.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-017",
+          "senal_previa": 43.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-018",
+          "senal_previa": 43.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-019",
+          "senal_previa": 43.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-020",
+          "senal_previa": 43.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-021",
+          "senal_previa": 52.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-022",
+          "senal_previa": 52.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-023",
+          "senal_previa": 52.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-024",
+          "senal_previa": 52.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-025",
+          "senal_previa": 61.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-026",
+          "senal_previa": 61.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-027",
+          "senal_previa": 61.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-028",
+          "senal_previa": 61.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-029",
+          "senal_previa": 70.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-030",
+          "senal_previa": 70.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-031",
+          "senal_previa": 70.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-032",
+          "senal_previa": 70.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-033",
+          "senal_previa": 79.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-034",
+          "senal_previa": 79.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-035",
+          "senal_previa": 79.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-036",
+          "senal_previa": 79.0,
+          "real": 0,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-037",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-038",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-039",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-040",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": 0.45,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "siempre_1": {
+      "metricas": {
+        "n": 40,
+        "VP": 18,
+        "VN": 0,
+        "FP": 22,
+        "FN": 0,
+        "positivos": 18,
+        "exactitud": 0.45,
+        "precision": 0.45,
+        "recobrado": 1.0,
+        "f1": 0.6206896551724138,
+        "perdida_log": null
+      },
+      "predicciones": [
+        {
+          "caso_id": "equilibrado-validacion-001",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-002",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-003",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-004",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-005",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-006",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-007",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-008",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-009",
+          "senal_previa": 25.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-010",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-011",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-012",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-013",
+          "senal_previa": 34.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-014",
+          "senal_previa": 34.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-015",
+          "senal_previa": 34.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-016",
+          "senal_previa": 34.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-017",
+          "senal_previa": 43.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-018",
+          "senal_previa": 43.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-019",
+          "senal_previa": 43.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-020",
+          "senal_previa": 43.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-021",
+          "senal_previa": 52.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-022",
+          "senal_previa": 52.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-023",
+          "senal_previa": 52.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-024",
+          "senal_previa": 52.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-025",
+          "senal_previa": 61.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-026",
+          "senal_previa": 61.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-027",
+          "senal_previa": 61.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-028",
+          "senal_previa": 61.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-029",
+          "senal_previa": 70.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-030",
+          "senal_previa": 70.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-031",
+          "senal_previa": 70.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-032",
+          "senal_previa": 70.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-033",
+          "senal_previa": 79.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-034",
+          "senal_previa": 79.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-035",
+          "senal_previa": 79.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-036",
+          "senal_previa": 79.0,
+          "real": 0,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-037",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-038",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-039",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-040",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": null,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    },
+    "logistica_050": {
+      "metricas": {
+        "n": 40,
+        "VP": 13,
+        "VN": 19,
+        "FP": 3,
+        "FN": 5,
+        "positivos": 18,
+        "exactitud": 0.8,
+        "precision": 0.8125,
+        "recobrado": 0.7222222222222222,
+        "f1": 0.7647058823529411,
+        "perdida_log": 0.45493468565320005
+      },
+      "predicciones": [
+        {
+          "caso_id": "equilibrado-validacion-001",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": 0.06935675562363751,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-002",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": 0.06935675562363751,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-003",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": 0.06935675562363751,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-004",
+          "senal_previa": 7.0,
+          "real": 0,
+          "probabilidad_1": 0.06935675562363751,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-005",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": 0.1074304875286605,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-006",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": 0.1074304875286605,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-007",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": 0.1074304875286605,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-008",
+          "senal_previa": 16.0,
+          "real": 0,
+          "probabilidad_1": 0.1074304875286605,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-009",
+          "senal_previa": 25.0,
+          "real": 1,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-010",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-011",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-012",
+          "senal_previa": 25.0,
+          "real": 0,
+          "probabilidad_1": 0.16274987911453084,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-013",
+          "senal_previa": 34.0,
+          "real": 1,
+          "probabilidad_1": 0.238929720936337,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-014",
+          "senal_previa": 34.0,
+          "real": 0,
+          "probabilidad_1": 0.238929720936337,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-015",
+          "senal_previa": 34.0,
+          "real": 0,
+          "probabilidad_1": 0.238929720936337,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-016",
+          "senal_previa": 34.0,
+          "real": 0,
+          "probabilidad_1": 0.238929720936337,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-017",
+          "senal_previa": 43.0,
+          "real": 1,
+          "probabilidad_1": 0.33643894378163425,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-018",
+          "senal_previa": 43.0,
+          "real": 0,
+          "probabilidad_1": 0.33643894378163425,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-019",
+          "senal_previa": 43.0,
+          "real": 0,
+          "probabilidad_1": 0.33643894378163425,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-020",
+          "senal_previa": 43.0,
+          "real": 0,
+          "probabilidad_1": 0.33643894378163425,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-021",
+          "senal_previa": 52.0,
+          "real": 1,
+          "probabilidad_1": 0.4502026066874343,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-022",
+          "senal_previa": 52.0,
+          "real": 1,
+          "probabilidad_1": 0.4502026066874343,
+          "prediccion": 0,
+          "resultado": "FN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-023",
+          "senal_previa": 52.0,
+          "real": 0,
+          "probabilidad_1": 0.4502026066874343,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-024",
+          "senal_previa": 52.0,
+          "real": 0,
+          "probabilidad_1": 0.4502026066874343,
+          "prediccion": 0,
+          "resultado": "VN",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-025",
+          "senal_previa": 61.0,
+          "real": 1,
+          "probabilidad_1": 0.5694236260501503,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-026",
+          "senal_previa": 61.0,
+          "real": 1,
+          "probabilidad_1": 0.5694236260501503,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-027",
+          "senal_previa": 61.0,
+          "real": 1,
+          "probabilidad_1": 0.5694236260501503,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-028",
+          "senal_previa": 61.0,
+          "real": 0,
+          "probabilidad_1": 0.5694236260501503,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-029",
+          "senal_previa": 70.0,
+          "real": 1,
+          "probabilidad_1": 0.681104442690472,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-030",
+          "senal_previa": 70.0,
+          "real": 1,
+          "probabilidad_1": 0.681104442690472,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-031",
+          "senal_previa": 70.0,
+          "real": 1,
+          "probabilidad_1": 0.681104442690472,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-032",
+          "senal_previa": 70.0,
+          "real": 0,
+          "probabilidad_1": 0.681104442690472,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-033",
+          "senal_previa": 79.0,
+          "real": 1,
+          "probabilidad_1": 0.7752512546853235,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-034",
+          "senal_previa": 79.0,
+          "real": 1,
+          "probabilidad_1": 0.7752512546853235,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-035",
+          "senal_previa": 79.0,
+          "real": 1,
+          "probabilidad_1": 0.7752512546853235,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-036",
+          "senal_previa": 79.0,
+          "real": 0,
+          "probabilidad_1": 0.7752512546853235,
+          "prediccion": 1,
+          "resultado": "FP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-037",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": 0.847813785525849,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-038",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": 0.847813785525849,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-039",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": 0.847813785525849,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "equilibrado-validacion-040",
+          "senal_previa": 88.0,
+          "real": 1,
+          "probabilidad_1": 0.847813785525849,
+          "prediccion": 1,
+          "resultado": "VP",
+          "fuera_rango": false
+        }
+      ],
+      "fuera_rango": 0
+    }
+  },
+  "seleccionado": "logistica_050",
+  "prueba": null,
+  "consulta": null
+}
