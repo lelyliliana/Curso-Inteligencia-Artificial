@@ -47,7 +47,7 @@ La secuencia comprende **36 unidades, de la 0 a la 35**. Los enlaces llevan a ma
 |---|---|
 | 5 | [Búsqueda, estados y heurísticas](unidad05-busqueda-heuristicas/README.md) |
 | 6 | [Conocimiento, reglas y restricciones](unidad06-conocimiento-reglas/README.md) |
-| 7 | Obtención y comprensión de datos |
+| 7 | [Obtención y comprensión de datos](unidad07-obtencion-datos/README.md) |
 | 8 | Calidad y preparación de datos |
 | 9 | Exploración y visualización |
 
@@ -126,11 +126,11 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-Las **unidades 0 a 6** cuentan en esta versión con explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. La Unidad 0 prepara el entorno; la Unidad 1 introduce los enfoques de IA; la Unidad 2 desarrolla la formulación de proyectos; la Unidad 3 conecta matemática y entrenamiento; la Unidad 4 desarrolla probabilidad y estadística; la Unidad 5 introduce búsqueda, costos, heurísticas y verificación de rutas; la Unidad 6 desarrolla conocimiento, inferencia mediante reglas y satisfacción de restricciones. Las unidades 7 a 35 tienen su alcance definido y están pendientes de desarrollo.
+Las **unidades 0 a 7** cuentan en esta versión con explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. La Unidad 0 prepara el entorno; la Unidad 1 introduce los enfoques de IA; la Unidad 2 desarrolla la formulación de proyectos; la Unidad 3 conecta matemática y entrenamiento; la Unidad 4 desarrolla probabilidad y estadística; la Unidad 5 introduce búsqueda, costos, heurísticas y verificación de rutas; la Unidad 6 desarrolla conocimiento, inferencia mediante reglas y satisfacción de restricciones; la Unidad 7 aborda procedencia, lectura, diagnóstico, cobertura y disponibilidad temporal de datos. Las unidades 8 a 35 tienen su alcance definido y están pendientes de desarrollo.
 
-El curso completo requiere desarrollar y revisar las 36 unidades. El material disponible permite preparar el entorno, comprender los enfoques de IA, formular un proyecto aplicado, explicar su entrenamiento, interpretar datos y probabilidades, modelar búsquedas con condiciones de optimalidad explícitas y construir propuestas explicables y asignaciones sujetas a restricciones.
+El curso completo requiere desarrollar y revisar las 36 unidades. El material disponible permite preparar el entorno, comprender los enfoques de IA, formular un proyecto aplicado, explicar su entrenamiento, interpretar datos y probabilidades, modelar búsquedas con condiciones de optimalidad explícitas, construir propuestas explicables y asignaciones sujetas a restricciones, y documentar si los datos son adecuados y estaban disponibles al decidir.
 
-El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 6, ejecuta desde la raíz:
+El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 7, ejecuta desde la raíz:
 
 ```bash
 python herramientas/verificar_curso.py

@@ -477,7 +477,7 @@ Las reglas positivas permiten obtener consecuencias y conservar una justificaci�
 
 Los CSP buscan asignaciones que cumplan condiciones. Enumerar ofrece una referencia pequeña; el retroceso descarta parciales incompatibles y el filtrado puede anticipar ramas inviables. Ninguna solución es óptima sin definir un objetivo.
 
-La siguiente unidad de la ruta es **obtención y comprensión de datos**: estudiaremos de dónde llegan las observaciones que alimentan reglas y modelos. Consulta su disponibilidad en el índice.
+Continúa con la [Unidad 7 — Obtención y comprensión de datos](../unidad07-obtencion-datos/README.md): estudiaremos de dónde llegan las observaciones que alimentan reglas y modelos.
 
 ## Referencias y lecturas
 

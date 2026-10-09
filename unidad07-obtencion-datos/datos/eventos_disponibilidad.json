@@ -1,0 +1,15 @@
+{
+  "origen": {
+    "tipo": "sintetico",
+    "version": "1.0",
+    "descripcion": "Exportación local ficticia para estudiar tiempos de observación y disponibilidad; no procede de una API real."
+  },
+  "registros": [
+    {"id": "e01", "sensor_id": "S1", "variable": "consumo_kwh", "rol": "entrada", "valor": 12, "observado_en": "2026-09-05T08:00:00+00:00", "disponible_en": "2026-09-05T08:05:00+00:00"},
+    {"id": "e02", "sensor_id": "S1", "variable": "temperatura_c", "rol": "entrada", "valor": 21, "observado_en": "2026-09-05T08:30:00+00:00", "disponible_en": "2026-09-05T09:10:00+00:00"},
+    {"id": "e03", "sensor_id": "S2", "variable": "consumo_kwh", "rol": "entrada", "valor": 9, "observado_en": "2026-09-05T09:00:00+00:00", "disponible_en": "2026-09-05T09:00:00+00:00"},
+    {"id": "e04", "sensor_id": "S3", "variable": "consumo_kwh", "rol": "entrada", "valor": 7, "observado_en": "2026-09-05T09:30:00+00:00", "disponible_en": "2026-09-05T09:35:00+00:00"},
+    {"id": "e05", "sensor_id": "S1", "variable": "fallo_confirmado", "rol": "objetivo", "valor": true, "observado_en": "2026-09-05T11:00:00+00:00", "disponible_en": "2026-09-05T12:00:00+00:00"},
+    {"id": "e06", "sensor_id": "S2", "variable": "fallo_confirmado", "rol": "objetivo", "valor": false, "observado_en": "2026-09-05T08:00:00+00:00", "disponible_en": "2026-09-05T08:15:00+00:00"}
+  ]
+}

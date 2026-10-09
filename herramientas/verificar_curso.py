@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 6.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 7.
 
 Solo biblioteca estándar; no instala paquetes ni accede a servicios externos.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -13,7 +13,8 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= 6)
+ULTIMA_UNIDAD = 7
+UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
 def ejecutar(argumentos, esperado=None):
@@ -53,8 +54,9 @@ def verificar_archivos():
 
 
 def main():
-    if len(UNIDADES) != 7:
-        raise RuntimeError("Se esperan las siete unidades 0 a 6 en esta versión del verificador.")
+    if (len(UNIDADES) != ULTIMA_UNIDAD + 1
+            or {int(p.name[6:8]) for p in UNIDADES} != set(range(ULTIMA_UNIDAD + 1))):
+        raise RuntimeError(f"Se espera una carpeta por unidad, de 0 a {ULTIMA_UNIDAD}.")
     verificar_archivos()
     ejecutados = 0
     for unidad in UNIDADES:
@@ -65,6 +67,10 @@ def main():
                     esperado = "proponer_visita: por r3"
                 elif programa.name == "02_organizar_talleres.py":
                     esperado = "Soluciones: 3; coinciden con la línea base."
+                elif programa.name == "01_perfilar_lecturas.py":
+                    esperado = "Cobertura de claves: 10/12 = 83.33%"
+                elif programa.name == "02_auditar_disponibilidad.py":
+                    esperado = "Entradas disponibles: e01, e03"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -72,6 +78,8 @@ def main():
         ejecutados += 1
     reglas = "unidad06-conocimiento-reglas/ejemplos/01_inferir_revision.py"
     horarios = "unidad06-conocimiento-reglas/ejemplos/02_organizar_talleres.py"
+    perfil = "unidad07-obtencion-datos/ejemplos/01_perfilar_lecturas.py"
+    disponibilidad = "unidad07-obtencion-datos/ejemplos/02_auditar_disponibilidad.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -80,6 +88,10 @@ def main():
         ([horarios, "--orden", "fija"], "intentos=9."),
         ([horarios, "--sin-poda"], "Soluciones: 3; coinciden con la línea base."),
         ([horarios, "--datos", "unidad06-conocimiento-reglas/datos/horarios_imposibles.json"], "Soluciones: 0;"),
+        ([perfil, "--sensores", "S1", "S2"], "Cobertura de claves: 8/8 = 100.00%"),
+        ([perfil, "--fin", "2026-09-05"], "Cobertura de claves: 10/15 = 66.67%"),
+        ([disponibilidad, "--decision", "2026-09-05T09:10:00+00:00"], "Entradas disponibles: e01, e02, e03"),
+        ([disponibilidad, "--decision", "2026-09-05T04:00:00-05:00"], "Entradas disponibles: e01, e03"),
     ]
     for comando, esperado in variantes:
         ejecutar(comando, esperado)

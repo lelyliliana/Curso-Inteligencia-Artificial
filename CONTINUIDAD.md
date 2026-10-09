@@ -18,10 +18,11 @@ La revisión inicial ejecutó correctamente 19 programas de ejemplos y solucione
 |---|---|---|
 | Unidades 0–5 | Recuperadas del repositorio y comprobadas en ejecución | 19 programas y siete pruebas existentes |
 | Unidad 6 | Desarrollada y comprobada | Dos laboratorios, tres archivos de datos, ejercicios con soluciones, reto, plantilla y 15 pruebas |
-| Verificación común | Disponible para las unidades 0–6 | [verificar_curso.py](herramientas/verificar_curso.py) |
-| Unidades 7–35 | Pendientes de desarrollo | Alcance conservado en el índice |
+| Unidad 7 | Desarrollada y comprobada | Dos laboratorios, CSV y JSON documentados, diez ejercicios resueltos, reto, ficha y 19 pruebas |
+| Verificación común | Disponible para las unidades 0–7 | [verificar_curso.py](herramientas/verificar_curso.py) |
+| Unidades 8–35 | Pendientes de desarrollo | Alcance conservado en el índice |
 
-Esta entrega incorpora la Unidad 6 y el seguimiento de calidad. El próximo contenido por desarrollar es la **Unidad 7: obtención y comprensión de datos**. Quedan 29 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
+La Unidad 6 se publicó en el commit `b7a2a9b`. Esta entrega incorpora la Unidad 7 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 8: calidad y preparación de datos**. Quedan 28 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
 
 ## Enfoque que se conserva
 
@@ -38,7 +39,7 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 
 | Unidades | Trabajo pendiente | Evidencia al cerrar el hito |
 |---|---|---|
-| 7–9 | Procedencia, calidad, preparación, exploración y visualización | Dataset documentado, transformaciones reproducibles e informe exploratorio |
+| 7–9 | Unidad 7 terminada; pendientes calidad, preparación, exploración y visualización | Dataset documentado, transformaciones reproducibles e informe exploratorio |
 | 10–13 | Flujo de aprendizaje, líneas base, regresión, clasificación, árboles y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
 | 14–18 | Agrupamiento, anomalías, características, validación, métricas e interpretabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
 | 19–24 | Redes, PyTorch, visión, lenguaje, tiempo, recomendación y refuerzo | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
@@ -48,21 +49,21 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 
 Antes de desarrollar cada unidad, verificar documentación primaria de las bibliotecas y servicios que vaya a utilizar. Fijar y registrar las versiones que realmente se prueben; no asumir que una API o descarga futura conserva el mismo funcionamiento.
 
-## Siguiente entrega concreta — Unidad 7
+## Siguiente entrega concreta — Unidad 8
 
-Pregunta guía: **¿podemos utilizar estos datos para responder el problema que formulamos?**
+Pregunta guía: **¿cómo preparamos los datos con decisiones explícitas, sin ocultar sus problemas ni perder trazabilidad?**
 
 Alcance propuesto, todavía no implementado:
 
-1. Unidad de observación, variables, objetivo, contexto y momento de disponibilidad.
-2. Datos propios, públicos y sintéticos: procedencia, permisos y límites.
-3. Lectura de archivos tabulares y registros JSON con esquema explícito.
-4. Diccionario de datos y perfil inicial: tipos, faltantes, duplicados y cobertura.
-5. Distinción entre comprender un archivo y corregirlo: la preparación sistemática corresponde a la Unidad 8.
-6. Dos laboratorios con archivos incluidos, errores interpretables y resultados esperados.
-7. Reto de ficha de dataset que conecte con la ficha de proyecto de la Unidad 2.
+1. Retomar el diagnóstico y la ficha de datos de la Unidad 7.
+2. Diferenciar corrección comprobada, imputación, exclusión y cuarentena.
+3. Distinguir duplicados exactos de conflictos por clave y explicitar la política aplicada.
+4. Validar tipos, unidades y dominios antes y después de cada transformación.
+5. Conservar original, datos derivados e informe de cambios reproducible.
+6. Introducir la separación entre transformaciones deterministas y parámetros aprendidos de los datos; evitar usar evaluación futura para ajustarlos.
+7. Dos laboratorios, ejercicios y reto de preparación con casos límite y conclusiones justificadas.
 
-Mantener un caso de sensores como hilo conductor sin forzar todos los problemas del curso a usar el mismo dataset. Incluir una copia local pequeña para que la práctica no dependa de una API disponible ese día.
+Mantener el caso de sensores como hilo conductor y dejar intactos los defectos deliberados del CSV de la Unidad 7. Si se incluyen correcciones verificadas, aportar la evidencia sintética adicional que permite elegirlas; no inventar cuál registro era verdadero a partir de los valores conflictivos.
 
 ## Criterios para considerar lista una unidad
 
@@ -86,7 +87,7 @@ Desde la raíz del curso:
 python herramientas/verificar_curso.py
 ```
 
-Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 28 ejecuciones de programas y variantes y las 22 pruebas de las unidades 5 y 6. Usa la biblioteca estándar, un directorio temporal para el registro de la Unidad 0 y no instala paquetes. El verificador cubre explícitamente las unidades 0–6; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
+Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 34 ejecuciones de programas y variantes y las 41 pruebas de las unidades 5, 6 y 7. Usa la biblioteca estándar, un directorio temporal para el registro de la Unidad 0 y no instala paquetes. El verificador cubre explícitamente las unidades 0–7; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
 
 La comprobación de enlaces no valida URLs externas ni fragmentos `#ancla`. Ejecutar programas con éxito no demuestra que toda explicación sea correcta ni que se obtenga utilidad en una población real.
 
