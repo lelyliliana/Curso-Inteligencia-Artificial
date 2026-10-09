@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 14.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 15.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 14
+ULTIMA_UNIDAD = 15
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -108,6 +108,12 @@ def main():
                     esperado = "Seleccionado por f1 de validación: aislamiento"
                 elif programa.name == "03_paso_kmeans.py":
                     esperado = "Suma de distancias cuadradas: 8.000 -> 4.000"
+                elif programa.name == "01_construir_caracteristicas.py":
+                    esperado = "Seleccionado por MAE de validación: interaccion"
+                elif programa.name == "02_comparar_pca.py":
+                    esperado = "Seleccionado por MAE de validación: completa"
+                elif programa.name == "03_proyectar_a_mano.py":
+                    esperado = "MSE de reconstrucción por celda: 0.250"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -131,6 +137,8 @@ def main():
     ensambles = "unidad13-arboles-ensambles/ejemplos/02_comparar_ensambles.py"
     grupos = "unidad14-agrupamiento-anomalias/ejemplos/01_agrupar_perfiles.py"
     anomalias = "unidad14-agrupamiento-anomalias/ejemplos/02_detectar_anomalias.py"
+    caracteristicas = "unidad15-caracteristicas-dimension/ejemplos/01_construir_caracteristicas.py"
+    pca = "unidad15-caracteristicas-dimension/ejemplos/02_comparar_pca.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -163,6 +171,8 @@ def main():
         ([grupos, "--evaluar-prueba"], "Prueba final: silueta=0.853; tamaños=[20, 20, 20]"),
         ([anomalias, "--evaluar-prueba"], "Prueba final: VP=3; VN=64; FP=0; FN=13; F1=0.316"),
         ([anomalias, "--semilla", "29"], "experimento: anomalias; semilla: 29"),
+        ([caracteristicas, "--evaluar-prueba"], "Prueba final: solo interaccion; MAE=0.429; RMSE=0.585; R²=0.998"),
+        ([pca, "--evaluar-prueba"], "Prueba final: solo completa; MAE=0.139; RMSE=0.192; R²=0.993"),
     ]
     for comando, esperado in variantes:
         ejecutar(comando, esperado)
@@ -195,6 +205,11 @@ def main():
             for cierre in (False, True):
                 extras = ["--evaluar-prueba"] if cierre else []
                 ejecutar([programa, *extras, "--salida", Path(carpeta) / f"no-supervisado-{i}-{cierre}", "--graficos"], "Exportación:")
+                ejecutados += 1
+        for i, programa in enumerate((caracteristicas, pca)):
+            for cierre in (False, True):
+                extras = ["--evaluar-prueba"] if cierre else []
+                ejecutar([programa, *extras, "--salida", Path(carpeta) / f"representaciones-{i}-{cierre}", "--graficos"], "Exportación:")
                 ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

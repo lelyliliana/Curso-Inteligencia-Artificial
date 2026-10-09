@@ -285,4 +285,4 @@ Las **30 pruebas** incluyen referencias independientes para Lloyd, inercia y sil
 
 Puedes continuar cuando sepas explicar la geometría elegida, distinguir medida interna de evidencia externa, asignar un caso sin reajustar y reconstruir cómo una puntuación se convirtió en alerta.
 
-La siguiente entrega prevista es la **Unidad 15 — Características y reducción de dimensión**, todavía pendiente de desarrollo.
+Continúa en la [Unidad 15 — Características y reducción de dimensión](../unidad15-caracteristicas-dimension/README.md).

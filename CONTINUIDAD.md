@@ -26,10 +26,11 @@ La revisión inicial ejecutó correctamente 19 programas de ejemplos y solucione
 | Unidad 12 | Desarrollada y comprobada | Dos laboratorios, paso manual de gradiente, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 28 pruebas |
 | Unidad 13 | Desarrollada y comprobada | Dos laboratorios, Gini manual y sensibilidad, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 30 pruebas |
 | Unidad 14 | Desarrollada y comprobada | Dos laboratorios, paso manual de K-means, siete CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 30 pruebas |
-| Verificación común | Disponible para las unidades 0–14 | [verificar_curso.py](herramientas/verificar_curso.py) |
-| Unidades 15–35 | Pendientes de desarrollo | Alcance conservado en el índice |
+| Unidad 15 | Desarrollada y comprobada | Dos laboratorios, proyección manual, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 30 pruebas |
+| Verificación común | Disponible para las unidades 0–15 | [verificar_curso.py](herramientas/verificar_curso.py) |
+| Unidades 16–35 | Pendientes de desarrollo | Alcance conservado en el índice |
 
-La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8`, la Unidad 12 en `61a73f5` y la Unidad 13 en `81df395`. Esta entrega incorpora la Unidad 14 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 15: características y reducción de dimensión**. Quedan 21 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
+La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8`, la Unidad 12 en `61a73f5`, la Unidad 13 en `81df395` y la Unidad 14 en `1f2b6f8`. Esta entrega incorpora la Unidad 15 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 16: validación y ajuste de hiperparámetros**. Quedan 20 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
 
 ## Enfoque que se conserva
 
@@ -48,7 +49,7 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 |---|---|---|
 | 7–9 | Desarrollo terminado; reto integrador disponible | Datos documentados, preparación trazable y exploración con figuras e informe reproducible |
 | 10–13 | Desarrollo terminado: líneas base, regresión, clasificación y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
-| 14–18 | Unidad 14 terminada; pendientes características, validación, métricas e interpretabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
+| 14–18 | Unidades 14 y 15 terminadas; pendientes validación, métricas e interpretabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
 | 19–24 | Redes, PyTorch, visión, lenguaje, tiempo, recomendación y refuerzo | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
 | 25–31 | Generación, inferencia, prompts, embeddings, RAG, herramientas, adaptación y multimodalidad | Evaluaciones con casos verificables, citas y límites de permisos y recursos |
 | 32–33 | Aplicación, operación, seguridad y observabilidad | Aplicación mínima con validación de entradas, registro útil y manejo de errores |
@@ -56,18 +57,20 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 
 Antes de desarrollar cada unidad, verificar documentación primaria de las bibliotecas y servicios que vaya a utilizar. Fijar y registrar las versiones que realmente se prueben; no asumir que una API o descarga futura conserva el mismo funcionamiento.
 
-## Siguiente entrega concreta — Unidad 15
+## Siguiente entrega concreta — Unidad 16
 
-Pregunta guía: **¿cómo representar los casos con variables útiles y reducir dimensión sin utilizar información indebida ni perder de vista lo que se descarta?**
+Pregunta guía: **¿cómo comparar y ajustar alternativas sin convertir los datos de evaluación en una pista para elegir el modelo?**
 
 Alcance propuesto, todavía no implementado:
 
-1. Distinguir variables originales, características derivadas y representaciones aprendidas; justificar su disponibilidad al decidir.
-2. Construir características sencillas con significado, revisar redundancia, unidades y filtración, y comparar con una representación de referencia.
-3. Introducir proyección y componentes principales con un ejemplo manual; aprender centrado, escala y ejes solo con entrenamiento.
-4. Interpretar varianza explicada, número de componentes y error de reconstrucción sin equiparar varianza con utilidad predictiva o causalidad.
-5. Comparar una representación completa y otra reducida en un protocolo explícito; separar selección, transformación de casos nuevos y cierre.
-6. Documentar datos nuevos, versiones, semillas y límites, con dos laboratorios, figuras revisadas, ejercicios resueltos y reto evaluable.
+1. Distinguir parámetros aprendidos, hiperparámetros, selección y evaluación final; conservar una prueba nueva y separada.
+2. Introducir validación cruzada con pliegues pequeños y mostrar sus índices; justificar cuándo corresponden particiones aleatorias, por grupo o temporales.
+3. Ajustar preparación y modelo dentro de cada pliegue mediante un pipeline; demostrar por qué transformar todo el conjunto antes de dividir filtra información.
+4. Comparar una rejilla finita y declarada de hiperparámetros con una referencia; documentar criterio, desempates, presupuesto y variación entre pliegues.
+5. Distinguir dispersión entre pliegues de un intervalo de confianza, y puntuación usada para seleccionar de una estimación independiente; explicar cuándo considerar validación anidada.
+6. Reajustar la alternativa elegida con el conjunto de desarrollo permitido antes del cierre, documentando que este protocolo difiere del cierre sin reajuste de las unidades anteriores. Incluir dos laboratorios, datos nuevos, ejercicios, figuras y reto verificables.
+
+La Unidad 15 compara una referencia mediana, entradas originales y una interacción con significado físico, y contrasta regresión completa con PCA de uno o dos componentes. Los datos nuevos muestran que conservar el 99,9343 % de la varianza puede perder la señal predictiva; PCA de dos componentes conserva aquí la dimensión y produce predicciones equivalentes a la regresión completa. Se aprenden escala y ejes solo con entrenamiento; se selecciona por MAE de validación y se abre prueba después, sin reajuste. Se excluye expresamente una lectura posterior que revela el objetivo. Las tres figuras se revisaron visualmente; las 30 pruebas incluyen referencias independientes para mínimos cuadrados y proyección, separación de información, regeneración y exportaciones. Se reutilizó el entorno de la entrega anterior con las versiones registradas en la Unidad 13, sin dependencias nuevas.
 
 La Unidad 14 incorpora agrupamiento de perfiles con K-means y detección de anomalías con distancia al centro e Isolation Forest. Ajusta escala y modelos con entrenamiento; en anomalías fija umbrales con una partición adicional de calibración. Selecciona k por silueta de validación y detector por F1 de referencias sintéticas, reconociendo que esta última selección aprovecha etiquetas. Compara inicializaciones con ARI sin confundir estabilidad con utilidad. El detector seleccionado omite 13 de 16 positivos de validación: se conserva y analiza esa limitación. Prueba se abre después de elegir, sin reajuste. Las tres figuras se revisaron visualmente; las 30 pruebas cubren referencias matemáticas independientes, separación de información, regeneración, exportaciones y correspondencia de gráficos. Se reutilizaron las versiones de la Unidad 13 en un entorno virtual limpio.
 
@@ -79,7 +82,7 @@ La Unidad 11 incorpora datos sintéticos nuevos de ciclos de operación: un caso
 
 La Unidad 10 añade dos conjuntos sintéticos independientes: 32 pronósticos diarios con cortes temporales y 64 avisos de ocho equipos separados por grupo. La ejecución común lee solo entrenamiento y validación; `--evaluar-prueba` abre prueba después de seleccionar y no reajusta. Se comprueban casos idénticos entre candidatos, disponibilidad de etiquetas en los cortes y separación de equipos. Las pruebas de invariancia alteran objetivos de prueba y verifican que no cambien ajuste, selección ni predicciones. No hay dependencias nuevas ni azar.
 
-Las pruebas de las unidades 10 a 14 son públicas y sus resultados didácticos son conocidos. No reutilizarlas automáticamente para seleccionar modelos nuevos en unidades posteriores y después presentarlas como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
+Las pruebas de las unidades 10 a 15 son públicas y sus resultados didácticos son conocidos. No reutilizarlas automáticamente para seleccionar modelos nuevos en unidades posteriores y después presentarlas como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
 
 La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 y NumPy 2.2.6, probadas con Python 3.12.3 en un entorno virtual limpio. Sus resúmenes de texto usan biblioteca estándar; su exportación de gráficos y sus 21 pruebas requieren esos paquetes. Las unidades 11 y 12 reutilizan esas versiones: polinomios y logística requieren NumPy; las figuras, Matplotlib. La Unidad 13 incorpora scikit-learn 1.9.1, probado con Python 3.12.3 y las mismas versiones numéricas y gráficas en otro entorno virtual limpio. Su [registro completo del entorno](unidad13-arboles-ensambles/recursos/entorno-verificado.txt) añade las dependencias transitivas, incluida SciPy 1.18.1. Se conserva también el [registro del entorno anterior](unidad09-exploracion-visualizacion/recursos/entorno-verificado.txt). Los informes JSON anotan fuentes, parámetros y versiones principales.
 
@@ -102,11 +105,11 @@ La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 
 Desde la raíz del curso:
 
 ```bash
-python -m pip install -r unidad14-agrupamiento-anomalias/requirements.txt
+python -m pip install -r unidad15-caracteristicas-dimension/requirements.txt
 python herramientas/verificar_curso.py
 ```
 
-Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 94 ejecuciones de programas y variantes y las 220 pruebas de las unidades 5 a 14. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas y scikit-learn indicados en los requisitos de la Unidad 14. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–14; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
+Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 103 ejecuciones de programas y variantes y las 250 pruebas de las unidades 5 a 15. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas y scikit-learn indicados en los requisitos de la Unidad 15. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–15; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
 
 La comprobación de enlaces no valida URLs externas ni fragmentos `#ancla`. Ejecutar programas con éxito no demuestra que toda explicación sea correcta ni que se obtenga utilidad en una población real.
 

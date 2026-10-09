@@ -1,0 +1,4129 @@
+{
+  "protocolo": "representaciones-v1",
+  "experimento": "interaccion",
+  "versiones": {
+    "python": "3.12.3",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1",
+    "matplotlib": "3.10.8"
+  },
+  "entradas": [
+    "horas_previstas",
+    "potencia_prevista_kw"
+  ],
+  "objetivo": "consumo_final_kwh",
+  "columnas_excluidas": [
+    "caso_id",
+    "consumo_final_kwh",
+    "lectura_cierre_kwh"
+  ],
+  "fuentes": {
+    "entrenamiento": {
+      "archivo": "entrenamiento.csv",
+      "sha256": "74f73fdcebf01841388f3f286f0168cbc3f41ebb6962732c683be4f8def21c9d",
+      "n": 96
+    },
+    "validacion": {
+      "archivo": "validacion.csv",
+      "sha256": "8b04d0bfed32f5efe8ec110993f0ff2f24d93ce1a82d1b46e32382bc7aea4995",
+      "n": 48
+    }
+  },
+  "modelos": {
+    "mediana": {
+      "tipo": "mediana",
+      "valor": 25.0685,
+      "dimension_regresion": 0
+    },
+    "originales": {
+      "tipo": "Pipeline",
+      "caracteristicas_antes_de_escalar": [
+        "horas_previstas",
+        "potencia_prevista_kw"
+      ],
+      "escala": {
+        "media": [
+          5.8565625,
+          5.192499999999998
+        ],
+        "varianza": [
+          3.998107975260419,
+          2.642547916666666
+        ],
+        "escala": [
+          1.9995269378681597,
+          1.6255915589921923
+        ]
+      },
+      "regresion": {
+        "intercepto": 27.312541666666654,
+        "coeficientes": [
+          8.296217290157388,
+          7.475387448714807
+        ],
+        "rango": 2,
+        "singulares": [
+          9.903233599596128,
+          9.691540861588019
+        ],
+        "parametros": {
+          "copy_X": true,
+          "fit_intercept": true,
+          "n_jobs": null,
+          "positive": false,
+          "tol": 1e-06
+        }
+      },
+      "dimension_regresion": 2
+    },
+    "interaccion": {
+      "tipo": "Pipeline",
+      "caracteristicas_antes_de_escalar": [
+        "horas_previstas",
+        "potencia_prevista_kw",
+        "energia_nominal_kwh"
+      ],
+      "escala": {
+        "media": [
+          5.8565625,
+          5.192499999999998,
+          30.33997708333332
+        ],
+        "varianza": [
+          3.998107975260419,
+          2.642547916666666,
+          203.01106576530813
+        ],
+        "escala": [
+          1.9995269378681597,
+          1.6255915589921923,
+          14.2481951757164
+        ]
+      },
+      "regresion": {
+        "intercepto": 27.312541666666654,
+        "coeficientes": [
+          -0.07308873477463246,
+          -0.018595261443911326,
+          11.38685950245726
+        ],
+        "rango": 3,
+        "singulares": [
+          13.698704597926717,
+          9.90253996088737,
+          1.5116860328024841
+        ],
+        "parametros": {
+          "copy_X": true,
+          "fit_intercept": true,
+          "n_jobs": null,
+          "positive": false,
+          "tol": 1e-06
+        }
+      },
+      "dimension_regresion": 3
+    }
+  },
+  "prueba": null,
+  "rangos_entrenamiento": {
+    "horas_previstas": [
+      2.04,
+      9.99
+    ],
+    "potencia_prevista_kw": [
+      2.15,
+      7.99
+    ]
+  },
+  "criterio": {
+    "metrica": "mae",
+    "sentido": "minimizar",
+    "conjunto": "validacion",
+    "reajuste": false,
+    "tolerancia_absoluta": 1e-10,
+    "orden_desempate": [
+      "mediana",
+      "originales",
+      "interaccion"
+    ]
+  },
+  "azar_ajuste": "Sin muestreo ni inicialización aleatoria; PCA usa SVD completa.",
+  "entrenamiento": {
+    "mediana": {
+      "metricas": {
+        "n": 96,
+        "mae": 8.974833333333333,
+        "rmse": 11.555869456507084,
+        "sesgo": 2.2440416666666665,
+        "r2": -0.03918777519048078,
+        "mse_reconstruccion_z": null,
+        "mse_reconstruccion_original": null
+      },
+      "predicciones": [
+        {
+          "caso_id": "interaccion-entrenamiento-001",
+          "horas_previstas": 9.24,
+          "potencia_prevista_kw": 7.18,
+          "real": 55.9,
+          "prediccion": 25.0685,
+          "residuo": 30.8315,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-002",
+          "horas_previstas": 6.07,
+          "potencia_prevista_kw": 2.45,
+          "real": 14.414,
+          "prediccion": 25.0685,
+          "residuo": -10.6545,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-003",
+          "horas_previstas": 9.06,
+          "potencia_prevista_kw": 2.8,
+          "real": 23.284,
+          "prediccion": 25.0685,
+          "residuo": -1.7845000000000013,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-004",
+          "horas_previstas": 6.21,
+          "potencia_prevista_kw": 5.12,
+          "real": 28.553,
+          "prediccion": 25.0685,
+          "residuo": 3.4845000000000006,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-005",
+          "horas_previstas": 4.35,
+          "potencia_prevista_kw": 6.6,
+          "real": 25.81,
+          "prediccion": 25.0685,
+          "residuo": 0.7414999999999985,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-006",
+          "horas_previstas": 9.18,
+          "potencia_prevista_kw": 7.03,
+          "real": 54.173,
+          "prediccion": 25.0685,
+          "residuo": 29.1045,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-007",
+          "horas_previstas": 2.63,
+          "potencia_prevista_kw": 7.9,
+          "real": 19.676,
+          "prediccion": 25.0685,
+          "residuo": -5.392500000000002,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-008",
+          "horas_previstas": 6.69,
+          "potencia_prevista_kw": 2.69,
+          "real": 16.722,
+          "prediccion": 25.0685,
+          "residuo": -8.346499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-009",
+          "horas_previstas": 6.68,
+          "potencia_prevista_kw": 2.8,
+          "real": 19.776,
+          "prediccion": 25.0685,
+          "residuo": -5.2925,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-010",
+          "horas_previstas": 6.07,
+          "potencia_prevista_kw": 7.71,
+          "real": 40.312,
+          "prediccion": 25.0685,
+          "residuo": 15.243499999999997,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-011",
+          "horas_previstas": 4.7,
+          "potencia_prevista_kw": 5.76,
+          "real": 24.783,
+          "prediccion": 25.0685,
+          "residuo": -0.285499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-012",
+          "horas_previstas": 8.32,
+          "potencia_prevista_kw": 5.69,
+          "real": 40.359,
+          "prediccion": 25.0685,
+          "residuo": 15.290500000000002,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-013",
+          "horas_previstas": 4.69,
+          "potencia_prevista_kw": 2.98,
+          "real": 13.973,
+          "prediccion": 25.0685,
+          "residuo": -11.0955,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-014",
+          "horas_previstas": 4.43,
+          "potencia_prevista_kw": 6.58,
+          "real": 26.463,
+          "prediccion": 25.0685,
+          "residuo": 1.3945000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-015",
+          "horas_previstas": 9.93,
+          "potencia_prevista_kw": 4.95,
+          "real": 42.439,
+          "prediccion": 25.0685,
+          "residuo": 17.3705,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-016",
+          "horas_previstas": 7.34,
+          "potencia_prevista_kw": 3.14,
+          "real": 21.547,
+          "prediccion": 25.0685,
+          "residuo": -3.5214999999999996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-017",
+          "horas_previstas": 3.57,
+          "potencia_prevista_kw": 4.82,
+          "real": 17.718,
+          "prediccion": 25.0685,
+          "residuo": -7.3505,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-018",
+          "horas_previstas": 4.13,
+          "potencia_prevista_kw": 4.27,
+          "real": 17.653,
+          "prediccion": 25.0685,
+          "residuo": -7.4155000000000015,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-019",
+          "horas_previstas": 3.13,
+          "potencia_prevista_kw": 7.6,
+          "real": 21.889,
+          "prediccion": 25.0685,
+          "residuo": -3.179500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-020",
+          "horas_previstas": 9.73,
+          "potencia_prevista_kw": 4.24,
+          "real": 35.525,
+          "prediccion": 25.0685,
+          "residuo": 10.456499999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-021",
+          "horas_previstas": 5.44,
+          "potencia_prevista_kw": 2.96,
+          "real": 16.011,
+          "prediccion": 25.0685,
+          "residuo": -9.057500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-022",
+          "horas_previstas": 9.99,
+          "potencia_prevista_kw": 4.43,
+          "real": 38.206,
+          "prediccion": 25.0685,
+          "residuo": 13.137500000000003,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-023",
+          "horas_previstas": 6.61,
+          "potencia_prevista_kw": 7.59,
+          "real": 43.119,
+          "prediccion": 25.0685,
+          "residuo": 18.0505,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-024",
+          "horas_previstas": 7.86,
+          "potencia_prevista_kw": 4.03,
+          "real": 28.483,
+          "prediccion": 25.0685,
+          "residuo": 3.4145000000000003,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-025",
+          "horas_previstas": 6.72,
+          "potencia_prevista_kw": 3.57,
+          "real": 22.276,
+          "prediccion": 25.0685,
+          "residuo": -2.7925000000000004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-026",
+          "horas_previstas": 3.52,
+          "potencia_prevista_kw": 5.2,
+          "real": 16.322,
+          "prediccion": 25.0685,
+          "residuo": -8.746500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-027",
+          "horas_previstas": 6.43,
+          "potencia_prevista_kw": 6.1,
+          "real": 34.99,
+          "prediccion": 25.0685,
+          "residuo": 9.921500000000002,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-028",
+          "horas_previstas": 7.41,
+          "potencia_prevista_kw": 4.44,
+          "real": 29.421,
+          "prediccion": 25.0685,
+          "residuo": 4.352499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-029",
+          "horas_previstas": 8.15,
+          "potencia_prevista_kw": 7.03,
+          "real": 49.238,
+          "prediccion": 25.0685,
+          "residuo": 24.1695,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-030",
+          "horas_previstas": 5.57,
+          "potencia_prevista_kw": 7.69,
+          "real": 36.501,
+          "prediccion": 25.0685,
+          "residuo": 11.432499999999997,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-031",
+          "horas_previstas": 8.89,
+          "potencia_prevista_kw": 6.33,
+          "real": 48.352,
+          "prediccion": 25.0685,
+          "residuo": 23.283499999999997,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-032",
+          "horas_previstas": 8.22,
+          "potencia_prevista_kw": 7.17,
+          "real": 50.012,
+          "prediccion": 25.0685,
+          "residuo": 24.9435,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-033",
+          "horas_previstas": 3.42,
+          "potencia_prevista_kw": 5.75,
+          "real": 18.479,
+          "prediccion": 25.0685,
+          "residuo": -6.589500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-034",
+          "horas_previstas": 6.72,
+          "potencia_prevista_kw": 4.19,
+          "real": 25.32,
+          "prediccion": 25.0685,
+          "residuo": 0.25150000000000006,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-035",
+          "horas_previstas": 5.99,
+          "potencia_prevista_kw": 6.84,
+          "real": 35.021,
+          "prediccion": 25.0685,
+          "residuo": 9.9525,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-036",
+          "horas_previstas": 5.18,
+          "potencia_prevista_kw": 4.03,
+          "real": 19.953,
+          "prediccion": 25.0685,
+          "residuo": -5.115500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-037",
+          "horas_previstas": 8.88,
+          "potencia_prevista_kw": 7.16,
+          "real": 53.939,
+          "prediccion": 25.0685,
+          "residuo": 28.8705,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-038",
+          "horas_previstas": 5.93,
+          "potencia_prevista_kw": 6.09,
+          "real": 31.41,
+          "prediccion": 25.0685,
+          "residuo": 6.3415,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-039",
+          "horas_previstas": 3.96,
+          "potencia_prevista_kw": 3.97,
+          "real": 15.419,
+          "prediccion": 25.0685,
+          "residuo": -9.6495,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-040",
+          "horas_previstas": 3.71,
+          "potencia_prevista_kw": 6.48,
+          "real": 21.736,
+          "prediccion": 25.0685,
+          "residuo": -3.3324999999999996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-041",
+          "horas_previstas": 4.67,
+          "potencia_prevista_kw": 4.01,
+          "real": 17.591,
+          "prediccion": 25.0685,
+          "residuo": -7.477499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-042",
+          "horas_previstas": 8.56,
+          "potencia_prevista_kw": 3.31,
+          "real": 26.25,
+          "prediccion": 25.0685,
+          "residuo": 1.1814999999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-043",
+          "horas_previstas": 7.24,
+          "potencia_prevista_kw": 2.59,
+          "real": 17.485,
+          "prediccion": 25.0685,
+          "residuo": -7.583500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-044",
+          "horas_previstas": 2.92,
+          "potencia_prevista_kw": 4.6,
+          "real": 14.001,
+          "prediccion": 25.0685,
+          "residuo": -11.0675,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-045",
+          "horas_previstas": 7.31,
+          "potencia_prevista_kw": 6.13,
+          "real": 39.609,
+          "prediccion": 25.0685,
+          "residuo": 14.540500000000002,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-046",
+          "horas_previstas": 5.65,
+          "potencia_prevista_kw": 3.71,
+          "real": 19.544,
+          "prediccion": 25.0685,
+          "residuo": -5.5245,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-047",
+          "horas_previstas": 8.56,
+          "potencia_prevista_kw": 7.06,
+          "real": 50.436,
+          "prediccion": 25.0685,
+          "residuo": 25.3675,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-048",
+          "horas_previstas": 6.86,
+          "potencia_prevista_kw": 3.92,
+          "real": 24.197,
+          "prediccion": 25.0685,
+          "residuo": -0.871500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-049",
+          "horas_previstas": 3.71,
+          "potencia_prevista_kw": 6.38,
+          "real": 22.993,
+          "prediccion": 25.0685,
+          "residuo": -2.0755000000000017,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-050",
+          "horas_previstas": 6.42,
+          "potencia_prevista_kw": 7.38,
+          "real": 41.962,
+          "prediccion": 25.0685,
+          "residuo": 16.893500000000003,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-051",
+          "horas_previstas": 7.82,
+          "potencia_prevista_kw": 6.61,
+          "real": 43.296,
+          "prediccion": 25.0685,
+          "residuo": 18.2275,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-052",
+          "horas_previstas": 5.59,
+          "potencia_prevista_kw": 4.96,
+          "real": 25.996,
+          "prediccion": 25.0685,
+          "residuo": 0.9274999999999984,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-053",
+          "horas_previstas": 5.47,
+          "potencia_prevista_kw": 4.42,
+          "real": 21.681,
+          "prediccion": 25.0685,
+          "residuo": -3.3874999999999993,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-054",
+          "horas_previstas": 5.89,
+          "potencia_prevista_kw": 7.73,
+          "real": 39.139,
+          "prediccion": 25.0685,
+          "residuo": 14.070500000000003,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-055",
+          "horas_previstas": 4.9,
+          "potencia_prevista_kw": 2.83,
+          "real": 13.869,
+          "prediccion": 25.0685,
+          "residuo": -11.1995,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-056",
+          "horas_previstas": 6.83,
+          "potencia_prevista_kw": 4.12,
+          "real": 25.158,
+          "prediccion": 25.0685,
+          "residuo": 0.08950000000000102,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-057",
+          "horas_previstas": 7.23,
+          "potencia_prevista_kw": 4.11,
+          "real": 26.391,
+          "prediccion": 25.0685,
+          "residuo": 1.322499999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-058",
+          "horas_previstas": 4.82,
+          "potencia_prevista_kw": 6.81,
+          "real": 29.991,
+          "prediccion": 25.0685,
+          "residuo": 4.922499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-059",
+          "horas_previstas": 6.14,
+          "potencia_prevista_kw": 6.07,
+          "real": 32.289,
+          "prediccion": 25.0685,
+          "residuo": 7.220500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-060",
+          "horas_previstas": 2.04,
+          "potencia_prevista_kw": 5.06,
+          "real": 11.066,
+          "prediccion": 25.0685,
+          "residuo": -14.0025,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-061",
+          "horas_previstas": 8.49,
+          "potencia_prevista_kw": 6.92,
+          "real": 50.168,
+          "prediccion": 25.0685,
+          "residuo": 25.0995,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-062",
+          "horas_previstas": 6.74,
+          "potencia_prevista_kw": 4.99,
+          "real": 30.201,
+          "prediccion": 25.0685,
+          "residuo": 5.1325,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-063",
+          "horas_previstas": 4.36,
+          "potencia_prevista_kw": 7.79,
+          "real": 30.301,
+          "prediccion": 25.0685,
+          "residuo": 5.232499999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-064",
+          "horas_previstas": 7.56,
+          "potencia_prevista_kw": 6.83,
+          "real": 44.367,
+          "prediccion": 25.0685,
+          "residuo": 19.298499999999997,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-065",
+          "horas_previstas": 2.45,
+          "potencia_prevista_kw": 6.99,
+          "real": 16.421,
+          "prediccion": 25.0685,
+          "residuo": -8.6475,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-066",
+          "horas_previstas": 6.72,
+          "potencia_prevista_kw": 2.99,
+          "real": 20.262,
+          "prediccion": 25.0685,
+          "residuo": -4.8065,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-067",
+          "horas_previstas": 3.06,
+          "potencia_prevista_kw": 7.89,
+          "real": 22.9,
+          "prediccion": 25.0685,
+          "residuo": -2.1685000000000016,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-068",
+          "horas_previstas": 5.41,
+          "potencia_prevista_kw": 4.17,
+          "real": 20.949,
+          "prediccion": 25.0685,
+          "residuo": -4.119499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-069",
+          "horas_previstas": 4.76,
+          "potencia_prevista_kw": 7.41,
+          "real": 31.189,
+          "prediccion": 25.0685,
+          "residuo": 6.1205,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-070",
+          "horas_previstas": 5.07,
+          "potencia_prevista_kw": 5.35,
+          "real": 24.738,
+          "prediccion": 25.0685,
+          "residuo": -0.3305000000000007,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-071",
+          "horas_previstas": 8.66,
+          "potencia_prevista_kw": 5.32,
+          "real": 40.244,
+          "prediccion": 25.0685,
+          "residuo": 15.1755,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-072",
+          "horas_previstas": 7.65,
+          "potencia_prevista_kw": 3.68,
+          "real": 24.995,
+          "prediccion": 25.0685,
+          "residuo": -0.07349999999999923,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-073",
+          "horas_previstas": 4.68,
+          "potencia_prevista_kw": 4.89,
+          "real": 21.714,
+          "prediccion": 25.0685,
+          "residuo": -3.3545000000000016,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-074",
+          "horas_previstas": 3.07,
+          "potencia_prevista_kw": 4.11,
+          "real": 13.86,
+          "prediccion": 25.0685,
+          "residuo": -11.2085,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-075",
+          "horas_previstas": 3.74,
+          "potencia_prevista_kw": 4.84,
+          "real": 17.802,
+          "prediccion": 25.0685,
+          "residuo": -7.266500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-076",
+          "horas_previstas": 2.14,
+          "potencia_prevista_kw": 3.18,
+          "real": 7.975,
+          "prediccion": 25.0685,
+          "residuo": -17.0935,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-077",
+          "horas_previstas": 4.0,
+          "potencia_prevista_kw": 2.15,
+          "real": 10.359,
+          "prediccion": 25.0685,
+          "residuo": -14.7095,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-078",
+          "horas_previstas": 2.93,
+          "potencia_prevista_kw": 2.46,
+          "real": 9.139,
+          "prediccion": 25.0685,
+          "residuo": -15.9295,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-079",
+          "horas_previstas": 5.32,
+          "potencia_prevista_kw": 4.9,
+          "real": 24.739,
+          "prediccion": 25.0685,
+          "residuo": -0.32949999999999946,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-080",
+          "horas_previstas": 5.39,
+          "potencia_prevista_kw": 6.95,
+          "real": 33.811,
+          "prediccion": 25.0685,
+          "residuo": 8.7425,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-081",
+          "horas_previstas": 6.34,
+          "potencia_prevista_kw": 5.77,
+          "real": 32.97,
+          "prediccion": 25.0685,
+          "residuo": 7.901499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-082",
+          "horas_previstas": 4.21,
+          "potencia_prevista_kw": 4.26,
+          "real": 16.734,
+          "prediccion": 25.0685,
+          "residuo": -8.334499999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-083",
+          "horas_previstas": 3.95,
+          "potencia_prevista_kw": 4.41,
+          "real": 17.55,
+          "prediccion": 25.0685,
+          "residuo": -7.5184999999999995,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-084",
+          "horas_previstas": 6.88,
+          "potencia_prevista_kw": 4.04,
+          "real": 26.063,
+          "prediccion": 25.0685,
+          "residuo": 0.9944999999999986,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-085",
+          "horas_previstas": 8.3,
+          "potencia_prevista_kw": 3.37,
+          "real": 25.142,
+          "prediccion": 25.0685,
+          "residuo": 0.07349999999999923,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-086",
+          "horas_previstas": 7.85,
+          "potencia_prevista_kw": 4.52,
+          "real": 30.756,
+          "prediccion": 25.0685,
+          "residuo": 5.6875,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-087",
+          "horas_previstas": 4.48,
+          "potencia_prevista_kw": 7.15,
+          "real": 27.833,
+          "prediccion": 25.0685,
+          "residuo": 2.764499999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-088",
+          "horas_previstas": 3.1,
+          "potencia_prevista_kw": 4.08,
+          "real": 13.594,
+          "prediccion": 25.0685,
+          "residuo": -11.4745,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-089",
+          "horas_previstas": 5.97,
+          "potencia_prevista_kw": 3.4,
+          "real": 19.502,
+          "prediccion": 25.0685,
+          "residuo": -5.566500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-090",
+          "horas_previstas": 5.38,
+          "potencia_prevista_kw": 7.99,
+          "real": 37.209,
+          "prediccion": 25.0685,
+          "residuo": 12.140500000000003,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-091",
+          "horas_previstas": 6.4,
+          "potencia_prevista_kw": 3.52,
+          "real": 19.927,
+          "prediccion": 25.0685,
+          "residuo": -5.141500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-092",
+          "horas_previstas": 3.19,
+          "potencia_prevista_kw": 5.26,
+          "real": 17.654,
+          "prediccion": 25.0685,
+          "residuo": -7.4145,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-093",
+          "horas_previstas": 8.59,
+          "potencia_prevista_kw": 4.63,
+          "real": 34.547,
+          "prediccion": 25.0685,
+          "residuo": 9.478499999999997,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-094",
+          "horas_previstas": 4.79,
+          "potencia_prevista_kw": 5.55,
+          "real": 24.84,
+          "prediccion": 25.0685,
+          "residuo": -0.22850000000000037,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-095",
+          "horas_previstas": 2.3,
+          "potencia_prevista_kw": 4.02,
+          "real": 10.498,
+          "prediccion": 25.0685,
+          "residuo": -14.570500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-096",
+          "horas_previstas": 4.92,
+          "potencia_prevista_kw": 7.53,
+          "real": 32.93,
+          "prediccion": 25.0685,
+          "residuo": 7.8614999999999995,
+          "fuera_rango": false
+        }
+      ],
+      "representaciones": []
+    },
+    "originales": {
+      "metricas": {
+        "n": 96,
+        "mae": 1.930999902440242,
+        "rmse": 2.544302140406487,
+        "sesgo": 3.201143054335868e-15,
+        "r2": 0.949623714510257,
+        "mse_reconstruccion_z": null,
+        "mse_reconstruccion_original": null
+      },
+      "predicciones": [
+        {
+          "caso_id": "interaccion-entrenamiento-001",
+          "horas_previstas": 9.24,
+          "potencia_prevista_kw": 7.18,
+          "real": 55.9,
+          "prediccion": 50.490375194171754,
+          "residuo": 5.409624805828244,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-002",
+          "horas_previstas": 6.07,
+          "potencia_prevista_kw": 2.45,
+          "real": 14.414,
+          "prediccion": 15.586550243238559,
+          "residuo": -1.1725502432385593,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-003",
+          "horas_previstas": 9.06,
+          "potencia_prevista_kw": 2.8,
+          "real": 23.284,
+          "prediccion": 29.601826979162116,
+          "residuo": -6.317826979162117,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-004",
+          "horas_previstas": 6.21,
+          "potencia_prevista_kw": 5.12,
+          "real": 28.553,
+          "prediccion": 28.44558975752012,
+          "residuo": 0.10741024247987951,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-005",
+          "horas_previstas": 4.35,
+          "potencia_prevista_kw": 6.6,
+          "real": 25.81,
+          "prediccion": 27.534157585402745,
+          "residuo": -1.7241575854027467,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-006",
+          "horas_previstas": 9.18,
+          "potencia_prevista_kw": 7.03,
+          "real": 54.173,
+          "prediccion": 49.551645134305616,
+          "residuo": 4.621354865694386,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-007",
+          "horas_previstas": 2.63,
+          "potencia_prevista_kw": 7.9,
+          "real": 19.676,
+          "prediccion": 26.37585642860461,
+          "residuo": -6.699856428604612,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-008",
+          "horas_previstas": 6.69,
+          "potencia_prevista_kw": 2.69,
+          "real": 16.722,
+          "prediccion": 19.262641516718283,
+          "residuo": -2.5406415167182814,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-009",
+          "horas_previstas": 6.68,
+          "potencia_prevista_kw": 2.8,
+          "real": 19.776,
+          "prediccion": 19.7269926987967,
+          "residuo": 0.0490073012033001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-010",
+          "horas_previstas": 6.07,
+          "potencia_prevista_kw": 7.71,
+          "real": 40.312,
+          "prediccion": 39.77499891149886,
+          "residuo": 0.5370010885011354,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-011",
+          "horas_previstas": 4.7,
+          "potencia_prevista_kw": 5.76,
+          "real": 24.783,
+          "prediccion": 25.123545013316505,
+          "residuo": -0.340545013316504,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-012",
+          "horas_previstas": 8.32,
+          "potencia_prevista_kw": 5.69,
+          "real": 40.359,
+          "prediccion": 39.82135142856092,
+          "residuo": 0.5376485714390853,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-013",
+          "horas_previstas": 4.69,
+          "potencia_prevista_kw": 2.98,
+          "real": 13.973,
+          "prediccion": 12.298045121008562,
+          "residuo": 1.6749548789914392,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-014",
+          "horas_previstas": 4.43,
+          "potencia_prevista_kw": 6.58,
+          "real": 26.463,
+          "prediccion": 27.77411350039209,
+          "residuo": -1.3111135003920893,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-015",
+          "horas_previstas": 9.93,
+          "potencia_prevista_kw": 4.95,
+          "real": 42.439,
+          "prediccion": 43.09844873758115,
+          "residuo": -0.6594487375811511,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-016",
+          "horas_previstas": 7.34,
+          "potencia_prevista_kw": 3.14,
+          "real": 21.547,
+          "prediccion": 24.028904012187187,
+          "residuo": -2.4819040121871865,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-017",
+          "horas_previstas": 3.57,
+          "potencia_prevista_kw": 4.82,
+          "real": 17.718,
+          "prediccion": 16.11242275269505,
+          "residuo": 1.60557724730495,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-018",
+          "horas_previstas": 4.13,
+          "potencia_prevista_kw": 4.27,
+          "real": 17.653,
+          "prediccion": 15.906702759524105,
+          "residuo": 1.7462972404758936,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-019",
+          "horas_previstas": 3.13,
+          "potencia_prevista_kw": 7.6,
+          "real": 21.889,
+          "prediccion": 27.07083212980785,
+          "residuo": -5.181832129807852,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-020",
+          "horas_previstas": 9.73,
+          "potencia_prevista_kw": 4.24,
+          "real": 35.525,
+          "prediccion": 39.00365001705117,
+          "residuo": -3.478650017051173,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-021",
+          "horas_previstas": 5.44,
+          "potencia_prevista_kw": 2.96,
+          "real": 16.011,
+          "prediccion": 15.317891358621779,
+          "residuo": 0.6931086413782204,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-022",
+          "horas_previstas": 9.99,
+          "potencia_prevista_kw": 4.43,
+          "real": 38.206,
+          "prediccion": 40.956140659094736,
+          "residuo": -2.7501406590947326,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-023",
+          "horas_previstas": 6.61,
+          "potencia_prevista_kw": 7.59,
+          "real": 43.119,
+          "prediccion": 41.463679803460934,
+          "residuo": 1.6553201965390656,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-024",
+          "horas_previstas": 7.86,
+          "potencia_prevista_kw": 4.03,
+          "real": 28.483,
+          "prediccion": 30.279153132930748,
+          "residuo": -1.7961531329307476,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-025",
+          "horas_previstas": 6.72,
+          "potencia_prevista_kw": 3.57,
+          "real": 22.276,
+          "prediccion": 23.43385087706001,
+          "residuo": -1.1578508770600102,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-026",
+          "horas_previstas": 3.52,
+          "potencia_prevista_kw": 5.2,
+          "real": 16.322,
+          "prediccion": 17.65242271753501,
+          "residuo": -1.3304227175350114,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-027",
+          "horas_previstas": 6.43,
+          "potencia_prevista_kw": 6.1,
+          "real": 34.99,
+          "prediccion": 33.864982662837654,
+          "residuo": 1.1250173371623475,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-028",
+          "horas_previstas": 7.41,
+          "potencia_prevista_kw": 4.44,
+          "real": 29.421,
+          "prediccion": 30.29747401583194,
+          "residuo": -0.876474015831942,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-029",
+          "horas_previstas": 8.15,
+          "potencia_prevista_kw": 7.03,
+          "real": 49.238,
+          "prediccion": 45.27808239952563,
+          "residuo": 3.9599176004743697,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-030",
+          "horas_previstas": 5.57,
+          "potencia_prevista_kw": 7.69,
+          "real": 36.501,
+          "prediccion": 37.60848260690336,
+          "residuo": -1.1074826069033605,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-031",
+          "horas_previstas": 8.89,
+          "potencia_prevista_kw": 6.33,
+          "real": 48.352,
+          "prediccion": 45.12941395459262,
+          "residuo": 3.2225860454073754,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-032",
+          "horas_previstas": 8.22,
+          "potencia_prevista_kw": 7.17,
+          "real": 50.012,
+          "prediccion": 46.212317715873425,
+          "residuo": 3.7996822841265754,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-033",
+          "horas_previstas": 3.42,
+          "potencia_prevista_kw": 5.75,
+          "real": 18.479,
+          "prediccion": 19.766724126238763,
+          "residuo": -1.2877241262387642,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-034",
+          "horas_previstas": 6.72,
+          "potencia_prevista_kw": 4.19,
+          "real": 25.32,
+          "prediccion": 26.28496079613252,
+          "residuo": -0.9649607961325195,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-035",
+          "horas_previstas": 5.99,
+          "potencia_prevista_kw": 6.84,
+          "real": 35.021,
+          "prediccion": 35.442320693324795,
+          "residuo": -0.4213206933247946,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-036",
+          "horas_previstas": 5.18,
+          "potencia_prevista_kw": 4.03,
+          "real": 19.953,
+          "prediccion": 19.15959184243524,
+          "residuo": 0.7934081575647589,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-037",
+          "horas_previstas": 8.88,
+          "potencia_prevista_kw": 7.16,
+          "real": 53.939,
+          "prediccion": 48.90473149430363,
+          "residuo": 5.034268505696367,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-038",
+          "horas_previstas": 5.93,
+          "potencia_prevista_kw": 6.09,
+          "real": 31.41,
+          "prediccion": 31.744452002098157,
+          "residuo": -0.33445200209815695,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-039",
+          "horas_previstas": 3.96,
+          "potencia_prevista_kw": 3.97,
+          "real": 15.419,
+          "prediccion": 13.821788138103475,
+          "residuo": 1.5972118618965254,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-040",
+          "horas_previstas": 3.71,
+          "potencia_prevista_kw": 6.48,
+          "real": 21.736,
+          "prediccion": 24.326912237519785,
+          "residuo": -2.5909122375197846,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-041",
+          "horas_previstas": 4.67,
+          "potencia_prevista_kw": 4.01,
+          "real": 17.591,
+          "prediccion": 16.951584637502062,
+          "residuo": 0.6394153624979388,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-042",
+          "horas_previstas": 8.56,
+          "potencia_prevista_kw": 3.31,
+          "real": 26.25,
+          "prediccion": 29.872549798935044,
+          "residuo": -3.6225497989350437,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-043",
+          "horas_previstas": 7.24,
+          "potencia_prevista_kw": 2.59,
+          "real": 17.485,
+          "prediccion": 21.08478459673004,
+          "residuo": -3.5997845967300393,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-044",
+          "horas_previstas": 2.92,
+          "potencia_prevista_kw": 4.6,
+          "real": 14.001,
+          "prediccion": 12.403830065914331,
+          "residuo": 1.5971699340856684,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-045",
+          "horas_previstas": 7.31,
+          "potencia_prevista_kw": 6.13,
+          "real": 39.609,
+          "prediccion": 37.65413882412062,
+          "residuo": 1.9548611758793797,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-046",
+          "horas_previstas": 5.65,
+          "potencia_prevista_kw": 3.71,
+          "real": 19.544,
+          "prediccion": 19.63812355491346,
+          "residuo": -0.09412355491345892,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-047",
+          "horas_previstas": 8.56,
+          "potencia_prevista_kw": 7.06,
+          "real": 50.436,
+          "prediccion": 47.11716624493811,
+          "residuo": 3.3188337550618883,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-048",
+          "horas_previstas": 6.86,
+          "potencia_prevista_kw": 3.92,
+          "real": 24.197,
+          "prediccion": 25.624221016747676,
+          "residuo": -1.4272210167476764,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-049",
+          "horas_previstas": 3.71,
+          "potencia_prevista_kw": 6.38,
+          "real": 22.993,
+          "prediccion": 23.8670557989597,
+          "residuo": -0.8740557989597022,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-050",
+          "horas_previstas": 6.42,
+          "potencia_prevista_kw": 7.38,
+          "real": 41.962,
+          "prediccion": 39.70965417606904,
+          "residuo": 2.252345823930966,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-051",
+          "horas_previstas": 7.82,
+          "potencia_prevista_kw": 6.61,
+          "real": 43.296,
+          "prediccion": 41.97748564643018,
+          "residuo": 1.3185143535698174,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-052",
+          "horas_previstas": 5.59,
+          "potencia_prevista_kw": 4.96,
+          "real": 25.996,
+          "prediccion": 25.13738363488846,
+          "residuo": 0.858616365111537,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-053",
+          "horas_previstas": 5.47,
+          "potencia_prevista_kw": 4.42,
+          "real": 21.681,
+          "prediccion": 22.156268062611982,
+          "residuo": -0.4752680626119812,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-054",
+          "horas_previstas": 5.89,
+          "potencia_prevista_kw": 7.73,
+          "real": 39.139,
+          "prediccion": 39.120133993132825,
+          "residuo": 0.018866006867177987,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-055",
+          "horas_previstas": 4.9,
+          "potencia_prevista_kw": 2.83,
+          "real": 13.869,
+          "prediccion": 12.479569370259506,
+          "residuo": 1.3894306297404935,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-056",
+          "horas_previstas": 6.83,
+          "potencia_prevista_kw": 4.12,
+          "real": 25.158,
+          "prediccion": 26.419461192854833,
+          "residuo": -1.2614611928548314,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-057",
+          "horas_previstas": 7.23,
+          "potencia_prevista_kw": 4.11,
+          "real": 26.391,
+          "prediccion": 28.033111562505617,
+          "residuo": -1.6421115625056188,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-058",
+          "horas_previstas": 4.82,
+          "potencia_prevista_kw": 6.81,
+          "real": 29.991,
+          "prediccion": 30.4499284222494,
+          "residuo": -0.4589284222494001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-059",
+          "horas_previstas": 6.14,
+          "potencia_prevista_kw": 6.07,
+          "real": 32.289,
+          "prediccion": 32.523789621477206,
+          "residuo": -0.23478962147720495,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-060",
+          "horas_previstas": 2.04,
+          "potencia_prevista_kw": 5.06,
+          "real": 11.066,
+          "prediccion": 10.867970453575765,
+          "residuo": 0.19802954642423565,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-061",
+          "horas_previstas": 8.49,
+          "potencia_prevista_kw": 6.92,
+          "real": 50.168,
+          "prediccion": 46.18293092859031,
+          "residuo": 3.98506907140969,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-062",
+          "horas_previstas": 6.74,
+          "potencia_prevista_kw": 4.99,
+          "real": 30.201,
+          "prediccion": 30.046794105288516,
+          "residuo": 0.1542058947114846,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-063",
+          "horas_previstas": 4.36,
+          "potencia_prevista_kw": 7.79,
+          "real": 30.301,
+          "prediccion": 33.047940104605395,
+          "residuo": -2.7469401046053967,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-064",
+          "horas_previstas": 7.56,
+          "potencia_prevista_kw": 6.83,
+          "real": 44.367,
+          "prediccion": 41.91040640248294,
+          "residuo": 2.456593597517056,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-065",
+          "horas_previstas": 2.45,
+          "potencia_prevista_kw": 6.99,
+          "real": 16.421,
+          "prediccion": 21.44432663162981,
+          "residuo": -5.023326631629811,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-066",
+          "horas_previstas": 6.72,
+          "potencia_prevista_kw": 2.99,
+          "real": 20.262,
+          "prediccion": 20.766683533411538,
+          "residuo": -0.5046835334115372,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-067",
+          "horas_previstas": 3.06,
+          "potencia_prevista_kw": 7.89,
+          "real": 22.9,
+          "prediccion": 28.1139794992684,
+          "residuo": -5.213979499268401,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-068",
+          "horas_previstas": 5.41,
+          "potencia_prevista_kw": 4.17,
+          "real": 20.949,
+          "prediccion": 20.75768156418576,
+          "residuo": 0.19131843581424235,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-069",
+          "horas_previstas": 4.76,
+          "potencia_prevista_kw": 7.41,
+          "real": 31.189,
+          "prediccion": 32.960121651583876,
+          "residuo": -1.7711216515838757,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-070",
+          "horas_previstas": 5.07,
+          "potencia_prevista_kw": 5.35,
+          "real": 24.738,
+          "prediccion": 24.77329692771395,
+          "residuo": -0.035296927713950765,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-071",
+          "horas_previstas": 8.66,
+          "potencia_prevista_kw": 5.32,
+          "real": 40.244,
+          "prediccion": 39.53057321736939,
+          "residuo": 0.7134267826306129,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-072",
+          "horas_previstas": 7.65,
+          "potencia_prevista_kw": 3.68,
+          "real": 24.995,
+          "prediccion": 27.798346690879395,
+          "residuo": -2.803346690879394,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-073",
+          "horas_previstas": 4.68,
+          "potencia_prevista_kw": 4.89,
+          "real": 21.714,
+          "prediccion": 21.03981219716845,
+          "residuo": 0.6741878028315469,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-074",
+          "horas_previstas": 3.07,
+          "potencia_prevista_kw": 4.11,
+          "real": 13.86,
+          "prediccion": 10.772897022034979,
+          "residuo": 3.0871029779650208,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-075",
+          "horas_previstas": 3.74,
+          "potencia_prevista_kw": 4.84,
+          "real": 17.802,
+          "prediccion": 16.909739346147454,
+          "residuo": 0.8922606538525457,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-076",
+          "horas_previstas": 2.14,
+          "potencia_prevista_kw": 3.18,
+          "real": 7.975,
+          "prediccion": 2.6375784120229255,
+          "residuo": 5.337421587977074,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-077",
+          "horas_previstas": 4.0,
+          "potencia_prevista_kw": 2.15,
+          "real": 10.359,
+          "prediccion": 5.618364557660666,
+          "residuo": 4.740635442339334,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-078",
+          "horas_previstas": 2.93,
+          "potencia_prevista_kw": 2.46,
+          "real": 9.139,
+          "prediccion": 2.6043931810662535,
+          "residuo": 6.534606818933746,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-079",
+          "horas_previstas": 5.32,
+          "potencia_prevista_kw": 4.9,
+          "real": 24.739,
+          "prediccion": 23.74121546263533,
+          "residuo": 0.9977845373646694,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-080",
+          "horas_previstas": 5.39,
+          "potencia_prevista_kw": 6.95,
+          "real": 33.811,
+          "prediccion": 33.45870875548069,
+          "residuo": 0.35229124451930716,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-081",
+          "horas_previstas": 6.34,
+          "potencia_prevista_kw": 5.77,
+          "real": 32.97,
+          "prediccion": 31.974038312550356,
+          "residuo": 0.9959616874496433,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-082",
+          "horas_previstas": 4.21,
+          "potencia_prevista_kw": 4.26,
+          "real": 16.734,
+          "prediccion": 16.192644318369457,
+          "residuo": 0.5413556816305451,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-083",
+          "horas_previstas": 3.95,
+          "potencia_prevista_kw": 4.41,
+          "real": 17.55,
+          "prediccion": 15.803665567430167,
+          "residuo": 1.7463344325698333,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-084",
+          "horas_previstas": 6.88,
+          "potencia_prevista_kw": 4.04,
+          "real": 26.063,
+          "prediccion": 26.25903054369511,
+          "residuo": -0.1960305436951124,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-085",
+          "horas_previstas": 8.3,
+          "potencia_prevista_kw": 3.37,
+          "real": 25.142,
+          "prediccion": 29.06970025329168,
+          "residuo": -3.927700253291679,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-086",
+          "horas_previstas": 7.85,
+          "potencia_prevista_kw": 4.52,
+          "real": 30.756,
+          "prediccion": 32.49095878153747,
+          "residuo": -1.7349587815374719,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-087",
+          "horas_previstas": 4.48,
+          "potencia_prevista_kw": 7.15,
+          "real": 27.833,
+          "prediccion": 30.60274970187291,
+          "residuo": -2.769749701872911,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-088",
+          "horas_previstas": 3.1,
+          "potencia_prevista_kw": 4.08,
+          "real": 13.594,
+          "prediccion": 10.759412791479964,
+          "residuo": 2.834587208520036,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-089",
+          "horas_previstas": 5.97,
+          "potencia_prevista_kw": 3.4,
+          "real": 19.502,
+          "prediccion": 19.540277406182636,
+          "residuo": -0.03827740618263675,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-090",
+          "horas_previstas": 5.38,
+          "potencia_prevista_kw": 7.99,
+          "real": 37.209,
+          "prediccion": 38.19972481616787,
+          "residuo": -0.9907248161678694,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-091",
+          "horas_previstas": 6.4,
+          "potencia_prevista_kw": 3.52,
+          "real": 19.927,
+          "prediccion": 21.876213846974537,
+          "residuo": -1.949213846974537,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-092",
+          "horas_previstas": 3.19,
+          "potencia_prevista_kw": 5.26,
+          "real": 17.654,
+          "prediccion": 16.559136869527954,
+          "residuo": 1.0948631304720458,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-093",
+          "horas_previstas": 8.59,
+          "potencia_prevista_kw": 4.63,
+          "real": 34.547,
+          "prediccion": 36.06712748894113,
+          "residuo": -1.5201274889411351,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-094",
+          "horas_previstas": 4.79,
+          "potencia_prevista_kw": 5.55,
+          "real": 24.84,
+          "prediccion": 24.531264595379362,
+          "residuo": 0.30873540462063787,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-095",
+          "horas_previstas": 2.3,
+          "potencia_prevista_kw": 4.02,
+          "real": 10.498,
+          "prediccion": 7.164226901330327,
+          "residuo": 3.3337730986696723,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-096",
+          "horas_previstas": 4.92,
+          "potencia_prevista_kw": 7.53,
+          "real": 32.93,
+          "prediccion": 34.17580378325869,
+          "residuo": -1.2458037832586868,
+          "fuera_rango": false
+        }
+      ],
+      "representaciones": []
+    },
+    "interaccion": {
+      "metricas": {
+        "n": 96,
+        "mae": 0.4405056075764074,
+        "rmse": 0.5549011885095808,
+        "sesgo": 2.1649348980190553e-15,
+        "r2": 0.9976038164357409,
+        "mse_reconstruccion_z": null,
+        "mse_reconstruccion_original": null
+      },
+      "predicciones": [
+        {
+          "caso_id": "interaccion-entrenamiento-001",
+          "horas_previstas": 9.24,
+          "potencia_prevista_kw": 7.18,
+          "real": 55.9,
+          "prediccion": 55.939154214950975,
+          "residuo": -0.03915421495097604,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-002",
+          "horas_previstas": 6.07,
+          "potencia_prevista_kw": 2.45,
+          "real": 14.414,
+          "prediccion": 14.974028268270068,
+          "residuo": -0.5600282682700684,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-003",
+          "horas_previstas": 9.06,
+          "potencia_prevista_kw": 2.8,
+          "real": 23.284,
+          "prediccion": 23.249314288771245,
+          "residuo": 0.034685711228753746,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-004",
+          "horas_previstas": 6.21,
+          "potencia_prevista_kw": 5.12,
+          "real": 28.553,
+          "prediccion": 28.46343550460141,
+          "residuo": 0.0895644953985908,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-005",
+          "horas_previstas": 4.35,
+          "potencia_prevista_kw": 6.6,
+          "real": 25.81,
+          "prediccion": 26.048866984961403,
+          "residuo": -0.23886698496140468,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-006",
+          "horas_previstas": 9.18,
+          "potencia_prevista_kw": 7.03,
+          "real": 54.173,
+          "prediccion": 54.49830731719646,
+          "residuo": -0.32530731719646155,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-007",
+          "horas_previstas": 2.63,
+          "potencia_prevista_kw": 7.9,
+          "real": 19.676,
+          "prediccion": 19.756979735988462,
+          "residuo": -0.08097973598846409,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-008",
+          "horas_previstas": 6.69,
+          "potencia_prevista_kw": 2.69,
+          "real": 16.722,
+          "prediccion": 17.44573497359363,
+          "residuo": -0.7237349735936291,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-009",
+          "horas_previstas": 6.68,
+          "potencia_prevista_kw": 2.8,
+          "real": 19.776,
+          "prediccion": 18.010581075882108,
+          "residuo": 1.765418924117892,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-010",
+          "horas_previstas": 6.07,
+          "potencia_prevista_kw": 7.71,
+          "real": 40.312,
+          "prediccion": 40.43020822152049,
+          "residuo": -0.11820822152049004,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-011",
+          "horas_previstas": 4.7,
+          "potencia_prevista_kw": 5.76,
+          "real": 24.783,
+          "prediccion": 24.73662692018337,
+          "residuo": 0.04637307981663241,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-012",
+          "horas_previstas": 8.32,
+          "potencia_prevista_kw": 5.69,
+          "real": 40.359,
+          "prediccion": 40.80350667000887,
+          "residuo": -0.44450667000887023,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-013",
+          "horas_previstas": 4.69,
+          "potencia_prevista_kw": 2.98,
+          "real": 13.973,
+          "prediccion": 14.302903687932115,
+          "residuo": -0.32990368793211466,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-014",
+          "horas_previstas": 4.43,
+          "potencia_prevista_kw": 6.58,
+          "real": 26.463,
+          "prediccion": 26.397330812819906,
+          "residuo": 0.06566918718009518,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-015",
+          "horas_previstas": 9.93,
+          "potencia_prevista_kw": 4.95,
+          "real": 42.439,
+          "prediccion": 42.20179315010123,
+          "residuo": 0.23720684989876872,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-016",
+          "horas_previstas": 7.34,
+          "potencia_prevista_kw": 3.14,
+          "real": 21.547,
+          "prediccion": 21.45388105100326,
+          "residuo": 0.09311894899673945,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-017",
+          "horas_previstas": 3.57,
+          "potencia_prevista_kw": 4.82,
+          "real": 17.718,
+          "prediccion": 16.905102608553428,
+          "residuo": 0.8128973914465725,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-018",
+          "horas_previstas": 4.13,
+          "potencia_prevista_kw": 4.27,
+          "real": 17.653,
+          "prediccion": 17.23273330378887,
+          "residuo": 0.42026669621112944,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-019",
+          "horas_previstas": 3.13,
+          "potencia_prevista_kw": 7.6,
+          "real": 21.889,
+          "prediccion": 22.148463159228616,
+          "residuo": -0.2594631592286163,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-020",
+          "horas_previstas": 9.73,
+          "potencia_prevista_kw": 4.24,
+          "real": 35.525,
+          "prediccion": 35.905069372831505,
+          "residuo": -0.38006937283150677,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-021",
+          "horas_previstas": 5.44,
+          "potencia_prevista_kw": 2.96,
+          "real": 16.011,
+          "prediccion": 15.974932267864398,
+          "residuo": 0.036067732135601105,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-022",
+          "horas_previstas": 9.99,
+          "potencia_prevista_kw": 4.43,
+          "real": 38.206,
+          "prediccion": 38.2913289928823,
+          "residuo": -0.085328992882296,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-023",
+          "horas_previstas": 6.61,
+          "potencia_prevista_kw": 7.59,
+          "real": 43.119,
+          "prediccion": 43.10523561627563,
+          "residuo": 0.013764383724371498,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-024",
+          "horas_previstas": 7.86,
+          "potencia_prevista_kw": 4.03,
+          "real": 28.483,
+          "prediccion": 28.320169640763822,
+          "residuo": 0.16283035923617817,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-025",
+          "horas_previstas": 6.72,
+          "potencia_prevista_kw": 3.57,
+          "real": 22.276,
+          "prediccion": 22.22509115359916,
+          "residuo": 0.0509088464008407,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-026",
+          "horas_previstas": 3.52,
+          "potencia_prevista_kw": 5.2,
+          "real": 16.322,
+          "prediccion": 17.77896318963996,
+          "residuo": -1.4569631896399606,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-027",
+          "horas_previstas": 6.43,
+          "potencia_prevista_kw": 6.1,
+          "real": 34.99,
+          "prediccion": 34.38032591492143,
+          "residuo": 0.6096740850785736,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-028",
+          "horas_previstas": 7.41,
+          "potencia_prevista_kw": 4.44,
+          "real": 29.421,
+          "prediccion": 29.310603177119926,
+          "residuo": 0.11039682288007313,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-029",
+          "horas_previstas": 8.15,
+          "potencia_prevista_kw": 7.03,
+          "real": 49.238,
+          "prediccion": 48.74918112548019,
+          "residuo": 0.4888188745198079,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-030",
+          "horas_previstas": 5.57,
+          "potencia_prevista_kw": 7.69,
+          "real": 36.501,
+          "prediccion": 37.278849609444464,
+          "residuo": -0.7778496094444662,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-031",
+          "horas_previstas": 8.89,
+          "potencia_prevista_kw": 6.33,
+          "real": 48.352,
+          "prediccion": 47.914337242965175,
+          "residuo": 0.43766275703482194,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-032",
+          "horas_previstas": 8.22,
+          "potencia_prevista_kw": 7.17,
+          "real": 50.012,
+          "prediccion": 50.05799225365797,
+          "residuo": -0.045992253657971105,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-033",
+          "horas_previstas": 3.42,
+          "potencia_prevista_kw": 5.75,
+          "real": 18.479,
+          "prediccion": 18.864009727455908,
+          "residuo": -0.385009727455909,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-034",
+          "horas_previstas": 6.72,
+          "potencia_prevista_kw": 4.19,
+          "real": 25.32,
+          "prediccion": 25.547698644049685,
+          "residuo": -0.22769864404968487,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-035",
+          "horas_previstas": 5.99,
+          "potencia_prevista_kw": 6.84,
+          "real": 35.021,
+          "prediccion": 35.78538886442723,
+          "residuo": -0.7643888644272323,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-036",
+          "horas_previstas": 5.18,
+          "potencia_prevista_kw": 4.03,
+          "real": 19.953,
+          "prediccion": 19.786677988181204,
+          "residuo": 0.1663220118187958,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-037",
+          "horas_previstas": 8.88,
+          "potencia_prevista_kw": 7.16,
+          "real": 53.939,
+          "prediccion": 53.744889792509106,
+          "residuo": 0.19411020749089403,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-038",
+          "horas_previstas": 5.93,
+          "potencia_prevista_kw": 6.09,
+          "real": 31.41,
+          "prediccion": 31.913829300992226,
+          "residuo": -0.5038293009922263,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-039",
+          "horas_previstas": 3.96,
+          "potencia_prevista_kw": 3.97,
+          "real": 15.419,
+          "prediccion": 15.712830198219022,
+          "residuo": -0.29383019821902145,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-040",
+          "horas_previstas": 3.71,
+          "potencia_prevista_kw": 6.48,
+          "real": 21.736,
+          "prediccion": 22.34210664516226,
+          "residuo": -0.6061066451622601,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-041",
+          "horas_previstas": 4.67,
+          "potencia_prevista_kw": 4.01,
+          "real": 17.591,
+          "prediccion": 18.088352718712706,
+          "residuo": -0.4973527187127047,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-042",
+          "horas_previstas": 8.56,
+          "potencia_prevista_kw": 3.31,
+          "real": 26.25,
+          "prediccion": 25.631802345526324,
+          "residuo": 0.6181976544736756,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-043",
+          "horas_previstas": 7.24,
+          "potencia_prevista_kw": 2.59,
+          "real": 17.485,
+          "prediccion": 18.03055451805416,
+          "residuo": -0.5455545180541606,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-044",
+          "horas_previstas": 2.92,
+          "potencia_prevista_kw": 4.6,
+          "real": 14.001,
+          "prediccion": 13.914157967338234,
+          "residuo": 0.0868420326617656,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-045",
+          "horas_previstas": 7.31,
+          "potencia_prevista_kw": 6.13,
+          "real": 39.609,
+          "prediccion": 38.81306936086857,
+          "residuo": 0.7959306391314342,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-046",
+          "horas_previstas": 5.65,
+          "potencia_prevista_kw": 3.71,
+          "real": 19.544,
+          "prediccion": 19.841967894198,
+          "residuo": -0.2979678941979991,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-047",
+          "horas_previstas": 8.56,
+          "potencia_prevista_kw": 7.06,
+          "real": 50.436,
+          "prediccion": 51.24255426569951,
+          "residuo": -0.8065542656995106,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-048",
+          "horas_previstas": 6.86,
+          "potencia_prevista_kw": 3.92,
+          "real": 24.197,
+          "prediccion": 24.534228729267546,
+          "residuo": -0.3372287292675473,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-049",
+          "horas_previstas": 3.71,
+          "potencia_prevista_kw": 6.38,
+          "real": 22.993,
+          "prediccion": 22.046755114093028,
+          "residuo": 0.946244885906971,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-050",
+          "horas_previstas": 6.42,
+          "potencia_prevista_kw": 7.38,
+          "real": 41.962,
+          "prediccion": 40.88463350923699,
+          "residuo": 1.077366490763012,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-051",
+          "horas_previstas": 7.82,
+          "potencia_prevista_kw": 6.61,
+          "real": 43.296,
+          "prediccion": 44.28720871655758,
+          "residuo": -0.9912087165575798,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-052",
+          "horas_previstas": 5.59,
+          "potencia_prevista_kw": 4.96,
+          "real": 25.996,
+          "prediccion": 25.23622878670089,
+          "residuo": 0.759771213299107,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-053",
+          "horas_previstas": 5.47,
+          "potencia_prevista_kw": 4.42,
+          "real": 21.681,
+          "prediccion": 22.41050569553203,
+          "residuo": -0.7295056955320298,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-054",
+          "horas_previstas": 5.89,
+          "potencia_prevista_kw": 7.73,
+          "real": 39.139,
+          "prediccion": 39.421601551712385,
+          "residuo": -0.2826015517123821,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-055",
+          "horas_previstas": 4.9,
+          "potencia_prevista_kw": 2.83,
+          "real": 13.869,
+          "prediccion": 14.209673060711532,
+          "residuo": -0.34067306071153247,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-056",
+          "horas_previstas": 6.83,
+          "potencia_prevista_kw": 4.12,
+          "real": 25.158,
+          "prediccion": 25.530732667571428,
+          "residuo": -0.37273266757142665,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-057",
+          "horas_previstas": 7.23,
+          "potencia_prevista_kw": 4.11,
+          "real": 26.391,
+          "prediccion": 26.77549232826268,
+          "residuo": -0.38449232826268087,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-058",
+          "horas_previstas": 4.82,
+          "potencia_prevista_kw": 6.81,
+          "real": 29.991,
+          "prediccion": 29.31726743138081,
+          "residuo": 0.6737325686191902,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-059",
+          "horas_previstas": 6.14,
+          "potencia_prevista_kw": 6.07,
+          "real": 32.289,
+          "prediccion": 32.830312883266814,
+          "residuo": -0.5413128832668122,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-060",
+          "horas_previstas": 2.04,
+          "potencia_prevista_kw": 5.06,
+          "real": 11.066,
+          "prediccion": 11.455935380163648,
+          "residuo": -0.3899353801636476,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-061",
+          "horas_previstas": 8.49,
+          "potencia_prevista_kw": 6.92,
+          "real": 50.168,
+          "prediccion": 49.90185589225698,
+          "residuo": 0.2661441077430169,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-062",
+          "horas_previstas": 6.74,
+          "potencia_prevista_kw": 4.99,
+          "real": 30.201,
+          "prediccion": 29.91396112744837,
+          "residuo": 0.28703887255162996,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-063",
+          "horas_previstas": 4.36,
+          "potencia_prevista_kw": 7.79,
+          "real": 30.301,
+          "prediccion": 30.234095511638728,
+          "residuo": 0.06690448836127061,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-064",
+          "horas_previstas": 7.56,
+          "potencia_prevista_kw": 6.83,
+          "real": 44.367,
+          "prediccion": 44.24992138283797,
+          "residuo": 0.11707861716202927,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-065",
+          "horas_previstas": 2.45,
+          "potencia_prevista_kw": 6.99,
+          "real": 16.421,
+          "prediccion": 16.85576642721047,
+          "residuo": -0.43476642721046943,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-066",
+          "horas_previstas": 6.72,
+          "potencia_prevista_kw": 2.99,
+          "real": 20.262,
+          "prediccion": 19.116845436726095,
+          "residuo": 1.1451545632739055,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-067",
+          "horas_previstas": 3.06,
+          "potencia_prevista_kw": 7.89,
+          "real": 22.9,
+          "prediccion": 22.431732783613256,
+          "residuo": 0.4682672163867423,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-068",
+          "horas_previstas": 5.41,
+          "potencia_prevista_kw": 4.17,
+          "real": 20.949,
+          "prediccion": 21.122726648113026,
+          "residuo": -0.17372664811302485,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-069",
+          "horas_previstas": 4.76,
+          "potencia_prevista_kw": 7.41,
+          "real": 31.189,
+          "prediccion": 31.268508046755596,
+          "residuo": -0.07950804675559553,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-070",
+          "horas_previstas": 5.07,
+          "potencia_prevista_kw": 5.35,
+          "real": 24.738,
+          "prediccion": 24.76974922708779,
+          "residuo": -0.03174922708778993,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-071",
+          "horas_previstas": 8.66,
+          "potencia_prevista_kw": 5.32,
+          "real": 40.244,
+          "prediccion": 39.780673343604725,
+          "residuo": 0.4633266563952745,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-072",
+          "horas_previstas": 7.65,
+          "potencia_prevista_kw": 3.68,
+          "real": 24.995,
+          "prediccion": 25.515702209612712,
+          "residuo": -0.5207022096127112,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-073",
+          "horas_previstas": 4.68,
+          "potencia_prevista_kw": 4.89,
+          "real": 21.714,
+          "prediccion": 21.401307005174388,
+          "residuo": 0.3126929948256105,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-074",
+          "horas_previstas": 3.07,
+          "potencia_prevista_kw": 4.11,
+          "real": 13.86,
+          "prediccion": 13.263508637104925,
+          "residuo": 0.5964913628950743,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-075",
+          "horas_previstas": 3.74,
+          "potencia_prevista_kw": 4.84,
+          "real": 17.802,
+          "prediccion": 17.61328574754439,
+          "residuo": 0.18871425245561113,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-076",
+          "horas_previstas": 2.14,
+          "potencia_prevista_kw": 3.18,
+          "real": 7.975,
+          "prediccion": 8.662912879377362,
+          "residuo": -0.6879128793773628,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-077",
+          "horas_previstas": 4.0,
+          "potencia_prevista_kw": 2.15,
+          "real": 10.359,
+          "prediccion": 10.041073131958651,
+          "residuo": 0.31792686804134895,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-078",
+          "horas_previstas": 2.93,
+          "potencia_prevista_kw": 2.46,
+          "real": 9.139,
+          "prediccion": 8.964021629168037,
+          "residuo": 0.17497837083196188,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-079",
+          "horas_previstas": 5.32,
+          "potencia_prevista_kw": 4.9,
+          "real": 24.739,
+          "prediccion": 23.92142585956992,
+          "residuo": 0.8175741404300823,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-080",
+          "horas_previstas": 5.39,
+          "potencia_prevista_kw": 6.95,
+          "real": 33.811,
+          "prediccion": 33.000064708930694,
+          "residuo": 0.8109352910693062,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-081",
+          "horas_previstas": 6.34,
+          "potencia_prevista_kw": 5.77,
+          "real": 32.97,
+          "prediccion": 32.276598796106725,
+          "residuo": 0.6934012038932735,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-082",
+          "horas_previstas": 4.21,
+          "potencia_prevista_kw": 4.26,
+          "real": 16.734,
+          "prediccion": 17.46927758771519,
+          "residuo": -0.7352775877151885,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-083",
+          "horas_previstas": 3.95,
+          "potencia_prevista_kw": 4.41,
+          "real": 17.55,
+          "prediccion": 17.06540836638373,
+          "residuo": 0.48459163361627233,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-084",
+          "horas_previstas": 6.88,
+          "potencia_prevista_kw": 4.04,
+          "real": 26.063,
+          "prediccion": 25.25458286787503,
+          "residuo": 0.8084171321249691,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-085",
+          "horas_previstas": 8.3,
+          "potencia_prevista_kw": 3.37,
+          "real": 25.142,
+          "prediccion": 25.35083745041232,
+          "residuo": -0.2088374504123216,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-086",
+          "horas_previstas": 7.85,
+          "potencia_prevista_kw": 4.52,
+          "real": 30.756,
+          "prediccion": 31.35676543654204,
+          "residuo": -0.6007654365420407,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-087",
+          "horas_previstas": 4.48,
+          "potencia_prevista_kw": 7.15,
+          "real": 27.833,
+          "prediccion": 28.69269650425648,
+          "residuo": -0.8596965042564833,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-088",
+          "horas_previstas": 3.1,
+          "potencia_prevista_kw": 4.08,
+          "real": 13.594,
+          "prediccion": 13.286970345016117,
+          "residuo": 0.30702965498388224,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-089",
+          "horas_previstas": 5.97,
+          "potencia_prevista_kw": 3.4,
+          "real": 19.502,
+          "prediccion": 19.303561723619644,
+          "residuo": 0.1984382763803545,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-090",
+          "horas_previstas": 5.38,
+          "potencia_prevista_kw": 7.99,
+          "real": 37.209,
+          "prediccion": 37.40455744112895,
+          "residuo": -0.19555744112894757,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-091",
+          "horas_previstas": 6.4,
+          "potencia_prevista_kw": 3.52,
+          "real": 19.927,
+          "prediccion": 21.0686405859441,
+          "residuo": -1.1416405859440992,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-092",
+          "horas_previstas": 3.19,
+          "potencia_prevista_kw": 5.26,
+          "real": 17.654,
+          "prediccion": 16.57191091529139,
+          "residuo": 1.0820890847086098,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-093",
+          "horas_previstas": 8.59,
+          "potencia_prevista_kw": 4.63,
+          "real": 34.547,
+          "prediccion": 34.75669640514509,
+          "residuo": -0.20969640514509535,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-094",
+          "horas_previstas": 4.79,
+          "potencia_prevista_kw": 5.55,
+          "real": 24.84,
+          "prediccion": 24.346139553268863,
+          "residuo": 0.49386044673113716,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-095",
+          "horas_previstas": 2.3,
+          "potencia_prevista_kw": 4.02,
+          "real": 10.498,
+          "prediccion": 10.598091872242676,
+          "residuo": -0.10009187224267713,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-entrenamiento-096",
+          "horas_previstas": 4.92,
+          "potencia_prevista_kw": 7.53,
+          "real": 32.93,
+          "prediccion": 32.68062892066399,
+          "residuo": 0.249371079336008,
+          "fuera_rango": false
+        }
+      ],
+      "representaciones": []
+    }
+  },
+  "validacion": {
+    "mediana": {
+      "metricas": {
+        "n": 48,
+        "mae": 10.071833333333334,
+        "rmse": 12.753691808648977,
+        "sesgo": 1.940270833333333,
+        "r2": -0.023693142610224704,
+        "mse_reconstruccion_z": null,
+        "mse_reconstruccion_original": null
+      },
+      "predicciones": [
+        {
+          "caso_id": "interaccion-validacion-001",
+          "horas_previstas": 6.07,
+          "potencia_prevista_kw": 7.51,
+          "real": 38.488,
+          "prediccion": 25.0685,
+          "residuo": 13.4195,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-002",
+          "horas_previstas": 3.28,
+          "potencia_prevista_kw": 7.01,
+          "real": 22.014,
+          "prediccion": 25.0685,
+          "residuo": -3.054500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-003",
+          "horas_previstas": 7.65,
+          "potencia_prevista_kw": 3.73,
+          "real": 26.932,
+          "prediccion": 25.0685,
+          "residuo": 1.8634999999999984,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-004",
+          "horas_previstas": 5.69,
+          "potencia_prevista_kw": 3.92,
+          "real": 20.271,
+          "prediccion": 25.0685,
+          "residuo": -4.797499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-005",
+          "horas_previstas": 3.6,
+          "potencia_prevista_kw": 3.94,
+          "real": 13.939,
+          "prediccion": 25.0685,
+          "residuo": -11.1295,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-006",
+          "horas_previstas": 7.73,
+          "potencia_prevista_kw": 2.94,
+          "real": 20.826,
+          "prediccion": 25.0685,
+          "residuo": -4.2425,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-007",
+          "horas_previstas": 5.14,
+          "potencia_prevista_kw": 6.87,
+          "real": 30.755,
+          "prediccion": 25.0685,
+          "residuo": 5.686499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-008",
+          "horas_previstas": 8.96,
+          "potencia_prevista_kw": 6.17,
+          "real": 47.682,
+          "prediccion": 25.0685,
+          "residuo": 22.613500000000002,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-009",
+          "horas_previstas": 2.26,
+          "potencia_prevista_kw": 2.66,
+          "real": 7.538,
+          "prediccion": 25.0685,
+          "residuo": -17.5305,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-010",
+          "horas_previstas": 3.62,
+          "potencia_prevista_kw": 6.05,
+          "real": 20.297,
+          "prediccion": 25.0685,
+          "residuo": -4.7715,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-011",
+          "horas_previstas": 8.28,
+          "potencia_prevista_kw": 6.54,
+          "real": 45.659,
+          "prediccion": 25.0685,
+          "residuo": 20.5905,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-012",
+          "horas_previstas": 3.23,
+          "potencia_prevista_kw": 5.03,
+          "real": 16.61,
+          "prediccion": 25.0685,
+          "residuo": -8.4585,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-013",
+          "horas_previstas": 4.91,
+          "potencia_prevista_kw": 2.58,
+          "real": 14.616,
+          "prediccion": 25.0685,
+          "residuo": -10.4525,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-014",
+          "horas_previstas": 3.98,
+          "potencia_prevista_kw": 5.34,
+          "real": 19.786,
+          "prediccion": 25.0685,
+          "residuo": -5.282499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-015",
+          "horas_previstas": 3.88,
+          "potencia_prevista_kw": 7.06,
+          "real": 24.764,
+          "prediccion": 25.0685,
+          "residuo": -0.3045000000000009,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-016",
+          "horas_previstas": 8.36,
+          "potencia_prevista_kw": 5.25,
+          "real": 37.434,
+          "prediccion": 25.0685,
+          "residuo": 12.365499999999997,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-017",
+          "horas_previstas": 3.7,
+          "potencia_prevista_kw": 5.09,
+          "real": 17.511,
+          "prediccion": 25.0685,
+          "residuo": -7.557500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-018",
+          "horas_previstas": 4.61,
+          "potencia_prevista_kw": 3.55,
+          "real": 16.369,
+          "prediccion": 25.0685,
+          "residuo": -8.6995,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-019",
+          "horas_previstas": 10.0,
+          "potencia_prevista_kw": 4.99,
+          "real": 43.483,
+          "prediccion": 25.0685,
+          "residuo": 18.414499999999997,
+          "fuera_rango": true
+        },
+        {
+          "caso_id": "interaccion-validacion-020",
+          "horas_previstas": 5.64,
+          "potencia_prevista_kw": 3.28,
+          "real": 17.132,
+          "prediccion": 25.0685,
+          "residuo": -7.936499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-021",
+          "horas_previstas": 4.11,
+          "potencia_prevista_kw": 5.41,
+          "real": 21.195,
+          "prediccion": 25.0685,
+          "residuo": -3.8735,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-022",
+          "horas_previstas": 7.63,
+          "potencia_prevista_kw": 5.11,
+          "real": 34.513,
+          "prediccion": 25.0685,
+          "residuo": 9.444499999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-023",
+          "horas_previstas": 3.23,
+          "potencia_prevista_kw": 6.26,
+          "real": 19.092,
+          "prediccion": 25.0685,
+          "residuo": -5.9765000000000015,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-024",
+          "horas_previstas": 8.5,
+          "potencia_prevista_kw": 3.71,
+          "real": 27.559,
+          "prediccion": 25.0685,
+          "residuo": 2.490500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-025",
+          "horas_previstas": 2.21,
+          "potencia_prevista_kw": 6.84,
+          "real": 15.928,
+          "prediccion": 25.0685,
+          "residuo": -9.1405,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-026",
+          "horas_previstas": 3.8,
+          "potencia_prevista_kw": 6.64,
+          "real": 23.66,
+          "prediccion": 25.0685,
+          "residuo": -1.4085,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-027",
+          "horas_previstas": 7.24,
+          "potencia_prevista_kw": 5.24,
+          "real": 32.455,
+          "prediccion": 25.0685,
+          "residuo": 7.386499999999998,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-028",
+          "horas_previstas": 5.8,
+          "potencia_prevista_kw": 5.32,
+          "real": 27.888,
+          "prediccion": 25.0685,
+          "residuo": 2.8195000000000014,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-029",
+          "horas_previstas": 7.73,
+          "potencia_prevista_kw": 7.2,
+          "real": 47.161,
+          "prediccion": 25.0685,
+          "residuo": 22.0925,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-030",
+          "horas_previstas": 9.47,
+          "potencia_prevista_kw": 6.07,
+          "real": 49.52,
+          "prediccion": 25.0685,
+          "residuo": 24.451500000000003,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-031",
+          "horas_previstas": 2.5,
+          "potencia_prevista_kw": 7.88,
+          "real": 19.149,
+          "prediccion": 25.0685,
+          "residuo": -5.919499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-032",
+          "horas_previstas": 5.99,
+          "potencia_prevista_kw": 2.35,
+          "real": 12.776,
+          "prediccion": 25.0685,
+          "residuo": -12.2925,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-033",
+          "horas_previstas": 9.9,
+          "potencia_prevista_kw": 7.64,
+          "real": 64.119,
+          "prediccion": 25.0685,
+          "residuo": 39.0505,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-034",
+          "horas_previstas": 5.16,
+          "potencia_prevista_kw": 6.86,
+          "real": 31.861,
+          "prediccion": 25.0685,
+          "residuo": 6.7925,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-035",
+          "horas_previstas": 5.96,
+          "potencia_prevista_kw": 6.23,
+          "real": 32.555,
+          "prediccion": 25.0685,
+          "residuo": 7.4864999999999995,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-036",
+          "horas_previstas": 2.41,
+          "potencia_prevista_kw": 6.61,
+          "real": 15.518,
+          "prediccion": 25.0685,
+          "residuo": -9.5505,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-037",
+          "horas_previstas": 5.98,
+          "potencia_prevista_kw": 6.11,
+          "real": 32.652,
+          "prediccion": 25.0685,
+          "residuo": 7.583500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-038",
+          "horas_previstas": 7.74,
+          "potencia_prevista_kw": 5.3,
+          "real": 35.704,
+          "prediccion": 25.0685,
+          "residuo": 10.6355,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-039",
+          "horas_previstas": 2.61,
+          "potencia_prevista_kw": 6.76,
+          "real": 17.437,
+          "prediccion": 25.0685,
+          "residuo": -7.631499999999999,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-040",
+          "horas_previstas": 2.59,
+          "potencia_prevista_kw": 4.51,
+          "real": 12.184,
+          "prediccion": 25.0685,
+          "residuo": -12.884500000000001,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-041",
+          "horas_previstas": 5.51,
+          "potencia_prevista_kw": 2.52,
+          "real": 14.546,
+          "prediccion": 25.0685,
+          "residuo": -10.5225,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-042",
+          "horas_previstas": 8.75,
+          "potencia_prevista_kw": 7.38,
+          "real": 55.796,
+          "prediccion": 25.0685,
+          "residuo": 30.7275,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-043",
+          "horas_previstas": 6.87,
+          "potencia_prevista_kw": 3.81,
+          "real": 23.61,
+          "prediccion": 25.0685,
+          "residuo": -1.4585000000000008,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-044",
+          "horas_previstas": 8.84,
+          "potencia_prevista_kw": 2.26,
+          "real": 18.361,
+          "prediccion": 25.0685,
+          "residuo": -6.7075,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-045",
+          "horas_previstas": 9.8,
+          "potencia_prevista_kw": 2.7,
+          "real": 24.487,
+          "prediccion": 25.0685,
+          "residuo": -0.5815000000000019,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-046",
+          "horas_previstas": 2.9,
+          "potencia_prevista_kw": 3.61,
+          "real": 12.076,
+          "prediccion": 25.0685,
+          "residuo": -12.9925,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-047",
+          "horas_previstas": 6.48,
+          "potencia_prevista_kw": 7.27,
+          "real": 41.473,
+          "prediccion": 25.0685,
+          "residuo": 16.4045,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-048",
+          "horas_previstas": 6.76,
+          "potencia_prevista_kw": 4.99,
+          "real": 31.04,
+          "prediccion": 25.0685,
+          "residuo": 5.971499999999999,
+          "fuera_rango": false
+        }
+      ],
+      "representaciones": []
+    },
+    "originales": {
+      "metricas": {
+        "n": 48,
+        "mae": 2.3894013714723155,
+        "rmse": 3.2901717467266502,
+        "sesgo": -0.227256959497772,
+        "r2": 0.9318705166961511,
+        "mse_reconstruccion_z": null,
+        "mse_reconstruccion_original": null
+      },
+      "predicciones": [
+        {
+          "caso_id": "interaccion-validacion-001",
+          "horas_previstas": 6.07,
+          "potencia_prevista_kw": 7.51,
+          "real": 38.488,
+          "prediccion": 38.8552860343787,
+          "residuo": -0.3672860343787008,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-002",
+          "horas_previstas": 3.28,
+          "potencia_prevista_kw": 7.01,
+          "real": 22.014,
+          "prediccion": 24.980042647368414,
+          "residuo": -2.9660426473684147,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-003",
+          "horas_previstas": 7.65,
+          "potencia_prevista_kw": 3.73,
+          "real": 26.932,
+          "prediccion": 28.028274910159436,
+          "residuo": -1.096274910159437,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-004",
+          "horas_previstas": 5.69,
+          "potencia_prevista_kw": 3.92,
+          "real": 20.271,
+          "prediccion": 20.76978567724031,
+          "residuo": -0.49878567724030987,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-005",
+          "horas_previstas": 3.6,
+          "potencia_prevista_kw": 3.94,
+          "real": 13.939,
+          "prediccion": 12.190158794379338,
+          "residuo": 1.7488412056206624,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-006",
+          "horas_previstas": 7.73,
+          "potencia_prevista_kw": 2.94,
+          "real": 20.826,
+          "prediccion": 24.72733624823615,
+          "residuo": -3.9013362482361487,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-007",
+          "horas_previstas": 5.14,
+          "potencia_prevista_kw": 6.87,
+          "real": 30.755,
+          "prediccion": 32.05355109619088,
+          "residuo": -1.2985510961908808,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-008",
+          "horas_previstas": 8.96,
+          "potencia_prevista_kw": 6.17,
+          "real": 47.682,
+          "prediccion": 44.684079955260174,
+          "residuo": 2.9979200447398284,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-009",
+          "horas_previstas": 2.26,
+          "potencia_prevista_kw": 2.66,
+          "real": 7.538,
+          "prediccion": 0.7442157355625376,
+          "residuo": 6.793784264437463,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-010",
+          "horas_previstas": 3.62,
+          "potencia_prevista_kw": 6.05,
+          "real": 20.297,
+          "prediccion": 21.976111448672405,
+          "residuo": -1.6791114486724048,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-011",
+          "horas_previstas": 8.28,
+          "potencia_prevista_kw": 6.54,
+          "real": 45.659,
+          "prediccion": 43.56416755497093,
+          "residuo": 2.09483244502907,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-012",
+          "horas_previstas": 3.23,
+          "potencia_prevista_kw": 5.03,
+          "real": 16.61,
+          "prediccion": 15.667430662190448,
+          "residuo": 0.9425693378095517,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-013",
+          "horas_previstas": 4.91,
+          "potencia_prevista_kw": 2.58,
+          "real": 14.616,
+          "prediccion": 11.37141917419697,
+          "residuo": 3.2445808258030304,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-014",
+          "horas_previstas": 3.98,
+          "potencia_prevista_kw": 5.34,
+          "real": 19.786,
+          "prediccion": 20.204803147051933,
+          "residuo": -0.418803147051932,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-015",
+          "horas_previstas": 3.88,
+          "potencia_prevista_kw": 7.06,
+          "real": 24.764,
+          "prediccion": 27.69942488690864,
+          "residuo": -2.935424886908642,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-016",
+          "horas_previstas": 8.36,
+          "potencia_prevista_kw": 5.25,
+          "real": 37.434,
+          "prediccion": 37.963946700247234,
+          "residuo": -0.5299467002472369,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-017",
+          "horas_previstas": 3.7,
+          "potencia_prevista_kw": 5.09,
+          "real": 17.511,
+          "prediccion": 17.893416841196974,
+          "residuo": -0.3824168411969744,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-018",
+          "horas_previstas": 4.61,
+          "potencia_prevista_kw": 3.55,
+          "real": 16.369,
+          "prediccion": 14.58729961809967,
+          "residuo": 1.781700381900329,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-019",
+          "horas_previstas": 10.0,
+          "potencia_prevista_kw": 4.99,
+          "real": 43.483,
+          "prediccion": 43.572827615368865,
+          "residuo": -0.08982761536886841,
+          "fuera_rango": true
+        },
+        {
+          "caso_id": "interaccion-validacion-020",
+          "horas_previstas": 5.64,
+          "potencia_prevista_kw": 3.28,
+          "real": 17.132,
+          "prediccion": 17.619249968767434,
+          "residuo": -0.48724996876743276,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-021",
+          "horas_previstas": 4.11,
+          "potencia_prevista_kw": 5.41,
+          "real": 21.195,
+          "prediccion": 21.066084358433702,
+          "residuo": 0.12891564156629798,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-022",
+          "horas_previstas": 7.63,
+          "potencia_prevista_kw": 5.11,
+          "real": 34.513,
+          "prediccion": 34.291311961613225,
+          "residuo": 0.2216880383867732,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-023",
+          "horas_previstas": 3.23,
+          "potencia_prevista_kw": 6.26,
+          "real": 19.092,
+          "prediccion": 21.323664856479454,
+          "residuo": -2.231664856479455,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-024",
+          "horas_previstas": 8.5,
+          "potencia_prevista_kw": 3.71,
+          "real": 27.559,
+          "prediccion": 31.46303015114935,
+          "residuo": -3.9040301511493496,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-025",
+          "horas_previstas": 2.21,
+          "potencia_prevista_kw": 6.84,
+          "real": 15.928,
+          "prediccion": 19.758760365685607,
+          "residuo": -3.830760365685606,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-026",
+          "horas_previstas": 3.8,
+          "potencia_prevista_kw": 6.64,
+          "real": 23.66,
+          "prediccion": 25.43610064225494,
+          "residuo": -1.7761006422549386,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-027",
+          "horas_previstas": 7.24,
+          "potencia_prevista_kw": 5.24,
+          "real": 32.455,
+          "prediccion": 33.270980218572205,
+          "residuo": -0.8159802185722071,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-028",
+          "horas_previstas": 5.8,
+          "potencia_prevista_kw": 5.32,
+          "real": 27.888,
+          "prediccion": 27.66417572079582,
+          "residuo": 0.22382427920418024,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-029",
+          "horas_previstas": 7.73,
+          "potencia_prevista_kw": 7.2,
+          "real": 47.161,
+          "prediccion": 44.31722053089563,
+          "residuo": 2.843779469104369,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-030",
+          "horas_previstas": 9.47,
+          "potencia_prevista_kw": 6.07,
+          "real": 49.52,
+          "prediccion": 46.340259433921254,
+          "residuo": 3.179740566078749,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-031",
+          "horas_previstas": 2.5,
+          "potencia_prevista_kw": 7.88,
+          "real": 19.149,
+          "prediccion": 25.74450343650288,
+          "residuo": -6.595503436502881,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-032",
+          "horas_previstas": 5.99,
+          "potencia_prevista_kw": 2.35,
+          "real": 12.776,
+          "prediccion": 14.79476660197712,
+          "residuo": -2.01876660197712,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-033",
+          "horas_previstas": 9.9,
+          "potencia_prevista_kw": 7.64,
+          "real": 64.119,
+          "prediccion": 55.34411423383433,
+          "residuo": 8.774885766165667,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-034",
+          "horas_previstas": 5.16,
+          "potencia_prevista_kw": 6.86,
+          "real": 31.861,
+          "prediccion": 32.090547253010214,
+          "residuo": -0.22954725301021384,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-035",
+          "horas_previstas": 5.96,
+          "potencia_prevista_kw": 6.23,
+          "real": 32.555,
+          "prediccion": 32.512723717095284,
+          "residuo": 0.042276282904715856,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-036",
+          "horas_previstas": 2.41,
+          "potencia_prevista_kw": 6.61,
+          "real": 15.518,
+          "prediccion": 19.53090856375082,
+          "residuo": -4.01290856375082,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-037",
+          "horas_previstas": 5.98,
+          "potencia_prevista_kw": 6.11,
+          "real": 32.652,
+          "prediccion": 32.04387779149853,
+          "residuo": 0.6081222085014701,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-038",
+          "horas_previstas": 7.74,
+          "potencia_prevista_kw": 5.3,
+          "real": 35.704,
+          "prediccion": 35.62143909859175,
+          "residuo": 0.08256090140825023,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-039",
+          "horas_previstas": 2.61,
+          "potencia_prevista_kw": 6.76,
+          "real": 17.437,
+          "prediccion": 21.050511228344334,
+          "residuo": -3.6135112283443327,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-040",
+          "horas_previstas": 2.59,
+          "potencia_prevista_kw": 4.51,
+          "real": 12.184,
+          "prediccion": 10.620759560067153,
+          "residuo": 1.5632404399328461,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-041",
+          "horas_previstas": 5.51,
+          "potencia_prevista_kw": 2.52,
+          "real": 14.546,
+          "prediccion": 13.584959331321107,
+          "residuo": 0.9610406686788924,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-042",
+          "horas_previstas": 8.75,
+          "potencia_prevista_kw": 7.38,
+          "real": 55.796,
+          "prediccion": 49.377033954746096,
+          "residuo": 6.418966045253903,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-043",
+          "horas_previstas": 6.87,
+          "potencia_prevista_kw": 3.81,
+          "real": 23.61,
+          "prediccion": 25.159869834669255,
+          "residuo": -1.5498698346692557,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-044",
+          "horas_previstas": 8.84,
+          "potencia_prevista_kw": 2.26,
+          "real": 18.361,
+          "prediccion": 26.205802403508937,
+          "residuo": -7.844802403508936,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-045",
+          "horas_previstas": 9.8,
+          "potencia_prevista_kw": 2.7,
+          "real": 24.487,
+          "prediccion": 32.212297165589604,
+          "residuo": -7.725297165589605,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-046",
+          "horas_previstas": 2.9,
+          "potencia_prevista_kw": 3.61,
+          "real": 12.076,
+          "prediccion": 7.76826952349418,
+          "residuo": 4.307730476505821,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-047",
+          "horas_previstas": 6.48,
+          "potencia_prevista_kw": 7.27,
+          "real": 41.473,
+          "prediccion": 39.452757495678966,
+          "residuo": 2.0202425043210326,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-048",
+          "horas_previstas": 6.76,
+          "potencia_prevista_kw": 4.99,
+          "real": 31.04,
+          "prediccion": 30.129775905963854,
+          "residuo": 0.9102240940361455,
+          "fuera_rango": false
+        }
+      ],
+      "representaciones": []
+    },
+    "interaccion": {
+      "metricas": {
+        "n": 48,
+        "mae": 0.5505334850708866,
+        "rmse": 0.6371662160850263,
+        "sesgo": 0.024882710303846922,
+        "r2": 0.997444926257457,
+        "mse_reconstruccion_z": null,
+        "mse_reconstruccion_original": null
+      },
+      "predicciones": [
+        {
+          "caso_id": "interaccion-validacion-001",
+          "horas_previstas": 6.07,
+          "potencia_prevista_kw": 7.51,
+          "real": 38.488,
+          "prediccion": 39.46229263394443,
+          "residuo": -0.9742926339444296,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-002",
+          "horas_previstas": 3.28,
+          "potencia_prevista_kw": 7.01,
+          "real": 22.014,
+          "prediccion": 21.514222056767615,
+          "residuo": 0.49977794323238456,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-003",
+          "horas_previstas": 7.65,
+          "potencia_prevista_kw": 3.73,
+          "real": 26.932,
+          "prediccion": 25.820816253772765,
+          "residuo": 1.1111837462272334,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-004",
+          "horas_previstas": 5.69,
+          "potencia_prevista_kw": 3.92,
+          "real": 20.271,
+          "prediccion": 20.911640825461586,
+          "residuo": -0.6406408254615847,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-005",
+          "horas_previstas": 3.6,
+          "potencia_prevista_kw": 3.94,
+          "real": 13.939,
+          "prediccion": 14.497834374492,
+          "residuo": -0.5588343744919992,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-006",
+          "horas_previstas": 7.73,
+          "potencia_prevista_kw": 2.94,
+          "real": 20.826,
+          "prediccion": 21.18505703443441,
+          "residuo": -0.35905703443441084,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-007",
+          "horas_previstas": 5.14,
+          "potencia_prevista_kw": 6.87,
+          "real": 30.755,
+          "prediccion": 31.292922000415878,
+          "residuo": -0.5379220004158789,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-008",
+          "horas_previstas": 8.96,
+          "potencia_prevista_kw": 6.17,
+          "real": 47.682,
+          "prediccion": 47.122021905741775,
+          "residuo": 0.5599780942582271,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-009",
+          "horas_previstas": 2.26,
+          "potencia_prevista_kw": 2.66,
+          "real": 7.538,
+          "prediccion": 8.030246318692427,
+          "residuo": -0.49224631869242685,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-010",
+          "horas_previstas": 3.62,
+          "potencia_prevista_kw": 6.05,
+          "real": 20.297,
+          "prediccion": 20.640231824074434,
+          "residuo": -0.343231824074433,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-011",
+          "horas_previstas": 8.28,
+          "potencia_prevista_kw": 6.54,
+          "real": 45.659,
+          "prediccion": 46.237974779783904,
+          "residuo": -0.5789747797839055,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-012",
+          "horas_previstas": 3.23,
+          "potencia_prevista_kw": 5.03,
+          "real": 16.61,
+          "prediccion": 16.14751692194462,
+          "residuo": 0.4624830780553779,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-013",
+          "horas_previstas": 4.91,
+          "potencia_prevista_kw": 2.58,
+          "real": 14.616,
+          "prediccion": 13.253791747054938,
+          "residuo": 1.3622082529450612,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-014",
+          "horas_previstas": 3.98,
+          "potencia_prevista_kw": 5.34,
+          "real": 19.786,
+          "prediccion": 20.117486273938372,
+          "residuo": -0.3314862739383706,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-015",
+          "horas_previstas": 3.88,
+          "potencia_prevista_kw": 7.06,
+          "real": 24.764,
+          "prediccion": 25.00810624409721,
+          "residuo": -0.24410624409721038,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-016",
+          "horas_previstas": 8.36,
+          "potencia_prevista_kw": 5.25,
+          "real": 37.434,
+          "prediccion": 38.04927057494189,
+          "residuo": -0.6152705749418956,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-017",
+          "horas_previstas": 3.7,
+          "potencia_prevista_kw": 5.09,
+          "real": 17.511,
+          "prediccion": 18.19640767829583,
+          "residuo": -0.6854076782958316,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-018",
+          "horas_previstas": 4.61,
+          "potencia_prevista_kw": 3.55,
+          "real": 16.369,
+          "prediccion": 16.208786231272,
+          "residuo": 0.1602137687279992,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-019",
+          "horas_previstas": 10.0,
+          "potencia_prevista_kw": 4.99,
+          "real": 43.483,
+          "prediccion": 42.795364058936656,
+          "residuo": 0.6876359410633412,
+          "fuera_rango": true
+        },
+        {
+          "caso_id": "interaccion-validacion-020",
+          "horas_previstas": 5.64,
+          "potencia_prevista_kw": 3.28,
+          "real": 17.132,
+          "prediccion": 17.879433578965617,
+          "residuo": -0.7474335789656159,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-021",
+          "horas_previstas": 4.11,
+          "potencia_prevista_kw": 5.41,
+          "real": 21.195,
+          "prediccion": 20.896647585039172,
+          "residuo": 0.29835241496082787,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-022",
+          "horas_previstas": 7.63,
+          "potencia_prevista_kw": 5.11,
+          "real": 34.513,
+          "prediccion": 34.16101883095029,
+          "residuo": 0.3519811690497079,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-023",
+          "horas_previstas": 3.23,
+          "potencia_prevista_kw": 6.26,
+          "real": 19.092,
+          "prediccion": 19.308505425667423,
+          "residuo": -0.2165054256674246,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-024",
+          "horas_previstas": 8.5,
+          "potencia_prevista_kw": 3.71,
+          "real": 27.559,
+          "prediccion": 28.18791180142081,
+          "residuo": -0.6289118014208093,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-025",
+          "horas_previstas": 2.21,
+          "potencia_prevista_kw": 6.84,
+          "real": 15.928,
+          "prediccion": 15.260624323185343,
+          "residuo": 0.6673756768146575,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-026",
+          "horas_previstas": 3.8,
+          "potencia_prevista_kw": 6.64,
+          "real": 23.66,
+          "prediccion": 23.28896874147489,
+          "residuo": 0.371031258525111,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-027",
+          "horas_previstas": 7.24,
+          "potencia_prevista_kw": 5.24,
+          "real": 32.455,
+          "prediccion": 33.33329078885919,
+          "residuo": -0.8782907888591893,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-028",
+          "horas_previstas": 5.8,
+          "potencia_prevista_kw": 5.32,
+          "real": 27.888,
+          "prediccion": 27.725545434049526,
+          "residuo": 0.16245456595047614,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-029",
+          "horas_previstas": 7.73,
+          "potencia_prevista_kw": 7.2,
+          "real": 47.161,
+          "prediccion": 47.45313382710228,
+          "residuo": -0.2921338271022762,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-030",
+          "horas_previstas": 9.47,
+          "potencia_prevista_kw": 6.07,
+          "real": 49.52,
+          "prediccion": 48.86247799708427,
+          "residuo": 0.6575220029157336,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-031",
+          "horas_previstas": 2.5,
+          "potencia_prevista_kw": 7.88,
+          "real": 19.149,
+          "prediccion": 18.901244540765944,
+          "residuo": 0.24775545923405673,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-032",
+          "horas_previstas": 5.99,
+          "potencia_prevista_kw": 2.35,
+          "real": 12.776,
+          "prediccion": 14.34274904863529,
+          "residuo": -1.566749048635291,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-033",
+          "horas_previstas": 9.9,
+          "potencia_prevista_kw": 7.64,
+          "real": 64.119,
+          "prediccion": 63.336378600598756,
+          "residuo": 0.7826213994012434,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-034",
+          "horas_previstas": 5.16,
+          "potencia_prevista_kw": 6.86,
+          "real": 31.861,
+          "prediccion": 31.360874895890802,
+          "residuo": 0.5001251041091983,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-035",
+          "horas_previstas": 5.96,
+          "potencia_prevista_kw": 6.23,
+          "real": 32.555,
+          "prediccion": 32.72397628186588,
+          "residuo": -0.16897628186588065,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-036",
+          "horas_previstas": 2.41,
+          "potencia_prevista_kw": 6.61,
+          "real": 15.518,
+          "prediccion": 15.906236724285371,
+          "residuo": -0.38823672428537037,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-037",
+          "horas_previstas": 5.98,
+          "potencia_prevista_kw": 6.11,
+          "real": 32.652,
+          "prediccion": 32.25070471639356,
+          "residuo": 0.4012952836064443,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-038",
+          "horas_previstas": 7.74,
+          "potencia_prevista_kw": 5.3,
+          "real": 35.704,
+          "prediccion": 35.77931589003472,
+          "residuo": -0.07531589003471595,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-039",
+          "horas_previstas": 2.61,
+          "potencia_prevista_kw": 6.76,
+          "real": 17.437,
+          "prediccion": 17.26660361299682,
+          "residuo": 0.17039638700317994,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-040",
+          "horas_previstas": 2.59,
+          "potencia_prevista_kw": 4.51,
+          "real": 12.184,
+          "prediccion": 12.527807492560413,
+          "residuo": -0.34380749256041376,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-041",
+          "horas_previstas": 5.51,
+          "potencia_prevista_kw": 2.52,
+          "real": 14.546,
+          "prediccion": 14.205466894643497,
+          "residuo": 0.34053310535650283,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-042",
+          "horas_previstas": 8.75,
+          "potencia_prevista_kw": 7.38,
+          "real": 55.796,
+          "prediccion": 54.541668928710195,
+          "residuo": 1.2543310712898048,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-043",
+          "horas_previstas": 6.87,
+          "potencia_prevista_kw": 3.81,
+          "real": 23.61,
+          "prediccion": 23.96250968689694,
+          "residuo": -0.3525096868969406,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-044",
+          "horas_previstas": 8.84,
+          "potencia_prevista_kw": 2.26,
+          "real": 18.361,
+          "prediccion": 18.95627748554265,
+          "residuo": -0.595277485542649,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-045",
+          "horas_previstas": 9.8,
+          "potencia_prevista_kw": 2.7,
+          "real": 24.487,
+          "prediccion": 24.096112520892934,
+          "residuo": 0.39088747910706445,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-046",
+          "horas_previstas": 2.9,
+          "potencia_prevista_kw": 3.61,
+          "real": 12.076,
+          "prediccion": 11.558246098426165,
+          "residuo": 0.517753901573835,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-047",
+          "horas_previstas": 6.48,
+          "potencia_prevista_kw": 7.27,
+          "real": 41.473,
+          "prediccion": 40.667920275115875,
+          "residuo": 0.8050797248841235,
+          "fuera_rango": false
+        },
+        {
+          "caso_id": "interaccion-validacion-048",
+          "horas_previstas": 6.76,
+          "potencia_prevista_kw": 4.99,
+          "real": 31.04,
+          "prediccion": 29.992988139297985,
+          "residuo": 1.047011860702014,
+          "fuera_rango": false
+        }
+      ],
+      "representaciones": []
+    }
+  },
+  "seleccionado": "interaccion"
+}
