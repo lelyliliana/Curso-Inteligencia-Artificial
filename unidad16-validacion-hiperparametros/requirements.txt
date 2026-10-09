@@ -1,0 +1,2 @@
+# Sin dependencias nuevas; misma pila verificada en las unidades 13–15.
+-r ../unidad13-arboles-ensambles/requirements.txt

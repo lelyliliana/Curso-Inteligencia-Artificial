@@ -282,4 +282,4 @@ Las **30 pruebas** comparan proyección y regresión con referencias independien
 
 Antes de continuar, deberías poder explicar qué recibe el modelo, dónde se aprendió cada transformación y por qué conservar varianza no basta para elegir una representación predictiva.
 
-La siguiente entrega prevista es la **Unidad 16 — Validación y ajuste de hiperparámetros**, todavía pendiente de desarrollo.
+Continúa en la [Unidad 16 — Validación y ajuste de hiperparámetros](../unidad16-validacion-hiperparametros/README.md).
