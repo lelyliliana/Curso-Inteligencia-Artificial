@@ -1,0 +1,2 @@
+# Misma pila del curso; scikit-learn se usa como referencia en las pruebas.
+-r ../unidad13-arboles-ensambles/requirements.txt

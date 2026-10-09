@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 16.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 17.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 16
+ULTIMA_UNIDAD = 17
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -120,6 +120,12 @@ def main():
                     esperado = "Seleccionado por MAE medio de CV: mediana"
                 elif programa.name == "03_pliegues_a_mano.py":
                     esperado = "Media MAE: 4.333; desviación poblacional: 2.357"
+                elif programa.name == "01_elegir_por_costos.py":
+                    esperado = "Seleccionada por costo de validación: umbral020"
+                elif programa.name == "02_decidir_con_cupo.py":
+                    esperado = "Seleccionada por costo de validación: umbral050_top6"
+                elif programa.name == "03_metricas_a_mano.py":
+                    esperado = "ROC AUC por pares: 0.625; AP: 0.583333; Brier: 0.2625"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -147,6 +153,8 @@ def main():
     pca = "unidad15-caracteristicas-dimension/ejemplos/02_comparar_pca.py"
     cv_ciclos = "unidad16-validacion-hiperparametros/ejemplos/01_ajustar_con_cv.py"
     cv_equipos = "unidad16-validacion-hiperparametros/ejemplos/02_validar_por_equipos.py"
+    decisiones_costos = "unidad17-metricas-decisiones/ejemplos/01_elegir_por_costos.py"
+    decisiones_cupo = "unidad17-metricas-decisiones/ejemplos/02_decidir_con_cupo.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -185,6 +193,10 @@ def main():
     variantes.extend([
         ([cv_ciclos, "--evaluar-prueba"], "Prueba final: solo knn3_distance; MAE=1.402; RMSE=1.839"),
         ([cv_equipos, "--evaluar-prueba"], "Prueba final: solo mediana; MAE=28.303; RMSE=30.491"),
+    ])
+    variantes.extend([
+        ([decisiones_costos, "--evaluar-prueba"], "Prueba final: solo umbral020; VP=23; FP=52; FN=4; costo=76"),
+        ([decisiones_cupo, "--evaluar-prueba"], "Prueba final: solo umbral050_top6; VP=13; FP=0; FN=29; costo=116"),
     ])
     for comando, esperado in variantes:
         ejecutar(comando, esperado)
@@ -227,6 +239,11 @@ def main():
             for cierre in (False, True):
                 extras = ["--evaluar-prueba"] if cierre else []
                 ejecutar([programa, *extras, "--salida", Path(carpeta) / f"validacion-cv-{i}-{cierre}", "--graficos"], "Exportación:")
+                ejecutados += 1
+        for i, programa in enumerate((decisiones_costos, decisiones_cupo)):
+            for cierre in (False, True):
+                extras = ["--evaluar-prueba"] if cierre else []
+                ejecutar([programa, *extras, "--salida", Path(carpeta) / f"decisiones-{i}-{cierre}", "--graficos"], "Exportación:")
                 ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

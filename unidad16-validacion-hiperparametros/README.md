@@ -253,4 +253,4 @@ python herramientas/verificar_curso.py
 
 Las **30 pruebas** verifican distancias y pesos con una referencia independiente, comparación con GridSearchCV, aislamiento de información, reajuste, datos y correspondencia de gráficos. No demuestran utilidad real de estas relaciones sintéticas.
 
-La siguiente entrega prevista es la **Unidad 17 — Métricas, umbrales y decisiones**, todavía pendiente de desarrollo.
+Continúa en la [Unidad 17 — Métricas, umbrales y decisiones](../unidad17-metricas-decisiones/README.md).
