@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 18.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 19.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 18
+ULTIMA_UNIDAD = 19
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -132,6 +132,12 @@ def main():
                     esperado = "desplazado | 40 | 19 | 12 | 0 | 0.368"
                 elif programa.name == "03_explicar_a_mano.py":
                     esperado = "Contribuciones B: [6, 0, -1]; predicción=15.000"
+                elif programa.name == "01_aprender_xor.py":
+                    esperado = "Seleccionado por BCE de validación: red8; época=3000"
+                elif programa.name == "02_controlar_sobreajuste.py":
+                    esperado = "Seleccionado por BCE de validación: red32_l2; época=6000"
+                elif programa.name == "03_retropropagar_a_mano.py":
+                    esperado = "BCE antes=0.693147; después=0.534305"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -163,6 +169,8 @@ def main():
     decisiones_cupo = "unidad17-metricas-decisiones/ejemplos/02_decidir_con_cupo.py"
     explicar_consumo = "unidad18-interpretabilidad-responsabilidad/ejemplos/01_explicar_consumo.py"
     auditar_alertas = "unidad18-interpretabilidad-responsabilidad/ejemplos/02_auditar_alertas.py"
+    red_xor = "unidad19-redes-neuronales/ejemplos/01_aprender_xor.py"
+    red_ruido = "unidad19-redes-neuronales/ejemplos/02_controlar_sobreajuste.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -209,6 +217,10 @@ def main():
     variantes.extend([
         ([explicar_consumo, "--evaluar-prueba"], "Prueba final: modelo fijo; MAE=0.379 kWh"),
         ([auditar_alertas, "--evaluar-prueba"], "Prueba final: modelo fijo; VP=37; FP=0; FN=12"),
+    ])
+    variantes.extend([
+        ([red_xor, "--evaluar-prueba"], "Prueba final: solo red8; BCE=0.0061; exactitud=1.000; FN=0; FP=0"),
+        ([red_ruido, "--evaluar-prueba"], "Prueba final: solo red32_l2; BCE=0.5350; exactitud=0.787; FN=17; FP=17"),
     ])
     for comando, esperado in variantes:
         ejecutar(comando, esperado)
@@ -261,6 +273,11 @@ def main():
             for cierre in (False, True):
                 extras = ["--evaluar-prueba"] if cierre else []
                 ejecutar([programa, *extras, "--salida", Path(carpeta) / f"interpretacion-{i}-{cierre}", "--graficos"], "Exportación:")
+                ejecutados += 1
+        for i, programa in enumerate((red_xor, red_ruido)):
+            for cierre in (False, True):
+                extras = ["--evaluar-prueba"] if cierre else []
+                ejecutar([programa, *extras, "--salida", Path(carpeta) / f"redes-{i}-{cierre}", "--graficos"], "Exportación:")
                 ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

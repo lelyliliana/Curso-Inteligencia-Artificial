@@ -1,0 +1,2 @@
+# Entorno compartido con las unidades anteriores; no se añade PyTorch.
+-r ../unidad13-arboles-ensambles/requirements.txt

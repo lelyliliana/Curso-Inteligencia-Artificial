@@ -239,4 +239,4 @@ python herramientas/verificar_curso.py
 
 Las **30 pruebas** contrastan mínimos cuadrados independientes, reconstrucciones, permutaciones, rutas y fronteras del árbol, agregación de métricas, invariancia del ajuste, regeneración y coherencia de los recursos. No sustituyen una auditoría de un sistema real.
 
-Antes de avanzar, comprueba que puedes explicar una predicción sin convertirla en una afirmación causal, señalar dónde faltan datos y justificar una decisión de uso. La siguiente entrega prevista es la **Unidad 19 — Redes neuronales**, todavía pendiente de desarrollo.
+Antes de avanzar, comprueba que puedes explicar una predicción sin convertirla en una afirmación causal, señalar dónde faltan datos y justificar una decisión de uso. Continúa con la [Unidad 19 — Redes neuronales](../unidad19-redes-neuronales/README.md).
