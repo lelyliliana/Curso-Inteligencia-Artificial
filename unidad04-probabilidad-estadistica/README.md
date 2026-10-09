@@ -1,6 +1,6 @@
 # Unidad 4 — Probabilidad y estadística
 
-[Unidad anterior: matemática aplicada](../unidad03-matematica-aplicada/README.md) · [Volver al índice](../README.md)
+[Unidad anterior: matemática aplicada](../unidad03-matematica-aplicada/README.md) · [Volver al índice](../README.md) · [Siguiente unidad: búsqueda y heurísticas](../unidad05-busqueda-heuristicas/README.md)
 
 Una media no describe por completo un conjunto de datos. Una alerta no confirma por sí sola que ocurrió un evento. Una proporción calculada en una muestra tampoco es una certeza sobre toda una población.
 
@@ -760,7 +760,7 @@ La estadística describe lo observado y ayuda a estudiar lo que puede inferirse 
 
 Los laboratorios mostraron que un valor señalado no es automáticamente incorrecto, que la prevalencia cambia la interpretación de una alerta, que las estimaciones varían entre muestras y que agrupar datos puede invertir una asociación. Estas distinciones son necesarias antes de preparar datos, entrenar modelos o presentar resultados de una aplicación.
 
-La siguiente unidad de la ruta estudia **búsqueda, estados y heurísticas**. Consulta su disponibilidad en el índice.
+Continúa con la [Unidad 5 — Búsqueda, estados y heurísticas](../unidad05-busqueda-heuristicas/README.md), donde modelarás acciones, compararás rutas y justificarás las condiciones de una heurística.
 
 ## Referencias y lecturas
 
@@ -772,4 +772,4 @@ Los datos, casos, figura, programas y ejercicios de esta unidad son material edu
 4. Python Software Foundation. [Módulo statistics de Python 3.12](https://docs.python.org/3.12/library/statistics.html).
 5. Illowsky, B. y Dean, S. *Introductory Statistics 2e*, OpenStax. [Reglas de probabilidad](https://openstax.org/books/introductory-statistics-2e/pages/3-3-two-basic-rules-of-probability).
 
-[Unidad anterior](../unidad03-matematica-aplicada/README.md) · [Volver al índice](../README.md)
+[Unidad anterior](../unidad03-matematica-aplicada/README.md) · [Volver al índice](../README.md) · [Siguiente unidad](../unidad05-busqueda-heuristicas/README.md)

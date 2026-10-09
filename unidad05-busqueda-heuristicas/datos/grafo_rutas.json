@@ -1,0 +1,14 @@
+{
+  "descripcion": "Grafo dirigido ficticio. Los costos representan minutos sintéticos, no distancias ni mediciones.",
+  "inicio": "S",
+  "meta": "G",
+  "grafo": {
+    "S": [["A", 6], ["B", 1], ["C", 4]],
+    "A": [["G", 6]],
+    "B": [["D", 1]],
+    "C": [["G", 1]],
+    "D": [["A", 2], ["G", 4]],
+    "G": []
+  },
+  "heuristica": {"S": 5, "A": 1, "B": 4, "C": 1, "D": 3, "G": 0}
+}

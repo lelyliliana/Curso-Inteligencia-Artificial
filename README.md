@@ -45,7 +45,7 @@ La secuencia comprende **36 unidades, de la 0 a la 35**. Los enlaces llevan a ma
 
 | Unidad | Tema |
 |---|---|
-| 5 | Búsqueda, estados y heurísticas |
+| 5 | [Búsqueda, estados y heurísticas](unidad05-busqueda-heuristicas/README.md) |
 | 6 | Conocimiento, reglas y restricciones |
 | 7 | Obtención y comprensión de datos |
 | 8 | Calidad y preparación de datos |
@@ -126,9 +126,9 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-Las **unidades 0 a 4** están publicadas con explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. La Unidad 0 prepara el entorno; la Unidad 1 introduce los enfoques de IA; la Unidad 2 desarrolla la formulación de proyectos; la Unidad 3 conecta matemática y entrenamiento; la Unidad 4 desarrolla descripción de datos, probabilidad, Bayes, muestreo e incertidumbre. Las unidades 5 a 35 tienen su alcance definido y están pendientes de desarrollo.
+Las **unidades 0 a 5** están publicadas con explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. La Unidad 0 prepara el entorno; la Unidad 1 introduce los enfoques de IA; la Unidad 2 desarrolla la formulación de proyectos; la Unidad 3 conecta matemática y entrenamiento; la Unidad 4 desarrolla probabilidad y estadística; la Unidad 5 introduce búsqueda, costos, heurísticas y verificación de rutas. Las unidades 6 a 35 tienen su alcance definido y están pendientes de desarrollo.
 
-El curso completo requiere desarrollar y revisar las 36 unidades. El material disponible permite preparar el entorno, comprender los enfoques de IA, formular un proyecto aplicado, explicar los cálculos de su entrenamiento e interpretar datos y resultados probabilísticos bajo sus supuestos.
+El curso completo requiere desarrollar y revisar las 36 unidades. El material disponible permite preparar el entorno, comprender los enfoques de IA, formular un proyecto aplicado, explicar su entrenamiento, interpretar datos y probabilidades, y modelar búsquedas con condiciones de optimalidad explícitas.
 
 ## Autora
 

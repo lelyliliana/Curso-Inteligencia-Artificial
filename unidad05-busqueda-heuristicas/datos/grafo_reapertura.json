@@ -1,0 +1,12 @@
+{
+  "descripcion": "Caso construido con heurística admisible e inconsistente; muestra una reapertura de A.",
+  "inicio": "S",
+  "meta": "G",
+  "grafo": {
+    "S": [["A", 2], ["B", 1]],
+    "A": [["G", 2]],
+    "B": [["A", 0.5]],
+    "G": []
+  },
+  "heuristica": {"S": 0, "A": 0, "B": 2.5, "G": 0}
+}

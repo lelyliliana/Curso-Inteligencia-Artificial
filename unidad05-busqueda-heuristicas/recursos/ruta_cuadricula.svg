@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="486" height="432" viewBox="0 0 486 432" role="img" aria-labelledby="titulo descripcion">
+<title id="titulo">Ruta en una cuadrícula sintética</title>
+<desc id="descripcion">Movimientos ortogonales de costo uno. Las celdas oscuras son obstáculos. La línea une los estados de la ruta de A estrella.</desc>
+<rect width="486" height="432" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#172b4d">
+<text x="24" y="28" font-size="19" font-weight="bold">Búsqueda en cuadrícula</text>
+<text x="24" y="51" font-size="13">Ruta A*: 10 movimientos · Datos sintéticos</text>
+<text x="95.0" y="68" text-anchor="middle" font-size="12">0</text>
+<text x="149.0" y="68" text-anchor="middle" font-size="12">1</text>
+<text x="203.0" y="68" text-anchor="middle" font-size="12">2</text>
+<text x="257.0" y="68" text-anchor="middle" font-size="12">3</text>
+<text x="311.0" y="68" text-anchor="middle" font-size="12">4</text>
+<text x="365.0" y="68" text-anchor="middle" font-size="12">5</text>
+<text x="419.0" y="68" text-anchor="middle" font-size="12">6</text>
+<text x="50" y="109.0" text-anchor="middle" font-size="12">0</text>
+<rect x="68" y="78" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="122" y="78" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="176" y="78" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="230" y="78" width="54" height="54" fill="#334155" stroke="white" stroke-width="2"/>
+<rect x="284" y="78" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="338" y="78" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="392" y="78" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<text x="50" y="163.0" text-anchor="middle" font-size="12">1</text>
+<rect x="68" y="132" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="122" y="132" width="54" height="54" fill="#334155" stroke="white" stroke-width="2"/>
+<rect x="176" y="132" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="230" y="132" width="54" height="54" fill="#334155" stroke="white" stroke-width="2"/>
+<rect x="284" y="132" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="338" y="132" width="54" height="54" fill="#334155" stroke="white" stroke-width="2"/>
+<rect x="392" y="132" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<text x="50" y="217.0" text-anchor="middle" font-size="12">2</text>
+<rect x="68" y="186" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="122" y="186" width="54" height="54" fill="#334155" stroke="white" stroke-width="2"/>
+<rect x="176" y="186" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="230" y="186" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="284" y="186" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="338" y="186" width="54" height="54" fill="#334155" stroke="white" stroke-width="2"/>
+<rect x="392" y="186" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<text x="50" y="271.0" text-anchor="middle" font-size="12">3</text>
+<rect x="68" y="240" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="122" y="240" width="54" height="54" fill="#334155" stroke="white" stroke-width="2"/>
+<rect x="176" y="240" width="54" height="54" fill="#334155" stroke="white" stroke-width="2"/>
+<rect x="230" y="240" width="54" height="54" fill="#334155" stroke="white" stroke-width="2"/>
+<rect x="284" y="240" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="338" y="240" width="54" height="54" fill="#334155" stroke="white" stroke-width="2"/>
+<rect x="392" y="240" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<text x="50" y="325.0" text-anchor="middle" font-size="12">4</text>
+<rect x="68" y="294" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="122" y="294" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="176" y="294" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="230" y="294" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="284" y="294" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="338" y="294" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<rect x="392" y="294" width="54" height="54" fill="#eff5fa" stroke="white" stroke-width="2"/>
+<polyline points="95.0,105.0 149.0,105.0 203.0,105.0 203.0,159.0 203.0,213.0 257.0,213.0 311.0,213.0 311.0,159.0 311.0,105.0 365.0,105.0 419.0,105.0" fill="none" stroke="#007c83" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="95.0" cy="105.0" r="17" fill="#007c83"/>
+<text x="95.0" y="110.0" text-anchor="middle" fill="white" font-size="16" font-weight="bold">S</text>
+<circle cx="419.0" cy="105.0" r="17" fill="#007c83"/>
+<text x="419.0" y="110.0" text-anchor="middle" fill="white" font-size="16" font-weight="bold">G</text>
+<text x="24" y="390" font-size="13">S: inicio · G: meta · Oscuro: bloqueado · Índices desde cero</text>
+<text x="24" y="413" font-size="12">Sin diagonales, batería, incertidumbre ni control de un robot real.</text>
+</g></svg>
