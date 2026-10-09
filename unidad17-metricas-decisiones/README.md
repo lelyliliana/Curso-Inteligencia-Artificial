@@ -264,4 +264,4 @@ python herramientas/verificar_curso.py
 
 Las **30 pruebas** incluyen cálculos manuales y referencias de biblioteca, empates, valores indefinidos, sensibilidad a costos, capacidad por lote, separación de información y coherencia de artefactos. No sustituyen una evaluación de utilidad y consecuencias reales.
 
-La siguiente entrega prevista es la **Unidad 18 — Interpretabilidad y responsabilidad**, todavía pendiente de desarrollo.
+Continúa con la [Unidad 18 — Interpretabilidad y responsabilidad](../unidad18-interpretabilidad-responsabilidad/README.md).

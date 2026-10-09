@@ -8,3 +8,4 @@ unidad14-agrupamiento-anomalias/recursos/**/*.svg -whitespace linguist-generated
 unidad15-caracteristicas-dimension/recursos/**/*.svg -whitespace linguist-generated=true
 unidad16-validacion-hiperparametros/recursos/**/*.svg -whitespace linguist-generated=true
 unidad17-metricas-decisiones/recursos/**/*.svg -whitespace linguist-generated=true
+unidad18-interpretabilidad-responsabilidad/recursos/**/*.svg -whitespace linguist-generated=true

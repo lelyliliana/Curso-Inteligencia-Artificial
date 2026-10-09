@@ -1,0 +1,3604 @@
+{
+  "laboratorio": "alertas",
+  "protocolo": "u18-v1-modelos-fijos",
+  "entradas": [
+    "lectura"
+  ],
+  "versiones": {
+    "python": "3.12.3",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "matplotlib": "3.10.8"
+  },
+  "fuentes": {
+    "entrenamiento": {
+      "archivo": "entrenamiento.csv",
+      "n": 236,
+      "sha256": "cc4768133827dcb95e5e39efbc46fc64ac50a8c31de69665cadd43b6cd3c5dc5"
+    },
+    "validacion": {
+      "archivo": "validacion.csv",
+      "n": 144,
+      "sha256": "90a827584731fa2ea3941ad3205c36efb9d5b6dcaeb41e27c8248a5373595d06"
+    }
+  },
+  "estado": {
+    "tipo": "DecisionTreeClassifier",
+    "parametros": {
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": 2,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 8,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "random_state": 18,
+      "splitter": "best"
+    },
+    "clases": [
+      0,
+      1
+    ],
+    "hijo_izquierdo": [
+      1,
+      2,
+      -1,
+      -1,
+      5,
+      -1,
+      -1
+    ],
+    "hijo_derecho": [
+      4,
+      3,
+      -1,
+      -1,
+      6,
+      -1,
+      -1
+    ],
+    "variable": [
+      0,
+      0,
+      -2,
+      -2,
+      0,
+      -2,
+      -2
+    ],
+    "umbral": [
+      0.5503549873828888,
+      0.2959599941968918,
+      -2.0,
+      -2.0,
+      0.5875000059604645,
+      -2.0,
+      -2.0
+    ],
+    "valor": [
+      [
+        [
+          0.5466101694915254,
+          0.4533898305084746
+        ]
+      ],
+      [
+        [
+          0.8767123287671232,
+          0.1232876712328767
+        ]
+      ],
+      [
+        [
+          0.9891304347826086,
+          0.010869565217391304
+        ]
+      ],
+      [
+        [
+          0.6851851851851852,
+          0.3148148148148148
+        ]
+      ],
+      [
+        [
+          0.011111111111111112,
+          0.9888888888888889
+        ]
+      ],
+      [
+        [
+          0.125,
+          0.875
+        ]
+      ],
+      [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    ],
+    "n_muestras": [
+      236,
+      146,
+      92,
+      54,
+      90,
+      8,
+      82
+    ]
+  },
+  "entrenamiento": {
+    "metricas": {
+      "n": 236,
+      "VP": 89,
+      "VN": 128,
+      "FP": 1,
+      "FN": 18,
+      "positivos": 107,
+      "exactitud": 0.9194915254237288,
+      "precision": 0.9888888888888889,
+      "recobrado": 0.8317757009345794,
+      "f1": 0.9035532994923858,
+      "negativos": 129,
+      "alertas": 90,
+      "tasa_fp": 0.007751937984496124,
+      "tasa_fn": 0.16822429906542055,
+      "tasa_alerta": 0.3813559322033898
+    },
+    "predicciones": [
+      {
+        "caso_id": "A-entrenamiento-estandar-000",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-001",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-002",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-003",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-004",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-005",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-006",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-007",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-008",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-009",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-010",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-011",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-012",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-013",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-014",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-015",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-016",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-017",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-018",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-019",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-020",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-021",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-022",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-023",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-024",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-025",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-026",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-027",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-028",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-029",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-030",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-031",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-032",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-033",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-034",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-035",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-036",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-037",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-038",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-039",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-040",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-041",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-042",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-043",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-044",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-045",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-046",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-047",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-048",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-049",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-050",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-051",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-052",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-053",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-054",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-055",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-056",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-057",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-058",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-059",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-060",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-061",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-062",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-063",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-064",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-065",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-066",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-067",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-068",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-069",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-070",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-071",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-072",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-073",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-074",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-075",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-076",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-077",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-078",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-079",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-080",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-081",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-082",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-083",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-084",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-085",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-086",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-087",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-088",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-089",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-090",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-091",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-092",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-093",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-094",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-095",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-096",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-097",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-098",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-099",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-100",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-101",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-102",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-103",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-104",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-105",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-106",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-107",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-108",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-109",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-110",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-111",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-112",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-113",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-114",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-115",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-116",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-117",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-118",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-119",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-120",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-121",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-122",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-123",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-124",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-125",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-126",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-127",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-128",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-129",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-130",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-131",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-132",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-133",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-134",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-135",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-136",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-137",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-138",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-139",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-140",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-141",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-142",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-143",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-144",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-145",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-146",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-147",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-148",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-149",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-150",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-151",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-152",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-153",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-154",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-155",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-156",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-157",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-158",
+        "real": 0,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-159",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-160",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-161",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-162",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-163",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-164",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-165",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-166",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-167",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-168",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-169",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-170",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-171",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-172",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-173",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-174",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-175",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-176",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-177",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-178",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-estandar-179",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-000",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-001",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-002",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-003",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-004",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-005",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-006",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-007",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-008",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-009",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-010",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-011",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-012",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-013",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-014",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-015",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-016",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-017",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-018",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-019",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-020",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-021",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-022",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-023",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-024",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-025",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-026",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-027",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-028",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-029",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-030",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-031",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-032",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-033",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-034",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-035",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-036",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-037",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-038",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-039",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-040",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-041",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-042",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-043",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-044",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-045",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-046",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-047",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-048",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-desplazado-049",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-entrenamiento-escaso-000",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-entrenamiento-escaso-001",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-entrenamiento-escaso-002",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-entrenamiento-escaso-003",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-entrenamiento-escaso-004",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-entrenamiento-escaso-005",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      }
+    ],
+    "grupos": {
+      "estandar": {
+        "n": 180,
+        "VP": 84,
+        "VN": 94,
+        "FP": 1,
+        "FN": 1,
+        "positivos": 85,
+        "exactitud": 0.9888888888888889,
+        "precision": 0.9882352941176471,
+        "recobrado": 0.9882352941176471,
+        "f1": 0.9882352941176471,
+        "negativos": 95,
+        "alertas": 85,
+        "tasa_fp": 0.010526315789473684,
+        "tasa_fn": 0.011764705882352941,
+        "tasa_alerta": 0.4722222222222222,
+        "fraccion_muestra": 0.7627118644067796
+      },
+      "desplazado": {
+        "n": 50,
+        "VP": 5,
+        "VN": 28,
+        "FP": 0,
+        "FN": 17,
+        "positivos": 22,
+        "exactitud": 0.66,
+        "precision": 1.0,
+        "recobrado": 0.22727272727272727,
+        "f1": 0.37037037037037035,
+        "negativos": 28,
+        "alertas": 5,
+        "tasa_fp": 0.0,
+        "tasa_fn": 0.7727272727272727,
+        "tasa_alerta": 0.1,
+        "fraccion_muestra": 0.211864406779661
+      },
+      "escaso": {
+        "n": 6,
+        "VP": 0,
+        "VN": 6,
+        "FP": 0,
+        "FN": 0,
+        "positivos": 0,
+        "exactitud": 1.0,
+        "precision": null,
+        "recobrado": null,
+        "f1": null,
+        "negativos": 6,
+        "alertas": 0,
+        "tasa_fp": 0.0,
+        "tasa_fn": null,
+        "tasa_alerta": 0.0,
+        "fraccion_muestra": 0.025423728813559324
+      },
+      "nuevo": {
+        "n": 0,
+        "VP": 0,
+        "VN": 0,
+        "FP": 0,
+        "FN": 0,
+        "positivos": 0,
+        "exactitud": null,
+        "precision": null,
+        "recobrado": null,
+        "f1": null,
+        "negativos": 0,
+        "alertas": 0,
+        "tasa_fp": null,
+        "tasa_fn": null,
+        "tasa_alerta": null,
+        "fraccion_muestra": 0.0
+      }
+    }
+  },
+  "validacion": {
+    "metricas": {
+      "n": 144,
+      "VP": 53,
+      "VN": 74,
+      "FP": 4,
+      "FN": 13,
+      "positivos": 66,
+      "exactitud": 0.8819444444444444,
+      "precision": 0.9298245614035088,
+      "recobrado": 0.803030303030303,
+      "f1": 0.8617886178861789,
+      "negativos": 78,
+      "alertas": 57,
+      "tasa_fp": 0.05128205128205128,
+      "tasa_fn": 0.19696969696969696,
+      "tasa_alerta": 0.3958333333333333
+    },
+    "predicciones": [
+      {
+        "caso_id": "A-validacion-estandar-000",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-001",
+        "real": 0,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-002",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-003",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-004",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-005",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-006",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-007",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-008",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-009",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-010",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-011",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-012",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-013",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-014",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-015",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-016",
+        "real": 0,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-017",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-018",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-019",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-020",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-021",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-022",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-023",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-024",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-025",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-026",
+        "real": 0,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-027",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-028",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-029",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-030",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-031",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-032",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-033",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-034",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-035",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-036",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-037",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-038",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-039",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-040",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-041",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-042",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-043",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-044",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-045",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-046",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-047",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-048",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-049",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-050",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-051",
+        "real": 0,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-052",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-053",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-054",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-055",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-056",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-057",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-058",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-059",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-060",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-061",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-062",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-063",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-064",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-065",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-066",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-067",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-068",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-069",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-070",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-071",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-072",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-073",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-074",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-075",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-076",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-077",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-078",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-079",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-080",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-081",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-082",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-083",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-084",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-085",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-086",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-087",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-088",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-089",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-090",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-091",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-092",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-093",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-094",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-095",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-096",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-097",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-098",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-099",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-000",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-001",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-002",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-003",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-004",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-005",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-006",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-007",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-008",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-009",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-010",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-011",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-012",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-013",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-014",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-015",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-016",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-017",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-018",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-019",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-020",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-021",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-022",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-023",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-024",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-025",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-026",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-027",
+        "real": 1,
+        "prediccion": 1,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-028",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-029",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-030",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-031",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-032",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-033",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-034",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-035",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-036",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-037",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-038",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-039",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-escaso-000",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-validacion-escaso-001",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-validacion-escaso-002",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-validacion-escaso-003",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      }
+    ],
+    "grupos": {
+      "estandar": {
+        "n": 100,
+        "VP": 46,
+        "VN": 49,
+        "FP": 4,
+        "FN": 1,
+        "positivos": 47,
+        "exactitud": 0.95,
+        "precision": 0.92,
+        "recobrado": 0.9787234042553191,
+        "f1": 0.9484536082474226,
+        "negativos": 53,
+        "alertas": 50,
+        "tasa_fp": 0.07547169811320754,
+        "tasa_fn": 0.02127659574468085,
+        "tasa_alerta": 0.5,
+        "fraccion_muestra": 0.6944444444444444
+      },
+      "desplazado": {
+        "n": 40,
+        "VP": 7,
+        "VN": 21,
+        "FP": 0,
+        "FN": 12,
+        "positivos": 19,
+        "exactitud": 0.7,
+        "precision": 1.0,
+        "recobrado": 0.3684210526315789,
+        "f1": 0.5384615384615384,
+        "negativos": 21,
+        "alertas": 7,
+        "tasa_fp": 0.0,
+        "tasa_fn": 0.631578947368421,
+        "tasa_alerta": 0.175,
+        "fraccion_muestra": 0.2777777777777778
+      },
+      "escaso": {
+        "n": 4,
+        "VP": 0,
+        "VN": 4,
+        "FP": 0,
+        "FN": 0,
+        "positivos": 0,
+        "exactitud": 1.0,
+        "precision": null,
+        "recobrado": null,
+        "f1": null,
+        "negativos": 4,
+        "alertas": 0,
+        "tasa_fp": 0.0,
+        "tasa_fn": null,
+        "tasa_alerta": 0.0,
+        "fraccion_muestra": 0.027777777777777776
+      },
+      "nuevo": {
+        "n": 0,
+        "VP": 0,
+        "VN": 0,
+        "FP": 0,
+        "FN": 0,
+        "positivos": 0,
+        "exactitud": null,
+        "precision": null,
+        "recobrado": null,
+        "f1": null,
+        "negativos": 0,
+        "alertas": 0,
+        "tasa_fp": null,
+        "tasa_fn": null,
+        "tasa_alerta": null,
+        "fraccion_muestra": 0.0
+      }
+    }
+  },
+  "linea_base_validacion": {
+    "metricas": {
+      "n": 144,
+      "VP": 0,
+      "VN": 78,
+      "FP": 0,
+      "FN": 66,
+      "positivos": 66,
+      "exactitud": 0.5416666666666666,
+      "precision": null,
+      "recobrado": 0.0,
+      "f1": 0.0,
+      "negativos": 78,
+      "alertas": 0,
+      "tasa_fp": 0.0,
+      "tasa_fn": 1.0,
+      "tasa_alerta": 0.0
+    },
+    "predicciones": [
+      {
+        "caso_id": "A-validacion-estandar-000",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-001",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-002",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-003",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-004",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-005",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-006",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-007",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-008",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-009",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-010",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-011",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-012",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-013",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-014",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-015",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-016",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-017",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-018",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-019",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-020",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-021",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-022",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-023",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-024",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-025",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-026",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-027",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-028",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-029",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-030",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-031",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-032",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-033",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-034",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-035",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-036",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-037",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-038",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-039",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-040",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-041",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-042",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-043",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-044",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-045",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-046",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-047",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-048",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-049",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-050",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-051",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-052",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-053",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-054",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-055",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-056",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-057",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-058",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-059",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-060",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-061",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-062",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-063",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-064",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-065",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-066",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-067",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-068",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-069",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-070",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-071",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-072",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-073",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-074",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-075",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-076",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-077",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-078",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-079",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-080",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-081",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-082",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-083",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-084",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-085",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-086",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-087",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-088",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-089",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-090",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-091",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-092",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-093",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-094",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-095",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-096",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-097",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-098",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-estandar-099",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "estandar"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-000",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-001",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-002",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-003",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-004",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-005",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-006",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-007",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-008",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-009",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-010",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-011",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-012",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-013",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-014",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-015",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-016",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-017",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-018",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-019",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-020",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-021",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-022",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-023",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-024",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-025",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-026",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-027",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-028",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-029",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-030",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-031",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-032",
+        "real": 1,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-033",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-034",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-035",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-036",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-037",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-038",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-desplazado-039",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "desplazado"
+      },
+      {
+        "caso_id": "A-validacion-escaso-000",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-validacion-escaso-001",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-validacion-escaso-002",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      },
+      {
+        "caso_id": "A-validacion-escaso-003",
+        "real": 0,
+        "prediccion": 0,
+        "grupo": "escaso"
+      }
+    ],
+    "grupos": {
+      "estandar": {
+        "n": 100,
+        "VP": 0,
+        "VN": 53,
+        "FP": 0,
+        "FN": 47,
+        "positivos": 47,
+        "exactitud": 0.53,
+        "precision": null,
+        "recobrado": 0.0,
+        "f1": 0.0,
+        "negativos": 53,
+        "alertas": 0,
+        "tasa_fp": 0.0,
+        "tasa_fn": 1.0,
+        "tasa_alerta": 0.0,
+        "fraccion_muestra": 0.6944444444444444
+      },
+      "desplazado": {
+        "n": 40,
+        "VP": 0,
+        "VN": 21,
+        "FP": 0,
+        "FN": 19,
+        "positivos": 19,
+        "exactitud": 0.525,
+        "precision": null,
+        "recobrado": 0.0,
+        "f1": 0.0,
+        "negativos": 21,
+        "alertas": 0,
+        "tasa_fp": 0.0,
+        "tasa_fn": 1.0,
+        "tasa_alerta": 0.0,
+        "fraccion_muestra": 0.2777777777777778
+      },
+      "escaso": {
+        "n": 4,
+        "VP": 0,
+        "VN": 4,
+        "FP": 0,
+        "FN": 0,
+        "positivos": 0,
+        "exactitud": 1.0,
+        "precision": null,
+        "recobrado": null,
+        "f1": null,
+        "negativos": 4,
+        "alertas": 0,
+        "tasa_fp": 0.0,
+        "tasa_fn": null,
+        "tasa_alerta": 0.0,
+        "fraccion_muestra": 0.027777777777777776
+      },
+      "nuevo": {
+        "n": 0,
+        "VP": 0,
+        "VN": 0,
+        "FP": 0,
+        "FN": 0,
+        "positivos": 0,
+        "exactitud": null,
+        "precision": null,
+        "recobrado": null,
+        "f1": null,
+        "negativos": 0,
+        "alertas": 0,
+        "tasa_fp": null,
+        "tasa_fn": null,
+        "tasa_alerta": null,
+        "fraccion_muestra": 0.0
+      }
+    }
+  },
+  "prueba": null,
+  "caso_local": {
+    "caso_id": "A-validacion-desplazado-000",
+    "entrada": [
+      0.0
+    ],
+    "pasos": [
+      {
+        "nodo": 0,
+        "columna": 0,
+        "valor_float32": 0.0,
+        "umbral": 0.5503549873828888,
+        "operador": "<=",
+        "siguiente": 1
+      },
+      {
+        "nodo": 1,
+        "columna": 0,
+        "valor_float32": 0.0,
+        "umbral": 0.2959599941968918,
+        "operador": "<=",
+        "siguiente": 2
+      }
+    ],
+    "hoja": 2,
+    "n_entrenamiento_hoja": 92,
+    "fracciones_clase": [
+      0.9891304347826086,
+      0.010869565217391304
+    ],
+    "clases": [
+      0,
+      1
+    ],
+    "clase_reconstruida": 0,
+    "prediccion": 0
+  },
+  "permutacion": null
+}

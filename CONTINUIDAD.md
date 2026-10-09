@@ -29,10 +29,11 @@ La revisión inicial ejecutó correctamente 19 programas de ejemplos y solucione
 | Unidad 15 | Desarrollada y comprobada | Dos laboratorios, proyección manual, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 30 pruebas |
 | Unidad 16 | Desarrollada y comprobada | Dos laboratorios, CV manual, contraejemplo de escala, cortes temporales, cuatro CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 30 pruebas |
 | Unidad 17 | Desarrollada y comprobada | Dos laboratorios, métricas manuales, costos y cupos, cuatro CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 30 pruebas |
-| Verificación común | Disponible para las unidades 0–17 | [verificar_curso.py](herramientas/verificar_curso.py) |
-| Unidades 18–35 | Pendientes de desarrollo | Alcance conservado en el índice |
+| Unidad 18 | Desarrollada y comprobada | Dos laboratorios, reconstrucción manual, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, ficha de modelo y 30 pruebas |
+| Verificación común | Disponible para las unidades 0–18 | [verificar_curso.py](herramientas/verificar_curso.py) |
+| Unidades 19–35 | Pendientes de desarrollo | Alcance conservado en el índice |
 
-La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8`, la Unidad 12 en `61a73f5`, la Unidad 13 en `81df395`, la Unidad 14 en `1f2b6f8`, la Unidad 15 en `b5ef367` y la Unidad 16 en `121e345`. Esta entrega incorpora la Unidad 17 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 18: interpretabilidad y responsabilidad**. Quedan 18 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
+La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8`, la Unidad 12 en `61a73f5`, la Unidad 13 en `81df395`, la Unidad 14 en `1f2b6f8`, la Unidad 15 en `b5ef367`, la Unidad 16 en `121e345` y la Unidad 17 en `5ea63cf`. Esta entrega incorpora la Unidad 18 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 19: redes neuronales**. Quedan 17 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
 
 ## Enfoque que se conserva
 
@@ -51,7 +52,7 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 |---|---|---|
 | 7–9 | Desarrollo terminado; reto integrador disponible | Datos documentados, preparación trazable y exploración con figuras e informe reproducible |
 | 10–13 | Desarrollo terminado: líneas base, regresión, clasificación y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
-| 14–18 | Unidades 14–17 terminadas; pendiente interpretabilidad y responsabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
+| 14–18 | Desarrollo terminado: agrupamiento, representaciones, validación, decisiones e interpretabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
 | 19–24 | Redes, PyTorch, visión, lenguaje, tiempo, recomendación y refuerzo | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
 | 25–31 | Generación, inferencia, prompts, embeddings, RAG, herramientas, adaptación y multimodalidad | Evaluaciones con casos verificables, citas y límites de permisos y recursos |
 | 32–33 | Aplicación, operación, seguridad y observabilidad | Aplicación mínima con validación de entradas, registro útil y manejo de errores |
@@ -59,18 +60,20 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 
 Antes de desarrollar cada unidad, verificar documentación primaria de las bibliotecas y servicios que vaya a utilizar. Fijar y registrar las versiones que realmente se prueben; no asumir que una API o descarga futura conserva el mismo funcionamiento.
 
-## Siguiente entrega concreta — Unidad 18
+## Siguiente entrega concreta — Unidad 19
 
-Pregunta guía: **¿cómo explicar una predicción, comprobar los límites de esa explicación y documentar responsabilidades antes de usar un modelo?**
+Pregunta guía: **¿cómo aprende una red neuronal pequeña y cómo comprobar que sus capas y gradientes producen el comportamiento esperado?**
 
 Alcance propuesto, todavía no implementado:
 
-1. Distinguir explicación del comportamiento del modelo de explicación causal del fenómeno, y descripción global de un caso local.
-2. Reconstruir predicciones con modelos sencillos, escalas y unidades; comparar coeficientes, recorridos y contribuciones sin mezclarlos.
-3. Introducir importancia por permutación sobre datos permitidos, con referencias y repetición declaradas; examinar límites ante entradas correlacionadas.
-4. Evaluar errores y cobertura por grupos sintéticos con tamaños y métricas indefinidas explícitos; no tratar una diferencia aislada como prueba suficiente de equidad o discriminación.
-5. Documentar uso previsto, usos excluidos, procedencia, limitaciones, supervisión humana y respuesta a errores en una ficha de modelo y un análisis de impacto proporcionado.
-6. Entregar dos laboratorios, casos reconstruibles, datos nuevos, figuras revisadas, ejercicios, soluciones y reto. Conservar una evaluación separada y distinguir datos usados para explicar de datos utilizados para orientar cambios.
+1. Conectar regresión y clasificación con neuronas, pesos, sesgos, capas y activaciones; explicar por qué apilar transformaciones lineales sin activación no añade una frontera no lineal.
+2. Desarrollar propagación hacia delante y un paso manual de retropropagación con dimensiones explícitas, pérdida y regla de la cadena.
+3. Implementar una red pequeña en NumPy, en CPU, con estabilidad numérica y verificación de gradientes por diferencias finitas. Reservar el uso sistemático de PyTorch para la Unidad 20.
+4. Comparar una línea base lineal y una red en escenarios sintéticos nuevos, con semillas, inicialización, escalado y presupuesto de entrenamiento declarados.
+5. Examinar curvas de aprendizaje, capacidad y sobreajuste; seleccionar cualquier época o configuración solo con desarrollo y mantener un cierre independiente.
+6. Entregar dos laboratorios, datos regenerables, figuras revisadas, ejercicios, soluciones y reto. Conservar la ficha de límites y distinguir una frontera aprendida de una explicación causal.
+
+La Unidad 18 fija dos modelos antes de leer validación: regresión lineal estandarizada con un duplicado exacto horas/minutos, y un árbol pequeño sobre una lectura. Reconstruye contribuciones y rutas, convierte unidades y contrasta permutación individual/conjunta. La auditoría conserva grupos sin positivos y sin filas; el árbol detecta 7 de 19 positivos desplazados en validación y 3 de 14 en cierre. No se reemplaza después de observar el fallo. Incluye ficha completada, plantilla y análisis de impacto con decisión de uso solo didáctico. Las tres figuras se revisaron visualmente; las 30 pruebas contrastan referencias matemáticas, fronteras float32 del árbol, separación, datos y artefactos. Se reutilizó el entorno anterior sin dependencias nuevas. Prueba se abre tras los diagnósticos y no orienta el ajuste.
 
 La Unidad 17 compara políticas sobre puntuaciones sintéticas fijas, sin entrenar ni reajustar un predictor. El primer laboratorio selecciona umbral por costo FP=1/FN=6; el segundo añade un cupo de seis revisiones por lote, con desempate por puntuación e ID sin etiquetas. Un empate de costo se resuelve por menos alertas, conservando el criterio aunque cambie F1. Se explican denominadores, valores indefinidos, ROC AUC, AP por bloques, Brier, fiabilidad y sensibilidad condicional a prevalencia. El diagnóstico s² conserva orden y modifica error probabilístico; no se ajusta un calibrador. Prueba se abre tras elegir y solo evalúa esa política. Se documentan omisiones importantes incluso con precisión=1 en una muestra. Las tres figuras se revisaron visualmente y las 30 pruebas contrastan referencias matemáticas, biblioteca, cupos, separación y artefactos. Se reutilizó el entorno anterior sin dependencias nuevas.
 
@@ -88,7 +91,7 @@ La Unidad 11 incorpora datos sintéticos nuevos de ciclos de operación: un caso
 
 La Unidad 10 añade dos conjuntos sintéticos independientes: 32 pronósticos diarios con cortes temporales y 64 avisos de ocho equipos separados por grupo. La ejecución común lee solo entrenamiento y validación; `--evaluar-prueba` abre prueba después de seleccionar y no reajusta. Se comprueban casos idénticos entre candidatos, disponibilidad de etiquetas en los cortes y separación de equipos. Las pruebas de invariancia alteran objetivos de prueba y verifican que no cambien ajuste, selección ni predicciones. No hay dependencias nuevas ni azar.
 
-Las pruebas de las unidades 10 a 17 son públicas y sus resultados didácticos son conocidos. No reutilizarlas automáticamente para seleccionar modelos nuevos en unidades posteriores y después presentarlas como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
+Las pruebas de las unidades 10 a 18 son públicas y sus resultados didácticos son conocidos. No reutilizarlas automáticamente para seleccionar modelos nuevos en unidades posteriores y después presentarlas como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
 
 La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 y NumPy 2.2.6, probadas con Python 3.12.3 en un entorno virtual limpio. Sus resúmenes de texto usan biblioteca estándar; su exportación de gráficos y sus 21 pruebas requieren esos paquetes. Las unidades 11 y 12 reutilizan esas versiones: polinomios y logística requieren NumPy; las figuras, Matplotlib. La Unidad 13 incorpora scikit-learn 1.9.1, probado con Python 3.12.3 y las mismas versiones numéricas y gráficas en otro entorno virtual limpio. Su [registro completo del entorno](unidad13-arboles-ensambles/recursos/entorno-verificado.txt) añade las dependencias transitivas, incluida SciPy 1.18.1. Se conserva también el [registro del entorno anterior](unidad09-exploracion-visualizacion/recursos/entorno-verificado.txt). Los informes JSON anotan fuentes, parámetros y versiones principales.
 
@@ -111,11 +114,11 @@ La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 
 Desde la raíz del curso:
 
 ```bash
-python -m pip install -r unidad17-metricas-decisiones/requirements.txt
+python -m pip install -r unidad18-interpretabilidad-responsabilidad/requirements.txt
 python herramientas/verificar_curso.py
 ```
 
-Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 121 ejecuciones de programas y variantes y las 310 pruebas de las unidades 5 a 17. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas y scikit-learn indicados en los requisitos de la Unidad 17. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–17; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
+Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 130 ejecuciones de programas y variantes y las 340 pruebas de las unidades 5 a 18. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas y scikit-learn indicados en los requisitos de la Unidad 18. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–18; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
 
 La comprobación de enlaces no valida URLs externas ni fragmentos `#ancla`. Ejecutar programas con éxito no demuestra que toda explicación sea correcta ni que se obtenga utilidad en una población real.
 

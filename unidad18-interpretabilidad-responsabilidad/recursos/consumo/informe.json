@@ -1,0 +1,1883 @@
+{
+  "laboratorio": "consumo",
+  "protocolo": "u18-v1-modelos-fijos",
+  "entradas": [
+    "horas",
+    "minutos",
+    "temperatura_c"
+  ],
+  "versiones": {
+    "python": "3.12.3",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "matplotlib": "3.10.8"
+  },
+  "fuentes": {
+    "entrenamiento": {
+      "archivo": "entrenamiento.csv",
+      "n": 160,
+      "sha256": "b256f2251770e2d84cce73f66dc444e9febf6086292d330d2445f3addffc44fa"
+    },
+    "validacion": {
+      "archivo": "validacion.csv",
+      "n": 80,
+      "sha256": "08e75bd278a3c99730e2c934a5667a74815926145e288a93aa87800cc2fef634"
+    }
+  },
+  "estado": {
+    "tipo": "StandardScaler + LinearRegression",
+    "media": [
+      4.9122481250000005,
+      294.73488750000007,
+      25.486309374999998
+    ],
+    "escala": [
+      2.2557564456289345,
+      135.34538673773608,
+      5.715944465536699
+    ],
+    "coef": [
+      3.4065188898669665,
+      3.406518889866968,
+      1.1233318238432783
+    ],
+    "intercepto": 23.862638125000004,
+    "rango": 2,
+    "singulares": [
+      17.91494825268116,
+      12.611686211754419,
+      3.8288140253900855e-15
+    ],
+    "parametros": {
+      "fit_intercept": true,
+      "with_mean": true,
+      "with_std": true
+    }
+  },
+  "entrenamiento": {
+    "metricas": {
+      "n": 160,
+      "mae": 0.3039217372006095,
+      "rmse": 0.38130736965752526,
+      "sesgo": -1.609823385706477e-15
+    },
+    "predicciones": [
+      {
+        "caso_id": "C-entrenamiento-000",
+        "real": 34.1169,
+        "prediccion": 34.72722476411626
+      },
+      {
+        "caso_id": "C-entrenamiento-001",
+        "real": 18.6668,
+        "prediccion": 18.944696132088502
+      },
+      {
+        "caso_id": "C-entrenamiento-002",
+        "real": 26.7331,
+        "prediccion": 26.567612540901067
+      },
+      {
+        "caso_id": "C-entrenamiento-003",
+        "real": 25.7056,
+        "prediccion": 25.78515596395563
+      },
+      {
+        "caso_id": "C-entrenamiento-004",
+        "real": 34.1156,
+        "prediccion": 34.69688079693959
+      },
+      {
+        "caso_id": "C-entrenamiento-005",
+        "real": 30.728,
+        "prediccion": 31.328967144721325
+      },
+      {
+        "caso_id": "C-entrenamiento-006",
+        "real": 18.8067,
+        "prediccion": 19.131548079923114
+      },
+      {
+        "caso_id": "C-entrenamiento-007",
+        "real": 25.8239,
+        "prediccion": 25.84018647773409
+      },
+      {
+        "caso_id": "C-entrenamiento-008",
+        "real": 14.9568,
+        "prediccion": 15.031106561334747
+      },
+      {
+        "caso_id": "C-entrenamiento-009",
+        "real": 20.7468,
+        "prediccion": 20.876633350972643
+      },
+      {
+        "caso_id": "C-entrenamiento-010",
+        "real": 28.2252,
+        "prediccion": 28.124311309696658
+      },
+      {
+        "caso_id": "C-entrenamiento-011",
+        "real": 22.7859,
+        "prediccion": 22.414150412517724
+      },
+      {
+        "caso_id": "C-entrenamiento-012",
+        "real": 31.5307,
+        "prediccion": 31.66816899211332
+      },
+      {
+        "caso_id": "C-entrenamiento-013",
+        "real": 26.1588,
+        "prediccion": 26.494742386667873
+      },
+      {
+        "caso_id": "C-entrenamiento-014",
+        "real": 16.88,
+        "prediccion": 16.965371282700925
+      },
+      {
+        "caso_id": "C-entrenamiento-015",
+        "real": 11.2731,
+        "prediccion": 12.243482160001156
+      },
+      {
+        "caso_id": "C-entrenamiento-016",
+        "real": 31.7641,
+        "prediccion": 32.16668292576537
+      },
+      {
+        "caso_id": "C-entrenamiento-017",
+        "real": 35.4555,
+        "prediccion": 34.613755231841864
+      },
+      {
+        "caso_id": "C-entrenamiento-018",
+        "real": 19.2219,
+        "prediccion": 18.961722369182674
+      },
+      {
+        "caso_id": "C-entrenamiento-019",
+        "real": 35.388,
+        "prediccion": 35.1728163283016
+      },
+      {
+        "caso_id": "C-entrenamiento-020",
+        "real": 20.0628,
+        "prediccion": 20.200211659150412
+      },
+      {
+        "caso_id": "C-entrenamiento-021",
+        "real": 17.8133,
+        "prediccion": 17.72975082889478
+      },
+      {
+        "caso_id": "C-entrenamiento-022",
+        "real": 19.4114,
+        "prediccion": 19.355310557886128
+      },
+      {
+        "caso_id": "C-entrenamiento-023",
+        "real": 24.8695,
+        "prediccion": 25.11274505442123
+      },
+      {
+        "caso_id": "C-entrenamiento-024",
+        "real": 12.6451,
+        "prediccion": 13.069475708088335
+      },
+      {
+        "caso_id": "C-entrenamiento-025",
+        "real": 34.7829,
+        "prediccion": 35.08921782561594
+      },
+      {
+        "caso_id": "C-entrenamiento-026",
+        "real": 17.9842,
+        "prediccion": 18.262222601782405
+      },
+      {
+        "caso_id": "C-entrenamiento-027",
+        "real": 29.1869,
+        "prediccion": 29.279566999190244
+      },
+      {
+        "caso_id": "C-entrenamiento-028",
+        "real": 13.3234,
+        "prediccion": 13.454504692063367
+      },
+      {
+        "caso_id": "C-entrenamiento-029",
+        "real": 20.3167,
+        "prediccion": 20.317900416180986
+      },
+      {
+        "caso_id": "C-entrenamiento-030",
+        "real": 19.352,
+        "prediccion": 19.64909044173087
+      },
+      {
+        "caso_id": "C-entrenamiento-031",
+        "real": 16.6286,
+        "prediccion": 17.017905053010246
+      },
+      {
+        "caso_id": "C-entrenamiento-032",
+        "real": 34.3519,
+        "prediccion": 34.52239361372004
+      },
+      {
+        "caso_id": "C-entrenamiento-033",
+        "real": 31.8324,
+        "prediccion": 31.25978516141374
+      },
+      {
+        "caso_id": "C-entrenamiento-034",
+        "real": 27.4273,
+        "prediccion": 27.51949127477908
+      },
+      {
+        "caso_id": "C-entrenamiento-035",
+        "real": 28.4134,
+        "prediccion": 28.174626616691533
+      },
+      {
+        "caso_id": "C-entrenamiento-036",
+        "real": 20.0476,
+        "prediccion": 20.171505454917106
+      },
+      {
+        "caso_id": "C-entrenamiento-037",
+        "real": 30.7769,
+        "prediccion": 30.82587486093906
+      },
+      {
+        "caso_id": "C-entrenamiento-038",
+        "real": 16.3256,
+        "prediccion": 16.291587902092473
+      },
+      {
+        "caso_id": "C-entrenamiento-039",
+        "real": 18.8968,
+        "prediccion": 19.43673666525231
+      },
+      {
+        "caso_id": "C-entrenamiento-040",
+        "real": 23.6873,
+        "prediccion": 24.038074940731235
+      },
+      {
+        "caso_id": "C-entrenamiento-041",
+        "real": 13.4934,
+        "prediccion": 13.32612729258168
+      },
+      {
+        "caso_id": "C-entrenamiento-042",
+        "real": 17.935,
+        "prediccion": 17.573022321698836
+      },
+      {
+        "caso_id": "C-entrenamiento-043",
+        "real": 27.4468,
+        "prediccion": 27.75171451259614
+      },
+      {
+        "caso_id": "C-entrenamiento-044",
+        "real": 24.5503,
+        "prediccion": 24.595449879610744
+      },
+      {
+        "caso_id": "C-entrenamiento-045",
+        "real": 23.7692,
+        "prediccion": 24.08183251240413
+      },
+      {
+        "caso_id": "C-entrenamiento-046",
+        "real": 16.3427,
+        "prediccion": 16.32848167288195
+      },
+      {
+        "caso_id": "C-entrenamiento-047",
+        "real": 23.8713,
+        "prediccion": 23.868124608293275
+      },
+      {
+        "caso_id": "C-entrenamiento-048",
+        "real": 30.81,
+        "prediccion": 31.103547894727175
+      },
+      {
+        "caso_id": "C-entrenamiento-049",
+        "real": 23.3601,
+        "prediccion": 22.979880496146215
+      },
+      {
+        "caso_id": "C-entrenamiento-050",
+        "real": 26.2593,
+        "prediccion": 26.428226538151982
+      },
+      {
+        "caso_id": "C-entrenamiento-051",
+        "real": 22.8978,
+        "prediccion": 22.677642946659937
+      },
+      {
+        "caso_id": "C-entrenamiento-052",
+        "real": 24.665,
+        "prediccion": 24.03053882004501
+      },
+      {
+        "caso_id": "C-entrenamiento-053",
+        "real": 12.7889,
+        "prediccion": 12.807259631061449
+      },
+      {
+        "caso_id": "C-entrenamiento-054",
+        "real": 30.5136,
+        "prediccion": 30.306580299399087
+      },
+      {
+        "caso_id": "C-entrenamiento-055",
+        "real": 36.0513,
+        "prediccion": 36.11052959407724
+      },
+      {
+        "caso_id": "C-entrenamiento-056",
+        "real": 17.5335,
+        "prediccion": 17.282798218701913
+      },
+      {
+        "caso_id": "C-entrenamiento-057",
+        "real": 27.3851,
+        "prediccion": 27.0807885998717
+      },
+      {
+        "caso_id": "C-entrenamiento-058",
+        "real": 27.6096,
+        "prediccion": 28.34059271818269
+      },
+      {
+        "caso_id": "C-entrenamiento-059",
+        "real": 31.4515,
+        "prediccion": 31.17935852163375
+      },
+      {
+        "caso_id": "C-entrenamiento-060",
+        "real": 25.7755,
+        "prediccion": 25.890186078051613
+      },
+      {
+        "caso_id": "C-entrenamiento-061",
+        "real": 35.2622,
+        "prediccion": 34.57379075497133
+      },
+      {
+        "caso_id": "C-entrenamiento-062",
+        "real": 26.864,
+        "prediccion": 27.384184555463076
+      },
+      {
+        "caso_id": "C-entrenamiento-063",
+        "real": 34.7085,
+        "prediccion": 34.58854896754488
+      },
+      {
+        "caso_id": "C-entrenamiento-064",
+        "real": 35.2818,
+        "prediccion": 34.997528127563555
+      },
+      {
+        "caso_id": "C-entrenamiento-065",
+        "real": 28.3913,
+        "prediccion": 28.759240724724613
+      },
+      {
+        "caso_id": "C-entrenamiento-066",
+        "real": 21.6973,
+        "prediccion": 21.68940603998856
+      },
+      {
+        "caso_id": "C-entrenamiento-067",
+        "real": 21.4397,
+        "prediccion": 21.069165110764466
+      },
+      {
+        "caso_id": "C-entrenamiento-068",
+        "real": 23.9426,
+        "prediccion": 24.459736456816056
+      },
+      {
+        "caso_id": "C-entrenamiento-069",
+        "real": 23.6643,
+        "prediccion": 24.35460453933503
+      },
+      {
+        "caso_id": "C-entrenamiento-070",
+        "real": 21.0147,
+        "prediccion": 21.304431230533922
+      },
+      {
+        "caso_id": "C-entrenamiento-071",
+        "real": 27.3984,
+        "prediccion": 27.264726309112792
+      },
+      {
+        "caso_id": "C-entrenamiento-072",
+        "real": 25.9488,
+        "prediccion": 26.17643938689815
+      },
+      {
+        "caso_id": "C-entrenamiento-073",
+        "real": 12.824,
+        "prediccion": 12.575343892573212
+      },
+      {
+        "caso_id": "C-entrenamiento-074",
+        "real": 17.4155,
+        "prediccion": 17.17967274117229
+      },
+      {
+        "caso_id": "C-entrenamiento-075",
+        "real": 19.6619,
+        "prediccion": 19.912373884495143
+      },
+      {
+        "caso_id": "C-entrenamiento-076",
+        "real": 15.1364,
+        "prediccion": 14.58672018875699
+      },
+      {
+        "caso_id": "C-entrenamiento-077",
+        "real": 20.0233,
+        "prediccion": 19.09134513566833
+      },
+      {
+        "caso_id": "C-entrenamiento-078",
+        "real": 29.9262,
+        "prediccion": 29.7543585202207
+      },
+      {
+        "caso_id": "C-entrenamiento-079",
+        "real": 25.2848,
+        "prediccion": 25.00316903178549
+      },
+      {
+        "caso_id": "C-entrenamiento-080",
+        "real": 14.7239,
+        "prediccion": 14.69634757978267
+      },
+      {
+        "caso_id": "C-entrenamiento-081",
+        "real": 10.2803,
+        "prediccion": 10.87460003064964
+      },
+      {
+        "caso_id": "C-entrenamiento-082",
+        "real": 17.1506,
+        "prediccion": 16.40093700521908
+      },
+      {
+        "caso_id": "C-entrenamiento-083",
+        "real": 20.1694,
+        "prediccion": 20.49394278753075
+      },
+      {
+        "caso_id": "C-entrenamiento-084",
+        "real": 14.688,
+        "prediccion": 14.693230519973747
+      },
+      {
+        "caso_id": "C-entrenamiento-085",
+        "real": 17.0799,
+        "prediccion": 17.72736092850431
+      },
+      {
+        "caso_id": "C-entrenamiento-086",
+        "real": 25.4491,
+        "prediccion": 25.263934316659505
+      },
+      {
+        "caso_id": "C-entrenamiento-087",
+        "real": 27.5771,
+        "prediccion": 27.917627542382764
+      },
+      {
+        "caso_id": "C-entrenamiento-088",
+        "real": 18.9731,
+        "prediccion": 19.091086834919725
+      },
+      {
+        "caso_id": "C-entrenamiento-089",
+        "real": 29.4794,
+        "prediccion": 29.494675614789674
+      },
+      {
+        "caso_id": "C-entrenamiento-090",
+        "real": 18.3407,
+        "prediccion": 17.44265110073154
+      },
+      {
+        "caso_id": "C-entrenamiento-091",
+        "real": 14.8502,
+        "prediccion": 14.531369379467757
+      },
+      {
+        "caso_id": "C-entrenamiento-092",
+        "real": 27.7136,
+        "prediccion": 27.139331646323818
+      },
+      {
+        "caso_id": "C-entrenamiento-093",
+        "real": 20.8854,
+        "prediccion": 20.875450728463534
+      },
+      {
+        "caso_id": "C-entrenamiento-094",
+        "real": 34.7502,
+        "prediccion": 34.790552149568896
+      },
+      {
+        "caso_id": "C-entrenamiento-095",
+        "real": 28.9416,
+        "prediccion": 28.678362387658456
+      },
+      {
+        "caso_id": "C-entrenamiento-096",
+        "real": 33.6206,
+        "prediccion": 32.76728675434772
+      },
+      {
+        "caso_id": "C-entrenamiento-097",
+        "real": 16.597,
+        "prediccion": 16.726500132192676
+      },
+      {
+        "caso_id": "C-entrenamiento-098",
+        "real": 35.832,
+        "prediccion": 35.71517750577875
+      },
+      {
+        "caso_id": "C-entrenamiento-099",
+        "real": 26.1401,
+        "prediccion": 25.657517510337215
+      },
+      {
+        "caso_id": "C-entrenamiento-100",
+        "real": 30.6236,
+        "prediccion": 30.83054835538662
+      },
+      {
+        "caso_id": "C-entrenamiento-101",
+        "real": 13.8386,
+        "prediccion": 13.621706261787317
+      },
+      {
+        "caso_id": "C-entrenamiento-102",
+        "real": 23.443,
+        "prediccion": 23.35850122821357
+      },
+      {
+        "caso_id": "C-entrenamiento-103",
+        "real": 17.3322,
+        "prediccion": 16.88340582412299
+      },
+      {
+        "caso_id": "C-entrenamiento-104",
+        "real": 18.675,
+        "prediccion": 18.80472250090417
+      },
+      {
+        "caso_id": "C-entrenamiento-105",
+        "real": 23.0455,
+        "prediccion": 22.251377603842116
+      },
+      {
+        "caso_id": "C-entrenamiento-106",
+        "real": 33.4834,
+        "prediccion": 33.73495186090787
+      },
+      {
+        "caso_id": "C-entrenamiento-107",
+        "real": 19.9071,
+        "prediccion": 20.229055599772003
+      },
+      {
+        "caso_id": "C-entrenamiento-108",
+        "real": 15.9653,
+        "prediccion": 15.756833294973989
+      },
+      {
+        "caso_id": "C-entrenamiento-109",
+        "real": 25.0956,
+        "prediccion": 24.4160895149103
+      },
+      {
+        "caso_id": "C-entrenamiento-110",
+        "real": 24.8909,
+        "prediccion": 24.7214053361102
+      },
+      {
+        "caso_id": "C-entrenamiento-111",
+        "real": 37.2948,
+        "prediccion": 36.678057048961584
+      },
+      {
+        "caso_id": "C-entrenamiento-112",
+        "real": 20.8686,
+        "prediccion": 20.210768095736615
+      },
+      {
+        "caso_id": "C-entrenamiento-113",
+        "real": 34.4847,
+        "prediccion": 34.387973792687944
+      },
+      {
+        "caso_id": "C-entrenamiento-114",
+        "real": 33.7823,
+        "prediccion": 33.88484591999356
+      },
+      {
+        "caso_id": "C-entrenamiento-115",
+        "real": 26.8569,
+        "prediccion": 27.481038794019828
+      },
+      {
+        "caso_id": "C-entrenamiento-116",
+        "real": 29.0618,
+        "prediccion": 29.48808172213586
+      },
+      {
+        "caso_id": "C-entrenamiento-117",
+        "real": 24.6013,
+        "prediccion": 25.034450576206098
+      },
+      {
+        "caso_id": "C-entrenamiento-118",
+        "real": 13.663,
+        "prediccion": 13.599460084594696
+      },
+      {
+        "caso_id": "C-entrenamiento-119",
+        "real": 21.3401,
+        "prediccion": 21.750304015851096
+      },
+      {
+        "caso_id": "C-entrenamiento-120",
+        "real": 14.6763,
+        "prediccion": 14.4818721971644
+      },
+      {
+        "caso_id": "C-entrenamiento-121",
+        "real": 20.3446,
+        "prediccion": 20.570401990277205
+      },
+      {
+        "caso_id": "C-entrenamiento-122",
+        "real": 17.5713,
+        "prediccion": 17.576314842594297
+      },
+      {
+        "caso_id": "C-entrenamiento-123",
+        "real": 33.7677,
+        "prediccion": 34.22905914095941
+      },
+      {
+        "caso_id": "C-entrenamiento-124",
+        "real": 22.1494,
+        "prediccion": 22.895233816325494
+      },
+      {
+        "caso_id": "C-entrenamiento-125",
+        "real": 32.991,
+        "prediccion": 32.52761130180346
+      },
+      {
+        "caso_id": "C-entrenamiento-126",
+        "real": 11.4918,
+        "prediccion": 11.859110577697352
+      },
+      {
+        "caso_id": "C-entrenamiento-127",
+        "real": 28.6936,
+        "prediccion": 28.17113657787555
+      },
+      {
+        "caso_id": "C-entrenamiento-128",
+        "real": 32.9594,
+        "prediccion": 33.2021639567619
+      },
+      {
+        "caso_id": "C-entrenamiento-129",
+        "real": 26.4009,
+        "prediccion": 26.477967600398852
+      },
+      {
+        "caso_id": "C-entrenamiento-130",
+        "real": 28.9049,
+        "prediccion": 28.54569965806591
+      },
+      {
+        "caso_id": "C-entrenamiento-131",
+        "real": 13.8452,
+        "prediccion": 14.322894764568261
+      },
+      {
+        "caso_id": "C-entrenamiento-132",
+        "real": 13.8457,
+        "prediccion": 13.710592730375685
+      },
+      {
+        "caso_id": "C-entrenamiento-133",
+        "real": 27.5969,
+        "prediccion": 26.970407712175447
+      },
+      {
+        "caso_id": "C-entrenamiento-134",
+        "real": 21.4684,
+        "prediccion": 21.067223608350783
+      },
+      {
+        "caso_id": "C-entrenamiento-135",
+        "real": 13.524,
+        "prediccion": 13.271048363282375
+      },
+      {
+        "caso_id": "C-entrenamiento-136",
+        "real": 34.6642,
+        "prediccion": 34.764443104888684
+      },
+      {
+        "caso_id": "C-entrenamiento-137",
+        "real": 34.5692,
+        "prediccion": 34.40163517998186
+      },
+      {
+        "caso_id": "C-entrenamiento-138",
+        "real": 31.3212,
+        "prediccion": 31.189828593818415
+      },
+      {
+        "caso_id": "C-entrenamiento-139",
+        "real": 23.7866,
+        "prediccion": 24.967723147442978
+      },
+      {
+        "caso_id": "C-entrenamiento-140",
+        "real": 24.3917,
+        "prediccion": 24.079042116045564
+      },
+      {
+        "caso_id": "C-entrenamiento-141",
+        "real": 27.2659,
+        "prediccion": 27.49306433287397
+      },
+      {
+        "caso_id": "C-entrenamiento-142",
+        "real": 10.8856,
+        "prediccion": 10.724894635024762
+      },
+      {
+        "caso_id": "C-entrenamiento-143",
+        "real": 16.5374,
+        "prediccion": 16.88851625690648
+      },
+      {
+        "caso_id": "C-entrenamiento-144",
+        "real": 34.5549,
+        "prediccion": 34.55631259391323
+      },
+      {
+        "caso_id": "C-entrenamiento-145",
+        "real": 26.2261,
+        "prediccion": 25.977579943677146
+      },
+      {
+        "caso_id": "C-entrenamiento-146",
+        "real": 26.0812,
+        "prediccion": 26.46220564327163
+      },
+      {
+        "caso_id": "C-entrenamiento-147",
+        "real": 27.3948,
+        "prediccion": 27.61125744745386
+      },
+      {
+        "caso_id": "C-entrenamiento-148",
+        "real": 25.8739,
+        "prediccion": 25.987355986912966
+      },
+      {
+        "caso_id": "C-entrenamiento-149",
+        "real": 17.8931,
+        "prediccion": 17.68474490457289
+      },
+      {
+        "caso_id": "C-entrenamiento-150",
+        "real": 24.4734,
+        "prediccion": 24.691274308954984
+      },
+      {
+        "caso_id": "C-entrenamiento-151",
+        "real": 14.3502,
+        "prediccion": 14.068257722404173
+      },
+      {
+        "caso_id": "C-entrenamiento-152",
+        "real": 14.8722,
+        "prediccion": 15.013073048855306
+      },
+      {
+        "caso_id": "C-entrenamiento-153",
+        "real": 15.5344,
+        "prediccion": 15.359833371392348
+      },
+      {
+        "caso_id": "C-entrenamiento-154",
+        "real": 27.2259,
+        "prediccion": 27.430504736693194
+      },
+      {
+        "caso_id": "C-entrenamiento-155",
+        "real": 22.8246,
+        "prediccion": 23.112571374872974
+      },
+      {
+        "caso_id": "C-entrenamiento-156",
+        "real": 30.9755,
+        "prediccion": 30.680522658305
+      },
+      {
+        "caso_id": "C-entrenamiento-157",
+        "real": 29.0996,
+        "prediccion": 29.01263549769405
+      },
+      {
+        "caso_id": "C-entrenamiento-158",
+        "real": 16.7008,
+        "prediccion": 16.297062862018823
+      },
+      {
+        "caso_id": "C-entrenamiento-159",
+        "real": 21.1777,
+        "prediccion": 20.58683951175519
+      }
+    ],
+    "grupos": null
+  },
+  "validacion": {
+    "metricas": {
+      "n": 80,
+      "mae": 0.2773928491949816,
+      "rmse": 0.3448766504006712,
+      "sesgo": -0.021271751035301524
+    },
+    "predicciones": [
+      {
+        "caso_id": "C-validacion-000",
+        "real": 35.0221,
+        "prediccion": 34.53275244360072
+      },
+      {
+        "caso_id": "C-validacion-001",
+        "real": 16.1998,
+        "prediccion": 16.12328566079453
+      },
+      {
+        "caso_id": "C-validacion-002",
+        "real": 33.6395,
+        "prediccion": 33.18894953118209
+      },
+      {
+        "caso_id": "C-validacion-003",
+        "real": 25.6748,
+        "prediccion": 25.66624032650466
+      },
+      {
+        "caso_id": "C-validacion-004",
+        "real": 16.1622,
+        "prediccion": 16.299617833894892
+      },
+      {
+        "caso_id": "C-validacion-005",
+        "real": 23.7264,
+        "prediccion": 23.770952147359935
+      },
+      {
+        "caso_id": "C-validacion-006",
+        "real": 26.2725,
+        "prediccion": 26.19904449086466
+      },
+      {
+        "caso_id": "C-validacion-007",
+        "real": 15.9665,
+        "prediccion": 15.695861257016045
+      },
+      {
+        "caso_id": "C-validacion-008",
+        "real": 12.945,
+        "prediccion": 12.9011931139973
+      },
+      {
+        "caso_id": "C-validacion-009",
+        "real": 16.5066,
+        "prediccion": 17.230587302472085
+      },
+      {
+        "caso_id": "C-validacion-010",
+        "real": 11.8818,
+        "prediccion": 11.378593917455378
+      },
+      {
+        "caso_id": "C-validacion-011",
+        "real": 12.0957,
+        "prediccion": 12.589519978752692
+      },
+      {
+        "caso_id": "C-validacion-012",
+        "real": 26.9794,
+        "prediccion": 27.19262078009337
+      },
+      {
+        "caso_id": "C-validacion-013",
+        "real": 36.3978,
+        "prediccion": 36.351780034092485
+      },
+      {
+        "caso_id": "C-validacion-014",
+        "real": 27.734,
+        "prediccion": 28.398414514000606
+      },
+      {
+        "caso_id": "C-validacion-015",
+        "real": 13.2004,
+        "prediccion": 13.255206577315812
+      },
+      {
+        "caso_id": "C-validacion-016",
+        "real": 34.7044,
+        "prediccion": 34.3415969730997
+      },
+      {
+        "caso_id": "C-validacion-017",
+        "real": 24.0074,
+        "prediccion": 24.626855119527676
+      },
+      {
+        "caso_id": "C-validacion-018",
+        "real": 20.9431,
+        "prediccion": 20.50551294378411
+      },
+      {
+        "caso_id": "C-validacion-019",
+        "real": 23.905,
+        "prediccion": 23.732479397314133
+      },
+      {
+        "caso_id": "C-validacion-020",
+        "real": 13.2663,
+        "prediccion": 13.909963393512154
+      },
+      {
+        "caso_id": "C-validacion-021",
+        "real": 20.8248,
+        "prediccion": 20.80633943035203
+      },
+      {
+        "caso_id": "C-validacion-022",
+        "real": 21.0562,
+        "prediccion": 21.29858474155355
+      },
+      {
+        "caso_id": "C-validacion-023",
+        "real": 26.671,
+        "prediccion": 26.52110513717114
+      },
+      {
+        "caso_id": "C-validacion-024",
+        "real": 29.3409,
+        "prediccion": 29.08039076446011
+      },
+      {
+        "caso_id": "C-validacion-025",
+        "real": 17.5647,
+        "prediccion": 17.61597700781593
+      },
+      {
+        "caso_id": "C-validacion-026",
+        "real": 21.3071,
+        "prediccion": 21.213604236493076
+      },
+      {
+        "caso_id": "C-validacion-027",
+        "real": 28.2469,
+        "prediccion": 27.987611426540575
+      },
+      {
+        "caso_id": "C-validacion-028",
+        "real": 20.8695,
+        "prediccion": 21.534691966554394
+      },
+      {
+        "caso_id": "C-validacion-029",
+        "real": 29.5467,
+        "prediccion": 30.132813520000916
+      },
+      {
+        "caso_id": "C-validacion-030",
+        "real": 14.2199,
+        "prediccion": 13.96648211822176
+      },
+      {
+        "caso_id": "C-validacion-031",
+        "real": 35.8316,
+        "prediccion": 35.8879370355201
+      },
+      {
+        "caso_id": "C-validacion-032",
+        "real": 34.0148,
+        "prediccion": 34.07289173519233
+      },
+      {
+        "caso_id": "C-validacion-033",
+        "real": 30.2342,
+        "prediccion": 30.606405274425754
+      },
+      {
+        "caso_id": "C-validacion-034",
+        "real": 15.1494,
+        "prediccion": 15.43335027464533
+      },
+      {
+        "caso_id": "C-validacion-035",
+        "real": 12.9278,
+        "prediccion": 13.296550183631188
+      },
+      {
+        "caso_id": "C-validacion-036",
+        "real": 14.2498,
+        "prediccion": 13.98139782710556
+      },
+      {
+        "caso_id": "C-validacion-037",
+        "real": 12.6601,
+        "prediccion": 12.741154291798289
+      },
+      {
+        "caso_id": "C-validacion-038",
+        "real": 21.5394,
+        "prediccion": 21.212586422419072
+      },
+      {
+        "caso_id": "C-validacion-039",
+        "real": 35.3804,
+        "prediccion": 35.07234609144261
+      },
+      {
+        "caso_id": "C-validacion-040",
+        "real": 24.3414,
+        "prediccion": 24.44374978691291
+      },
+      {
+        "caso_id": "C-validacion-041",
+        "real": 35.1176,
+        "prediccion": 35.49911444267981
+      },
+      {
+        "caso_id": "C-validacion-042",
+        "real": 26.0151,
+        "prediccion": 25.81513463047286
+      },
+      {
+        "caso_id": "C-validacion-043",
+        "real": 25.8822,
+        "prediccion": 25.96331841514976
+      },
+      {
+        "caso_id": "C-validacion-044",
+        "real": 18.1756,
+        "prediccion": 18.433455363322636
+      },
+      {
+        "caso_id": "C-validacion-045",
+        "real": 26.0326,
+        "prediccion": 26.177453710110115
+      },
+      {
+        "caso_id": "C-validacion-046",
+        "real": 21.1703,
+        "prediccion": 20.719361794807625
+      },
+      {
+        "caso_id": "C-validacion-047",
+        "real": 20.6121,
+        "prediccion": 20.027521117787252
+      },
+      {
+        "caso_id": "C-validacion-048",
+        "real": 21.5381,
+        "prediccion": 21.352963674761526
+      },
+      {
+        "caso_id": "C-validacion-049",
+        "real": 22.5424,
+        "prediccion": 22.007448826304497
+      },
+      {
+        "caso_id": "C-validacion-050",
+        "real": 17.8206,
+        "prediccion": 18.32509721036616
+      },
+      {
+        "caso_id": "C-validacion-051",
+        "real": 27.48,
+        "prediccion": 27.6362129265717
+      },
+      {
+        "caso_id": "C-validacion-052",
+        "real": 11.1989,
+        "prediccion": 11.121727282185997
+      },
+      {
+        "caso_id": "C-validacion-053",
+        "real": 18.1238,
+        "prediccion": 17.52499080086448
+      },
+      {
+        "caso_id": "C-validacion-054",
+        "real": 24.0877,
+        "prediccion": 24.280737480231934
+      },
+      {
+        "caso_id": "C-validacion-055",
+        "real": 23.2433,
+        "prediccion": 23.302500671119923
+      },
+      {
+        "caso_id": "C-validacion-056",
+        "real": 22.1477,
+        "prediccion": 21.75314698768922
+      },
+      {
+        "caso_id": "C-validacion-057",
+        "real": 30.4962,
+        "prediccion": 30.849888793013115
+      },
+      {
+        "caso_id": "C-validacion-058",
+        "real": 12.4976,
+        "prediccion": 13.017871223587742
+      },
+      {
+        "caso_id": "C-validacion-059",
+        "real": 19.8124,
+        "prediccion": 19.638659540600678
+      },
+      {
+        "caso_id": "C-validacion-060",
+        "real": 12.5427,
+        "prediccion": 12.343329917353524
+      },
+      {
+        "caso_id": "C-validacion-061",
+        "real": 17.0702,
+        "prediccion": 17.085214841341923
+      },
+      {
+        "caso_id": "C-validacion-062",
+        "real": 26.9634,
+        "prediccion": 27.3193800524974
+      },
+      {
+        "caso_id": "C-validacion-063",
+        "real": 26.7571,
+        "prediccion": 26.049838402305028
+      },
+      {
+        "caso_id": "C-validacion-064",
+        "real": 36.0007,
+        "prediccion": 35.98936782006936
+      },
+      {
+        "caso_id": "C-validacion-065",
+        "real": 26.4596,
+        "prediccion": 26.478077854400443
+      },
+      {
+        "caso_id": "C-validacion-066",
+        "real": 22.8547,
+        "prediccion": 23.303706240291465
+      },
+      {
+        "caso_id": "C-validacion-067",
+        "real": 22.4752,
+        "prediccion": 22.599000728718487
+      },
+      {
+        "caso_id": "C-validacion-068",
+        "real": 22.5574,
+        "prediccion": 23.156043345274295
+      },
+      {
+        "caso_id": "C-validacion-069",
+        "real": 28.4098,
+        "prediccion": 27.79458520797062
+      },
+      {
+        "caso_id": "C-validacion-070",
+        "real": 31.5525,
+        "prediccion": 32.06631739564817
+      },
+      {
+        "caso_id": "C-validacion-071",
+        "real": 22.1728,
+        "prediccion": 21.92408971845194
+      },
+      {
+        "caso_id": "C-validacion-072",
+        "real": 34.217,
+        "prediccion": 34.29440098340696
+      },
+      {
+        "caso_id": "C-validacion-073",
+        "real": 34.8558,
+        "prediccion": 35.099736730158064
+      },
+      {
+        "caso_id": "C-validacion-074",
+        "real": 31.1063,
+        "prediccion": 30.8822263938657
+      },
+      {
+        "caso_id": "C-validacion-075",
+        "real": 28.961,
+        "prediccion": 28.985932574198532
+      },
+      {
+        "caso_id": "C-validacion-076",
+        "real": 26.604,
+        "prediccion": 26.79001824622722
+      },
+      {
+        "caso_id": "C-validacion-077",
+        "real": 27.601,
+        "prediccion": 27.77997783638259
+      },
+      {
+        "caso_id": "C-validacion-078",
+        "real": 26.5743,
+        "prediccion": 26.40861041421076
+      },
+      {
+        "caso_id": "C-validacion-079",
+        "real": 11.5974,
+        "prediccion": 11.642683479532971
+      }
+    ],
+    "grupos": null
+  },
+  "linea_base_validacion": {
+    "metricas": {
+      "n": 80,
+      "mae": 5.892853453125,
+      "rmse": 7.110525511405856,
+      "sesgo": -0.4309581249999999
+    },
+    "predicciones": [
+      {
+        "caso_id": "C-validacion-000",
+        "real": 35.0221,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-001",
+        "real": 16.1998,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-002",
+        "real": 33.6395,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-003",
+        "real": 25.6748,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-004",
+        "real": 16.1622,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-005",
+        "real": 23.7264,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-006",
+        "real": 26.2725,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-007",
+        "real": 15.9665,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-008",
+        "real": 12.945,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-009",
+        "real": 16.5066,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-010",
+        "real": 11.8818,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-011",
+        "real": 12.0957,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-012",
+        "real": 26.9794,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-013",
+        "real": 36.3978,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-014",
+        "real": 27.734,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-015",
+        "real": 13.2004,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-016",
+        "real": 34.7044,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-017",
+        "real": 24.0074,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-018",
+        "real": 20.9431,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-019",
+        "real": 23.905,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-020",
+        "real": 13.2663,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-021",
+        "real": 20.8248,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-022",
+        "real": 21.0562,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-023",
+        "real": 26.671,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-024",
+        "real": 29.3409,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-025",
+        "real": 17.5647,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-026",
+        "real": 21.3071,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-027",
+        "real": 28.2469,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-028",
+        "real": 20.8695,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-029",
+        "real": 29.5467,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-030",
+        "real": 14.2199,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-031",
+        "real": 35.8316,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-032",
+        "real": 34.0148,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-033",
+        "real": 30.2342,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-034",
+        "real": 15.1494,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-035",
+        "real": 12.9278,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-036",
+        "real": 14.2498,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-037",
+        "real": 12.6601,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-038",
+        "real": 21.5394,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-039",
+        "real": 35.3804,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-040",
+        "real": 24.3414,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-041",
+        "real": 35.1176,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-042",
+        "real": 26.0151,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-043",
+        "real": 25.8822,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-044",
+        "real": 18.1756,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-045",
+        "real": 26.0326,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-046",
+        "real": 21.1703,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-047",
+        "real": 20.6121,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-048",
+        "real": 21.5381,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-049",
+        "real": 22.5424,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-050",
+        "real": 17.8206,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-051",
+        "real": 27.48,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-052",
+        "real": 11.1989,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-053",
+        "real": 18.1238,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-054",
+        "real": 24.0877,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-055",
+        "real": 23.2433,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-056",
+        "real": 22.1477,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-057",
+        "real": 30.4962,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-058",
+        "real": 12.4976,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-059",
+        "real": 19.8124,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-060",
+        "real": 12.5427,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-061",
+        "real": 17.0702,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-062",
+        "real": 26.9634,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-063",
+        "real": 26.7571,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-064",
+        "real": 36.0007,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-065",
+        "real": 26.4596,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-066",
+        "real": 22.8547,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-067",
+        "real": 22.4752,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-068",
+        "real": 22.5574,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-069",
+        "real": 28.4098,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-070",
+        "real": 31.5525,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-071",
+        "real": 22.1728,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-072",
+        "real": 34.217,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-073",
+        "real": 34.8558,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-074",
+        "real": 31.1063,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-075",
+        "real": 28.961,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-076",
+        "real": 26.604,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-077",
+        "real": 27.601,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-078",
+        "real": 26.5743,
+        "prediccion": 23.862638125
+      },
+      {
+        "caso_id": "C-validacion-079",
+        "real": 11.5974,
+        "prediccion": 23.862638125
+      }
+    ],
+    "grupos": null
+  },
+  "prueba": null,
+  "caso_local": {
+    "caso_id": "C-validacion-000",
+    "entrada": [
+      8.5922,
+      515.532,
+      23.225
+    ],
+    "z": [
+      1.6313604609800774,
+      1.6313604609800774,
+      -0.3956143011245422
+    ],
+    "base": 23.862638125000004,
+    "contribuciones": [
+      5.557260226510716,
+      5.557260226510718,
+      -0.4444061344207159
+    ],
+    "reconstruccion": 34.53275244360072,
+    "prediccion": 34.53275244360072,
+    "coef_original": [
+      1.51014481038851,
+      0.02516908017314184,
+      0.19652602131042624
+    ],
+    "intercepto_original": 4.017503119025754
+  },
+  "permutacion": {
+    "mae_original": 0.2773928491949816,
+    "repeticiones": 30,
+    "semilla": 1818,
+    "bloques": {
+      "horas": {
+        "columnas": [
+          0
+        ],
+        "deltas": [
+          3.8919719970716216,
+          3.1043942017408654,
+          4.128914461196991,
+          3.794659231363352,
+          3.77312350618657,
+          4.103859444500863,
+          3.9943918722348233,
+          4.13229733267615,
+          3.831673161734874,
+          4.201820502425069,
+          3.2815346806817027,
+          4.099038507788537,
+          3.6567799204681775,
+          4.251387013959052,
+          3.7434127470467073,
+          4.31809335791934,
+          3.4233338731029677,
+          3.674848537966022,
+          3.6866518133634445,
+          3.594573430232812,
+          3.4902210865414247,
+          3.5076049245135623,
+          3.7594680786585855,
+          3.5455174104536282,
+          4.393511126650672,
+          3.8828048663466905,
+          4.074179521057394,
+          3.851489736479974,
+          3.553821222026186,
+          3.686694346611655
+        ],
+        "media": 3.814402397099991,
+        "desviacion": 0.30675656278533153
+      },
+      "minutos": {
+        "columnas": [
+          1
+        ],
+        "deltas": [
+          3.8919719970716233,
+          3.1043942017408668,
+          4.128914461196992,
+          3.7946592313633527,
+          3.7731235061865718,
+          4.1038594445008645,
+          3.994391872234824,
+          4.132297332676151,
+          3.8316731617348747,
+          4.20182050242507,
+          3.2815346806817027,
+          4.099038507788538,
+          3.6567799204681792,
+          4.251387013959054,
+          3.743412747046709,
+          4.3180933579193415,
+          3.423333873102969,
+          3.674848537966023,
+          3.686651813363446,
+          3.5945734302328134,
+          3.4902210865414247,
+          3.5076049245135636,
+          3.7594680786585872,
+          3.5455174104536296,
+          4.393511126650673,
+          3.8828048663466914,
+          4.074179521057395,
+          3.8514897364799747,
+          3.553821222026187,
+          3.686694346611657
+        ],
+        "media": 3.814402397099992,
+        "desviacion": 0.3067565627853316
+      },
+      "temperatura_c": {
+        "columnas": [
+          2
+        ],
+        "deltas": [
+          1.1361152243374042,
+          0.8962339697134192,
+          1.0264411444394392,
+          0.9022601382388116,
+          1.0784406209680255,
+          1.0049733762000335,
+          0.9636838477247287,
+          1.109221305786449,
+          0.950627293496632,
+          0.9536175509964053,
+          1.108702143681539,
+          0.9836306760981404,
+          1.1310038674006824,
+          1.028499045186161,
+          1.1728488692291028,
+          1.0602318195917328,
+          1.0121522002577983,
+          0.9406017734876579,
+          0.8764397933917676,
+          0.7935528439577881,
+          0.9912130897092628,
+          0.9947888341353675,
+          1.0499100052702801,
+          0.9696130510722027,
+          1.1397090034353066,
+          1.1627304069975644,
+          1.0212221470964857,
+          0.9283290857804845,
+          1.0692423827388775,
+          1.062931966767614
+        ],
+        "media": 1.0172989159062387,
+        "desviacion": 0.0901056924563385
+      },
+      "horas_y_minutos": {
+        "columnas": [
+          0,
+          1
+        ],
+        "deltas": [
+          7.986441289828672,
+          6.463340792055769,
+          8.459994675943134,
+          7.821120585681978,
+          7.838043026417369,
+          8.468177722403398,
+          8.228860572736362,
+          8.486241139851575,
+          7.897803195641165,
+          8.686153320389224,
+          6.8025112358203925,
+          8.430212030328022,
+          7.590826727112869,
+          8.753415621241176,
+          7.759201152917912,
+          8.881135590903186,
+          7.115770086234669,
+          7.590963565336776,
+          7.6383739880608115,
+          7.43348302930188,
+          7.237412040551544,
+          7.267501102879405,
+          7.760532572628502,
+          7.378000663877851,
+          9.024833532899626,
+          8.07931552212332,
+          8.466386514415959,
+          7.943869741921414,
+          7.347474877013293,
+          7.610608928015973
+        ],
+        "media": 7.8816001614844415,
+        "desviacion": 0.6111844260919624
+      }
+    }
+  }
+}
