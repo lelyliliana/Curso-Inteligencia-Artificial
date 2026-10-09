@@ -1,0 +1,3 @@
+# Matplotlib genera espacios al final de las líneas de trazados SVG.
+# Se conserva la salida del renderizador y se identifica como archivo generado.
+unidad09-exploracion-visualizacion/recursos/**/*.svg -whitespace linguist-generated=true

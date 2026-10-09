@@ -1,0 +1,80 @@
+{
+  "versiones": {
+    "python": "3.12.3",
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6"
+  },
+  "analisis": {
+    "archivo_origen": "consumos_por_grupo.csv",
+    "sha256_origen": "cc43f978058e823f305918a931efb358e915012f95c6127ff18d0c7164282cc8",
+    "total": {
+      "n": 48,
+      "faltantes": 0,
+      "minimo": 8.15,
+      "q1": 10.7125,
+      "mediana": 18.625,
+      "media": 18.625,
+      "q3": 26.5375,
+      "maximo": 29.1
+    },
+    "correlacion_total": {
+      "n_pares": 48,
+      "r": 0.8447517855270842
+    },
+    "grupos": {
+      "A": {
+        "consumo": {
+          "n": 24,
+          "faltantes": 0,
+          "minimo": 8.15,
+          "q1": 9.575,
+          "mediana": 10.625,
+          "media": 10.625,
+          "q3": 11.675,
+          "maximo": 13.1
+        },
+        "correlacion": {
+          "n_pares": 24,
+          "r": -0.944108710036468
+        }
+      },
+      "B": {
+        "consumo": {
+          "n": 24,
+          "faltantes": 0,
+          "minimo": 24.15,
+          "q1": 25.575,
+          "mediana": 26.625,
+          "media": 26.625,
+          "q3": 27.675,
+          "maximo": 29.1
+        },
+        "correlacion": {
+          "n_pares": 24,
+          "r": -0.9441087100364677
+        }
+      }
+    },
+    "bordes_kwh": [
+      0.0,
+      4.0,
+      8.0,
+      12.0,
+      16.0,
+      20.0,
+      24.0,
+      28.0,
+      32.0
+    ],
+    "frecuencias": [
+      0,
+      0,
+      20,
+      4,
+      0,
+      0,
+      20,
+      4
+    ]
+  }
+}

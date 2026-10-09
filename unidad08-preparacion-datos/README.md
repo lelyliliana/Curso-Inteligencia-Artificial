@@ -515,7 +515,7 @@ Preparar datos produce una representación apropiada para una tarea bajo decisio
 
 Los parámetros aprendidos forman parte del procedimiento que se evalúa. La mediana y los extremos calculados con entrenamiento deben reutilizarse sin reajustar sobre validación. Los archivos e informes permiten revisar esas decisiones y comprobar qué registros se utilizaron.
 
-La siguiente unidad es **exploración y visualización**: aprenderemos a formular preguntas sobre los datos y comunicar patrones con gráficos e interpretaciones proporcionadas. Consulta su disponibilidad en el índice.
+La siguiente unidad es [exploración y visualización](../unidad09-exploracion-visualizacion/README.md): aprenderemos a formular preguntas sobre los datos y comunicar patrones con gráficos e interpretaciones proporcionadas.
 
 ## Referencias y lecturas
 
@@ -525,4 +525,4 @@ Los casos, acta sintética, datos, programas y ejercicios son desarrollos educat
 2. Scikit-learn. [Imputación de valores ausentes](https://scikit-learn.org/stable/modules/impute.html) y [escalado min-max](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html). Lecturas conceptuales: los ejemplos de esta unidad no instalan ni utilizan scikit-learn.
 3. Python Software Foundation. [Lectura y escritura de CSV](https://docs.python.org/3.12/library/csv.html) y [mediana con statistics](https://docs.python.org/3.12/library/statistics.html#statistics.median).
 
-[Unidad anterior](../unidad07-obtencion-datos/README.md) · [Volver al índice](../README.md)
+[Unidad anterior](../unidad07-obtencion-datos/README.md) · [Unidad siguiente](../unidad09-exploracion-visualizacion/README.md) · [Volver al índice](../README.md)

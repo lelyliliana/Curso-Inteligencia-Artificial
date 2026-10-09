@@ -1,10 +1,11 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 8.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 9.
 
-Solo biblioteca estándar; no instala paquetes ni accede a servicios externos.
+La Unidad 9 requiere sus dependencias gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
 """
 
 import ast
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -13,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 8
+ULTIMA_UNIDAD = 9
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -75,6 +76,10 @@ def main():
                     esperado = "Preparados: 8; duplicados: 1; cuarentena: 3"
                 elif programa.name == "02_imputar_sin_filtracion.py":
                     esperado = "Ajuste solo con entrenamiento: mediana=20; mínimo=18; máximo=22"
+                elif programa.name == "01_explorar_lecturas.py":
+                    esperado = "S3 | 4 | 1 | 1 | 0 | 3 | 0.000"
+                elif programa.name == "02_explorar_grupos.py":
+                    esperado = "Correlación global: 0.845"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -86,6 +91,8 @@ def main():
     disponibilidad = "unidad07-obtencion-datos/ejemplos/02_auditar_disponibilidad.py"
     preparacion = "unidad08-preparacion-datos/ejemplos/01_preparar_lecturas.py"
     imputacion = "unidad08-preparacion-datos/ejemplos/02_imputar_sin_filtracion.py"
+    explorar_lecturas = "unidad09-exploracion-visualizacion/ejemplos/01_explorar_lecturas.py"
+    explorar_grupos = "unidad09-exploracion-visualizacion/ejemplos/02_explorar_grupos.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -100,10 +107,17 @@ def main():
         ([disponibilidad, "--decision", "2026-09-05T04:00:00-05:00"], "Entradas disponibles: e01, e03"),
         ([preparacion, "--correcciones", "unidad08-preparacion-datos/datos/correcciones_verificadas.json"], "Preparados: 9; duplicados: 1; cuarentena: 2"),
         ([imputacion, "--comparar-filtracion"], "Ajuste incorrecto: mediana=22; mínimo=18; máximo=40"),
+        ([explorar_lecturas, "--correcciones", "unidad08-preparacion-datos/datos/correcciones_verificadas.json"], "S2 | 4 | 4 | 4 | 0 | 0 | 9.500"),
+        ([explorar_grupos, "--intervalos", "4"], "Frecuencias: 0, 24, 0, 24"),
+        ([explorar_grupos, "--intervalos", "16"], "Correlación global: 0.845"),
     ]
     for comando, esperado in variantes:
         ejecutar(comando, esperado)
         ejecutados += 1
+    with tempfile.TemporaryDirectory() as carpeta:
+        for i, programa in enumerate((explorar_lecturas, explorar_grupos)):
+            ejecutar([programa, "--salida", Path(carpeta) / str(i)], "Exportación:")
+            ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:
         pruebas = unidad / "pruebas"
@@ -118,7 +132,9 @@ def main():
 
 if __name__ == "__main__":
     try:
-        main()
+        with tempfile.TemporaryDirectory(prefix="curso-matplotlib-") as cache:
+            os.environ.setdefault("MPLCONFIGDIR", cache)
+            main()
     except (OSError, UnicodeError, ValueError, SyntaxError, RuntimeError, subprocess.TimeoutExpired) as error:
         print(f"ERROR: {error}", file=sys.stderr)
         raise SystemExit(1)

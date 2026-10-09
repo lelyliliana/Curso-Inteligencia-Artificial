@@ -20,10 +20,11 @@ La revisión inicial ejecutó correctamente 19 programas de ejemplos y solucione
 | Unidad 6 | Desarrollada y comprobada | Dos laboratorios, tres archivos de datos, ejercicios con soluciones, reto, plantilla y 15 pruebas |
 | Unidad 7 | Desarrollada y comprobada | Dos laboratorios, CSV y JSON documentados, diez ejercicios resueltos, reto, ficha y 19 pruebas |
 | Unidad 8 | Desarrollada y comprobada | Dos laboratorios, corrección sintética explícita, trazabilidad, diez ejercicios resueltos, reto, informe y 20 pruebas |
-| Verificación común | Disponible para las unidades 0–8 | [verificar_curso.py](herramientas/verificar_curso.py) |
-| Unidades 9–35 | Pendientes de desarrollo | Alcance conservado en el índice |
+| Unidad 9 | Desarrollada y comprobada | Dos laboratorios, datos regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 21 pruebas |
+| Verificación común | Disponible para las unidades 0–9 | [verificar_curso.py](herramientas/verificar_curso.py) |
+| Unidades 10–35 | Pendientes de desarrollo | Alcance conservado en el índice |
 
-La Unidad 6 se publicó en el commit `b7a2a9b` y la Unidad 7 en `1c047c2`. Esta entrega incorpora la Unidad 8 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 9: exploración y visualización**. Quedan 27 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
+La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2` y la Unidad 8 en `59ed8df`. Esta entrega incorpora la Unidad 9 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 10: flujo de aprendizaje y líneas base**. Quedan 26 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
 
 ## Enfoque que se conserva
 
@@ -40,7 +41,7 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 
 | Unidades | Trabajo pendiente | Evidencia al cerrar el hito |
 |---|---|---|
-| 7–9 | Unidades 7 y 8 terminadas; pendientes exploración y visualización | Dataset documentado, transformaciones reproducibles e informe exploratorio |
+| 7–9 | Desarrollo terminado; reto integrador disponible | Datos documentados, preparación trazable y exploración con figuras e informe reproducible |
 | 10–13 | Flujo de aprendizaje, líneas base, regresión, clasificación, árboles y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
 | 14–18 | Agrupamiento, anomalías, características, validación, métricas e interpretabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
 | 19–24 | Redes, PyTorch, visión, lenguaje, tiempo, recomendación y refuerzo | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
@@ -50,21 +51,23 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 
 Antes de desarrollar cada unidad, verificar documentación primaria de las bibliotecas y servicios que vaya a utilizar. Fijar y registrar las versiones que realmente se prueben; no asumir que una API o descarga futura conserva el mismo funcionamiento.
 
-## Siguiente entrega concreta — Unidad 9
+## Siguiente entrega concreta — Unidad 10
 
-Pregunta guía: **¿qué preguntas podemos explorar con estos datos y cómo comunicar los patrones sin exagerar lo que muestran?**
+Pregunta guía: **¿cómo organizar un experimento predictivo y saber si un modelo mejora una referencia sencilla?**
 
 Alcance propuesto, todavía no implementado:
 
-1. Formular preguntas exploratorias y distinguir descripción de confirmación de hipótesis.
-2. Relacionar tipos de variables con tablas de frecuencias, distribuciones y gráficos.
-3. Conectar resúmenes numéricos de la Unidad 4 con forma, escala, dispersión y valores extremos.
-4. Comparar grupos, relaciones y evolución temporal indicando tamaños y faltantes.
-5. Explicar ejes, unidades, denominadores, agregaciones y decisiones visuales.
-6. Retomar los datos preparados de la Unidad 8 sin ocultar cuarentena ni generalizar desde muestras mínimas.
-7. Dos laboratorios reproducibles, figuras revisadas, ejercicios y reto de informe exploratorio.
+1. Definir unidad de predicción, objetivo, horizonte e información disponible al decidir.
+2. Distinguir entrenamiento, validación y prueba; justificar partición aleatoria, por tiempo o por grupo según el problema.
+3. Separar ajuste de transformaciones y aplicación, retomando las unidades 7 y 8.
+4. Construir líneas base sencillas para regresión y clasificación, aprendidas únicamente del conjunto permitido.
+5. Introducir métricas mínimas apropiadas, comparación sobre los mismos casos y análisis de errores; reservar el desarrollo amplio para unidades posteriores.
+6. Documentar protocolo, supuestos, semillas si hay azar y registro de experimentos sin usar prueba para seleccionar.
+7. Dos laboratorios reproducibles, ejercicios resueltos y reto con informe de comparación y límites.
 
-Mantener los originales de la Unidad 7 y la política documentada de la Unidad 8. Para estudiar distribuciones, incorporar si hace falta otro conjunto sintético suficientemente amplio y explicar su generación; no fabricar una población real a partir de los pocos registros actuales. Declarar y comprobar cualquier dependencia gráfica antes de añadirla al flujo del curso.
+La Unidad 9 conserva las fuentes de 7–8 y añade 48 casos sintéticos separados para visualizar patrones. No reutilizarlos automáticamente como una población apta para modelado: definir datos y generación acordes con cada experimento. Mantener explícita la diferencia entre demostración del procedimiento y rendimiento útil en datos reales. Declarar y comprobar toda nueva dependencia antes de incorporarla.
+
+La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 y NumPy 2.2.6, probadas con Python 3.12.3 en un entorno virtual limpio. Los resúmenes de texto siguen usando biblioteca estándar; la exportación de gráficos y las 21 pruebas nuevas requieren esos paquetes. El [registro del entorno](unidad09-exploracion-visualizacion/recursos/entorno-verificado.txt) conserva las versiones transitivas y los informes JSON anotan fuente, parámetros y versiones principales. Las tres figuras se revisaron visualmente.
 
 ## Criterios para considerar lista una unidad
 
@@ -85,10 +88,11 @@ Mantener los originales de la Unidad 7 y la política documentada de la Unidad 8
 Desde la raíz del curso:
 
 ```bash
+python -m pip install -r unidad09-exploracion-visualizacion/requirements.txt
 python herramientas/verificar_curso.py
 ```
 
-Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 38 ejecuciones de programas y variantes y las 61 pruebas de las unidades 5, 6, 7 y 8. Usa la biblioteca estándar, un directorio temporal para el registro de la Unidad 0 y no instala paquetes. El verificador cubre explícitamente las unidades 0–8; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
+Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 45 ejecuciones de programas y variantes y las 82 pruebas de las unidades 5, 6, 7, 8 y 9. Las ejecuciones incluyen la exportación de ambas prácticas gráficas a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias de la Unidad 9. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–9; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
 
 La comprobación de enlaces no valida URLs externas ni fragmentos `#ancla`. Ejecutar programas con éxito no demuestra que toda explicación sea correcta ni que se obtenga utilidad en una población real.
 

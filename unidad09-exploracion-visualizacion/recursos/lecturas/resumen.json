@@ -1,0 +1,553 @@
+{
+  "versiones": {
+    "python": "3.12.3",
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6"
+  },
+  "analisis": {
+    "preparacion": {
+      "politica": "preparacion-conservadora-v1",
+      "python": "3.12.3",
+      "archivo_origen": "lecturas_sinteticas.csv",
+      "sha256_origen": "9c47b2dc1a45dde7e9395fce06d9a9f10917fa14bc002c55060e8d9f220f1e5e",
+      "sha256_correcciones": null,
+      "correcciones": [],
+      "plan_cobertura": {
+        "inicio": "2026-09-01",
+        "fin": "2026-09-04",
+        "sensores": [
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "antes": {
+        "filas": 12,
+        "columnas": {
+          "fecha": {
+            "validos": 12,
+            "faltantes": 0,
+            "invalidos": 0
+          },
+          "sensor_id": {
+            "validos": 12,
+            "faltantes": 0,
+            "invalidos": 0
+          },
+          "consumo_kwh": {
+            "validos": 10,
+            "faltantes": 1,
+            "invalidos": 1
+          },
+          "temperatura_c": {
+            "validos": 11,
+            "faltantes": 1,
+            "invalidos": 0
+          },
+          "horas_uso": {
+            "validos": 11,
+            "faltantes": 1,
+            "invalidos": 0
+          }
+        },
+        "incidencias": [
+          {
+            "registro": 3,
+            "campo": "consumo_kwh",
+            "estado": "faltante",
+            "texto": ""
+          },
+          {
+            "registro": 4,
+            "campo": "temperatura_c",
+            "estado": "faltante",
+            "texto": "NA"
+          },
+          {
+            "registro": 8,
+            "campo": "consumo_kwh",
+            "estado": "invalido",
+            "texto": "-2"
+          },
+          {
+            "registro": 12,
+            "campo": "horas_uso",
+            "estado": "faltante",
+            "texto": ""
+          }
+        ],
+        "duplicados_exactos_adicionales": 1,
+        "claves_repetidas": [
+          {
+            "clave": [
+              "2026-09-01",
+              "S3"
+            ],
+            "registros": [
+              10,
+              11
+            ],
+            "textos_distintos": true
+          },
+          {
+            "clave": [
+              "2026-09-02",
+              "S2"
+            ],
+            "registros": [
+              6,
+              7
+            ],
+            "textos_distintos": false
+          }
+        ],
+        "registros_sin_clave": [],
+        "cobertura": {
+          "esperadas": 12,
+          "presentes": 10,
+          "porcentaje": 83.33,
+          "ausentes": [
+            [
+              "2026-09-02",
+              "S3"
+            ],
+            [
+              "2026-09-04",
+              "S3"
+            ]
+          ],
+          "fuera_del_plan": []
+        }
+      },
+      "despues": {
+        "filas": 8,
+        "columnas": {
+          "fecha": {
+            "validos": 8,
+            "faltantes": 0,
+            "invalidos": 0
+          },
+          "sensor_id": {
+            "validos": 8,
+            "faltantes": 0,
+            "invalidos": 0
+          },
+          "consumo_kwh": {
+            "validos": 7,
+            "faltantes": 1,
+            "invalidos": 0
+          },
+          "temperatura_c": {
+            "validos": 7,
+            "faltantes": 1,
+            "invalidos": 0
+          },
+          "horas_uso": {
+            "validos": 7,
+            "faltantes": 1,
+            "invalidos": 0
+          }
+        },
+        "incidencias": [
+          {
+            "registro": 5,
+            "campo": "consumo_kwh",
+            "estado": "faltante",
+            "texto": ""
+          },
+          {
+            "registro": 6,
+            "campo": "horas_uso",
+            "estado": "faltante",
+            "texto": ""
+          },
+          {
+            "registro": 7,
+            "campo": "temperatura_c",
+            "estado": "faltante",
+            "texto": ""
+          }
+        ],
+        "duplicados_exactos_adicionales": 0,
+        "claves_repetidas": [],
+        "registros_sin_clave": [],
+        "cobertura": {
+          "esperadas": 12,
+          "presentes": 8,
+          "porcentaje": 66.67,
+          "ausentes": [
+            [
+              "2026-09-01",
+              "S3"
+            ],
+            [
+              "2026-09-02",
+              "S3"
+            ],
+            [
+              "2026-09-03",
+              "S2"
+            ],
+            [
+              "2026-09-04",
+              "S3"
+            ]
+          ],
+          "fuera_del_plan": []
+        }
+      },
+      "resultado": {
+        "preparados": [
+          {
+            "registro_origen": 1,
+            "valores": {
+              "fecha": "2026-09-01",
+              "sensor_id": "S1",
+              "consumo_kwh": 10.0,
+              "temperatura_c": 20.0,
+              "horas_uso": 12.0
+            },
+            "faltantes": []
+          },
+          {
+            "registro_origen": 5,
+            "valores": {
+              "fecha": "2026-09-01",
+              "sensor_id": "S2",
+              "consumo_kwh": 8.0,
+              "temperatura_c": 19.0,
+              "horas_uso": 8.0
+            },
+            "faltantes": []
+          },
+          {
+            "registro_origen": 2,
+            "valores": {
+              "fecha": "2026-09-02",
+              "sensor_id": "S1",
+              "consumo_kwh": 12.0,
+              "temperatura_c": 21.0,
+              "horas_uso": 13.0
+            },
+            "faltantes": []
+          },
+          {
+            "registro_origen": 6,
+            "valores": {
+              "fecha": "2026-09-02",
+              "sensor_id": "S2",
+              "consumo_kwh": 9.0,
+              "temperatura_c": 20.0,
+              "horas_uso": 9.0
+            },
+            "faltantes": []
+          },
+          {
+            "registro_origen": 3,
+            "valores": {
+              "fecha": "2026-09-03",
+              "sensor_id": "S1",
+              "consumo_kwh": null,
+              "temperatura_c": 22.0,
+              "horas_uso": 14.0
+            },
+            "faltantes": [
+              "consumo_kwh"
+            ]
+          },
+          {
+            "registro_origen": 12,
+            "valores": {
+              "fecha": "2026-09-03",
+              "sensor_id": "S3",
+              "consumo_kwh": 0.0,
+              "temperatura_c": 19.0,
+              "horas_uso": null
+            },
+            "faltantes": [
+              "horas_uso"
+            ]
+          },
+          {
+            "registro_origen": 4,
+            "valores": {
+              "fecha": "2026-09-04",
+              "sensor_id": "S1",
+              "consumo_kwh": 14.0,
+              "temperatura_c": null,
+              "horas_uso": 14.0
+            },
+            "faltantes": [
+              "temperatura_c"
+            ]
+          },
+          {
+            "registro_origen": 9,
+            "valores": {
+              "fecha": "2026-09-04",
+              "sensor_id": "S2",
+              "consumo_kwh": 11.0,
+              "temperatura_c": 22.0,
+              "horas_uso": 8.0
+            },
+            "faltantes": []
+          }
+        ],
+        "duplicados": [
+          {
+            "registro": 7,
+            "conservado_como_representante": 6
+          }
+        ],
+        "cuarentena": [
+          {
+            "registro": 8,
+            "motivos": [
+              "invalido:consumo_kwh"
+            ],
+            "valores": {
+              "fecha": "2026-09-03",
+              "sensor_id": "S2",
+              "consumo_kwh": "-2",
+              "temperatura_c": "21",
+              "horas_uso": "8"
+            }
+          },
+          {
+            "registro": 10,
+            "motivos": [
+              "conflicto_de_clave"
+            ],
+            "valores": {
+              "fecha": "2026-09-01",
+              "sensor_id": "S3",
+              "consumo_kwh": "6",
+              "temperatura_c": "18",
+              "horas_uso": "6"
+            }
+          },
+          {
+            "registro": 11,
+            "motivos": [
+              "conflicto_de_clave"
+            ],
+            "valores": {
+              "fecha": "2026-09-01",
+              "sensor_id": "S3",
+              "consumo_kwh": "7",
+              "temperatura_c": "18",
+              "horas_uso": "6"
+            }
+          }
+        ]
+      },
+      "trazabilidad": [
+        {
+          "registro": 1,
+          "estado": "preparado",
+          "original": {
+            "fecha": "2026-09-01",
+            "sensor_id": "S1",
+            "consumo_kwh": "10",
+            "temperatura_c": "20",
+            "horas_uso": "12"
+          }
+        },
+        {
+          "registro": 2,
+          "estado": "preparado",
+          "original": {
+            "fecha": "2026-09-02",
+            "sensor_id": "S1",
+            "consumo_kwh": "12",
+            "temperatura_c": "21",
+            "horas_uso": "13"
+          }
+        },
+        {
+          "registro": 3,
+          "estado": "preparado",
+          "original": {
+            "fecha": "2026-09-03",
+            "sensor_id": "S1",
+            "consumo_kwh": "",
+            "temperatura_c": "22",
+            "horas_uso": "14"
+          }
+        },
+        {
+          "registro": 4,
+          "estado": "preparado",
+          "original": {
+            "fecha": "2026-09-04",
+            "sensor_id": "S1",
+            "consumo_kwh": "14",
+            "temperatura_c": "NA",
+            "horas_uso": "14"
+          }
+        },
+        {
+          "registro": 5,
+          "estado": "preparado",
+          "original": {
+            "fecha": "2026-09-01",
+            "sensor_id": "S2",
+            "consumo_kwh": "8",
+            "temperatura_c": "19",
+            "horas_uso": "8"
+          }
+        },
+        {
+          "registro": 6,
+          "estado": "preparado",
+          "original": {
+            "fecha": "2026-09-02",
+            "sensor_id": "S2",
+            "consumo_kwh": "9",
+            "temperatura_c": "20",
+            "horas_uso": "9"
+          }
+        },
+        {
+          "registro": 7,
+          "estado": "duplicado",
+          "original": {
+            "fecha": "2026-09-02",
+            "sensor_id": "S2",
+            "consumo_kwh": "9",
+            "temperatura_c": "20",
+            "horas_uso": "9"
+          }
+        },
+        {
+          "registro": 8,
+          "estado": "cuarentena",
+          "original": {
+            "fecha": "2026-09-03",
+            "sensor_id": "S2",
+            "consumo_kwh": "-2",
+            "temperatura_c": "21",
+            "horas_uso": "8"
+          }
+        },
+        {
+          "registro": 9,
+          "estado": "preparado",
+          "original": {
+            "fecha": "2026-09-04",
+            "sensor_id": "S2",
+            "consumo_kwh": "11",
+            "temperatura_c": "22",
+            "horas_uso": "8"
+          }
+        },
+        {
+          "registro": 10,
+          "estado": "cuarentena",
+          "original": {
+            "fecha": "2026-09-01",
+            "sensor_id": "S3",
+            "consumo_kwh": "6",
+            "temperatura_c": "18",
+            "horas_uso": "6"
+          }
+        },
+        {
+          "registro": 11,
+          "estado": "cuarentena",
+          "original": {
+            "fecha": "2026-09-01",
+            "sensor_id": "S3",
+            "consumo_kwh": "7",
+            "temperatura_c": "18",
+            "horas_uso": "6"
+          }
+        },
+        {
+          "registro": 12,
+          "estado": "preparado",
+          "original": {
+            "fecha": "2026-09-03",
+            "sensor_id": "S3",
+            "consumo_kwh": "0",
+            "temperatura_c": "19",
+            "horas_uso": ""
+          }
+        }
+      ]
+    },
+    "resumen": {
+      "fechas": [
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04"
+      ],
+      "sensores": {
+        "S1": {
+          "esperados": 4,
+          "preparados": 4,
+          "sin_preparar": 0,
+          "consumo": {
+            "n": 3,
+            "faltantes": 1,
+            "minimo": 10.0,
+            "q1": 11.0,
+            "mediana": 12.0,
+            "media": 12.0,
+            "q3": 13.0,
+            "maximo": 14.0
+          },
+          "serie": [
+            10.0,
+            12.0,
+            null,
+            14.0
+          ]
+        },
+        "S2": {
+          "esperados": 4,
+          "preparados": 3,
+          "sin_preparar": 1,
+          "consumo": {
+            "n": 3,
+            "faltantes": 0,
+            "minimo": 8.0,
+            "q1": 8.5,
+            "mediana": 9.0,
+            "media": 9.333333333333334,
+            "q3": 10.0,
+            "maximo": 11.0
+          },
+          "serie": [
+            8.0,
+            9.0,
+            null,
+            11.0
+          ]
+        },
+        "S3": {
+          "esperados": 4,
+          "preparados": 1,
+          "sin_preparar": 3,
+          "consumo": {
+            "n": 1,
+            "faltantes": 0,
+            "minimo": 0.0,
+            "q1": 0.0,
+            "mediana": 0.0,
+            "media": 0.0,
+            "q3": 0.0,
+            "maximo": 0.0
+          },
+          "serie": [
+            null,
+            null,
+            0.0,
+            null
+          ]
+        }
+      }
+    }
+  }
+}

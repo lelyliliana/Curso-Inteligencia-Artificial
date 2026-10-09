@@ -1,0 +1,4 @@
+# Versiones de las bibliotecas numérica y gráfica comprobadas con Python 3.12.3.
+# Las dependencias transitivas se registran en recursos/entorno-verificado.txt.
+matplotlib==3.10.8
+numpy==2.2.6

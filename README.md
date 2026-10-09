@@ -49,7 +49,7 @@ La secuencia comprende **36 unidades, de la 0 a la 35**. Los enlaces llevan a ma
 | 6 | [Conocimiento, reglas y restricciones](unidad06-conocimiento-reglas/README.md) |
 | 7 | [Obtención y comprensión de datos](unidad07-obtencion-datos/README.md) |
 | 8 | [Calidad y preparación de datos](unidad08-preparacion-datos/README.md) |
-| 9 | Exploración y visualización |
+| 9 | [Exploración y visualización](unidad09-exploracion-visualizacion/README.md) |
 
 ### Bloque 3 — Aprendizaje automático
 
@@ -126,13 +126,14 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-Las **unidades 0 a 8** cuentan en esta versión con explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. La Unidad 0 prepara el entorno; la Unidad 1 introduce los enfoques de IA; la Unidad 2 desarrolla la formulación de proyectos; la Unidad 3 conecta matemática y entrenamiento; la Unidad 4 desarrolla probabilidad y estadística; la Unidad 5 introduce búsqueda, costos, heurísticas y verificación de rutas; la Unidad 6 desarrolla conocimiento, inferencia mediante reglas y satisfacción de restricciones; la Unidad 7 aborda procedencia, lectura, diagnóstico, cobertura y disponibilidad temporal de datos; la Unidad 8 desarrolla preparación trazable, cuarentena, correcciones e imputación y escalado sin filtración. Las unidades 9 a 35 tienen su alcance definido y están pendientes de desarrollo.
+Las **unidades 0 a 9** cuentan en esta versión con explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. La Unidad 0 prepara el entorno; la Unidad 1 introduce los enfoques de IA; la Unidad 2 desarrolla la formulación de proyectos; la Unidad 3 conecta matemática y entrenamiento; la Unidad 4 desarrolla probabilidad y estadística; la Unidad 5 introduce búsqueda, costos, heurísticas y verificación de rutas; la Unidad 6 desarrolla conocimiento, inferencia mediante reglas y satisfacción de restricciones; la Unidad 7 aborda procedencia, lectura, diagnóstico, cobertura y disponibilidad temporal de datos; la Unidad 8 desarrolla preparación trazable, cuarentena, correcciones e imputación y escalado sin filtración; la Unidad 9 conecta preguntas exploratorias, distribuciones, cobertura, relaciones por grupo y gráficos reproducibles con interpretaciones proporcionadas. Las unidades 10 a 35 tienen su alcance definido y están pendientes de desarrollo.
 
-El curso completo requiere desarrollar y revisar las 36 unidades. El material disponible permite preparar el entorno, comprender los enfoques de IA, formular un proyecto aplicado, explicar su entrenamiento, interpretar datos y probabilidades, modelar búsquedas con condiciones de optimalidad explícitas, construir propuestas explicables y asignaciones sujetas a restricciones, documentar si los datos son adecuados y estaban disponibles al decidir, y prepararlos con decisiones trazables y parámetros ajustados en el conjunto permitido.
+El curso completo requiere desarrollar y revisar las 36 unidades. El material disponible permite preparar el entorno, comprender los enfoques de IA, formular un proyecto aplicado, explicar su entrenamiento, interpretar datos y probabilidades, modelar búsquedas con condiciones de optimalidad explícitas, construir propuestas explicables y asignaciones sujetas a restricciones, documentar si los datos son adecuados y estaban disponibles al decidir, prepararlos con decisiones trazables y parámetros ajustados en el conjunto permitido, y comunicar hallazgos exploratorios con figuras, denominadores y límites explícitos.
 
-El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 8, ejecuta desde la raíz:
+El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 9, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias gráficas de la Unidad 9; las comprobaciones posteriores funcionan sin Internet:
 
 ```bash
+python -m pip install -r unidad09-exploracion-visualizacion/requirements.txt
 python herramientas/verificar_curso.py
 ```
 
