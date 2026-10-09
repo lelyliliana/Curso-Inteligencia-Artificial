@@ -313,4 +313,4 @@ Las **30 pruebas** verifican Gini y cortes contra cálculos independientes, cond
 
 Antes de continuar, deberías poder explicar un recorrido completo, calcular un corte ponderado, distinguir ajuste de selección, describir cómo se combinan probabilidades y justificar por qué una hoja pura o un bosque grande no certifican calidad fuera del conjunto observado.
 
-La siguiente entrega prevista es la **Unidad 14 — Agrupamiento y detección de anomalías**, todavía pendiente de desarrollo: pasaremos a buscar estructura y casos inusuales sin tratar automáticamente los grupos como etiquetas verdaderas.
+Continúa con la [Unidad 14 — Agrupamiento y detección de anomalías](../unidad14-agrupamiento-anomalias/README.md): buscar estructura y casos inusuales sin tratar automáticamente los grupos como etiquetas verdaderas ni las alertas como problemas confirmados.

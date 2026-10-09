@@ -1,0 +1,2 @@
+# Reutiliza las versiones numéricas, gráficas y de scikit-learn de la Unidad 13.
+-r ../unidad13-arboles-ensambles/requirements.txt

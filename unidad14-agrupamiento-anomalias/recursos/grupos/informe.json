@@ -1,0 +1,3916 @@
+{
+  "protocolo": "no-supervisado-v1",
+  "experimento": "grupos",
+  "semilla": 14,
+  "versiones": {
+    "python": "3.12.3",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1",
+    "matplotlib": "3.10.8"
+  },
+  "entradas": [
+    "horas_uso",
+    "consumo_kwh"
+  ],
+  "fuentes": {
+    "entrenamiento": {
+      "archivo": "entrenamiento.csv",
+      "sha256": "e2cc5576db3d4eff2b6799e51552ac527f2659fa0c214e90356e532220b8dc16",
+      "n": 90
+    },
+    "validacion": {
+      "archivo": "validacion.csv",
+      "sha256": "97e564ab1a71655271dd411137e788055157b92dbaf058b6d901287485cc988a",
+      "n": 60
+    }
+  },
+  "escala": {
+    "media": [
+      10.874111111111116,
+      121.6241111111111
+    ],
+    "varianza": [
+      45.49540643209876,
+      6867.03189754321
+    ],
+    "escala": [
+      6.745028275114847,
+      82.8675563628083
+    ]
+  },
+  "rangos_entrenamiento": {
+    "horas_uso": [
+      0.0,
+      20.79
+    ],
+    "consumo_kwh": [
+      22.19,
+      260.27
+    ]
+  },
+  "modelos": {
+    "k2": {
+      "parametros": {
+        "algorithm": "lloyd",
+        "copy_x": true,
+        "init": "k-means++",
+        "max_iter": 300,
+        "n_clusters": 2,
+        "n_init": 10,
+        "random_state": 14,
+        "tol": 0.0001,
+        "verbose": 0
+      },
+      "centros_z": [
+        [
+          -1.1960579133831855,
+          -0.8123659093197425
+        ],
+        [
+          0.5980289566915916,
+          0.4061829546598713
+        ]
+      ],
+      "centros_originales": [
+        [
+          2.806666666666665,
+          54.30533333333332
+        ],
+        [
+          14.907833333333333,
+          155.2835
+        ]
+      ],
+      "inercia_entrenamiento": 85.92781937438566,
+      "iteraciones": 3
+    },
+    "k3": {
+      "parametros": {
+        "algorithm": "lloyd",
+        "copy_x": true,
+        "init": "k-means++",
+        "max_iter": 300,
+        "n_clusters": 3,
+        "n_init": 10,
+        "random_state": 14,
+        "tol": 0.0001,
+        "verbose": 0
+      },
+      "centros_z": [
+        [
+          -0.026801633796665524,
+          1.37003222015095
+        ],
+        [
+          -1.1960579133831855,
+          -0.8123659093197425
+        ],
+        [
+          1.2228595471798487,
+          -0.5576663108312072
+        ]
+      ],
+      "centros_originales": [
+        [
+          10.693333333333333,
+          235.15533333333335
+        ],
+        [
+          2.806666666666665,
+          54.30533333333332
+        ],
+        [
+          19.122333333333334,
+          75.41166666666666
+        ]
+      ],
+      "inercia_entrenamiento": 6.762698970529918,
+      "iteraciones": 2
+    },
+    "k4": {
+      "parametros": {
+        "algorithm": "lloyd",
+        "copy_x": true,
+        "init": "k-means++",
+        "max_iter": 300,
+        "n_clusters": 4,
+        "n_init": 10,
+        "random_state": 14,
+        "tol": 0.0001,
+        "verbose": 0
+      },
+      "centros_z": [
+        [
+          -0.026801633796665524,
+          1.37003222015095
+        ],
+        [
+          -1.233451710997462,
+          -0.9892720282065451
+        ],
+        [
+          1.2228595471798487,
+          -0.5576663108312072
+        ],
+        [
+          -1.1399672169617694,
+          -0.5470067309895386
+        ]
+      ],
+      "centros_originales": [
+        [
+          10.693333333333333,
+          235.15533333333335
+        ],
+        [
+          2.5544444444444476,
+          39.645555555555546
+        ],
+        [
+          19.122333333333334,
+          75.41166666666666
+        ],
+        [
+          3.1850000000000005,
+          76.295
+        ]
+      ],
+      "inercia_entrenamiento": 5.291465775547513,
+      "iteraciones": 2
+    }
+  },
+  "prueba": null,
+  "entrenamiento": {
+    "k2": {
+      "metricas": {
+        "n": 90,
+        "distancia_cuadrada_media": 0.954753548604285,
+        "silueta": 0.5872962024725689,
+        "tamanos": [
+          30,
+          60
+        ]
+      },
+      "predicciones": [
+        {
+          "caso_id": "grupos-entrenamiento-001",
+          "horas_uso": 2.04,
+          "consumo_kwh": 89.16,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.4356944668133273
+        },
+        {
+          "caso_id": "grupos-entrenamiento-002",
+          "horas_uso": 1.72,
+          "consumo_kwh": 80.21,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.3516760321902478
+        },
+        {
+          "caso_id": "grupos-entrenamiento-003",
+          "horas_uso": 2.33,
+          "consumo_kwh": 23.82,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.3746064570369268
+        },
+        {
+          "caso_id": "grupos-entrenamiento-004",
+          "horas_uso": 1.45,
+          "consumo_kwh": 37.79,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2831523966252032
+        },
+        {
+          "caso_id": "grupos-entrenamiento-005",
+          "horas_uso": 9.61,
+          "consumo_kwh": 244.21,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.32984893688727
+        },
+        {
+          "caso_id": "grupos-entrenamiento-006",
+          "horas_uso": 18.09,
+          "consumo_kwh": 69.92,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1330147923270055
+        },
+        {
+          "caso_id": "grupos-entrenamiento-007",
+          "horas_uso": 20.58,
+          "consumo_kwh": 129.34,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.8973264281522054
+        },
+        {
+          "caso_id": "grupos-entrenamiento-008",
+          "horas_uso": 20.67,
+          "consumo_kwh": 84.6,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2072105790305456
+        },
+        {
+          "caso_id": "grupos-entrenamiento-009",
+          "horas_uso": 3.29,
+          "consumo_kwh": 29.48,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.30802933425912166
+        },
+        {
+          "caso_id": "grupos-entrenamiento-010",
+          "horas_uso": 18.64,
+          "consumo_kwh": 51.15,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.3730522174164657
+        },
+        {
+          "caso_id": "grupos-entrenamiento-011",
+          "horas_uso": 10.95,
+          "consumo_kwh": 229.13,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0669755125409492
+        },
+        {
+          "caso_id": "grupos-entrenamiento-012",
+          "horas_uso": 3.29,
+          "consumo_kwh": 54.17,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.0716763255285767
+        },
+        {
+          "caso_id": "grupos-entrenamiento-013",
+          "horas_uso": 11.13,
+          "consumo_kwh": 234.65,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1094998280174626
+        },
+        {
+          "caso_id": "grupos-entrenamiento-014",
+          "horas_uso": 0.91,
+          "consumo_kwh": 47.68,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2923399388487563
+        },
+        {
+          "caso_id": "grupos-entrenamiento-015",
+          "horas_uso": 16.45,
+          "consumo_kwh": 82.05,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.9128385365650461
+        },
+        {
+          "caso_id": "grupos-entrenamiento-016",
+          "horas_uso": 4.08,
+          "consumo_kwh": 27.71,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.3723430704932866
+        },
+        {
+          "caso_id": "grupos-entrenamiento-017",
+          "horas_uso": 18.56,
+          "consumo_kwh": 98.29,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.875329533649852
+        },
+        {
+          "caso_id": "grupos-entrenamiento-018",
+          "horas_uso": 2.35,
+          "consumo_kwh": 45.53,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.12568928319831724
+        },
+        {
+          "caso_id": "grupos-entrenamiento-019",
+          "horas_uso": 19.27,
+          "consumo_kwh": 77.27,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1421602235397885
+        },
+        {
+          "caso_id": "grupos-entrenamiento-020",
+          "horas_uso": 19.76,
+          "consumo_kwh": 80.03,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1585206722885577
+        },
+        {
+          "caso_id": "grupos-entrenamiento-021",
+          "horas_uso": 18.66,
+          "consumo_kwh": 84.11,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0232955074145558
+        },
+        {
+          "caso_id": "grupos-entrenamiento-022",
+          "horas_uso": 20.34,
+          "consumo_kwh": 58.37,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.4199752577822249
+        },
+        {
+          "caso_id": "grupos-entrenamiento-023",
+          "horas_uso": 10.92,
+          "consumo_kwh": 244.45,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2277417939230597
+        },
+        {
+          "caso_id": "grupos-entrenamiento-024",
+          "horas_uso": 19.15,
+          "consumo_kwh": 69.61,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2101337267941383
+        },
+        {
+          "caso_id": "grupos-entrenamiento-025",
+          "horas_uso": 3.72,
+          "consumo_kwh": 82.52,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.36641698989304683
+        },
+        {
+          "caso_id": "grupos-entrenamiento-026",
+          "horas_uso": 18.25,
+          "consumo_kwh": 68.85,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.154745180609982
+        },
+        {
+          "caso_id": "grupos-entrenamiento-027",
+          "horas_uso": 0.0,
+          "consumo_kwh": 81.88,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.5327974645873348
+        },
+        {
+          "caso_id": "grupos-entrenamiento-028",
+          "horas_uso": 11.11,
+          "consumo_kwh": 255.28,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.3316020922803495
+        },
+        {
+          "caso_id": "grupos-entrenamiento-029",
+          "horas_uso": 11.14,
+          "consumo_kwh": 237.65,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1401699886673007
+        },
+        {
+          "caso_id": "grupos-entrenamiento-030",
+          "horas_uso": 18.11,
+          "consumo_kwh": 65.15,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1867743675517786
+        },
+        {
+          "caso_id": "grupos-entrenamiento-031",
+          "horas_uso": 1.19,
+          "consumo_kwh": 52.11,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.24114234831353562
+        },
+        {
+          "caso_id": "grupos-entrenamiento-032",
+          "horas_uso": 3.75,
+          "consumo_kwh": 81.87,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.36084055788064345
+        },
+        {
+          "caso_id": "grupos-entrenamiento-033",
+          "horas_uso": 4.1,
+          "consumo_kwh": 73.63,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.30190820825922965
+        },
+        {
+          "caso_id": "grupos-entrenamiento-034",
+          "horas_uso": 4.17,
+          "consumo_kwh": 67.52,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2574568118344056
+        },
+        {
+          "caso_id": "grupos-entrenamiento-035",
+          "horas_uso": 2.76,
+          "consumo_kwh": 47.68,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.0802496722822728
+        },
+        {
+          "caso_id": "grupos-entrenamiento-036",
+          "horas_uso": 12.28,
+          "consumo_kwh": 234.27,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.029713211606078
+        },
+        {
+          "caso_id": "grupos-entrenamiento-037",
+          "horas_uso": 11.42,
+          "consumo_kwh": 260.27,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.3683835488048532
+        },
+        {
+          "caso_id": "grupos-entrenamiento-038",
+          "horas_uso": 2.58,
+          "consumo_kwh": 29.61,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2998984175504556
+        },
+        {
+          "caso_id": "grupos-entrenamiento-039",
+          "horas_uso": 10.3,
+          "consumo_kwh": 227.18,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1042779475076758
+        },
+        {
+          "caso_id": "grupos-entrenamiento-040",
+          "horas_uso": 20.13,
+          "consumo_kwh": 87.88,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1229533415977428
+        },
+        {
+          "caso_id": "grupos-entrenamiento-041",
+          "horas_uso": 19.9,
+          "consumo_kwh": 47.05,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.5012290363472343
+        },
+        {
+          "caso_id": "grupos-entrenamiento-042",
+          "horas_uso": 11.72,
+          "consumo_kwh": 198.59,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.7046127180194852
+        },
+        {
+          "caso_id": "grupos-entrenamiento-043",
+          "horas_uso": 10.09,
+          "consumo_kwh": 242.59,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.272869830838084
+        },
+        {
+          "caso_id": "grupos-entrenamiento-044",
+          "horas_uso": 10.9,
+          "consumo_kwh": 225.6,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0358977124140776
+        },
+        {
+          "caso_id": "grupos-entrenamiento-045",
+          "horas_uso": 10.69,
+          "consumo_kwh": 223.66,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0353117715877935
+        },
+        {
+          "caso_id": "grupos-entrenamiento-046",
+          "horas_uso": 11.75,
+          "consumo_kwh": 235.04,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0702847418044177
+        },
+        {
+          "caso_id": "grupos-entrenamiento-047",
+          "horas_uso": 11.41,
+          "consumo_kwh": 242.66,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1750353987254791
+        },
+        {
+          "caso_id": "grupos-entrenamiento-048",
+          "horas_uso": 20.06,
+          "consumo_kwh": 80.42,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1830527614723099
+        },
+        {
+          "caso_id": "grupos-entrenamiento-049",
+          "horas_uso": 10.3,
+          "consumo_kwh": 255.21,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.3859223066121897
+        },
+        {
+          "caso_id": "grupos-entrenamiento-050",
+          "horas_uso": 10.52,
+          "consumo_kwh": 235.69,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.168191780778121
+        },
+        {
+          "caso_id": "grupos-entrenamiento-051",
+          "horas_uso": 19.37,
+          "consumo_kwh": 70.1,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2224251299080007
+        },
+        {
+          "caso_id": "grupos-entrenamiento-052",
+          "horas_uso": 10.47,
+          "consumo_kwh": 227.02,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0873282697796443
+        },
+        {
+          "caso_id": "grupos-entrenamiento-053",
+          "horas_uso": 10.54,
+          "consumo_kwh": 239.16,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2015978225989825
+        },
+        {
+          "caso_id": "grupos-entrenamiento-054",
+          "horas_uso": 9.1,
+          "consumo_kwh": 236.42,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.30386787252113
+        },
+        {
+          "caso_id": "grupos-entrenamiento-055",
+          "horas_uso": 11.27,
+          "consumo_kwh": 253.26,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2995301193586382
+        },
+        {
+          "caso_id": "grupos-entrenamiento-056",
+          "horas_uso": 19.69,
+          "consumo_kwh": 22.44,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.7528665352082837
+        },
+        {
+          "caso_id": "grupos-entrenamiento-057",
+          "horas_uso": 3.25,
+          "consumo_kwh": 71.2,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.21420860041056825
+        },
+        {
+          "caso_id": "grupos-entrenamiento-058",
+          "horas_uso": 4.38,
+          "consumo_kwh": 77.25,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.36204132880957896
+        },
+        {
+          "caso_id": "grupos-entrenamiento-059",
+          "horas_uso": 15.83,
+          "consumo_kwh": 36.16,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.4440035329311764
+        },
+        {
+          "caso_id": "grupos-entrenamiento-060",
+          "horas_uso": 18.93,
+          "consumo_kwh": 59.97,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2955814665813437
+        },
+        {
+          "caso_id": "grupos-entrenamiento-061",
+          "horas_uso": 11.21,
+          "consumo_kwh": 218.34,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.9378556981481276
+        },
+        {
+          "caso_id": "grupos-entrenamiento-062",
+          "horas_uso": 8.84,
+          "consumo_kwh": 234.99,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.316983321653777
+        },
+        {
+          "caso_id": "grupos-entrenamiento-063",
+          "horas_uso": 10.26,
+          "consumo_kwh": 237.13,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2042980083743042
+        },
+        {
+          "caso_id": "grupos-entrenamiento-064",
+          "horas_uso": 19.96,
+          "consumo_kwh": 55.42,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.4189054310081675
+        },
+        {
+          "caso_id": "grupos-entrenamiento-065",
+          "horas_uso": 17.99,
+          "consumo_kwh": 89.94,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.9113645559714376
+        },
+        {
+          "caso_id": "grupos-entrenamiento-066",
+          "horas_uso": 9.9,
+          "consumo_kwh": 231.55,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.182479903750187
+        },
+        {
+          "caso_id": "grupos-entrenamiento-067",
+          "horas_uso": 20.79,
+          "consumo_kwh": 103.45,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0732016088310155
+        },
+        {
+          "caso_id": "grupos-entrenamiento-068",
+          "horas_uso": 20.01,
+          "consumo_kwh": 66.02,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.3162501869455374
+        },
+        {
+          "caso_id": "grupos-entrenamiento-069",
+          "horas_uso": 1.59,
+          "consumo_kwh": 37.57,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.27077996140933525
+        },
+        {
+          "caso_id": "grupos-entrenamiento-070",
+          "horas_uso": 18.89,
+          "consumo_kwh": 86.66,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.017016287402866
+        },
+        {
+          "caso_id": "grupos-entrenamiento-071",
+          "horas_uso": 19.96,
+          "consumo_kwh": 96.33,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0330286861864664
+        },
+        {
+          "caso_id": "grupos-entrenamiento-072",
+          "horas_uso": 20.23,
+          "consumo_kwh": 92.48,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.094065581633432
+        },
+        {
+          "caso_id": "grupos-entrenamiento-073",
+          "horas_uso": 2.6,
+          "consumo_kwh": 57.06,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.04520860238968807
+        },
+        {
+          "caso_id": "grupos-entrenamiento-074",
+          "horas_uso": 9.33,
+          "consumo_kwh": 230.35,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.226555593327045
+        },
+        {
+          "caso_id": "grupos-entrenamiento-075",
+          "horas_uso": 2.59,
+          "consumo_kwh": 70.91,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.20293441799156356
+        },
+        {
+          "caso_id": "grupos-entrenamiento-076",
+          "horas_uso": 2.37,
+          "consumo_kwh": 28.08,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.323026656045587
+        },
+        {
+          "caso_id": "grupos-entrenamiento-077",
+          "horas_uso": 3.2,
+          "consumo_kwh": 40.16,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.1803841023220547
+        },
+        {
+          "caso_id": "grupos-entrenamiento-078",
+          "horas_uso": 18.82,
+          "consumo_kwh": 68.17,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2006287366090451
+        },
+        {
+          "caso_id": "grupos-entrenamiento-079",
+          "horas_uso": 10.86,
+          "consumo_kwh": 254.89,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.3434807296747802
+        },
+        {
+          "caso_id": "grupos-entrenamiento-080",
+          "horas_uso": 4.95,
+          "consumo_kwh": 64.8,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.34207193180782924
+        },
+        {
+          "caso_id": "grupos-entrenamiento-081",
+          "horas_uso": 19.5,
+          "consumo_kwh": 77.86,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1560464569012847
+        },
+        {
+          "caso_id": "grupos-entrenamiento-082",
+          "horas_uso": 2.72,
+          "consumo_kwh": 22.19,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.38776308425524625
+        },
+        {
+          "caso_id": "grupos-entrenamiento-083",
+          "horas_uso": 11.2,
+          "consumo_kwh": 234.55,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.103250755213075
+        },
+        {
+          "caso_id": "grupos-entrenamiento-084",
+          "horas_uso": 12.11,
+          "consumo_kwh": 213.5,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.8158427335026669
+        },
+        {
+          "caso_id": "grupos-entrenamiento-085",
+          "horas_uso": 3.49,
+          "consumo_kwh": 49.14,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.11894906064497325
+        },
+        {
+          "caso_id": "grupos-entrenamiento-086",
+          "horas_uso": 2.99,
+          "consumo_kwh": 54.28,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.027182232836163125
+        },
+        {
+          "caso_id": "grupos-entrenamiento-087",
+          "horas_uso": 17.08,
+          "consumo_kwh": 103.26,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.7055713963908392
+        },
+        {
+          "caso_id": "grupos-entrenamiento-088",
+          "horas_uso": 2.79,
+          "consumo_kwh": 29.56,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.29862326807997697
+        },
+        {
+          "caso_id": "grupos-entrenamiento-089",
+          "horas_uso": 3.55,
+          "consumo_kwh": 74.59,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2684480468834234
+        },
+        {
+          "caso_id": "grupos-entrenamiento-090",
+          "horas_uso": 9.47,
+          "consumo_kwh": 217.37,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1005887123832305
+        }
+      ]
+    },
+    "k3": {
+      "metricas": {
+        "n": 90,
+        "distancia_cuadrada_media": 0.07514109967255467,
+        "silueta": 0.8508970414483844,
+        "tamanos": [
+          30,
+          30,
+          30
+        ]
+      },
+      "predicciones": [
+        {
+          "caso_id": "grupos-entrenamiento-001",
+          "horas_uso": 2.04,
+          "consumo_kwh": 89.16,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.4356944668133273
+        },
+        {
+          "caso_id": "grupos-entrenamiento-002",
+          "horas_uso": 1.72,
+          "consumo_kwh": 80.21,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.3516760321902478
+        },
+        {
+          "caso_id": "grupos-entrenamiento-003",
+          "horas_uso": 2.33,
+          "consumo_kwh": 23.82,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.3746064570369268
+        },
+        {
+          "caso_id": "grupos-entrenamiento-004",
+          "horas_uso": 1.45,
+          "consumo_kwh": 37.79,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.2831523966252032
+        },
+        {
+          "caso_id": "grupos-entrenamiento-005",
+          "horas_uso": 9.61,
+          "consumo_kwh": 244.21,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.19425620394596463
+        },
+        {
+          "caso_id": "grupos-entrenamiento-006",
+          "horas_uso": 18.09,
+          "consumo_kwh": 69.92,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.1667824208424757
+        },
+        {
+          "caso_id": "grupos-entrenamiento-007",
+          "horas_uso": 20.58,
+          "consumo_kwh": 129.34,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.6857220095230089
+        },
+        {
+          "caso_id": "grupos-entrenamiento-008",
+          "horas_uso": 20.67,
+          "consumo_kwh": 84.6,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.25483911735939074
+        },
+        {
+          "caso_id": "grupos-entrenamiento-009",
+          "horas_uso": 3.29,
+          "consumo_kwh": 29.48,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.30802933425912166
+        },
+        {
+          "caso_id": "grupos-entrenamiento-010",
+          "horas_uso": 18.64,
+          "consumo_kwh": 51.15,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.3013828733224737
+        },
+        {
+          "caso_id": "grupos-entrenamiento-011",
+          "horas_uso": 10.95,
+          "consumo_kwh": 229.13,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.0820659002864791
+        },
+        {
+          "caso_id": "grupos-entrenamiento-012",
+          "horas_uso": 3.29,
+          "consumo_kwh": 54.17,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.0716763255285767
+        },
+        {
+          "caso_id": "grupos-entrenamiento-013",
+          "horas_uso": 11.13,
+          "consumo_kwh": 234.65,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.06502561148301637
+        },
+        {
+          "caso_id": "grupos-entrenamiento-014",
+          "horas_uso": 0.91,
+          "consumo_kwh": 47.68,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.2923399388487563
+        },
+        {
+          "caso_id": "grupos-entrenamiento-015",
+          "horas_uso": 16.45,
+          "consumo_kwh": 82.05,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.40421057036961167
+        },
+        {
+          "caso_id": "grupos-entrenamiento-016",
+          "horas_uso": 4.08,
+          "consumo_kwh": 27.71,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.3723430704932866
+        },
+        {
+          "caso_id": "grupos-entrenamiento-017",
+          "horas_uso": 18.56,
+          "consumo_kwh": 98.29,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2883963469753583
+        },
+        {
+          "caso_id": "grupos-entrenamiento-018",
+          "horas_uso": 2.35,
+          "consumo_kwh": 45.53,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.12568928319831724
+        },
+        {
+          "caso_id": "grupos-entrenamiento-019",
+          "horas_uso": 19.27,
+          "consumo_kwh": 77.27,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.03133982946956817
+        },
+        {
+          "caso_id": "grupos-entrenamiento-020",
+          "horas_uso": 19.76,
+          "consumo_kwh": 80.03,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.10974324124405532
+        },
+        {
+          "caso_id": "grupos-entrenamiento-021",
+          "horas_uso": 18.66,
+          "consumo_kwh": 84.11,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.12536478583779173
+        },
+        {
+          "caso_id": "grupos-entrenamiento-022",
+          "horas_uso": 20.34,
+          "consumo_kwh": 58.37,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2736458702581567
+        },
+        {
+          "caso_id": "grupos-entrenamiento-023",
+          "horas_uso": 10.92,
+          "consumo_kwh": 244.45,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.1170889209265876
+        },
+        {
+          "caso_id": "grupos-entrenamiento-024",
+          "horas_uso": 19.15,
+          "consumo_kwh": 69.61,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.07013136964252513
+        },
+        {
+          "caso_id": "grupos-entrenamiento-025",
+          "horas_uso": 3.72,
+          "consumo_kwh": 82.52,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.36641698989304683
+        },
+        {
+          "caso_id": "grupos-entrenamiento-026",
+          "horas_uso": 18.25,
+          "consumo_kwh": 68.85,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.1516445990043044
+        },
+        {
+          "caso_id": "grupos-entrenamiento-027",
+          "horas_uso": 0.0,
+          "consumo_kwh": 81.88,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.5327974645873348
+        },
+        {
+          "caso_id": "grupos-entrenamiento-028",
+          "horas_uso": 11.11,
+          "consumo_kwh": 255.28,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2505868736529307
+        },
+        {
+          "caso_id": "grupos-entrenamiento-029",
+          "horas_uso": 11.14,
+          "consumo_kwh": 237.65,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.07274317103895259
+        },
+        {
+          "caso_id": "grupos-entrenamiento-030",
+          "horas_uso": 18.11,
+          "consumo_kwh": 65.15,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.19457687977538504
+        },
+        {
+          "caso_id": "grupos-entrenamiento-031",
+          "horas_uso": 1.19,
+          "consumo_kwh": 52.11,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.24114234831353562
+        },
+        {
+          "caso_id": "grupos-entrenamiento-032",
+          "horas_uso": 3.75,
+          "consumo_kwh": 81.87,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.36084055788064345
+        },
+        {
+          "caso_id": "grupos-entrenamiento-033",
+          "horas_uso": 4.1,
+          "consumo_kwh": 73.63,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.30190820825922965
+        },
+        {
+          "caso_id": "grupos-entrenamiento-034",
+          "horas_uso": 4.17,
+          "consumo_kwh": 67.52,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.2574568118344056
+        },
+        {
+          "caso_id": "grupos-entrenamiento-035",
+          "horas_uso": 2.76,
+          "consumo_kwh": 47.68,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.0802496722822728
+        },
+        {
+          "caso_id": "grupos-entrenamiento-036",
+          "horas_uso": 12.28,
+          "consumo_kwh": 234.27,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2354774783846746
+        },
+        {
+          "caso_id": "grupos-entrenamiento-037",
+          "horas_uso": 11.42,
+          "consumo_kwh": 260.27,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.32164878741716735
+        },
+        {
+          "caso_id": "grupos-entrenamiento-038",
+          "horas_uso": 2.58,
+          "consumo_kwh": 29.61,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.2998984175504556
+        },
+        {
+          "caso_id": "grupos-entrenamiento-039",
+          "horas_uso": 10.3,
+          "consumo_kwh": 227.18,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.11253042291635361
+        },
+        {
+          "caso_id": "grupos-entrenamiento-040",
+          "horas_uso": 20.13,
+          "consumo_kwh": 87.88,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.21203081942321095
+        },
+        {
+          "caso_id": "grupos-entrenamiento-041",
+          "horas_uso": 19.9,
+          "consumo_kwh": 47.05,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.3611509111708811
+        },
+        {
+          "caso_id": "grupos-entrenamiento-042",
+          "horas_uso": 11.72,
+          "consumo_kwh": 198.59,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.4667654335891466
+        },
+        {
+          "caso_id": "grupos-entrenamiento-043",
+          "horas_uso": 10.09,
+          "consumo_kwh": 242.59,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.12668967827441355
+        },
+        {
+          "caso_id": "grupos-entrenamiento-044",
+          "horas_uso": 10.9,
+          "consumo_kwh": 225.6,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.11930989013572962
+        },
+        {
+          "caso_id": "grupos-entrenamiento-045",
+          "horas_uso": 10.69,
+          "consumo_kwh": 223.66,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.1387202276096323
+        },
+        {
+          "caso_id": "grupos-entrenamiento-046",
+          "horas_uso": 11.75,
+          "consumo_kwh": 235.04,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.15666477932161588
+        },
+        {
+          "caso_id": "grupos-entrenamiento-047",
+          "horas_uso": 11.41,
+          "consumo_kwh": 242.66,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.13960947216082634
+        },
+        {
+          "caso_id": "grupos-entrenamiento-048",
+          "horas_uso": 20.06,
+          "consumo_kwh": 80.42,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.1515855175145643
+        },
+        {
+          "caso_id": "grupos-entrenamiento-049",
+          "horas_uso": 10.3,
+          "consumo_kwh": 255.21,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.24893529546947504
+        },
+        {
+          "caso_id": "grupos-entrenamiento-050",
+          "horas_uso": 10.52,
+          "consumo_kwh": 235.69,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.026495532523877752
+        },
+        {
+          "caso_id": "grupos-entrenamiento-051",
+          "horas_uso": 19.37,
+          "consumo_kwh": 70.1,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.07387035142371376
+        },
+        {
+          "caso_id": "grupos-entrenamiento-052",
+          "horas_uso": 10.47,
+          "consumo_kwh": 227.02,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.10360602469976601
+        },
+        {
+          "caso_id": "grupos-entrenamiento-053",
+          "horas_uso": 10.54,
+          "consumo_kwh": 239.16,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.0534059249846355
+        },
+        {
+          "caso_id": "grupos-entrenamiento-054",
+          "horas_uso": 9.1,
+          "consumo_kwh": 236.42,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.23671584117732558
+        },
+        {
+          "caso_id": "grupos-entrenamiento-055",
+          "horas_uso": 11.27,
+          "consumo_kwh": 253.26,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.23460960659573524
+        },
+        {
+          "caso_id": "grupos-entrenamiento-056",
+          "horas_uso": 19.69,
+          "consumo_kwh": 22.44,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.6447493363424072
+        },
+        {
+          "caso_id": "grupos-entrenamiento-057",
+          "horas_uso": 3.25,
+          "consumo_kwh": 71.2,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.21420860041056825
+        },
+        {
+          "caso_id": "grupos-entrenamiento-058",
+          "horas_uso": 4.38,
+          "consumo_kwh": 77.25,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.36204132880957896
+        },
+        {
+          "caso_id": "grupos-entrenamiento-059",
+          "horas_uso": 15.83,
+          "consumo_kwh": 36.16,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.6801579222447088
+        },
+        {
+          "caso_id": "grupos-entrenamiento-060",
+          "horas_uso": 18.93,
+          "consumo_kwh": 59.97,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.1885106329716502
+        },
+        {
+          "caso_id": "grupos-entrenamiento-061",
+          "horas_uso": 11.21,
+          "consumo_kwh": 218.34,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.21689464983097423
+        },
+        {
+          "caso_id": "grupos-entrenamiento-062",
+          "horas_uso": 8.84,
+          "consumo_kwh": 234.99,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.27477752725509447
+        },
+        {
+          "caso_id": "grupos-entrenamiento-063",
+          "horas_uso": 10.26,
+          "consumo_kwh": 237.13,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.06852175617987742
+        },
+        {
+          "caso_id": "grupos-entrenamiento-064",
+          "horas_uso": 19.96,
+          "consumo_kwh": 55.42,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.27133745258960285
+        },
+        {
+          "caso_id": "grupos-entrenamiento-065",
+          "horas_uso": 17.99,
+          "consumo_kwh": 89.94,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.24273374893651628
+        },
+        {
+          "caso_id": "grupos-entrenamiento-066",
+          "horas_uso": 9.9,
+          "consumo_kwh": 231.55,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.12540633796822961
+        },
+        {
+          "caso_id": "grupos-entrenamiento-067",
+          "horas_uso": 20.79,
+          "consumo_kwh": 103.45,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.41905968318565684
+        },
+        {
+          "caso_id": "grupos-entrenamiento-068",
+          "horas_uso": 20.01,
+          "consumo_kwh": 66.02,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.17367743059321455
+        },
+        {
+          "caso_id": "grupos-entrenamiento-069",
+          "horas_uso": 1.59,
+          "consumo_kwh": 37.57,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.27077996140933525
+        },
+        {
+          "caso_id": "grupos-entrenamiento-070",
+          "horas_uso": 18.89,
+          "consumo_kwh": 86.66,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.14004091480432293
+        },
+        {
+          "caso_id": "grupos-entrenamiento-071",
+          "horas_uso": 19.96,
+          "consumo_kwh": 96.33,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2813264715985148
+        },
+        {
+          "caso_id": "grupos-entrenamiento-072",
+          "horas_uso": 20.23,
+          "consumo_kwh": 92.48,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2634241232175805
+        },
+        {
+          "caso_id": "grupos-entrenamiento-073",
+          "horas_uso": 2.6,
+          "consumo_kwh": 57.06,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.04520860238968807
+        },
+        {
+          "caso_id": "grupos-entrenamiento-074",
+          "horas_uso": 9.33,
+          "consumo_kwh": 230.35,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2102779279728159
+        },
+        {
+          "caso_id": "grupos-entrenamiento-075",
+          "horas_uso": 2.59,
+          "consumo_kwh": 70.91,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.20293441799156356
+        },
+        {
+          "caso_id": "grupos-entrenamiento-076",
+          "horas_uso": 2.37,
+          "consumo_kwh": 28.08,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.323026656045587
+        },
+        {
+          "caso_id": "grupos-entrenamiento-077",
+          "horas_uso": 3.2,
+          "consumo_kwh": 40.16,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.1803841023220547
+        },
+        {
+          "caso_id": "grupos-entrenamiento-078",
+          "horas_uso": 18.82,
+          "consumo_kwh": 68.17,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.0982133063663423
+        },
+        {
+          "caso_id": "grupos-entrenamiento-079",
+          "horas_uso": 10.86,
+          "consumo_kwh": 254.89,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.23942555104543448
+        },
+        {
+          "caso_id": "grupos-entrenamiento-080",
+          "horas_uso": 4.95,
+          "consumo_kwh": 64.8,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.34207193180782924
+        },
+        {
+          "caso_id": "grupos-entrenamiento-081",
+          "horas_uso": 19.5,
+          "consumo_kwh": 77.86,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.06330879341512731
+        },
+        {
+          "caso_id": "grupos-entrenamiento-082",
+          "horas_uso": 2.72,
+          "consumo_kwh": 22.19,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.38776308425524625
+        },
+        {
+          "caso_id": "grupos-entrenamiento-083",
+          "horas_uso": 11.2,
+          "consumo_kwh": 234.55,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.07547140272768818
+        },
+        {
+          "caso_id": "grupos-entrenamiento-084",
+          "horas_uso": 12.11,
+          "consumo_kwh": 213.5,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.33526658619601596
+        },
+        {
+          "caso_id": "grupos-entrenamiento-085",
+          "horas_uso": 3.49,
+          "consumo_kwh": 49.14,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.11894906064497325
+        },
+        {
+          "caso_id": "grupos-entrenamiento-086",
+          "horas_uso": 2.99,
+          "consumo_kwh": 54.28,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.027182232836163125
+        },
+        {
+          "caso_id": "grupos-entrenamiento-087",
+          "horas_uso": 17.08,
+          "consumo_kwh": 103.26,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.4523467141527458
+        },
+        {
+          "caso_id": "grupos-entrenamiento-088",
+          "horas_uso": 2.79,
+          "consumo_kwh": 29.56,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.29862326807997697
+        },
+        {
+          "caso_id": "grupos-entrenamiento-089",
+          "horas_uso": 3.55,
+          "consumo_kwh": 74.59,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.2684480468834234
+        },
+        {
+          "caso_id": "grupos-entrenamiento-090",
+          "horas_uso": 9.47,
+          "consumo_kwh": 217.37,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2809941238452401
+        }
+      ]
+    },
+    "k4": {
+      "metricas": {
+        "n": 90,
+        "distancia_cuadrada_media": 0.05879406417275014,
+        "silueta": 0.7318606731608529,
+        "tamanos": [
+          30,
+          18,
+          30,
+          12
+        ]
+      },
+      "predicciones": [
+        {
+          "caso_id": "grupos-entrenamiento-001",
+          "horas_uso": 2.04,
+          "consumo_kwh": 89.16,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.23004022068233193
+        },
+        {
+          "caso_id": "grupos-entrenamiento-002",
+          "horas_uso": 1.72,
+          "consumo_kwh": 80.21,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.22227582925993575
+        },
+        {
+          "caso_id": "grupos-entrenamiento-003",
+          "horas_uso": 2.33,
+          "consumo_kwh": 23.82,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.19385139065885942
+        },
+        {
+          "caso_id": "grupos-entrenamiento-004",
+          "horas_uso": 1.45,
+          "consumo_kwh": 37.79,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.16526595972298141
+        },
+        {
+          "caso_id": "grupos-entrenamiento-005",
+          "horas_uso": 9.61,
+          "consumo_kwh": 244.21,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.19425620394596463
+        },
+        {
+          "caso_id": "grupos-entrenamiento-006",
+          "horas_uso": 18.09,
+          "consumo_kwh": 69.92,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.1667824208424757
+        },
+        {
+          "caso_id": "grupos-entrenamiento-007",
+          "horas_uso": 20.58,
+          "consumo_kwh": 129.34,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.6857220095230089
+        },
+        {
+          "caso_id": "grupos-entrenamiento-008",
+          "horas_uso": 20.67,
+          "consumo_kwh": 84.6,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.25483911735939074
+        },
+        {
+          "caso_id": "grupos-entrenamiento-009",
+          "horas_uso": 3.29,
+          "consumo_kwh": 29.48,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.16413632021601313
+        },
+        {
+          "caso_id": "grupos-entrenamiento-010",
+          "horas_uso": 18.64,
+          "consumo_kwh": 51.15,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.3013828733224737
+        },
+        {
+          "caso_id": "grupos-entrenamiento-011",
+          "horas_uso": 10.95,
+          "consumo_kwh": 229.13,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.0820659002864791
+        },
+        {
+          "caso_id": "grupos-entrenamiento-012",
+          "horas_uso": 3.29,
+          "consumo_kwh": 54.17,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.20642881179908895
+        },
+        {
+          "caso_id": "grupos-entrenamiento-013",
+          "horas_uso": 11.13,
+          "consumo_kwh": 234.65,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.06502561148301637
+        },
+        {
+          "caso_id": "grupos-entrenamiento-014",
+          "horas_uso": 0.91,
+          "consumo_kwh": 47.68,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.26237231867713534
+        },
+        {
+          "caso_id": "grupos-entrenamiento-015",
+          "horas_uso": 16.45,
+          "consumo_kwh": 82.05,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.40421057036961167
+        },
+        {
+          "caso_id": "grupos-entrenamiento-016",
+          "horas_uso": 4.08,
+          "consumo_kwh": 27.71,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.2681420922668565
+        },
+        {
+          "caso_id": "grupos-entrenamiento-017",
+          "horas_uso": 18.56,
+          "consumo_kwh": 98.29,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2883963469753583
+        },
+        {
+          "caso_id": "grupos-entrenamiento-018",
+          "horas_uso": 2.35,
+          "consumo_kwh": 45.53,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.07720863244523198
+        },
+        {
+          "caso_id": "grupos-entrenamiento-019",
+          "horas_uso": 19.27,
+          "consumo_kwh": 77.27,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.03133982946956817
+        },
+        {
+          "caso_id": "grupos-entrenamiento-020",
+          "horas_uso": 19.76,
+          "consumo_kwh": 80.03,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.10974324124405532
+        },
+        {
+          "caso_id": "grupos-entrenamiento-021",
+          "horas_uso": 18.66,
+          "consumo_kwh": 84.11,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.12536478583779173
+        },
+        {
+          "caso_id": "grupos-entrenamiento-022",
+          "horas_uso": 20.34,
+          "consumo_kwh": 58.37,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2736458702581567
+        },
+        {
+          "caso_id": "grupos-entrenamiento-023",
+          "horas_uso": 10.92,
+          "consumo_kwh": 244.45,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.1170889209265876
+        },
+        {
+          "caso_id": "grupos-entrenamiento-024",
+          "horas_uso": 19.15,
+          "consumo_kwh": 69.61,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.07013136964252513
+        },
+        {
+          "caso_id": "grupos-entrenamiento-025",
+          "horas_uso": 3.72,
+          "consumo_kwh": 82.52,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.10924417262319781
+        },
+        {
+          "caso_id": "grupos-entrenamiento-026",
+          "horas_uso": 18.25,
+          "consumo_kwh": 68.85,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.1516445990043044
+        },
+        {
+          "caso_id": "grupos-entrenamiento-027",
+          "horas_uso": 0.0,
+          "consumo_kwh": 81.88,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.4769851425287118
+        },
+        {
+          "caso_id": "grupos-entrenamiento-028",
+          "horas_uso": 11.11,
+          "consumo_kwh": 255.28,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2505868736529307
+        },
+        {
+          "caso_id": "grupos-entrenamiento-029",
+          "horas_uso": 11.14,
+          "consumo_kwh": 237.65,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.07274317103895259
+        },
+        {
+          "caso_id": "grupos-entrenamiento-030",
+          "horas_uso": 18.11,
+          "consumo_kwh": 65.15,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.19457687977538504
+        },
+        {
+          "caso_id": "grupos-entrenamiento-031",
+          "horas_uso": 1.19,
+          "consumo_kwh": 52.11,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.25208171290919307
+        },
+        {
+          "caso_id": "grupos-entrenamiento-032",
+          "horas_uso": 3.75,
+          "consumo_kwh": 81.87,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.10743698768988749
+        },
+        {
+          "caso_id": "grupos-entrenamiento-033",
+          "horas_uso": 4.1,
+          "consumo_kwh": 73.63,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.13941541131898094
+        },
+        {
+          "caso_id": "grupos-entrenamiento-034",
+          "horas_uso": 4.17,
+          "consumo_kwh": 67.52,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.1803853270411477
+        },
+        {
+          "caso_id": "grupos-entrenamiento-035",
+          "horas_uso": 2.76,
+          "consumo_kwh": 47.68,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.10163194901243612
+        },
+        {
+          "caso_id": "grupos-entrenamiento-036",
+          "horas_uso": 12.28,
+          "consumo_kwh": 234.27,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2354774783846746
+        },
+        {
+          "caso_id": "grupos-entrenamiento-037",
+          "horas_uso": 11.42,
+          "consumo_kwh": 260.27,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.32164878741716735
+        },
+        {
+          "caso_id": "grupos-entrenamiento-038",
+          "horas_uso": 2.58,
+          "consumo_kwh": 29.61,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.12116280657425026
+        },
+        {
+          "caso_id": "grupos-entrenamiento-039",
+          "horas_uso": 10.3,
+          "consumo_kwh": 227.18,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.11253042291635361
+        },
+        {
+          "caso_id": "grupos-entrenamiento-040",
+          "horas_uso": 20.13,
+          "consumo_kwh": 87.88,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.21203081942321095
+        },
+        {
+          "caso_id": "grupos-entrenamiento-041",
+          "horas_uso": 19.9,
+          "consumo_kwh": 47.05,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.3611509111708811
+        },
+        {
+          "caso_id": "grupos-entrenamiento-042",
+          "horas_uso": 11.72,
+          "consumo_kwh": 198.59,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.4667654335891466
+        },
+        {
+          "caso_id": "grupos-entrenamiento-043",
+          "horas_uso": 10.09,
+          "consumo_kwh": 242.59,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.12668967827441355
+        },
+        {
+          "caso_id": "grupos-entrenamiento-044",
+          "horas_uso": 10.9,
+          "consumo_kwh": 225.6,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.11930989013572962
+        },
+        {
+          "caso_id": "grupos-entrenamiento-045",
+          "horas_uso": 10.69,
+          "consumo_kwh": 223.66,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.1387202276096323
+        },
+        {
+          "caso_id": "grupos-entrenamiento-046",
+          "horas_uso": 11.75,
+          "consumo_kwh": 235.04,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.15666477932161588
+        },
+        {
+          "caso_id": "grupos-entrenamiento-047",
+          "horas_uso": 11.41,
+          "consumo_kwh": 242.66,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.13960947216082634
+        },
+        {
+          "caso_id": "grupos-entrenamiento-048",
+          "horas_uso": 20.06,
+          "consumo_kwh": 80.42,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.1515855175145643
+        },
+        {
+          "caso_id": "grupos-entrenamiento-049",
+          "horas_uso": 10.3,
+          "consumo_kwh": 255.21,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.24893529546947504
+        },
+        {
+          "caso_id": "grupos-entrenamiento-050",
+          "horas_uso": 10.52,
+          "consumo_kwh": 235.69,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.026495532523877752
+        },
+        {
+          "caso_id": "grupos-entrenamiento-051",
+          "horas_uso": 19.37,
+          "consumo_kwh": 70.1,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.07387035142371376
+        },
+        {
+          "caso_id": "grupos-entrenamiento-052",
+          "horas_uso": 10.47,
+          "consumo_kwh": 227.02,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.10360602469976601
+        },
+        {
+          "caso_id": "grupos-entrenamiento-053",
+          "horas_uso": 10.54,
+          "consumo_kwh": 239.16,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.0534059249846355
+        },
+        {
+          "caso_id": "grupos-entrenamiento-054",
+          "horas_uso": 9.1,
+          "consumo_kwh": 236.42,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.23671584117732558
+        },
+        {
+          "caso_id": "grupos-entrenamiento-055",
+          "horas_uso": 11.27,
+          "consumo_kwh": 253.26,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.23460960659573524
+        },
+        {
+          "caso_id": "grupos-entrenamiento-056",
+          "horas_uso": 19.69,
+          "consumo_kwh": 22.44,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.6447493363424072
+        },
+        {
+          "caso_id": "grupos-entrenamiento-057",
+          "horas_uso": 3.25,
+          "consumo_kwh": 71.2,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.06223428303914964
+        },
+        {
+          "caso_id": "grupos-entrenamiento-058",
+          "horas_uso": 4.38,
+          "consumo_kwh": 77.25,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.1775419551391298
+        },
+        {
+          "caso_id": "grupos-entrenamiento-059",
+          "horas_uso": 15.83,
+          "consumo_kwh": 36.16,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.6801579222447088
+        },
+        {
+          "caso_id": "grupos-entrenamiento-060",
+          "horas_uso": 18.93,
+          "consumo_kwh": 59.97,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.1885106329716502
+        },
+        {
+          "caso_id": "grupos-entrenamiento-061",
+          "horas_uso": 11.21,
+          "consumo_kwh": 218.34,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.21689464983097423
+        },
+        {
+          "caso_id": "grupos-entrenamiento-062",
+          "horas_uso": 8.84,
+          "consumo_kwh": 234.99,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.27477752725509447
+        },
+        {
+          "caso_id": "grupos-entrenamiento-063",
+          "horas_uso": 10.26,
+          "consumo_kwh": 237.13,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.06852175617987742
+        },
+        {
+          "caso_id": "grupos-entrenamiento-064",
+          "horas_uso": 19.96,
+          "consumo_kwh": 55.42,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.27133745258960285
+        },
+        {
+          "caso_id": "grupos-entrenamiento-065",
+          "horas_uso": 17.99,
+          "consumo_kwh": 89.94,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.24273374893651628
+        },
+        {
+          "caso_id": "grupos-entrenamiento-066",
+          "horas_uso": 9.9,
+          "consumo_kwh": 231.55,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.12540633796822961
+        },
+        {
+          "caso_id": "grupos-entrenamiento-067",
+          "horas_uso": 20.79,
+          "consumo_kwh": 103.45,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.41905968318565684
+        },
+        {
+          "caso_id": "grupos-entrenamiento-068",
+          "horas_uso": 20.01,
+          "consumo_kwh": 66.02,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.17367743059321455
+        },
+        {
+          "caso_id": "grupos-entrenamiento-069",
+          "horas_uso": 1.59,
+          "consumo_kwh": 37.57,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.14516309536907027
+        },
+        {
+          "caso_id": "grupos-entrenamiento-070",
+          "horas_uso": 18.89,
+          "consumo_kwh": 86.66,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.14004091480432293
+        },
+        {
+          "caso_id": "grupos-entrenamiento-071",
+          "horas_uso": 19.96,
+          "consumo_kwh": 96.33,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2813264715985148
+        },
+        {
+          "caso_id": "grupos-entrenamiento-072",
+          "horas_uso": 20.23,
+          "consumo_kwh": 92.48,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2634241232175805
+        },
+        {
+          "caso_id": "grupos-entrenamiento-073",
+          "horas_uso": 2.6,
+          "consumo_kwh": 57.06,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.21025642261192148
+        },
+        {
+          "caso_id": "grupos-entrenamiento-074",
+          "horas_uso": 9.33,
+          "consumo_kwh": 230.35,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2102779279728159
+        },
+        {
+          "caso_id": "grupos-entrenamiento-075",
+          "horas_uso": 2.59,
+          "consumo_kwh": 70.91,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.10956446826321303
+        },
+        {
+          "caso_id": "grupos-entrenamiento-076",
+          "horas_uso": 2.37,
+          "consumo_kwh": 28.08,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.14222039302386483
+        },
+        {
+          "caso_id": "grupos-entrenamiento-077",
+          "horas_uso": 3.2,
+          "consumo_kwh": 40.16,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.09590948198302605
+        },
+        {
+          "caso_id": "grupos-entrenamiento-078",
+          "horas_uso": 18.82,
+          "consumo_kwh": 68.17,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.0982133063663423
+        },
+        {
+          "caso_id": "grupos-entrenamiento-079",
+          "horas_uso": 10.86,
+          "consumo_kwh": 254.89,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.23942555104543448
+        },
+        {
+          "caso_id": "grupos-entrenamiento-080",
+          "horas_uso": 4.95,
+          "consumo_kwh": 64.8,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.2961677527497115
+        },
+        {
+          "caso_id": "grupos-entrenamiento-081",
+          "horas_uso": 19.5,
+          "consumo_kwh": 77.86,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.06330879341512731
+        },
+        {
+          "caso_id": "grupos-entrenamiento-082",
+          "horas_uso": 2.72,
+          "consumo_kwh": 22.19,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.2120692187179067
+        },
+        {
+          "caso_id": "grupos-entrenamiento-083",
+          "horas_uso": 11.2,
+          "consumo_kwh": 234.55,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.07547140272768818
+        },
+        {
+          "caso_id": "grupos-entrenamiento-084",
+          "horas_uso": 12.11,
+          "consumo_kwh": 213.5,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.33526658619601596
+        },
+        {
+          "caso_id": "grupos-entrenamiento-085",
+          "horas_uso": 3.49,
+          "consumo_kwh": 49.14,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.17990457480130206
+        },
+        {
+          "caso_id": "grupos-entrenamiento-086",
+          "horas_uso": 2.99,
+          "consumo_kwh": 54.28,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.18803602462324984
+        },
+        {
+          "caso_id": "grupos-entrenamiento-087",
+          "horas_uso": 17.08,
+          "consumo_kwh": 103.26,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.4523467141527458
+        },
+        {
+          "caso_id": "grupos-entrenamiento-088",
+          "horas_uso": 2.79,
+          "consumo_kwh": 29.56,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.12661824802793223
+        },
+        {
+          "caso_id": "grupos-entrenamiento-089",
+          "horas_uso": 3.55,
+          "consumo_kwh": 74.59,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.05789342149653982
+        },
+        {
+          "caso_id": "grupos-entrenamiento-090",
+          "horas_uso": 9.47,
+          "consumo_kwh": 217.37,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2809941238452401
+        }
+      ]
+    }
+  },
+  "validacion": {
+    "k2": {
+      "metricas": {
+        "n": 60,
+        "distancia_cuadrada_media": 0.8633007246081873,
+        "silueta": 0.5971057594292692,
+        "tamanos": [
+          20,
+          40
+        ]
+      },
+      "predicciones": [
+        {
+          "caso_id": "grupos-validacion-001",
+          "horas_uso": 11.54,
+          "consumo_kwh": 240.4,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1420687670625835
+        },
+        {
+          "caso_id": "grupos-validacion-002",
+          "horas_uso": 17.48,
+          "consumo_kwh": 60.54,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2052324659191422
+        },
+        {
+          "caso_id": "grupos-validacion-003",
+          "horas_uso": 3.52,
+          "consumo_kwh": 93.53,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.4850122167355405
+        },
+        {
+          "caso_id": "grupos-validacion-004",
+          "horas_uso": 5.24,
+          "consumo_kwh": 73.88,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.4312140823613651
+        },
+        {
+          "caso_id": "grupos-validacion-005",
+          "horas_uso": 18.62,
+          "consumo_kwh": 73.36,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1314754924022314
+        },
+        {
+          "caso_id": "grupos-validacion-006",
+          "horas_uso": 1.97,
+          "consumo_kwh": 35.21,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.26169696328738823
+        },
+        {
+          "caso_id": "grupos-validacion-007",
+          "horas_uso": 10.68,
+          "consumo_kwh": 236.88,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1672385839345714
+        },
+        {
+          "caso_id": "grupos-validacion-008",
+          "horas_uso": 2.34,
+          "consumo_kwh": 61.64,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.11234302259701545
+        },
+        {
+          "caso_id": "grupos-validacion-009",
+          "horas_uso": 2.65,
+          "consumo_kwh": 60.19,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.07471497027264486
+        },
+        {
+          "caso_id": "grupos-validacion-010",
+          "horas_uso": 17.35,
+          "consumo_kwh": 70.1,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0898487042305032
+        },
+        {
+          "caso_id": "grupos-validacion-011",
+          "horas_uso": 18.95,
+          "consumo_kwh": 72.99,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.159883961193817
+        },
+        {
+          "caso_id": "grupos-validacion-012",
+          "horas_uso": 10.5,
+          "consumo_kwh": 212.41,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.9498876383339532
+        },
+        {
+          "caso_id": "grupos-validacion-013",
+          "horas_uso": 1.13,
+          "consumo_kwh": 89.21,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.48909017402648464
+        },
+        {
+          "caso_id": "grupos-validacion-014",
+          "horas_uso": 1.37,
+          "consumo_kwh": 85.15,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.4288502519191348
+        },
+        {
+          "caso_id": "grupos-validacion-015",
+          "horas_uso": 11.55,
+          "consumo_kwh": 220.8,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.9342930287865967
+        },
+        {
+          "caso_id": "grupos-validacion-016",
+          "horas_uso": 2.8,
+          "consumo_kwh": 47.09,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.08707627576135123
+        },
+        {
+          "caso_id": "grupos-validacion-017",
+          "horas_uso": 5.5,
+          "consumo_kwh": 67.73,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.4309177700775998
+        },
+        {
+          "caso_id": "grupos-validacion-018",
+          "horas_uso": 17.08,
+          "consumo_kwh": 65.24,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1333132689008325
+        },
+        {
+          "caso_id": "grupos-validacion-019",
+          "horas_uso": 18.91,
+          "consumo_kwh": 99.83,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.8943544430234258
+        },
+        {
+          "caso_id": "grupos-validacion-020",
+          "horas_uso": 20.32,
+          "consumo_kwh": 81.84,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1955416639280905
+        },
+        {
+          "caso_id": "grupos-validacion-021",
+          "horas_uso": 19.42,
+          "consumo_kwh": 57.28,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.3587406886931066
+        },
+        {
+          "caso_id": "grupos-validacion-022",
+          "horas_uso": 10.11,
+          "consumo_kwh": 235.7,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2031984587591122
+        },
+        {
+          "caso_id": "grupos-validacion-023",
+          "horas_uso": 11.73,
+          "consumo_kwh": 252.58,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2651202499302825
+        },
+        {
+          "caso_id": "grupos-validacion-024",
+          "horas_uso": 3.59,
+          "consumo_kwh": 74.74,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.27257304822717043
+        },
+        {
+          "caso_id": "grupos-validacion-025",
+          "horas_uso": 12.41,
+          "consumo_kwh": 217.47,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.836831698646351
+        },
+        {
+          "caso_id": "grupos-validacion-026",
+          "horas_uso": 19.84,
+          "consumo_kwh": 81.12,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1557068116839146
+        },
+        {
+          "caso_id": "grupos-validacion-027",
+          "horas_uso": 17.72,
+          "consumo_kwh": 112.6,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.662672105898299
+        },
+        {
+          "caso_id": "grupos-validacion-028",
+          "horas_uso": 20.47,
+          "consumo_kwh": 93.4,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1125162530982575
+        },
+        {
+          "caso_id": "grupos-validacion-029",
+          "horas_uso": 10.32,
+          "consumo_kwh": 209.12,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.9405928539958128
+        },
+        {
+          "caso_id": "grupos-validacion-030",
+          "horas_uso": 2.09,
+          "consumo_kwh": 85.34,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.389289708224246
+        },
+        {
+          "caso_id": "grupos-validacion-031",
+          "horas_uso": 20.3,
+          "consumo_kwh": 60.65,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.3939925446193577
+        },
+        {
+          "caso_id": "grupos-validacion-032",
+          "horas_uso": 1.87,
+          "consumo_kwh": 51.66,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.14248959110995024
+        },
+        {
+          "caso_id": "grupos-validacion-033",
+          "horas_uso": 1.56,
+          "consumo_kwh": 80.63,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.3675274521381639
+        },
+        {
+          "caso_id": "grupos-validacion-034",
+          "horas_uso": 3.37,
+          "consumo_kwh": 57.69,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.0929707672912811
+        },
+        {
+          "caso_id": "grupos-validacion-035",
+          "horas_uso": 18.85,
+          "consumo_kwh": 84.61,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0338950657827235
+        },
+        {
+          "caso_id": "grupos-validacion-036",
+          "horas_uso": 11.66,
+          "consumo_kwh": 237.18,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0993442653473315
+        },
+        {
+          "caso_id": "grupos-validacion-037",
+          "horas_uso": 11.92,
+          "consumo_kwh": 235.78,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0676208800904068
+        },
+        {
+          "caso_id": "grupos-validacion-038",
+          "horas_uso": 10.5,
+          "consumo_kwh": 233.43,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.147326231316417
+        },
+        {
+          "caso_id": "grupos-validacion-039",
+          "horas_uso": 0.51,
+          "consumo_kwh": 58.55,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.3443289311456931
+        },
+        {
+          "caso_id": "grupos-validacion-040",
+          "horas_uso": 11.46,
+          "consumo_kwh": 234.04,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0791350893493923
+        },
+        {
+          "caso_id": "grupos-validacion-041",
+          "horas_uso": 1.89,
+          "consumo_kwh": 51.31,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.1406273221094409
+        },
+        {
+          "caso_id": "grupos-validacion-042",
+          "horas_uso": 11.8,
+          "consumo_kwh": 248.44,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2149228797303755
+        },
+        {
+          "caso_id": "grupos-validacion-043",
+          "horas_uso": 10.54,
+          "consumo_kwh": 227.09,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0817566471007445
+        },
+        {
+          "caso_id": "grupos-validacion-044",
+          "horas_uso": 18.02,
+          "consumo_kwh": 60.26,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2360389097037507
+        },
+        {
+          "caso_id": "grupos-validacion-045",
+          "horas_uso": 18.45,
+          "consumo_kwh": 92.56,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.9212500191315808
+        },
+        {
+          "caso_id": "grupos-validacion-046",
+          "horas_uso": 11.08,
+          "consumo_kwh": 237.48,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1427733643537337
+        },
+        {
+          "caso_id": "grupos-validacion-047",
+          "horas_uso": 17.72,
+          "consumo_kwh": 78.14,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.020023400550042
+        },
+        {
+          "caso_id": "grupos-validacion-048",
+          "horas_uso": 18.31,
+          "consumo_kwh": 67.13,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1773105501719954
+        },
+        {
+          "caso_id": "grupos-validacion-049",
+          "horas_uso": 12.22,
+          "consumo_kwh": 250.91,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.2208345602458583
+        },
+        {
+          "caso_id": "grupos-validacion-050",
+          "horas_uso": 2.93,
+          "consumo_kwh": 59.06,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.06021984091074367
+        },
+        {
+          "caso_id": "grupos-validacion-051",
+          "horas_uso": 19.12,
+          "consumo_kwh": 77.22,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.13021967412351
+        },
+        {
+          "caso_id": "grupos-validacion-052",
+          "horas_uso": 17.19,
+          "consumo_kwh": 75.98,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0150423621965647
+        },
+        {
+          "caso_id": "grupos-validacion-053",
+          "horas_uso": 4.59,
+          "consumo_kwh": 76.63,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.37746600884487136
+        },
+        {
+          "caso_id": "grupos-validacion-054",
+          "horas_uso": 11.2,
+          "consumo_kwh": 224.13,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.9962009337260912
+        },
+        {
+          "caso_id": "grupos-validacion-055",
+          "horas_uso": 3.92,
+          "consumo_kwh": 67.48,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2291743032742743
+        },
+        {
+          "caso_id": "grupos-validacion-056",
+          "horas_uso": 19.96,
+          "consumo_kwh": 91.48,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.0741732798295793
+        },
+        {
+          "caso_id": "grupos-validacion-057",
+          "horas_uso": 12.35,
+          "consumo_kwh": 248.96,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1923474217541636
+        },
+        {
+          "caso_id": "grupos-validacion-058",
+          "horas_uso": 12.34,
+          "consumo_kwh": 268.65,
+          "fuera_rango": true,
+          "grupo": 1,
+          "distancia_centro": 1.4200275381554837
+        },
+        {
+          "caso_id": "grupos-validacion-059",
+          "horas_uso": 10.88,
+          "consumo_kwh": 233.67,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 1.1186462405206439
+        },
+        {
+          "caso_id": "grupos-validacion-060",
+          "horas_uso": 2.75,
+          "consumo_kwh": 58.84,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.05536300893627091
+        }
+      ]
+    },
+    "k3": {
+      "metricas": {
+        "n": 60,
+        "distancia_cuadrada_media": 0.06729558071435598,
+        "silueta": 0.8636751270905499,
+        "tamanos": [
+          20,
+          20,
+          20
+        ]
+      },
+      "predicciones": [
+        {
+          "caso_id": "grupos-validacion-001",
+          "horas_uso": 11.54,
+          "consumo_kwh": 240.4,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.1405774012546522
+        },
+        {
+          "caso_id": "grupos-validacion-002",
+          "horas_uso": 17.48,
+          "consumo_kwh": 60.54,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.30247874998549173
+        },
+        {
+          "caso_id": "grupos-validacion-003",
+          "horas_uso": 3.52,
+          "consumo_kwh": 93.53,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.4850122167355405
+        },
+        {
+          "caso_id": "grupos-validacion-004",
+          "horas_uso": 5.24,
+          "consumo_kwh": 73.88,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.4312140823613651
+        },
+        {
+          "caso_id": "grupos-validacion-005",
+          "horas_uso": 18.62,
+          "consumo_kwh": 73.36,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.07848212962960227
+        },
+        {
+          "caso_id": "grupos-validacion-006",
+          "horas_uso": 1.97,
+          "consumo_kwh": 35.21,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.26169696328738823
+        },
+        {
+          "caso_id": "grupos-validacion-007",
+          "horas_uso": 10.68,
+          "consumo_kwh": 236.88,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.020905993076334742
+        },
+        {
+          "caso_id": "grupos-validacion-008",
+          "horas_uso": 2.34,
+          "consumo_kwh": 61.64,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.11234302259701545
+        },
+        {
+          "caso_id": "grupos-validacion-009",
+          "horas_uso": 2.65,
+          "consumo_kwh": 60.19,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.07471497027264486
+        },
+        {
+          "caso_id": "grupos-validacion-010",
+          "horas_uso": 17.35,
+          "consumo_kwh": 70.1,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.27046656233618027
+        },
+        {
+          "caso_id": "grupos-validacion-011",
+          "horas_uso": 18.95,
+          "consumo_kwh": 72.99,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.03881739067834083
+        },
+        {
+          "caso_id": "grupos-validacion-012",
+          "horas_uso": 10.5,
+          "consumo_kwh": 212.41,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2759706974571202
+        },
+        {
+          "caso_id": "grupos-validacion-013",
+          "horas_uso": 1.13,
+          "consumo_kwh": 89.21,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.48909017402648464
+        },
+        {
+          "caso_id": "grupos-validacion-014",
+          "horas_uso": 1.37,
+          "consumo_kwh": 85.15,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.4288502519191348
+        },
+        {
+          "caso_id": "grupos-validacion-015",
+          "horas_uso": 11.55,
+          "consumo_kwh": 220.8,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2148027543661653
+        },
+        {
+          "caso_id": "grupos-validacion-016",
+          "horas_uso": 2.8,
+          "consumo_kwh": 47.09,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.08707627576135123
+        },
+        {
+          "caso_id": "grupos-validacion-017",
+          "horas_uso": 5.5,
+          "consumo_kwh": 67.73,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.4309177700775998
+        },
+        {
+          "caso_id": "grupos-validacion-018",
+          "horas_uso": 17.08,
+          "consumo_kwh": 65.24,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.3267245625915549
+        },
+        {
+          "caso_id": "grupos-validacion-019",
+          "horas_uso": 18.91,
+          "consumo_kwh": 99.83,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.29634375890747544
+        },
+        {
+          "caso_id": "grupos-validacion-020",
+          "horas_uso": 20.32,
+          "consumo_kwh": 81.84,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.19376851742429232
+        },
+        {
+          "caso_id": "grupos-validacion-021",
+          "horas_uso": 19.42,
+          "consumo_kwh": 57.28,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2232091050507419
+        },
+        {
+          "caso_id": "grupos-validacion-022",
+          "horas_uso": 10.11,
+          "consumo_kwh": 235.7,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.08673285682419797
+        },
+        {
+          "caso_id": "grupos-validacion-023",
+          "horas_uso": 11.73,
+          "consumo_kwh": 252.58,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2604528467139133
+        },
+        {
+          "caso_id": "grupos-validacion-024",
+          "horas_uso": 3.59,
+          "consumo_kwh": 74.74,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.27257304822717043
+        },
+        {
+          "caso_id": "grupos-validacion-025",
+          "horas_uso": 12.41,
+          "consumo_kwh": 217.47,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.3321465092699755
+        },
+        {
+          "caso_id": "grupos-validacion-026",
+          "horas_uso": 19.84,
+          "consumo_kwh": 81.12,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.12675160390885448
+        },
+        {
+          "caso_id": "grupos-validacion-027",
+          "horas_uso": 17.72,
+          "consumo_kwh": 112.6,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.4945887115832377
+        },
+        {
+          "caso_id": "grupos-validacion-028",
+          "horas_uso": 20.47,
+          "consumo_kwh": 93.4,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.29502787656261475
+        },
+        {
+          "caso_id": "grupos-validacion-029",
+          "horas_uso": 10.32,
+          "consumo_kwh": 209.12,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.31901828080385025
+        },
+        {
+          "caso_id": "grupos-validacion-030",
+          "horas_uso": 2.09,
+          "consumo_kwh": 85.34,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.389289708224246
+        },
+        {
+          "caso_id": "grupos-validacion-031",
+          "horas_uso": 20.3,
+          "consumo_kwh": 60.65,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.249432720471612
+        },
+        {
+          "caso_id": "grupos-validacion-032",
+          "horas_uso": 1.87,
+          "consumo_kwh": 51.66,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.14248959110995024
+        },
+        {
+          "caso_id": "grupos-validacion-033",
+          "horas_uso": 1.56,
+          "consumo_kwh": 80.63,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.3675274521381639
+        },
+        {
+          "caso_id": "grupos-validacion-034",
+          "horas_uso": 3.37,
+          "consumo_kwh": 57.69,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.0929707672912811
+        },
+        {
+          "caso_id": "grupos-validacion-035",
+          "horas_uso": 18.85,
+          "consumo_kwh": 84.61,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.11811548153229771
+        },
+        {
+          "caso_id": "grupos-validacion-036",
+          "horas_uso": 11.66,
+          "consumo_kwh": 237.18,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.14538316338880525
+        },
+        {
+          "caso_id": "grupos-validacion-037",
+          "horas_uso": 11.92,
+          "consumo_kwh": 235.78,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.18201850560162958
+        },
+        {
+          "caso_id": "grupos-validacion-038",
+          "horas_uso": 10.5,
+          "consumo_kwh": 233.43,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.035426832305080785
+        },
+        {
+          "caso_id": "grupos-validacion-039",
+          "horas_uso": 0.51,
+          "consumo_kwh": 58.55,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.3443289311456931
+        },
+        {
+          "caso_id": "grupos-validacion-040",
+          "horas_uso": 11.46,
+          "consumo_kwh": 234.04,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.11445806243622447
+        },
+        {
+          "caso_id": "grupos-validacion-041",
+          "horas_uso": 1.89,
+          "consumo_kwh": 51.31,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.1406273221094409
+        },
+        {
+          "caso_id": "grupos-validacion-042",
+          "horas_uso": 11.8,
+          "consumo_kwh": 248.44,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2293891764597448
+        },
+        {
+          "caso_id": "grupos-validacion-043",
+          "horas_uso": 10.54,
+          "consumo_kwh": 227.09,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.09994758137009127
+        },
+        {
+          "caso_id": "grupos-validacion-044",
+          "horas_uso": 18.02,
+          "consumo_kwh": 60.26,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.24523504366865068
+        },
+        {
+          "caso_id": "grupos-validacion-045",
+          "horas_uso": 18.45,
+          "consumo_kwh": 92.56,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.22969228548985823
+        },
+        {
+          "caso_id": "grupos-validacion-046",
+          "horas_uso": 11.08,
+          "consumo_kwh": 237.48,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.06382201527645202
+        },
+        {
+          "caso_id": "grupos-validacion-047",
+          "horas_uso": 17.72,
+          "consumo_kwh": 78.14,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.21049700154543727
+        },
+        {
+          "caso_id": "grupos-validacion-048",
+          "horas_uso": 18.31,
+          "consumo_kwh": 67.13,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.15649972117797462
+        },
+        {
+          "caso_id": "grupos-validacion-049",
+          "horas_uso": 12.22,
+          "consumo_kwh": 250.91,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2955920960586185
+        },
+        {
+          "caso_id": "grupos-validacion-050",
+          "horas_uso": 2.93,
+          "consumo_kwh": 59.06,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.06021984091074367
+        },
+        {
+          "caso_id": "grupos-validacion-051",
+          "horas_uso": 19.12,
+          "consumo_kwh": 77.22,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.021824711847014497
+        },
+        {
+          "caso_id": "grupos-validacion-052",
+          "horas_uso": 17.19,
+          "consumo_kwh": 75.98,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2865646960036591
+        },
+        {
+          "caso_id": "grupos-validacion-053",
+          "horas_uso": 4.59,
+          "consumo_kwh": 76.63,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.37746600884487136
+        },
+        {
+          "caso_id": "grupos-validacion-054",
+          "horas_uso": 11.2,
+          "consumo_kwh": 224.13,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.15278824661280274
+        },
+        {
+          "caso_id": "grupos-validacion-055",
+          "horas_uso": 3.92,
+          "consumo_kwh": 67.48,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.2291743032742743
+        },
+        {
+          "caso_id": "grupos-validacion-056",
+          "horas_uso": 19.96,
+          "consumo_kwh": 91.48,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.23026483750424098
+        },
+        {
+          "caso_id": "grupos-validacion-057",
+          "horas_uso": 12.35,
+          "consumo_kwh": 248.96,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.29677771721138546
+        },
+        {
+          "caso_id": "grupos-validacion-058",
+          "horas_uso": 12.34,
+          "consumo_kwh": 268.65,
+          "fuera_rango": true,
+          "grupo": 0,
+          "distancia_centro": 0.47220060300290184
+        },
+        {
+          "caso_id": "grupos-validacion-059",
+          "horas_uso": 10.88,
+          "consumo_kwh": 233.67,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.03297219529442482
+        },
+        {
+          "caso_id": "grupos-validacion-060",
+          "horas_uso": 2.75,
+          "consumo_kwh": 58.84,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.05536300893627091
+        }
+      ]
+    },
+    "k4": {
+      "metricas": {
+        "n": 60,
+        "distancia_cuadrada_media": 0.05469848364878602,
+        "silueta": 0.6665366668776832,
+        "tamanos": [
+          20,
+          5,
+          20,
+          15
+        ]
+      },
+      "predicciones": [
+        {
+          "caso_id": "grupos-validacion-001",
+          "horas_uso": 11.54,
+          "consumo_kwh": 240.4,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.1405774012546522
+        },
+        {
+          "caso_id": "grupos-validacion-002",
+          "horas_uso": 17.48,
+          "consumo_kwh": 60.54,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.30247874998549173
+        },
+        {
+          "caso_id": "grupos-validacion-003",
+          "horas_uso": 3.52,
+          "consumo_kwh": 93.53,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.21383041205958514
+        },
+        {
+          "caso_id": "grupos-validacion-004",
+          "horas_uso": 5.24,
+          "consumo_kwh": 73.88,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.30605949656481046
+        },
+        {
+          "caso_id": "grupos-validacion-005",
+          "horas_uso": 18.62,
+          "consumo_kwh": 73.36,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.07848212962960227
+        },
+        {
+          "caso_id": "grupos-validacion-006",
+          "horas_uso": 1.97,
+          "consumo_kwh": 35.21,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.10184754861233294
+        },
+        {
+          "caso_id": "grupos-validacion-007",
+          "horas_uso": 10.68,
+          "consumo_kwh": 236.88,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.020905993076334742
+        },
+        {
+          "caso_id": "grupos-validacion-008",
+          "horas_uso": 2.34,
+          "consumo_kwh": 61.64,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.21672521908117146
+        },
+        {
+          "caso_id": "grupos-validacion-009",
+          "horas_uso": 2.65,
+          "consumo_kwh": 60.19,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.20990894428548332
+        },
+        {
+          "caso_id": "grupos-validacion-010",
+          "horas_uso": 17.35,
+          "consumo_kwh": 70.1,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.27046656233618027
+        },
+        {
+          "caso_id": "grupos-validacion-011",
+          "horas_uso": 18.95,
+          "consumo_kwh": 72.99,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.03881739067834083
+        },
+        {
+          "caso_id": "grupos-validacion-012",
+          "horas_uso": 10.5,
+          "consumo_kwh": 212.41,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2759706974571202
+        },
+        {
+          "caso_id": "grupos-validacion-013",
+          "horas_uso": 1.13,
+          "consumo_kwh": 89.21,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.34221728993267303
+        },
+        {
+          "caso_id": "grupos-validacion-014",
+          "horas_uso": 1.37,
+          "consumo_kwh": 85.15,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.28952777680829533
+        },
+        {
+          "caso_id": "grupos-validacion-015",
+          "horas_uso": 11.55,
+          "consumo_kwh": 220.8,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2148027543661653
+        },
+        {
+          "caso_id": "grupos-validacion-016",
+          "horas_uso": 2.8,
+          "consumo_kwh": 47.09,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.09693174317278411
+        },
+        {
+          "caso_id": "grupos-validacion-017",
+          "horas_uso": 5.5,
+          "consumo_kwh": 67.73,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.3584408897009532
+        },
+        {
+          "caso_id": "grupos-validacion-018",
+          "horas_uso": 17.08,
+          "consumo_kwh": 65.24,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.3267245625915549
+        },
+        {
+          "caso_id": "grupos-validacion-019",
+          "horas_uso": 18.91,
+          "consumo_kwh": 99.83,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.29634375890747544
+        },
+        {
+          "caso_id": "grupos-validacion-020",
+          "horas_uso": 20.32,
+          "consumo_kwh": 81.84,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.19376851742429232
+        },
+        {
+          "caso_id": "grupos-validacion-021",
+          "horas_uso": 19.42,
+          "consumo_kwh": 57.28,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2232091050507419
+        },
+        {
+          "caso_id": "grupos-validacion-022",
+          "horas_uso": 10.11,
+          "consumo_kwh": 235.7,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.08673285682419797
+        },
+        {
+          "caso_id": "grupos-validacion-023",
+          "horas_uso": 11.73,
+          "consumo_kwh": 252.58,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2604528467139133
+        },
+        {
+          "caso_id": "grupos-validacion-024",
+          "horas_uso": 3.59,
+          "consumo_kwh": 74.74,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.06290810657004413
+        },
+        {
+          "caso_id": "grupos-validacion-025",
+          "horas_uso": 12.41,
+          "consumo_kwh": 217.47,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.3321465092699755
+        },
+        {
+          "caso_id": "grupos-validacion-026",
+          "horas_uso": 19.84,
+          "consumo_kwh": 81.12,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.12675160390885448
+        },
+        {
+          "caso_id": "grupos-validacion-027",
+          "horas_uso": 17.72,
+          "consumo_kwh": 112.6,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.4945887115832377
+        },
+        {
+          "caso_id": "grupos-validacion-028",
+          "horas_uso": 20.47,
+          "consumo_kwh": 93.4,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.29502787656261475
+        },
+        {
+          "caso_id": "grupos-validacion-029",
+          "horas_uso": 10.32,
+          "consumo_kwh": 209.12,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.31901828080385025
+        },
+        {
+          "caso_id": "grupos-validacion-030",
+          "horas_uso": 2.09,
+          "consumo_kwh": 85.34,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.195623611604496
+        },
+        {
+          "caso_id": "grupos-validacion-031",
+          "horas_uso": 20.3,
+          "consumo_kwh": 60.65,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.249432720471612
+        },
+        {
+          "caso_id": "grupos-validacion-032",
+          "horas_uso": 1.87,
+          "consumo_kwh": 51.66,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.17696674135603557
+        },
+        {
+          "caso_id": "grupos-validacion-033",
+          "horas_uso": 1.56,
+          "consumo_kwh": 80.63,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.24653227022027574
+        },
+        {
+          "caso_id": "grupos-validacion-034",
+          "horas_uso": 3.37,
+          "consumo_kwh": 57.69,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.22618401346829597
+        },
+        {
+          "caso_id": "grupos-validacion-035",
+          "horas_uso": 18.85,
+          "consumo_kwh": 84.61,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.11811548153229771
+        },
+        {
+          "caso_id": "grupos-validacion-036",
+          "horas_uso": 11.66,
+          "consumo_kwh": 237.18,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.14538316338880525
+        },
+        {
+          "caso_id": "grupos-validacion-037",
+          "horas_uso": 11.92,
+          "consumo_kwh": 235.78,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.18201850560162958
+        },
+        {
+          "caso_id": "grupos-validacion-038",
+          "horas_uso": 10.5,
+          "consumo_kwh": 233.43,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.035426832305080785
+        },
+        {
+          "caso_id": "grupos-validacion-039",
+          "horas_uso": 0.51,
+          "consumo_kwh": 58.55,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.3793607187845958
+        },
+        {
+          "caso_id": "grupos-validacion-040",
+          "horas_uso": 11.46,
+          "consumo_kwh": 234.04,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.11445806243622447
+        },
+        {
+          "caso_id": "grupos-validacion-041",
+          "horas_uso": 1.89,
+          "consumo_kwh": 51.31,
+          "fuera_rango": false,
+          "grupo": 1,
+          "distancia_centro": 0.1718062281258421
+        },
+        {
+          "caso_id": "grupos-validacion-042",
+          "horas_uso": 11.8,
+          "consumo_kwh": 248.44,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2293891764597448
+        },
+        {
+          "caso_id": "grupos-validacion-043",
+          "horas_uso": 10.54,
+          "consumo_kwh": 227.09,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.09994758137009127
+        },
+        {
+          "caso_id": "grupos-validacion-044",
+          "horas_uso": 18.02,
+          "consumo_kwh": 60.26,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.24523504366865068
+        },
+        {
+          "caso_id": "grupos-validacion-045",
+          "horas_uso": 18.45,
+          "consumo_kwh": 92.56,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.22969228548985823
+        },
+        {
+          "caso_id": "grupos-validacion-046",
+          "horas_uso": 11.08,
+          "consumo_kwh": 237.48,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.06382201527645202
+        },
+        {
+          "caso_id": "grupos-validacion-047",
+          "horas_uso": 17.72,
+          "consumo_kwh": 78.14,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.21049700154543727
+        },
+        {
+          "caso_id": "grupos-validacion-048",
+          "horas_uso": 18.31,
+          "consumo_kwh": 67.13,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.15649972117797462
+        },
+        {
+          "caso_id": "grupos-validacion-049",
+          "horas_uso": 12.22,
+          "consumo_kwh": 250.91,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.2955920960586185
+        },
+        {
+          "caso_id": "grupos-validacion-050",
+          "horas_uso": 2.93,
+          "consumo_kwh": 59.06,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.2113905810202028
+        },
+        {
+          "caso_id": "grupos-validacion-051",
+          "horas_uso": 19.12,
+          "consumo_kwh": 77.22,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.021824711847014497
+        },
+        {
+          "caso_id": "grupos-validacion-052",
+          "horas_uso": 17.19,
+          "consumo_kwh": 75.98,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.2865646960036591
+        },
+        {
+          "caso_id": "grupos-validacion-053",
+          "horas_uso": 4.59,
+          "consumo_kwh": 76.63,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.20834079752684065
+        },
+        {
+          "caso_id": "grupos-validacion-054",
+          "horas_uso": 11.2,
+          "consumo_kwh": 224.13,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.15278824661280274
+        },
+        {
+          "caso_id": "grupos-validacion-055",
+          "horas_uso": 3.92,
+          "consumo_kwh": 67.48,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.15228205124148925
+        },
+        {
+          "caso_id": "grupos-validacion-056",
+          "horas_uso": 19.96,
+          "consumo_kwh": 91.48,
+          "fuera_rango": false,
+          "grupo": 2,
+          "distancia_centro": 0.23026483750424098
+        },
+        {
+          "caso_id": "grupos-validacion-057",
+          "horas_uso": 12.35,
+          "consumo_kwh": 248.96,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.29677771721138546
+        },
+        {
+          "caso_id": "grupos-validacion-058",
+          "horas_uso": 12.34,
+          "consumo_kwh": 268.65,
+          "fuera_rango": true,
+          "grupo": 0,
+          "distancia_centro": 0.47220060300290184
+        },
+        {
+          "caso_id": "grupos-validacion-059",
+          "horas_uso": 10.88,
+          "consumo_kwh": 233.67,
+          "fuera_rango": false,
+          "grupo": 0,
+          "distancia_centro": 0.03297219529442482
+        },
+        {
+          "caso_id": "grupos-validacion-060",
+          "horas_uso": 2.75,
+          "consumo_kwh": 58.84,
+          "fuera_rango": false,
+          "grupo": 3,
+          "distancia_centro": 0.22028910947728794
+        }
+      ]
+    }
+  },
+  "criterio": {
+    "metrica": "silueta",
+    "conjunto": "validacion",
+    "orden_desempate": [
+      "k2",
+      "k3",
+      "k4"
+    ],
+    "sentido": "maximizar",
+    "reajuste": false
+  },
+  "seleccionado": "k3",
+  "estabilidad": {
+    "k2": [
+      {
+        "semilla": 29,
+        "ari": 1.0
+      },
+      {
+        "semilla": 47,
+        "ari": 1.0
+      }
+    ],
+    "k3": [
+      {
+        "semilla": 29,
+        "ari": 1.0
+      },
+      {
+        "semilla": 47,
+        "ari": 1.0
+      }
+    ],
+    "k4": [
+      {
+        "semilla": 29,
+        "ari": 1.0
+      },
+      {
+        "semilla": 47,
+        "ari": 1.0
+      }
+    ]
+  }
+}
