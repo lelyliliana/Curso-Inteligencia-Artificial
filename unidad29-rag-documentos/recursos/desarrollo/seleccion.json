@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "k": 3,
+  "huellas": {
+    "datos/manifiesto.json": "5c31f46704160121902c9ce30056f9703736acf4bad037636f498c79ff21cff6",
+    "datos/desarrollo.json": "cf3cf3bda88f9bc0f8a53256111dd95d89b61c36036c9c8f528ea025aa9d3e71",
+    "datos/cierre.json": "0a3f55ad3b915552a4b45c0257d5acc7ac59dd3fd9507b59fffdb8d4ca37313f",
+    "datos/esquema.json": "dbd5e835995f9f1649295ddf1c74169e3726f701d99206e4f340c144a992676d",
+    "datos/protocolo.md": "d69dffd74d60cadbd88a5501f18116a4d17bad57d7136d5700ddc7aaf31344a2",
+    "prompts/sistema.txt": "7fe432ea974c9cb6033dd21d37fa0323efb374a64d2b20e732ba3a9eff065837",
+    "ejemplos/rag.py": "5209b8249cc1333cfbe57d6601e96128398765a8cd9aa0248ba9ce93d1f2f65b",
+    "ejemplos/motor.py": "f10e40736537244bcfbb6741088ff46763e2e8fd80a56effbf88cf17e22b469b",
+    "datos/documentos/D01.txt": "1ed3220e1a1a99046844ee0b067bfeff4aa04909698f459ac007c9c9486dd967",
+    "datos/documentos/D02.txt": "d4b714709771197f96a3869184b3fc37c0479ecea1faec0a2eea4cd7893cb289",
+    "datos/documentos/D03.txt": "dac3d99dac84314490fd9e979a34acfcb394d6ff5a5222c85d132a52af239f98",
+    "datos/documentos/D04.txt": "d086dcee295e55bfb7b90af3816801b82f5bb361f1db040882e63d0df94ac40e",
+    "datos/documentos/D05.txt": "ed7016ef472d8d90326d7a7552f3fa72ead6a0e1f268cc16e279cfc23cf43d15",
+    "datos/documentos/D06.txt": "57c6b0bff335fb601208e669858460aabe51e69e64b6b7aa7ccb566f444e8168",
+    "datos/documentos/D07.txt": "89a8c17c3e1384f0e37af9365e74023dd5ec0f1c1694f59dc86a9a2d0977c0d8",
+    "datos/documentos/D08.txt": "5cc6581eb225e708b921350343f7b23ca4152f18f091a887315f9b8dcf45ea32",
+    "datos/documentos/D09.txt": "deb17121703a23da9a93500eb35839f88af40932026ffcae8fd3954b5f7a1a9b",
+    "datos/documentos/D10.txt": "7e3994a154e99385df50a8db9aaea5f9e624005c9ac929532321213c2aff2033",
+    "datos/documentos/D11.txt": "bb06d7c6fce43e97418c6bad3444165637fe050b2cf4a10d628e2e24e0ac6304",
+    "datos/documentos/D12.txt": "886261fd6b03c6a0d89584dddbb35f36fa02690ef6c368822fcc7a6058a1f367",
+    "../unidad28-embeddings-busqueda/ejemplos/busqueda.py": "b92666403db16118b269ca8bdec4bba748238eaf605275f46d97936112774f32",
+    "../unidad27-prompts-evaluacion/ejemplos/contratos.py": "568b9462a99eadc87abb4c98c4aea126c60891c1fea17c8cd0840e7058fb1fc8",
+    "../unidad26-inferencia-servicios/ejemplos/servicios.py": "c626bf921b8746f5e751dfd7df21d919cc330e5335aec01642e99e4b212a5e58",
+    "../unidad26-inferencia-servicios/ejemplos/evaluacion.py": "ba52bd543ed6c3fc0884d219c6cad5c942c3c200f8afd67cc9bed017e4a86574"
+  },
+  "criterio": "max_aceptadas_empate_k_menor",
+  "inventarios": {
+    "embedding": {
+      "version_ollama": "0.34.2",
+      "digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+      "bytes_modelo": 1157672605,
+      "detalles": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "bert",
+        "families": [
+          "bert"
+        ],
+        "parameter_size": "566.70M",
+        "quantization_level": "F16"
+      },
+      "capacidades": [
+        "embedding"
+      ],
+      "parametros_modelo": null,
+      "licencia": "mit",
+      "licencia_sha256": "a406579cd136771c705c521db86ca7d60a6f3de7c9b5460e6193a2df27861bde",
+      "plantilla_sha256": "b507b9c2f6ca642bffcd06665ea7c91f235fd32daeefdf875a0f938db05fb315"
+    },
+    "generador": {
+      "version_ollama": "0.34.2",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "bytes_modelo": 5225388164,
+      "detalles": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q4_K_M"
+      },
+      "capacidades": [
+        "completion",
+        "tools",
+        "thinking"
+      ],
+      "parametros_modelo": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+      "licencia": "apache-2.0",
+      "licencia_sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+      "plantilla_sha256": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4"
+    }
+  },
+  "indice_sha256": "9052da54dbf8a393b8b198105006c1f8b3fb893ba253cd828f4d924ec8937152",
+  "registro_desarrollo_sha256": "465637f8288ebcf7dcb56f2ba03d49b94484a04f3b8320987b2e77b522da2524",
+  "resumenes": [
+    {
+      "k": 1,
+      "n": 10,
+      "contrato": 10,
+      "finalizada": 10,
+      "forma": 10,
+      "contexto_suficiente": 7,
+      "apoyo": 9,
+      "objetivo": 7,
+      "aceptada": 7,
+      "n_con_evidencias": 8,
+      "recall_medio": 0.75,
+      "salidas_con_citas": 8,
+      "salidas_con_citas_validas": 8,
+      "salidas_con_citas_apoyadas": 7,
+      "familias": 5,
+      "familias_completas": 3,
+      "extractiva_literal": 10,
+      "extractiva_util": 5,
+      "por_estado": {
+        "ok": {
+          "n": 6,
+          "aceptadas": 5
+        },
+        "ausente": {
+          "n": 2,
+          "aceptadas": 2
+        },
+        "conflicto": {
+          "n": 2,
+          "aceptadas": 0
+        }
+      },
+      "fallos": {
+        "contexto_incompleto": 3
+      },
+      "mediana_pared_s": 8.344186674999946,
+      "tokens_salida_total": 298
+    },
+    {
+      "k": 3,
+      "n": 10,
+      "contrato": 10,
+      "finalizada": 10,
+      "forma": 10,
+      "contexto_suficiente": 10,
+      "apoyo": 10,
+      "objetivo": 10,
+      "aceptada": 10,
+      "n_con_evidencias": 8,
+      "recall_medio": 1.0,
+      "salidas_con_citas": 8,
+      "salidas_con_citas_validas": 8,
+      "salidas_con_citas_apoyadas": 8,
+      "familias": 5,
+      "familias_completas": 5,
+      "extractiva_literal": 10,
+      "extractiva_util": 5,
+      "por_estado": {
+        "ok": {
+          "n": 6,
+          "aceptadas": 6
+        },
+        "ausente": {
+          "n": 2,
+          "aceptadas": 2
+        },
+        "conflicto": {
+          "n": 2,
+          "aceptadas": 2
+        }
+      },
+      "fallos": {},
+      "mediana_pared_s": 12.347184754500631,
+      "tokens_salida_total": 312
+    }
+  ]
+}

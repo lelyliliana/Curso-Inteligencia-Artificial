@@ -1,0 +1,63 @@
+{
+  "ranking_artificial": [
+    {
+      "id": "D01:p01",
+      "puntuacion": 1.0
+    },
+    {
+      "id": "D01:p02",
+      "puntuacion": 0.5
+    },
+    {
+      "id": "D02:p01",
+      "puntuacion": 0.3333333333333333
+    }
+  ],
+  "completo": {
+    "fragmentos": [
+      {
+        "id": "D01:p01",
+        "titulo": "Centro Nácar: préstamos",
+        "version": "1",
+        "linea_inicio": 1,
+        "linea_fin": 1,
+        "texto": "El plazo de préstamo del Centro Nácar es de 9 días."
+      },
+      {
+        "id": "D01:p02",
+        "titulo": "Centro Nácar: préstamos",
+        "version": "1",
+        "linea_inicio": 3,
+        "linea_fin": 3,
+        "texto": "Para renovar un préstamo del Centro Nácar debes acudir al mostrador con el comprobante."
+      },
+      {
+        "id": "D02:p01",
+        "titulo": "Sala Marea: capacidad",
+        "version": "1",
+        "linea_inicio": 1,
+        "linea_fin": 1,
+        "texto": "La capacidad máxima de la Sala Marea es de 42 personas."
+      }
+    ],
+    "caracteres": 516,
+    "omitidos": []
+  },
+  "limitado": {
+    "fragmentos": [
+      {
+        "id": "D01:p01",
+        "titulo": "Centro Nácar: préstamos",
+        "version": "1",
+        "linea_inicio": 1,
+        "linea_fin": 1,
+        "texto": "El plazo de préstamo del Centro Nácar es de 9 días."
+      }
+    ],
+    "caracteres": 160,
+    "omitidos": [
+      "D01:p02",
+      "D02:p01"
+    ]
+  }
+}

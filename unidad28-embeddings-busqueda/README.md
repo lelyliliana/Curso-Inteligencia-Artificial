@@ -232,4 +232,4 @@ python herramientas/verificar_curso.py
 
 Las **48 pruebas** comprueban geometría, equivalencia con scikit-learn, métricas, familias, capturas, incompatibilidades, selección, huellas y recarga. No llaman a Ollama. Las dos figuras se derivan de los informes JSON; sus versiones [SVG de desarrollo](recursos/desarrollo/recuperacion.svg) y [SVG de cierre](recursos/cierre/recuperacion.svg) permiten ampliar etiquetas. Las fuentes externas se consultaron el 10 de octubre de 2026; sus enlaces y condiciones pueden cambiar.
 
-Antes de avanzar, explica por qué F07a tiene Recall@3=1 y RR@3=0,5, y por qué D19 no demuestra el precio de un curso. La siguiente unidad prevista es la **29 — RAG con documentos**, pendiente de desarrollo.
+Antes de avanzar, explica por qué F07a tiene Recall@3=1 y RR@3=0,5, y por qué D19 no demuestra el precio de un curso. Continúa con la [Unidad 29 — RAG con documentos](../unidad29-rag-documentos/README.md).

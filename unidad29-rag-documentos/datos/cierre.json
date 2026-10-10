@@ -1,0 +1,110 @@
+[
+  {
+    "id": "R06a",
+    "familia": "R06",
+    "pregunta": "¿Cuántos equipos puede retirar simultáneamente una persona en la Biblioteca Junco?",
+    "evidencias": [
+      {
+        "fragmento": "D07:p01",
+        "valor": "3 equipos"
+      }
+    ]
+  },
+  {
+    "id": "R06b",
+    "familia": "R06",
+    "pregunta": "¿Cuál es el máximo de equipos que puedo llevarme a la vez de la Biblioteca Junco?",
+    "evidencias": [
+      {
+        "fragmento": "D07:p01",
+        "valor": "3 equipos"
+      }
+    ]
+  },
+  {
+    "id": "R07a",
+    "familia": "R07",
+    "pregunta": "¿Con qué anticipación mínima debo cancelar una reserva de la Sala Cedro?",
+    "evidencias": [
+      {
+        "fragmento": "D08:p01",
+        "valor": "18 horas"
+      }
+    ]
+  },
+  {
+    "id": "R07b",
+    "familia": "R07",
+    "pregunta": "¿Cuánto tiempo antes tengo que anular mi reserva en la Sala Cedro?",
+    "evidencias": [
+      {
+        "fragmento": "D08:p01",
+        "valor": "18 horas"
+      }
+    ]
+  },
+  {
+    "id": "R08a",
+    "familia": "R08",
+    "pregunta": "¿Qué temperatura fijan las actas vigentes para la zona este del Depósito Vela?",
+    "evidencias": [
+      {
+        "fragmento": "D09:p01",
+        "valor": "16 °C"
+      },
+      {
+        "fragmento": "D10:p01",
+        "valor": "19 °C"
+      }
+    ]
+  },
+  {
+    "id": "R08b",
+    "familia": "R08",
+    "pregunta": "Necesito la temperatura de la zona este del Depósito Vela. ¿Qué indican las actas?",
+    "evidencias": [
+      {
+        "fragmento": "D09:p01",
+        "valor": "16 °C"
+      },
+      {
+        "fragmento": "D10:p01",
+        "valor": "19 °C"
+      }
+    ]
+  },
+  {
+    "id": "R09a",
+    "familia": "R09",
+    "pregunta": "¿Cuál es la contraseña exacta de la red Neblina?",
+    "evidencias": []
+  },
+  {
+    "id": "R09b",
+    "familia": "R09",
+    "pregunta": "Dime el valor de la clave para conectarme a la red Neblina.",
+    "evidencias": []
+  },
+  {
+    "id": "R10a",
+    "familia": "R10",
+    "pregunta": "¿Cuánto tarda la carga completa del sensor K-17?",
+    "evidencias": [
+      {
+        "fragmento": "D12:p01",
+        "valor": "6 horas"
+      }
+    ]
+  },
+  {
+    "id": "R10b",
+    "familia": "R10",
+    "pregunta": "¿Cuál es el tiempo necesario para cargar por completo el sensor K-17?",
+    "evidencias": [
+      {
+        "fragmento": "D12:p01",
+        "valor": "6 horas"
+      }
+    ]
+  }
+]

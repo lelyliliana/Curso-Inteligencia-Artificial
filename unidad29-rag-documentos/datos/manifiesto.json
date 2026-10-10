@@ -1,0 +1,74 @@
+[
+  {
+    "id": "D01",
+    "titulo": "Centro Nácar: préstamos",
+    "version": "1",
+    "ruta": "documentos/D01.txt"
+  },
+  {
+    "id": "D02",
+    "titulo": "Sala Marea: capacidad",
+    "version": "1",
+    "ruta": "documentos/D02.txt"
+  },
+  {
+    "id": "D03",
+    "titulo": "Taller Bruma: agenda A",
+    "version": "1",
+    "ruta": "documentos/D03.txt"
+  },
+  {
+    "id": "D04",
+    "titulo": "Taller Bruma: agenda B",
+    "version": "1",
+    "ruta": "documentos/D04.txt"
+  },
+  {
+    "id": "D05",
+    "titulo": "Laboratorio Granate: acceso",
+    "version": "1",
+    "ruta": "documentos/D05.txt"
+  },
+  {
+    "id": "D06",
+    "titulo": "Sensor T-42: muestreo",
+    "version": "1",
+    "ruta": "documentos/D06.txt"
+  },
+  {
+    "id": "D07",
+    "titulo": "Biblioteca Junco: equipos",
+    "version": "1",
+    "ruta": "documentos/D07.txt"
+  },
+  {
+    "id": "D08",
+    "titulo": "Sala Cedro: cancelaciones",
+    "version": "1",
+    "ruta": "documentos/D08.txt"
+  },
+  {
+    "id": "D09",
+    "titulo": "Depósito Vela: acta A",
+    "version": "1",
+    "ruta": "documentos/D09.txt"
+  },
+  {
+    "id": "D10",
+    "titulo": "Depósito Vela: acta B",
+    "version": "1",
+    "ruta": "documentos/D10.txt"
+  },
+  {
+    "id": "D11",
+    "titulo": "Red Neblina: conexión",
+    "version": "1",
+    "ruta": "documentos/D11.txt"
+  },
+  {
+    "id": "D12",
+    "titulo": "Sensor K-17: carga",
+    "version": "1",
+    "ruta": "documentos/D12.txt"
+  }
+]

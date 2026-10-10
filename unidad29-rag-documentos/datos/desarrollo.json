@@ -1,0 +1,110 @@
+[
+  {
+    "id": "R01a",
+    "familia": "R01",
+    "pregunta": "¿Cuál es el plazo de préstamo del Centro Nácar?",
+    "evidencias": [
+      {
+        "fragmento": "D01:p01",
+        "valor": "9 días"
+      }
+    ]
+  },
+  {
+    "id": "R01b",
+    "familia": "R01",
+    "pregunta": "¿Durante cuántos días me prestan un recurso en el Centro Nácar?",
+    "evidencias": [
+      {
+        "fragmento": "D01:p01",
+        "valor": "9 días"
+      }
+    ]
+  },
+  {
+    "id": "R02a",
+    "familia": "R02",
+    "pregunta": "¿Cuál es la capacidad máxima de la Sala Marea?",
+    "evidencias": [
+      {
+        "fragmento": "D02:p01",
+        "valor": "42 personas"
+      }
+    ]
+  },
+  {
+    "id": "R02b",
+    "familia": "R02",
+    "pregunta": "¿Cuánta gente cabe como máximo en la Sala Marea?",
+    "evidencias": [
+      {
+        "fragmento": "D02:p01",
+        "valor": "42 personas"
+      }
+    ]
+  },
+  {
+    "id": "R03a",
+    "familia": "R03",
+    "pregunta": "¿A qué hora comienza el Taller Bruma según las agendas vigentes?",
+    "evidencias": [
+      {
+        "fragmento": "D03:p01",
+        "valor": "09:00"
+      },
+      {
+        "fragmento": "D04:p01",
+        "valor": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "R03b",
+    "familia": "R03",
+    "pregunta": "Necesito la hora de inicio del Taller Bruma. ¿Qué dicen las agendas?",
+    "evidencias": [
+      {
+        "fragmento": "D03:p01",
+        "valor": "09:00"
+      },
+      {
+        "fragmento": "D04:p01",
+        "valor": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "R04a",
+    "familia": "R04",
+    "pregunta": "¿Cuál es la tarifa exacta de entrada al Laboratorio Granate?",
+    "evidencias": []
+  },
+  {
+    "id": "R04b",
+    "familia": "R04",
+    "pregunta": "¿Cuánto dinero hay que pagar para entrar al Laboratorio Granate?",
+    "evidencias": []
+  },
+  {
+    "id": "R05a",
+    "familia": "R05",
+    "pregunta": "¿Cuál es el intervalo de muestreo del sensor T-42?",
+    "evidencias": [
+      {
+        "fragmento": "D06:p01",
+        "valor": "7 minutos"
+      }
+    ]
+  },
+  {
+    "id": "R05b",
+    "familia": "R05",
+    "pregunta": "¿Cada cuánto toma una lectura el sensor T-42?",
+    "evidencias": [
+      {
+        "fragmento": "D06:p01",
+        "valor": "7 minutos"
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 28.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 29.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 28
+ULTIMA_UNIDAD = 29
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -192,6 +192,12 @@ def main():
                     esperado = "Seleccionado con desarrollo: bge_m3"
                 elif programa.name == "03_metricas_recuperacion.py":
                     esperado = "P@3=0.333333; Recall@3=0.500; RR@3=0.500; MRR@3=0.250"
+                elif programa.name == "01_preparar_documentos.py":
+                    esperado = "Documentos: 12; fragmentos: 24; texto original conservado."
+                elif programa.name == "02_evaluar_rag.py":
+                    esperado = "Seleccionado con desarrollo: k=3"
+                elif programa.name == "03_auditar_citas.py":
+                    esperado = "Salidas artificiales: 12; aceptadas=2."
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -447,6 +453,28 @@ def main():
                 (["--consulta-id", "F01a", "--metodo", "tfidf"], "D12 · coseno=0.2153"),
                 (["--texto", "zxqv", "--metodo", "tfidf"], "Consulta sin términos conocidos")):
             ejecutar([prefijo + "buscar.py", *extras], esperado)
+            ejecutados += 1
+        prefijo = "unidad29-rag-documentos/ejemplos/"
+        ejecutar([prefijo + "01_preparar_documentos.py", "--salida", Path(carpeta)/"u29-preparacion"],
+                 "Contexto habitual: 3; con 300 caracteres: 1.")
+        ejecutados += 1
+        desarrollo = Path(carpeta)/"u29-desarrollo"
+        ejecutar([prefijo + "02_evaluar_rag.py", "--salida", desarrollo, "--graficos"],
+                 "Recarga: contexto, respuestas evaluadas y elección idénticos.")
+        ejecutados += 1
+        ejecutar([prefijo + "02_evaluar_rag.py", "--fase", "cierre", "--indice", desarrollo/"indice.json",
+                  "--seleccion", desarrollo/"seleccion.json", "--salida", Path(carpeta)/"u29-cierre", "--graficos"],
+                 "k=3: aceptadas=10/10; contexto suficiente=10/10; extractiva útil=6/10")
+        ejecutados += 1
+        ejecutar(["unidad29-rag-documentos/soluciones/03_auditar_citas.py", "--salida", Path(carpeta)/"u29-auditoria"],
+                 "Salidas artificiales: 12; aceptadas=2.")
+        ejecutados += 1
+        for extras, esperado in (
+                (["--caso", "R03a", "--k", "1"], "apoyo=True; objetivo=False; aceptada=False"),
+                (["--caso", "R03a", "--k", "3"], "apoyo=True; objetivo=True; aceptada=True"),
+                (["--caso", "R05b", "--k", "1"], "apoyo=False; objetivo=False; aceptada=False"),
+                (["--fase", "cierre", "--caso", "R08a"], "apoyo=True; objetivo=True; aceptada=True")):
+            ejecutar([prefijo + "ver_respuesta.py", *extras], esperado)
             ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

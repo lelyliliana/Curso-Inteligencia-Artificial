@@ -1,0 +1,250 @@
+{
+  "origen": "salidas_artificiales",
+  "filas": [
+    {
+      "nombre": "correcta",
+      "texto_artificial": "{\"estado\":\"ok\",\"dato\":\"9 días\",\"citas\":[\"D01:p01\"]}",
+      "forma": true,
+      "citas_validas": true,
+      "apoyo": true,
+      "objetivo": true,
+      "aceptada": true,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "objeto": {
+        "estado": "ok",
+        "dato": "9 días",
+        "citas": [
+          "D01:p01"
+        ]
+      }
+    },
+    {
+      "nombre": "dato falso con ID real",
+      "texto_artificial": "{\"estado\":\"ok\",\"dato\":\"99 días\",\"citas\":[\"D01:p01\"]}",
+      "forma": true,
+      "citas_validas": true,
+      "apoyo": false,
+      "objetivo": false,
+      "aceptada": false,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "objeto": {
+        "estado": "ok",
+        "dato": "99 días",
+        "citas": [
+          "D01:p01"
+        ]
+      },
+      "fallo": "apoyo"
+    },
+    {
+      "nombre": "dato correcto con fuente ajena",
+      "texto_artificial": "{\"estado\":\"ok\",\"dato\":\"9 días\",\"citas\":[\"D02:p01\"]}",
+      "forma": true,
+      "citas_validas": true,
+      "apoyo": false,
+      "objetivo": true,
+      "aceptada": false,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "objeto": {
+        "estado": "ok",
+        "dato": "9 días",
+        "citas": [
+          "D02:p01"
+        ]
+      },
+      "fallo": "apoyo"
+    },
+    {
+      "nombre": "ID existente fuera del contexto",
+      "texto_artificial": "{\"estado\":\"ok\",\"dato\":\"9 días\",\"citas\":[\"D01:p02\"]}",
+      "forma": true,
+      "citas_validas": false,
+      "apoyo": false,
+      "objetivo": false,
+      "aceptada": false,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "objeto": {
+        "estado": "ok",
+        "dato": "9 días",
+        "citas": [
+          "D01:p02"
+        ]
+      },
+      "fallo": "cita_fuera_contexto"
+    },
+    {
+      "nombre": "ID inventado",
+      "texto_artificial": "{\"estado\":\"ok\",\"dato\":\"9 días\",\"citas\":[\"D99:p01\"]}",
+      "forma": true,
+      "citas_validas": false,
+      "apoyo": false,
+      "objetivo": false,
+      "aceptada": false,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "objeto": {
+        "estado": "ok",
+        "dato": "9 días",
+        "citas": [
+          "D99:p01"
+        ]
+      },
+      "fallo": "cita_fuera_contexto"
+    },
+    {
+      "nombre": "sin cita",
+      "texto_artificial": "{\"estado\":\"ok\",\"dato\":\"9 días\",\"citas\":[]}",
+      "forma": false,
+      "citas_validas": false,
+      "apoyo": false,
+      "objetivo": false,
+      "aceptada": false,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "objeto": {
+        "estado": "ok",
+        "dato": "9 días",
+        "citas": []
+      },
+      "fallo": "forma_coherencia"
+    },
+    {
+      "nombre": "ausencia falsa",
+      "texto_artificial": "{\"estado\":\"ausente\",\"dato\":null,\"citas\":[]}",
+      "forma": true,
+      "citas_validas": true,
+      "apoyo": false,
+      "objetivo": false,
+      "aceptada": false,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "objeto": {
+        "estado": "ausente",
+        "dato": null,
+        "citas": []
+      },
+      "fallo": "apoyo"
+    },
+    {
+      "nombre": "clave duplicada",
+      "texto_artificial": "{\"estado\":\"ausente\",\"estado\":\"ok\",\"dato\":\"9 días\",\"citas\":[\"D01:p01\"]}",
+      "forma": false,
+      "citas_validas": false,
+      "apoyo": false,
+      "objetivo": false,
+      "aceptada": false,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "fallo": "json"
+    },
+    {
+      "nombre": "bloque Markdown",
+      "texto_artificial": "```json\n{\"estado\":\"ok\",\"dato\":\"9 días\",\"citas\":[\"D01:p01\"]}\n```",
+      "forma": false,
+      "citas_validas": false,
+      "apoyo": false,
+      "objetivo": false,
+      "aceptada": false,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "fallo": "json"
+    },
+    {
+      "nombre": "respuesta truncada",
+      "texto_artificial": "{\"estado\":\"ok\",\"dato\":\"9 días\",\"citas\":[\"D01:p01\"]}",
+      "forma": true,
+      "citas_validas": true,
+      "apoyo": true,
+      "objetivo": true,
+      "aceptada": false,
+      "finalizada": false,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "objeto": {
+        "estado": "ok",
+        "dato": "9 días",
+        "citas": [
+          "D01:p01"
+        ]
+      },
+      "fallo": "parada"
+    },
+    {
+      "nombre": "espacios y mayúsculas",
+      "texto_artificial": "{\"estado\":\"ok\",\"dato\":\" 9 DÍAS \",\"citas\":[\"D01:p01\"]}",
+      "forma": true,
+      "citas_validas": true,
+      "apoyo": true,
+      "objetivo": true,
+      "aceptada": true,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "objeto": {
+        "estado": "ok",
+        "dato": " 9 DÍAS ",
+        "citas": [
+          "D01:p01"
+        ]
+      }
+    },
+    {
+      "nombre": "conflicto inventado",
+      "texto_artificial": "{\"estado\":\"conflicto\",\"dato\":null,\"citas\":[\"D01:p01\",\"D02:p01\"]}",
+      "forma": true,
+      "citas_validas": true,
+      "apoyo": false,
+      "objetivo": false,
+      "aceptada": false,
+      "finalizada": true,
+      "recall": 1.0,
+      "contexto_suficiente": true,
+      "estado_contexto": "ok",
+      "estado_objetivo": "ok",
+      "objeto": {
+        "estado": "conflicto",
+        "dato": null,
+        "citas": [
+          "D01:p01",
+          "D02:p01"
+        ]
+      },
+      "fallo": "apoyo"
+    }
+  ]
+}

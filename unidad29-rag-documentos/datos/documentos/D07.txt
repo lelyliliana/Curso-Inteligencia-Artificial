@@ -1,0 +1,3 @@
+En la Biblioteca Junco cada persona puede retirar como máximo 3 equipos simultáneamente.
+
+El préstamo de equipos de la Biblioteca Junco tiene un plazo de 4 días.

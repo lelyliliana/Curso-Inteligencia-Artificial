@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "estado": {"type": "string", "enum": ["ok", "ausente", "conflicto"]},
+    "dato": {"type": ["string", "null"]},
+    "citas": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  },
+  "required": ["estado", "dato", "citas"],
+  "additionalProperties": false
+}
