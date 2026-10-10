@@ -1,0 +1,2 @@
+# Dependencias numéricas y gráficas; PyTorch CPU se instala por separado.
+-r ../unidad09-exploracion-visualizacion/requirements.txt

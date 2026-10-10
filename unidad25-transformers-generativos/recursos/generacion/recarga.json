@@ -1,0 +1,5 @@
+{
+  "logits_iguales_por_sha256": true,
+  "evaluacion_y_generacion_iguales": true,
+  "modelo_sha256": "4afda546a95e3fe1c2ccae9ce19a6f06c775c7628b76b1784275f4b3980af0f3"
+}

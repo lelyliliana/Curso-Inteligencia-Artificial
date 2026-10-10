@@ -227,4 +227,4 @@ python herramientas/verificar_curso.py
 
 Las 44 pruebas contrastan coseno con conjuntos de usuarios, métricas manuales, candidatos, cortes y datos regenerados; transiciones, actualización Q, truncamiento, azar, evaluación sin aprendizaje y recarga. El verificador general requiere el entorno completo explicado en el [índice](../README.md).
 
-Antes de continuar, comprueba que puedes explicar un fallo de arranque en frío, reconstruir una actualización Q y rechazar la afirmación «mayor éxito siempre significa mejor política». La siguiente unidad prevista es la **25 — Transformers y modelos generativos**, pendiente de desarrollo.
+Antes de continuar, comprueba que puedes explicar un fallo de arranque en frío, reconstruir una actualización Q y rechazar la afirmación «mayor éxito siempre significa mejor política». Continúa con la [Unidad 25 — Transformers y modelos generativos](../unidad25-transformers-generativos/README.md).

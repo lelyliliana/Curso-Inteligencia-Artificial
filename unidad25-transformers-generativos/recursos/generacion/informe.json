@@ -1,0 +1,5173 @@
+{
+  "logits_validacion_sha256": "626b975d5912281c0a87a533260303bf9d3271c3446c4a7d90ad0a750711afd4",
+  "seleccionado": "transformer",
+  "vocabulario": [
+    "<pad>",
+    "<bos>",
+    "<eos>",
+    "<unk>",
+    ".",
+    "agua",
+    "aire",
+    "alto",
+    "bajo",
+    "breve",
+    "con",
+    "detallado",
+    "en",
+    "energia",
+    "este",
+    "formato",
+    "informe",
+    "medio",
+    "nivel",
+    "norte",
+    "oeste",
+    "salida",
+    "suelo",
+    "sur",
+    "tema",
+    "zona"
+  ],
+  "fuentes": {
+    "entrenamiento": "b39b121c7d925d96482c962bcc27074e6c27a4e43516378f0ee6351dc9ae99e7",
+    "validacion": "2b001a96c98ccadfaf3cd31d0581cf4d30c9b4448f67b0ca3248427f749ea622"
+  },
+  "entrenamiento_transformer": {
+    "epoca_elegida": 300,
+    "epocas_totales": 300,
+    "curva": [
+      {
+        "epoca": 0,
+        "ce_train": 3.6775898933410645,
+        "ce_val": 3.6784820556640625
+      },
+      {
+        "epoca": 10,
+        "ce_train": 2.299405813217163,
+        "ce_val": 2.314927816390991
+      },
+      {
+        "epoca": 20,
+        "ce_train": 1.443871259689331,
+        "ce_val": 1.4938735961914062
+      },
+      {
+        "epoca": 30,
+        "ce_train": 0.9660214185714722,
+        "ce_val": 1.0053694248199463
+      },
+      {
+        "epoca": 40,
+        "ce_train": 0.6713290810585022,
+        "ce_val": 0.7264381647109985
+      },
+      {
+        "epoca": 50,
+        "ce_train": 0.47663798928260803,
+        "ce_val": 0.5457671284675598
+      },
+      {
+        "epoca": 60,
+        "ce_train": 0.2698621153831482,
+        "ce_val": 0.33694249391555786
+      },
+      {
+        "epoca": 70,
+        "ce_train": 0.13354317843914032,
+        "ce_val": 0.17672309279441833
+      },
+      {
+        "epoca": 80,
+        "ce_train": 0.061320770531892776,
+        "ce_val": 0.08140116184949875
+      },
+      {
+        "epoca": 90,
+        "ce_train": 0.03383394703269005,
+        "ce_val": 0.041028331965208054
+      },
+      {
+        "epoca": 100,
+        "ce_train": 0.0221092589199543,
+        "ce_val": 0.025254186242818832
+      },
+      {
+        "epoca": 110,
+        "ce_train": 0.01653267629444599,
+        "ce_val": 0.018357977271080017
+      },
+      {
+        "epoca": 120,
+        "ce_train": 0.013322880491614342,
+        "ce_val": 0.014660472981631756
+      },
+      {
+        "epoca": 130,
+        "ce_train": 0.011196509003639221,
+        "ce_val": 0.012262764386832714
+      },
+      {
+        "epoca": 140,
+        "ce_train": 0.00967288576066494,
+        "ce_val": 0.010580269619822502
+      },
+      {
+        "epoca": 150,
+        "ce_train": 0.008507694117724895,
+        "ce_val": 0.009298005141317844
+      },
+      {
+        "epoca": 160,
+        "ce_train": 0.007577330339699984,
+        "ce_val": 0.008272305130958557
+      },
+      {
+        "epoca": 170,
+        "ce_train": 0.006812728475779295,
+        "ce_val": 0.007429223973304033
+      },
+      {
+        "epoca": 180,
+        "ce_train": 0.00617157993838191,
+        "ce_val": 0.006722610909491777
+      },
+      {
+        "epoca": 190,
+        "ce_train": 0.005625796038657427,
+        "ce_val": 0.006121671758592129
+      },
+      {
+        "epoca": 200,
+        "ce_train": 0.005155662540346384,
+        "ce_val": 0.005604907870292664
+      },
+      {
+        "epoca": 210,
+        "ce_train": 0.004746807273477316,
+        "ce_val": 0.0051563153974711895
+      },
+      {
+        "epoca": 220,
+        "ce_train": 0.004388350062072277,
+        "ce_val": 0.0047635664232075214
+      },
+      {
+        "epoca": 230,
+        "ce_train": 0.0040718610398471355,
+        "ce_val": 0.004417215473949909
+      },
+      {
+        "epoca": 240,
+        "ce_train": 0.0037906805519014597,
+        "ce_val": 0.004109795205295086
+      },
+      {
+        "epoca": 250,
+        "ce_train": 0.0035394991282373667,
+        "ce_val": 0.0038354138378053904
+      },
+      {
+        "epoca": 260,
+        "ce_train": 0.0033139761071652174,
+        "ce_val": 0.003589289728552103
+      },
+      {
+        "epoca": 270,
+        "ce_train": 0.0031105834059417248,
+        "ce_val": 0.0033674854785203934
+      },
+      {
+        "epoca": 280,
+        "ce_train": 0.0029263992328196764,
+        "ce_val": 0.0031667400617152452
+      },
+      {
+        "epoca": 290,
+        "ce_train": 0.0027589581441134214,
+        "ce_val": 0.0029843910597264767
+      },
+      {
+        "epoca": 300,
+        "ce_train": 0.002606234047561884,
+        "ce_val": 0.002818136941641569
+      }
+    ],
+    "n_parametros": 11066
+  },
+  "candidatos": {
+    "bigramas": {
+      "entrenamiento": {
+        "n_documentos": 64,
+        "n_familias": 32,
+        "n_tokens": 448,
+        "ce": 0.9179644584655762,
+        "perplejidad": 2.504187820133879,
+        "exactitud_token": 0.6428571343421936,
+        "casos": [
+          {
+            "id": "agua-oeste-alto-breve",
+            "esperado": "agua oeste alto .",
+            "generacion": {
+              "prefijo": "tema agua zona oeste nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "agua-oeste-alto-detallado",
+            "esperado": "informe agua en oeste con nivel alto .",
+            "generacion": {
+              "prefijo": "tema agua zona oeste nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "energia-sur-alto-breve",
+            "esperado": "energia sur alto .",
+            "generacion": {
+              "prefijo": "tema energia zona sur nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "energia-sur-alto-detallado",
+            "esperado": "informe energia en sur con nivel alto .",
+            "generacion": {
+              "prefijo": "tema energia zona sur nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "aire-este-bajo-breve",
+            "esperado": "aire este bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona este nivel bajo formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "aire",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "aire-este-bajo-detallado",
+            "esperado": "informe aire en este con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona este nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "bajo",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "suelo-oeste-bajo-breve",
+            "esperado": "suelo oeste bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel bajo formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "en"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-oeste-bajo-detallado",
+            "esperado": "informe suelo en oeste con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "este"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "suelo-oeste-alto-breve",
+            "esperado": "suelo oeste alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-oeste-alto-detallado",
+            "esperado": "informe suelo en oeste con nivel alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "energia-este-medio-breve",
+            "esperado": "energia este medio .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "energia-este-medio-detallado",
+            "esperado": "informe energia en este con nivel medio .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "aire-norte-medio-breve",
+            "esperado": "aire norte medio .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "aire",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "aire-norte-medio-detallado",
+            "esperado": "informe aire en norte con nivel medio .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "norte",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "aire-norte-alto-breve",
+            "esperado": "aire norte alto .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "aire",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "aire-norte-alto-detallado",
+            "esperado": "informe aire en norte con nivel alto .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "norte",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "agua-norte-alto-breve",
+            "esperado": "agua norte alto .",
+            "generacion": {
+              "prefijo": "tema agua zona norte nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "agua-norte-alto-detallado",
+            "esperado": "informe agua en norte con nivel alto .",
+            "generacion": {
+              "prefijo": "tema agua zona norte nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "agua-oeste-medio-breve",
+            "esperado": "agua oeste medio .",
+            "generacion": {
+              "prefijo": "tema agua zona oeste nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "agua-oeste-medio-detallado",
+            "esperado": "informe agua en oeste con nivel medio .",
+            "generacion": {
+              "prefijo": "tema agua zona oeste nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "energia-oeste-bajo-breve",
+            "esperado": "energia oeste bajo .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel bajo formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "en"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "energia-oeste-bajo-detallado",
+            "esperado": "informe energia en oeste con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "este"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "aire-norte-bajo-breve",
+            "esperado": "aire norte bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel bajo formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "aire",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "en"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "aire-norte-bajo-detallado",
+            "esperado": "informe aire en norte con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "norte",
+                "predicho": "este"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "aire-sur-bajo-breve",
+            "esperado": "aire sur bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel bajo formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "aire",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "en"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "aire-sur-bajo-detallado",
+            "esperado": "informe aire en sur con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "sur",
+                "predicho": "este"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "agua-sur-medio-breve",
+            "esperado": "agua sur medio .",
+            "generacion": {
+              "prefijo": "tema agua zona sur nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "agua-sur-medio-detallado",
+            "esperado": "informe agua en sur con nivel medio .",
+            "generacion": {
+              "prefijo": "tema agua zona sur nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "aire-este-alto-breve",
+            "esperado": "aire este alto .",
+            "generacion": {
+              "prefijo": "tema aire zona este nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "aire",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "aire-este-alto-detallado",
+            "esperado": "informe aire en este con nivel alto .",
+            "generacion": {
+              "prefijo": "tema aire zona este nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-norte-medio-breve",
+            "esperado": "suelo norte medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-norte-medio-detallado",
+            "esperado": "informe suelo en norte con nivel medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "aire-sur-medio-breve",
+            "esperado": "aire sur medio .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "aire",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "aire-sur-medio-detallado",
+            "esperado": "informe aire en sur con nivel medio .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "sur",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "suelo-este-alto-breve",
+            "esperado": "suelo este alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-este-alto-detallado",
+            "esperado": "informe suelo en este con nivel alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              }
+            ]
+          },
+          {
+            "id": "suelo-este-bajo-breve",
+            "esperado": "suelo este bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel bajo formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-este-bajo-detallado",
+            "esperado": "informe suelo en este con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "agua-este-medio-breve",
+            "esperado": "agua este medio .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "agua-este-medio-detallado",
+            "esperado": "informe agua en este con nivel medio .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "suelo-oeste-medio-breve",
+            "esperado": "suelo oeste medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-oeste-medio-detallado",
+            "esperado": "informe suelo en oeste con nivel medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "energia-este-alto-breve",
+            "esperado": "energia este alto .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "energia-este-alto-detallado",
+            "esperado": "informe energia en este con nivel alto .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "aire"
+              }
+            ]
+          },
+          {
+            "id": "energia-oeste-medio-breve",
+            "esperado": "energia oeste medio .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "energia-oeste-medio-detallado",
+            "esperado": "informe energia en oeste con nivel medio .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "energia-este-bajo-breve",
+            "esperado": "energia este bajo .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel bajo formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "energia-este-bajo-detallado",
+            "esperado": "informe energia en este con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "aire-sur-alto-breve",
+            "esperado": "aire sur alto .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "aire",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "aire-sur-alto-detallado",
+            "esperado": "informe aire en sur con nivel alto .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "sur",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "energia-oeste-alto-breve",
+            "esperado": "energia oeste alto .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "energia-oeste-alto-detallado",
+            "esperado": "informe energia en oeste con nivel alto .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "suelo-sur-bajo-breve",
+            "esperado": "suelo sur bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel bajo formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "en"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-sur-bajo-detallado",
+            "esperado": "informe suelo en sur con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "este"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "suelo-este-medio-breve",
+            "esperado": "suelo este medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-este-medio-detallado",
+            "esperado": "informe suelo en este con nivel medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "energia-norte-alto-breve",
+            "esperado": "energia norte alto .",
+            "generacion": {
+              "prefijo": "tema energia zona norte nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "energia-norte-alto-detallado",
+            "esperado": "informe energia en norte con nivel alto .",
+            "generacion": {
+              "prefijo": "tema energia zona norte nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "aire-oeste-alto-breve",
+            "esperado": "aire oeste alto .",
+            "generacion": {
+              "prefijo": "tema aire zona oeste nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "aire",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "oeste",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "aire-oeste-alto-detallado",
+            "esperado": "informe aire en oeste con nivel alto .",
+            "generacion": {
+              "prefijo": "tema aire zona oeste nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "oeste",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "suelo-sur-alto-breve",
+            "esperado": "suelo sur alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-sur-alto-detallado",
+            "esperado": "informe suelo en sur con nivel alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "agua-este-bajo-breve",
+            "esperado": "agua este bajo .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel bajo formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "agua-este-bajo-detallado",
+            "esperado": "informe agua en este con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "alto"
+              }
+            ]
+          }
+        ],
+        "n_exactas": 1,
+        "exactitud_secuencia": 0.015625
+      },
+      "validacion": {
+        "n_documentos": 16,
+        "n_familias": 8,
+        "n_tokens": 112,
+        "ce": 0.9881075620651245,
+        "perplejidad": 2.68614629419136,
+        "exactitud_token": 0.6071428656578064,
+        "casos": [
+          {
+            "id": "energia-norte-medio-breve",
+            "esperado": "energia norte medio .",
+            "generacion": {
+              "prefijo": "tema energia zona norte nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "energia-norte-medio-detallado",
+            "esperado": "informe energia en norte con nivel medio .",
+            "generacion": {
+              "prefijo": "tema energia zona norte nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "suelo-norte-bajo-breve",
+            "esperado": "suelo norte bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel bajo formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "en"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-norte-bajo-detallado",
+            "esperado": "informe suelo en norte con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "este"
+              },
+              {
+                "esperado": "bajo",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "agua-sur-alto-breve",
+            "esperado": "agua sur alto .",
+            "generacion": {
+              "prefijo": "tema agua zona sur nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "agua-sur-alto-detallado",
+            "esperado": "informe agua en sur con nivel alto .",
+            "generacion": {
+              "prefijo": "tema agua zona sur nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "suelo-norte-alto-breve",
+            "esperado": "suelo norte alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-norte-alto-detallado",
+            "esperado": "informe suelo en norte con nivel alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "este"
+              }
+            ]
+          },
+          {
+            "id": "suelo-sur-medio-breve",
+            "esperado": "suelo sur medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "suelo-sur-medio-detallado",
+            "esperado": "informe suelo en sur con nivel medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "suelo",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "agua-norte-medio-breve",
+            "esperado": "agua norte medio .",
+            "generacion": {
+              "prefijo": "tema agua zona norte nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "agua-norte-medio-detallado",
+            "esperado": "informe agua en norte con nivel medio .",
+            "generacion": {
+              "prefijo": "tema agua zona norte nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "norte",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          },
+          {
+            "id": "agua-este-alto-breve",
+            "esperado": "agua este alto .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel alto formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "este",
+                "predicho": "en"
+              },
+              {
+                "esperado": "alto",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "agua-este-alto-detallado",
+            "esperado": "informe agua en este con nivel alto .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "agua",
+                "predicho": "aire"
+              }
+            ]
+          },
+          {
+            "id": "energia-sur-medio-breve",
+            "esperado": "energia sur medio .",
+            "generacion": {
+              "prefijo": "tema energia zona sur nivel medio formato breve salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "informe"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "en"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "con"
+              }
+            ]
+          },
+          {
+            "id": "energia-sur-medio-detallado",
+            "esperado": "informe energia en sur con nivel medio .",
+            "generacion": {
+              "prefijo": "tema energia zona sur nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": false,
+            "errores_teacher_forcing": [
+              {
+                "esperado": "energia",
+                "predicho": "aire"
+              },
+              {
+                "esperado": "sur",
+                "predicho": "este"
+              },
+              {
+                "esperado": "medio",
+                "predicho": "alto"
+              }
+            ]
+          }
+        ],
+        "n_exactas": 0,
+        "exactitud_secuencia": 0.0
+      }
+    },
+    "transformer": {
+      "entrenamiento": {
+        "n_documentos": 64,
+        "n_familias": 32,
+        "n_tokens": 448,
+        "ce": 0.002606234047561884,
+        "perplejidad": 1.0026096332278955,
+        "exactitud_token": 1.0,
+        "casos": [
+          {
+            "id": "agua-oeste-alto-breve",
+            "esperado": "agua oeste alto .",
+            "generacion": {
+              "prefijo": "tema agua zona oeste nivel alto formato breve salida",
+              "tokens": [
+                "agua",
+                "oeste",
+                "alto",
+                "."
+              ],
+              "texto": "agua oeste alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-oeste-alto-detallado",
+            "esperado": "informe agua en oeste con nivel alto .",
+            "generacion": {
+              "prefijo": "tema agua zona oeste nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "agua",
+                "en",
+                "oeste",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe agua en oeste con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-sur-alto-breve",
+            "esperado": "energia sur alto .",
+            "generacion": {
+              "prefijo": "tema energia zona sur nivel alto formato breve salida",
+              "tokens": [
+                "energia",
+                "sur",
+                "alto",
+                "."
+              ],
+              "texto": "energia sur alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-sur-alto-detallado",
+            "esperado": "informe energia en sur con nivel alto .",
+            "generacion": {
+              "prefijo": "tema energia zona sur nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "energia",
+                "en",
+                "sur",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe energia en sur con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-este-bajo-breve",
+            "esperado": "aire este bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona este nivel bajo formato breve salida",
+              "tokens": [
+                "aire",
+                "este",
+                "bajo",
+                "."
+              ],
+              "texto": "aire este bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-este-bajo-detallado",
+            "esperado": "informe aire en este con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona este nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "bajo",
+                "."
+              ],
+              "texto": "informe aire en este con nivel bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-oeste-bajo-breve",
+            "esperado": "suelo oeste bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel bajo formato breve salida",
+              "tokens": [
+                "suelo",
+                "oeste",
+                "bajo",
+                "."
+              ],
+              "texto": "suelo oeste bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-oeste-bajo-detallado",
+            "esperado": "informe suelo en oeste con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "oeste",
+                "con",
+                "nivel",
+                "bajo",
+                "."
+              ],
+              "texto": "informe suelo en oeste con nivel bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-oeste-alto-breve",
+            "esperado": "suelo oeste alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel alto formato breve salida",
+              "tokens": [
+                "suelo",
+                "oeste",
+                "alto",
+                "."
+              ],
+              "texto": "suelo oeste alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-oeste-alto-detallado",
+            "esperado": "informe suelo en oeste con nivel alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "oeste",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe suelo en oeste con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-este-medio-breve",
+            "esperado": "energia este medio .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel medio formato breve salida",
+              "tokens": [
+                "energia",
+                "este",
+                "medio",
+                "."
+              ],
+              "texto": "energia este medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-este-medio-detallado",
+            "esperado": "informe energia en este con nivel medio .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "energia",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe energia en este con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-norte-medio-breve",
+            "esperado": "aire norte medio .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel medio formato breve salida",
+              "tokens": [
+                "aire",
+                "norte",
+                "medio",
+                "."
+              ],
+              "texto": "aire norte medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-norte-medio-detallado",
+            "esperado": "informe aire en norte con nivel medio .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "norte",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe aire en norte con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-norte-alto-breve",
+            "esperado": "aire norte alto .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel alto formato breve salida",
+              "tokens": [
+                "aire",
+                "norte",
+                "alto",
+                "."
+              ],
+              "texto": "aire norte alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-norte-alto-detallado",
+            "esperado": "informe aire en norte con nivel alto .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "norte",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en norte con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-norte-alto-breve",
+            "esperado": "agua norte alto .",
+            "generacion": {
+              "prefijo": "tema agua zona norte nivel alto formato breve salida",
+              "tokens": [
+                "agua",
+                "norte",
+                "alto",
+                "."
+              ],
+              "texto": "agua norte alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-norte-alto-detallado",
+            "esperado": "informe agua en norte con nivel alto .",
+            "generacion": {
+              "prefijo": "tema agua zona norte nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "agua",
+                "en",
+                "norte",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe agua en norte con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-oeste-medio-breve",
+            "esperado": "agua oeste medio .",
+            "generacion": {
+              "prefijo": "tema agua zona oeste nivel medio formato breve salida",
+              "tokens": [
+                "agua",
+                "oeste",
+                "medio",
+                "."
+              ],
+              "texto": "agua oeste medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-oeste-medio-detallado",
+            "esperado": "informe agua en oeste con nivel medio .",
+            "generacion": {
+              "prefijo": "tema agua zona oeste nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "agua",
+                "en",
+                "oeste",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe agua en oeste con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-oeste-bajo-breve",
+            "esperado": "energia oeste bajo .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel bajo formato breve salida",
+              "tokens": [
+                "energia",
+                "oeste",
+                "bajo",
+                "."
+              ],
+              "texto": "energia oeste bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-oeste-bajo-detallado",
+            "esperado": "informe energia en oeste con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "energia",
+                "en",
+                "oeste",
+                "con",
+                "nivel",
+                "bajo",
+                "."
+              ],
+              "texto": "informe energia en oeste con nivel bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-norte-bajo-breve",
+            "esperado": "aire norte bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel bajo formato breve salida",
+              "tokens": [
+                "aire",
+                "norte",
+                "bajo",
+                "."
+              ],
+              "texto": "aire norte bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-norte-bajo-detallado",
+            "esperado": "informe aire en norte con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona norte nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "norte",
+                "con",
+                "nivel",
+                "bajo",
+                "."
+              ],
+              "texto": "informe aire en norte con nivel bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-sur-bajo-breve",
+            "esperado": "aire sur bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel bajo formato breve salida",
+              "tokens": [
+                "aire",
+                "sur",
+                "bajo",
+                "."
+              ],
+              "texto": "aire sur bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-sur-bajo-detallado",
+            "esperado": "informe aire en sur con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "sur",
+                "con",
+                "nivel",
+                "bajo",
+                "."
+              ],
+              "texto": "informe aire en sur con nivel bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-sur-medio-breve",
+            "esperado": "agua sur medio .",
+            "generacion": {
+              "prefijo": "tema agua zona sur nivel medio formato breve salida",
+              "tokens": [
+                "agua",
+                "sur",
+                "medio",
+                "."
+              ],
+              "texto": "agua sur medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-sur-medio-detallado",
+            "esperado": "informe agua en sur con nivel medio .",
+            "generacion": {
+              "prefijo": "tema agua zona sur nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "agua",
+                "en",
+                "sur",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe agua en sur con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-este-alto-breve",
+            "esperado": "aire este alto .",
+            "generacion": {
+              "prefijo": "tema aire zona este nivel alto formato breve salida",
+              "tokens": [
+                "aire",
+                "este",
+                "alto",
+                "."
+              ],
+              "texto": "aire este alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-este-alto-detallado",
+            "esperado": "informe aire en este con nivel alto .",
+            "generacion": {
+              "prefijo": "tema aire zona este nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-norte-medio-breve",
+            "esperado": "suelo norte medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel medio formato breve salida",
+              "tokens": [
+                "suelo",
+                "norte",
+                "medio",
+                "."
+              ],
+              "texto": "suelo norte medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-norte-medio-detallado",
+            "esperado": "informe suelo en norte con nivel medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "norte",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe suelo en norte con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-sur-medio-breve",
+            "esperado": "aire sur medio .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel medio formato breve salida",
+              "tokens": [
+                "aire",
+                "sur",
+                "medio",
+                "."
+              ],
+              "texto": "aire sur medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-sur-medio-detallado",
+            "esperado": "informe aire en sur con nivel medio .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "sur",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe aire en sur con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-este-alto-breve",
+            "esperado": "suelo este alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel alto formato breve salida",
+              "tokens": [
+                "suelo",
+                "este",
+                "alto",
+                "."
+              ],
+              "texto": "suelo este alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-este-alto-detallado",
+            "esperado": "informe suelo en este con nivel alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe suelo en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-este-bajo-breve",
+            "esperado": "suelo este bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel bajo formato breve salida",
+              "tokens": [
+                "suelo",
+                "este",
+                "bajo",
+                "."
+              ],
+              "texto": "suelo este bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-este-bajo-detallado",
+            "esperado": "informe suelo en este con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "bajo",
+                "."
+              ],
+              "texto": "informe suelo en este con nivel bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-este-medio-breve",
+            "esperado": "agua este medio .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel medio formato breve salida",
+              "tokens": [
+                "agua",
+                "este",
+                "medio",
+                "."
+              ],
+              "texto": "agua este medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-este-medio-detallado",
+            "esperado": "informe agua en este con nivel medio .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "agua",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe agua en este con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-oeste-medio-breve",
+            "esperado": "suelo oeste medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel medio formato breve salida",
+              "tokens": [
+                "suelo",
+                "oeste",
+                "medio",
+                "."
+              ],
+              "texto": "suelo oeste medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-oeste-medio-detallado",
+            "esperado": "informe suelo en oeste con nivel medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona oeste nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "oeste",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe suelo en oeste con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-este-alto-breve",
+            "esperado": "energia este alto .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel alto formato breve salida",
+              "tokens": [
+                "energia",
+                "este",
+                "alto",
+                "."
+              ],
+              "texto": "energia este alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-este-alto-detallado",
+            "esperado": "informe energia en este con nivel alto .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "energia",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe energia en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-oeste-medio-breve",
+            "esperado": "energia oeste medio .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel medio formato breve salida",
+              "tokens": [
+                "energia",
+                "oeste",
+                "medio",
+                "."
+              ],
+              "texto": "energia oeste medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-oeste-medio-detallado",
+            "esperado": "informe energia en oeste con nivel medio .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "energia",
+                "en",
+                "oeste",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe energia en oeste con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-este-bajo-breve",
+            "esperado": "energia este bajo .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel bajo formato breve salida",
+              "tokens": [
+                "energia",
+                "este",
+                "bajo",
+                "."
+              ],
+              "texto": "energia este bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-este-bajo-detallado",
+            "esperado": "informe energia en este con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema energia zona este nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "energia",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "bajo",
+                "."
+              ],
+              "texto": "informe energia en este con nivel bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-sur-alto-breve",
+            "esperado": "aire sur alto .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel alto formato breve salida",
+              "tokens": [
+                "aire",
+                "sur",
+                "alto",
+                "."
+              ],
+              "texto": "aire sur alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-sur-alto-detallado",
+            "esperado": "informe aire en sur con nivel alto .",
+            "generacion": {
+              "prefijo": "tema aire zona sur nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "sur",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en sur con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-oeste-alto-breve",
+            "esperado": "energia oeste alto .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel alto formato breve salida",
+              "tokens": [
+                "energia",
+                "oeste",
+                "alto",
+                "."
+              ],
+              "texto": "energia oeste alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-oeste-alto-detallado",
+            "esperado": "informe energia en oeste con nivel alto .",
+            "generacion": {
+              "prefijo": "tema energia zona oeste nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "energia",
+                "en",
+                "oeste",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe energia en oeste con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-sur-bajo-breve",
+            "esperado": "suelo sur bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel bajo formato breve salida",
+              "tokens": [
+                "suelo",
+                "sur",
+                "bajo",
+                "."
+              ],
+              "texto": "suelo sur bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-sur-bajo-detallado",
+            "esperado": "informe suelo en sur con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "sur",
+                "con",
+                "nivel",
+                "bajo",
+                "."
+              ],
+              "texto": "informe suelo en sur con nivel bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-este-medio-breve",
+            "esperado": "suelo este medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel medio formato breve salida",
+              "tokens": [
+                "suelo",
+                "este",
+                "medio",
+                "."
+              ],
+              "texto": "suelo este medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-este-medio-detallado",
+            "esperado": "informe suelo en este con nivel medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona este nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe suelo en este con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-norte-alto-breve",
+            "esperado": "energia norte alto .",
+            "generacion": {
+              "prefijo": "tema energia zona norte nivel alto formato breve salida",
+              "tokens": [
+                "energia",
+                "norte",
+                "alto",
+                "."
+              ],
+              "texto": "energia norte alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-norte-alto-detallado",
+            "esperado": "informe energia en norte con nivel alto .",
+            "generacion": {
+              "prefijo": "tema energia zona norte nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "energia",
+                "en",
+                "norte",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe energia en norte con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-oeste-alto-breve",
+            "esperado": "aire oeste alto .",
+            "generacion": {
+              "prefijo": "tema aire zona oeste nivel alto formato breve salida",
+              "tokens": [
+                "aire",
+                "oeste",
+                "alto",
+                "."
+              ],
+              "texto": "aire oeste alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "aire-oeste-alto-detallado",
+            "esperado": "informe aire en oeste con nivel alto .",
+            "generacion": {
+              "prefijo": "tema aire zona oeste nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "aire",
+                "en",
+                "oeste",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe aire en oeste con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-sur-alto-breve",
+            "esperado": "suelo sur alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel alto formato breve salida",
+              "tokens": [
+                "suelo",
+                "sur",
+                "alto",
+                "."
+              ],
+              "texto": "suelo sur alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-sur-alto-detallado",
+            "esperado": "informe suelo en sur con nivel alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "sur",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe suelo en sur con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-este-bajo-breve",
+            "esperado": "agua este bajo .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel bajo formato breve salida",
+              "tokens": [
+                "agua",
+                "este",
+                "bajo",
+                "."
+              ],
+              "texto": "agua este bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-este-bajo-detallado",
+            "esperado": "informe agua en este con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "agua",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "bajo",
+                "."
+              ],
+              "texto": "informe agua en este con nivel bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          }
+        ],
+        "n_exactas": 64,
+        "exactitud_secuencia": 1.0
+      },
+      "validacion": {
+        "n_documentos": 16,
+        "n_familias": 8,
+        "n_tokens": 112,
+        "ce": 0.002818136941641569,
+        "perplejidad": 1.002822111622407,
+        "exactitud_token": 1.0,
+        "casos": [
+          {
+            "id": "energia-norte-medio-breve",
+            "esperado": "energia norte medio .",
+            "generacion": {
+              "prefijo": "tema energia zona norte nivel medio formato breve salida",
+              "tokens": [
+                "energia",
+                "norte",
+                "medio",
+                "."
+              ],
+              "texto": "energia norte medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-norte-medio-detallado",
+            "esperado": "informe energia en norte con nivel medio .",
+            "generacion": {
+              "prefijo": "tema energia zona norte nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "energia",
+                "en",
+                "norte",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe energia en norte con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-norte-bajo-breve",
+            "esperado": "suelo norte bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel bajo formato breve salida",
+              "tokens": [
+                "suelo",
+                "norte",
+                "bajo",
+                "."
+              ],
+              "texto": "suelo norte bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-norte-bajo-detallado",
+            "esperado": "informe suelo en norte con nivel bajo .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel bajo formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "norte",
+                "con",
+                "nivel",
+                "bajo",
+                "."
+              ],
+              "texto": "informe suelo en norte con nivel bajo .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-sur-alto-breve",
+            "esperado": "agua sur alto .",
+            "generacion": {
+              "prefijo": "tema agua zona sur nivel alto formato breve salida",
+              "tokens": [
+                "agua",
+                "sur",
+                "alto",
+                "."
+              ],
+              "texto": "agua sur alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-sur-alto-detallado",
+            "esperado": "informe agua en sur con nivel alto .",
+            "generacion": {
+              "prefijo": "tema agua zona sur nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "agua",
+                "en",
+                "sur",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe agua en sur con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-norte-alto-breve",
+            "esperado": "suelo norte alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel alto formato breve salida",
+              "tokens": [
+                "suelo",
+                "norte",
+                "alto",
+                "."
+              ],
+              "texto": "suelo norte alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-norte-alto-detallado",
+            "esperado": "informe suelo en norte con nivel alto .",
+            "generacion": {
+              "prefijo": "tema suelo zona norte nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "norte",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe suelo en norte con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-sur-medio-breve",
+            "esperado": "suelo sur medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel medio formato breve salida",
+              "tokens": [
+                "suelo",
+                "sur",
+                "medio",
+                "."
+              ],
+              "texto": "suelo sur medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "suelo-sur-medio-detallado",
+            "esperado": "informe suelo en sur con nivel medio .",
+            "generacion": {
+              "prefijo": "tema suelo zona sur nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "suelo",
+                "en",
+                "sur",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe suelo en sur con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-norte-medio-breve",
+            "esperado": "agua norte medio .",
+            "generacion": {
+              "prefijo": "tema agua zona norte nivel medio formato breve salida",
+              "tokens": [
+                "agua",
+                "norte",
+                "medio",
+                "."
+              ],
+              "texto": "agua norte medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-norte-medio-detallado",
+            "esperado": "informe agua en norte con nivel medio .",
+            "generacion": {
+              "prefijo": "tema agua zona norte nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "agua",
+                "en",
+                "norte",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe agua en norte con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-este-alto-breve",
+            "esperado": "agua este alto .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel alto formato breve salida",
+              "tokens": [
+                "agua",
+                "este",
+                "alto",
+                "."
+              ],
+              "texto": "agua este alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "agua-este-alto-detallado",
+            "esperado": "informe agua en este con nivel alto .",
+            "generacion": {
+              "prefijo": "tema agua zona este nivel alto formato detallado salida",
+              "tokens": [
+                "informe",
+                "agua",
+                "en",
+                "este",
+                "con",
+                "nivel",
+                "alto",
+                "."
+              ],
+              "texto": "informe agua en este con nivel alto .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-sur-medio-breve",
+            "esperado": "energia sur medio .",
+            "generacion": {
+              "prefijo": "tema energia zona sur nivel medio formato breve salida",
+              "tokens": [
+                "energia",
+                "sur",
+                "medio",
+                "."
+              ],
+              "texto": "energia sur medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          },
+          {
+            "id": "energia-sur-medio-detallado",
+            "esperado": "informe energia en sur con nivel medio .",
+            "generacion": {
+              "prefijo": "tema energia zona sur nivel medio formato detallado salida",
+              "tokens": [
+                "informe",
+                "energia",
+                "en",
+                "sur",
+                "con",
+                "nivel",
+                "medio",
+                "."
+              ],
+              "texto": "informe energia en sur con nivel medio .",
+              "motivo": "eos",
+              "metodo": "codicioso",
+              "temperatura": 1.0,
+              "semilla": 2502,
+              "desconocidos_prefijo": 0
+            },
+            "exacta": true,
+            "errores_teacher_forcing": []
+          }
+        ],
+        "n_exactas": 16,
+        "exactitud_secuencia": 1.0
+      }
+    }
+  },
+  "diagnosticos": [
+    {
+      "prefijo": "tema energia zona norte nivel medio formato breve salida",
+      "tokens": [
+        "energia",
+        "norte",
+        "medio",
+        "."
+      ],
+      "texto": "energia norte medio .",
+      "motivo": "eos",
+      "metodo": "codicioso",
+      "temperatura": 1.0,
+      "semilla": 2502,
+      "desconocidos_prefijo": 0
+    },
+    {
+      "prefijo": "tema energia zona norte nivel medio formato breve salida",
+      "tokens": [
+        "energia",
+        "norte",
+        "medio",
+        "."
+      ],
+      "texto": "energia norte medio .",
+      "motivo": "eos",
+      "metodo": "muestreo",
+      "temperatura": 0.7,
+      "semilla": 2502,
+      "desconocidos_prefijo": 0
+    },
+    {
+      "prefijo": "tema energia zona norte nivel medio formato breve salida",
+      "tokens": [
+        "energia",
+        "norte",
+        "medio",
+        "."
+      ],
+      "texto": "energia norte medio .",
+      "motivo": "eos",
+      "metodo": "muestreo",
+      "temperatura": 1.3,
+      "semilla": 2502,
+      "desconocidos_prefijo": 0
+    },
+    {
+      "prefijo": "tema energia zona norte nivel medio formato detallado salida",
+      "tokens": [
+        "informe",
+        "energia",
+        "en",
+        "norte",
+        "con",
+        "nivel",
+        "medio",
+        "."
+      ],
+      "texto": "informe energia en norte con nivel medio .",
+      "motivo": "eos",
+      "metodo": "codicioso",
+      "temperatura": 1.0,
+      "semilla": 2502,
+      "desconocidos_prefijo": 0
+    },
+    {
+      "prefijo": "tema energia zona norte nivel medio formato detallado salida",
+      "tokens": [
+        "informe",
+        "energia",
+        "en",
+        "norte",
+        "con",
+        "nivel",
+        "medio",
+        "."
+      ],
+      "texto": "informe energia en norte con nivel medio .",
+      "motivo": "eos",
+      "metodo": "muestreo",
+      "temperatura": 0.7,
+      "semilla": 2502,
+      "desconocidos_prefijo": 0
+    },
+    {
+      "prefijo": "tema energia zona norte nivel medio formato detallado salida",
+      "tokens": [
+        "informe",
+        "energia",
+        "en",
+        "norte",
+        "con",
+        "nivel",
+        "medio",
+        "."
+      ],
+      "texto": "informe energia en norte con nivel medio .",
+      "motivo": "eos",
+      "metodo": "muestreo",
+      "temperatura": 1.3,
+      "semilla": 2502,
+      "desconocidos_prefijo": 0
+    },
+    {
+      "prefijo": "tema oceano zona norte nivel bajo formato breve salida",
+      "tokens": [
+        "suelo",
+        "norte",
+        "bajo",
+        "."
+      ],
+      "texto": "suelo norte bajo .",
+      "motivo": "eos",
+      "metodo": "codicioso",
+      "temperatura": 1.0,
+      "semilla": 2502,
+      "desconocidos_prefijo": 1
+    },
+    {
+      "prefijo": "tema oceano zona norte nivel bajo formato breve salida",
+      "tokens": [
+        "suelo",
+        "norte",
+        "bajo",
+        "."
+      ],
+      "texto": "suelo norte bajo .",
+      "motivo": "eos",
+      "metodo": "muestreo",
+      "temperatura": 0.7,
+      "semilla": 2502,
+      "desconocidos_prefijo": 1
+    },
+    {
+      "prefijo": "tema oceano zona norte nivel bajo formato breve salida",
+      "tokens": [
+        "suelo",
+        "norte",
+        "bajo",
+        "."
+      ],
+      "texto": "suelo norte bajo .",
+      "motivo": "eos",
+      "metodo": "muestreo",
+      "temperatura": 1.3,
+      "semilla": 2502,
+      "desconocidos_prefijo": 1
+    },
+    {
+      "prefijo": "tema agua zona",
+      "tokens": [
+        "."
+      ],
+      "texto": ".",
+      "motivo": "eos",
+      "metodo": "codicioso",
+      "temperatura": 1.0,
+      "semilla": 2502,
+      "desconocidos_prefijo": 0
+    },
+    {
+      "prefijo": "tema agua zona",
+      "tokens": [
+        "."
+      ],
+      "texto": ".",
+      "motivo": "eos",
+      "metodo": "muestreo",
+      "temperatura": 0.7,
+      "semilla": 2502,
+      "desconocidos_prefijo": 0
+    },
+    {
+      "prefijo": "tema agua zona",
+      "tokens": [
+        "."
+      ],
+      "texto": ".",
+      "motivo": "eos",
+      "metodo": "muestreo",
+      "temperatura": 1.3,
+      "semilla": 2502,
+      "desconocidos_prefijo": 0
+    }
+  ],
+  "prueba": null
+}

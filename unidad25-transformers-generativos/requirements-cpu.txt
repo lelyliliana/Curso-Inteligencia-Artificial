@@ -1,0 +1,2 @@
+# Reutiliza la versión CPU verificada en la Unidad 20.
+-r ../unidad20-pytorch/requirements-cpu.txt

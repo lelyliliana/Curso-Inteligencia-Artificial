@@ -1,0 +1,450 @@
+[
+  {
+    "id": "agua-oeste-alto-breve",
+    "familia": "agua-oeste-alto",
+    "formato": "breve",
+    "prefijo": "tema agua zona oeste nivel alto formato breve salida",
+    "continuacion": "agua oeste alto ."
+  },
+  {
+    "id": "agua-oeste-alto-detallado",
+    "familia": "agua-oeste-alto",
+    "formato": "detallado",
+    "prefijo": "tema agua zona oeste nivel alto formato detallado salida",
+    "continuacion": "informe agua en oeste con nivel alto ."
+  },
+  {
+    "id": "energia-sur-alto-breve",
+    "familia": "energia-sur-alto",
+    "formato": "breve",
+    "prefijo": "tema energia zona sur nivel alto formato breve salida",
+    "continuacion": "energia sur alto ."
+  },
+  {
+    "id": "energia-sur-alto-detallado",
+    "familia": "energia-sur-alto",
+    "formato": "detallado",
+    "prefijo": "tema energia zona sur nivel alto formato detallado salida",
+    "continuacion": "informe energia en sur con nivel alto ."
+  },
+  {
+    "id": "aire-este-bajo-breve",
+    "familia": "aire-este-bajo",
+    "formato": "breve",
+    "prefijo": "tema aire zona este nivel bajo formato breve salida",
+    "continuacion": "aire este bajo ."
+  },
+  {
+    "id": "aire-este-bajo-detallado",
+    "familia": "aire-este-bajo",
+    "formato": "detallado",
+    "prefijo": "tema aire zona este nivel bajo formato detallado salida",
+    "continuacion": "informe aire en este con nivel bajo ."
+  },
+  {
+    "id": "suelo-oeste-bajo-breve",
+    "familia": "suelo-oeste-bajo",
+    "formato": "breve",
+    "prefijo": "tema suelo zona oeste nivel bajo formato breve salida",
+    "continuacion": "suelo oeste bajo ."
+  },
+  {
+    "id": "suelo-oeste-bajo-detallado",
+    "familia": "suelo-oeste-bajo",
+    "formato": "detallado",
+    "prefijo": "tema suelo zona oeste nivel bajo formato detallado salida",
+    "continuacion": "informe suelo en oeste con nivel bajo ."
+  },
+  {
+    "id": "suelo-oeste-alto-breve",
+    "familia": "suelo-oeste-alto",
+    "formato": "breve",
+    "prefijo": "tema suelo zona oeste nivel alto formato breve salida",
+    "continuacion": "suelo oeste alto ."
+  },
+  {
+    "id": "suelo-oeste-alto-detallado",
+    "familia": "suelo-oeste-alto",
+    "formato": "detallado",
+    "prefijo": "tema suelo zona oeste nivel alto formato detallado salida",
+    "continuacion": "informe suelo en oeste con nivel alto ."
+  },
+  {
+    "id": "energia-este-medio-breve",
+    "familia": "energia-este-medio",
+    "formato": "breve",
+    "prefijo": "tema energia zona este nivel medio formato breve salida",
+    "continuacion": "energia este medio ."
+  },
+  {
+    "id": "energia-este-medio-detallado",
+    "familia": "energia-este-medio",
+    "formato": "detallado",
+    "prefijo": "tema energia zona este nivel medio formato detallado salida",
+    "continuacion": "informe energia en este con nivel medio ."
+  },
+  {
+    "id": "aire-norte-medio-breve",
+    "familia": "aire-norte-medio",
+    "formato": "breve",
+    "prefijo": "tema aire zona norte nivel medio formato breve salida",
+    "continuacion": "aire norte medio ."
+  },
+  {
+    "id": "aire-norte-medio-detallado",
+    "familia": "aire-norte-medio",
+    "formato": "detallado",
+    "prefijo": "tema aire zona norte nivel medio formato detallado salida",
+    "continuacion": "informe aire en norte con nivel medio ."
+  },
+  {
+    "id": "aire-norte-alto-breve",
+    "familia": "aire-norte-alto",
+    "formato": "breve",
+    "prefijo": "tema aire zona norte nivel alto formato breve salida",
+    "continuacion": "aire norte alto ."
+  },
+  {
+    "id": "aire-norte-alto-detallado",
+    "familia": "aire-norte-alto",
+    "formato": "detallado",
+    "prefijo": "tema aire zona norte nivel alto formato detallado salida",
+    "continuacion": "informe aire en norte con nivel alto ."
+  },
+  {
+    "id": "agua-norte-alto-breve",
+    "familia": "agua-norte-alto",
+    "formato": "breve",
+    "prefijo": "tema agua zona norte nivel alto formato breve salida",
+    "continuacion": "agua norte alto ."
+  },
+  {
+    "id": "agua-norte-alto-detallado",
+    "familia": "agua-norte-alto",
+    "formato": "detallado",
+    "prefijo": "tema agua zona norte nivel alto formato detallado salida",
+    "continuacion": "informe agua en norte con nivel alto ."
+  },
+  {
+    "id": "agua-oeste-medio-breve",
+    "familia": "agua-oeste-medio",
+    "formato": "breve",
+    "prefijo": "tema agua zona oeste nivel medio formato breve salida",
+    "continuacion": "agua oeste medio ."
+  },
+  {
+    "id": "agua-oeste-medio-detallado",
+    "familia": "agua-oeste-medio",
+    "formato": "detallado",
+    "prefijo": "tema agua zona oeste nivel medio formato detallado salida",
+    "continuacion": "informe agua en oeste con nivel medio ."
+  },
+  {
+    "id": "energia-oeste-bajo-breve",
+    "familia": "energia-oeste-bajo",
+    "formato": "breve",
+    "prefijo": "tema energia zona oeste nivel bajo formato breve salida",
+    "continuacion": "energia oeste bajo ."
+  },
+  {
+    "id": "energia-oeste-bajo-detallado",
+    "familia": "energia-oeste-bajo",
+    "formato": "detallado",
+    "prefijo": "tema energia zona oeste nivel bajo formato detallado salida",
+    "continuacion": "informe energia en oeste con nivel bajo ."
+  },
+  {
+    "id": "aire-norte-bajo-breve",
+    "familia": "aire-norte-bajo",
+    "formato": "breve",
+    "prefijo": "tema aire zona norte nivel bajo formato breve salida",
+    "continuacion": "aire norte bajo ."
+  },
+  {
+    "id": "aire-norte-bajo-detallado",
+    "familia": "aire-norte-bajo",
+    "formato": "detallado",
+    "prefijo": "tema aire zona norte nivel bajo formato detallado salida",
+    "continuacion": "informe aire en norte con nivel bajo ."
+  },
+  {
+    "id": "aire-sur-bajo-breve",
+    "familia": "aire-sur-bajo",
+    "formato": "breve",
+    "prefijo": "tema aire zona sur nivel bajo formato breve salida",
+    "continuacion": "aire sur bajo ."
+  },
+  {
+    "id": "aire-sur-bajo-detallado",
+    "familia": "aire-sur-bajo",
+    "formato": "detallado",
+    "prefijo": "tema aire zona sur nivel bajo formato detallado salida",
+    "continuacion": "informe aire en sur con nivel bajo ."
+  },
+  {
+    "id": "agua-sur-medio-breve",
+    "familia": "agua-sur-medio",
+    "formato": "breve",
+    "prefijo": "tema agua zona sur nivel medio formato breve salida",
+    "continuacion": "agua sur medio ."
+  },
+  {
+    "id": "agua-sur-medio-detallado",
+    "familia": "agua-sur-medio",
+    "formato": "detallado",
+    "prefijo": "tema agua zona sur nivel medio formato detallado salida",
+    "continuacion": "informe agua en sur con nivel medio ."
+  },
+  {
+    "id": "aire-este-alto-breve",
+    "familia": "aire-este-alto",
+    "formato": "breve",
+    "prefijo": "tema aire zona este nivel alto formato breve salida",
+    "continuacion": "aire este alto ."
+  },
+  {
+    "id": "aire-este-alto-detallado",
+    "familia": "aire-este-alto",
+    "formato": "detallado",
+    "prefijo": "tema aire zona este nivel alto formato detallado salida",
+    "continuacion": "informe aire en este con nivel alto ."
+  },
+  {
+    "id": "suelo-norte-medio-breve",
+    "familia": "suelo-norte-medio",
+    "formato": "breve",
+    "prefijo": "tema suelo zona norte nivel medio formato breve salida",
+    "continuacion": "suelo norte medio ."
+  },
+  {
+    "id": "suelo-norte-medio-detallado",
+    "familia": "suelo-norte-medio",
+    "formato": "detallado",
+    "prefijo": "tema suelo zona norte nivel medio formato detallado salida",
+    "continuacion": "informe suelo en norte con nivel medio ."
+  },
+  {
+    "id": "aire-sur-medio-breve",
+    "familia": "aire-sur-medio",
+    "formato": "breve",
+    "prefijo": "tema aire zona sur nivel medio formato breve salida",
+    "continuacion": "aire sur medio ."
+  },
+  {
+    "id": "aire-sur-medio-detallado",
+    "familia": "aire-sur-medio",
+    "formato": "detallado",
+    "prefijo": "tema aire zona sur nivel medio formato detallado salida",
+    "continuacion": "informe aire en sur con nivel medio ."
+  },
+  {
+    "id": "suelo-este-alto-breve",
+    "familia": "suelo-este-alto",
+    "formato": "breve",
+    "prefijo": "tema suelo zona este nivel alto formato breve salida",
+    "continuacion": "suelo este alto ."
+  },
+  {
+    "id": "suelo-este-alto-detallado",
+    "familia": "suelo-este-alto",
+    "formato": "detallado",
+    "prefijo": "tema suelo zona este nivel alto formato detallado salida",
+    "continuacion": "informe suelo en este con nivel alto ."
+  },
+  {
+    "id": "suelo-este-bajo-breve",
+    "familia": "suelo-este-bajo",
+    "formato": "breve",
+    "prefijo": "tema suelo zona este nivel bajo formato breve salida",
+    "continuacion": "suelo este bajo ."
+  },
+  {
+    "id": "suelo-este-bajo-detallado",
+    "familia": "suelo-este-bajo",
+    "formato": "detallado",
+    "prefijo": "tema suelo zona este nivel bajo formato detallado salida",
+    "continuacion": "informe suelo en este con nivel bajo ."
+  },
+  {
+    "id": "agua-este-medio-breve",
+    "familia": "agua-este-medio",
+    "formato": "breve",
+    "prefijo": "tema agua zona este nivel medio formato breve salida",
+    "continuacion": "agua este medio ."
+  },
+  {
+    "id": "agua-este-medio-detallado",
+    "familia": "agua-este-medio",
+    "formato": "detallado",
+    "prefijo": "tema agua zona este nivel medio formato detallado salida",
+    "continuacion": "informe agua en este con nivel medio ."
+  },
+  {
+    "id": "suelo-oeste-medio-breve",
+    "familia": "suelo-oeste-medio",
+    "formato": "breve",
+    "prefijo": "tema suelo zona oeste nivel medio formato breve salida",
+    "continuacion": "suelo oeste medio ."
+  },
+  {
+    "id": "suelo-oeste-medio-detallado",
+    "familia": "suelo-oeste-medio",
+    "formato": "detallado",
+    "prefijo": "tema suelo zona oeste nivel medio formato detallado salida",
+    "continuacion": "informe suelo en oeste con nivel medio ."
+  },
+  {
+    "id": "energia-este-alto-breve",
+    "familia": "energia-este-alto",
+    "formato": "breve",
+    "prefijo": "tema energia zona este nivel alto formato breve salida",
+    "continuacion": "energia este alto ."
+  },
+  {
+    "id": "energia-este-alto-detallado",
+    "familia": "energia-este-alto",
+    "formato": "detallado",
+    "prefijo": "tema energia zona este nivel alto formato detallado salida",
+    "continuacion": "informe energia en este con nivel alto ."
+  },
+  {
+    "id": "energia-oeste-medio-breve",
+    "familia": "energia-oeste-medio",
+    "formato": "breve",
+    "prefijo": "tema energia zona oeste nivel medio formato breve salida",
+    "continuacion": "energia oeste medio ."
+  },
+  {
+    "id": "energia-oeste-medio-detallado",
+    "familia": "energia-oeste-medio",
+    "formato": "detallado",
+    "prefijo": "tema energia zona oeste nivel medio formato detallado salida",
+    "continuacion": "informe energia en oeste con nivel medio ."
+  },
+  {
+    "id": "energia-este-bajo-breve",
+    "familia": "energia-este-bajo",
+    "formato": "breve",
+    "prefijo": "tema energia zona este nivel bajo formato breve salida",
+    "continuacion": "energia este bajo ."
+  },
+  {
+    "id": "energia-este-bajo-detallado",
+    "familia": "energia-este-bajo",
+    "formato": "detallado",
+    "prefijo": "tema energia zona este nivel bajo formato detallado salida",
+    "continuacion": "informe energia en este con nivel bajo ."
+  },
+  {
+    "id": "aire-sur-alto-breve",
+    "familia": "aire-sur-alto",
+    "formato": "breve",
+    "prefijo": "tema aire zona sur nivel alto formato breve salida",
+    "continuacion": "aire sur alto ."
+  },
+  {
+    "id": "aire-sur-alto-detallado",
+    "familia": "aire-sur-alto",
+    "formato": "detallado",
+    "prefijo": "tema aire zona sur nivel alto formato detallado salida",
+    "continuacion": "informe aire en sur con nivel alto ."
+  },
+  {
+    "id": "energia-oeste-alto-breve",
+    "familia": "energia-oeste-alto",
+    "formato": "breve",
+    "prefijo": "tema energia zona oeste nivel alto formato breve salida",
+    "continuacion": "energia oeste alto ."
+  },
+  {
+    "id": "energia-oeste-alto-detallado",
+    "familia": "energia-oeste-alto",
+    "formato": "detallado",
+    "prefijo": "tema energia zona oeste nivel alto formato detallado salida",
+    "continuacion": "informe energia en oeste con nivel alto ."
+  },
+  {
+    "id": "suelo-sur-bajo-breve",
+    "familia": "suelo-sur-bajo",
+    "formato": "breve",
+    "prefijo": "tema suelo zona sur nivel bajo formato breve salida",
+    "continuacion": "suelo sur bajo ."
+  },
+  {
+    "id": "suelo-sur-bajo-detallado",
+    "familia": "suelo-sur-bajo",
+    "formato": "detallado",
+    "prefijo": "tema suelo zona sur nivel bajo formato detallado salida",
+    "continuacion": "informe suelo en sur con nivel bajo ."
+  },
+  {
+    "id": "suelo-este-medio-breve",
+    "familia": "suelo-este-medio",
+    "formato": "breve",
+    "prefijo": "tema suelo zona este nivel medio formato breve salida",
+    "continuacion": "suelo este medio ."
+  },
+  {
+    "id": "suelo-este-medio-detallado",
+    "familia": "suelo-este-medio",
+    "formato": "detallado",
+    "prefijo": "tema suelo zona este nivel medio formato detallado salida",
+    "continuacion": "informe suelo en este con nivel medio ."
+  },
+  {
+    "id": "energia-norte-alto-breve",
+    "familia": "energia-norte-alto",
+    "formato": "breve",
+    "prefijo": "tema energia zona norte nivel alto formato breve salida",
+    "continuacion": "energia norte alto ."
+  },
+  {
+    "id": "energia-norte-alto-detallado",
+    "familia": "energia-norte-alto",
+    "formato": "detallado",
+    "prefijo": "tema energia zona norte nivel alto formato detallado salida",
+    "continuacion": "informe energia en norte con nivel alto ."
+  },
+  {
+    "id": "aire-oeste-alto-breve",
+    "familia": "aire-oeste-alto",
+    "formato": "breve",
+    "prefijo": "tema aire zona oeste nivel alto formato breve salida",
+    "continuacion": "aire oeste alto ."
+  },
+  {
+    "id": "aire-oeste-alto-detallado",
+    "familia": "aire-oeste-alto",
+    "formato": "detallado",
+    "prefijo": "tema aire zona oeste nivel alto formato detallado salida",
+    "continuacion": "informe aire en oeste con nivel alto ."
+  },
+  {
+    "id": "suelo-sur-alto-breve",
+    "familia": "suelo-sur-alto",
+    "formato": "breve",
+    "prefijo": "tema suelo zona sur nivel alto formato breve salida",
+    "continuacion": "suelo sur alto ."
+  },
+  {
+    "id": "suelo-sur-alto-detallado",
+    "familia": "suelo-sur-alto",
+    "formato": "detallado",
+    "prefijo": "tema suelo zona sur nivel alto formato detallado salida",
+    "continuacion": "informe suelo en sur con nivel alto ."
+  },
+  {
+    "id": "agua-este-bajo-breve",
+    "familia": "agua-este-bajo",
+    "formato": "breve",
+    "prefijo": "tema agua zona este nivel bajo formato breve salida",
+    "continuacion": "agua este bajo ."
+  },
+  {
+    "id": "agua-este-bajo-detallado",
+    "familia": "agua-este-bajo",
+    "formato": "detallado",
+    "prefijo": "tema agua zona este nivel bajo formato detallado salida",
+    "continuacion": "informe agua en este con nivel bajo ."
+  }
+]

@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 24.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 25.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 24
+ULTIMA_UNIDAD = 25
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -168,6 +168,12 @@ def main():
                     esperado = "Cinco entrenamientos: éxito medio=0.623; desviación=0.0341"
                 elif programa.name == "03_calcular_a_mano.py":
                     esperado = "Q no terminal=0.44; Q terminal=-0.40"
+                elif programa.name == "01_entender_atencion.py":
+                    esperado = "Futuro alterado: cambio en posiciones anteriores=0.0"
+                elif programa.name == "02_generar_secuencias.py":
+                    esperado = "Seleccionado por CE de validación: transformer; época transformer=300"
+                elif programa.name == "03_atencion_y_temperatura.py":
+                    esperado = "CE de un token=0.405465; perplejidad=1.5"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -368,6 +374,24 @@ def main():
             ejecutados += 1
             ejecutar([programa, "--evaluar-prueba", "--modelo", salida / "modelo.json",
                       "--salida", salida], cierre)
+            ejecutados += 1
+        prefijo = "unidad25-transformers-generativos/ejemplos/"
+        ejecutar([prefijo + "01_entender_atencion.py", "--salida", Path(carpeta)/"u25-atencion", "--graficos"],
+                 "Atención manual y biblioteca: error máximo < 1e-12")
+        ejecutados += 1
+        salida = Path(carpeta) / "u25-generacion"
+        ejecutar([prefijo + "02_generar_secuencias.py", "--salida", salida, "--graficos"],
+                 "Recarga: logits y generaciones idénticos.")
+        ejecutados += 1
+        ejecutar([prefijo + "02_generar_secuencias.py", "--evaluar-prueba", "--modelo", salida/"modelo.json",
+                  "--salida", salida], "Cierre sin reajuste: CE=0.0028; exactas=16/16")
+        ejecutados += 1
+        for i, (extras, esperado) in enumerate((
+                (["--prefijo", "tema oceano zona norte nivel bajo formato breve salida"], "desconocidos en prefijo=1"),
+                (["--metodo", "muestreo", "--temperatura", "1.3", "--semilla", "2502"], "Parada: eos"),
+                (["--max-nuevos", "2"], "Parada: max_nuevos"))):
+            ejecutar([prefijo + "probar_generador.py", "--modelo", salida/"modelo.json", *extras,
+                      "--salida", salida/f"muestra-{i}.json"], esperado)
             ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:
