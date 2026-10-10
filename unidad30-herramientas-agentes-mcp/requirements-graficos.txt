@@ -1,0 +1,2 @@
+# Solo para --graficos; las prácticas y pruebas usan biblioteca estándar.
+-r ../unidad09-exploracion-visualizacion/requirements.txt

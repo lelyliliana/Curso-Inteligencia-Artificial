@@ -1,0 +1,366 @@
+{
+  "origen": "intercambio_stdio_real_sin_modelo",
+  "protocolo": "2025-11-25",
+  "traza": [
+    {
+      "direccion": "cliente_servidor",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "protocolVersion": "2025-11-25",
+          "capabilities": {},
+          "clientInfo": {
+            "name": "cliente-curso",
+            "version": "1.0.0"
+          }
+        }
+      }
+    },
+    {
+      "direccion": "servidor_cliente",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": {
+          "protocolVersion": "2025-11-25",
+          "capabilities": {
+            "tools": {
+              "listChanged": false
+            }
+          },
+          "serverInfo": {
+            "name": "sensores-curso",
+            "version": "1.0.0"
+          }
+        }
+      }
+    },
+    {
+      "direccion": "cliente_servidor",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "method": "notifications/initialized"
+      }
+    },
+    {
+      "direccion": "cliente_servidor",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/list",
+        "params": {}
+      }
+    },
+    {
+      "direccion": "servidor_cliente",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": {
+          "tools": [
+            {
+              "name": "consultar_sensor",
+              "description": "Lee las temperaturas en grados Celsius del sensor. Puede devolver no_disponible o denegado.",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "sensor": {
+                    "type": "string",
+                    "pattern": "^S-[0-9]{2}$"
+                  }
+                },
+                "required": [
+                  "sensor"
+                ],
+                "additionalProperties": false
+              },
+              "outputSchema": {
+                "type": "object",
+                "properties": {
+                  "ok": {
+                    "type": "boolean"
+                  },
+                  "codigo": {
+                    "type": "string",
+                    "enum": [
+                      "ok",
+                      "argumentos_invalidos",
+                      "desconocida",
+                      "denegado",
+                      "no_disponible",
+                      "sin_consulta",
+                      "repetida",
+                      "limite_llamadas",
+                      "limite_tiempo",
+                      "datos_invalidos"
+                    ]
+                  },
+                  "datos": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "ok",
+                  "codigo",
+                  "datos"
+                ],
+                "additionalProperties": false
+              },
+              "annotations": {
+                "readOnlyHint": true,
+                "openWorldHint": false
+              }
+            },
+            {
+              "name": "calcular_media",
+              "description": "Calcula la media de las lecturas ya obtenidas con consultar_sensor en esta sesión. Requiere consulta previa exitosa del mismo sensor.",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "sensor": {
+                    "type": "string",
+                    "pattern": "^S-[0-9]{2}$"
+                  }
+                },
+                "required": [
+                  "sensor"
+                ],
+                "additionalProperties": false
+              },
+              "outputSchema": {
+                "type": "object",
+                "properties": {
+                  "ok": {
+                    "type": "boolean"
+                  },
+                  "codigo": {
+                    "type": "string",
+                    "enum": [
+                      "ok",
+                      "argumentos_invalidos",
+                      "desconocida",
+                      "denegado",
+                      "no_disponible",
+                      "sin_consulta",
+                      "repetida",
+                      "limite_llamadas",
+                      "limite_tiempo",
+                      "datos_invalidos"
+                    ]
+                  },
+                  "datos": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "ok",
+                  "codigo",
+                  "datos"
+                ],
+                "additionalProperties": false
+              },
+              "annotations": {
+                "readOnlyHint": true,
+                "openWorldHint": false
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "direccion": "cliente_servidor",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "tools/call",
+        "params": {
+          "name": "consultar_sensor",
+          "arguments": {
+            "sensor": "S-11"
+          }
+        }
+      }
+    },
+    {
+      "direccion": "servidor_cliente",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"ok\": true, \"codigo\": \"ok\", \"datos\": {\"sensor\": \"S-11\", \"lecturas_c\": [18, 20, 22], \"nota\": \"Tres lecturas del invernadero Ámbar.\"}}"
+            }
+          ],
+          "structuredContent": {
+            "ok": true,
+            "codigo": "ok",
+            "datos": {
+              "sensor": "S-11",
+              "lecturas_c": [
+                18,
+                20,
+                22
+              ],
+              "nota": "Tres lecturas del invernadero Ámbar."
+            }
+          },
+          "isError": false
+        }
+      }
+    },
+    {
+      "direccion": "cliente_servidor",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "tools/call",
+        "params": {
+          "name": "calcular_media",
+          "arguments": {
+            "sensor": "S-11"
+          }
+        }
+      }
+    },
+    {
+      "direccion": "servidor_cliente",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"ok\": true, \"codigo\": \"ok\", \"datos\": {\"sensor\": \"S-11\", \"media_c\": 20.0, \"cantidad\": 3}}"
+            }
+          ],
+          "structuredContent": {
+            "ok": true,
+            "codigo": "ok",
+            "datos": {
+              "sensor": "S-11",
+              "media_c": 20.0,
+              "cantidad": 3
+            }
+          },
+          "isError": false
+        }
+      }
+    },
+    {
+      "direccion": "cliente_servidor",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "method": "tools/call",
+        "params": {
+          "name": "consultar_sensor",
+          "arguments": {
+            "sensor": "S-14"
+          }
+        }
+      }
+    },
+    {
+      "direccion": "servidor_cliente",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"ok\": false, \"codigo\": \"denegado\", \"datos\": {}}"
+            }
+          ],
+          "structuredContent": {
+            "ok": false,
+            "codigo": "denegado",
+            "datos": {}
+          },
+          "isError": true
+        }
+      }
+    },
+    {
+      "direccion": "cliente_servidor",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "method": "tools/call",
+        "params": {
+          "name": "consultar_sensor",
+          "arguments": {
+            "sensor": "../secreto"
+          }
+        }
+      }
+    },
+    {
+      "direccion": "servidor_cliente",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"ok\": false, \"codigo\": \"argumentos_invalidos\", \"datos\": {}}"
+            }
+          ],
+          "structuredContent": {
+            "ok": false,
+            "codigo": "argumentos_invalidos",
+            "datos": {}
+          },
+          "isError": true
+        }
+      }
+    },
+    {
+      "direccion": "cliente_servidor",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "method": "tools/call",
+        "params": {
+          "name": "ejecutar_shell",
+          "arguments": {}
+        }
+      }
+    },
+    {
+      "direccion": "servidor_cliente",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "error": {
+          "code": -32602,
+          "message": "Herramienta desconocida"
+        }
+      }
+    },
+    {
+      "direccion": "cliente_servidor",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "method": "ping",
+        "params": {}
+      }
+    },
+    {
+      "direccion": "servidor_cliente",
+      "mensaje": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "herramientas_mcp": [
+    {
+      "name": "consultar_sensor",
+      "description": "Lee las temperaturas en grados Celsius del sensor. Puede devolver no_disponible o denegado.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "sensor": {
+            "type": "string",
+            "pattern": "^S-[0-9]{2}$"
+          }
+        },
+        "required": [
+          "sensor"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean"
+          },
+          "codigo": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "argumentos_invalidos",
+              "desconocida",
+              "denegado",
+              "no_disponible",
+              "sin_consulta",
+              "repetida",
+              "limite_llamadas",
+              "limite_tiempo",
+              "datos_invalidos"
+            ]
+          },
+          "datos": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "ok",
+          "codigo",
+          "datos"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "calcular_media",
+      "description": "Calcula la media de las lecturas ya obtenidas con consultar_sensor en esta sesión. Requiere consulta previa exitosa del mismo sensor.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "sensor": {
+            "type": "string",
+            "pattern": "^S-[0-9]{2}$"
+          }
+        },
+        "required": [
+          "sensor"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean"
+          },
+          "codigo": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "argumentos_invalidos",
+              "desconocida",
+              "denegado",
+              "no_disponible",
+              "sin_consulta",
+              "repetida",
+              "limite_llamadas",
+              "limite_tiempo",
+              "datos_invalidos"
+            ]
+          },
+          "datos": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "ok",
+          "codigo",
+          "datos"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false
+      }
+    }
+  ],
+  "respuesta_final": {
+    "type": "object",
+    "properties": {
+      "estado": {
+        "type": "string",
+        "enum": [
+          "ok",
+          "no_disponible",
+          "denegado"
+        ]
+      },
+      "sensor": {
+        "type": "string",
+        "pattern": "^S-[0-9]{2}$"
+      },
+      "media_c": {
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "required": [
+      "estado",
+      "sensor",
+      "media_c"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -87,7 +87,7 @@ La unidad 24 contiene dos prácticas independientes. Su propósito es reconocer 
 | 27 | [Prompts, salidas estructuradas y evaluación](unidad27-prompts-evaluacion/README.md) |
 | 28 | [Embeddings y búsqueda semántica](unidad28-embeddings-busqueda/README.md) |
 | 29 | [RAG con documentos](unidad29-rag-documentos/README.md) |
-| 30 | Herramientas, agentes y MCP |
+| 30 | [Herramientas, agentes y MCP](unidad30-herramientas-agentes-mcp/README.md) |
 | 31 | Adaptación de modelos y multimodalidad |
 
 ### Bloque 6 — IA aplicada en productos
@@ -126,7 +126,7 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-Las **unidades 0 a 29 están desarrolladas**: 30 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
+Las **unidades 0 a 30 están desarrolladas**: 31 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
 
 - **0–4:** entorno, formulación de proyectos, matemática aplicada y probabilidad.
 - **5–9:** búsqueda, reglas, obtención y preparación de datos, exploración y visualización.
@@ -137,10 +137,11 @@ Las **unidades 0 a 29 están desarrolladas**: 30 de las 36 unidades previstas. I
 - **27:** comparación de prompts, esquema JSON, validación semántica, referencia por reglas y selección con cierre por familias.
 - **28:** geometría de vectores, TF-IDF frente a embeddings reales, búsqueda exacta, relevancia, índice recargable y cierre por familias.
 - **29:** RAG con documentos, fragmentos trazables, presupuesto de contexto, citas, apoyo factual, contradicciones, abstención y evaluación separada por familias.
+- **30:** herramientas con permisos y evidencia, agente local frente a flujo fijo, errores e inyección, presupuestos y laboratorio MCP por stdio con revisión explícita.
 
-La entrega más reciente conecta recuperación y generación local sobre doce documentos propios. Compara contextos de uno y tres fragmentos, conserva respuestas incompletas pese a citas válidas y evalúa una elección congelada con preguntas nuevas. Incluye análisis sin conexión, referencia extractiva y límites del evaluador. Las **unidades 30 a 35 están pendientes de desarrollo**; la siguiente aborda herramientas, agentes y MCP. Tener sus títulos definidos no equivale a haber terminado el curso.
+La entrega más reciente compara un agente local con un flujo fijo sobre sensores ficticios. Conserva fallos reales por instrucciones en datos y por timeout, comprueba la evidencia de ejecución y añade un intercambio MCP entre procesos locales. Incluye capturas recargables, auditoría artificial y límites del protocolo implementado. Las **unidades 31 a 35 están pendientes de desarrollo**; la siguiente aborda adaptación de modelos y multimodalidad. Tener sus títulos definidos no equivale a haber terminado el curso.
 
-El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 29, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22, 23 y 24 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; la Unidad 25 utiliza también el PyTorch CPU ya incorporado. Las unidades 26, 27, 28 y 29 usan biblioteca estándar y reutilizan los paquetes gráficos opcionalmente; el verificador analiza sus capturas sin iniciar servicios ni usar claves. La Unidad 28 también contrasta TF-IDF con scikit-learn en sus pruebas; la descarga opcional de BGE-M3 se documenta por separado. La Unidad 29 reutiliza los modelos locales ya incorporados y sus pruebas no necesitan servicios. Las comprobaciones posteriores funcionan sin Internet:
+El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 30, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22, 23 y 24 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; la Unidad 25 utiliza también el PyTorch CPU ya incorporado. Las unidades 26, 27, 28, 29 y 30 usan biblioteca estándar y reutilizan los paquetes gráficos opcionalmente; el verificador analiza sus capturas sin iniciar Ollama ni usar claves. La Unidad 28 también contrasta TF-IDF con scikit-learn en sus pruebas; la descarga opcional de BGE-M3 se documenta por separado. La Unidad 29 reutiliza los modelos locales ya incorporados y sus pruebas no necesitan servicios. La Unidad 30 ejecuta además un cliente y un servidor MCP propios en un subproceso local, sin red ni instalación de SDK. Las comprobaciones posteriores funcionan sin Internet:
 
 ```bash
 python -m pip install -r unidad21-vision-computador/requirements.txt

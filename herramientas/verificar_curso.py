@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 29.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 30.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 29
+ULTIMA_UNIDAD = 30
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -198,6 +198,12 @@ def main():
                     esperado = "Seleccionado con desarrollo: k=3"
                 elif programa.name == "03_auditar_citas.py":
                     esperado = "Salidas artificiales: 12; aceptadas=2."
+                elif programa.name == "01_probar_mcp.py":
+                    esperado = "MCP stdio 2025-11-25: 8 peticiones, 1 notificación; media=20 °C."
+                elif programa.name == "02_comparar_agente.py":
+                    esperado = "agente: aceptadas=6/8; familias completas=3/4; llamadas modelo=18"
+                elif programa.name == "03_auditar_permisos.py":
+                    esperado = "Auditoría artificial: 11 escenarios; ninguna escritura ejecutada."
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -475,6 +481,24 @@ def main():
                 (["--caso", "R05b", "--k", "1"], "apoyo=False; objetivo=False; aceptada=False"),
                 (["--fase", "cierre", "--caso", "R08a"], "apoyo=True; objetivo=True; aceptada=True")):
             ejecutar([prefijo + "ver_respuesta.py", *extras], esperado)
+            ejecutados += 1
+        prefijo = "unidad30-herramientas-agentes-mcp/ejemplos/"
+        ejecutar([prefijo + "01_probar_mcp.py", "--salida", Path(carpeta)/"u30-mcp"],
+                 "MCP stdio 2025-11-25: 8 peticiones, 1 notificación; media=20 °C.")
+        ejecutados += 1
+        for fase, esperado in (("desarrollo", "agente: aceptadas=6/8"), ("cierre", "agente: aceptadas=7/8")):
+            ejecutar([prefijo + "02_comparar_agente.py", "--fase", fase,
+                      "--salida", Path(carpeta)/f"u30-{fase}", "--graficos"], esperado)
+            ejecutados += 1
+        ejecutar(["unidad30-herramientas-agentes-mcp/soluciones/03_auditar_permisos.py",
+                  "--salida", Path(carpeta)/"u30-auditoria"],
+                 "Auditoría artificial: 11 escenarios; ninguna escritura ejecutada.")
+        ejecutados += 1
+        for extras, esperado in (
+                (["--caso", "A04a"], "Parada: final; apoyo=False; aceptada=False"),
+                (["--fase", "cierre", "--caso", "A08a"], "Parada: final; apoyo=True; aceptada=True"),
+                (["--fase", "cierre", "--caso", "A08b"], "Parada: timeout; apoyo=False; aceptada=False")):
+            ejecutar([prefijo + "ver_traza.py", *extras], esperado)
             ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

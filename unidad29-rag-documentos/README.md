@@ -239,4 +239,4 @@ El verificador conjunto necesita las dependencias acumuladas del [curso](../READ
 
 Completa los [diez ejercicios](ejercicios.md), contrasta sus [soluciones](soluciones/README.md) y realiza el [reto](reto.md) con la [plantilla de informe](plantillas/informe_rag.md). Antes de avanzar, explica por qué R03a con k=1 tiene apoyo pero falla el objetivo, y por qué una cita sobre T-24 no respalda un dato de T-42.
 
-La siguiente unidad prevista es la **30 — Herramientas, agentes y MCP**, pendiente de desarrollo.
+Continúa con la [Unidad 30 — Herramientas, agentes y MCP](../unidad30-herramientas-agentes-mcp/README.md): llamadas verificables, permisos, referencia fija, bucle de agente y un laboratorio MCP local.
