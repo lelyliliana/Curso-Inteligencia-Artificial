@@ -1,0 +1,6 @@
+{
+  "max_error_logits": 0.0,
+  "n_imagenes": 60,
+  "sha256_modelo": "db5cfa048482ae01f6f064e5ecfb370acb034b739c360cd04b4659b726654ecd",
+  "uso": "inferencia en CPU"
+}

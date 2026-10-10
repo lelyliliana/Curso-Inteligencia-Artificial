@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 20.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 21.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 20
+ULTIMA_UNIDAD = 21
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -144,6 +144,12 @@ def main():
                     esperado = "Seleccionado por BCE de validación: red12_8; época=110"
                 elif programa.name == "03_acumular_gradientes.py":
                     esperado = "Peso tras SGD=0.500; pérdida=12.500 -> 0.125"
+                elif programa.name == "01_explorar_pixeles.py":
+                    esperado = "Referencia manual y conv2d: error máximo=0.0"
+                elif programa.name == "02_clasificar_trazos.py":
+                    esperado = "Seleccionado por CE de validación: cnn; época=45"
+                elif programa.name == "03_correlacion_a_mano.py":
+                    esperado = "Correlación comprobada: salida 3×3; error máximo=0.0"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -179,6 +185,8 @@ def main():
     red_ruido = "unidad19-redes-neuronales/ejemplos/02_controlar_sobreajuste.py"
     equivalencia_torch = "unidad20-pytorch/ejemplos/01_comprobar_equivalencia.py"
     minilotes_torch = "unidad20-pytorch/ejemplos/02_entrenar_minilotes.py"
+    vision_filtros = "unidad21-vision-computador/ejemplos/01_explorar_pixeles.py"
+    vision_trazos = "unidad21-vision-computador/ejemplos/02_clasificar_trazos.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -230,6 +238,7 @@ def main():
         ([red_xor, "--evaluar-prueba"], "Prueba final: solo red8; BCE=0.0061; exactitud=1.000; FN=0; FP=0"),
         ([red_ruido, "--evaluar-prueba"], "Prueba final: solo red32_l2; BCE=0.5350; exactitud=0.787; FN=17; FP=17"),
         ([minilotes_torch, "--evaluar-prueba"], "Prueba final: solo red12_8; BCE=0.2110; exactitud=0.900; FN=6; FP=2"),
+        ([vision_trazos, "--evaluar-prueba"], "Prueba final: solo cnn; CE=0.0406; exactitud=0.983; macro F1=0.983"),
     ])
     for comando, esperado in variantes:
         ejecutar(comando, esperado)
@@ -293,6 +302,13 @@ def main():
         for cierre in (False, True):
             extras = ["--evaluar-prueba"] if cierre else []
             ejecutar([minilotes_torch, *extras, "--salida", Path(carpeta)/f"minilotes-torch-{cierre}", "--graficos"],
+                     "Recarga en CPU: error máximo en logits=0.0")
+            ejecutados += 1
+        ejecutar([vision_filtros, "--salida", Path(carpeta)/"vision-filtros", "--graficos"], "Exportación:")
+        ejecutados += 1
+        for cierre in (False, True):
+            extras = ["--evaluar-prueba"] if cierre else []
+            ejecutar([vision_trazos, *extras, "--salida", Path(carpeta)/f"vision-trazos-{cierre}", "--graficos"],
                      "Recarga en CPU: error máximo en logits=0.0")
             ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")

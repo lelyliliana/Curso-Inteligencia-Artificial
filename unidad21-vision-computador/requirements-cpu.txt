@@ -1,0 +1,2 @@
+# Misma versión CPU comprobada en la Unidad 20; instalar en un segundo comando.
+-r ../unidad20-pytorch/requirements-cpu.txt

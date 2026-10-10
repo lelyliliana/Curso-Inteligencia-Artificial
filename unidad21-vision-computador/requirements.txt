@@ -1,0 +1,3 @@
+# Reutiliza el entorno numérico; Pillow ya era una dependencia de Matplotlib.
+-r ../unidad20-pytorch/requirements.txt
+pillow==12.3.0
