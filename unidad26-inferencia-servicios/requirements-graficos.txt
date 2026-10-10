@@ -1,0 +1,2 @@
+# Opcional: solo exportación de PNG/SVG. Los laboratorios sin figuras usan stdlib.
+-r ../unidad09-exploracion-visualizacion/requirements.txt

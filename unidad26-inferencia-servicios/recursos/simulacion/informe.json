@@ -1,0 +1,127 @@
+{
+  "origen": "simulacion_de_contrato_sin_red",
+  "filas": [
+    {
+      "id": "correcta",
+      "contrato_valido": true,
+      "aceptada": true,
+      "texto": "42",
+      "finalizada": true,
+      "razon": "stop",
+      "tokens_salida": 20,
+      "tokens_entrada": 10,
+      "tokens_por_segundo": 10.0,
+      "coincide": true
+    },
+    {
+      "id": "incorrecta",
+      "contrato_valido": true,
+      "aceptada": false,
+      "texto": "43",
+      "finalizada": true,
+      "razon": "stop",
+      "tokens_salida": 20,
+      "tokens_entrada": 10,
+      "tokens_por_segundo": 10.0,
+      "coincide": false
+    },
+    {
+      "id": "truncada",
+      "contrato_valido": true,
+      "aceptada": false,
+      "texto": "42",
+      "finalizada": false,
+      "razon": "length",
+      "tokens_salida": 20,
+      "tokens_entrada": 10,
+      "tokens_por_segundo": 10.0,
+      "coincide": true
+    },
+    {
+      "id": "no_final",
+      "contrato_valido": false,
+      "aceptada": false,
+      "error": "contrato_invalido"
+    },
+    {
+      "id": "html",
+      "contrato_valido": false,
+      "aceptada": false,
+      "error": "json_invalido"
+    },
+    {
+      "id": "no_instalado",
+      "contrato_valido": false,
+      "aceptada": false,
+      "error": "http_404"
+    },
+    {
+      "id": "limite_servicio",
+      "contrato_valido": false,
+      "aceptada": false,
+      "error": "http_429"
+    },
+    {
+      "id": "demora",
+      "contrato_valido": false,
+      "aceptada": false,
+      "error": "timeout"
+    },
+    {
+      "id": "sin_servidor",
+      "contrato_valido": false,
+      "aceptada": false,
+      "error": "conexion"
+    },
+    {
+      "id": "remota_texto",
+      "contrato_valido": true,
+      "aceptada": true,
+      "texto": "42",
+      "rechazo": false,
+      "estado": "completed",
+      "finalizada": true,
+      "detalle_incompleto": null,
+      "uso": {
+        "input_tokens": 10,
+        "output_tokens": 20,
+        "total_tokens": 30
+      },
+      "coincide": true
+    },
+    {
+      "id": "remota_incompleta",
+      "contrato_valido": true,
+      "aceptada": false,
+      "texto": "42",
+      "rechazo": false,
+      "estado": "incomplete",
+      "finalizada": false,
+      "detalle_incompleto": {
+        "reason": "max_output_tokens"
+      },
+      "uso": {
+        "input_tokens": 10,
+        "output_tokens": 20,
+        "total_tokens": 30
+      },
+      "coincide": true
+    },
+    {
+      "id": "remota_rechazo",
+      "contrato_valido": true,
+      "aceptada": false,
+      "texto": "",
+      "rechazo": true,
+      "estado": "completed",
+      "finalizada": false,
+      "detalle_incompleto": null,
+      "uso": {
+        "input_tokens": 10,
+        "output_tokens": 20,
+        "total_tokens": 30
+      },
+      "coincide": false
+    }
+  ]
+}

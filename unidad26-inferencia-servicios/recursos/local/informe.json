@@ -1,0 +1,142 @@
+{
+  "origen": "analisis_de_captura",
+  "modelo": "qwen3:8b",
+  "filas": [
+    {
+      "caso": "suma",
+      "limite": 4,
+      "pared_s": 1.6692941979999887,
+      "contrato_valido": true,
+      "finalizada": true,
+      "coincide": true,
+      "aceptada": true,
+      "texto": "42",
+      "razon": "stop",
+      "tokens_salida": 3,
+      "tokens_entrada": 41,
+      "tokens_por_segundo": 13.141755738566673
+    },
+    {
+      "caso": "suma",
+      "limite": 48,
+      "pared_s": 0.3584508320000168,
+      "contrato_valido": true,
+      "finalizada": true,
+      "coincide": true,
+      "aceptada": true,
+      "texto": "42",
+      "razon": "stop",
+      "tokens_salida": 3,
+      "tokens_entrada": 41,
+      "tokens_por_segundo": 13.198474256375963
+    },
+    {
+      "caso": "lectura",
+      "limite": 48,
+      "pared_s": 2.2899677980003617,
+      "contrato_valido": true,
+      "finalizada": true,
+      "coincide": true,
+      "aceptada": true,
+      "texto": "19",
+      "razon": "stop",
+      "tokens_salida": 3,
+      "tokens_entrada": 58,
+      "tokens_por_segundo": 13.081357321635693
+    },
+    {
+      "caso": "lectura",
+      "limite": 4,
+      "pared_s": 0.3573176270001568,
+      "contrato_valido": true,
+      "finalizada": true,
+      "coincide": true,
+      "aceptada": true,
+      "texto": "19",
+      "razon": "stop",
+      "tokens_salida": 3,
+      "tokens_entrada": 58,
+      "tokens_por_segundo": 13.15379859780507
+    },
+    {
+      "caso": "copia",
+      "limite": 4,
+      "pared_s": 2.0171771610002907,
+      "contrato_valido": true,
+      "finalizada": false,
+      "coincide": false,
+      "aceptada": false,
+      "texto": "energia agua su",
+      "razon": "length",
+      "tokens_salida": 4,
+      "tokens_entrada": 46,
+      "tokens_por_segundo": 11.665956987616585
+    },
+    {
+      "caso": "copia",
+      "limite": 48,
+      "pared_s": 0.8180728250008542,
+      "contrato_valido": true,
+      "finalizada": true,
+      "coincide": true,
+      "aceptada": true,
+      "texto": "energia agua suelo aire",
+      "razon": "stop",
+      "tokens_salida": 7,
+      "tokens_entrada": 46,
+      "tokens_por_segundo": 10.258845322992418
+    },
+    {
+      "caso": "ausente",
+      "limite": 48,
+      "pared_s": 2.2455559999998513,
+      "contrato_valido": true,
+      "finalizada": true,
+      "coincide": true,
+      "aceptada": true,
+      "texto": "NO_DISPONIBLE",
+      "razon": "stop",
+      "tokens_salida": 5,
+      "tokens_entrada": 63,
+      "tokens_por_segundo": 10.529175291816093
+    },
+    {
+      "caso": "ausente",
+      "limite": 4,
+      "pared_s": 0.4859979180000664,
+      "contrato_valido": true,
+      "finalizada": false,
+      "coincide": true,
+      "aceptada": false,
+      "texto": "NO_DISPONIBLE",
+      "razon": "length",
+      "tokens_salida": 4,
+      "tokens_entrada": 63,
+      "tokens_por_segundo": 11.402443543651405
+    }
+  ],
+  "resumen": [
+    {
+      "limite": 4,
+      "solicitudes": 4,
+      "contrato_valido": 4,
+      "finalizada": 2,
+      "coincide": 3,
+      "aceptada": 2,
+      "n_latencias": 4,
+      "mediana_pared_s": 1.0776460580000276,
+      "errores": {}
+    },
+    {
+      "limite": 48,
+      "solicitudes": 4,
+      "contrato_valido": 4,
+      "finalizada": 4,
+      "coincide": 4,
+      "aceptada": 4,
+      "n_latencias": 4,
+      "mediana_pared_s": 1.5318144125003528,
+      "errores": {}
+    }
+  ]
+}

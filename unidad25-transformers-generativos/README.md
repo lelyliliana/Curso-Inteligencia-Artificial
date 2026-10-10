@@ -255,4 +255,4 @@ python herramientas/verificar_curso.py
 
 Las **46 pruebas** cubren referencias manuales y de biblioteca, máscaras, dimensiones, gradientes causales, corpus y vocabulario, objetivos, bigramas, selección, temperatura, parada, generación sin aprendizaje y persistencia. El verificador general requiere el entorno acumulado indicado en el [índice](../README.md).
 
-Antes de avanzar, comprueba que puedes detectar atención al futuro, explicar una diferencia entre teacher forcing y generación, y rechazar una conclusión de verdad basada solo en perplejidad. La siguiente unidad prevista es la **26 — Inferencia local y servicios: Ollama y APIs**, pendiente de desarrollo.
+Antes de avanzar, comprueba que puedes detectar atención al futuro, explicar una diferencia entre teacher forcing y generación, y rechazar una conclusión de verdad basada solo en perplejidad. Continúa con la [Unidad 26 — Inferencia local y servicios: Ollama y APIs](../unidad26-inferencia-servicios/README.md), que aplica modelos existentes y distingue transporte, parada y calidad de respuesta.

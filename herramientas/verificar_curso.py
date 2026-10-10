@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 25.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 26.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 25
+ULTIMA_UNIDAD = 26
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -174,6 +174,12 @@ def main():
                     esperado = "Seleccionado por CE de validación: transformer; época transformer=300"
                 elif programa.name == "03_atencion_y_temperatura.py":
                     esperado = "CE de un token=0.405465; perplejidad=1.5"
+                elif programa.name == "01_manejar_respuestas.py":
+                    esperado = "Escenarios simulados: 12; aceptados por el criterio: 2."
+                elif programa.name == "02_evaluar_inferencia.py":
+                    esperado = "Límite 4: aceptadas=2/4; coinciden=3; finalizadas=2; contratos=4"
+                elif programa.name == "03_medir_a_mano.py":
+                    esperado = "Decodificación=10.0 tokens/s; extremo a extremo=6.67 tokens/s"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -393,6 +399,14 @@ def main():
             ejecutar([prefijo + "probar_generador.py", "--modelo", salida/"modelo.json", *extras,
                       "--salida", salida/f"muestra-{i}.json"], esperado)
             ejecutados += 1
+        prefijo = "unidad26-inferencia-servicios/ejemplos/"
+        ejecutar([prefijo + "01_manejar_respuestas.py", "--salida", Path(carpeta)/"u26-simulacion"],
+                 "Exportación:")
+        ejecutados += 1
+        # Solo reanaliza la captura: nunca inicia Ollama ni realiza llamadas pagadas.
+        ejecutar([prefijo + "02_evaluar_inferencia.py", "--salida", Path(carpeta)/"u26-analisis", "--graficos"],
+                 "Análisis sin red de la captura publicada; no es una nueva inferencia.")
+        ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:
         pruebas = unidad / "pruebas"

@@ -1,0 +1,6 @@
+[
+  {"id": "suma", "prompt": "Calcula 17 + 25. Responde únicamente con el número entero, sin explicación.", "esperado": "42", "criterio": "Suma exacta sin texto adicional."},
+  {"id": "lectura", "prompt": "Registro ficticio: sensor A=12; sensor B=19; sensor C=8. ¿Cuál es el valor del sensor B? Responde únicamente con el número entero.", "esperado": "19", "criterio": "Extraer el dato proporcionado sin añadir unidades."},
+  {"id": "copia", "prompt": "Copia exactamente estas cuatro palabras en el mismo orden, separadas por un espacio, sin comillas ni explicación: energia agua suelo aire", "esperado": "energia agua suelo aire", "criterio": "Conservar las cuatro palabras y su orden."},
+  {"id": "ausente", "prompt": "Registro ficticio: sensor A=12; sensor B=19. ¿Cuál es el valor del sensor Z? Si no aparece, responde únicamente NO_DISPONIBLE. No inventes un valor.", "esperado": "NO_DISPONIBLE", "criterio": "Reconocer que el registro no aporta el valor solicitado."}
+]

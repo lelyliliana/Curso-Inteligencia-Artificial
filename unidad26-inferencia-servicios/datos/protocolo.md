@@ -1,0 +1,17 @@
+# Protocolo fijado antes de las llamadas
+
+[Unidad](../README.md) · [Casos](casos.json)
+
+Fecha: 10 de octubre de 2026. Cuatro peticiones propias y sintéticas, sin datos personales. Son casos de diagnóstico públicos, no una muestra representativa ni un conjunto de prueba reservado. No hay entrenamiento, selección de modelo ni ajuste de prompts a partir de los resultados.
+
+- Modelo disponible: `qwen3:8b`, Ollama 0.34.2. Registrar digest completo antes y después; si cambia, detener el informe. No descargar pesos automáticamente. La ficha del editor indica Apache-2.0; se registra también la huella de la licencia local. Los pesos no se redistribuyen aquí.
+- CPU explícita (`num_gpu=0`, cuatro hilos), contexto 1024, `think=false`, temperatura 0, semilla 2601, `top_k=20`, `top_p=0.95`, `repeat_penalty=1`, `stream=false`, `keep_alive="5m"`. El digest incluye la plantilla y parámetros del modelo. La semilla no garantiza igualdad entre equipos o versiones.
+- Única variable comparada: `num_predict=4` frente a `48`. Una llamada por condición y caso: ocho en total. Alternar el orden de las condiciones según el índice del caso. Sin reintentos ni descarte de errores. Un calentamiento separado con el texto «Responde OK.» y máximo cuatro tokens; no entra en los aciertos ni latencias del conjunto.
+- Timeout de operaciones de socket: 120 s. No es un plazo absoluto de pared ni una garantía de cancelación remota. Respuesta HTTP limitada a 1 MiB; prompts propios cortos. No estimar tokens contando palabras. Registrar el conteo que entrega el servidor.
+- Registrar solicitud exacta, respuesta completa de `/api/generate` (no se solicitan contextos ni datos externos), tiempo de pared, contadores y duraciones. Registrar versión, plataforma sin nombre de host, tamaño en disco y recursos informados por `/api/ps`. Esta última consulta no mide el pico de RAM.
+- Contrato válido: JSON con `done=true`, texto de respuesta, razón de parada y contadores no negativos. Una respuesta vacía es posible; no implica un acierto. HTTP 200 por sí solo no basta.
+- Coincidencia: normalizar únicamente espacios exteriores y comparar con `esperado`; mayúsculas, signos y espacios interiores importan. Conservar la comparación aunque la salida esté truncada. Aceptación: contrato válido **y** razón `stop` **y** coincidencia. `length` nunca equivale a finalización normal.
+- Denominador: las cuatro solicitudes de cada condición, incluidos fallos. Informar finalizadas, coincidencias y aceptadas por separado. Mediana de latencia de las solicitudes con contrato válido y cantidad usada; no usarla para ocultar timeouts. Velocidad de decodificación = `eval_count / (eval_duration / 1e9)`, si la duración es positiva. No confundirla con latencia total.
+- No ordenar modelos por velocidad, calcular intervalos de confianza ni concluir que cuatro casos demuestran calidad general. El orden alternado limita un sesgo sencillo; no elimina caché, carga del equipo ni variación temporal.
+- La ruta predeterminada vuelve a analizar el registro publicado sin conectarse a Ollama. Se etiqueta como análisis de una captura, no como una nueva ejecución. Las respuestas artificiales del laboratorio de errores se etiquetan como simulaciones de contrato.
+- La API remota es una práctica opcional separada, con un caso propio y sin comparación de calidad contra Ollama. Requiere modelo habilitado, clave y presupuesto de quien la ejecute. Se comprueba con respuestas simuladas; no se realizan llamadas pagadas para esta entrega.
