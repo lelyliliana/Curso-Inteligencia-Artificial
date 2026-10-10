@@ -1,0 +1,2 @@
+# Solo NumPy 2.2.6 y Matplotlib 3.10.8; CPU, sin servicios ni Gymnasium.
+-r ../unidad09-exploracion-visualizacion/requirements.txt

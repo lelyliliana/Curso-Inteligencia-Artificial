@@ -243,4 +243,4 @@ python herramientas/verificar_curso.py
 
 Las **41 pruebas** cubren relojes, conflictos recibidos después, futuro inaccesible, rezagos, objetivos no imputados, cortes, referencia matricial de Ridge, métricas, regeneración, recarga y correspondencia de figuras. La comprobación común necesita el entorno completo indicado en el [índice](../README.md).
 
-Antes de avanzar, comprueba que puedes dibujar origen, decisión y objetivo, detectar una ventana que usa futuro y explicar un fallo durante un cambio. La siguiente entrega prevista es la **Unidad 24 — Introducción a recomendación y aprendizaje por refuerzo**, pendiente de desarrollo; contendrá dos prácticas diferenciadas.
+Antes de avanzar, comprueba que puedes dibujar origen, decisión y objetivo, detectar una ventana que usa futuro y explicar un fallo durante un cambio. Continúa con la [Unidad 24 — Introducción a recomendación y aprendizaje por refuerzo](../unidad24-recomendacion-refuerzo/README.md), que contiene dos prácticas diferenciadas.

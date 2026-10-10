@@ -1,0 +1,760 @@
+{
+  "seleccionado": "coseno",
+  "modelo_sha256": "a968fb78b8c550ba10ca1f50dbb082fc3a21bdffb3eff820e8488dc11b6a02fd",
+  "prueba_sha256": "00ff0cc4c77fa2ebac8615e4deda1f2926766b8d43162f09de5e45db0763497a",
+  "evaluacion": {
+    "global": {
+      "n": 56,
+      "aciertos": 14,
+      "recall_3": 0.25,
+      "ndcg_3": 0.20344266536989952,
+      "cobertura": 0.8846153846153846
+    },
+    "grupos": {
+      "con_historia": {
+        "n": 48,
+        "aciertos": 14,
+        "recall_3": 0.2916666666666667,
+        "ndcg_3": 0.23734977626488277,
+        "cobertura": 0.8461538461538461
+      },
+      "sin_historia": {
+        "n": 8,
+        "aciertos": 0,
+        "recall_3": 0.0,
+        "ndcg_3": 0.0,
+        "cobertura": 0.11538461538461539
+      }
+    },
+    "casos": [
+      {
+        "usuario": "U01",
+        "objetivo": "I12",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I07",
+          "I08",
+          "I21"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U02",
+        "objetivo": "I26",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I17",
+          "I10",
+          "I13"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U03",
+        "objetivo": "I13",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I13",
+          "I17",
+          "I08"
+        ],
+        "acierto": 1,
+        "ndcg": 1.0
+      },
+      {
+        "usuario": "U04",
+        "objetivo": "I19",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I21",
+          "I03",
+          "I13"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U05",
+        "objetivo": "I01",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I04",
+          "I07",
+          "I21"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U06",
+        "objetivo": "I07",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I17",
+          "I07",
+          "I14"
+        ],
+        "acierto": 1,
+        "ndcg": 0.6309297535714575
+      },
+      {
+        "usuario": "U07",
+        "objetivo": "I15",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I08",
+          "I24",
+          "I18"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U08",
+        "objetivo": "I19",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I02",
+          "I23",
+          "I03"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U09",
+        "objetivo": "I05",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I05",
+          "I21",
+          "I03"
+        ],
+        "acierto": 1,
+        "ndcg": 1.0
+      },
+      {
+        "usuario": "U10",
+        "objetivo": "I07",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I14",
+          "I10",
+          "I07"
+        ],
+        "acierto": 1,
+        "ndcg": 0.5
+      },
+      {
+        "usuario": "U11",
+        "objetivo": "I14",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I24",
+          "I18",
+          "I22"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U12",
+        "objetivo": "I03",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I22",
+          "I17",
+          "I23"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U13",
+        "objetivo": "I08",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I06",
+          "I21",
+          "I08"
+        ],
+        "acierto": 1,
+        "ndcg": 0.5
+      },
+      {
+        "usuario": "U14",
+        "objetivo": "I08",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I08",
+          "I14",
+          "I04"
+        ],
+        "acierto": 1,
+        "ndcg": 1.0
+      },
+      {
+        "usuario": "U15",
+        "objetivo": "I17",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I17",
+          "I09",
+          "I02"
+        ],
+        "acierto": 1,
+        "ndcg": 1.0
+      },
+      {
+        "usuario": "U16",
+        "objetivo": "I23",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I02",
+          "I04",
+          "I06"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U17",
+        "objetivo": "I07",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I02",
+          "I09",
+          "I22"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U18",
+        "objetivo": "I12",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I18",
+          "I08",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U19",
+        "objetivo": "I16",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I14",
+          "I22",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U20",
+        "objetivo": "I19",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I21",
+          "I04",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U21",
+        "objetivo": "I11",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I11",
+          "I07",
+          "I17"
+        ],
+        "acierto": 1,
+        "ndcg": 1.0
+      },
+      {
+        "usuario": "U22",
+        "objetivo": "I14",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I10",
+          "I09",
+          "I18"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U23",
+        "objetivo": "I15",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I19",
+          "I21",
+          "I14"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U24",
+        "objetivo": "I19",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I22",
+          "I17",
+          "I23"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U25",
+        "objetivo": "I02",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I02",
+          "I21",
+          "I08"
+        ],
+        "acierto": 1,
+        "ndcg": 1.0
+      },
+      {
+        "usuario": "U26",
+        "objetivo": "I08",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I08",
+          "I17",
+          "I15"
+        ],
+        "acierto": 1,
+        "ndcg": 1.0
+      },
+      {
+        "usuario": "U27",
+        "objetivo": "I16",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I16",
+          "I14",
+          "I18"
+        ],
+        "acierto": 1,
+        "ndcg": 1.0
+      },
+      {
+        "usuario": "U28",
+        "objetivo": "I23",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I21",
+          "I18",
+          "I14"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U29",
+        "objetivo": "I10",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I03",
+          "I21",
+          "I22"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U30",
+        "objetivo": "I10",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I17",
+          "I08",
+          "I14"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U31",
+        "objetivo": "I13",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I17",
+          "I13",
+          "I21"
+        ],
+        "acierto": 1,
+        "ndcg": 0.6309297535714575
+      },
+      {
+        "usuario": "U32",
+        "objetivo": "I05",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I06",
+          "I21",
+          "I14"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U33",
+        "objetivo": "I06",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I04",
+          "I21",
+          "I12"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U34",
+        "objetivo": "I09",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I17",
+          "I10",
+          "I02"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U35",
+        "objetivo": "I15",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I14",
+          "I13",
+          "I08"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U36",
+        "objetivo": "I06",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I22",
+          "I24",
+          "I06"
+        ],
+        "acierto": 1,
+        "ndcg": 0.5
+      },
+      {
+        "usuario": "U37",
+        "objetivo": "I01",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I05",
+          "I08",
+          "I21"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U38",
+        "objetivo": "I12",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I14",
+          "I09",
+          "I18"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U39",
+        "objetivo": "I18",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I19",
+          "I18",
+          "I24"
+        ],
+        "acierto": 1,
+        "ndcg": 0.6309297535714575
+      },
+      {
+        "usuario": "U40",
+        "objetivo": "I19",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I03",
+          "I22",
+          "I02"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U41",
+        "objetivo": "I01",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I07",
+          "I04",
+          "I02"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U42",
+        "objetivo": "I09",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I14",
+          "I02",
+          "I10"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U43",
+        "objetivo": "I13",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I08",
+          "I16",
+          "I02"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U44",
+        "objetivo": "I20",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I06",
+          "I02",
+          "I22"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U45",
+        "objetivo": "I08",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I11",
+          "I02",
+          "I22"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U46",
+        "objetivo": "I07",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I17",
+          "I04",
+          "I09"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U47",
+        "objetivo": "I14",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I24",
+          "I08",
+          "I22"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U48",
+        "objetivo": "I24",
+        "grupo": "con_historia",
+        "n_candidatos": 22,
+        "lista": [
+          "I02",
+          "I05",
+          "I06"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U49",
+        "objetivo": "I04",
+        "grupo": "sin_historia",
+        "n_candidatos": 26,
+        "lista": [
+          "I25",
+          "I02",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U50",
+        "objetivo": "I26",
+        "grupo": "sin_historia",
+        "n_candidatos": 26,
+        "lista": [
+          "I25",
+          "I02",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U51",
+        "objetivo": "I15",
+        "grupo": "sin_historia",
+        "n_candidatos": 26,
+        "lista": [
+          "I25",
+          "I02",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U52",
+        "objetivo": "I04",
+        "grupo": "sin_historia",
+        "n_candidatos": 26,
+        "lista": [
+          "I25",
+          "I02",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U53",
+        "objetivo": "I05",
+        "grupo": "sin_historia",
+        "n_candidatos": 26,
+        "lista": [
+          "I25",
+          "I02",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U54",
+        "objetivo": "I11",
+        "grupo": "sin_historia",
+        "n_candidatos": 26,
+        "lista": [
+          "I25",
+          "I02",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U55",
+        "objetivo": "I18",
+        "grupo": "sin_historia",
+        "n_candidatos": 26,
+        "lista": [
+          "I25",
+          "I02",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      },
+      {
+        "usuario": "U56",
+        "objetivo": "I06",
+        "grupo": "sin_historia",
+        "n_candidatos": 26,
+        "lista": [
+          "I25",
+          "I02",
+          "I17"
+        ],
+        "acierto": 0,
+        "ndcg": 0.0
+      }
+    ]
+  }
+}

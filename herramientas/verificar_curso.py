@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 23.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 24.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 23
+ULTIMA_UNIDAD = 24
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -162,6 +162,12 @@ def main():
                     esperado = "Seleccionado por MAE de validación: ridge; horizonte=1 h"
                 elif programa.name == "03_ventana_a_mano.py":
                     esperado = "Futuro alterado: media causal=12.0; media centrada=42.0"
+                elif programa.name == "01_recomendar_recursos.py":
+                    esperado = "Seleccionado por Recall@3 de validación: coseno"
+                elif programa.name == "02_aprender_politica.py":
+                    esperado = "Cinco entrenamientos: éxito medio=0.623; desviación=0.0341"
+                elif programa.name == "03_calcular_a_mano.py":
+                    esperado = "Q no terminal=0.44; Q terminal=-0.40"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -350,6 +356,19 @@ def main():
                           "--salida", Path(carpeta)/f"serie-{horizonte}-{cierre}", "--graficos"],
                          "Recarga: error máximo=0.0 °C")
                 ejecutados += 1
+        # Cada cierre recarga el estado que acaba de exportarse, sin reajustar.
+        for nombre, programa, recarga, cierre in (
+                ("recomendacion", "01_recomendar_recursos.py", "Recarga: todas las listas coinciden.",
+                 "Cierre sin reajuste: coseno; n=56; Recall@3=0.2500"),
+                ("refuerzo", "02_aprender_politica.py", "Recarga: tablas y evaluación idénticas.",
+                 "Cierre: cinco tablas recargadas; sin entrenamiento.")):
+            programa = f"unidad24-recomendacion-refuerzo/ejemplos/{programa}"
+            salida = Path(carpeta) / f"u24-{nombre}"
+            ejecutar([programa, "--salida", salida, "--graficos"], recarga)
+            ejecutados += 1
+            ejecutar([programa, "--evaluar-prueba", "--modelo", salida / "modelo.json",
+                      "--salida", salida], cierre)
+            ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:
         pruebas = unidad / "pruebas"
