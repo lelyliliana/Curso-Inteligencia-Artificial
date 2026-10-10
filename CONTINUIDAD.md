@@ -38,10 +38,11 @@ La revisión inicial ejecutó correctamente 19 programas de ejemplos y solucione
 | Unidad 24 | Desarrollada y comprobada | Dos prácticas independientes, datos sintéticos, ranking con coseno, cinco tablas Q, cierres sin reajuste, tres figuras, ejercicios, reto y 44 pruebas |
 | Unidad 25 | Desarrollada y comprobada | Atención manual y causal, corpus por familias, bigramas y transformer CPU, generación, recarga, tres figuras, diez ejercicios, reto y 46 pruebas |
 | Unidad 26 | Desarrollada y comprobada | Dos laboratorios, ocho llamadas reales a Ollama CPU, contratos y errores simulados, análisis sin conexión, figura PNG/SVG, diez ejercicios, reto, ficha y 43 pruebas |
-| Verificación común | Disponible para las unidades 0–26 | [verificar_curso.py](herramientas/verificar_curso.py) |
-| Unidades 27–35 | Pendientes de desarrollo | Alcance conservado en el índice |
+| Unidad 27 | Desarrollada y comprobada | Tres candidatos de prompts, 44 llamadas reales en CPU, separación por familias, esquema y validación semántica, referencia por reglas, cierre conservado, dos figuras, ejercicios, reto y 47 pruebas |
+| Verificación común | Disponible para las unidades 0–27 | [verificar_curso.py](herramientas/verificar_curso.py) |
+| Unidades 28–35 | Pendientes de desarrollo | Alcance conservado en el índice |
 
-La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8`, la Unidad 12 en `61a73f5`, la Unidad 13 en `81df395`, la Unidad 14 en `1f2b6f8`, la Unidad 15 en `b5ef367`, la Unidad 16 en `121e345`, la Unidad 17 en `5ea63cf`, la Unidad 18 en `ad665cc`, la Unidad 19 en `54e7ae1`, la Unidad 20 en `b9daaed`, la Unidad 21 en `b1e1bec`, la Unidad 22 en `ef26b48`, la Unidad 23 en `0fdc545`, la Unidad 24 en `adde4fd` y la Unidad 25 en `ffd7fef`. Esta entrega incorpora la Unidad 26 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 27: prompts, salidas estructuradas y evaluación**. Quedan 9 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
+La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8`, la Unidad 12 en `61a73f5`, la Unidad 13 en `81df395`, la Unidad 14 en `1f2b6f8`, la Unidad 15 en `b5ef367`, la Unidad 16 en `121e345`, la Unidad 17 en `5ea63cf`, la Unidad 18 en `ad665cc`, la Unidad 19 en `54e7ae1`, la Unidad 20 en `b9daaed`, la Unidad 21 en `b1e1bec`, la Unidad 22 en `ef26b48`, la Unidad 23 en `0fdc545`, la Unidad 24 en `adde4fd`, la Unidad 25 en `ffd7fef` y la Unidad 26 en `ff94239`. Esta entrega incorpora la Unidad 27 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 28: embeddings y búsqueda semántica**. Quedan 8 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
 
 ## Enfoque que se conserva
 
@@ -62,24 +63,26 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 | 10–13 | Desarrollo terminado: líneas base, regresión, clasificación y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
 | 14–18 | Desarrollo terminado: agrupamiento, representaciones, validación, decisiones e interpretabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
 | 19–24 | Unidades 19–24 terminadas; bloque de aplicaciones desarrollado | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
-| 25–31 | Unidades 25–26 terminadas; pendientes prompts, embeddings, RAG, herramientas, adaptación y multimodalidad | Evaluaciones con casos verificables, citas y límites de permisos y recursos |
+| 25–31 | Unidades 25–27 terminadas; pendientes embeddings, RAG, herramientas, adaptación y multimodalidad | Evaluaciones con casos verificables, citas y límites de permisos y recursos |
 | 32–33 | Aplicación, operación, seguridad y observabilidad | Aplicación mínima con validación de entradas, registro útil y manejo de errores |
 | 34–35 | Talleres y proyecto integrador | Proyecto con línea base, evaluación independiente, demostración y documentación |
 
 Antes de desarrollar cada unidad, verificar documentación primaria de las bibliotecas y servicios que vaya a utilizar. Fijar y registrar las versiones que realmente se prueben; no asumir que una API o descarga futura conserva el mismo funcionamiento.
 
-## Siguiente entrega concreta — Unidad 27
+## Siguiente entrega concreta — Unidad 28
 
-Pregunta de trabajo: **¿cómo diseñar instrucciones y salidas estructuradas para una tarea concreta, y evaluar su calidad con casos independientes sin elegir solo ejemplos favorables?**
+Pregunta de trabajo: **¿cómo representar documentos y consultas con embeddings, recuperar candidatos y evaluar relevancia sin confundir cercanía vectorial con evidencia suficiente?**
 
 Alcance propuesto, todavía no implementado:
 
-1. Definir tarea, formato, evidencia disponible y criterios antes de probar prompts. Separar datos de instrucciones y explicar límites frente a entradas ambiguas o adversarias.
-2. Comparar una instrucción básica y variantes justificadas, con casos propios de desarrollo y evaluación reservada por familias. No modificar la prueba para favorecer una variante.
-3. Introducir JSON y validación de esquema: separar formato válido de contenido correcto, ausencia de información y rechazo. Verificar documentación del motor utilizado para salidas estructuradas.
-4. Conservar respuestas, parámetros, errores, truncamientos, tiempos y reglas de evaluación. Usar criterios deterministas cuando sea posible y documentar desacuerdos en cualquier revisión humana.
-5. Mantener una ruta sin red y distinguir capturas, simulaciones e inferencia real. Reutilizar el cliente de la Unidad 26 cuando corresponda; no exigir APIs pagadas ni nuevos pesos grandes.
-6. Entregar laboratorios, casos documentados, ejercicios resueltos, reto, ficha y verificación automática que no haga llamadas externas por defecto.
+1. Explicar vectores, producto punto, norma y coseno con ejemplos manuales; distinguir representaciones léxicas y embeddings aprendidos, dimensiones y normalización.
+2. Crear un corpus propio con identificadores y consultas de desarrollo/cierre separadas por intención o familia; fijar relevancia y casos sin respuesta antes de evaluar.
+3. Comparar una referencia léxica y un modelo de embeddings pequeño si el entorno permite verificar licencia, versión y recursos. Distinguir inferencia real de representaciones artificiales y mantener análisis sin red.
+4. Recuperar candidatos con búsqueda exacta para el corpus pequeño, documentar top-k, empates y evaluación de ranking. No afirmar que un vecino cercano prueba una respuesta verdadera ni imponer un umbral elegido con cierre.
+5. Guardar huellas de corpus, modelo y preparación, índice y evaluación; demostrar consulta y recarga sin confundir reindexación con entrenamiento.
+6. Entregar laboratorios, datos documentados, ejercicios resueltos, reto, ficha y pruebas. No introducir RAG completo antes de la Unidad 29 ni depender de APIs pagadas para la ruta básica.
+
+La Unidad 27 se verificó el 10 de octubre de 2026 con biblioteca estándar y el mismo Ollama 0.34.2/Qwen3:8b local de la Unidad 26; no instaló paquetes ni pesos nuevos. Diez familias sintéticas, dos órdenes de registros por familia: 12 casos de desarrollo y ocho de cierre. Compara instrucción básica, explícita y explícita con esquema aplicado por el motor, mediante 36 llamadas CPU. Los tres producen JSON y forma válidos en 12/12; aceptadas: 5/12, 9/12 y 9/12. Desempate prefijado elige explícito. El cierre congelado obtiene 4/8 y una de cuatro familias completas, con errores de borradores, evidencia y una nota que cambia la instrucción; no se retoca el prompt. La referencia por reglas resuelve 12/12 y 8/8 sobre esta estructura. Se conservan capturas, selección y huellas, además de 16 contraejemplos artificiales claramente separados. Dos figuras se revisaron visualmente; 47 pruebas verifican parser, forma, coherencia, contenido, familias, ausencia de etiquetas en prompts, configuración, selección, persistencia y reconstrucción de evidencia. El verificador no llama al modelo ni a APIs remotas.
 
 La Unidad 26 se verificó el 10 de octubre de 2026 con Python 3.12.3 y biblioteca estándar; reutiliza NumPy y Matplotlib solo para figuras. Ollama 0.34.2 y Qwen3:8b Q4_K_M ya estaban instalados. Se fijaron cuatro casos propios y dos límites de salida, 4 y 48 tokens, con CPU, contexto 1024 y sin reintentos. Las ocho llamadas reales conservaron respuestas y contadores: límite 4 obtiene cuatro contratos válidos, tres coincidencias y dos aceptaciones; límite 48, cuatro en cada medida. La salida `NO_DISPONIBLE` coincide bajo ambos límites, pero el corte `length` impide aceptarla con límite 4. Medianas de pared: 1,078 y 1,532 s; calentamiento separado. Se guardan digest, huellas y recursos del servidor, sin afirmar medición de pico de RAM. El análisis predeterminado usa la captura sin red. Doce escenarios artificiales ejercitan errores y contratos; la extensión OpenAI Responses no se ejecutó en vivo. Una figura de dos paneles se revisó visualmente. Las 43 pruebas comprueban transporte acotado, claves, errores, respuestas, métricas, persistencia, protocolo y evidencia publicada.
 
@@ -143,7 +146,7 @@ python -m pip install -r unidad21-vision-computador/requirements-cpu.txt
 python herramientas/verificar_curso.py
 ```
 
-Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 192 ejecuciones de programas y variantes y las 654 pruebas de las unidades 5 a 26. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas, scikit-learn, PyTorch CPU y Pillow indicados en los dos archivos de requisitos de la Unidad 21; las unidades 22, 23, 24, 25 y 26 reutilizan los paquetes ya incluidos. La Unidad 26 analiza una captura local guardada y simula errores sin red; sus modos de inferencia en vivo son opcionales. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–26; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
+Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 198 ejecuciones de programas y variantes y las 701 pruebas de las unidades 5 a 27. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas, scikit-learn, PyTorch CPU y Pillow indicados en los dos archivos de requisitos de la Unidad 21; las unidades 22, 23, 24, 25, 26 y 27 reutilizan los paquetes ya incluidos. Las unidades 26 y 27 analizan capturas locales guardadas y simulaciones identificadas sin red; sus modos de inferencia en vivo son opcionales. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–27; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
 
 La comprobación de enlaces no valida URLs externas ni fragmentos `#ancla`. Ejecutar programas con éxito no demuestra que toda explicación sea correcta ni que se obtenga utilidad en una población real.
 

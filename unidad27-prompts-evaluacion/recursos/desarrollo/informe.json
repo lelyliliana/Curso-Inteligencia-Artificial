@@ -1,0 +1,1246 @@
+{
+  "origen": "analisis_de_captura",
+  "fase": "desarrollo",
+  "modelo": "qwen3:8b",
+  "filas": [
+    {
+      "caso": "F01a",
+      "familia": "F01",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      },
+      "pared_s": 8.72691678800038,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 12, \"evidencia\": [\"f01r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 153,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      }
+    },
+    {
+      "caso": "F01a",
+      "familia": "F01",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      },
+      "pared_s": 20.433462304001296,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 12, \"evidencia\": [\"f01r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 459,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      }
+    },
+    {
+      "caso": "F01a",
+      "familia": "F01",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      },
+      "pared_s": 3.3895672329999798,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 12, \"evidencia\": [\"f01r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 459,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      }
+    },
+    {
+      "caso": "F01b",
+      "familia": "F01",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      },
+      "pared_s": 6.274085757000648,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 12, \"evidencia\": [\"f01r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 459,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      }
+    },
+    {
+      "caso": "F01b",
+      "familia": "F01",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      },
+      "pared_s": 3.3066600060010387,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 12, \"evidencia\": [\"f01r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 459,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      }
+    },
+    {
+      "caso": "F01b",
+      "familia": "F01",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      },
+      "pared_s": 5.888040985000771,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 12, \"evidencia\": [\"f01r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 153,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 12,
+        "evidencia": [
+          "f01r1"
+        ]
+      }
+    },
+    {
+      "caso": "F02a",
+      "familia": "F02",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "pared_s": 8.414724418000333,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 486,
+      "tokens_salida": 32,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      }
+    },
+    {
+      "caso": "F02a",
+      "familia": "F02",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "pared_s": 8.192832390999683,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 180,
+      "tokens_salida": 32,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      }
+    },
+    {
+      "caso": "F02a",
+      "familia": "F02",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "pared_s": 4.123532808000164,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 486,
+      "tokens_salida": 32,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      }
+    },
+    {
+      "caso": "F02b",
+      "familia": "F02",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "pared_s": 7.712452526000561,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r2\", \"f02r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 180,
+      "tokens_salida": 32,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r2",
+          "f02r1"
+        ]
+      }
+    },
+    {
+      "caso": "F02b",
+      "familia": "F02",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "pared_s": 7.787555602999419,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 486,
+      "tokens_salida": 32,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      }
+    },
+    {
+      "caso": "F02b",
+      "familia": "F02",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "pared_s": 3.970697755999936,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 486,
+      "tokens_salida": 32,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      }
+    },
+    {
+      "caso": "F03a",
+      "familia": "F03",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      },
+      "pared_s": 5.97744483400129,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ausente\", \"valor\": null, \"evidencia\": []}",
+      "razon": "stop",
+      "tokens_entrada": 464,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      }
+    },
+    {
+      "caso": "F03a",
+      "familia": "F03",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      },
+      "pared_s": 2.4746362099995167,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ausente\", \"valor\": null, \"evidencia\": []}",
+      "razon": "stop",
+      "tokens_entrada": 464,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      }
+    },
+    {
+      "caso": "F03a",
+      "familia": "F03",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      },
+      "pared_s": 6.485357337000096,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": 21, \"evidencia\": [\"f03r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 158,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 21,
+        "evidencia": [
+          "f03r1"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F03b",
+      "familia": "F03",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      },
+      "pared_s": 5.51252426100109,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ausente\", \"valor\": null, \"evidencia\": []}",
+      "razon": "stop",
+      "tokens_entrada": 464,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      }
+    },
+    {
+      "caso": "F03b",
+      "familia": "F03",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      },
+      "pared_s": 5.902851694001583,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": 4, \"evidencia\": [\"f03r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 158,
+      "tokens_salida": 25,
+      "objeto": {
+        "estado": "ok",
+        "valor": 4,
+        "evidencia": [
+          "f03r2"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F03b",
+      "familia": "F03",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      },
+      "pared_s": 2.5189782320012455,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ausente\", \"valor\": null, \"evidencia\": []}",
+      "razon": "stop",
+      "tokens_entrada": 464,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      }
+    },
+    {
+      "caso": "F04a",
+      "familia": "F04",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f04r1",
+          "f04r2"
+        ]
+      },
+      "pared_s": 8.544745052999133,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"conflicto\", \"valor\": null, \"evidencia\": [\"f04r1\", \"f04r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 191,
+      "tokens_salida": 33,
+      "objeto": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f04r1",
+          "f04r2"
+        ]
+      }
+    },
+    {
+      "caso": "F04a",
+      "familia": "F04",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f04r1",
+          "f04r2"
+        ]
+      },
+      "pared_s": 8.860957554999914,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"conflicto\", \"valor\": null, \"evidencia\": [\"f04r1\", \"f04r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 497,
+      "tokens_salida": 33,
+      "objeto": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f04r1",
+          "f04r2"
+        ]
+      }
+    },
+    {
+      "caso": "F04a",
+      "familia": "F04",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f04r1",
+          "f04r2"
+        ]
+      },
+      "pared_s": 4.112265789000958,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"conflicto\", \"valor\": null, \"evidencia\": [\"f04r1\", \"f04r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 497,
+      "tokens_salida": 33,
+      "objeto": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f04r1",
+          "f04r2"
+        ]
+      }
+    },
+    {
+      "caso": "F04b",
+      "familia": "F04",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f04r1",
+          "f04r2"
+        ]
+      },
+      "pared_s": 7.462684932999764,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": 11, \"evidencia\": [\"f04r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 497,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 11,
+        "evidencia": [
+          "f04r2"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F04b",
+      "familia": "F04",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f04r1",
+          "f04r2"
+        ]
+      },
+      "pared_s": 3.2389897190005286,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": 11, \"evidencia\": [\"f04r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 497,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 11,
+        "evidencia": [
+          "f04r2"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F04b",
+      "familia": "F04",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f04r1",
+          "f04r2"
+        ]
+      },
+      "pared_s": 7.2416971450002166,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": 11, \"evidencia\": [\"f04r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 191,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 11,
+        "evidencia": [
+          "f04r2"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F05a",
+      "familia": "F05",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "ok",
+        "valor": 5,
+        "evidencia": [
+          "f05r1"
+        ]
+      },
+      "pared_s": 7.949554823999279,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 5, \"evidencia\": [\"f05r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 499,
+      "tokens_salida": 25,
+      "objeto": {
+        "estado": "ok",
+        "valor": 5,
+        "evidencia": [
+          "f05r1"
+        ]
+      }
+    },
+    {
+      "caso": "F05a",
+      "familia": "F05",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "ok",
+        "valor": 5,
+        "evidencia": [
+          "f05r1"
+        ]
+      },
+      "pared_s": 7.823492628000167,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": 99, \"evidencia\": [\"f05r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 193,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 99,
+        "evidencia": [
+          "f05r2"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F05a",
+      "familia": "F05",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": 5,
+        "evidencia": [
+          "f05r1"
+        ]
+      },
+      "pared_s": 3.1365816239995183,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 5, \"evidencia\": [\"f05r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 499,
+      "tokens_salida": 25,
+      "objeto": {
+        "estado": "ok",
+        "valor": 5,
+        "evidencia": [
+          "f05r1"
+        ]
+      }
+    },
+    {
+      "caso": "F05b",
+      "familia": "F05",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "ok",
+        "valor": 5,
+        "evidencia": [
+          "f05r1"
+        ]
+      },
+      "pared_s": 7.176541355000154,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": 99, \"evidencia\": [\"f05r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 193,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 99,
+        "evidencia": [
+          "f05r2"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F05b",
+      "familia": "F05",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": 5,
+        "evidencia": [
+          "f05r1"
+        ]
+      },
+      "pared_s": 7.4562703339997825,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"conflicto\", \"valor\": null, \"evidencia\": [\"f05r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 499,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f05r1"
+        ]
+      },
+      "fallo": "coherencia"
+    },
+    {
+      "caso": "F05b",
+      "familia": "F05",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "ok",
+        "valor": 5,
+        "evidencia": [
+          "f05r1"
+        ]
+      },
+      "pared_s": 3.24228579299961,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"conflicto\", \"valor\": null, \"evidencia\": [\"f05r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 499,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f05r1"
+        ]
+      },
+      "fallo": "coherencia"
+    },
+    {
+      "caso": "F06a",
+      "familia": "F06",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": 24,
+        "evidencia": [
+          "f06r1"
+        ]
+      },
+      "pared_s": 7.936960791999809,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 24, \"evidencia\": [\"f06r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 496,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 24,
+        "evidencia": [
+          "f06r1"
+        ]
+      }
+    },
+    {
+      "caso": "F06a",
+      "familia": "F06",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "ok",
+        "valor": 24,
+        "evidencia": [
+          "f06r1"
+        ]
+      },
+      "pared_s": 3.273378115000014,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 24, \"evidencia\": [\"f06r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 496,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 24,
+        "evidencia": [
+          "f06r1"
+        ]
+      }
+    },
+    {
+      "caso": "F06a",
+      "familia": "F06",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "ok",
+        "valor": 24,
+        "evidencia": [
+          "f06r1"
+        ]
+      },
+      "pared_s": 6.787170499001149,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\":\"ok\",\"valor\":77,\"evidencia\":[\"falso\"]}",
+      "razon": "stop",
+      "tokens_entrada": 190,
+      "tokens_salida": 18,
+      "objeto": {
+        "estado": "ok",
+        "valor": 77,
+        "evidencia": [
+          "falso"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F06b",
+      "familia": "F06",
+      "candidato": "con_esquema",
+      "esperado": {
+        "estado": "ok",
+        "valor": 24,
+        "evidencia": [
+          "f06r1"
+        ]
+      },
+      "pared_s": 8.318827175999104,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"conflicto\", \"valor\": null, \"evidencia\": [\"f06r1\", \"f06r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 496,
+      "tokens_salida": 33,
+      "objeto": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f06r1",
+          "f06r2"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F06b",
+      "familia": "F06",
+      "candidato": "basico",
+      "esperado": {
+        "estado": "ok",
+        "valor": 24,
+        "evidencia": [
+          "f06r1"
+        ]
+      },
+      "pared_s": 6.253923735001081,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\":\"ok\",\"valor\":77,\"evidencia\":[\"falso\"]}",
+      "razon": "stop",
+      "tokens_entrada": 190,
+      "tokens_salida": 18,
+      "objeto": {
+        "estado": "ok",
+        "valor": 77,
+        "evidencia": [
+          "falso"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F06b",
+      "familia": "F06",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": 24,
+        "evidencia": [
+          "f06r1"
+        ]
+      },
+      "pared_s": 4.187306289000844,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"conflicto\", \"valor\": null, \"evidencia\": [\"f06r1\", \"f06r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 496,
+      "tokens_salida": 33,
+      "objeto": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f06r1",
+          "f06r2"
+        ]
+      },
+      "fallo": "contenido"
+    }
+  ],
+  "resumen": [
+    {
+      "candidato": "basico",
+      "intentos": 12,
+      "contrato": 12,
+      "finalizada": 12,
+      "json_valido": 12,
+      "forma": 12,
+      "coherencia": 12,
+      "contenido": 5,
+      "aceptada": 5,
+      "familias": 6,
+      "familias_completas": 2,
+      "por_estado": {
+        "ok": {
+          "n": 8,
+          "aceptadas": 4
+        },
+        "ausente": {
+          "n": 2,
+          "aceptadas": 0
+        },
+        "conflicto": {
+          "n": 2,
+          "aceptadas": 1
+        }
+      },
+      "fallos": {
+        "contenido": 7
+      },
+      "n_latencias": 12,
+      "mediana_pared_s": 7.209119250000185,
+      "tokens_salida_total": 314
+    },
+    {
+      "candidato": "explicito",
+      "intentos": 12,
+      "contrato": 12,
+      "finalizada": 12,
+      "json_valido": 12,
+      "forma": 12,
+      "coherencia": 11,
+      "contenido": 9,
+      "aceptada": 9,
+      "familias": 6,
+      "familias_completas": 3,
+      "por_estado": {
+        "ok": {
+          "n": 8,
+          "aceptadas": 6
+        },
+        "ausente": {
+          "n": 2,
+          "aceptadas": 2
+        },
+        "conflicto": {
+          "n": 2,
+          "aceptadas": 1
+        }
+      },
+      "fallos": {
+        "contenido": 2,
+        "coherencia": 1
+      },
+      "n_latencias": 12,
+      "mediana_pared_s": 6.865178045500215,
+      "tokens_salida_total": 325
+    },
+    {
+      "candidato": "con_esquema",
+      "intentos": 12,
+      "contrato": 12,
+      "finalizada": 12,
+      "json_valido": 12,
+      "forma": 12,
+      "coherencia": 11,
+      "contenido": 9,
+      "aceptada": 9,
+      "familias": 6,
+      "familias_completas": 3,
+      "por_estado": {
+        "ok": {
+          "n": 8,
+          "aceptadas": 6
+        },
+        "ausente": {
+          "n": 2,
+          "aceptadas": 2
+        },
+        "conflicto": {
+          "n": 2,
+          "aceptadas": 1
+        }
+      },
+      "fallos": {
+        "contenido": 2,
+        "coherencia": 1
+      },
+      "n_latencias": 12,
+      "mediana_pared_s": 3.680132494499958,
+      "tokens_salida_total": 325
+    }
+  ],
+  "referencia_reglas": {
+    "correctas": 12,
+    "casos": 12
+  }
+}

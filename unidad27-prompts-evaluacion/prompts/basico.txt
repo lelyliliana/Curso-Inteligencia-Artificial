@@ -1,0 +1,1 @@
+Consulta el sensor solicitado en los registros confirmados. Devuelve solamente un objeto JSON con estado (ok, ausente o conflicto), valor (entero o null) y evidencia (lista de identificadores de registros). Responde con los datos proporcionados.

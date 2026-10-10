@@ -1,0 +1,383 @@
+{
+  "origen": "contraejemplos_artificiales_sin_inferencia",
+  "caso": {
+    "id": "F02a",
+    "familia": "F02",
+    "fenomeno": "duplicado",
+    "entrada": {
+      "consulta": "C",
+      "registros": [
+        {
+          "id": "f02r1",
+          "sensor": "C",
+          "valor": -3,
+          "confirmado": true
+        },
+        {
+          "id": "f02r2",
+          "sensor": "C",
+          "valor": -3,
+          "confirmado": true
+        },
+        {
+          "id": "f02r3",
+          "sensor": "D",
+          "valor": 8,
+          "confirmado": true
+        }
+      ],
+      "nota": "Dos registros iguales."
+    },
+    "esperado": {
+      "estado": "ok",
+      "valor": -3,
+      "evidencia": [
+        "f02r1",
+        "f02r2"
+      ]
+    }
+  },
+  "filas": [
+    {
+      "id": "correcta",
+      "salida_simulada": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      }
+    },
+    {
+      "id": "orden_y_decimal",
+      "salida_simulada": "{\"evidencia\":[\"f02r2\",\"f02r1\"],\"valor\":-3.0,\"estado\":\"ok\"}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"evidencia\":[\"f02r2\",\"f02r1\"],\"valor\":-3.0,\"estado\":\"ok\"}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "evidencia": [
+          "f02r2",
+          "f02r1"
+        ],
+        "valor": -3.0,
+        "estado": "ok"
+      }
+    },
+    {
+      "id": "markdown",
+      "salida_simulada": "```json\n{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}\n```",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": false,
+      "forma": false,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "```json\n{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}\n```",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "fallo": "json_invalido"
+    },
+    {
+      "id": "json_incompleto",
+      "salida_simulada": "{\"estado\":\"ok\",",
+      "contrato": true,
+      "finalizada": false,
+      "json_valido": false,
+      "forma": false,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\":\"ok\",",
+      "razon": "length",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "fallo": "json_invalido"
+    },
+    {
+      "id": "clave_repetida",
+      "salida_simulada": "{\"estado\":\"ausente\",\"estado\":\"ok\",\"valor\":-3,\"evidencia\":[\"f02r1\",\"f02r2\"]}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": false,
+      "forma": false,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\":\"ausente\",\"estado\":\"ok\",\"valor\":-3,\"evidencia\":[\"f02r1\",\"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "fallo": "clave_repetida"
+    },
+    {
+      "id": "numero_texto",
+      "salida_simulada": "{\"estado\": \"ok\", \"valor\": \"-3\", \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": false,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": \"-3\", \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ok",
+        "valor": "-3",
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "fallo": "forma"
+    },
+    {
+      "id": "booleano",
+      "salida_simulada": "{\"estado\": \"ok\", \"valor\": true, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": false,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": true, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ok",
+        "valor": true,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "fallo": "forma"
+    },
+    {
+      "id": "extra",
+      "salida_simulada": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"], \"explicacion\": \"dato\"}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": false,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"], \"explicacion\": \"dato\"}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ],
+        "explicacion": "dato"
+      },
+      "fallo": "forma"
+    },
+    {
+      "id": "incoherente",
+      "salida_simulada": "{\"estado\": \"ausente\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ausente\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ausente",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "fallo": "coherencia"
+    },
+    {
+      "id": "valor_incorrecto",
+      "salida_simulada": "{\"estado\": \"ok\", \"valor\": 7, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": 7, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ok",
+        "valor": 7,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "id": "id_inventado",
+      "salida_simulada": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"falso\"]}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"falso\"]}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "falso"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "id": "evidencia_incompleta",
+      "salida_simulada": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\"]}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "id": "id_repetido",
+      "salida_simulada": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r1\"]}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": false,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r1"
+        ]
+      },
+      "fallo": "forma"
+    },
+    {
+      "id": "truncada_valida",
+      "salida_simulada": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "contrato": true,
+      "finalizada": false,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": -3, \"evidencia\": [\"f02r1\", \"f02r2\"]}",
+      "razon": "length",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ok",
+        "valor": -3,
+        "evidencia": [
+          "f02r1",
+          "f02r2"
+        ]
+      },
+      "fallo": "truncada"
+    },
+    {
+      "id": "negativa_libre",
+      "salida_simulada": "No puedo responder a esa solicitud.",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": false,
+      "forma": false,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "No puedo responder a esa solicitud.",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "fallo": "json_invalido"
+    },
+    {
+      "id": "nan",
+      "salida_simulada": "{\"estado\":\"ok\",\"valor\":NaN,\"evidencia\":[\"f02r1\"]}",
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": false,
+      "forma": false,
+      "coherencia": false,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\":\"ok\",\"valor\":NaN,\"evidencia\":[\"f02r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 10,
+      "tokens_salida": 20,
+      "fallo": "constante_no_json"
+    }
+  ]
+}

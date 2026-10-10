@@ -1,0 +1,297 @@
+{
+  "origen": "analisis_de_captura",
+  "fase": "cierre",
+  "modelo": "qwen3:8b",
+  "filas": [
+    {
+      "caso": "F07a",
+      "familia": "F07",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": 0,
+        "evidencia": [
+          "f07r1",
+          "f07r2"
+        ]
+      },
+      "pared_s": 8.182045031999223,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 0, \"evidencia\": [\"f07r1\", \"f07r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 490,
+      "tokens_salida": 32,
+      "objeto": {
+        "estado": "ok",
+        "valor": 0,
+        "evidencia": [
+          "f07r1",
+          "f07r2"
+        ]
+      }
+    },
+    {
+      "caso": "F07b",
+      "familia": "F07",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": 0,
+        "evidencia": [
+          "f07r1",
+          "f07r2"
+        ]
+      },
+      "pared_s": 7.771899351000684,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ok\", \"valor\": 0, \"evidencia\": [\"f07r2\", \"f07r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 490,
+      "tokens_salida": 32,
+      "objeto": {
+        "estado": "ok",
+        "valor": 0,
+        "evidencia": [
+          "f07r2",
+          "f07r1"
+        ]
+      }
+    },
+    {
+      "caso": "F08a",
+      "familia": "F08",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      },
+      "pared_s": 6.165738027000771,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"ausente\", \"valor\": null, \"evidencia\": []}",
+      "razon": "stop",
+      "tokens_entrada": 473,
+      "tokens_salida": 20,
+      "objeto": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      }
+    },
+    {
+      "caso": "F08b",
+      "familia": "F08",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      },
+      "pared_s": 6.534688460000325,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"ok\", \"valor\": 18, \"evidencia\": [\"f08r1\"]}",
+      "razon": "stop",
+      "tokens_entrada": 473,
+      "tokens_salida": 26,
+      "objeto": {
+        "estado": "ok",
+        "valor": 18,
+        "evidencia": [
+          "f08r1"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F09a",
+      "familia": "F09",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f09r1",
+          "f09r2"
+        ]
+      },
+      "pared_s": 9.729701260999718,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\": \"conflicto\", \"valor\": null, \"evidencia\": [\"f09r1\", \"f09r2\", \"f09r3\"]}",
+      "razon": "stop",
+      "tokens_entrada": 499,
+      "tokens_salida": 40,
+      "objeto": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f09r1",
+          "f09r2",
+          "f09r3"
+        ]
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F09b",
+      "familia": "F09",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f09r1",
+          "f09r2"
+        ]
+      },
+      "pared_s": 8.26619171099992,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": true,
+      "aceptada": true,
+      "texto": "{\"estado\": \"conflicto\", \"valor\": null, \"evidencia\": [\"f09r1\", \"f09r2\"]}",
+      "razon": "stop",
+      "tokens_entrada": 499,
+      "tokens_salida": 33,
+      "objeto": {
+        "estado": "conflicto",
+        "valor": null,
+        "evidencia": [
+          "f09r1",
+          "f09r2"
+        ]
+      }
+    },
+    {
+      "caso": "F10a",
+      "familia": "F10",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": 31,
+        "evidencia": [
+          "f10r1"
+        ]
+      },
+      "pared_s": 6.323875663998479,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\":\"ausente\",\"valor\":null,\"evidencia\":[]}",
+      "razon": "stop",
+      "tokens_entrada": 489,
+      "tokens_salida": 16,
+      "objeto": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      },
+      "fallo": "contenido"
+    },
+    {
+      "caso": "F10b",
+      "familia": "F10",
+      "candidato": "explicito",
+      "esperado": {
+        "estado": "ok",
+        "valor": 31,
+        "evidencia": [
+          "f10r1"
+        ]
+      },
+      "pared_s": 5.881974205000006,
+      "contrato": true,
+      "finalizada": true,
+      "json_valido": true,
+      "forma": true,
+      "coherencia": true,
+      "contenido": false,
+      "aceptada": false,
+      "texto": "{\"estado\":\"ausente\",\"valor\":null,\"evidencia\":[]}",
+      "razon": "stop",
+      "tokens_entrada": 489,
+      "tokens_salida": 16,
+      "objeto": {
+        "estado": "ausente",
+        "valor": null,
+        "evidencia": []
+      },
+      "fallo": "contenido"
+    }
+  ],
+  "resumen": [
+    {
+      "candidato": "explicito",
+      "intentos": 8,
+      "contrato": 8,
+      "finalizada": 8,
+      "json_valido": 8,
+      "forma": 8,
+      "coherencia": 8,
+      "contenido": 4,
+      "aceptada": 4,
+      "familias": 4,
+      "familias_completas": 1,
+      "por_estado": {
+        "ok": {
+          "n": 4,
+          "aceptadas": 2
+        },
+        "ausente": {
+          "n": 2,
+          "aceptadas": 1
+        },
+        "conflicto": {
+          "n": 2,
+          "aceptadas": 1
+        }
+      },
+      "fallos": {
+        "contenido": 4
+      },
+      "n_latencias": 8,
+      "mediana_pared_s": 7.1532939055005045,
+      "tokens_salida_total": 215
+    }
+  ],
+  "referencia_reglas": {
+    "correctas": 8,
+    "casos": 8
+  }
+}

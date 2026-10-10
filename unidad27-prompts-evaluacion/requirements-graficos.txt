@@ -1,0 +1,2 @@
+# Opcional: solo figuras. Análisis, validación y cliente usan biblioteca estándar.
+-r ../unidad09-exploracion-visualizacion/requirements.txt

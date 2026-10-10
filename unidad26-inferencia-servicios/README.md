@@ -219,4 +219,4 @@ python -m unittest discover -s unidad26-inferencia-servicios/pruebas -v
 python herramientas/verificar_curso.py
 ```
 
-Las **43 pruebas** de esta unidad funcionan con biblioteca estándar y sin red. La verificación general requiere las dependencias acumuladas del [índice](../README.md); no inicia Ollama ni llama a la API remota. Antes de avanzar, comprueba que puedes rechazar una respuesta truncada aunque parezca correcta y distinguir un registro real de una simulación. La siguiente unidad prevista es la **27 — Prompts, salidas estructuradas y evaluación**, pendiente de desarrollo.
+Las **43 pruebas** de esta unidad funcionan con biblioteca estándar y sin red. La verificación general requiere las dependencias acumuladas del [índice](../README.md); no inicia Ollama ni llama a la API remota. Antes de avanzar, comprueba que puedes rechazar una respuesta truncada aunque parezca correcta y distinguir un registro real de una simulación. Continúa con la [Unidad 27 — Prompts, salidas estructuradas y evaluación](../unidad27-prompts-evaluacion/README.md), que compara instrucciones, valida contenido y conserva un cierre independiente de la selección.

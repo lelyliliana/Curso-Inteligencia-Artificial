@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "estado": {"type": "string", "enum": ["ok", "ausente", "conflicto"]},
+    "valor": {"type": ["integer", "null"]},
+    "evidencia": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  },
+  "required": ["estado", "valor", "evidencia"],
+  "additionalProperties": false
+}

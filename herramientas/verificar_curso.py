@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 26.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 27.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 26
+ULTIMA_UNIDAD = 27
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -180,6 +180,12 @@ def main():
                     esperado = "Límite 4: aceptadas=2/4; coinciden=3; finalizadas=2; contratos=4"
                 elif programa.name == "03_medir_a_mano.py":
                     esperado = "Decodificación=10.0 tokens/s; extremo a extremo=6.67 tokens/s"
+                elif programa.name == "01_validar_salidas.py":
+                    esperado = "Salidas artificiales: 16; aceptadas=2."
+                elif programa.name == "02_comparar_prompts.py":
+                    esperado = "Seleccionado con desarrollo: explicito"
+                elif programa.name == "03_calcular_evaluacion.py":
+                    esperado = "Aceptación por intento=2/6; familias completas=0/3"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -406,6 +412,17 @@ def main():
         # Solo reanaliza la captura: nunca inicia Ollama ni realiza llamadas pagadas.
         ejecutar([prefijo + "02_evaluar_inferencia.py", "--salida", Path(carpeta)/"u26-analisis", "--graficos"],
                  "Análisis sin red de la captura publicada; no es una nueva inferencia.")
+        ejecutados += 1
+        prefijo = "unidad27-prompts-evaluacion/ejemplos/"
+        ejecutar([prefijo + "01_validar_salidas.py", "--salida", Path(carpeta)/"u27-validacion"], "Exportación:")
+        ejecutados += 1
+        desarrollo = Path(carpeta)/"u27-desarrollo"
+        ejecutar([prefijo + "02_comparar_prompts.py", "--salida", desarrollo, "--graficos"],
+                 "Seleccionado con desarrollo: explicito")
+        ejecutados += 1
+        ejecutar([prefijo + "02_comparar_prompts.py", "--fase", "cierre", "--seleccion", desarrollo/"seleccion.json",
+                  "--salida", Path(carpeta)/"u27-cierre", "--graficos"],
+                 "explicito: aceptadas=4/8; forma=8; contenido=4; familias completas=1/4")
         ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

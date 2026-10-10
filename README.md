@@ -84,7 +84,7 @@ La unidad 24 contiene dos prácticas independientes. Su propósito es reconocer 
 |---|---|
 | 25 | [Transformers y modelos generativos](unidad25-transformers-generativos/README.md) |
 | 26 | [Inferencia local y servicios: Ollama y APIs](unidad26-inferencia-servicios/README.md) |
-| 27 | Prompts, salidas estructuradas y evaluación |
+| 27 | [Prompts, salidas estructuradas y evaluación](unidad27-prompts-evaluacion/README.md) |
 | 28 | Embeddings y búsqueda semántica |
 | 29 | RAG con documentos |
 | 30 | Herramientas, agentes y MCP |
@@ -126,7 +126,7 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-Las **unidades 0 a 26 están desarrolladas**: 27 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
+Las **unidades 0 a 27 están desarrolladas**: 28 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
 
 - **0–4:** entorno, formulación de proyectos, matemática aplicada y probabilidad.
 - **5–9:** búsqueda, reglas, obtención y preparación de datos, exploración y visualización.
@@ -134,10 +134,11 @@ Las **unidades 0 a 26 están desarrolladas**: 27 de las 36 unidades previstas. I
 - **19–24:** redes neuronales, PyTorch, visión por computador, lenguaje natural, series temporales, recomendación y refuerzo, con prácticas pequeñas en CPU y límites documentados.
 - **25:** atención causal, transformer pequeño, generación condicional, temperatura y evaluación de continuaciones en CPU.
 - **26:** inferencia real con Ollama en CPU, contratos HTTP, manejo de fallos, medición y análisis sin conexión; API remota opcional.
+- **27:** comparación de prompts, esquema JSON, validación semántica, referencia por reglas y selección con cierre por familias.
 
-La entrega más reciente enseña a ejecutar un modelo existente, medir recursos y distinguir contrato válido, parada normal y respuesta correcta. Conserva ocho consultas reales a Ollama y errores simulados identificados. Las **unidades 27 a 35 están pendientes de desarrollo**; la siguiente aborda prompts, salidas estructuradas y evaluación. Tener sus títulos definidos no equivale a haber terminado el curso.
+La entrega más reciente compara tres candidatos de prompts con 36 llamadas reales y evalúa la elección congelada en ocho casos de cierre. Conserva errores de contenido en JSON válido y muestra cuándo una referencia por reglas es suficiente. Las **unidades 28 a 35 están pendientes de desarrollo**; la siguiente aborda embeddings y búsqueda semántica. Tener sus títulos definidos no equivale a haber terminado el curso.
 
-El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 26, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22, 23 y 24 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; la Unidad 25 utiliza también el PyTorch CPU ya incorporado. La Unidad 26 usa biblioteca estándar y reutiliza los paquetes gráficos opcionalmente; el verificador analiza su captura sin iniciar servicios ni usar claves. Las comprobaciones posteriores funcionan sin Internet:
+El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 27, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22, 23 y 24 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; la Unidad 25 utiliza también el PyTorch CPU ya incorporado. Las unidades 26 y 27 usan biblioteca estándar y reutilizan los paquetes gráficos opcionalmente; el verificador analiza sus capturas sin iniciar servicios ni usar claves. Las comprobaciones posteriores funcionan sin Internet:
 
 ```bash
 python -m pip install -r unidad21-vision-computador/requirements.txt
