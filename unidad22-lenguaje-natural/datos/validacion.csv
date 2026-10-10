@@ -1,0 +1,28 @@
+id,familia,tema,texto,clase,sha256
+val-acceso-01-1,val-acceso-01,robótica,La cuenta de robótica no me deja iniciar sesión.,acceso,e0e6d2dc48a955958840378bd7c06a129452bf1a6a45061a4158b701dfa6197c
+val-acceso-01-2,val-acceso-01,programación,La cuenta de programación no me deja iniciar sesión.,acceso,b962a7a5ec06fb23be585283eee51a5158f56b2918dd1c933d19e77d1df46bdb
+val-acceso-01-3,val-acceso-01,estadística,La cuenta de estadística no me deja iniciar sesión.,acceso,821e290413b560251fc9becf746417a82badd7c8e6cb1e4b048006ea36149a7c
+val-acceso-02-1,val-acceso-02,robótica,¿Cómo recupero mi contraseña para ingresar a robótica?,acceso,e2180b60637879be850d0c2ae5e93a0b2cb0f6c6cd2e0157362424289ab2dcc2
+val-acceso-02-2,val-acceso-02,programación,¿Cómo recupero mi contraseña para ingresar a programación?,acceso,c59ea16caa4ae3dc492efd55bb6b47d89acbb26c9a1761cce96e992fd9487476
+val-acceso-02-3,val-acceso-02,estadística,¿Cómo recupero mi contraseña para ingresar a estadística?,acceso,80168d81188ce5e01a2bdf615c689fbf0572859e75ddf2cb5e7166d107b95d74
+val-acceso-03-1,val-acceso-03,robótica,Ya tengo el material de robótica; lo que falla es el acceso.,acceso,b5bafc2d166f2641384b4e05e9d9b57475c1ad2ff678db43335c420dd686c094
+val-acceso-03-2,val-acceso-03,programación,Ya tengo el material de programación; lo que falla es el acceso.,acceso,2c0462fcad49a70ca0651ff44970f5e73f3c1b0d93c94e1d4cc697751aae22dd
+val-acceso-03-3,val-acceso-03,estadística,Ya tengo el material de estadística; lo que falla es el acceso.,acceso,f9a8acbbda805205da8ad4f5e3d20b710c6149b8b8d83b926f1ff88c9fc5b8d6
+val-material-01-1,val-material-01,robótica,¿Dónde encuentro el documento de ejercicios de robótica?,material,09e058f553622409823438c21bee70950222eda67f0e107210ba4ded3c614107
+val-material-01-2,val-material-01,programación,¿Dónde encuentro el documento de ejercicios de programación?,material,a8d6ec9a573b06640e9917171e72c80ffda55c5d20e9410194c207aef93128d3
+val-material-01-3,val-material-01,estadística,¿Dónde encuentro el documento de ejercicios de estadística?,material,efdb8a049b2887ddc5c4e7bc1adf892ac387ba4b6c3b3a5cec6a25ff07f65736
+val-material-02-1,val-material-02,robótica,"Puedo ingresar a robótica, pero necesito los apuntes.",material,65f9af677c299b9025a8ab16274733c280a62a0970b1c1fc2b8ede2d65176833
+val-material-02-2,val-material-02,programación,"Puedo ingresar a programación, pero necesito los apuntes.",material,0812395711a151de1a6ad73f1f34cd0302ce0881e5619b3e95f10e7573f148e0
+val-material-02-3,val-material-02,estadística,"Puedo ingresar a estadística, pero necesito los apuntes.",material,7d332b90ba4bc1a3d04995dae5620e3c9c5a368cb188b2ec443416dd52a20e78
+val-material-03-1,val-material-03,robótica,"No pregunto por el horario de robótica, quiero las diapositivas.",material,f01d1178c953e2d0fa97396d1b7ef4babf0d412f44e153176b3b3c8044a9a930
+val-material-03-2,val-material-03,programación,"No pregunto por el horario de programación, quiero las diapositivas.",material,863abb705f15515ed24c326b64586ee79aa180ae977c0f1a75ded3c2c9a738a5
+val-material-03-3,val-material-03,estadística,"No pregunto por el horario de estadística, quiero las diapositivas.",material,29a54ecfbd77a9f79a5eb8be8134d0e9e164d7fb5a6939014539a27cf1d50d7f
+val-horario-01-1,val-horario-01,robótica,¿Me confirman la hora y el día del encuentro de robótica?,horario,c0237d00bf5d6da1ae64faa9f058700a114db48e4098cc425d961bebcc959ea6
+val-horario-01-2,val-horario-01,programación,¿Me confirman la hora y el día del encuentro de programación?,horario,41c1b2f13823316e58da2b7d1f49d73a4d97b38ad8ca65da0069c229e46cb576
+val-horario-01-3,val-horario-01,estadística,¿Me confirman la hora y el día del encuentro de estadística?,horario,5bcae64d36d49849ecb4f3458927a1176c5546df750a884c314d7ec5de91630b
+val-horario-02-1,val-horario-02,robótica,¿Cuándo comienza la próxima clase de robótica?,horario,838620591994a80423572dd7f8c4602fee2bb4434b1e4b46d742d4e807a11529
+val-horario-02-2,val-horario-02,programación,¿Cuándo comienza la próxima clase de programación?,horario,b5d72a83ee0502cc3098355a58ae165e41f3f2bcc5fd65fe0bf925223d409096
+val-horario-02-3,val-horario-02,estadística,¿Cuándo comienza la próxima clase de estadística?,horario,4aa6f1060135b5f4e64ac2fcff14ee39c700b8a36a4ee554806e1b7cc2cb814e
+val-horario-03-1,val-horario-03,robótica,No necesito la guía de robótica; busco la fecha del taller.,horario,a94d86dc5c6247c9048c3e46931d1b45b24778c60a8cdbade72370302f1fda9f
+val-horario-03-2,val-horario-03,programación,No necesito la guía de programación; busco la fecha del taller.,horario,d3dd6b46523d43c7c99346ea0bb601879ff1285470169953010c9df4590b17c2
+val-horario-03-3,val-horario-03,estadística,No necesito la guía de estadística; busco la fecha del taller.,horario,7237783a11e3dc431f177a16e6bb05e34c1cff5ee059f4f5439687ca5a6d32f9

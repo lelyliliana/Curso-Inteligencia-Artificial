@@ -1,0 +1,55 @@
+id,familia,tema,texto,clase,sha256
+ent-acceso-01-1,ent-acceso-01,robótica,"No puedo entrar al aula de robótica, necesito acceso.",acceso,6a63f932ee472ba37b09497b16c40e02dd217ff3023ae44b5fe38b4b50280437
+ent-acceso-01-2,ent-acceso-01,programación,"No puedo entrar al aula de programación, necesito acceso.",acceso,1e8709c1e0eb2c002716e2a471bb85c557f5cd6ad901a3762a64dd7cd968bcc5
+ent-acceso-01-3,ent-acceso-01,estadística,"No puedo entrar al aula de estadística, necesito acceso.",acceso,a5d141e267e349bbd3d7ccdd6a6e51a833cf0ce92f48953084b622a84d12643b
+ent-acceso-02-1,ent-acceso-02,robótica,Mi contraseña de robótica falla al iniciar sesión.,acceso,5a8b65186961b0c09133e7eb395f60b98a2c47612f979cae4430ffb8eb78d821
+ent-acceso-02-2,ent-acceso-02,programación,Mi contraseña de programación falla al iniciar sesión.,acceso,ac64a5da12b1f46bd464ee35317e9f5377bf8807b13243efe2bd647a147df7e9
+ent-acceso-02-3,ent-acceso-02,estadística,Mi contraseña de estadística falla al iniciar sesión.,acceso,a7234839b640bd27217a6d27b839b14cd0a2308f775d0b6566f9bed5dcd67376
+ent-acceso-03-1,ent-acceso-03,robótica,Quiero recuperar la cuenta del curso de robótica.,acceso,15d5698f7cdb33c4412455ec9ff6f1a06840f215993ae833f32439c986f82286
+ent-acceso-03-2,ent-acceso-03,programación,Quiero recuperar la cuenta del curso de programación.,acceso,2666c9e25d8e286deaebddd5d0f9d3afaf91b1498b17930f671e10de29508d98
+ent-acceso-03-3,ent-acceso-03,estadística,Quiero recuperar la cuenta del curso de estadística.,acceso,78a1ac9ae25249ca89d50f8e04bc7c6bf2f8a469f09cb62460bb638d4dff50f7
+ent-acceso-04-1,ent-acceso-04,robótica,El usuario de robótica está bloqueado y no puedo ingresar.,acceso,36444de34602030eaa18f9a9dc80fefe7cf61b27876063df76850faada0ea50f
+ent-acceso-04-2,ent-acceso-04,programación,El usuario de programación está bloqueado y no puedo ingresar.,acceso,29e5ffff2e447f00d84fc489dc106d22af4cdc36125c415c415a8980acac8939
+ent-acceso-04-3,ent-acceso-04,estadística,El usuario de estadística está bloqueado y no puedo ingresar.,acceso,86a7b71f2801f120044eb5d8a30cbad1685983ec7d4c22d78e11f2098e67462f
+ent-acceso-05-1,ent-acceso-05,robótica,"Necesito acceso, no material, para estudiar robótica.",acceso,9e63239a5e96c45103b4c98a9968dfbab31e4742c1521b8e60db707135835793
+ent-acceso-05-2,ent-acceso-05,programación,"Necesito acceso, no material, para estudiar programación.",acceso,ccfc2b19511d1819f0fa22a0724576345876c8e9bf8ff0c0020bd6b721b7e3b3
+ent-acceso-05-3,ent-acceso-05,estadística,"Necesito acceso, no material, para estudiar estadística.",acceso,46d1d294242968f8e8c12446d4b289312e1d80829c89e3d991a44e33bf4f12f2
+ent-acceso-06-1,ent-acceso-06,robótica,Solicito ayuda con el ingreso a la plataforma de robótica.,acceso,5eace559a8a7d23d70a90a5f319b85661308f7b88cd87b7120e653854cb8843e
+ent-acceso-06-2,ent-acceso-06,programación,Solicito ayuda con el ingreso a la plataforma de programación.,acceso,8a6fd585ff34112eec24f09ac363b18d7dbe549f7c8d9efb66c38d2442bf7ade
+ent-acceso-06-3,ent-acceso-06,estadística,Solicito ayuda con el ingreso a la plataforma de estadística.,acceso,dc57e86ca80cc4ea3c5adbf7120c59f9a7caad839f4b20ada86d84ad81540554
+ent-material-01-1,ent-material-01,robótica,Necesito descargar el material del curso de robótica.,material,c7f094ddd6d96aec39165f9f5f281fb394c0a5d2de5c0863a346578392525768
+ent-material-01-2,ent-material-01,programación,Necesito descargar el material del curso de programación.,material,a9caf12219a57d52b711e530735c647a5134ef2b2403e3786b1b904d0a633268
+ent-material-01-3,ent-material-01,estadística,Necesito descargar el material del curso de estadística.,material,e58e2a9126d8cf536fc4b8a5d07bfec9ea653fa74523a4655586168c85643854
+ent-material-02-1,ent-material-02,robótica,Busco los apuntes y las lecturas de robótica.,material,b4d54595dda08e94788626360341c970e9074ef4ed06a46045230f3005d8b994
+ent-material-02-2,ent-material-02,programación,Busco los apuntes y las lecturas de programación.,material,7d24ab2bef96e4ecfdd031027d4e16b3736e26c097e0d15ce72e9d161a1254a9
+ent-material-02-3,ent-material-02,estadística,Busco los apuntes y las lecturas de estadística.,material,a04ddf1a8748ee8f00a55c94c1b4b3c01327aeb52409b8120d46f56f62eded08
+ent-material-03-1,ent-material-03,robótica,Quiero una copia de la guía de ejercicios de robótica.,material,53c8ad33d6a51f6b16b5f218023e0e39faa42aff8b8f862372c57f483a683fcf
+ent-material-03-2,ent-material-03,programación,Quiero una copia de la guía de ejercicios de programación.,material,90cf2d4ec54c8aaca406026cbb147b71d0e7a52f933a031b86fd38c8d3bd5424
+ent-material-03-3,ent-material-03,estadística,Quiero una copia de la guía de ejercicios de estadística.,material,27b04875d8619229e348d0d21a3e10a1f17d30d4828101ec4077e33a0adccc45
+ent-material-04-1,ent-material-04,robótica,El archivo de la clase de robótica no está disponible.,material,893cf9ded35c7b11a5e86dd1c64f5b18f5887e4c7a6162ec48099db922c546c6
+ent-material-04-2,ent-material-04,programación,El archivo de la clase de programación no está disponible.,material,ae7595d85f38ff8069fb319acc2c9416ff93a3d75375a5501eb41eab1b11b653
+ent-material-04-3,ent-material-04,estadística,El archivo de la clase de estadística no está disponible.,material,7f91570332c87fa3a415e2e385ba967858028e36a1c75ef53c864d1735f42d9a
+ent-material-05-1,ent-material-05,robótica,"Necesito material, no acceso, para estudiar robótica.",material,130edd2b06ddd024fda14d5be3e95a13d1085433b8a176630fd1ec90bc959963
+ent-material-05-2,ent-material-05,programación,"Necesito material, no acceso, para estudiar programación.",material,c686f5f372dd77e1f5b20490b83358c80ca637dc7fe296592d5125c342eee8f7
+ent-material-05-3,ent-material-05,estadística,"Necesito material, no acceso, para estudiar estadística.",material,a22329978c5f1e5172108ab02b7cba965f521d752f8c8aafecaf2cdee538d9bb
+ent-material-06-1,ent-material-06,robótica,Solicito el documento y las diapositivas de robótica.,material,ececd7fa7853d81b108d716b79192fe443dcb233d3ad5c1a10fa187c63ae6543
+ent-material-06-2,ent-material-06,programación,Solicito el documento y las diapositivas de programación.,material,c4303183685b73f165997b9b8685df28bd90ef3d35b31a3ded4054bacbf28dd7
+ent-material-06-3,ent-material-06,estadística,Solicito el documento y las diapositivas de estadística.,material,8fb464ad2d17f756be3a739d0de61a20ab780182972426a4e95166b9c304c00f
+ent-horario-01-1,ent-horario-01,robótica,¿Cuál es el horario de la clase de robótica?,horario,fc3e0bf7a90f4eda9c1abda3674ccd56f8f192b6aab1a4f4b8896a822d70a812
+ent-horario-01-2,ent-horario-01,programación,¿Cuál es el horario de la clase de programación?,horario,33d6205ffc6d658e60be27caf1db5fce3f417bd2e3c3ce5ff255bd8d9b6cdadb
+ent-horario-01-3,ent-horario-01,estadística,¿Cuál es el horario de la clase de estadística?,horario,1f5a88082225263babe499875c5aa0a17454ffb463f21396d9d8a40322dcd5ff
+ent-horario-02-1,ent-horario-02,robótica,Necesito saber la fecha del taller de robótica.,horario,7ecc9087274695f1b173e1a0cf3446b8a21c6f302f82cdfbc61e3f56cac102d0
+ent-horario-02-2,ent-horario-02,programación,Necesito saber la fecha del taller de programación.,horario,b33748850670c1a8aa4d1927f6b4e757d54852d8157a4f5364ef5ba8cc0caf8a
+ent-horario-02-3,ent-horario-02,estadística,Necesito saber la fecha del taller de estadística.,horario,34e47b2ca942078f69529b18b2c1fd8ee71ac61910831a2a14e2e01dacf3c00a
+ent-horario-03-1,ent-horario-03,robótica,¿A qué hora empieza la sesión de robótica?,horario,b6350174c19c866eb4bd1653dce9313b63cd78cfa7d4475164ba3c096d6530ae
+ent-horario-03-2,ent-horario-03,programación,¿A qué hora empieza la sesión de programación?,horario,186aacbccb6cddcb2209f0012a4cf2fadef07d6672baa8d74f383a30464583ed
+ent-horario-03-3,ent-horario-03,estadística,¿A qué hora empieza la sesión de estadística?,horario,bc526d0b912276120b709549fff5da7ecc8fb6340c57fd5beefc445f268435c8
+ent-horario-04-1,ent-horario-04,robótica,Quiero confirmar el día de la reunión de robótica.,horario,0a590da74de7fa252d6c5923e20104a3a6022878a31668894d103859640ec86a
+ent-horario-04-2,ent-horario-04,programación,Quiero confirmar el día de la reunión de programación.,horario,f611e5636ff72db944a25b16a30c33163826a29474276a375f2c4de039a4ebd9
+ent-horario-04-3,ent-horario-04,estadística,Quiero confirmar el día de la reunión de estadística.,horario,46d789c60f2056f69af9b115b8c594d6c357087c003ebe40194bd6faf229e258
+ent-horario-05-1,ent-horario-05,robótica,Busco el calendario de actividades de robótica.,horario,0c9afa3ea1bd7dae20d1b39198894d19be26c0b73b083751547ccff863f18b12
+ent-horario-05-2,ent-horario-05,programación,Busco el calendario de actividades de programación.,horario,bf8af0ca8fa3eea98df57ba5be18bb7f6ca440139731846534ed699e46fca801
+ent-horario-05-3,ent-horario-05,estadística,Busco el calendario de actividades de estadística.,horario,e18fd4085978e7643a6c9e47e9ae05f8cd529319a774ea355ffc8f36a14c560a
+ent-horario-06-1,ent-horario-06,robótica,Solicito información sobre cuándo será el encuentro de robótica.,horario,f4d1232a971daad5ff6dd02cf1c50d3c7ffde5cf6c550d9b28c955de1e0e1168
+ent-horario-06-2,ent-horario-06,programación,Solicito información sobre cuándo será el encuentro de programación.,horario,8cb99d042ebcd960e19952e6000d250579012588e66979d3a24e161bcc426fe0
+ent-horario-06-3,ent-horario-06,estadística,Solicito información sobre cuándo será el encuentro de estadística.,horario,697c7be8f15e5a4f40aba56bc8aa3d303f465fd846191a25ccfa3d198457d100

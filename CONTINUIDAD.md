@@ -33,10 +33,11 @@ La revisión inicial ejecutó correctamente 19 programas de ejemplos y solucione
 | Unidad 19 | Desarrollada y comprobada | Dos laboratorios, retropropagación manual, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, ficha de límites y 32 pruebas |
 | Unidad 20 | Desarrollada y comprobada | Dos laboratorios, acumulación manual, datos nuevos regenerables, tres figuras PNG/SVG, recarga verificada, diez ejercicios resueltos, reto y 34 pruebas |
 | Unidad 21 | Desarrollada y comprobada | Dos laboratorios, correlación manual, 241 PNG propios regenerables, separación por escena, tres figuras PNG/SVG, diez ejercicios resueltos, reto, ficha y 36 pruebas |
-| Verificación común | Disponible para las unidades 0–21 | [verificar_curso.py](herramientas/verificar_curso.py) |
-| Unidades 22–35 | Pendientes de desarrollo | Alcance conservado en el índice |
+| Unidad 22 | Desarrollada y comprobada | Dos laboratorios, TF-IDF manual, 108 textos propios por familias, tres figuras PNG/SVG, recarga JSON, diez ejercicios resueltos, reto, ficha y 38 pruebas |
+| Verificación común | Disponible para las unidades 0–22 | [verificar_curso.py](herramientas/verificar_curso.py) |
+| Unidades 23–35 | Pendientes de desarrollo | Alcance conservado en el índice |
 
-La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8`, la Unidad 12 en `61a73f5`, la Unidad 13 en `81df395`, la Unidad 14 en `1f2b6f8`, la Unidad 15 en `b5ef367`, la Unidad 16 en `121e345`, la Unidad 17 en `5ea63cf`, la Unidad 18 en `ad665cc`, la Unidad 19 en `54e7ae1` y la Unidad 20 en `b9daaed`. Esta entrega incorpora la Unidad 21 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 22: procesamiento de lenguaje natural**. Quedan 14 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
+La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8`, la Unidad 12 en `61a73f5`, la Unidad 13 en `81df395`, la Unidad 14 en `1f2b6f8`, la Unidad 15 en `b5ef367`, la Unidad 16 en `121e345`, la Unidad 17 en `5ea63cf`, la Unidad 18 en `ad665cc`, la Unidad 19 en `54e7ae1`, la Unidad 20 en `b9daaed` y la Unidad 21 en `b1e1bec`. Esta entrega incorpora la Unidad 22 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 23: series temporales y sensores**. Quedan 13 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
 
 ## Enfoque que se conserva
 
@@ -56,25 +57,27 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 | 7–9 | Desarrollo terminado; reto integrador disponible | Datos documentados, preparación trazable y exploración con figuras e informe reproducible |
 | 10–13 | Desarrollo terminado: líneas base, regresión, clasificación y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
 | 14–18 | Desarrollo terminado: agrupamiento, representaciones, validación, decisiones e interpretabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
-| 19–24 | Unidades 19–21 terminadas; pendientes lenguaje, tiempo, recomendación y refuerzo | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
+| 19–24 | Unidades 19–22 terminadas; pendientes tiempo, recomendación y refuerzo | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
 | 25–31 | Generación, inferencia, prompts, embeddings, RAG, herramientas, adaptación y multimodalidad | Evaluaciones con casos verificables, citas y límites de permisos y recursos |
 | 32–33 | Aplicación, operación, seguridad y observabilidad | Aplicación mínima con validación de entradas, registro útil y manejo de errores |
 | 34–35 | Talleres y proyecto integrador | Proyecto con línea base, evaluación independiente, demostración y documentación |
 
 Antes de desarrollar cada unidad, verificar documentación primaria de las bibliotecas y servicios que vaya a utilizar. Fijar y registrar las versiones que realmente se prueben; no asumir que una API o descarga futura conserva el mismo funcionamiento.
 
-## Siguiente entrega concreta — Unidad 22
+## Siguiente entrega concreta — Unidad 23
 
-Pregunta guía: **¿cómo convertir texto en una representación útil y evaluar un clasificador sin que vocabulario, duplicados o plantillas filtren información de evaluación?**
+Pregunta guía: **¿cómo predecir o detectar cambios en una serie de sensores usando solo la información disponible en cada instante?**
 
 Alcance propuesto, todavía no implementado:
 
-1. Introducir texto, normalización, tokens, vocabulario, palabras desconocidas y representaciones de bolsa de palabras/TF-IDF con ejemplos manuales pequeños.
-2. Diferenciar clasificación, extracción y generación; fijar una tarea de lenguaje concreta y explicar lo que sus etiquetas permiten afirmar.
-3. Preparar textos nuevos de procedencia y condiciones de uso documentadas; separar orígenes, documentos o familias de plantillas antes de derivar variantes.
-4. Comparar una referencia simple y un clasificador con preparación aprendida solo en entrenamiento; no adaptar vocabulario ni IDF a prueba. Justificar cualquier modelo neuronal adicional y su costo.
-5. Examinar errores con negaciones, vocabulario desconocido, ambigüedad y cambios de contexto sin convertir unos pocos ejemplos en una afirmación general de comprensión; guardar la preparación y comprobar recarga.
-6. Entregar dos laboratorios pequeños en CPU, ejemplos manuales, figuras, ejercicios, soluciones, reto y ficha de límites. Verificar dependencias y recursos antes de añadir bibliotecas, modelos descargables o servicios; los cierres públicos anteriores no son prueba independiente para nuevos ajustes.
+1. Introducir fecha, frecuencia, tendencia, estacionalidad, rezagos y ventanas con cálculos manuales pequeños; distinguir pronóstico, detección y clasificación de secuencias.
+2. Preparar series nuevas con procedencia, unidades, zona horaria y condiciones de uso documentadas; explicar huecos, duplicados y orden temporal antes de derivar variables.
+3. Fijar horizonte y momento de disponibilidad del objetivo; separar pasado, validación y cierre antes de transformar, con un protocolo que impida usar futuro en ventanas o imputaciones.
+4. Comparar persistencia y referencia estacional con un predictor sencillo; elegir por una métrica apropiada al horizonte y revisar cortes temporales. No añadir redes recurrentes sin justificar evidencia y costo.
+5. Examinar errores por periodo o condición, cambios de distribución y límites de un sensor sintético; guardar preparación y comprobar predicciones reproducidas.
+6. Entregar dos laboratorios pequeños en CPU, ejemplos manuales, figuras, ejercicios, soluciones, reto y ficha. Verificar dependencias y documentar si una ventana de prueba utiliza observaciones previas legítimamente disponibles; no confundir pronóstico recursivo con acceso al futuro.
+
+La Unidad 22 se verificó el 10 de octubre de 2026 reutilizando el entorno de la Unidad 20, sin instalar paquetes nuevos; esta práctica no requiere PyTorch. Contrasta TF-IDF manual con scikit-learn y clasifica 108 peticiones sintéticas de 36 familias, separadas antes de derivar tres variantes por tema. Compara prevalencia, unigramas y unigramas con bigramas, ajustando vocabulario e IDF solo con entrenamiento. CE de validación elige unigramas, con 24/27 aciertos; los tres errores pertenecen a una misma familia. Los bigramas distinguen un par de negaciones cercano a entrenamiento pero empeoran la validación global. Se conservan nueve diagnósticos con desconocidos, vector cero y peticiones sin etiqueta única válida. El cierre del estado elegido acierta 27/27 textos de nueve familias; no acredita comprensión general ni elimina los fallos observados. El JSON guarda tokenizador, vocabulario, IDF, clases y parámetros; su recarga conserva probabilidades. Las tres figuras se revisaron visualmente y sus 38 pruebas cubren referencias numéricas, separación, invariancia, regeneración y artefactos.
 
 La Unidad 21 se verificó el 10 de octubre de 2026 reutilizando el entorno CPU de la Unidad 20, sin instalar paquetes nuevos. Incorpora Pillow como dependencia directa ya existente. Su primer laboratorio inspecciona canales RGB, gris y filtros fijos, contrastando correlación manual con Conv2d. El segundo clasifica trazos horizontales, verticales y diagonales: 240 PNG de 120 escenas, dos vistas por escena y particiones separadas por origen. Compara prevalencia, modelo lineal y CNN con/sin reflejo horizontal. CE de validación elige la CNN sin aumento en época 45; validación y cierre aciertan 59 de 60 vistas, con errores de clases distintas. Se conserva el resultado desfavorable del aumento y se analiza la pérdida de información por oclusión. La recarga del modelo con preparación y clases conserva los logits. Las tres figuras se revisaron visualmente y sus 36 pruebas comprueban filtros, gradientes, ejes, procedencia, separación, aumentos, métricas, regeneración y artefactos.
 
@@ -100,7 +103,7 @@ La Unidad 11 incorpora datos sintéticos nuevos de ciclos de operación: un caso
 
 La Unidad 10 añade dos conjuntos sintéticos independientes: 32 pronósticos diarios con cortes temporales y 64 avisos de ocho equipos separados por grupo. La ejecución común lee solo entrenamiento y validación; `--evaluar-prueba` abre prueba después de seleccionar y no reajusta. Se comprueban casos idénticos entre candidatos, disponibilidad de etiquetas en los cortes y separación de equipos. Las pruebas de invariancia alteran objetivos de prueba y verifican que no cambien ajuste, selección ni predicciones. No hay dependencias nuevas ni azar.
 
-Las pruebas de las unidades 10 a 21 son públicas y sus resultados didácticos son conocidos. No reutilizarlas automáticamente para seleccionar modelos nuevos en unidades posteriores y después presentarlas como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
+Las pruebas de las unidades 10 a 22 son públicas y sus resultados didácticos son conocidos. No reutilizarlas automáticamente para seleccionar modelos nuevos en unidades posteriores y después presentarlas como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
 
 La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 y NumPy 2.2.6, probadas con Python 3.12.3 en un entorno virtual limpio. Sus resúmenes de texto usan biblioteca estándar; su exportación de gráficos y sus 21 pruebas requieren esos paquetes. Las unidades 11 y 12 reutilizan esas versiones: polinomios y logística requieren NumPy; las figuras, Matplotlib. La Unidad 13 incorpora scikit-learn 1.9.1, probado con Python 3.12.3 y las mismas versiones numéricas y gráficas en otro entorno virtual limpio. Su [registro completo del entorno](unidad13-arboles-ensambles/recursos/entorno-verificado.txt) añade las dependencias transitivas, incluida SciPy 1.18.1. Se conserva también el [registro del entorno anterior](unidad09-exploracion-visualizacion/recursos/entorno-verificado.txt). Los informes JSON anotan fuentes, parámetros y versiones principales.
 
@@ -128,7 +131,7 @@ python -m pip install -r unidad21-vision-computador/requirements-cpu.txt
 python herramientas/verificar_curso.py
 ```
 
-Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 153 ejecuciones de programas y variantes y las 442 pruebas de las unidades 5 a 21. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas, scikit-learn, PyTorch CPU y Pillow indicados en los dos archivos de requisitos de la Unidad 21. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–21; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
+Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 160 ejecuciones de programas y variantes y las 480 pruebas de las unidades 5 a 22. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas, scikit-learn, PyTorch CPU y Pillow indicados en los dos archivos de requisitos de la Unidad 21; la Unidad 22 reutiliza los paquetes ya incluidos. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–22; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
 
 La comprobación de enlaces no valida URLs externas ni fragmentos `#ancla`. Ejecutar programas con éxito no demuestra que toda explicación sea correcta ni que se obtenga utilidad en una población real.
 

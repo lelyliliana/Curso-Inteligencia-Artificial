@@ -1,0 +1,28 @@
+id,familia,texto,clase,predicha,p_acceso,p_material,p_horario,fraccion_tokens_desconocidos,vector_cero
+val-acceso-01-1,val-acceso-01,La cuenta de robótica no me deja iniciar sesión.,acceso,acceso,0.5685761962516627,0.19214137152040148,0.2392824322279359,0.2222222222222222,False
+val-acceso-01-2,val-acceso-01,La cuenta de programación no me deja iniciar sesión.,acceso,acceso,0.5685761962516627,0.19214137152040148,0.2392824322279359,0.2222222222222222,False
+val-acceso-01-3,val-acceso-01,La cuenta de estadística no me deja iniciar sesión.,acceso,acceso,0.5685761962516627,0.19214137152040145,0.23928243222793594,0.2222222222222222,False
+val-acceso-02-1,val-acceso-02,¿Cómo recupero mi contraseña para ingresar a robótica?,acceso,acceso,0.6091357332597863,0.18660715029015226,0.20425711645006145,0.25,False
+val-acceso-02-2,val-acceso-02,¿Cómo recupero mi contraseña para ingresar a programación?,acceso,acceso,0.6091357332597863,0.18660715029015226,0.20425711645006145,0.25,False
+val-acceso-02-3,val-acceso-02,¿Cómo recupero mi contraseña para ingresar a estadística?,acceso,acceso,0.6091357332597863,0.18660715029015226,0.20425711645006145,0.25,False
+val-acceso-03-1,val-acceso-03,Ya tengo el material de robótica; lo que falla es el acceso.,acceso,acceso,0.34162189279837707,0.3302373242535092,0.3281407829481137,0.3333333333333333,False
+val-acceso-03-2,val-acceso-03,Ya tengo el material de programación; lo que falla es el acceso.,acceso,acceso,0.34162189279837707,0.3302373242535092,0.3281407829481137,0.3333333333333333,False
+val-acceso-03-3,val-acceso-03,Ya tengo el material de estadística; lo que falla es el acceso.,acceso,acceso,0.34162189279837707,0.3302373242535092,0.3281407829481137,0.3333333333333333,False
+val-material-01-1,val-material-01,¿Dónde encuentro el documento de ejercicios de robótica?,material,material,0.1843602546211646,0.4603244379477409,0.3553153074310945,0.125,False
+val-material-01-2,val-material-01,¿Dónde encuentro el documento de ejercicios de programación?,material,material,0.1843602546211646,0.4603244379477409,0.3553153074310945,0.125,False
+val-material-01-3,val-material-01,¿Dónde encuentro el documento de ejercicios de estadística?,material,material,0.1843602546211646,0.4603244379477409,0.3553153074310945,0.125,False
+val-material-02-1,val-material-02,"Puedo ingresar a robótica, pero necesito los apuntes.",material,acceso,0.47028423520939105,0.3067266513993028,0.22298911339130623,0.125,False
+val-material-02-2,val-material-02,"Puedo ingresar a programación, pero necesito los apuntes.",material,acceso,0.47028423520939105,0.3067266513993028,0.22298911339130623,0.125,False
+val-material-02-3,val-material-02,"Puedo ingresar a estadística, pero necesito los apuntes.",material,acceso,0.47028423520939105,0.3067266513993028,0.22298911339130623,0.125,False
+val-material-03-1,val-material-03,"No pregunto por el horario de robótica, quiero las diapositivas.",material,material,0.23893334857536558,0.4839589605836521,0.27710769084098236,0.2,False
+val-material-03-2,val-material-03,"No pregunto por el horario de programación, quiero las diapositivas.",material,material,0.23893334857536558,0.4839589605836521,0.27710769084098236,0.2,False
+val-material-03-3,val-material-03,"No pregunto por el horario de estadística, quiero las diapositivas.",material,material,0.23893334857536558,0.4839589605836521,0.27710769084098236,0.2,False
+val-horario-01-1,val-horario-01,¿Me confirman la hora y el día del encuentro de robótica?,horario,horario,0.19234980134202845,0.244611573285755,0.5630386253722166,0.18181818181818182,False
+val-horario-01-2,val-horario-01,¿Me confirman la hora y el día del encuentro de programación?,horario,horario,0.19234980134202845,0.244611573285755,0.5630386253722166,0.18181818181818182,False
+val-horario-01-3,val-horario-01,¿Me confirman la hora y el día del encuentro de estadística?,horario,horario,0.19234980134202845,0.244611573285755,0.5630386253722166,0.18181818181818182,False
+val-horario-02-1,val-horario-02,¿Cuándo comienza la próxima clase de robótica?,horario,horario,0.19527819692418483,0.2780949181823959,0.5266268848934194,0.2857142857142857,False
+val-horario-02-2,val-horario-02,¿Cuándo comienza la próxima clase de programación?,horario,horario,0.19527819692418483,0.2780949181823959,0.5266268848934194,0.2857142857142857,False
+val-horario-02-3,val-horario-02,¿Cuándo comienza la próxima clase de estadística?,horario,horario,0.19527819692418483,0.2780949181823959,0.5266268848934194,0.2857142857142857,False
+val-horario-03-1,val-horario-03,No necesito la guía de robótica; busco la fecha del taller.,horario,horario,0.21827364405828864,0.3124341701034997,0.46929218583821175,0.0,False
+val-horario-03-2,val-horario-03,No necesito la guía de programación; busco la fecha del taller.,horario,horario,0.21827364405828864,0.3124341701034997,0.46929218583821175,0.0,False
+val-horario-03-3,val-horario-03,No necesito la guía de estadística; busco la fecha del taller.,horario,horario,0.21827364405828864,0.3124341701034997,0.46929218583821175,0.0,False

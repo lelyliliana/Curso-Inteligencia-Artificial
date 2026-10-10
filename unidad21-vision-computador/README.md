@@ -304,4 +304,4 @@ python herramientas/verificar_curso.py
 
 Las **36 pruebas** incluyen cálculo manual, comparación con Conv2d, gradiente de filtro, preparación, separación por escena y píxeles, aumentos, métricas, recarga, regeneración y correspondencia de figuras. Ninguna comprobación técnica convierte estos trazos en evidencia sobre imágenes reales.
 
-Antes de avanzar, comprueba que puedes seguir las formas de la CNN, explicar un error visible y recuperar el estado elegido. La siguiente entrega prevista es la **Unidad 22 — Procesamiento de lenguaje natural**, pendiente de desarrollo.
+Antes de avanzar, comprueba que puedes seguir las formas de la CNN, explicar un error visible y recuperar el estado elegido. Continúa con la [Unidad 22 — Procesamiento de lenguaje natural](../unidad22-lenguaje-natural/README.md).

@@ -1,0 +1,56 @@
+{
+  "seleccionado": "unigramas",
+  "metricas": {
+    "ce": 0.6681884464795792,
+    "exactitud": 1.0,
+    "macro_f1": 1.0,
+    "matriz": [
+      [
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        9
+      ]
+    ],
+    "por_clase": [
+      {
+        "clase": "acceso",
+        "soporte": 9,
+        "precision": 1.0,
+        "recobrado": 1.0,
+        "f1": 1.0
+      },
+      {
+        "clase": "material",
+        "soporte": 9,
+        "precision": 1.0,
+        "recobrado": 1.0,
+        "f1": 1.0
+      },
+      {
+        "clase": "horario",
+        "soporte": 9,
+        "precision": 1.0,
+        "recobrado": 1.0,
+        "f1": 1.0
+      }
+    ]
+  },
+  "fuentes": {
+    "entrenamiento": "02501280499df3cba7d82e822d63ca9f4b9c2a5ac952936e7731060f583da28d",
+    "validacion": "658f6da57471b7760f57da2437f32025e9efcb7d3dea69d798249a58e5cd1d83",
+    "diagnosticos": "357b5e436e52afc151e626f659578051e69127430282715738ef01c6f580e1c0",
+    "prueba": "b64c8ffc02b3b75442d3c0ea113e40c88bcde3c58f8ef709033a119188e43da3"
+  },
+  "modelo_sha256": "ed5abd199a968d0facce2056f68b51e7484d5e8fa5144890de05747995661a36",
+  "reajuste": false
+}

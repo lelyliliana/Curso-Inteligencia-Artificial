@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 21.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 22.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 21
+ULTIMA_UNIDAD = 22
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -150,6 +150,12 @@ def main():
                     esperado = "Seleccionado por CE de validación: cnn; época=45"
                 elif programa.name == "03_correlacion_a_mano.py":
                     esperado = "Correlación comprobada: salida 3×3; error máximo=0.0"
+                elif programa.name == "01_representar_textos.py":
+                    esperado = "TF-IDF manual y biblioteca: error máximo < 1e-12"
+                elif programa.name == "02_clasificar_mensajes.py":
+                    esperado = "Seleccionado por CE de validación: unigramas"
+                elif programa.name == "03_tfidf_a_mano.py":
+                    esperado = "Norma L2 comprobada: 1.000000"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -187,6 +193,8 @@ def main():
     minilotes_torch = "unidad20-pytorch/ejemplos/02_entrenar_minilotes.py"
     vision_filtros = "unidad21-vision-computador/ejemplos/01_explorar_pixeles.py"
     vision_trazos = "unidad21-vision-computador/ejemplos/02_clasificar_trazos.py"
+    lenguaje_representacion = "unidad22-lenguaje-natural/ejemplos/01_representar_textos.py"
+    lenguaje_mensajes = "unidad22-lenguaje-natural/ejemplos/02_clasificar_mensajes.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -240,6 +248,8 @@ def main():
         ([minilotes_torch, "--evaluar-prueba"], "Prueba final: solo red12_8; BCE=0.2110; exactitud=0.900; FN=6; FP=2"),
         ([vision_trazos, "--evaluar-prueba"], "Prueba final: solo cnn; CE=0.0406; exactitud=0.983; macro F1=0.983"),
     ])
+    variantes.append(([lenguaje_mensajes, "--evaluar-prueba"],
+                      "Prueba final: solo unigramas; CE=0.6682; exactitud=1.000; macro F1=1.000"))
     for comando, esperado in variantes:
         ejecutar(comando, esperado)
         ejecutados += 1
@@ -310,6 +320,13 @@ def main():
             extras = ["--evaluar-prueba"] if cierre else []
             ejecutar([vision_trazos, *extras, "--salida", Path(carpeta)/f"vision-trazos-{cierre}", "--graficos"],
                      "Recarga en CPU: error máximo en logits=0.0")
+            ejecutados += 1
+        ejecutar([lenguaje_representacion, "--salida", Path(carpeta)/"lenguaje-representacion", "--graficos"], "Exportación:")
+        ejecutados += 1
+        for cierre in (False, True):
+            extras = ["--evaluar-prueba"] if cierre else []
+            ejecutar([lenguaje_mensajes, *extras, "--salida", Path(carpeta)/f"lenguaje-mensajes-{cierre}", "--graficos"],
+                     "Recarga: error máximo en probabilidades=0.0")
             ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

@@ -1,0 +1,55 @@
+id,familia,texto,clase,predicha,p_acceso,p_material,p_horario,fraccion_tokens_desconocidos,vector_cero
+ent-acceso-01-1,ent-acceso-01,"No puedo entrar al aula de robótica, necesito acceso.",acceso,acceso,0.7129073978362741,0.16202390210385878,0.12506870005986728,0.0,False
+ent-acceso-01-2,ent-acceso-01,"No puedo entrar al aula de programación, necesito acceso.",acceso,acceso,0.7129073978362741,0.16202390210385872,0.12506870005986725,0.0,False
+ent-acceso-01-3,ent-acceso-01,"No puedo entrar al aula de estadística, necesito acceso.",acceso,acceso,0.7129073978362741,0.16202390210385872,0.12506870005986725,0.0,False
+ent-acceso-02-1,ent-acceso-02,Mi contraseña de robótica falla al iniciar sesión.,acceso,acceso,0.6701311787390192,0.147580271698017,0.18228854956296378,0.0,False
+ent-acceso-02-2,ent-acceso-02,Mi contraseña de programación falla al iniciar sesión.,acceso,acceso,0.6701311787390192,0.147580271698017,0.18228854956296378,0.0,False
+ent-acceso-02-3,ent-acceso-02,Mi contraseña de estadística falla al iniciar sesión.,acceso,acceso,0.6701311787390192,0.147580271698017,0.1822885495629638,0.0,False
+ent-acceso-03-1,ent-acceso-03,Quiero recuperar la cuenta del curso de robótica.,acceso,acceso,0.569172607119928,0.22245055813622117,0.20837683474385074,0.0,False
+ent-acceso-03-2,ent-acceso-03,Quiero recuperar la cuenta del curso de programación.,acceso,acceso,0.569172607119928,0.22245055813622117,0.20837683474385074,0.0,False
+ent-acceso-03-3,ent-acceso-03,Quiero recuperar la cuenta del curso de estadística.,acceso,acceso,0.569172607119928,0.22245055813622117,0.20837683474385074,0.0,False
+ent-acceso-04-1,ent-acceso-04,El usuario de robótica está bloqueado y no puedo ingresar.,acceso,acceso,0.6410221431630506,0.2165221114097632,0.14245574542718603,0.0,False
+ent-acceso-04-2,ent-acceso-04,El usuario de programación está bloqueado y no puedo ingresar.,acceso,acceso,0.6410221431630506,0.21652211140976327,0.14245574542718603,0.0,False
+ent-acceso-04-3,ent-acceso-04,El usuario de estadística está bloqueado y no puedo ingresar.,acceso,acceso,0.6410221431630506,0.21652211140976327,0.14245574542718603,0.0,False
+ent-acceso-05-1,ent-acceso-05,"Necesito acceso, no material, para estudiar robótica.",acceso,acceso,0.4423527506606346,0.43889564030162614,0.11875160903773929,0.0,False
+ent-acceso-05-2,ent-acceso-05,"Necesito acceso, no material, para estudiar programación.",acceso,acceso,0.4423527506606346,0.43889564030162614,0.11875160903773929,0.0,False
+ent-acceso-05-3,ent-acceso-05,"Necesito acceso, no material, para estudiar estadística.",acceso,acceso,0.4423527506606346,0.43889564030162614,0.11875160903773929,0.0,False
+ent-acceso-06-1,ent-acceso-06,Solicito ayuda con el ingreso a la plataforma de robótica.,acceso,acceso,0.6005441270438996,0.17171785232770354,0.22773802062839682,0.0,False
+ent-acceso-06-2,ent-acceso-06,Solicito ayuda con el ingreso a la plataforma de programación.,acceso,acceso,0.6005441270438996,0.17171785232770356,0.22773802062839685,0.0,False
+ent-acceso-06-3,ent-acceso-06,Solicito ayuda con el ingreso a la plataforma de estadística.,acceso,acceso,0.6005441270438996,0.17171785232770354,0.22773802062839682,0.0,False
+ent-material-01-1,ent-material-01,Necesito descargar el material del curso de robótica.,material,material,0.2258879096452473,0.5934639525470918,0.1806481378076609,0.0,False
+ent-material-01-2,ent-material-01,Necesito descargar el material del curso de programación.,material,material,0.22588790964524733,0.5934639525470918,0.1806481378076609,0.0,False
+ent-material-01-3,ent-material-01,Necesito descargar el material del curso de estadística.,material,material,0.2258879096452473,0.5934639525470918,0.18064813780766095,0.0,False
+ent-material-02-1,ent-material-02,Busco los apuntes y las lecturas de robótica.,material,material,0.15259778775120814,0.6763227882321518,0.1710794240166402,0.0,False
+ent-material-02-2,ent-material-02,Busco los apuntes y las lecturas de programación.,material,material,0.15259778775120814,0.6763227882321518,0.1710794240166402,0.0,False
+ent-material-02-3,ent-material-02,Busco los apuntes y las lecturas de estadística.,material,material,0.15259778775120814,0.6763227882321518,0.1710794240166402,0.0,False
+ent-material-03-1,ent-material-03,Quiero una copia de la guía de ejercicios de robótica.,material,material,0.17562472086152986,0.6016335472474327,0.22274173189103758,0.0,False
+ent-material-03-2,ent-material-03,Quiero una copia de la guía de ejercicios de programación.,material,material,0.17562472086152986,0.6016335472474327,0.22274173189103758,0.0,False
+ent-material-03-3,ent-material-03,Quiero una copia de la guía de ejercicios de estadística.,material,material,0.17562472086152986,0.6016335472474326,0.22274173189103763,0.0,False
+ent-material-04-1,ent-material-04,El archivo de la clase de robótica no está disponible.,material,material,0.19603114599908616,0.5839532114319212,0.22001564256899261,0.0,False
+ent-material-04-2,ent-material-04,El archivo de la clase de programación no está disponible.,material,material,0.19603114599908616,0.5839532114319212,0.22001564256899261,0.0,False
+ent-material-04-3,ent-material-04,El archivo de la clase de estadística no está disponible.,material,material,0.19603114599908614,0.5839532114319212,0.22001564256899264,0.0,False
+ent-material-05-1,ent-material-05,"Necesito material, no acceso, para estudiar robótica.",material,acceso,0.4423527506606346,0.43889564030162614,0.11875160903773929,0.0,False
+ent-material-05-2,ent-material-05,"Necesito material, no acceso, para estudiar programación.",material,acceso,0.4423527506606346,0.43889564030162614,0.11875160903773929,0.0,False
+ent-material-05-3,ent-material-05,"Necesito material, no acceso, para estudiar estadística.",material,acceso,0.4423527506606346,0.43889564030162614,0.11875160903773929,0.0,False
+ent-material-06-1,ent-material-06,Solicito el documento y las diapositivas de robótica.,material,material,0.16748876045209038,0.6634601951444433,0.16905104440346636,0.0,False
+ent-material-06-2,ent-material-06,Solicito el documento y las diapositivas de programación.,material,material,0.16748876045209038,0.6634601951444433,0.16905104440346636,0.0,False
+ent-material-06-3,ent-material-06,Solicito el documento y las diapositivas de estadística.,material,material,0.16748876045209038,0.6634601951444433,0.16905104440346636,0.0,False
+ent-horario-01-1,ent-horario-01,¿Cuál es el horario de la clase de robótica?,horario,horario,0.14249295970556394,0.19335857959545216,0.6641484606989838,0.0,False
+ent-horario-01-2,ent-horario-01,¿Cuál es el horario de la clase de programación?,horario,horario,0.14249295970556394,0.19335857959545216,0.6641484606989838,0.0,False
+ent-horario-01-3,ent-horario-01,¿Cuál es el horario de la clase de estadística?,horario,horario,0.14249295970556394,0.19335857959545216,0.6641484606989838,0.0,False
+ent-horario-02-1,ent-horario-02,Necesito saber la fecha del taller de robótica.,horario,horario,0.1827721809284753,0.18910810441386053,0.6281197146576641,0.0,False
+ent-horario-02-2,ent-horario-02,Necesito saber la fecha del taller de programación.,horario,horario,0.1827721809284753,0.18910810441386053,0.6281197146576641,0.0,False
+ent-horario-02-3,ent-horario-02,Necesito saber la fecha del taller de estadística.,horario,horario,0.1827721809284753,0.18910810441386053,0.6281197146576641,0.0,False
+ent-horario-03-1,ent-horario-03,¿A qué hora empieza la sesión de robótica?,horario,horario,0.19981508418312086,0.1474422492370761,0.6527426665798031,0.0,False
+ent-horario-03-2,ent-horario-03,¿A qué hora empieza la sesión de programación?,horario,horario,0.19981508418312086,0.1474422492370761,0.6527426665798031,0.0,False
+ent-horario-03-3,ent-horario-03,¿A qué hora empieza la sesión de estadística?,horario,horario,0.19981508418312086,0.1474422492370761,0.652742666579803,0.0,False
+ent-horario-04-1,ent-horario-04,Quiero confirmar el día de la reunión de robótica.,horario,horario,0.16601512433512275,0.17878932161213612,0.6551955540527411,0.0,False
+ent-horario-04-2,ent-horario-04,Quiero confirmar el día de la reunión de programación.,horario,horario,0.16601512433512275,0.17878932161213612,0.6551955540527411,0.0,False
+ent-horario-04-3,ent-horario-04,Quiero confirmar el día de la reunión de estadística.,horario,horario,0.16601512433512275,0.17878932161213612,0.6551955540527411,0.0,False
+ent-horario-05-1,ent-horario-05,Busco el calendario de actividades de robótica.,horario,horario,0.1463432412201781,0.20166496742199194,0.6519917913578299,0.0,False
+ent-horario-05-2,ent-horario-05,Busco el calendario de actividades de programación.,horario,horario,0.1463432412201781,0.20166496742199194,0.6519917913578299,0.0,False
+ent-horario-05-3,ent-horario-05,Busco el calendario de actividades de estadística.,horario,horario,0.1463432412201781,0.20166496742199194,0.6519917913578299,0.0,False
+ent-horario-06-1,ent-horario-06,Solicito información sobre cuándo será el encuentro de robótica.,horario,horario,0.16644821681446387,0.1727170823392578,0.6608347008462783,0.0,False
+ent-horario-06-2,ent-horario-06,Solicito información sobre cuándo será el encuentro de programación.,horario,horario,0.16644821681446387,0.17271708233925784,0.6608347008462784,0.0,False
+ent-horario-06-3,ent-horario-06,Solicito información sobre cuándo será el encuentro de estadística.,horario,horario,0.16644821681446387,0.17271708233925784,0.6608347008462784,0.0,False

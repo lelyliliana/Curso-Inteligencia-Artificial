@@ -1,0 +1,28 @@
+id,familia,tema,texto,clase,sha256
+pru-acceso-01-1,pru-acceso-01,robótica,Al entrar a robótica aparece usuario bloqueado.,acceso,096dc2481b54e7205fb3f8687fd000603d1447684d72ccf223ae54bdfa88263e
+pru-acceso-01-2,pru-acceso-01,programación,Al entrar a programación aparece usuario bloqueado.,acceso,b29ef8ee3825a5f15c5830cf8bbac152c870605b1419daaf96515550a3abf96d
+pru-acceso-01-3,pru-acceso-01,estadística,Al entrar a estadística aparece usuario bloqueado.,acceso,bf213f6e1f1e0150c53e0c63a2296753900039b805f0c7d1cff8073e494813f7
+pru-acceso-02-1,pru-acceso-02,robótica,Olvidé la contraseña de robótica; ¿cómo recupero el acceso?,acceso,4573f4f5400d9f8f01be394768d6cb40443f9e7c84c9e32c683ec9e5929c026b
+pru-acceso-02-2,pru-acceso-02,programación,Olvidé la contraseña de programación; ¿cómo recupero el acceso?,acceso,3b6cbee93ea425d4022416aeefbca4e5fffbaecf433fd93be317276ba825a548
+pru-acceso-02-3,pru-acceso-02,estadística,Olvidé la contraseña de estadística; ¿cómo recupero el acceso?,acceso,6f891d0782384e691347af1b094197935c197ce46fde9e87965cabd1bc10ee5f
+pru-acceso-03-1,pru-acceso-03,robótica,"La fecha de robótica está clara, pero mi cuenta no funciona.",acceso,4f2f030e852c72dee26860bb53de9917e5b82a21ba7a56a1998c645263ea4a83
+pru-acceso-03-2,pru-acceso-03,programación,"La fecha de programación está clara, pero mi cuenta no funciona.",acceso,e342b1ab82f95296153c02cd8ecc064a3aa28da576eac4ac528cef981569ece9
+pru-acceso-03-3,pru-acceso-03,estadística,"La fecha de estadística está clara, pero mi cuenta no funciona.",acceso,d93348ab767d03676bab3c7870fc03df11f0e93cc7d7c1a5d4c916f036e89c17
+pru-material-01-1,pru-material-01,robótica,¿Me comparten las lecturas y el archivo de robótica?,material,75410238c3d72815aee10e09f53b8cd379daf6a66ec3cb701c2e87b18b3a37bf
+pru-material-01-2,pru-material-01,programación,¿Me comparten las lecturas y el archivo de programación?,material,7fe12570aa0b9ea63486160383dc0bc7399123ef6bc7c336f27df0648a8f0598
+pru-material-01-3,pru-material-01,estadística,¿Me comparten las lecturas y el archivo de estadística?,material,3624b580ea196918284bbc6d5c00317a4aa3a8ee4f1d38038138ef03f60aba75
+pru-material-02-1,pru-material-02,robótica,La sesión de robótica ya terminó y busco sus diapositivas.,material,cee1916ac86f566dcac8af1abe4d05a19e6358dfe00feb2d7c620fb7f15be6f8
+pru-material-02-2,pru-material-02,programación,La sesión de programación ya terminó y busco sus diapositivas.,material,e269efdc776e001cf6623eb116a05e3cae3464578b075372b6f29be5112ae433
+pru-material-02-3,pru-material-02,estadística,La sesión de estadística ya terminó y busco sus diapositivas.,material,d6671d88f6df4a18be3eff79db06054f15bb896e043d2efdd9e9c19c43f6dfa6
+pru-material-03-1,pru-material-03,robótica,El acceso a robótica funciona; falta la guía para descargar.,material,2fc8fd05181c57ad6315c9694ff907e31eced696c81dd3fed115e9eb2c265b74
+pru-material-03-2,pru-material-03,programación,El acceso a programación funciona; falta la guía para descargar.,material,1bdda1b2c3e645112734c4196cdd2c5a4b9deb449aa011df3e05edc1db058c96
+pru-material-03-3,pru-material-03,estadística,El acceso a estadística funciona; falta la guía para descargar.,material,9c61af316de6fe6cb49bf86a5f37dd8d24dff9e798474858f05130bdab9cc1f1
+pru-horario-01-1,pru-horario-01,robótica,¿En qué fecha y hora nos reunimos para robótica?,horario,f38c86afddfe379725ba3155b66548256eb49d2ea03e97043757fe6df0c18bb3
+pru-horario-01-2,pru-horario-01,programación,¿En qué fecha y hora nos reunimos para programación?,horario,3399265c9a84890998fe4b726fde396b0fd7b42cb56de5ab9096c6247bb4e68c
+pru-horario-01-3,pru-horario-01,estadística,¿En qué fecha y hora nos reunimos para estadística?,horario,7fa6902c6cda563a098199e4ec9bd17ace5cbca26922078c367c6a5c71c5debc
+pru-horario-02-1,pru-horario-02,robótica,"Tengo los apuntes de robótica, solo falta confirmar el horario.",horario,d8308323110bf055b1db04938b69d6b2238d131bd47a1f6aa31fc79ff7ca7f64
+pru-horario-02-2,pru-horario-02,programación,"Tengo los apuntes de programación, solo falta confirmar el horario.",horario,19351156d3e3097d126e709fb91797e4b7a1d32878bf03ab517fbc19138dfbaa
+pru-horario-02-3,pru-horario-02,estadística,"Tengo los apuntes de estadística, solo falta confirmar el horario.",horario,aad90ce8f41aebc81354f324d5db897eb94f4b835c53232b46813bbd8e463009
+pru-horario-03-1,pru-horario-03,robótica,¿El encuentro de robótica sigue en el mismo día del calendario?,horario,dcee1df947b0f0791c6c9c6986f4f40632c20ab920901d8cf6cf44ed8ec187d9
+pru-horario-03-2,pru-horario-03,programación,¿El encuentro de programación sigue en el mismo día del calendario?,horario,6c284a6edc5fb8429614a49464603d4e579479604000d0ed200095c66364b859
+pru-horario-03-3,pru-horario-03,estadística,¿El encuentro de estadística sigue en el mismo día del calendario?,horario,473b9b90856843c8126c33bef9160f7fc7018ed3554188a80a8986f74c5ec0ed

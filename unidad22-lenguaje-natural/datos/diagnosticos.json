@@ -1,0 +1,11 @@
+[
+  {"id": "d01", "tipo": "negación", "texto": "Necesito acceso, no material", "clase": "acceso", "nota": "La petición afirmada es acceso."},
+  {"id": "d02", "tipo": "negación", "texto": "Necesito material, no acceso", "clase": "material", "nota": "Mismas palabras que d01, distinto orden e intención."},
+  {"id": "d03", "tipo": "vocabulario", "texto": "credenciales caducadas", "clase": "acceso", "nota": "Sinónimos ausentes del entrenamiento; no son un conjunto representativo."},
+  {"id": "d04", "tipo": "vacío", "texto": "!!!", "clase": null, "nota": "No hay una petición recuperable; no asignar una verdad de referencia."},
+  {"id": "d05", "tipo": "ambigüedad", "texto": "Necesito ayuda con el curso", "clase": null, "nota": "Falta el motivo concreto; se necesita aclaración."},
+  {"id": "d06", "tipo": "dos peticiones", "texto": "Necesito la contraseña y los apuntes", "clase": null, "nota": "Acceso y material a la vez; fuera del objetivo de una sola etiqueta."},
+  {"id": "d07", "tipo": "contexto", "texto": "La palabra contraseña aparece en las diapositivas que quiero descargar", "clase": "material", "nota": "Mencionar una contraseña no equivale a pedir acceso."},
+  {"id": "d08", "tipo": "fuera de alcance", "texto": "Quiero cancelar mi matrícula y recuperar el dinero", "clase": null, "nota": "La taxonomía no tiene una clase para esta petición."},
+  {"id": "d09", "tipo": "negación", "texto": "No necesito apuntes, solo confirmar a qué hora empieza la clase", "clase": "horario", "nota": "La mención de apuntes está negada."}
+]
