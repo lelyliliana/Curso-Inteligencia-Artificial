@@ -1,0 +1,338 @@
+[
+  {
+    "id": "escena-036-izquierda-0",
+    "familia": "escena-036",
+    "imagen": "imagenes/escena-036.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-036-izquierda-1",
+    "familia": "escena-036",
+    "imagen": "imagenes/escena-036.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-036-derecha-0",
+    "familia": "escena-036",
+    "imagen": "imagenes/escena-036.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-036-derecha-1",
+    "familia": "escena-036",
+    "imagen": "imagenes/escena-036.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-037-izquierda-0",
+    "familia": "escena-037",
+    "imagen": "imagenes/escena-037.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-037-izquierda-1",
+    "familia": "escena-037",
+    "imagen": "imagenes/escena-037.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-037-derecha-0",
+    "familia": "escena-037",
+    "imagen": "imagenes/escena-037.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-037-derecha-1",
+    "familia": "escena-037",
+    "imagen": "imagenes/escena-037.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-038-izquierda-0",
+    "familia": "escena-038",
+    "imagen": "imagenes/escena-038.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-038-izquierda-1",
+    "familia": "escena-038",
+    "imagen": "imagenes/escena-038.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-038-derecha-0",
+    "familia": "escena-038",
+    "imagen": "imagenes/escena-038.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-038-derecha-1",
+    "familia": "escena-038",
+    "imagen": "imagenes/escena-038.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-039-izquierda-0",
+    "familia": "escena-039",
+    "imagen": "imagenes/escena-039.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-039-izquierda-1",
+    "familia": "escena-039",
+    "imagen": "imagenes/escena-039.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-039-derecha-0",
+    "familia": "escena-039",
+    "imagen": "imagenes/escena-039.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-039-derecha-1",
+    "familia": "escena-039",
+    "imagen": "imagenes/escena-039.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-040-izquierda-0",
+    "familia": "escena-040",
+    "imagen": "imagenes/escena-040.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-040-izquierda-1",
+    "familia": "escena-040",
+    "imagen": "imagenes/escena-040.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-040-derecha-0",
+    "familia": "escena-040",
+    "imagen": "imagenes/escena-040.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-040-derecha-1",
+    "familia": "escena-040",
+    "imagen": "imagenes/escena-040.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-041-izquierda-0",
+    "familia": "escena-041",
+    "imagen": "imagenes/escena-041.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-041-izquierda-1",
+    "familia": "escena-041",
+    "imagen": "imagenes/escena-041.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-041-derecha-0",
+    "familia": "escena-041",
+    "imagen": "imagenes/escena-041.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-041-derecha-1",
+    "familia": "escena-041",
+    "imagen": "imagenes/escena-041.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-042-izquierda-0",
+    "familia": "escena-042",
+    "imagen": "imagenes/escena-042.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-042-izquierda-1",
+    "familia": "escena-042",
+    "imagen": "imagenes/escena-042.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-042-derecha-0",
+    "familia": "escena-042",
+    "imagen": "imagenes/escena-042.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-042-derecha-1",
+    "familia": "escena-042",
+    "imagen": "imagenes/escena-042.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-043-izquierda-0",
+    "familia": "escena-043",
+    "imagen": "imagenes/escena-043.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-043-izquierda-1",
+    "familia": "escena-043",
+    "imagen": "imagenes/escena-043.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-043-derecha-0",
+    "familia": "escena-043",
+    "imagen": "imagenes/escena-043.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-043-derecha-1",
+    "familia": "escena-043",
+    "imagen": "imagenes/escena-043.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-044-izquierda-0",
+    "familia": "escena-044",
+    "imagen": "imagenes/escena-044.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-044-izquierda-1",
+    "familia": "escena-044",
+    "imagen": "imagenes/escena-044.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-044-derecha-0",
+    "familia": "escena-044",
+    "imagen": "imagenes/escena-044.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-044-derecha-1",
+    "familia": "escena-044",
+    "imagen": "imagenes/escena-044.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-045-izquierda-0",
+    "familia": "escena-045",
+    "imagen": "imagenes/escena-045.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-045-izquierda-1",
+    "familia": "escena-045",
+    "imagen": "imagenes/escena-045.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-045-derecha-0",
+    "familia": "escena-045",
+    "imagen": "imagenes/escena-045.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-045-derecha-1",
+    "familia": "escena-045",
+    "imagen": "imagenes/escena-045.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-046-izquierda-0",
+    "familia": "escena-046",
+    "imagen": "imagenes/escena-046.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-046-izquierda-1",
+    "familia": "escena-046",
+    "imagen": "imagenes/escena-046.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-046-derecha-0",
+    "familia": "escena-046",
+    "imagen": "imagenes/escena-046.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-046-derecha-1",
+    "familia": "escena-046",
+    "imagen": "imagenes/escena-046.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-047-izquierda-0",
+    "familia": "escena-047",
+    "imagen": "imagenes/escena-047.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-047-izquierda-1",
+    "familia": "escena-047",
+    "imagen": "imagenes/escena-047.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-047-derecha-0",
+    "familia": "escena-047",
+    "imagen": "imagenes/escena-047.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-047-derecha-1",
+    "familia": "escena-047",
+    "imagen": "imagenes/escena-047.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  }
+]

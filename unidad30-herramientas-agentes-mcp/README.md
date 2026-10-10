@@ -181,4 +181,4 @@ python herramientas/verificar_curso.py
 
 Las 49 pruebas cubren contratos, recursos restringidos, ausencia, inyección, presupuesto, correlación, errores HTTP simulados, MCP en un subproceso y reconstrucción de las capturas. El verificador no inicia Ollama. Pasar estas pruebas no certifica un agente de producción ni inmunidad a otras inyecciones.
 
-**Siguiente unidad prevista:** 31 — Adaptación de modelos y multimodalidad; pendiente de desarrollo.
+Continúa con la [Unidad 31 — Adaptación de modelos y multimodalidad](../unidad31-adaptacion-multimodalidad/README.md): ajuste completo, LoRA y una práctica de fusión de imagen y texto en CPU.

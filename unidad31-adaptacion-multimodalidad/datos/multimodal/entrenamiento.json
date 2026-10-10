@@ -1,0 +1,674 @@
+[
+  {
+    "id": "escena-000-izquierda-0",
+    "familia": "escena-000",
+    "imagen": "imagenes/escena-000.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-000-izquierda-1",
+    "familia": "escena-000",
+    "imagen": "imagenes/escena-000.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-000-derecha-0",
+    "familia": "escena-000",
+    "imagen": "imagenes/escena-000.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-000-derecha-1",
+    "familia": "escena-000",
+    "imagen": "imagenes/escena-000.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-001-izquierda-0",
+    "familia": "escena-001",
+    "imagen": "imagenes/escena-001.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-001-izquierda-1",
+    "familia": "escena-001",
+    "imagen": "imagenes/escena-001.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-001-derecha-0",
+    "familia": "escena-001",
+    "imagen": "imagenes/escena-001.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-001-derecha-1",
+    "familia": "escena-001",
+    "imagen": "imagenes/escena-001.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-002-izquierda-0",
+    "familia": "escena-002",
+    "imagen": "imagenes/escena-002.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-002-izquierda-1",
+    "familia": "escena-002",
+    "imagen": "imagenes/escena-002.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-002-derecha-0",
+    "familia": "escena-002",
+    "imagen": "imagenes/escena-002.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-002-derecha-1",
+    "familia": "escena-002",
+    "imagen": "imagenes/escena-002.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-003-izquierda-0",
+    "familia": "escena-003",
+    "imagen": "imagenes/escena-003.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-003-izquierda-1",
+    "familia": "escena-003",
+    "imagen": "imagenes/escena-003.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-003-derecha-0",
+    "familia": "escena-003",
+    "imagen": "imagenes/escena-003.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-003-derecha-1",
+    "familia": "escena-003",
+    "imagen": "imagenes/escena-003.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-004-izquierda-0",
+    "familia": "escena-004",
+    "imagen": "imagenes/escena-004.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-004-izquierda-1",
+    "familia": "escena-004",
+    "imagen": "imagenes/escena-004.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-004-derecha-0",
+    "familia": "escena-004",
+    "imagen": "imagenes/escena-004.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-004-derecha-1",
+    "familia": "escena-004",
+    "imagen": "imagenes/escena-004.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-005-izquierda-0",
+    "familia": "escena-005",
+    "imagen": "imagenes/escena-005.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-005-izquierda-1",
+    "familia": "escena-005",
+    "imagen": "imagenes/escena-005.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-005-derecha-0",
+    "familia": "escena-005",
+    "imagen": "imagenes/escena-005.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-005-derecha-1",
+    "familia": "escena-005",
+    "imagen": "imagenes/escena-005.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-006-izquierda-0",
+    "familia": "escena-006",
+    "imagen": "imagenes/escena-006.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-006-izquierda-1",
+    "familia": "escena-006",
+    "imagen": "imagenes/escena-006.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-006-derecha-0",
+    "familia": "escena-006",
+    "imagen": "imagenes/escena-006.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-006-derecha-1",
+    "familia": "escena-006",
+    "imagen": "imagenes/escena-006.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-007-izquierda-0",
+    "familia": "escena-007",
+    "imagen": "imagenes/escena-007.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-007-izquierda-1",
+    "familia": "escena-007",
+    "imagen": "imagenes/escena-007.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-007-derecha-0",
+    "familia": "escena-007",
+    "imagen": "imagenes/escena-007.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-007-derecha-1",
+    "familia": "escena-007",
+    "imagen": "imagenes/escena-007.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-008-izquierda-0",
+    "familia": "escena-008",
+    "imagen": "imagenes/escena-008.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-008-izquierda-1",
+    "familia": "escena-008",
+    "imagen": "imagenes/escena-008.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-008-derecha-0",
+    "familia": "escena-008",
+    "imagen": "imagenes/escena-008.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-008-derecha-1",
+    "familia": "escena-008",
+    "imagen": "imagenes/escena-008.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-009-izquierda-0",
+    "familia": "escena-009",
+    "imagen": "imagenes/escena-009.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-009-izquierda-1",
+    "familia": "escena-009",
+    "imagen": "imagenes/escena-009.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-009-derecha-0",
+    "familia": "escena-009",
+    "imagen": "imagenes/escena-009.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-009-derecha-1",
+    "familia": "escena-009",
+    "imagen": "imagenes/escena-009.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-010-izquierda-0",
+    "familia": "escena-010",
+    "imagen": "imagenes/escena-010.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-010-izquierda-1",
+    "familia": "escena-010",
+    "imagen": "imagenes/escena-010.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-010-derecha-0",
+    "familia": "escena-010",
+    "imagen": "imagenes/escena-010.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-010-derecha-1",
+    "familia": "escena-010",
+    "imagen": "imagenes/escena-010.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-011-izquierda-0",
+    "familia": "escena-011",
+    "imagen": "imagenes/escena-011.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-011-izquierda-1",
+    "familia": "escena-011",
+    "imagen": "imagenes/escena-011.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-011-derecha-0",
+    "familia": "escena-011",
+    "imagen": "imagenes/escena-011.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-011-derecha-1",
+    "familia": "escena-011",
+    "imagen": "imagenes/escena-011.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-012-izquierda-0",
+    "familia": "escena-012",
+    "imagen": "imagenes/escena-012.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-012-izquierda-1",
+    "familia": "escena-012",
+    "imagen": "imagenes/escena-012.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-012-derecha-0",
+    "familia": "escena-012",
+    "imagen": "imagenes/escena-012.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-012-derecha-1",
+    "familia": "escena-012",
+    "imagen": "imagenes/escena-012.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-013-izquierda-0",
+    "familia": "escena-013",
+    "imagen": "imagenes/escena-013.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-013-izquierda-1",
+    "familia": "escena-013",
+    "imagen": "imagenes/escena-013.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-013-derecha-0",
+    "familia": "escena-013",
+    "imagen": "imagenes/escena-013.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-013-derecha-1",
+    "familia": "escena-013",
+    "imagen": "imagenes/escena-013.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-014-izquierda-0",
+    "familia": "escena-014",
+    "imagen": "imagenes/escena-014.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-014-izquierda-1",
+    "familia": "escena-014",
+    "imagen": "imagenes/escena-014.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-014-derecha-0",
+    "familia": "escena-014",
+    "imagen": "imagenes/escena-014.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-014-derecha-1",
+    "familia": "escena-014",
+    "imagen": "imagenes/escena-014.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-015-izquierda-0",
+    "familia": "escena-015",
+    "imagen": "imagenes/escena-015.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-015-izquierda-1",
+    "familia": "escena-015",
+    "imagen": "imagenes/escena-015.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-015-derecha-0",
+    "familia": "escena-015",
+    "imagen": "imagenes/escena-015.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-015-derecha-1",
+    "familia": "escena-015",
+    "imagen": "imagenes/escena-015.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-016-izquierda-0",
+    "familia": "escena-016",
+    "imagen": "imagenes/escena-016.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-016-izquierda-1",
+    "familia": "escena-016",
+    "imagen": "imagenes/escena-016.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-016-derecha-0",
+    "familia": "escena-016",
+    "imagen": "imagenes/escena-016.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-016-derecha-1",
+    "familia": "escena-016",
+    "imagen": "imagenes/escena-016.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-017-izquierda-0",
+    "familia": "escena-017",
+    "imagen": "imagenes/escena-017.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-017-izquierda-1",
+    "familia": "escena-017",
+    "imagen": "imagenes/escena-017.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-017-derecha-0",
+    "familia": "escena-017",
+    "imagen": "imagenes/escena-017.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-017-derecha-1",
+    "familia": "escena-017",
+    "imagen": "imagenes/escena-017.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-018-izquierda-0",
+    "familia": "escena-018",
+    "imagen": "imagenes/escena-018.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-018-izquierda-1",
+    "familia": "escena-018",
+    "imagen": "imagenes/escena-018.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-018-derecha-0",
+    "familia": "escena-018",
+    "imagen": "imagenes/escena-018.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-018-derecha-1",
+    "familia": "escena-018",
+    "imagen": "imagenes/escena-018.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-019-izquierda-0",
+    "familia": "escena-019",
+    "imagen": "imagenes/escena-019.png",
+    "texto": "estado izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-019-izquierda-1",
+    "familia": "escena-019",
+    "imagen": "imagenes/escena-019.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-019-derecha-0",
+    "familia": "escena-019",
+    "imagen": "imagenes/escena-019.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-019-derecha-1",
+    "familia": "escena-019",
+    "imagen": "imagenes/escena-019.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-020-izquierda-0",
+    "familia": "escena-020",
+    "imagen": "imagenes/escena-020.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-020-izquierda-1",
+    "familia": "escena-020",
+    "imagen": "imagenes/escena-020.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-020-derecha-0",
+    "familia": "escena-020",
+    "imagen": "imagenes/escena-020.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-020-derecha-1",
+    "familia": "escena-020",
+    "imagen": "imagenes/escena-020.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-021-izquierda-0",
+    "familia": "escena-021",
+    "imagen": "imagenes/escena-021.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-021-izquierda-1",
+    "familia": "escena-021",
+    "imagen": "imagenes/escena-021.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-021-derecha-0",
+    "familia": "escena-021",
+    "imagen": "imagenes/escena-021.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-021-derecha-1",
+    "familia": "escena-021",
+    "imagen": "imagenes/escena-021.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-022-izquierda-0",
+    "familia": "escena-022",
+    "imagen": "imagenes/escena-022.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-022-izquierda-1",
+    "familia": "escena-022",
+    "imagen": "imagenes/escena-022.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-022-derecha-0",
+    "familia": "escena-022",
+    "imagen": "imagenes/escena-022.png",
+    "texto": "estado derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-022-derecha-1",
+    "familia": "escena-022",
+    "imagen": "imagenes/escena-022.png",
+    "texto": "consulta derecha",
+    "etiqueta": 0
+  },
+  {
+    "id": "escena-023-izquierda-0",
+    "familia": "escena-023",
+    "imagen": "imagenes/escena-023.png",
+    "texto": "estado izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-023-izquierda-1",
+    "familia": "escena-023",
+    "imagen": "imagenes/escena-023.png",
+    "texto": "consulta izquierda",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-023-derecha-0",
+    "familia": "escena-023",
+    "imagen": "imagenes/escena-023.png",
+    "texto": "estado derecha",
+    "etiqueta": 1
+  },
+  {
+    "id": "escena-023-derecha-1",
+    "familia": "escena-023",
+    "imagen": "imagenes/escena-023.png",
+    "texto": "consulta derecha",
+    "etiqueta": 1
+  }
+]

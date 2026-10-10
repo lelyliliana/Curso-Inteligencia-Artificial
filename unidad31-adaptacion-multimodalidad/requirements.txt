@@ -1,0 +1,2 @@
+# Mismo entorno numérico, gráfico y Pillow del curso.
+-r ../unidad21-vision-computador/requirements.txt

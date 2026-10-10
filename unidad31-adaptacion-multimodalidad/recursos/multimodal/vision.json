@@ -1,0 +1,150 @@
+{
+  "formato": "fusion-curso-v1",
+  "modo": "vision",
+  "config": {
+    "ocultas": 8,
+    "semilla": 3111,
+    "epocas": 120,
+    "evaluar_cada": 10,
+    "lr": 0.03,
+    "imagen": [
+      20,
+      16
+    ],
+    "regiones": [
+      [
+        5,
+        11,
+        2,
+        7
+      ],
+      [
+        5,
+        11,
+        13,
+        18
+      ]
+    ],
+    "clases": [
+      "apagada",
+      "encendida"
+    ],
+    "umbral_regla": 0.5
+  },
+  "fuentes": {
+    "datos/protocolo.md": "7525027a73bb6af1d4410599ea4f9dd5ac0a1dbba4c77855a4ecdc8aac289199",
+    "datos/generar_datos.py": "255cfff8407561473bb91579312f9526b9cbd6f565b768a7695f2c38bbbe612b",
+    "ejemplos/comun.py": "9e13e6e5b8e6c874910ca2a8b244a83527ea9ca1f1fb5fa0d2e8b5eb9544ddfb",
+    "ejemplos/multimodal.py": "038036ada70260c7e36a0b911c62b58cbf73e0e4218c4d4fe87f8c90e95a24f7",
+    "datos/multimodal/entrenamiento.json": "5e5ad6e4c57627666fed45881b1f51603d6af95a5aaaf80778dfca08314a4285",
+    "datos/multimodal/imagenes/escena-000.png": "3140f154d80742bda5bd3693562a00ecb842daae2d80c50e0d2ec0ec7e57a355",
+    "datos/multimodal/imagenes/escena-001.png": "d2e4b5ba18623ca39dd2bbdccb7c754679b9be716841250e4b35aae11808da89",
+    "datos/multimodal/imagenes/escena-002.png": "25429908cb2e076db88f15e33ec8640ba1c1cfad74e98cb0b2e8eb4895754995",
+    "datos/multimodal/imagenes/escena-003.png": "2de13a687c248aa2d0bef703934359ffedc83242b03a997141adf91a9ea23804",
+    "datos/multimodal/imagenes/escena-004.png": "7f83dfcc77d827b387b28381bf5960daf409518f5cb5117a5b25456c41d5dc09",
+    "datos/multimodal/imagenes/escena-005.png": "c9ca1286445311598845b7e64b1e8bb040d6df46687ff2b5631a49506618a604",
+    "datos/multimodal/imagenes/escena-006.png": "d8a286849818e2e0b8f60e97d88f9f5a7621ed674e4b17c4feeac5a83dd3f5bd",
+    "datos/multimodal/imagenes/escena-007.png": "b0e212c8f85cb70a5081f6fc2f7958a8fe0a76710155a1318f9b311a074a6ea0",
+    "datos/multimodal/imagenes/escena-008.png": "bf6fc8d09818ba7ca2c54da5890b47afa427ca27b60ab92f6c99adeea8e58b89",
+    "datos/multimodal/imagenes/escena-009.png": "ba68338dd417c9b8f273380b54a85c100baf6cd1b37c4ddeee990c11bb215f21",
+    "datos/multimodal/imagenes/escena-010.png": "a02a763bacc947ad08dbe2d319f69d224894472f5a934841e6d61e3db341ea49",
+    "datos/multimodal/imagenes/escena-011.png": "69da839a04cd6f8e659db9a4a5e98cdd5f6a468e17b3e6b0afdc4ad292ad30f4",
+    "datos/multimodal/imagenes/escena-012.png": "c2f20c2ad70d903c6f8f72c88cac5d2b7353df9b15ee41cb76f40d88609a2228",
+    "datos/multimodal/imagenes/escena-013.png": "8b731b679b65af0efe70ff1960db8a67c0e134b7e65468777b355042b4a870db",
+    "datos/multimodal/imagenes/escena-014.png": "373fe0b40a05c99dc71429c8361ba1d9534e97a15aedc304cf7ca79f76027c04",
+    "datos/multimodal/imagenes/escena-015.png": "5419686382d51f9a179f00c15f782fee916146fe84c3afc3df00957d7fe6db8e",
+    "datos/multimodal/imagenes/escena-016.png": "5c39d557f00834467417fe01b821d385fe047a5c1073b8bca59b67d6d7f34e29",
+    "datos/multimodal/imagenes/escena-017.png": "e3ef855749b8c32bcaa8642c3c7d05393848c097c7a762e417e65721b91bb875",
+    "datos/multimodal/imagenes/escena-018.png": "32560e1bac64c0e1d9396836940da0b67dd859ee35a26cda7d23ffecd684d883",
+    "datos/multimodal/imagenes/escena-019.png": "0ff64c46dfdf8d6d5bc6a32e5a9ff4e071b9793e34f5c4b20de5e83ba4944c62",
+    "datos/multimodal/imagenes/escena-020.png": "4cad44036371d2b2ea8e8e896a2b2d43b1673c2b616a9650189c2d11b965fd71",
+    "datos/multimodal/imagenes/escena-021.png": "aefb4f841fc53c3d0a365878f1f5aaba74cc75817416ba1b480006c0b10c0fb0",
+    "datos/multimodal/imagenes/escena-022.png": "d6915b829649ed3fce05e8705acc417e621af6365937cc1b603c32ece1f6a506",
+    "datos/multimodal/imagenes/escena-023.png": "a3d91bf1ec310a4badcd3dcf8bb08c17f3d5229f532ad52e7742ce35269fb43b",
+    "datos/multimodal/validacion.json": "bce7ed8b16ae4c0f57167db292068d90af15ec3a6f23e33090825d24add9e5a3",
+    "datos/multimodal/imagenes/escena-024.png": "4b8218542a46f72dbb1b29126232a2394e0893c6016c194b5dd12e9d78ecdd10",
+    "datos/multimodal/imagenes/escena-025.png": "641be9472af47f12fc4a0a688c7464169dce37f20e59dce01a3f53dd520b99e8",
+    "datos/multimodal/imagenes/escena-026.png": "625075eaad90539e650a6dcf373f5e53e6a4f7acac5279c353b05b859ff7a347",
+    "datos/multimodal/imagenes/escena-027.png": "3a7430e964022c14f2d04f4c30dae14ed282c9f98bb066ff0ea0b9b7435c83bd",
+    "datos/multimodal/imagenes/escena-028.png": "6498507d130d348b0494424a55b63e7648816a59142292b512cf1a9ef667bac3",
+    "datos/multimodal/imagenes/escena-029.png": "733379951986cc1d21738ad7e7635f5e0bb2ba11ce3345ce39335fddc2b43ba4",
+    "datos/multimodal/imagenes/escena-030.png": "f9849bd03c02bc3aa134019795878aefff2498470c3eaae455b73c111ede3202",
+    "datos/multimodal/imagenes/escena-031.png": "6530bdd4e64fa9e401b783cd4ca9e870d265d1d5593d645a3e92c1baa8d204d6",
+    "datos/multimodal/imagenes/escena-032.png": "506b5f725c5c1bd854ab75b325483446f3e8e13939616663cbf6e7b63d1842cf",
+    "datos/multimodal/imagenes/escena-033.png": "6f1ee3f305bb8b6fe621c1087aa74c979a8905d5dd6240b5d3acd0713e820f27",
+    "datos/multimodal/imagenes/escena-034.png": "29dcb9bcf517b32188b27d3788bb4843981e37395cad81ac398e10400c7b8d6e",
+    "datos/multimodal/imagenes/escena-035.png": "be3ab99b51862d7f9da33c97b9521a0887b51c00cc853015ba4d89dc102bbb5e"
+  },
+  "estado": {
+    "0.weight": [
+      [
+        1.0075851678848267,
+        1.0764710903167725
+      ],
+      [
+        -0.7849453687667847,
+        -1.2535536289215088
+      ],
+      [
+        1.8187302350997925,
+        0.5577823519706726
+      ],
+      [
+        -0.7638959288597107,
+        -0.7463060021400452
+      ],
+      [
+        0.4749588668346405,
+        -0.38703927397727966
+      ],
+      [
+        0.42205503582954407,
+        1.4043197631835938
+      ],
+      [
+        1.1551692485809326,
+        1.3317795991897583
+      ],
+      [
+        1.114172339439392,
+        0.894902229309082
+      ]
+    ],
+    "0.bias": [
+      -0.9977043271064758,
+      0.8918979167938232,
+      -1.2593278884887695,
+      0.43812575936317444,
+      -0.18571139872074127,
+      -0.679366409778595,
+      -1.2527352571487427,
+      -0.9033045172691345
+    ],
+    "2.weight": [
+      [
+        -1.0429713726043701,
+        1.1395952701568604,
+        -1.296999454498291,
+        0.49797677993774414,
+        -0.08991685509681702,
+        -0.8962178826332092,
+        -0.9908455610275269,
+        -0.6750295758247375
+      ],
+      [
+        0.9840295314788818,
+        -0.9211812019348145,
+        0.94387286901474,
+        -0.6199349761009216,
+        -0.006129466462880373,
+        0.9125116467475891,
+        1.2209287881851196,
+        0.715290904045105
+      ]
+    ],
+    "2.bias": [
+      0.5833392143249512,
+      -0.715160071849823
+    ]
+  }
+}

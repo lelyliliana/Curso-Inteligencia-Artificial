@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 30.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 31.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 30
+ULTIMA_UNIDAD = 31
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -204,6 +204,12 @@ def main():
                     esperado = "agente: aceptadas=6/8; familias completas=3/4; llamadas modelo=18"
                 elif programa.name == "03_auditar_permisos.py":
                     esperado = "Auditoría artificial: 11 escenarios; ninguna escritura ejecutada."
+                elif programa.name == "01_adaptar_transformer.py":
+                    esperado = "Seleccionado con validación: lora"
+                elif programa.name == "02_combinar_modalidades.py":
+                    esperado = "fusion: correctas=48/48"
+                elif programa.name == "03_lora_a_mano.py":
+                    esperado = "LoRA manual: salida base=[-1.0, 5.0]; adaptada=[-0.5, 4.5]; fusión idéntica."
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -500,6 +506,23 @@ def main():
                 (["--fase", "cierre", "--caso", "A08b"], "Parada: timeout; apoyo=False; aceptada=False")):
             ejecutar([prefijo + "ver_traza.py", *extras], esperado)
             ejecutados += 1
+        prefijo = "unidad31-adaptacion-multimodalidad/ejemplos/"
+        for nombre, programa, esperado, cierre in (
+                ("adaptacion", "01_adaptar_transformer.py", "Seleccionado con validación: lora",
+                 "Cierre adaptación: lora; exactas=24/24"),
+                ("multimodal", "02_combinar_modalidades.py", "Seleccionado con validación: fusion",
+                 "Cierre multimodal: fusion; correctas=48/48")):
+            salida = Path(carpeta)/f"u31-{nombre}"
+            ejecutar([prefijo + programa, "--salida", salida, "--graficos"], esperado)
+            ejecutados += 1
+            ejecutar([prefijo + programa, "--evaluar-prueba", "--modelo", salida/"modelo.json", "--salida", salida], cierre)
+            ejecutados += 1
+        ejecutar(["unidad31-adaptacion-multimodalidad/soluciones/03_lora_a_mano.py",
+                  "--salida", Path(carpeta)/"u31-manual"], "fusión idéntica")
+        ejecutados += 1
+        ejecutar(["unidad31-adaptacion-multimodalidad/datos/generar_datos.py",
+                  "--salida", Path(carpeta)/"u31-datos"])
+        ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:
         pruebas = unidad / "pruebas"

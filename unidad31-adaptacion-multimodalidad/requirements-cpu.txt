@@ -1,0 +1,2 @@
+# PyTorch CPU ya incorporado al curso; sin transformers, PEFT ni descargas.
+-r ../unidad21-vision-computador/requirements-cpu.txt

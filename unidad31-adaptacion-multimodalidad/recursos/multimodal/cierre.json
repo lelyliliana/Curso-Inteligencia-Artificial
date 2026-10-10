@@ -1,0 +1,458 @@
+{
+  "modo": "fusion",
+  "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf",
+  "prueba_sha256": "5a58ee9143cc3d03d1e29a43e3ae343f81f7e63a410cc51ad75d90380a240da8",
+  "imagenes_sha256": {
+    "imagenes/escena-036.png": "aa3fd7acd758df3f1e9a28731ed7dff29b89122188d327d26f8ea096360c308c",
+    "imagenes/escena-037.png": "96d90a5f86059ff2a51d557ee8b1ab5417b0f0af89388fb30f9b75ccdb814129",
+    "imagenes/escena-038.png": "447388576446f544f73d6f0f30802817813a7413641ef5d9afe77c85fb762a59",
+    "imagenes/escena-039.png": "9a8c6f3a1abe3cb27fcbc9a1fcdf3e823bc3e94a5c553c2524355e675f20ff47",
+    "imagenes/escena-040.png": "6f6874d84afb1edfa83fc8119a8be9879bfb58a1d414c1d1425c2c79470c6639",
+    "imagenes/escena-041.png": "db223ced13fea15b3181629ad635aba1eb1d21f3bf8df430c8b8f01384781b3f",
+    "imagenes/escena-042.png": "a02678504c9a7525e3c36cb80c120c4835a8c48a34bfe383a5909466e42687bc",
+    "imagenes/escena-043.png": "1d7f852599183c0de7260071c20e7ecb359533cde9bf2fb2202e74beea72a9f4",
+    "imagenes/escena-044.png": "1b05d4a162d88caf0a4c2a042869dda36ec0690a2150ad76087a2ee960c85f38",
+    "imagenes/escena-045.png": "616093cb8e11158d21ce82790096ebb77b97eea98aadae7dd9035c11628bd84e",
+    "imagenes/escena-046.png": "62fb65c6ef6612b26410b83a735add514e542d203e8840981fe06670c7d5be47",
+    "imagenes/escena-047.png": "74c88be2a360807d450a1d7c11784218aadd17f048203027b1c7b06bb01b925a"
+  },
+  "evaluacion": {
+    "total": 48,
+    "correctas": 48,
+    "exactitud": 1.0,
+    "ce": 0.0018789424793794751,
+    "matriz": [
+      [
+        24,
+        0
+      ],
+      [
+        0,
+        24
+      ]
+    ],
+    "familias": 12,
+    "familias_completas": 12,
+    "casos": [
+      {
+        "id": "escena-036-izquierda-0",
+        "familia": "escena-036",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9977880716323853,
+        "correcta": true
+      },
+      {
+        "id": "escena-036-izquierda-1",
+        "familia": "escena-036",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9977880716323853,
+        "correcta": true
+      },
+      {
+        "id": "escena-036-derecha-0",
+        "familia": "escena-036",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.002652204129844904,
+        "correcta": true
+      },
+      {
+        "id": "escena-036-derecha-1",
+        "familia": "escena-036",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.002652204129844904,
+        "correcta": true
+      },
+      {
+        "id": "escena-037-izquierda-0",
+        "familia": "escena-037",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0028517302125692368,
+        "correcta": true
+      },
+      {
+        "id": "escena-037-izquierda-1",
+        "familia": "escena-037",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0028517302125692368,
+        "correcta": true
+      },
+      {
+        "id": "escena-037-derecha-0",
+        "familia": "escena-037",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9975520968437195,
+        "correcta": true
+      },
+      {
+        "id": "escena-037-derecha-1",
+        "familia": "escena-037",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9975520968437195,
+        "correcta": true
+      },
+      {
+        "id": "escena-038-izquierda-0",
+        "familia": "escena-038",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9991573095321655,
+        "correcta": true
+      },
+      {
+        "id": "escena-038-izquierda-1",
+        "familia": "escena-038",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9991573095321655,
+        "correcta": true
+      },
+      {
+        "id": "escena-038-derecha-0",
+        "familia": "escena-038",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9988459348678589,
+        "correcta": true
+      },
+      {
+        "id": "escena-038-derecha-1",
+        "familia": "escena-038",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9988459348678589,
+        "correcta": true
+      },
+      {
+        "id": "escena-039-izquierda-0",
+        "familia": "escena-039",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0028590697329491377,
+        "correcta": true
+      },
+      {
+        "id": "escena-039-izquierda-1",
+        "familia": "escena-039",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0028590697329491377,
+        "correcta": true
+      },
+      {
+        "id": "escena-039-derecha-0",
+        "familia": "escena-039",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9974827170372009,
+        "correcta": true
+      },
+      {
+        "id": "escena-039-derecha-1",
+        "familia": "escena-039",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9974827170372009,
+        "correcta": true
+      },
+      {
+        "id": "escena-040-izquierda-0",
+        "familia": "escena-040",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9991682767868042,
+        "correcta": true
+      },
+      {
+        "id": "escena-040-izquierda-1",
+        "familia": "escena-040",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9991682767868042,
+        "correcta": true
+      },
+      {
+        "id": "escena-040-derecha-0",
+        "familia": "escena-040",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9988788962364197,
+        "correcta": true
+      },
+      {
+        "id": "escena-040-derecha-1",
+        "familia": "escena-040",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9988788962364197,
+        "correcta": true
+      },
+      {
+        "id": "escena-041-izquierda-0",
+        "familia": "escena-041",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0016947162803262472,
+        "correcta": true
+      },
+      {
+        "id": "escena-041-izquierda-1",
+        "familia": "escena-041",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0016947162803262472,
+        "correcta": true
+      },
+      {
+        "id": "escena-041-derecha-0",
+        "familia": "escena-041",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0010908340336754918,
+        "correcta": true
+      },
+      {
+        "id": "escena-041-derecha-1",
+        "familia": "escena-041",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0010908340336754918,
+        "correcta": true
+      },
+      {
+        "id": "escena-042-izquierda-0",
+        "familia": "escena-042",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0017433562316000462,
+        "correcta": true
+      },
+      {
+        "id": "escena-042-izquierda-1",
+        "familia": "escena-042",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0017433562316000462,
+        "correcta": true
+      },
+      {
+        "id": "escena-042-derecha-0",
+        "familia": "escena-042",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0011192429810762405,
+        "correcta": true
+      },
+      {
+        "id": "escena-042-derecha-1",
+        "familia": "escena-042",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0011192429810762405,
+        "correcta": true
+      },
+      {
+        "id": "escena-043-izquierda-0",
+        "familia": "escena-043",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0030154467094689608,
+        "correcta": true
+      },
+      {
+        "id": "escena-043-izquierda-1",
+        "familia": "escena-043",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0030154467094689608,
+        "correcta": true
+      },
+      {
+        "id": "escena-043-derecha-0",
+        "familia": "escena-043",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.997529923915863,
+        "correcta": true
+      },
+      {
+        "id": "escena-043-derecha-1",
+        "familia": "escena-043",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.997529923915863,
+        "correcta": true
+      },
+      {
+        "id": "escena-044-izquierda-0",
+        "familia": "escena-044",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.997938334941864,
+        "correcta": true
+      },
+      {
+        "id": "escena-044-izquierda-1",
+        "familia": "escena-044",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.997938334941864,
+        "correcta": true
+      },
+      {
+        "id": "escena-044-derecha-0",
+        "familia": "escena-044",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0027825837023556232,
+        "correcta": true
+      },
+      {
+        "id": "escena-044-derecha-1",
+        "familia": "escena-044",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0027825837023556232,
+        "correcta": true
+      },
+      {
+        "id": "escena-045-izquierda-0",
+        "familia": "escena-045",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9979084730148315,
+        "correcta": true
+      },
+      {
+        "id": "escena-045-izquierda-1",
+        "familia": "escena-045",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9979084730148315,
+        "correcta": true
+      },
+      {
+        "id": "escena-045-derecha-0",
+        "familia": "escena-045",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.00277615780942142,
+        "correcta": true
+      },
+      {
+        "id": "escena-045-derecha-1",
+        "familia": "escena-045",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.00277615780942142,
+        "correcta": true
+      },
+      {
+        "id": "escena-046-izquierda-0",
+        "familia": "escena-046",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9992154836654663,
+        "correcta": true
+      },
+      {
+        "id": "escena-046-izquierda-1",
+        "familia": "escena-046",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9992154836654663,
+        "correcta": true
+      },
+      {
+        "id": "escena-046-derecha-0",
+        "familia": "escena-046",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9988403916358948,
+        "correcta": true
+      },
+      {
+        "id": "escena-046-derecha-1",
+        "familia": "escena-046",
+        "etiqueta": 1,
+        "predicha": 1,
+        "prob_encendida": 0.9988403916358948,
+        "correcta": true
+      },
+      {
+        "id": "escena-047-izquierda-0",
+        "familia": "escena-047",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0016739520942792296,
+        "correcta": true
+      },
+      {
+        "id": "escena-047-izquierda-1",
+        "familia": "escena-047",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0016739520942792296,
+        "correcta": true
+      },
+      {
+        "id": "escena-047-derecha-0",
+        "familia": "escena-047",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0010921863140538335,
+        "correcta": true
+      },
+      {
+        "id": "escena-047-derecha-1",
+        "familia": "escena-047",
+        "etiqueta": 0,
+        "predicha": 0,
+        "prob_encendida": 0.0010921863140538335,
+        "correcta": true
+      }
+    ]
+  },
+  "referencia_regla": {
+    "correctas": 48,
+    "total": 48
+  },
+  "escena_diagnostico": "escena-037",
+  "diagnosticos": {
+    "imagen_ausente": {
+      "estado": "rechazada",
+      "motivo": "imagen_ausente",
+      "clase": null
+    },
+    "texto_ausente": {
+      "estado": "rechazada",
+      "motivo": "texto_ausente",
+      "clase": null
+    },
+    "texto_ambiguo": {
+      "estado": "rechazada",
+      "motivo": "texto_fuera_gramatica",
+      "clase": null
+    },
+    "imagen_incompatible": {
+      "estado": "rechazada",
+      "motivo": "imagen_incompatible",
+      "clase": null
+    },
+    "izquierda": {
+      "estado": "ok",
+      "clase": "apagada"
+    },
+    "derecha": {
+      "estado": "ok",
+      "clase": "encendida"
+    }
+  }
+}

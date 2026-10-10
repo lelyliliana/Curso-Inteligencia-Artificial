@@ -1,0 +1,574 @@
+{
+  "metodo": "lora",
+  "modelo_sha256": "163143b7f8d4efff6a95b1a8b00045c18035254bf33ca9e691531a4911199732",
+  "prueba_sha256": "d2658b207847c4d8beac5b2b7eab1deb9c489d63deb617dd18653a1bc3bba756",
+  "evaluacion": {
+    "n_documentos": 24,
+    "n_familias": 12,
+    "n_tokens": 168,
+    "ce": 0.0006665748660452664,
+    "perplejidad": 1.0006667970764418,
+    "exactitud_token": 1.0,
+    "casos": [
+      {
+        "id": "u31-aire-oeste-medio-breve",
+        "esperado": "aire oeste bajo .",
+        "generacion": {
+          "prefijo": "tema aire zona oeste nivel medio formato breve salida",
+          "tokens": [
+            "aire",
+            "oeste",
+            "bajo",
+            "."
+          ],
+          "texto": "aire oeste bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-aire-oeste-medio-detallado",
+        "esperado": "informe aire en oeste con nivel bajo .",
+        "generacion": {
+          "prefijo": "tema aire zona oeste nivel medio formato detallado salida",
+          "tokens": [
+            "informe",
+            "aire",
+            "en",
+            "oeste",
+            "con",
+            "nivel",
+            "bajo",
+            "."
+          ],
+          "texto": "informe aire en oeste con nivel bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-aire-oeste-bajo-breve",
+        "esperado": "aire oeste alto .",
+        "generacion": {
+          "prefijo": "tema aire zona oeste nivel bajo formato breve salida",
+          "tokens": [
+            "aire",
+            "oeste",
+            "alto",
+            "."
+          ],
+          "texto": "aire oeste alto .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-aire-oeste-bajo-detallado",
+        "esperado": "informe aire en oeste con nivel alto .",
+        "generacion": {
+          "prefijo": "tema aire zona oeste nivel bajo formato detallado salida",
+          "tokens": [
+            "informe",
+            "aire",
+            "en",
+            "oeste",
+            "con",
+            "nivel",
+            "alto",
+            "."
+          ],
+          "texto": "informe aire en oeste con nivel alto .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-energia-norte-alto-breve",
+        "esperado": "energia norte medio .",
+        "generacion": {
+          "prefijo": "tema energia zona norte nivel alto formato breve salida",
+          "tokens": [
+            "energia",
+            "norte",
+            "medio",
+            "."
+          ],
+          "texto": "energia norte medio .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-energia-norte-alto-detallado",
+        "esperado": "informe energia en norte con nivel medio .",
+        "generacion": {
+          "prefijo": "tema energia zona norte nivel alto formato detallado salida",
+          "tokens": [
+            "informe",
+            "energia",
+            "en",
+            "norte",
+            "con",
+            "nivel",
+            "medio",
+            "."
+          ],
+          "texto": "informe energia en norte con nivel medio .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-agua-este-medio-breve",
+        "esperado": "agua este bajo .",
+        "generacion": {
+          "prefijo": "tema agua zona este nivel medio formato breve salida",
+          "tokens": [
+            "agua",
+            "este",
+            "bajo",
+            "."
+          ],
+          "texto": "agua este bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-agua-este-medio-detallado",
+        "esperado": "informe agua en este con nivel bajo .",
+        "generacion": {
+          "prefijo": "tema agua zona este nivel medio formato detallado salida",
+          "tokens": [
+            "informe",
+            "agua",
+            "en",
+            "este",
+            "con",
+            "nivel",
+            "bajo",
+            "."
+          ],
+          "texto": "informe agua en este con nivel bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-suelo-norte-bajo-breve",
+        "esperado": "suelo norte alto .",
+        "generacion": {
+          "prefijo": "tema suelo zona norte nivel bajo formato breve salida",
+          "tokens": [
+            "suelo",
+            "norte",
+            "alto",
+            "."
+          ],
+          "texto": "suelo norte alto .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-suelo-norte-bajo-detallado",
+        "esperado": "informe suelo en norte con nivel alto .",
+        "generacion": {
+          "prefijo": "tema suelo zona norte nivel bajo formato detallado salida",
+          "tokens": [
+            "informe",
+            "suelo",
+            "en",
+            "norte",
+            "con",
+            "nivel",
+            "alto",
+            "."
+          ],
+          "texto": "informe suelo en norte con nivel alto .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-suelo-sur-medio-breve",
+        "esperado": "suelo sur bajo .",
+        "generacion": {
+          "prefijo": "tema suelo zona sur nivel medio formato breve salida",
+          "tokens": [
+            "suelo",
+            "sur",
+            "bajo",
+            "."
+          ],
+          "texto": "suelo sur bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-suelo-sur-medio-detallado",
+        "esperado": "informe suelo en sur con nivel bajo .",
+        "generacion": {
+          "prefijo": "tema suelo zona sur nivel medio formato detallado salida",
+          "tokens": [
+            "informe",
+            "suelo",
+            "en",
+            "sur",
+            "con",
+            "nivel",
+            "bajo",
+            "."
+          ],
+          "texto": "informe suelo en sur con nivel bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-energia-oeste-bajo-breve",
+        "esperado": "energia oeste alto .",
+        "generacion": {
+          "prefijo": "tema energia zona oeste nivel bajo formato breve salida",
+          "tokens": [
+            "energia",
+            "oeste",
+            "alto",
+            "."
+          ],
+          "texto": "energia oeste alto .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-energia-oeste-bajo-detallado",
+        "esperado": "informe energia en oeste con nivel alto .",
+        "generacion": {
+          "prefijo": "tema energia zona oeste nivel bajo formato detallado salida",
+          "tokens": [
+            "informe",
+            "energia",
+            "en",
+            "oeste",
+            "con",
+            "nivel",
+            "alto",
+            "."
+          ],
+          "texto": "informe energia en oeste con nivel alto .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-suelo-oeste-alto-breve",
+        "esperado": "suelo oeste medio .",
+        "generacion": {
+          "prefijo": "tema suelo zona oeste nivel alto formato breve salida",
+          "tokens": [
+            "suelo",
+            "oeste",
+            "medio",
+            "."
+          ],
+          "texto": "suelo oeste medio .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-suelo-oeste-alto-detallado",
+        "esperado": "informe suelo en oeste con nivel medio .",
+        "generacion": {
+          "prefijo": "tema suelo zona oeste nivel alto formato detallado salida",
+          "tokens": [
+            "informe",
+            "suelo",
+            "en",
+            "oeste",
+            "con",
+            "nivel",
+            "medio",
+            "."
+          ],
+          "texto": "informe suelo en oeste con nivel medio .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-energia-oeste-medio-breve",
+        "esperado": "energia oeste bajo .",
+        "generacion": {
+          "prefijo": "tema energia zona oeste nivel medio formato breve salida",
+          "tokens": [
+            "energia",
+            "oeste",
+            "bajo",
+            "."
+          ],
+          "texto": "energia oeste bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-energia-oeste-medio-detallado",
+        "esperado": "informe energia en oeste con nivel bajo .",
+        "generacion": {
+          "prefijo": "tema energia zona oeste nivel medio formato detallado salida",
+          "tokens": [
+            "informe",
+            "energia",
+            "en",
+            "oeste",
+            "con",
+            "nivel",
+            "bajo",
+            "."
+          ],
+          "texto": "informe energia en oeste con nivel bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-agua-sur-bajo-breve",
+        "esperado": "agua sur alto .",
+        "generacion": {
+          "prefijo": "tema agua zona sur nivel bajo formato breve salida",
+          "tokens": [
+            "agua",
+            "sur",
+            "alto",
+            "."
+          ],
+          "texto": "agua sur alto .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-agua-sur-bajo-detallado",
+        "esperado": "informe agua en sur con nivel alto .",
+        "generacion": {
+          "prefijo": "tema agua zona sur nivel bajo formato detallado salida",
+          "tokens": [
+            "informe",
+            "agua",
+            "en",
+            "sur",
+            "con",
+            "nivel",
+            "alto",
+            "."
+          ],
+          "texto": "informe agua en sur con nivel alto .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-suelo-este-medio-breve",
+        "esperado": "suelo este bajo .",
+        "generacion": {
+          "prefijo": "tema suelo zona este nivel medio formato breve salida",
+          "tokens": [
+            "suelo",
+            "este",
+            "bajo",
+            "."
+          ],
+          "texto": "suelo este bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-suelo-este-medio-detallado",
+        "esperado": "informe suelo en este con nivel bajo .",
+        "generacion": {
+          "prefijo": "tema suelo zona este nivel medio formato detallado salida",
+          "tokens": [
+            "informe",
+            "suelo",
+            "en",
+            "este",
+            "con",
+            "nivel",
+            "bajo",
+            "."
+          ],
+          "texto": "informe suelo en este con nivel bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-aire-este-medio-breve",
+        "esperado": "aire este bajo .",
+        "generacion": {
+          "prefijo": "tema aire zona este nivel medio formato breve salida",
+          "tokens": [
+            "aire",
+            "este",
+            "bajo",
+            "."
+          ],
+          "texto": "aire este bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      },
+      {
+        "id": "u31-aire-este-medio-detallado",
+        "esperado": "informe aire en este con nivel bajo .",
+        "generacion": {
+          "prefijo": "tema aire zona este nivel medio formato detallado salida",
+          "tokens": [
+            "informe",
+            "aire",
+            "en",
+            "este",
+            "con",
+            "nivel",
+            "bajo",
+            "."
+          ],
+          "texto": "informe aire en este con nivel bajo .",
+          "motivo": "eos",
+          "metodo": "codicioso",
+          "temperatura": 1.0,
+          "semilla": 2502,
+          "desconocidos_prefijo": 0
+        },
+        "exacta": true,
+        "errores_teacher_forcing": []
+      }
+    ],
+    "n_exactas": 24,
+    "exactitud_secuencia": 1.0,
+    "familias_completas": 12
+  },
+  "referencia_regla": {
+    "exactas": 24,
+    "total": 24
+  }
+}

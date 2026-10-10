@@ -1,0 +1,1472 @@
+{
+  "seleccionado": "fusion",
+  "candidatos": {
+    "vision": {
+      "entrenamiento": {
+        "epoca": 120,
+        "curva": [
+          {
+            "epoca": 0,
+            "ce_train": 0.7395113110542297,
+            "ce_val": 0.7394480109214783
+          },
+          {
+            "epoca": 10,
+            "ce_train": 0.5296179056167603,
+            "ce_val": 0.5292537212371826
+          },
+          {
+            "epoca": 20,
+            "ce_train": 0.3858048617839813,
+            "ce_val": 0.3855927288532257
+          },
+          {
+            "epoca": 30,
+            "ce_train": 0.3528926372528076,
+            "ce_val": 0.35283753275871277
+          },
+          {
+            "epoca": 40,
+            "ce_train": 0.34849533438682556,
+            "ce_val": 0.34845423698425293
+          },
+          {
+            "epoca": 50,
+            "ce_train": 0.3476344645023346,
+            "ce_val": 0.34760645031929016
+          },
+          {
+            "epoca": 60,
+            "ce_train": 0.34734031558036804,
+            "ce_val": 0.34734559059143066
+          },
+          {
+            "epoca": 70,
+            "ce_train": 0.34721365571022034,
+            "ce_val": 0.34722116589546204
+          },
+          {
+            "epoca": 80,
+            "ce_train": 0.3471435010433197,
+            "ce_val": 0.3471625745296478
+          },
+          {
+            "epoca": 90,
+            "ce_train": 0.3470917046070099,
+            "ce_val": 0.34710586071014404
+          },
+          {
+            "epoca": 100,
+            "ce_train": 0.34705105423927307,
+            "ce_val": 0.3470635414123535
+          },
+          {
+            "epoca": 110,
+            "ce_train": 0.34701693058013916,
+            "ce_val": 0.34703198075294495
+          },
+          {
+            "epoca": 120,
+            "ce_train": 0.34698721766471863,
+            "ce_val": 0.3470040559768677
+          }
+        ],
+        "parametros": 42
+      },
+      "validacion": {
+        "total": 48,
+        "correctas": 36,
+        "exactitud": 0.75,
+        "ce": 0.3470040559768677,
+        "matriz": [
+          [
+            18,
+            6
+          ],
+          [
+            6,
+            18
+          ]
+        ],
+        "familias": 12,
+        "familias_completas": 6,
+        "casos": [
+          {
+            "id": "escena-024-izquierda-0",
+            "familia": "escena-024",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.48969411849975586,
+            "correcta": true
+          },
+          {
+            "id": "escena-024-izquierda-1",
+            "familia": "escena-024",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.48969411849975586,
+            "correcta": true
+          },
+          {
+            "id": "escena-024-derecha-0",
+            "familia": "escena-024",
+            "etiqueta": 1,
+            "predicha": 0,
+            "prob_encendida": 0.48969411849975586,
+            "correcta": false
+          },
+          {
+            "id": "escena-024-derecha-1",
+            "familia": "escena-024",
+            "etiqueta": 1,
+            "predicha": 0,
+            "prob_encendida": 0.48969411849975586,
+            "correcta": false
+          },
+          {
+            "id": "escena-025-izquierda-0",
+            "familia": "escena-025",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5005813837051392,
+            "correcta": false
+          },
+          {
+            "id": "escena-025-izquierda-1",
+            "familia": "escena-025",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5005813837051392,
+            "correcta": false
+          },
+          {
+            "id": "escena-025-derecha-0",
+            "familia": "escena-025",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5005813837051392,
+            "correcta": true
+          },
+          {
+            "id": "escena-025-derecha-1",
+            "familia": "escena-025",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5005813837051392,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-izquierda-0",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990324974060059,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-izquierda-1",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990324974060059,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-derecha-0",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990324974060059,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-derecha-1",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990324974060059,
+            "correcta": true
+          },
+          {
+            "id": "escena-027-izquierda-0",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0005022654077038169,
+            "correcta": true
+          },
+          {
+            "id": "escena-027-izquierda-1",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0005022654077038169,
+            "correcta": true
+          },
+          {
+            "id": "escena-027-derecha-0",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0005022654077038169,
+            "correcta": true
+          },
+          {
+            "id": "escena-027-derecha-1",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0005022654077038169,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-izquierda-0",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990776777267456,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-izquierda-1",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990776777267456,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-derecha-0",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990776777267456,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-derecha-1",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990776777267456,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-izquierda-0",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990736246109009,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-izquierda-1",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990736246109009,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-derecha-0",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990736246109009,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-derecha-1",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9990736246109009,
+            "correcta": true
+          },
+          {
+            "id": "escena-030-izquierda-0",
+            "familia": "escena-030",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5041220188140869,
+            "correcta": true
+          },
+          {
+            "id": "escena-030-izquierda-1",
+            "familia": "escena-030",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5041220188140869,
+            "correcta": true
+          },
+          {
+            "id": "escena-030-derecha-0",
+            "familia": "escena-030",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5041220188140869,
+            "correcta": false
+          },
+          {
+            "id": "escena-030-derecha-1",
+            "familia": "escena-030",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5041220188140869,
+            "correcta": false
+          },
+          {
+            "id": "escena-031-izquierda-0",
+            "familia": "escena-031",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.49455177783966064,
+            "correcta": true
+          },
+          {
+            "id": "escena-031-izquierda-1",
+            "familia": "escena-031",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.49455177783966064,
+            "correcta": true
+          },
+          {
+            "id": "escena-031-derecha-0",
+            "familia": "escena-031",
+            "etiqueta": 1,
+            "predicha": 0,
+            "prob_encendida": 0.49455177783966064,
+            "correcta": false
+          },
+          {
+            "id": "escena-031-derecha-1",
+            "familia": "escena-031",
+            "etiqueta": 1,
+            "predicha": 0,
+            "prob_encendida": 0.49455177783966064,
+            "correcta": false
+          },
+          {
+            "id": "escena-032-izquierda-0",
+            "familia": "escena-032",
+            "etiqueta": 1,
+            "predicha": 0,
+            "prob_encendida": 0.4836134910583496,
+            "correcta": false
+          },
+          {
+            "id": "escena-032-izquierda-1",
+            "familia": "escena-032",
+            "etiqueta": 1,
+            "predicha": 0,
+            "prob_encendida": 0.4836134910583496,
+            "correcta": false
+          },
+          {
+            "id": "escena-032-derecha-0",
+            "familia": "escena-032",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.4836134910583496,
+            "correcta": true
+          },
+          {
+            "id": "escena-032-derecha-1",
+            "familia": "escena-032",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.4836134910583496,
+            "correcta": true
+          },
+          {
+            "id": "escena-033-izquierda-0",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.00048692073323763907,
+            "correcta": true
+          },
+          {
+            "id": "escena-033-izquierda-1",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.00048692073323763907,
+            "correcta": true
+          },
+          {
+            "id": "escena-033-derecha-0",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.00048692073323763907,
+            "correcta": true
+          },
+          {
+            "id": "escena-033-derecha-1",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.00048692073323763907,
+            "correcta": true
+          },
+          {
+            "id": "escena-034-izquierda-0",
+            "familia": "escena-034",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5037633776664734,
+            "correcta": true
+          },
+          {
+            "id": "escena-034-izquierda-1",
+            "familia": "escena-034",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5037633776664734,
+            "correcta": true
+          },
+          {
+            "id": "escena-034-derecha-0",
+            "familia": "escena-034",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5037633776664734,
+            "correcta": false
+          },
+          {
+            "id": "escena-034-derecha-1",
+            "familia": "escena-034",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5037633776664734,
+            "correcta": false
+          },
+          {
+            "id": "escena-035-izquierda-0",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0004863856884185225,
+            "correcta": true
+          },
+          {
+            "id": "escena-035-izquierda-1",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0004863856884185225,
+            "correcta": true
+          },
+          {
+            "id": "escena-035-derecha-0",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0004863856884185225,
+            "correcta": true
+          },
+          {
+            "id": "escena-035-derecha-1",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0004863856884185225,
+            "correcta": true
+          }
+        ]
+      }
+    },
+    "texto": {
+      "entrenamiento": {
+        "epoca": 100,
+        "curva": [
+          {
+            "epoca": 0,
+            "ce_train": 0.7164849638938904,
+            "ce_val": 0.7164848446846008
+          },
+          {
+            "epoca": 10,
+            "ce_train": 0.6953842639923096,
+            "ce_val": 0.6953843235969543
+          },
+          {
+            "epoca": 20,
+            "ce_train": 0.6937053203582764,
+            "ce_val": 0.6937052607536316
+          },
+          {
+            "epoca": 30,
+            "ce_train": 0.6933332085609436,
+            "ce_val": 0.6933332085609436
+          },
+          {
+            "epoca": 40,
+            "ce_train": 0.6932007670402527,
+            "ce_val": 0.6932007670402527
+          },
+          {
+            "epoca": 50,
+            "ce_train": 0.6931629180908203,
+            "ce_val": 0.6931629180908203
+          },
+          {
+            "epoca": 60,
+            "ce_train": 0.6931560635566711,
+            "ce_val": 0.6931560635566711
+          },
+          {
+            "epoca": 70,
+            "ce_train": 0.6931509971618652,
+            "ce_val": 0.6931509971618652
+          },
+          {
+            "epoca": 80,
+            "ce_train": 0.693148672580719,
+            "ce_val": 0.693148672580719
+          },
+          {
+            "epoca": 90,
+            "ce_train": 0.6931474208831787,
+            "ce_val": 0.6931474208831787
+          },
+          {
+            "epoca": 100,
+            "ce_train": 0.6931472420692444,
+            "ce_val": 0.6931472420692444
+          },
+          {
+            "epoca": 110,
+            "ce_train": 0.6931471824645996,
+            "ce_val": 0.6931472420692444
+          },
+          {
+            "epoca": 120,
+            "ce_train": 0.6931471824645996,
+            "ce_val": 0.6931472420692444
+          }
+        ],
+        "parametros": 42
+      },
+      "validacion": {
+        "total": 48,
+        "correctas": 24,
+        "exactitud": 0.5,
+        "ce": 0.6931472420692444,
+        "matriz": [
+          [
+            0,
+            24
+          ],
+          [
+            0,
+            24
+          ]
+        ],
+        "familias": 12,
+        "familias_completas": 3,
+        "casos": [
+          {
+            "id": "escena-024-izquierda-0",
+            "familia": "escena-024",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-024-izquierda-1",
+            "familia": "escena-024",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-024-derecha-0",
+            "familia": "escena-024",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-024-derecha-1",
+            "familia": "escena-024",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-025-izquierda-0",
+            "familia": "escena-025",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-025-izquierda-1",
+            "familia": "escena-025",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-025-derecha-0",
+            "familia": "escena-025",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-025-derecha-1",
+            "familia": "escena-025",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-izquierda-0",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-izquierda-1",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-derecha-0",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-derecha-1",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-027-izquierda-0",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-027-izquierda-1",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-027-derecha-0",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-027-derecha-1",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-028-izquierda-0",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-izquierda-1",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-derecha-0",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-derecha-1",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-izquierda-0",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-izquierda-1",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-derecha-0",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-derecha-1",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-030-izquierda-0",
+            "familia": "escena-030",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-030-izquierda-1",
+            "familia": "escena-030",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-030-derecha-0",
+            "familia": "escena-030",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-030-derecha-1",
+            "familia": "escena-030",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-031-izquierda-0",
+            "familia": "escena-031",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-031-izquierda-1",
+            "familia": "escena-031",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-031-derecha-0",
+            "familia": "escena-031",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-031-derecha-1",
+            "familia": "escena-031",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": true
+          },
+          {
+            "id": "escena-032-izquierda-0",
+            "familia": "escena-032",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-032-izquierda-1",
+            "familia": "escena-032",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-032-derecha-0",
+            "familia": "escena-032",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-032-derecha-1",
+            "familia": "escena-032",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-033-izquierda-0",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-033-izquierda-1",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-033-derecha-0",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-033-derecha-1",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-034-izquierda-0",
+            "familia": "escena-034",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-034-izquierda-1",
+            "familia": "escena-034",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": true
+          },
+          {
+            "id": "escena-034-derecha-0",
+            "familia": "escena-034",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-034-derecha-1",
+            "familia": "escena-034",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-035-izquierda-0",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-035-izquierda-1",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.5000802874565125,
+            "correcta": false
+          },
+          {
+            "id": "escena-035-derecha-0",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          },
+          {
+            "id": "escena-035-derecha-1",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 1,
+            "prob_encendida": 0.500160813331604,
+            "correcta": false
+          }
+        ]
+      }
+    },
+    "fusion": {
+      "entrenamiento": {
+        "epoca": 120,
+        "curva": [
+          {
+            "epoca": 0,
+            "ce_train": 0.6861011981964111,
+            "ce_val": 0.6862261891365051
+          },
+          {
+            "epoca": 10,
+            "ce_train": 0.5086366534233093,
+            "ce_val": 0.5085105895996094
+          },
+          {
+            "epoca": 20,
+            "ce_train": 0.3644523620605469,
+            "ce_val": 0.3643544018268585
+          },
+          {
+            "epoca": 30,
+            "ce_train": 0.29292404651641846,
+            "ce_val": 0.29273852705955505
+          },
+          {
+            "epoca": 40,
+            "ce_train": 0.14835457503795624,
+            "ce_val": 0.14786048233509064
+          },
+          {
+            "epoca": 50,
+            "ce_train": 0.039410460740327835,
+            "ce_val": 0.039134036749601364
+          },
+          {
+            "epoca": 60,
+            "ce_train": 0.0115785738453269,
+            "ce_val": 0.011459625326097012
+          },
+          {
+            "epoca": 70,
+            "ce_train": 0.005687196273356676,
+            "ce_val": 0.005622329190373421
+          },
+          {
+            "epoca": 80,
+            "ce_train": 0.0038237571716308594,
+            "ce_val": 0.003779046470299363
+          },
+          {
+            "epoca": 90,
+            "ce_train": 0.002969512017443776,
+            "ce_val": 0.002934534102678299
+          },
+          {
+            "epoca": 100,
+            "ce_train": 0.0024681156501173973,
+            "ce_val": 0.0024386784061789513
+          },
+          {
+            "epoca": 110,
+            "ce_train": 0.0021242971997708082,
+            "ce_val": 0.002098730532452464
+          },
+          {
+            "epoca": 120,
+            "ce_train": 0.0018652970902621746,
+            "ce_val": 0.0018426288152113557
+          }
+        ],
+        "parametros": 58
+      },
+      "validacion": {
+        "total": 48,
+        "correctas": 48,
+        "exactitud": 1.0,
+        "ce": 0.0018426288152113557,
+        "matriz": [
+          [
+            24,
+            0
+          ],
+          [
+            0,
+            24
+          ]
+        ],
+        "familias": 12,
+        "familias_completas": 12,
+        "casos": [
+          {
+            "id": "escena-024-izquierda-0",
+            "familia": "escena-024",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0027229865081608295,
+            "correcta": true
+          },
+          {
+            "id": "escena-024-izquierda-1",
+            "familia": "escena-024",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0027229865081608295,
+            "correcta": true
+          },
+          {
+            "id": "escena-024-derecha-0",
+            "familia": "escena-024",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.997445821762085,
+            "correcta": true
+          },
+          {
+            "id": "escena-024-derecha-1",
+            "familia": "escena-024",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.997445821762085,
+            "correcta": true
+          },
+          {
+            "id": "escena-025-izquierda-0",
+            "familia": "escena-025",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.002837131265550852,
+            "correcta": true
+          },
+          {
+            "id": "escena-025-izquierda-1",
+            "familia": "escena-025",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.002837131265550852,
+            "correcta": true
+          },
+          {
+            "id": "escena-025-derecha-0",
+            "familia": "escena-025",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9974939823150635,
+            "correcta": true
+          },
+          {
+            "id": "escena-025-derecha-1",
+            "familia": "escena-025",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9974939823150635,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-izquierda-0",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9991523027420044,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-izquierda-1",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9991523027420044,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-derecha-0",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9988002777099609,
+            "correcta": true
+          },
+          {
+            "id": "escena-026-derecha-1",
+            "familia": "escena-026",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9988002777099609,
+            "correcta": true
+          },
+          {
+            "id": "escena-027-izquierda-0",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0016769390786066651,
+            "correcta": true
+          },
+          {
+            "id": "escena-027-izquierda-1",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0016769390786066651,
+            "correcta": true
+          },
+          {
+            "id": "escena-027-derecha-0",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0011318523902446032,
+            "correcta": true
+          },
+          {
+            "id": "escena-027-derecha-1",
+            "familia": "escena-027",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0011318523902446032,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-izquierda-0",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9992141723632812,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-izquierda-1",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9992141723632812,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-derecha-0",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.998854398727417,
+            "correcta": true
+          },
+          {
+            "id": "escena-028-derecha-1",
+            "familia": "escena-028",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.998854398727417,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-izquierda-0",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9991940855979919,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-izquierda-1",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9991940855979919,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-derecha-0",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9988707900047302,
+            "correcta": true
+          },
+          {
+            "id": "escena-029-derecha-1",
+            "familia": "escena-029",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9988707900047302,
+            "correcta": true
+          },
+          {
+            "id": "escena-030-izquierda-0",
+            "familia": "escena-030",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9979518055915833,
+            "correcta": true
+          },
+          {
+            "id": "escena-030-izquierda-1",
+            "familia": "escena-030",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9979518055915833,
+            "correcta": true
+          },
+          {
+            "id": "escena-030-derecha-0",
+            "familia": "escena-030",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.002685295883566141,
+            "correcta": true
+          },
+          {
+            "id": "escena-030-derecha-1",
+            "familia": "escena-030",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.002685295883566141,
+            "correcta": true
+          },
+          {
+            "id": "escena-031-izquierda-0",
+            "familia": "escena-031",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0026641758158802986,
+            "correcta": true
+          },
+          {
+            "id": "escena-031-izquierda-1",
+            "familia": "escena-031",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0026641758158802986,
+            "correcta": true
+          },
+          {
+            "id": "escena-031-derecha-0",
+            "familia": "escena-031",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9975510239601135,
+            "correcta": true
+          },
+          {
+            "id": "escena-031-derecha-1",
+            "familia": "escena-031",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9975510239601135,
+            "correcta": true
+          },
+          {
+            "id": "escena-032-izquierda-0",
+            "familia": "escena-032",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9978213310241699,
+            "correcta": true
+          },
+          {
+            "id": "escena-032-izquierda-1",
+            "familia": "escena-032",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9978213310241699,
+            "correcta": true
+          },
+          {
+            "id": "escena-032-derecha-0",
+            "familia": "escena-032",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.002545706694945693,
+            "correcta": true
+          },
+          {
+            "id": "escena-032-derecha-1",
+            "familia": "escena-032",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.002545706694945693,
+            "correcta": true
+          },
+          {
+            "id": "escena-033-izquierda-0",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0016976729966700077,
+            "correcta": true
+          },
+          {
+            "id": "escena-033-izquierda-1",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0016976729966700077,
+            "correcta": true
+          },
+          {
+            "id": "escena-033-derecha-0",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0010504790116101503,
+            "correcta": true
+          },
+          {
+            "id": "escena-033-derecha-1",
+            "familia": "escena-033",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0010504790116101503,
+            "correcta": true
+          },
+          {
+            "id": "escena-034-izquierda-0",
+            "familia": "escena-034",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9979248046875,
+            "correcta": true
+          },
+          {
+            "id": "escena-034-izquierda-1",
+            "familia": "escena-034",
+            "etiqueta": 1,
+            "predicha": 1,
+            "prob_encendida": 0.9979248046875,
+            "correcta": true
+          },
+          {
+            "id": "escena-034-derecha-0",
+            "familia": "escena-034",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.002703025471419096,
+            "correcta": true
+          },
+          {
+            "id": "escena-034-derecha-1",
+            "familia": "escena-034",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.002703025471419096,
+            "correcta": true
+          },
+          {
+            "id": "escena-035-izquierda-0",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0016534792957827449,
+            "correcta": true
+          },
+          {
+            "id": "escena-035-izquierda-1",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0016534792957827449,
+            "correcta": true
+          },
+          {
+            "id": "escena-035-derecha-0",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0010825198842212558,
+            "correcta": true
+          },
+          {
+            "id": "escena-035-derecha-1",
+            "familia": "escena-035",
+            "etiqueta": 0,
+            "predicha": 0,
+            "prob_encendida": 0.0010825198842212558,
+            "correcta": true
+          }
+        ]
+      }
+    }
+  },
+  "config": {
+    "ocultas": 8,
+    "semilla": 3111,
+    "epocas": 120,
+    "evaluar_cada": 10,
+    "lr": 0.03,
+    "imagen": [
+      20,
+      16
+    ],
+    "regiones": [
+      [
+        5,
+        11,
+        2,
+        7
+      ],
+      [
+        5,
+        11,
+        13,
+        18
+      ]
+    ],
+    "clases": [
+      "apagada",
+      "encendida"
+    ],
+    "umbral_regla": 0.5
+  },
+  "referencia_regla": {
+    "correctas": 48,
+    "total": 48
+  },
+  "recarga_identica": true,
+  "prueba": null
+}
