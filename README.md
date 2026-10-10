@@ -85,7 +85,7 @@ La unidad 24 contiene dos prácticas independientes. Su propósito es reconocer 
 | 25 | [Transformers y modelos generativos](unidad25-transformers-generativos/README.md) |
 | 26 | [Inferencia local y servicios: Ollama y APIs](unidad26-inferencia-servicios/README.md) |
 | 27 | [Prompts, salidas estructuradas y evaluación](unidad27-prompts-evaluacion/README.md) |
-| 28 | Embeddings y búsqueda semántica |
+| 28 | [Embeddings y búsqueda semántica](unidad28-embeddings-busqueda/README.md) |
 | 29 | RAG con documentos |
 | 30 | Herramientas, agentes y MCP |
 | 31 | Adaptación de modelos y multimodalidad |
@@ -126,7 +126,7 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-Las **unidades 0 a 27 están desarrolladas**: 28 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
+Las **unidades 0 a 28 están desarrolladas**: 29 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
 
 - **0–4:** entorno, formulación de proyectos, matemática aplicada y probabilidad.
 - **5–9:** búsqueda, reglas, obtención y preparación de datos, exploración y visualización.
@@ -135,10 +135,11 @@ Las **unidades 0 a 27 están desarrolladas**: 28 de las 36 unidades previstas. I
 - **25:** atención causal, transformer pequeño, generación condicional, temperatura y evaluación de continuaciones en CPU.
 - **26:** inferencia real con Ollama en CPU, contratos HTTP, manejo de fallos, medición y análisis sin conexión; API remota opcional.
 - **27:** comparación de prompts, esquema JSON, validación semántica, referencia por reglas y selección con cierre por familias.
+- **28:** geometría de vectores, TF-IDF frente a embeddings reales, búsqueda exacta, relevancia, índice recargable y cierre por familias.
 
-La entrega más reciente compara tres candidatos de prompts con 36 llamadas reales y evalúa la elección congelada en ocho casos de cierre. Conserva errores de contenido en JSON válido y muestra cuándo una referencia por reglas es suficiente. Las **unidades 28 a 35 están pendientes de desarrollo**; la siguiente aborda embeddings y búsqueda semántica. Tener sus títulos definidos no equivale a haber terminado el curso.
+La entrega más reciente compara TF-IDF y BGE-M3 sobre veinte documentos propios, conserva 40 embeddings de documentos/consultas y dos calentamientos, y evalúa una elección congelada. Documenta la confusión entre importar y exportar y las preguntas sin respuesta que reciben candidatos similares. Las **unidades 29 a 35 están pendientes de desarrollo**; la siguiente aborda RAG con documentos. Tener sus títulos definidos no equivale a haber terminado el curso.
 
-El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 27, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22, 23 y 24 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; la Unidad 25 utiliza también el PyTorch CPU ya incorporado. Las unidades 26 y 27 usan biblioteca estándar y reutilizan los paquetes gráficos opcionalmente; el verificador analiza sus capturas sin iniciar servicios ni usar claves. Las comprobaciones posteriores funcionan sin Internet:
+El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 28, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22, 23 y 24 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; la Unidad 25 utiliza también el PyTorch CPU ya incorporado. Las unidades 26, 27 y 28 usan biblioteca estándar y reutilizan los paquetes gráficos opcionalmente; el verificador analiza sus capturas sin iniciar servicios ni usar claves. La Unidad 28 también contrasta TF-IDF con scikit-learn en sus pruebas; la descarga opcional de BGE-M3 se documenta por separado. Las comprobaciones posteriores funcionan sin Internet:
 
 ```bash
 python -m pip install -r unidad21-vision-computador/requirements.txt

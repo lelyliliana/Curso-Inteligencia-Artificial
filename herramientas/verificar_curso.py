@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 27.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 28.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 27
+ULTIMA_UNIDAD = 28
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -186,6 +186,12 @@ def main():
                     esperado = "Seleccionado con desarrollo: explicito"
                 elif programa.name == "03_calcular_evaluacion.py":
                     esperado = "Aceptación por intento=2/6; familias completas=0/3"
+                elif programa.name == "01_entender_vectores.py":
+                    esperado = "Vectores artificiales: cos(q,a)=0.600; cos(q,b)=1.000; opuesto=-1.000"
+                elif programa.name == "02_comparar_busquedas.py":
+                    esperado = "Seleccionado con desarrollo: bge_m3"
+                elif programa.name == "03_metricas_recuperacion.py":
+                    esperado = "P@3=0.333333; Recall@3=0.500; RR@3=0.500; MRR@3=0.250"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -424,6 +430,24 @@ def main():
                   "--salida", Path(carpeta)/"u27-cierre", "--graficos"],
                  "explicito: aceptadas=4/8; forma=8; contenido=4; familias completas=1/4")
         ejecutados += 1
+        prefijo = "unidad28-embeddings-busqueda/ejemplos/"
+        ejecutar([prefijo + "01_entender_vectores.py", "--salida", Path(carpeta)/"u28-geometria"], "Exportación:")
+        ejecutados += 1
+        desarrollo = Path(carpeta)/"u28-desarrollo"
+        ejecutar([prefijo + "02_comparar_busquedas.py", "--salida", desarrollo, "--graficos"],
+                 "Recarga: índice, rankings y selección idénticos.")
+        ejecutados += 1
+        ejecutar([prefijo + "02_comparar_busquedas.py", "--fase", "cierre", "--indice", desarrollo/"indice.json",
+                  "--seleccion", desarrollo/"seleccion.json", "--salida", Path(carpeta)/"u28-cierre", "--graficos"],
+                 "bge_m3: MRR@3=0.9375; Recall@3=1.0000; sin respuesta con candidatos=2/2")
+        ejecutados += 1
+        for extras, esperado in (
+                (["--consulta-id", "F01a"], "D01 · coseno=0.6777"),
+                (["--consulta-id", "F05a"], "D18 · coseno=0.6809"),
+                (["--consulta-id", "F01a", "--metodo", "tfidf"], "D12 · coseno=0.2153"),
+                (["--texto", "zxqv", "--metodo", "tfidf"], "Consulta sin términos conocidos")):
+            ejecutar([prefijo + "buscar.py", *extras], esperado)
+            ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:
         pruebas = unidad / "pruebas"

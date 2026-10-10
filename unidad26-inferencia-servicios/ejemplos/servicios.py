@@ -46,7 +46,8 @@ def rechazar_constante(valor):
 
 
 def solicitar(url, cuerpo=None, clave=None, timeout=120, abrir_http=abrir):
-    permitidos = {OLLAMA + p for p in ("/api/version", "/api/tags", "/api/show", "/api/ps", "/api/generate")}
+    # /api/embed se añade para la práctica local de la Unidad 28.
+    permitidos = {OLLAMA + p for p in ("/api/version", "/api/tags", "/api/show", "/api/ps", "/api/generate", "/api/embed")}
     if url not in permitidos | {OPENAI}:
         raise ValueError("Destino no admitido por esta práctica")
     numero(timeout, "timeout", minimo=0.001)

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "F01a",
+    "familia": "F01",
+    "texto": "No recuerdo mi clave para entrar a clase, ¿cómo vuelvo a acceder?",
+    "relevantes": [
+      "D01"
+    ],
+    "razon": "El procedimiento recupera acceso por contraseña olvidada."
+  },
+  {
+    "id": "F01b",
+    "familia": "F01",
+    "texto": "Olvidé la contraseña del aula virtual. ¿Qué hago?",
+    "relevantes": [
+      "D01"
+    ],
+    "razon": "El procedimiento recupera acceso por contraseña olvidada."
+  },
+  {
+    "id": "F02a",
+    "familia": "F02",
+    "texto": "Las marcas temporales de mi estación meteorológica están desfasadas, ¿cómo las corrijo?",
+    "relevantes": [
+      "D02",
+      "D03"
+    ],
+    "razon": "Ambos documentos explican por completo la sincronización de la estación."
+  },
+  {
+    "id": "F02b",
+    "familia": "F02",
+    "texto": "¿Cómo sincronizo el reloj de la estación meteorológica?",
+    "relevantes": [
+      "D02",
+      "D03"
+    ],
+    "razon": "Ambos documentos explican por completo la sincronización de la estación."
+  },
+  {
+    "id": "F03a",
+    "familia": "F03",
+    "texto": "¿Cuánto tiempo puedo quedarme con un ejemplar que me prestaron?",
+    "relevantes": [
+      "D04"
+    ],
+    "razon": "Solo D04 especifica el plazo del préstamo."
+  },
+  {
+    "id": "F03b",
+    "familia": "F03",
+    "texto": "¿Cuántos días dura el préstamo de libros de la biblioteca?",
+    "relevantes": [
+      "D04"
+    ],
+    "razon": "Solo D04 especifica el plazo del préstamo."
+  },
+  {
+    "id": "F04a",
+    "familia": "F04",
+    "texto": "Quiero apuntarme a la actividad sobre aprovechar la luz del sol. ¿Qué trámite hago?",
+    "relevantes": [
+      "D05"
+    ],
+    "razon": "Solo D05 explica cómo inscribirse."
+  },
+  {
+    "id": "F04b",
+    "familia": "F04",
+    "texto": "¿Cómo me inscribo en el taller de energía solar?",
+    "relevantes": [
+      "D05"
+    ],
+    "razon": "Solo D05 explica cómo inscribirse."
+  },
+  {
+    "id": "F05a",
+    "familia": "F05",
+    "texto": "Dime la contraseña exacta de AulaInvitados.",
+    "relevantes": [],
+    "razon": "D18 indica dónde pedir la clave, pero no dice cuál es."
+  },
+  {
+    "id": "F05b",
+    "familia": "F05",
+    "texto": "¿Cuál es la clave de la red inalámbrica para visitantes?",
+    "relevantes": [],
+    "razon": "D18 indica dónde pedir la clave, pero no dice cuál es."
+  }
+]

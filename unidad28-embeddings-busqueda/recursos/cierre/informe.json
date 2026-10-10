@@ -1,0 +1,263 @@
+{
+  "fase": "cierre",
+  "seleccion_sha256": "17894608d098c1fafcd12737d6b7858f2599773c1854f1dbe92930e387ba73aa",
+  "evaluaciones": [
+    {
+      "resumen": {
+        "metodo": "bge_m3",
+        "n": 10,
+        "respondibles": 8,
+        "sin_respuesta": 2,
+        "sin_respuesta_con_candidatos": 2,
+        "familias_respondibles": 4,
+        "familias_con_hit_completo": 4,
+        "precision": 0.41666666666666663,
+        "recall": 1.0,
+        "hit": 1.0,
+        "rr": 0.9375
+      },
+      "filas": [
+        {
+          "id": "F06a",
+          "familia": "F06",
+          "respondible": true,
+          "vector_cero": false,
+          "top": [
+            {
+              "id": "D07",
+              "puntuacion": 0.6837942388478532
+            },
+            {
+              "id": "D06",
+              "puntuacion": 0.656766666094421
+            },
+            {
+              "id": "D20",
+              "puntuacion": 0.5677242263200993
+            }
+          ],
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "hit": 1,
+          "rr": 1.0
+        },
+        {
+          "id": "F06b",
+          "familia": "F06",
+          "respondible": true,
+          "vector_cero": false,
+          "top": [
+            {
+              "id": "D06",
+              "puntuacion": 0.8290096585016927
+            },
+            {
+              "id": "D20",
+              "puntuacion": 0.7253254448882689
+            },
+            {
+              "id": "D07",
+              "puntuacion": 0.722689859249486
+            }
+          ],
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "hit": 1,
+          "rr": 1.0
+        },
+        {
+          "id": "F07a",
+          "familia": "F07",
+          "respondible": true,
+          "vector_cero": false,
+          "top": [
+            {
+              "id": "D16",
+              "puntuacion": 0.6257531002700484
+            },
+            {
+              "id": "D08",
+              "puntuacion": 0.6186836125898628
+            },
+            {
+              "id": "D14",
+              "puntuacion": 0.47947516982237914
+            }
+          ],
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "hit": 1,
+          "rr": 0.5
+        },
+        {
+          "id": "F07b",
+          "familia": "F07",
+          "respondible": true,
+          "vector_cero": false,
+          "top": [
+            {
+              "id": "D08",
+              "puntuacion": 0.7613479537118701
+            },
+            {
+              "id": "D16",
+              "puntuacion": 0.7187727449181804
+            },
+            {
+              "id": "D06",
+              "puntuacion": 0.4001089697325774
+            }
+          ],
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "hit": 1,
+          "rr": 1.0
+        },
+        {
+          "id": "F08a",
+          "familia": "F08",
+          "respondible": true,
+          "vector_cero": false,
+          "top": [
+            {
+              "id": "D09",
+              "puntuacion": 0.6085223419416477
+            },
+            {
+              "id": "D17",
+              "puntuacion": 0.5549109909973559
+            },
+            {
+              "id": "D11",
+              "puntuacion": 0.47263810475823304
+            }
+          ],
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "hit": 1,
+          "rr": 1.0
+        },
+        {
+          "id": "F08b",
+          "familia": "F08",
+          "respondible": true,
+          "vector_cero": false,
+          "top": [
+            {
+              "id": "D09",
+              "puntuacion": 0.7795471087345582
+            },
+            {
+              "id": "D17",
+              "puntuacion": 0.6093353918921491
+            },
+            {
+              "id": "D11",
+              "puntuacion": 0.5141008511074462
+            }
+          ],
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "hit": 1,
+          "rr": 1.0
+        },
+        {
+          "id": "F09a",
+          "familia": "F09",
+          "respondible": true,
+          "vector_cero": false,
+          "top": [
+            {
+              "id": "D10",
+              "puntuacion": 0.6492790034644138
+            },
+            {
+              "id": "D19",
+              "puntuacion": 0.4584626772415381
+            },
+            {
+              "id": "D16",
+              "puntuacion": 0.3422910340803123
+            }
+          ],
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "hit": 1,
+          "rr": 1.0
+        },
+        {
+          "id": "F09b",
+          "familia": "F09",
+          "respondible": true,
+          "vector_cero": false,
+          "top": [
+            {
+              "id": "D10",
+              "puntuacion": 0.6965560621053739
+            },
+            {
+              "id": "D19",
+              "puntuacion": 0.4530631276808429
+            },
+            {
+              "id": "D18",
+              "puntuacion": 0.3456586031500333
+            }
+          ],
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "hit": 1,
+          "rr": 1.0
+        },
+        {
+          "id": "F10a",
+          "familia": "F10",
+          "respondible": false,
+          "vector_cero": false,
+          "top": [
+            {
+              "id": "D19",
+              "puntuacion": 0.6697222512983518
+            },
+            {
+              "id": "D10",
+              "puntuacion": 0.5534322426295734
+            },
+            {
+              "id": "D05",
+              "puntuacion": 0.38640690328025695
+            }
+          ],
+          "precision": null,
+          "recall": null,
+          "hit": null,
+          "rr": null
+        },
+        {
+          "id": "F10b",
+          "familia": "F10",
+          "respondible": false,
+          "vector_cero": false,
+          "top": [
+            {
+              "id": "D19",
+              "puntuacion": 0.6075251347140056
+            },
+            {
+              "id": "D10",
+              "puntuacion": 0.5169259438297592
+            },
+            {
+              "id": "D18",
+              "puntuacion": 0.4161642059593911
+            }
+          ],
+          "precision": null,
+          "recall": null,
+          "hit": null,
+          "rr": null
+        }
+      ]
+    }
+  ]
+}

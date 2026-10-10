@@ -1,0 +1,102 @@
+[
+  {
+    "id": "D01",
+    "titulo": "Recuperar acceso",
+    "texto": "Si olvidaste la contraseña del aula virtual, pulsa Restablecer acceso e indica tu correo registrado. Recibirás un enlace de recuperación."
+  },
+  {
+    "id": "D02",
+    "titulo": "Reloj de la estación",
+    "texto": "Para corregir la hora de la estación meteorológica, abre Ajustes, selecciona Sincronizar reloj y confirma la zona America/Bogota."
+  },
+  {
+    "id": "D03",
+    "titulo": "Hora incorrecta: guía rápida",
+    "texto": "La estación meteorológica ajusta su hora desde Ajustes > Sincronizar reloj. Comprueba que la zona sea America/Bogota antes de guardar."
+  },
+  {
+    "id": "D04",
+    "titulo": "Devolución de libros",
+    "texto": "El préstamo de libros de la biblioteca dura catorce días. Puedes renovarlo una vez desde Mi biblioteca si no hay reservas pendientes."
+  },
+  {
+    "id": "D05",
+    "titulo": "Inscripción en el taller",
+    "texto": "Para inscribirte en el taller de energía solar, completa el formulario Taller solar en el portal académico. La confirmación llega por correo."
+  },
+  {
+    "id": "D06",
+    "titulo": "Alimentación del S-31",
+    "texto": "El sensor S-31 utiliza dos pilas AA. Para cambiarlas, apágalo, abre la tapa inferior, sustituye ambas respetando la polaridad y cierra la tapa."
+  },
+  {
+    "id": "D07",
+    "titulo": "Mantenimiento del S-31",
+    "texto": "Cuando el S-31 indique batería baja, apaga el equipo y reemplaza las dos pilas AA del compartimento inferior, con la polaridad marcada. Cierra antes de encender."
+  },
+  {
+    "id": "D08",
+    "titulo": "Descarga de mediciones",
+    "texto": "Para exportar las lecturas del panel de sensores, elige un intervalo de fechas y pulsa Descargar CSV. El archivo contiene fecha, identificador y valor."
+  },
+  {
+    "id": "D09",
+    "titulo": "Anular una reserva de sala",
+    "texto": "Para cancelar una reserva de la sala de estudio, entra en Mis reservas, selecciona la cita y pulsa Anular. El sistema libera el horario."
+  },
+  {
+    "id": "D10",
+    "titulo": "Bases para estudiar IA",
+    "texto": "Antes de iniciar el curso de inteligencia artificial conviene practicar variables, condicionales, bucles y funciones de Python. La Unidad 0 ofrece una ruta de preparación."
+  },
+  {
+    "id": "D11",
+    "titulo": "Cambio de correo",
+    "texto": "Para cambiar el correo del aula virtual, inicia sesión, abre Perfil y guarda la nueva dirección. Esto no modifica tu contraseña."
+  },
+  {
+    "id": "D12",
+    "titulo": "Reloj del aula",
+    "texto": "El reloj de pared del aula funciona con una pila. Su hora se ajusta girando la rueda trasera; no se conecta a la estación meteorológica."
+  },
+  {
+    "id": "D13",
+    "titulo": "Reserva de libros",
+    "texto": "Para reservar un libro prestado, busca su título en el catálogo y pulsa Reservar. Recibirás un aviso cuando puedas recogerlo."
+  },
+  {
+    "id": "D14",
+    "titulo": "Materiales del taller",
+    "texto": "El taller de energía solar usa maquetas y fichas de trabajo. Los materiales se entregan durante la sesión; esta ficha no describe la inscripción."
+  },
+  {
+    "id": "D15",
+    "titulo": "Alimentación del S-13",
+    "texto": "El sensor S-13 funciona con una batería recargable USB. Para cargarlo conecta el cable al puerto lateral; no utiliza pilas AA."
+  },
+  {
+    "id": "D16",
+    "titulo": "Importación de mediciones",
+    "texto": "Para importar un CSV al panel de sensores, abre Cargar archivo, selecciona el documento y revisa las columnas. Esta operación añade lecturas al panel."
+  },
+  {
+    "id": "D17",
+    "titulo": "Pedir una sala",
+    "texto": "La sala de estudio se reserva desde Calendario: selecciona un horario libre y confirma. La biblioteca tiene un sistema distinto para reservar libros."
+  },
+  {
+    "id": "D18",
+    "titulo": "Red inalámbrica",
+    "texto": "La red inalámbrica para visitantes se llama AulaInvitados. La contraseña se solicita presencialmente en recepción y no aparece en esta guía."
+  },
+  {
+    "id": "D19",
+    "titulo": "Acceso al curso",
+    "texto": "El curso de inteligencia artificial se consulta desde el portal académico. Este texto no especifica precios, descuentos ni formas de pago."
+  },
+  {
+    "id": "D20",
+    "titulo": "Reinicio del S-31",
+    "texto": "Para reiniciar el sensor S-31, mantén pulsado el botón central durante cinco segundos. El reinicio conserva su identificador y no cambia las pilas."
+  }
+]

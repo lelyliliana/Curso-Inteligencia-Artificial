@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "metodo": "bge_m3",
+  "criterio": "max_mrr3_empate_tfidf",
+  "config": {
+    "modelo": "bge-m3:567m",
+    "dimension": 1024,
+    "k": 3,
+    "texto_documento": "titulo + salto de linea + texto",
+    "lexico": "nfc_casefold_unicode_sin_subrayado_tf_cruda_idf_suave_l2_v1",
+    "denso": "sin_prefijo_texto_original_l2",
+    "options": {
+      "num_gpu": 0,
+      "num_thread": 4,
+      "num_ctx": 2048
+    }
+  },
+  "huellas": {
+    "corpus.json": "1a143cc94f4a15c0192926864590e06ca6c1d93c6454877ffdb9396731d4c54c",
+    "desarrollo.json": "192ede2b4abb3d0692fc73df3ef412c102cea8a8c7d6dbf9b7e7bc34cbcd3a8c",
+    "cierre.json": "f06f08895448a22ab71047c8516d5568d1df742a85fd5c1a23f5e66fd0931df2",
+    "protocolo.md": "7850dd33d60d8a70474e1e44bd4ae39e190f96a4439ffd958ff88f5fbc6df8e8"
+  },
+  "indice_sha256": "fdb9cf40cea2ed3e628797f602f7ada3a615f3cdf2dcdcc5f43b8f54326c2f0c",
+  "registro_desarrollo_sha256": "49407a7a8b75a63fa72256ca14c4da6debd9a783e3a6ee82e8c4a1e12fc1d26d",
+  "familias": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05"
+  ],
+  "resumenes": [
+    {
+      "metodo": "tfidf",
+      "n": 10,
+      "respondibles": 8,
+      "sin_respuesta": 2,
+      "sin_respuesta_con_candidatos": 2,
+      "familias_respondibles": 4,
+      "familias_con_hit_completo": 1,
+      "precision": 0.29166666666666663,
+      "recall": 0.625,
+      "hit": 0.625,
+      "rr": 0.5625
+    },
+    {
+      "metodo": "bge_m3",
+      "n": 10,
+      "respondibles": 8,
+      "sin_respuesta": 2,
+      "sin_respuesta_con_candidatos": 2,
+      "familias_respondibles": 4,
+      "familias_con_hit_completo": 4,
+      "precision": 0.41666666666666663,
+      "recall": 1.0,
+      "hit": 1.0,
+      "rr": 1.0
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "F06a",
+    "familia": "F06",
+    "texto": "¿Cómo reemplazo la fuente de energía del S-31 cuando se agota?",
+    "relevantes": [
+      "D06",
+      "D07"
+    ],
+    "razon": "Ambos describen el reemplazo de pilas del S-31, no del S-13."
+  },
+  {
+    "id": "F06b",
+    "familia": "F06",
+    "texto": "¿Cómo cambio las pilas del sensor S-31?",
+    "relevantes": [
+      "D06",
+      "D07"
+    ],
+    "razon": "Ambos describen el reemplazo de pilas del S-31, no del S-13."
+  },
+  {
+    "id": "F07a",
+    "familia": "F07",
+    "texto": "Necesito llevarme las lecturas del panel a una hoja de cálculo. ¿Cómo las saco?",
+    "relevantes": [
+      "D08"
+    ],
+    "razon": "D08 explica sacar lecturas; importar no satisface exportar."
+  },
+  {
+    "id": "F07b",
+    "familia": "F07",
+    "texto": "¿Cómo exporto las mediciones del panel de sensores a CSV?",
+    "relevantes": [
+      "D08"
+    ],
+    "razon": "D08 explica sacar lecturas; importar no satisface exportar."
+  },
+  {
+    "id": "F08a",
+    "familia": "F08",
+    "texto": "Ya no voy a usar el espacio de estudio que aparté. ¿Cómo libero ese turno?",
+    "relevantes": [
+      "D09"
+    ],
+    "razon": "Anular una reserva de sala es distinto de crearla o reservar libros."
+  },
+  {
+    "id": "F08b",
+    "familia": "F08",
+    "texto": "¿Cómo cancelo mi reserva de la sala de estudio?",
+    "relevantes": [
+      "D09"
+    ],
+    "razon": "Anular una reserva de sala es distinto de crearla o reservar libros."
+  },
+  {
+    "id": "F09a",
+    "familia": "F09",
+    "texto": "¿Qué debería saber programar antes de empezar a aprender inteligencia artificial?",
+    "relevantes": [
+      "D10"
+    ],
+    "razon": "La consulta pide preparación, no acceso administrativo."
+  },
+  {
+    "id": "F09b",
+    "familia": "F09",
+    "texto": "¿Qué bases de Python necesito para iniciar el curso de IA?",
+    "relevantes": [
+      "D10"
+    ],
+    "razon": "La consulta pide preparación, no acceso administrativo."
+  },
+  {
+    "id": "F10a",
+    "familia": "F10",
+    "texto": "¿Cuánto cuesta inscribirse en el curso de inteligencia artificial?",
+    "relevantes": [],
+    "razon": "D19 no informa ningún precio."
+  },
+  {
+    "id": "F10b",
+    "familia": "F10",
+    "texto": "Dime el precio exacto del curso de IA.",
+    "relevantes": [],
+    "razon": "D19 no informa ningún precio."
+  }
+]
