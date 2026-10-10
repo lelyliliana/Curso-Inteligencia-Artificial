@@ -1,0 +1,401 @@
+{
+  "tipo": "comprobacion_funcional_http_local",
+  "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf",
+  "casos": [
+    {
+      "id": "00-izquierda",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "izquierda",
+          "clase": "apagada"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "id": "00-derecha",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "derecha",
+          "clase": "apagada"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "id": "01-izquierda",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "izquierda",
+          "clase": "apagada"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "id": "01-derecha",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "derecha",
+          "clase": "encendida"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "id": "10-izquierda",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "izquierda",
+          "clase": "encendida"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "id": "10-derecha",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "derecha",
+          "clase": "apagada"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "id": "11-izquierda",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "izquierda",
+          "clase": "encendida"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "id": "11-derecha",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "derecha",
+          "clase": "encendida"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "id": "falta_imagen",
+      "status_esperado": 422,
+      "cumple": true,
+      "status": 422,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "campos_invalidos",
+          "mensaje": "Se requieren solamente imagen_base64 y texto."
+        }
+      }
+    },
+    {
+      "id": "texto_libre",
+      "status_esperado": 422,
+      "cumple": true,
+      "status": 422,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "texto_invalido",
+          "mensaje": "Usa estado izquierda o estado derecha (también se admite consulta)."
+        }
+      }
+    },
+    {
+      "id": "base64_roto",
+      "status_esperado": 422,
+      "cumple": true,
+      "status": 422,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "base64_invalido",
+          "mensaje": "La imagen debe usar base64 puro, sin prefijo data:."
+        }
+      }
+    },
+    {
+      "id": "png_roto",
+      "status_esperado": 422,
+      "cumple": true,
+      "status": 422,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "imagen_invalida",
+          "mensaje": "No se pudo leer la imagen; el archivo no es un PNG válido."
+        }
+      }
+    },
+    {
+      "id": "png_rgb",
+      "status_esperado": 422,
+      "cumple": true,
+      "status": 422,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "formato_imagen",
+          "mensaje": "Usa un PNG estático de 20 × 16 píxeles en escala de grises (L)."
+        }
+      }
+    },
+    {
+      "id": "json_roto",
+      "status_esperado": 400,
+      "cumple": true,
+      "status": 400,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "json_invalido",
+          "mensaje": "Envía un único objeto JSON válido en UTF-8."
+        }
+      }
+    },
+    {
+      "id": "tipo_incorrecto",
+      "status_esperado": 415,
+      "cumple": true,
+      "status": 415,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "tipo_invalido",
+          "mensaje": "Usa Content-Type: application/json en UTF-8."
+        }
+      }
+    },
+    {
+      "id": "cuerpo_excesivo",
+      "status_esperado": 413,
+      "cumple": true,
+      "status": 413,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "cuerpo_grande",
+          "mensaje": "La solicitud supera 32 KiB."
+        }
+      }
+    },
+    {
+      "id": "ruta_ajena",
+      "status_esperado": 404,
+      "cumple": true,
+      "status": 404,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "ruta_desconocida",
+          "mensaje": "La ruta solicitada no existe."
+        }
+      }
+    },
+    {
+      "id": "metodo_incorrecto",
+      "status_esperado": 405,
+      "cumple": true,
+      "status": 405,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "metodo_invalido",
+          "mensaje": "Envía la predicción mediante POST."
+        }
+      }
+    },
+    {
+      "id": "/",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "text/html; charset=utf-8",
+      "respuesta": {
+        "bytes": 2993,
+        "sha256": "931fbc2e74ee701159be464d7ebcb603e9d2e3e7d67486faf0d01bce004da9a4"
+      }
+    },
+    {
+      "id": "/app.js",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "text/javascript; charset=utf-8",
+      "respuesta": {
+        "bytes": 4419,
+        "sha256": "c1f1e0704153596aad199dca0847467d0eb4c5d7d59e922c906e93eb88a447b9"
+      }
+    },
+    {
+      "id": "/estilos.css",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "text/css; charset=utf-8",
+      "respuesta": {
+        "bytes": 2786,
+        "sha256": "1441aa1967d6bd774ff7cb777e36e043e147e78bd45b69841cd3c4331ff2f620"
+      }
+    },
+    {
+      "id": "/health",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "version": "1",
+        "estado": "listo"
+      }
+    },
+    {
+      "id": "/api/modelo",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": {
+        "id": "fusion-u31",
+        "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf",
+        "alcance": "Escenas sintéticas del curso: dos luces en posiciones fijas.",
+        "clases": [
+          "apagada",
+          "encendida"
+        ],
+        "version_api": "1"
+      }
+    },
+    {
+      "id": "/api/ejemplos",
+      "status_esperado": 200,
+      "cumple": true,
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "respuesta": [
+        {
+          "id": "00",
+          "nombre": "Ambas apagadas",
+          "url": "/ejemplos/00.png"
+        },
+        {
+          "id": "01",
+          "nombre": "Derecha encendida",
+          "url": "/ejemplos/01.png"
+        },
+        {
+          "id": "10",
+          "nombre": "Izquierda encendida",
+          "url": "/ejemplos/10.png"
+        },
+        {
+          "id": "11",
+          "nombre": "Ambas encendidas",
+          "url": "/ejemplos/11.png"
+        }
+      ]
+    }
+  ],
+  "cumplen": 24,
+  "total": 24,
+  "nota": "Escenas de validación ya conocidas: comprueba integración, no nueva generalización."
+}

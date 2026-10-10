@@ -1,0 +1,2 @@
+# Modelo pequeño de fusión de la Unidad 31, sin pesos externos nuevos.
+-r ../unidad31-adaptacion-multimodalidad/requirements-cpu.txt

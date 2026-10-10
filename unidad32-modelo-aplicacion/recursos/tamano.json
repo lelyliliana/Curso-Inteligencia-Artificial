@@ -1,0 +1,11 @@
+{
+  "bytes_imagen": 16384,
+  "caracteres_base64": 21848,
+  "formula_base64": 21848,
+  "bytes_json": 21896,
+  "cabe_en_32_KiB": true,
+  "ejemplo_utf8": {
+    "caracteres": 19,
+    "bytes": 20
+  }
+}

@@ -1,6 +1,7 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 31.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 32.
 
-Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
+Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa Internet.
+La Unidad 32 necesita permitir conexiones HTTP locales a 127.0.0.1.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
 """
 
@@ -14,7 +15,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 31
+ULTIMA_UNIDAD = 32
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -210,6 +211,12 @@ def main():
                     esperado = "fusion: correctas=48/48"
                 elif programa.name == "03_lora_a_mano.py":
                     esperado = "LoRA manual: salida base=[-1.0, 5.0]; adaptada=[-0.5, 4.5]; fusión idéntica."
+                elif programa.name == "01_predecir_sin_http.py":
+                    esperado = "Servicio: luz derecha -> encendida; texto libre rechazado."
+                elif programa.name == "02_comprobar_http.py":
+                    esperado = "HTTP local: 24/24 comprobaciones correctas; servidor cerrado."
+                elif programa.name == "03_tamano_peticion.py":
+                    esperado = "Tamaño: 16384 bytes -> 21848 caracteres base64; JSON=21896 bytes."
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -522,6 +529,15 @@ def main():
         ejecutados += 1
         ejecutar(["unidad31-adaptacion-multimodalidad/datos/generar_datos.py",
                   "--salida", Path(carpeta)/"u31-datos"])
+        ejecutados += 1
+        prefijo = "unidad32-modelo-aplicacion/"
+        for programa, esperado in (
+                ("ejemplos/01_predecir_sin_http.py", "Servicio: luz derecha -> encendida"),
+                ("ejemplos/02_comprobar_http.py", "24/24 comprobaciones correctas"),
+                ("soluciones/03_tamano_peticion.py", "JSON=21896 bytes")):
+            ejecutar([prefijo + programa, "--salida", Path(carpeta)/("u32-" + Path(programa).stem + ".json")], esperado)
+            ejecutados += 1
+        ejecutar([prefijo + "aplicacion/servidor.py", "--help"], "--puerto")
         ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

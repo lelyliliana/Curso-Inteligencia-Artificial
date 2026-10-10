@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulta de luces · Unidad 32</title>
+  <link rel="stylesheet" href="/estilos.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header><span class="marca">IA / LABORATORIO</span><span>UNIDAD 32</span></header>
+  <main>
+    <p class="etiqueta">DE UN MODELO A UNA APLICACIÓN</p>
+    <h1>Una imagen.<br>Dos luces. Una consulta.</h1>
+    <p class="intro">Elige una escena y consulta el estado de una de sus luces. El modelo combina los píxeles con el lado que seleccionas.</p>
+    <p id="conexion" role="status">Comprobando la aplicación…</p>
+    <form id="consulta" aria-busy="false">
+      <fieldset id="controles" disabled>
+        <div class="columnas">
+          <section class="panel" aria-labelledby="titulo-imagen">
+            <div class="paso">01 / IMAGEN</div><h2 id="titulo-imagen">Prepara la escena</h2>
+            <label for="escena">Escena del curso</label>
+            <select id="escena" name="escena"><option value="">Cargando ejemplos…</option></select>
+            <figure><img id="vista" alt="Vista previa de las dos luces" width="280" height="224" hidden><figcaption id="nombre-imagen">Elige una escena para comenzar.</figcaption></figure>
+            <details><summary>Usar un PNG propio</summary>
+              <p id="ayuda-archivo">PNG estático, 20 × 16 píxeles, escala de grises (L), hasta 16 KiB. Conserva la posición de las luces de los ejemplos.</p>
+              <label for="archivo">Archivo PNG</label><input id="archivo" type="file" accept="image/png" aria-describedby="ayuda-archivo">
+            </details>
+          </section>
+          <section class="panel" aria-labelledby="titulo-consulta">
+            <div class="paso">02 / CONSULTA</div><h2 id="titulo-consulta">Elige una luz</h2>
+            <label for="lado">Lado de la imagen</label>
+            <select id="lado" name="lado"><option value="izquierda">Izquierda</option><option value="derecha">Derecha</option></select>
+            <p class="ayuda">Se consulta una luz por vez. Cambiar el lado puede cambiar la respuesta sobre la misma imagen.</p>
+            <button id="enviar" type="submit">Consultar estado <span aria-hidden="true">→</span></button>
+            <div id="resultado" class="resultado" role="status" aria-live="polite"><span>Tu resultado aparecerá aquí.</span></div>
+            <p id="error" role="alert" hidden></p>
+          </section>
+        </div>
+      </fieldset>
+    </form>
+    <aside><strong>Alcance de esta práctica</strong><p>Este modelo trabaja con las escenas sintéticas del curso y luces en posiciones fijas. La respuesta es una predicción: no interpreta fotografías ni comprueba si una imagen nueva pertenece al dominio aprendido.</p></aside>
+    <footer>Procesamiento local · Sin entrenamiento durante la consulta · Curso de Inteligencia Artificial</footer>
+  </main>
+</body>
+</html>

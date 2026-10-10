@@ -199,4 +199,4 @@ python herramientas/verificar_curso.py
 
 Las 45 pruebas contrastan matemática de LoRA, gradientes, pesos congelados, fusión, particiones, regeneración, modalidades excluidas, etiquetas fuera de las entradas, rechazos y cierres sin entrenamiento. Las tres figuras se inspeccionaron visualmente. La ejecución correcta no demuestra utilidad en datos reales ni superioridad general de un método.
 
-**Siguiente unidad prevista:** 32 — De un modelo a una aplicación; pendiente de desarrollo.
+Continúa con la [Unidad 32 — De un modelo a una aplicación](../unidad32-modelo-aplicacion/README.md): reutilizar el modelo de fusión en un servicio, una API y una interfaz local comprobada.

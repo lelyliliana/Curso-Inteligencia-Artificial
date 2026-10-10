@@ -1,0 +1,22 @@
+{
+  "consulta": {
+    "version": "1",
+    "estado": "ok",
+    "resultado": {
+      "lado": "derecha",
+      "clase": "encendida"
+    },
+    "modelo": {
+      "id": "fusion-u31",
+      "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    }
+  },
+  "rechazo": {
+    "version": "1",
+    "estado": "error",
+    "error": {
+      "codigo": "texto_invalido",
+      "mensaje": "Usa estado izquierda o estado derecha (también se admite consulta)."
+    }
+  }
+}

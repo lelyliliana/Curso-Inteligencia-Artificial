@@ -1,0 +1,2 @@
+# Se reutiliza el entorno del curso; el servidor es biblioteca estándar.
+-r ../unidad31-adaptacion-multimodalidad/requirements.txt

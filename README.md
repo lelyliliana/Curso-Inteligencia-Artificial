@@ -94,7 +94,7 @@ La unidad 24 contiene dos prácticas independientes. Su propósito es reconocer 
 
 | Unidad | Tema |
 |---|---|
-| 32 | De un modelo a una aplicación |
+| 32 | [De un modelo a una aplicación](unidad32-modelo-aplicacion/README.md) |
 | 33 | Operación, seguridad y observabilidad |
 | 34 | Talleres de IA aplicada |
 | 35 | Proyecto final integrador |
@@ -126,7 +126,7 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-Las **unidades 0 a 31 están desarrolladas**: 32 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
+Las **unidades 0 a 32 están desarrolladas**: 33 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
 
 - **0–4:** entorno, formulación de proyectos, matemática aplicada y probabilidad.
 - **5–9:** búsqueda, reglas, obtención y preparación de datos, exploración y visualización.
@@ -139,10 +139,11 @@ Las **unidades 0 a 31 están desarrolladas**: 32 de las 36 unidades previstas. I
 - **29:** RAG con documentos, fragmentos trazables, presupuesto de contexto, citas, apoyo factual, contradicciones, abstención y evaluación separada por familias.
 - **30:** herramientas con permisos y evidencia, agente local frente a flujo fijo, errores e inyección, presupuestos y laboratorio MCP por stdio con revisión explícita.
 - **31:** ajuste completo y LoRA de un transformer propio, fusión de imagen y texto, ablaciones, entradas incompletas, estados recargables y cierres separados en CPU.
+- **32:** aplicación local con interfaz y API, carga única del modelo, validación de entradas, contratos HTTP y pruebas de integración.
 
-La entrega más reciente adapta el transformer pequeño del curso y combina características de imágenes y consultas textuales. Compara referencias, parámetros entrenables y modalidades aisladas, conserva estados para recarga y evalúa los modelos elegidos con datos reservados. Documenta la exposición previa de la base y los límites de los datos sintéticos. Las **unidades 32 a 35 están pendientes de desarrollo**; la siguiente aborda cómo pasar de un modelo a una aplicación. Tener sus títulos definidos no equivale a haber terminado el curso.
+La entrega más reciente convierte el modelo de fusión en una aplicación local con interfaz, API, contrato de entradas y manejo de errores. Comprueba solicitudes HTTP reales y un recorrido en navegador, conservando la preparación y los pesos originales. Distingue integración de calidad predictiva y ejecución local de operación pública. Las **unidades 33 a 35 están pendientes de desarrollo**; la siguiente aborda operación, seguridad y observabilidad. Tener sus títulos definidos no equivale a haber terminado el curso.
 
-El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 31, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22, 23 y 24 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; la Unidad 25 utiliza también el PyTorch CPU ya incorporado. Las unidades 26, 27, 28, 29 y 30 usan biblioteca estándar y reutilizan los paquetes gráficos opcionalmente; el verificador analiza sus capturas sin iniciar Ollama ni usar claves. La Unidad 28 también contrasta TF-IDF con scikit-learn en sus pruebas; la descarga opcional de BGE-M3 se documenta por separado. La Unidad 29 reutiliza los modelos locales ya incorporados y sus pruebas no necesitan servicios. La Unidad 30 ejecuta además un cliente y un servidor MCP propios en un subproceso local, sin red ni instalación de SDK. La Unidad 31 reutiliza PyTorch CPU y Pillow para adaptación y fusión multimodal, sin descargar pesos externos. Las comprobaciones posteriores funcionan sin Internet:
+El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 32, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22, 23 y 24 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; la Unidad 25 utiliza también el PyTorch CPU ya incorporado. Las unidades 26, 27, 28, 29 y 30 usan biblioteca estándar y reutilizan los paquetes gráficos opcionalmente; el verificador analiza sus capturas sin iniciar Ollama ni usar claves. La Unidad 28 también contrasta TF-IDF con scikit-learn en sus pruebas; la descarga opcional de BGE-M3 se documenta por separado. La Unidad 29 reutiliza los modelos locales ya incorporados y sus pruebas no necesitan servicios. La Unidad 30 ejecuta además un cliente y un servidor MCP propios en un subproceso local, sin red ni instalación de SDK. La Unidad 31 reutiliza PyTorch CPU y Pillow para adaptación y fusión multimodal, sin descargar pesos externos. La Unidad 32 reutiliza ese modelo en una aplicación local; sus ejemplos y pruebas necesitan permitir conexiones a `127.0.0.1`, sin acceder a servicios externos. Las comprobaciones posteriores funcionan sin Internet:
 
 ```bash
 python -m pip install -r unidad21-vision-computador/requirements.txt
