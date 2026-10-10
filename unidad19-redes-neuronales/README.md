@@ -32,7 +32,7 @@ python unidad19-redes-neuronales/ejemplos/01_aprender_xor.py
 python unidad19-redes-neuronales/ejemplos/02_controlar_sobreajuste.py
 ```
 
-Se comprobó reutilizando Python 3.12.3, NumPy 2.2.6 y Matplotlib 3.10.8 del [entorno compartido](../unidad13-arboles-ensambles/recursos/entorno-verificado.txt). scikit-learn 1.9.1 se utiliza como referencia en una prueba de pérdida; el entrenamiento de esta unidad está implementado con NumPy. No se añadieron dependencias. PyTorch se introducirá en la Unidad 20.
+Se comprobó reutilizando Python 3.12.3, NumPy 2.2.6 y Matplotlib 3.10.8 del [entorno compartido](../unidad13-arboles-ensambles/recursos/entorno-verificado.txt). scikit-learn 1.9.1 se utiliza como referencia en una prueba de pérdida; el entrenamiento de esta unidad está implementado con NumPy. No se añadieron dependencias. PyTorch se introduce en la [Unidad 20](../unidad20-pytorch/README.md).
 
 ## 2. De la regresión logística a una capa oculta
 
@@ -284,4 +284,4 @@ python herramientas/verificar_curso.py
 
 Las **32 pruebas** incluyen forward escalar, retropropagación manual, diferencias finitas de todos los parámetros, estabilidad, penalización, selección y copias de estados, separación de datos, regeneración y figuras. Comprobar derivadas no demuestra utilidad en una población real.
 
-Antes de avanzar, comprueba que puedes reconstruir un paso, justificar una forma matricial y distinguir mejor ajuste de mejor generalización. La siguiente entrega prevista es la **Unidad 20 — Aprendizaje profundo con PyTorch**, todavía pendiente de desarrollo.
+Antes de avanzar, comprueba que puedes reconstruir un paso, justificar una forma matricial y distinguir mejor ajuste de mejor generalización. Continúa con la [Unidad 20 — Aprendizaje profundo con PyTorch](../unidad20-pytorch/README.md), que contrasta estos cálculos con autograd y organiza minilotes y guardado de modelos.

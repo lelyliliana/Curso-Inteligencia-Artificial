@@ -1,0 +1,7 @@
+{
+  "max_error_logits": 0.0,
+  "n": 80,
+  "dispositivo": "cpu",
+  "uso": "inferencia; no reanudación de entrenamiento",
+  "sha256_modelo": "a034e36d6ae0f4dec7b86d45b90564566cb8cc08a35e48a54ac7b3fbf20ea38c"
+}

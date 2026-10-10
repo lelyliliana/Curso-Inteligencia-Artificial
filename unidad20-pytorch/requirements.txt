@@ -1,0 +1,2 @@
+# Dependencias compartidas. PyTorch se instala por separado para elegir CPU.
+-r ../unidad19-redes-neuronales/requirements.txt

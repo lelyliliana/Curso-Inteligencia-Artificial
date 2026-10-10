@@ -31,10 +31,11 @@ La revisión inicial ejecutó correctamente 19 programas de ejemplos y solucione
 | Unidad 17 | Desarrollada y comprobada | Dos laboratorios, métricas manuales, costos y cupos, cuatro CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, informe y 30 pruebas |
 | Unidad 18 | Desarrollada y comprobada | Dos laboratorios, reconstrucción manual, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, ficha de modelo y 30 pruebas |
 | Unidad 19 | Desarrollada y comprobada | Dos laboratorios, retropropagación manual, seis CSV regenerables, tres figuras PNG/SVG, diez ejercicios resueltos, reto, ficha de límites y 32 pruebas |
-| Verificación común | Disponible para las unidades 0–19 | [verificar_curso.py](herramientas/verificar_curso.py) |
-| Unidades 20–35 | Pendientes de desarrollo | Alcance conservado en el índice |
+| Unidad 20 | Desarrollada y comprobada | Dos laboratorios, acumulación manual, datos nuevos regenerables, tres figuras PNG/SVG, recarga verificada, diez ejercicios resueltos, reto y 34 pruebas |
+| Verificación común | Disponible para las unidades 0–20 | [verificar_curso.py](herramientas/verificar_curso.py) |
+| Unidades 21–35 | Pendientes de desarrollo | Alcance conservado en el índice |
 
-La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8`, la Unidad 12 en `61a73f5`, la Unidad 13 en `81df395`, la Unidad 14 en `1f2b6f8`, la Unidad 15 en `b5ef367`, la Unidad 16 en `121e345`, la Unidad 17 en `5ea63cf` y la Unidad 18 en `ad665cc`. Esta entrega incorpora la Unidad 19 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 20: aprendizaje profundo con PyTorch**. Quedan 16 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
+La Unidad 6 se publicó en el commit `b7a2a9b`, la Unidad 7 en `1c047c2`, la Unidad 8 en `59ed8df`, la Unidad 9 en `56df425`, la Unidad 10 en `fe3b260`, la Unidad 11 en `e04adc8`, la Unidad 12 en `61a73f5`, la Unidad 13 en `81df395`, la Unidad 14 en `1f2b6f8`, la Unidad 15 en `b5ef367`, la Unidad 16 en `121e345`, la Unidad 17 en `5ea63cf`, la Unidad 18 en `ad665cc` y la Unidad 19 en `54e7ae1`. Esta entrega incorpora la Unidad 20 y amplía la verificación conjunta. El próximo contenido por desarrollar es la **Unidad 21: visión por computador**. Quedan 15 unidades de contenido tras esta entrega; no se considera terminado el curso por tener los títulos planificados.
 
 ## Enfoque que se conserva
 
@@ -54,27 +55,29 @@ Cada entrega desarrolla una unidad y revisa su conexión con las anteriores. Los
 | 7–9 | Desarrollo terminado; reto integrador disponible | Datos documentados, preparación trazable y exploración con figuras e informe reproducible |
 | 10–13 | Desarrollo terminado: líneas base, regresión, clasificación y ensambles | Comparaciones reproducibles con separación de datos y análisis de errores |
 | 14–18 | Desarrollo terminado: agrupamiento, representaciones, validación, decisiones e interpretabilidad | Selección justificada sin filtración, umbrales y limitaciones documentadas |
-| 19–24 | Unidad 19 terminada; pendientes PyTorch, visión, lenguaje, tiempo, recomendación y refuerzo | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
+| 19–24 | Unidades 19–20 terminadas; pendientes visión, lenguaje, tiempo, recomendación y refuerzo | Prácticas pequeñas y ejecutables; recursos y especialidades diferenciados |
 | 25–31 | Generación, inferencia, prompts, embeddings, RAG, herramientas, adaptación y multimodalidad | Evaluaciones con casos verificables, citas y límites de permisos y recursos |
 | 32–33 | Aplicación, operación, seguridad y observabilidad | Aplicación mínima con validación de entradas, registro útil y manejo de errores |
 | 34–35 | Talleres y proyecto integrador | Proyecto con línea base, evaluación independiente, demostración y documentación |
 
 Antes de desarrollar cada unidad, verificar documentación primaria de las bibliotecas y servicios que vaya a utilizar. Fijar y registrar las versiones que realmente se prueben; no asumir que una API o descarga futura conserva el mismo funcionamiento.
 
-## Siguiente entrega concreta — Unidad 20
+## Siguiente entrega concreta — Unidad 21
 
-Pregunta guía: **¿cómo trasladar una red verificable a PyTorch y organizar un entrenamiento reproducible con tensores, autograd y evaluación separada?**
+Pregunta guía: **¿cómo representar imágenes, construir una línea base y entrenar una red pequeña para visión con una evaluación que controle la procedencia de las imágenes?**
 
 Alcance propuesto, todavía no implementado:
 
-1. Introducir tensores, formas, tipos, dispositivos y conversión desde NumPy; ruta básica en CPU y costo de instalación explícito, sin imponer GPU.
-2. Contrastar propagación y gradientes de una red pequeña con la referencia NumPy, evitando confundir esa equivalencia con evidencia predictiva independiente.
-3. Explicar autograd, acumulación de gradientes, zero_grad, backward y step, así como nn.Module, pérdidas desde logits y modos train/eval/no_grad.
-4. Organizar datos y minilotes, distinguir época de actualización y registrar semillas, orden de muestreo, configuración y límites de reproducibilidad.
-5. Guardar y restaurar el estado elegido con un formato apropiado, validar la igualdad de predicciones y mantener la selección fuera de prueba; no cargar archivos de modelo de procedencia desconocida.
-6. Entregar dos laboratorios pequeños, datos nuevos cuando se evalúe generalización, referencias matemáticas, figuras revisadas, ejercicios, soluciones, reto y documentación de recursos. Verificar una versión CPU de PyTorch compatible con el entorno antes de fijarla.
+1. Introducir píxeles, canales, resolución, formas NCHW, normalización y visualización correcta de imágenes.
+2. Explicar convolución, filtros, campos receptivos y reducción espacial con un cálculo manual pequeño, sin confundir filtros didácticos con rasgos aprendidos.
+3. Usar datos pequeños de procedencia y licencia documentadas, con ruta reproducible en CPU; declarar descargas, tamaño y límites de cualquier conjunto externo.
+4. Comparar una referencia simple con una CNN pequeña; separar entrenamiento, selección y cierre por la unidad independiente apropiada, evitando duplicados o variantes de la misma imagen entre particiones.
+5. Explicar aumentos solo en entrenamiento, métricas por clase y errores visuales; guardar preparación y modelo elegido y comprobar la recarga. Definir datos nuevos para el cierre de este experimento.
+6. Entregar dos laboratorios, figuras revisadas, ejercicios, soluciones, reto y ficha de límites. Verificar compatibilidad y costo antes de añadir torchvision u otra dependencia; no imponerla si PyTorch y las bibliotecas ya instaladas bastan.
 
-La Unidad 19 implementa una red tanh con NumPy y gradientes explícitos, BCE estable desde logits y L2 sin sesgos. Compara referencias y red8 en XOR, y una red32 con o sin penalización en un círculo con etiquetas ruidosas. Selecciona arquitectura y época por BCE de validación; conserva copias del estado inicial, elegido y final. Red32 sin L2 elige época 500 y luego sobreajusta; red32_l2 gana en ese laboratorio. Prueba evalúa solo el estado elegido sin reajuste. Las tres figuras se revisaron visualmente; las 32 pruebas incluyen forward escalar, paso manual, diferencias finitas de todos los parámetros, estabilidad, separación, regeneración y artefactos. Se reutilizó el entorno anterior; PyTorch todavía no es una dependencia.
+La Unidad 20 se verificó el 10 de octubre de 2026 en un entorno virtual limpio con PyTorch 2.14.1+cpu. Contrasta 13 parámetros y una actualización SGD con NumPy float64; los errores máximos quedan por debajo de 1e−12. Sobre datos nuevos entrena en float32 una referencia lineal y una red 2→12→8→1, con 120 épocas y 600 actualizaciones cada una. Validación elige red12_8 en época 110; el cierre posterior conserva ese estado y muestra seis falsos negativos. Exporta un archivo para inferencia con escala y orden de entradas; su recarga conserva exactamente los logits de validación. No implementa reanudación de Adam. Las tres figuras se revisaron visualmente; sus 34 pruebas cubren cálculos, memoria, modos, orden de lotes, separación, regeneración y artefactos. La instalación requiere dos comandos para distinguir paquetes compartidos e índice CPU; el entorno ocupa aproximadamente 1,3 GB. El [registro completo](unidad20-pytorch/recursos/entorno-verificado.txt) conserva las versiones instaladas.
+
+La Unidad 19 implementa una red tanh con NumPy y gradientes explícitos, BCE estable desde logits y L2 sin sesgos. Compara referencias y red8 en XOR, y una red32 con o sin penalización en un círculo con etiquetas ruidosas. Selecciona arquitectura y época por BCE de validación; conserva copias del estado inicial, elegido y final. Red32 sin L2 elige época 500 y luego sobreajusta; red32_l2 gana en ese laboratorio. Prueba evalúa solo el estado elegido sin reajuste. Las tres figuras se revisaron visualmente; las 32 pruebas incluyen forward escalar, paso manual, diferencias finitas de todos los parámetros, estabilidad, separación, regeneración y artefactos. En aquella entrega se reutilizó el entorno anterior sin añadir PyTorch; este se incorpora en la Unidad 20.
 
 La Unidad 18 fija dos modelos antes de leer validación: regresión lineal estandarizada con un duplicado exacto horas/minutos, y un árbol pequeño sobre una lectura. Reconstruye contribuciones y rutas, convierte unidades y contrasta permutación individual/conjunta. La auditoría conserva grupos sin positivos y sin filas; el árbol detecta 7 de 19 positivos desplazados en validación y 3 de 14 en cierre. No se reemplaza después de observar el fallo. Incluye ficha completada, plantilla y análisis de impacto con decisión de uso solo didáctico. Las tres figuras se revisaron visualmente; las 30 pruebas contrastan referencias matemáticas, fronteras float32 del árbol, separación, datos y artefactos. Se reutilizó el entorno anterior sin dependencias nuevas. Prueba se abre tras los diagnósticos y no orienta el ajuste.
 
@@ -94,7 +97,7 @@ La Unidad 11 incorpora datos sintéticos nuevos de ciclos de operación: un caso
 
 La Unidad 10 añade dos conjuntos sintéticos independientes: 32 pronósticos diarios con cortes temporales y 64 avisos de ocho equipos separados por grupo. La ejecución común lee solo entrenamiento y validación; `--evaluar-prueba` abre prueba después de seleccionar y no reajusta. Se comprueban casos idénticos entre candidatos, disponibilidad de etiquetas en los cortes y separación de equipos. Las pruebas de invariancia alteran objetivos de prueba y verifican que no cambien ajuste, selección ni predicciones. No hay dependencias nuevas ni azar.
 
-Las pruebas de las unidades 10 a 19 son públicas y sus resultados didácticos son conocidos. No reutilizarlas automáticamente para seleccionar modelos nuevos en unidades posteriores y después presentarlas como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
+Las pruebas de las unidades 10 a 20 son públicas y sus resultados didácticos son conocidos. No reutilizarlas automáticamente para seleccionar modelos nuevos en unidades posteriores y después presentarlas como evaluación independiente. Definir datos y particiones apropiados para cada nuevo experimento, o explicar claramente qué parte es desarrollo y qué evidencia nueva se aporta. Mantener la diferencia entre demostrar el procedimiento y demostrar rendimiento útil en datos reales.
 
 La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 y NumPy 2.2.6, probadas con Python 3.12.3 en un entorno virtual limpio. Sus resúmenes de texto usan biblioteca estándar; su exportación de gráficos y sus 21 pruebas requieren esos paquetes. Las unidades 11 y 12 reutilizan esas versiones: polinomios y logística requieren NumPy; las figuras, Matplotlib. La Unidad 13 incorpora scikit-learn 1.9.1, probado con Python 3.12.3 y las mismas versiones numéricas y gráficas en otro entorno virtual limpio. Su [registro completo del entorno](unidad13-arboles-ensambles/recursos/entorno-verificado.txt) añade las dependencias transitivas, incluida SciPy 1.18.1. Se conserva también el [registro del entorno anterior](unidad09-exploracion-visualizacion/recursos/entorno-verificado.txt). Los informes JSON anotan fuentes, parámetros y versiones principales.
 
@@ -117,11 +120,12 @@ La primera dependencia gráfica se incorporó en la Unidad 9: Matplotlib 3.10.8 
 Desde la raíz del curso:
 
 ```bash
-python -m pip install -r unidad19-redes-neuronales/requirements.txt
+python -m pip install -r unidad20-pytorch/requirements.txt
+python -m pip install -r unidad20-pytorch/requirements-cpu.txt
 python herramientas/verificar_curso.py
 ```
 
-Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 139 ejecuciones de programas y variantes y las 372 pruebas de las unidades 5 a 19. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas y scikit-learn indicados en los requisitos de la Unidad 19. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–19; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
+Comprueba sintaxis de Python, destinos de enlaces Markdown locales, 146 ejecuciones de programas y variantes y las 406 pruebas de las unidades 5 a 20. Las ejecuciones incluyen exportaciones gráficas y de experimentos predictivos, tanto en validación como en cierre, a carpetas temporales. El verificador no instala paquetes ni accede a servicios externos; requiere haber instalado las dependencias compartidas, scikit-learn y PyTorch CPU indicados en los dos archivos de requisitos de la Unidad 20. Usa directorios temporales para resultados y caché gráfica. Cubre explícitamente las unidades 0–20; al añadir otra unidad hay que incorporar su alcance y sus comprobaciones.
 
 La comprobación de enlaces no valida URLs externas ni fragmentos `#ancla`. Ejecutar programas con éxito no demuestra que toda explicación sea correcta ni que se obtenga utilidad en una población real.
 
