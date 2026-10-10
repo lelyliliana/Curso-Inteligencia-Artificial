@@ -1,0 +1,28 @@
+{
+  "horizonte": 6,
+  "seleccionado": "ridge",
+  "metricas": {
+    "n": 181,
+    "mae": 0.27426164737865166,
+    "rmse": 0.38819626056231504,
+    "sesgo": -0.10162699115714881
+  },
+  "transicion_24h": {
+    "n": 23,
+    "mae": 0.49263812695096304,
+    "rmse": 0.7257087637139512,
+    "sesgo": 0.43099710692512877
+  },
+  "exclusiones": {
+    "objetivo_ausente": 3,
+    "objetivo_sin_valor": 2,
+    "objetivo_fuera_bloque": 6
+  },
+  "fuentes": {
+    "entrenamiento": "20dd7e7533b3ff265ca46fed3374aff5b6656d56db874f374985aaa2c9cec54f",
+    "validacion": "7f6b432ed70cae1e8d7e09125796ebfa03a08d17d3ecb2398130e3d184d35d84",
+    "prueba": "f2c9c703d7ad5efd8084afa6fbba349e41dae7c756ff5d2f3d699d26c113320f"
+  },
+  "reajuste": false,
+  "modelo_sha256": "1d555d18f789074498ff049dd2ae41f68aecb805d641a534c8c50bced95dae26"
+}

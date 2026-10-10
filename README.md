@@ -73,7 +73,7 @@ La secuencia comprende **36 unidades, de la 0 a la 35**. Los enlaces llevan a ma
 | 20 | [Aprendizaje profundo con PyTorch](unidad20-pytorch/README.md) |
 | 21 | [Visión por computador](unidad21-vision-computador/README.md) |
 | 22 | [Procesamiento de lenguaje natural](unidad22-lenguaje-natural/README.md) |
-| 23 | Series temporales y sensores |
+| 23 | [Series temporales y sensores](unidad23-series-temporales/README.md) |
 | 24 | Introducción a recomendación y aprendizaje por refuerzo |
 
 La unidad 24 contiene dos prácticas independientes. Su propósito es reconocer y experimentar con ambos tipos de problema; no agota esas especialidades.
@@ -126,16 +126,16 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-Las **unidades 0 a 22 están desarrolladas**: 23 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
+Las **unidades 0 a 23 están desarrolladas**: 24 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
 
 - **0–4:** entorno, formulación de proyectos, matemática aplicada y probabilidad.
 - **5–9:** búsqueda, reglas, obtención y preparación de datos, exploración y visualización.
 - **10–18:** líneas base, modelos supervisados y no supervisados, representaciones, validación, métricas e interpretabilidad.
-- **19–22:** redes neuronales, PyTorch, visión por computador y procesamiento de lenguaje natural, con prácticas pequeñas en CPU y límites documentados.
+- **19–23:** redes neuronales, PyTorch, visión por computador, lenguaje natural y series temporales, con prácticas pequeñas en CPU y límites documentados.
 
-La entrega más reciente enseña tokens, TF-IDF y clasificación de peticiones con separación por familias de textos, análisis de negación y ambigüedad, y recuperación verificable del modelo. Las **unidades 23 a 35 están pendientes de desarrollo**; la siguiente es Series temporales y sensores. Tener sus títulos definidos no equivale a haber terminado el curso.
+La entrega más reciente enseña pronóstico de sensores, disponibilidad de lecturas, ventanas y rezagos, comparación de referencias, evaluación temporal y recuperación del predictor. Las **unidades 24 a 35 están pendientes de desarrollo**; la siguiente introduce recomendación y aprendizaje por refuerzo mediante dos prácticas diferenciadas. Tener sus títulos definidos no equivale a haber terminado el curso.
 
-El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 22, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. La Unidad 22 reutiliza estas dependencias numéricas y gráficas, sin añadir paquetes; las comprobaciones posteriores funcionan sin Internet:
+El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 23, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22 y 23 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; las comprobaciones posteriores funcionan sin Internet:
 
 ```bash
 python -m pip install -r unidad21-vision-computador/requirements.txt

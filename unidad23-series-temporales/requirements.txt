@@ -1,0 +1,2 @@
+# Reutiliza NumPy, Matplotlib y scikit-learn; no requiere redes ni servicios.
+-r ../unidad13-arboles-ensambles/requirements.txt

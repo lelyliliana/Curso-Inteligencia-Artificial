@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 22.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 23.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa la red.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
@@ -14,7 +14,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 22
+ULTIMA_UNIDAD = 23
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -156,6 +156,12 @@ def main():
                     esperado = "Seleccionado por CE de validación: unigramas"
                 elif programa.name == "03_tfidf_a_mano.py":
                     esperado = "Norma L2 comprobada: 1.000000"
+                elif programa.name == "01_auditar_tiempo.py":
+                    esperado = "Media de tres horas disponible a las 08:10: 26.0 °C"
+                elif programa.name == "02_pronosticar_sensor.py":
+                    esperado = "Seleccionado por MAE de validación: ridge; horizonte=1 h"
+                elif programa.name == "03_ventana_a_mano.py":
+                    esperado = "Futuro alterado: media causal=12.0; media centrada=42.0"
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -195,6 +201,8 @@ def main():
     vision_trazos = "unidad21-vision-computador/ejemplos/02_clasificar_trazos.py"
     lenguaje_representacion = "unidad22-lenguaje-natural/ejemplos/01_representar_textos.py"
     lenguaje_mensajes = "unidad22-lenguaje-natural/ejemplos/02_clasificar_mensajes.py"
+    serie_auditoria = "unidad23-series-temporales/ejemplos/01_auditar_tiempo.py"
+    serie_pronostico = "unidad23-series-temporales/ejemplos/02_pronosticar_sensor.py"
     variantes = [
         ([reglas, "--quitar", "sensor_verificado"], "no equivale a demostrar su negación"),
         ([reglas, "--agregar", "mantenimiento_programado"], "INCOMPATIBILIDAD declarada"),
@@ -250,6 +258,11 @@ def main():
     ])
     variantes.append(([lenguaje_mensajes, "--evaluar-prueba"],
                       "Prueba final: solo unigramas; CE=0.6682; exactitud=1.000; macro F1=1.000"))
+    variantes.extend([
+        ([serie_pronostico, "--horizonte", "6"], "Seleccionado por MAE de validación: ridge; horizonte=6 h"),
+        ([serie_pronostico, "--evaluar-prueba"], "Prueba final: solo ridge; h=1; n=186; MAE=0.1942; RMSE=0.2696"),
+        ([serie_pronostico, "--horizonte", "6", "--evaluar-prueba"], "Prueba final: solo ridge; h=6; n=181; MAE=0.2743; RMSE=0.3882"),
+    ])
     for comando, esperado in variantes:
         ejecutar(comando, esperado)
         ejecutados += 1
@@ -328,6 +341,15 @@ def main():
             ejecutar([lenguaje_mensajes, *extras, "--salida", Path(carpeta)/f"lenguaje-mensajes-{cierre}", "--graficos"],
                      "Recarga: error máximo en probabilidades=0.0")
             ejecutados += 1
+        ejecutar([serie_auditoria, "--salida", Path(carpeta)/"serie-auditoria", "--graficos"], "Exportación:")
+        ejecutados += 1
+        for horizonte in (1, 6):
+            for cierre in (False, True):
+                extras = ["--evaluar-prueba"] if cierre else []
+                ejecutar([serie_pronostico, "--horizonte", str(horizonte), *extras,
+                          "--salida", Path(carpeta)/f"serie-{horizonte}-{cierre}", "--graficos"],
+                         "Recarga: error máximo=0.0 °C")
+                ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:
         pruebas = unidad / "pruebas"

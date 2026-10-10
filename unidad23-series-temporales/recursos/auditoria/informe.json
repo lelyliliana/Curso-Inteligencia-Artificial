@@ -1,0 +1,163 @@
+{
+  "archivo": {
+    "registros": [
+      {
+        "id": "s1-0000",
+        "hora": 0,
+        "llegada_min": 10,
+        "valor": 20.0
+      },
+      {
+        "id": "s1-0001",
+        "hora": 1,
+        "llegada_min": 70,
+        "valor": 21.0
+      },
+      {
+        "id": "s1-0003",
+        "hora": 3,
+        "llegada_min": 190,
+        "valor": 23.0
+      },
+      {
+        "id": "s1-0004",
+        "hora": 4,
+        "llegada_min": 250,
+        "valor": 24.0
+      },
+      {
+        "id": "s1-0005",
+        "hora": 5,
+        "llegada_min": 310,
+        "valor": 25.0
+      },
+      {
+        "id": "s1-0005-conflicto",
+        "hora": 5,
+        "llegada_min": 310,
+        "valor": 35.0
+      },
+      {
+        "id": "s1-0006",
+        "hora": 6,
+        "llegada_min": 370,
+        "valor": 26.0
+      },
+      {
+        "id": "s1-0007",
+        "hora": 7,
+        "llegada_min": 570,
+        "valor": 27.0
+      },
+      {
+        "id": "s1-0008",
+        "hora": 8,
+        "llegada_min": 490,
+        "valor": null
+      },
+      {
+        "id": "s1-0009",
+        "hora": 9,
+        "llegada_min": 550,
+        "valor": 29.0
+      },
+      {
+        "id": "s1-0010",
+        "hora": 10,
+        "llegada_min": 610,
+        "valor": 30.0
+      },
+      {
+        "id": "s1-0011",
+        "hora": 11,
+        "llegada_min": 670,
+        "valor": 31.0
+      }
+    ],
+    "auditoria": {
+      "filas": 13,
+      "duplicados_exactos": 1,
+      "entrada_desordenada": true
+    }
+  },
+  "estados_retrospectivos": [
+    "observada",
+    "observada",
+    "ausente",
+    "observada",
+    "observada",
+    "conflicto",
+    "observada",
+    "observada",
+    "sin_valor",
+    "observada",
+    "observada",
+    "observada"
+  ],
+  "hora8": {
+    "valores": [
+      20.0,
+      21.0,
+      21.0,
+      23.0,
+      24.0,
+      24.0,
+      26.0,
+      26.0,
+      26.0
+    ],
+    "relleno": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "motivos": [
+      "observada",
+      "observada",
+      "ausente",
+      "observada",
+      "observada",
+      "conflicto",
+      "observada",
+      "tardia",
+      "sin_valor"
+    ]
+  },
+  "hora10": {
+    "valores": [
+      20.0,
+      21.0,
+      21.0,
+      23.0,
+      24.0,
+      24.0,
+      26.0,
+      27.0,
+      27.0,
+      29.0,
+      30.0
+    ],
+    "relleno": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  "media3_hora8": 26.0,
+  "conflictos": 1,
+  "horas_sin_registro": 1
+}

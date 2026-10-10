@@ -230,4 +230,4 @@ python herramientas/verificar_curso.py
 
 Las **38 pruebas** contrastan cálculos con referencias escalares y biblioteca, Unicode, duplicados, familias, invariancia de ajuste y selección, vector cero, métricas, regeneración, persistencia y figuras. El verificador común necesita también las dependencias anteriores indicadas en el [índice](../README.md).
 
-Antes de avanzar, comprueba que puedes calcular un vector, explicar el error de una familia y recargar el clasificador sin reaprender vocabulario. La siguiente entrega prevista es la **Unidad 23 — Series temporales y sensores**, pendiente de desarrollo.
+Antes de avanzar, comprueba que puedes calcular un vector, explicar el error de una familia y recargar el clasificador sin reaprender vocabulario. Continúa con la [Unidad 23 — Series temporales y sensores](../unidad23-series-temporales/README.md).

@@ -1,0 +1,6 @@
+{
+  "error_maximo": 0.0,
+  "error_consulta_cruda": 0.0,
+  "tolerancia": 1e-12,
+  "modelo_sha256": "1d555d18f789074498ff049dd2ae41f68aecb805d641a534c8c50bced95dae26"
+}
