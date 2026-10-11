@@ -1,0 +1,2 @@
+# Reutiliza el modelo pequeño de fusión, sin descargas adicionales.
+-r ../unidad32-modelo-aplicacion/requirements-cpu.txt

@@ -203,4 +203,4 @@ Las **44 pruebas** cubren validación, reutilización de la preparación, pesos 
 
 Completa los [diez ejercicios](ejercicios.md), contrasta las [soluciones](soluciones/README.md) y realiza el [reto](reto.md) con la [plantilla](plantillas/informe.md). Consulta también la [ficha de la aplicación](recursos/ficha-aplicacion.md), las [evidencias](recursos/informe.md) y el [guion de revisión manual](recursos/revision-interfaz.md).
 
-**Siguiente unidad prevista:** 33 — Operación, seguridad y observabilidad; pendiente de desarrollo.
+Continúa con la [Unidad 33 — Operación, seguridad y observabilidad](../unidad33-operacion-seguridad-observabilidad/README.md): admisión limitada, sondas, registros, métricas y recuperación de fallos sobre esta aplicación.

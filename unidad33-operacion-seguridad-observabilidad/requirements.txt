@@ -1,0 +1,2 @@
+# Mismo entorno; Matplotlib ya forma parte de las dependencias del curso.
+-r ../unidad32-modelo-aplicacion/requirements.txt

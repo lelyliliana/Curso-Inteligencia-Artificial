@@ -1,7 +1,7 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 32.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 33.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa Internet.
-La Unidad 32 necesita permitir conexiones HTTP locales a 127.0.0.1.
+Las unidades 32 y 33 necesitan permitir conexiones HTTP locales a 127.0.0.1.
 Los enlaces externos y los fragmentos #ancla requieren revisión editorial.
 """
 
@@ -15,7 +15,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 32
+ULTIMA_UNIDAD = 33
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -217,6 +217,12 @@ def main():
                     esperado = "HTTP local: 24/24 comprobaciones correctas; servidor cerrado."
                 elif programa.name == "03_tamano_peticion.py":
                     esperado = "Tamaño: 16384 bytes -> 21848 caracteres base64; JSON=21896 bytes."
+                elif programa.name == "01_observar_servicio.py":
+                    esperado = "Observación HTTP: 8 respuestas; 8 eventos correlacionados."
+                elif programa.name == "02_probar_fallos.py":
+                    esperado = "Fallos controlados: 14 respuestas recibidas; timeout de cliente no cancela el servidor."
+                elif programa.name == "03_operacion_a_mano.py":
+                    esperado = "Métricas artificiales: 5 solicitudes; 5xx=2/5; buenas=1/5; media=27.4 ms."
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -538,6 +544,17 @@ def main():
             ejecutar([prefijo + programa, "--salida", Path(carpeta)/("u32-" + Path(programa).stem + ".json")], esperado)
             ejecutados += 1
         ejecutar([prefijo + "aplicacion/servidor.py", "--help"], "--puerto")
+        ejecutados += 1
+        prefijo = "unidad33-operacion-seguridad-observabilidad/"
+        for programa, esperado in (
+                ("ejemplos/01_observar_servicio.py", "8 eventos correlacionados"),
+                ("ejemplos/02_probar_fallos.py", "14 respuestas recibidas"),
+                ("soluciones/03_operacion_a_mano.py", "media=27.4 ms")):
+            ejecutar([prefijo + programa, "--salida", Path(carpeta)/("u33-" + Path(programa).stem + ".json")], esperado)
+            ejecutados += 1
+        ejecutar([prefijo + "ejemplos/figuras.py", "--salida", Path(carpeta)/"u33-figuras"], "Figura: conteos y denominadores")
+        ejecutados += 1
+        ejecutar([prefijo + "ejemplos/operacion.py", "--help"], "--mantenimiento")
         ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

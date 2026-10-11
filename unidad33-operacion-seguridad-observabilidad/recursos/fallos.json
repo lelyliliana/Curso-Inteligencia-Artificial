@@ -1,0 +1,539 @@
+{
+  "tipo": "HTTP_real_con_fallos_artificiales_inyectados",
+  "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf",
+  "fuentes_sha256": {
+    "ejemplos/operacion.py": "d1873eee4ed97699c1c9ca9845ed6f46f7f013bca6d899de5509f0c379d9d4bc",
+    "ejemplos/observacion.py": "5d081efb3f0666c5fd48409cff2f1f388f5daa63f947649398efa28a97f63f6d",
+    "ejemplos/laboratorio.py": "13ac5bff94906d92e73d26fd979bfbf14788fef8d090289fb9bddc6e423c21b7",
+    "../unidad32-modelo-aplicacion/aplicacion/contrato.py": "910bfa135f871c6ae559b33fc2a7f651db5ba7b61cb81b982a120513c39adfde",
+    "../unidad32-modelo-aplicacion/aplicacion/servicio.py": "46d354f48b00f8e62fa17bfc7cefece577bd08c8ad026387aa97aab88ea3564c",
+    "../unidad32-modelo-aplicacion/aplicacion/servidor.py": "66972de9a3407e5857724dceeff2bee31a674e8e3efa24ad9a556effc2fc3601"
+  },
+  "config": {
+    "conexiones": 4,
+    "inferencias": 1,
+    "espera_socket_s": 1.0,
+    "historial": 256,
+    "objetivo_ms": 100.0
+  },
+  "casos": [
+    {
+      "caso": "normal",
+      "esperado": 200,
+      "status": 200,
+      "solicitud_id": "0416d91c3ee34cc4aa76f78c3c0abcf8",
+      "retry_after": null,
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "derecha",
+          "clase": "encendida"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "caso": "saturacion_inferencia",
+      "esperado": 503,
+      "status": 503,
+      "solicitud_id": "3e8880d332f848a4a48b582c6d11de3f",
+      "retry_after": "1",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "ocupado",
+          "mensaje": "Hay una consulta en curso. Reintenta más tarde."
+        }
+      }
+    },
+    {
+      "caso": "ready_ocupado",
+      "esperado": 200,
+      "status": 200,
+      "solicitud_id": "8944cd67f4024c1d8ee46c9cbcd87228",
+      "retry_after": null,
+      "respuesta": {
+        "version": "1",
+        "estado": "listo",
+        "ocupado": true
+      }
+    },
+    {
+      "caso": "live_ocupado",
+      "esperado": 200,
+      "status": 200,
+      "solicitud_id": "dbcffc86cdc64286bd893c56dbf7c8f5",
+      "retry_after": null,
+      "respuesta": {
+        "version": "1",
+        "estado": "vivo"
+      }
+    },
+    {
+      "caso": "ready_mantenimiento",
+      "esperado": 503,
+      "status": 503,
+      "solicitud_id": "2b361334e52f40839fe044e622adf4d2",
+      "retry_after": "1",
+      "respuesta": {
+        "version": "1",
+        "estado": "mantenimiento",
+        "ocupado": true
+      }
+    },
+    {
+      "caso": "rechazo_mantenimiento",
+      "esperado": 503,
+      "status": 503,
+      "solicitud_id": "b49dce2b0be346d195e6a6e168890668",
+      "retry_after": "1",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "no_disponible",
+          "mensaje": "Predicciones temporalmente deshabilitadas."
+        }
+      }
+    },
+    {
+      "caso": "admitida_antes_mantenimiento",
+      "esperado": 200,
+      "status": 200,
+      "solicitud_id": "28712cc4fe7b490f999dbb915b1644aa",
+      "retry_after": null,
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "derecha",
+          "clase": "encendida"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "caso": "recuperacion_mantenimiento",
+      "esperado": 200,
+      "status": 200,
+      "solicitud_id": "296e02173e654e4ba05cd8b0e452fe30",
+      "retry_after": null,
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "derecha",
+          "clase": "encendida"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "caso": "fallo_inyectado",
+      "esperado": 500,
+      "status": 500,
+      "solicitud_id": "8758570b490c4b11acf413c5a833f763",
+      "retry_after": null,
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "error_interno",
+          "mensaje": "No se pudo completar la consulta. Revisa el servidor."
+        }
+      }
+    },
+    {
+      "caso": "ready_degradado",
+      "esperado": 503,
+      "status": 503,
+      "solicitud_id": "f9842673c5f344d5a4d11e20f9661e4c",
+      "retry_after": "1",
+      "respuesta": {
+        "version": "1",
+        "estado": "degradado",
+        "ocupado": false
+      }
+    },
+    {
+      "caso": "live_degradado",
+      "esperado": 200,
+      "status": 200,
+      "solicitud_id": "852b45d527834bb1984f76ff752a6999",
+      "retry_after": null,
+      "respuesta": {
+        "version": "1",
+        "estado": "vivo"
+      }
+    },
+    {
+      "caso": "rechazo_degradado",
+      "esperado": 503,
+      "status": 503,
+      "solicitud_id": "852a515dc5a34707bba4da441bbb483b",
+      "retry_after": "1",
+      "respuesta": {
+        "version": "1",
+        "estado": "error",
+        "error": {
+          "codigo": "no_disponible",
+          "mensaje": "Predicciones temporalmente deshabilitadas."
+        }
+      }
+    },
+    {
+      "caso": "recuperacion_fallo",
+      "esperado": 200,
+      "status": 200,
+      "solicitud_id": "f3dd92bbb3544398a056c34028a0937b",
+      "retry_after": null,
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "derecha",
+          "clase": "encendida"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    {
+      "caso": "despues_timeout_cliente",
+      "esperado": 200,
+      "status": 200,
+      "solicitud_id": "4c93e6717dc84224ae5a20d9892fc9a1",
+      "retry_after": null,
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "derecha",
+          "clase": "encendida"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    }
+  ],
+  "eventos": [
+    {
+      "evento": "http",
+      "solicitud_id": "0416d91c3ee34cc4aa76f78c3c0abcf8",
+      "ruta": "prediccion",
+      "metodo": "POST",
+      "status": 200,
+      "codigo": "ninguno",
+      "duracion_ms": 9.696844,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "3e8880d332f848a4a48b582c6d11de3f",
+      "ruta": "prediccion",
+      "metodo": "POST",
+      "status": 503,
+      "codigo": "ocupado",
+      "duracion_ms": 0.025077,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "8944cd67f4024c1d8ee46c9cbcd87228",
+      "ruta": "ready",
+      "metodo": "GET",
+      "status": 200,
+      "codigo": "ninguno",
+      "duracion_ms": 0.019838,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "dbcffc86cdc64286bd893c56dbf7c8f5",
+      "ruta": "live",
+      "metodo": "GET",
+      "status": 200,
+      "codigo": "ninguno",
+      "duracion_ms": 0.017733,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "2b361334e52f40839fe044e622adf4d2",
+      "ruta": "ready",
+      "metodo": "GET",
+      "status": 503,
+      "codigo": "ninguno",
+      "duracion_ms": 0.023684,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "b49dce2b0be346d195e6a6e168890668",
+      "ruta": "prediccion",
+      "metodo": "POST",
+      "status": 503,
+      "codigo": "no_disponible",
+      "duracion_ms": 0.02171,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "28712cc4fe7b490f999dbb915b1644aa",
+      "ruta": "prediccion",
+      "metodo": "POST",
+      "status": 200,
+      "codigo": "ninguno",
+      "duracion_ms": 3.4853,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "296e02173e654e4ba05cd8b0e452fe30",
+      "ruta": "prediccion",
+      "metodo": "POST",
+      "status": 200,
+      "codigo": "ninguno",
+      "duracion_ms": 0.331131,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "8758570b490c4b11acf413c5a833f763",
+      "ruta": "prediccion",
+      "metodo": "POST",
+      "status": 500,
+      "codigo": "error_interno",
+      "duracion_ms": 0.121979,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "f9842673c5f344d5a4d11e20f9661e4c",
+      "ruta": "ready",
+      "metodo": "GET",
+      "status": 503,
+      "codigo": "ninguno",
+      "duracion_ms": 0.018976,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "852b45d527834bb1984f76ff752a6999",
+      "ruta": "live",
+      "metodo": "GET",
+      "status": 200,
+      "codigo": "ninguno",
+      "duracion_ms": 0.018164,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "852a515dc5a34707bba4da441bbb483b",
+      "ruta": "prediccion",
+      "metodo": "POST",
+      "status": 503,
+      "codigo": "no_disponible",
+      "duracion_ms": 0.029966,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "f3dd92bbb3544398a056c34028a0937b",
+      "ruta": "prediccion",
+      "metodo": "POST",
+      "status": 200,
+      "codigo": "ninguno",
+      "duracion_ms": 0.393738,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "6a00a5df0584403ead691dc53efdd9a5",
+      "ruta": "prediccion",
+      "metodo": "POST",
+      "status": 200,
+      "codigo": "ninguno",
+      "duracion_ms": 101.088153,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    },
+    {
+      "evento": "http",
+      "solicitud_id": "4c93e6717dc84224ae5a20d9892fc9a1",
+      "ruta": "prediccion",
+      "metodo": "POST",
+      "status": 200,
+      "codigo": "ninguno",
+      "duracion_ms": 0.596149,
+      "modelo_sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    }
+  ],
+  "resumen": {
+    "alcance": "Desde el inicio del proceso; respuestas preparadas, no recepción confirmada.",
+    "terminadas": 15,
+    "en_curso": 0,
+    "abandonadas_sin_respuesta": 0,
+    "conexiones_rechazadas_antes_de_HTTP": 0,
+    "por_status": {
+      "200": 9,
+      "500": 1,
+      "503": 5
+    },
+    "por_ruta": {
+      "live": 2,
+      "prediccion": 10,
+      "ready": 3
+    },
+    "historial_conservado": 15,
+    "capacidad_historial": 256,
+    "prediccion_POST": {
+      "total": 10,
+      "exitos_2xx": 6,
+      "rechazos_4xx": 0,
+      "fallos_5xx": 4,
+      "tasa_5xx": 0.4,
+      "objetivo_ms": 100.0,
+      "exitos_dentro_objetivo": 5,
+      "fraccion_buenas": 0.5,
+      "media_ms": 11.579004699888173,
+      "histograma_acumulado": [
+        {
+          "le_ms": 1,
+          "n": 7
+        },
+        {
+          "le_ms": 5,
+          "n": 8
+        },
+        {
+          "le_ms": 20,
+          "n": 9
+        },
+        {
+          "le_ms": 100,
+          "n": 9
+        },
+        {
+          "le_ms": 500,
+          "n": 10
+        },
+        {
+          "le_ms": 2000,
+          "n": 10
+        },
+        {
+          "le_ms": "+Inf",
+          "n": 10
+        }
+      ]
+    }
+  },
+  "timeout_cliente": {
+    "resultado": "TimeoutError",
+    "servidor_seguia_ocupado": true,
+    "nota": "No hubo respuesta recibida; el servidor terminó y preparó un 200 después."
+  },
+  "canario_directo": {
+    "version": "1",
+    "estado": "ok",
+    "resultado": {
+      "lado": "derecha",
+      "clase": "encendida"
+    },
+    "modelo": {
+      "id": "fusion-u31",
+      "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+    }
+  },
+  "saturacion_conexiones": {
+    "respuesta_sin_solicitud_HTTP": "HTTP/1.0 503 Service Unavailable\r\nContent-Type: application/json\r\nContent-Length: 114\r\nRetry-After: 1\r\nConnection: close\r\n\r\n{\"version\": \"1\", \"estado\": \"error\", \"error\": {\"codigo\": \"ocupado\", \"mensaje\": \"Capacidad de conexiones agotada.\"}}",
+    "solicitud_admitida": {
+      "status": 200,
+      "solicitud_id": "06651d7874be453498748a3538499c30",
+      "retry_after": null,
+      "respuesta": {
+        "version": "1",
+        "estado": "ok",
+        "resultado": {
+          "lado": "derecha",
+          "clase": "encendida"
+        },
+        "modelo": {
+          "id": "fusion-u31",
+          "sha256": "f439b8cabb3b24f2fc3208ac4de57439a5226888bba25e84180a9c4aeb8228bf"
+        }
+      }
+    },
+    "resumen": {
+      "alcance": "Desde el inicio del proceso; respuestas preparadas, no recepción confirmada.",
+      "terminadas": 1,
+      "en_curso": 0,
+      "abandonadas_sin_respuesta": 0,
+      "conexiones_rechazadas_antes_de_HTTP": 1,
+      "por_status": {
+        "200": 1
+      },
+      "por_ruta": {
+        "prediccion": 1
+      },
+      "historial_conservado": 1,
+      "capacidad_historial": 256,
+      "prediccion_POST": {
+        "total": 1,
+        "exitos_2xx": 1,
+        "rechazos_4xx": 0,
+        "fallos_5xx": 0,
+        "tasa_5xx": 0.0,
+        "objetivo_ms": 100.0,
+        "exitos_dentro_objetivo": 1,
+        "fraccion_buenas": 1.0,
+        "media_ms": 0.9580280020600185,
+        "histograma_acumulado": [
+          {
+            "le_ms": 1,
+            "n": 1
+          },
+          {
+            "le_ms": 5,
+            "n": 1
+          },
+          {
+            "le_ms": 20,
+            "n": 1
+          },
+          {
+            "le_ms": 100,
+            "n": 1
+          },
+          {
+            "le_ms": 500,
+            "n": 1
+          },
+          {
+            "le_ms": 2000,
+            "n": 1
+          },
+          {
+            "le_ms": "+Inf",
+            "n": 1
+          }
+        ]
+      }
+    }
+  }
+}

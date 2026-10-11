@@ -1,0 +1,77 @@
+{
+  "tipo": "datos_artificiales_para_calculo",
+  "status": [
+    200,
+    200,
+    422,
+    503,
+    500
+  ],
+  "tiempos_ms": [
+    10,
+    30,
+    5,
+    2,
+    90
+  ],
+  "resumen": {
+    "alcance": "Desde el inicio del proceso; respuestas preparadas, no recepción confirmada.",
+    "terminadas": 5,
+    "en_curso": 0,
+    "abandonadas_sin_respuesta": 0,
+    "conexiones_rechazadas_antes_de_HTTP": 0,
+    "por_status": {
+      "200": 2,
+      "422": 1,
+      "500": 1,
+      "503": 1
+    },
+    "por_ruta": {
+      "prediccion": 5
+    },
+    "historial_conservado": 5,
+    "capacidad_historial": 256,
+    "prediccion_POST": {
+      "total": 5,
+      "exitos_2xx": 2,
+      "rechazos_4xx": 1,
+      "fallos_5xx": 2,
+      "tasa_5xx": 0.4,
+      "objetivo_ms": 20,
+      "exitos_dentro_objetivo": 1,
+      "fraccion_buenas": 0.2,
+      "media_ms": 27.4,
+      "histograma_acumulado": [
+        {
+          "le_ms": 1,
+          "n": 0
+        },
+        {
+          "le_ms": 5,
+          "n": 2
+        },
+        {
+          "le_ms": 20,
+          "n": 3
+        },
+        {
+          "le_ms": 100,
+          "n": 5
+        },
+        {
+          "le_ms": 500,
+          "n": 5
+        },
+        {
+          "le_ms": 2000,
+          "n": 5
+        },
+        {
+          "le_ms": "+Inf",
+          "n": 5
+        }
+      ]
+    }
+  },
+  "p95_rango_mas_cercano_ms": 90
+}
