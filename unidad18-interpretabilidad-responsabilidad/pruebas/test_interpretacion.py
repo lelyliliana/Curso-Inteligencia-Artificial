@@ -16,6 +16,8 @@ from sklearn.metrics import confusion_matrix
 
 UNIDAD = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(UNIDAD/"ejemplos"))
+sys.path.insert(0, str(UNIDAD.parent / "herramientas"))
+from comparaciones import assert_resultados
 import interpretacion as d
 import figuras
 
@@ -346,7 +348,7 @@ class Artefactos(Base):
             publicado = json.loads((UNIDAD/"recursos"/n/"informe.json").read_text())
             for clave in r:
                 if clave != "versiones":
-                    self.assertEqual(publicado[clave], r[clave])
+                    assert_resultados(self, r[clave], publicado[clave])
             self.assertEqual(publicado["versiones"]["matplotlib"], figuras.VERSIONES_GRAFICAS["matplotlib"])
             self.assertIsNone(publicado["prueba"])
 

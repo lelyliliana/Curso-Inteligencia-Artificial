@@ -12,6 +12,7 @@ import socket
 import subprocess
 import sys
 import tempfile
+import threading
 import unittest
 from unittest.mock import patch
 
@@ -261,15 +262,28 @@ class HTTPTest(unittest.TestCase):
         self.assertNotIn("resultado", r["respuesta"])
 
     def test_log_no_incluye_entrada(self):
-        salida = io.StringIO()
-        self.http.registrar = True
-        try:
+        registro_listo = threading.Event()
+
+        class CapturaRegistro(io.StringIO):
+            def write(self, texto):
+                escritos = super().write(texto)
+                if "\n" in texto:
+                    registro_listo.set()
+                return escritos
+
+        salida = CapturaRegistro()
+        # Servidor propio: no capturar registros de peticiones anteriores.
+        with servidor.servidor_temporal() as http:
+            http.registrar = True
             with redirect_stderr(salida):
-                self.pedir(cuerpo=serializar({"secreto": "contenido-privado"}))
-        finally:
-            self.http.registrar = False
+                r = apoyo.solicitud(http.server_port, "POST", "/api/predecir",
+                                    serializar({"secreto": "contenido-privado"}),
+                                    {"Content-Type": "application/json"})
+                self.assertEqual(r["status"], 422)
+                # Recibir HTTP no garantiza que el hilo ya haya escrito el log.
+                self.assertTrue(registro_listo.wait(2), "No se completó el registro HTTP")
         eventos = [json.loads(l) for l in salida.getvalue().splitlines()]
-        self.assertTrue(eventos)
+        self.assertEqual(len(eventos), 1)
         self.assertTrue(all(set(e) == {"evento", "metodo", "status", "duracion_ms"} for e in eventos))
         self.assertNotIn("contenido-privado", salida.getvalue())
 

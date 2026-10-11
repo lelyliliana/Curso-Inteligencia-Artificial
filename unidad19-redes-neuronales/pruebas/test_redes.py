@@ -17,6 +17,8 @@ from sklearn.metrics import log_loss
 
 UNIDAD = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(UNIDAD/"ejemplos"))
+sys.path.insert(0, str(UNIDAD.parent / "herramientas"))
+from comparaciones import assert_resultados
 import redes as r
 import figuras
 
@@ -354,7 +356,7 @@ class Artefactos(unittest.TestCase):
             actual = informe(nombre)
             for k in actual:
                 if k != "versiones":
-                    self.assertEqual(publicado[k], actual[k])
+                    assert_resultados(self, actual[k], publicado[k])
             self.assertIsNone(publicado["prueba"])
 
     def test_30_curvas_corresponden_y_no_usan_prueba(self):

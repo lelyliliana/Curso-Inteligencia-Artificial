@@ -16,6 +16,8 @@ from threadpoolctl import threadpool_limits
 
 UNIDAD = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(UNIDAD / "ejemplos"))
+sys.path.insert(0, str(UNIDAD.parent / "herramientas"))
+from comparaciones import assert_resultados
 import validacion as v
 import figuras
 
@@ -279,7 +281,17 @@ class DatosArtefactos(Base):
             guardado.pop("versiones")
             actual = copy.deepcopy(informe)
             actual.pop("versiones")
-            self.assertEqual(guardado, actual)
+            # KNN con distancia puede dejar un error casi cero al consultarse
+            # sobre entrenamiento. Acotar esa tolerancia solo a esas métricas;
+            # validación, predicciones y selección conservan el margen usual.
+            limites = {
+                ("resultados_cv", candidato, "pliegues", i, "entrenamiento", metrica): (1e-10, 1e-5)
+                for candidato, resultado in actual["resultados_cv"].items()
+                if candidato.endswith("_distance")
+                for i in range(len(resultado["pliegues"]))
+                for metrica in ("mae", "rmse", "sesgo")
+            }
+            assert_resultados(self, actual, guardado, tolerancias=limites)
             self.assertIsNone(guardado["prueba"])
             self.assertEqual(set(guardado["fuentes"]), {"desarrollo"})
 
@@ -288,7 +300,11 @@ class DatosArtefactos(Base):
             esperado = [dict(candidato=c, **r) for c, ev in informe["resultados_cv"].items() for r in ev["predicciones_oof"]]
             with (UNIDAD/"recursos"/nombre/"predicciones_oof.csv").open() as f:
                 filas = list(csv.DictReader(f))
-            self.assertEqual(filas, [{k: str(v) for k, v in r.items()} for r in esperado])
+            referencias = [{k: str(v) for k, v in r.items()} for r in esperado]
+            for fila in [*filas, *referencias]:
+                for campo in ("real", "prediccion", "residuo"):
+                    fila[campo] = float(fila[campo])
+            assert_resultados(self, filas, referencias)
 
 
 class Figuras(Base):

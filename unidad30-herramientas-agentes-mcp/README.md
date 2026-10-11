@@ -54,9 +54,9 @@ La operación `cambiar_umbral` aparece solo como nombre reconocido y siempre den
 
 Para `S-11`, la consulta autorizada devuelve `[18, 20, 22]`. La segunda herramienta usa esa copia conservada por la sesión:
 
-\[
+$$
 \bar{x}=\frac{18+20+22}{3}=20\;^\circ C.
-\]
+$$
 
 La propuesta de `calcular_media` solo contiene el ID. El modelo no puede sustituir las lecturas por `[99, 99, 99]`. El cálculo no necesita interpretación de la nota, y una sesión nueva no hereda consultas de otra.
 

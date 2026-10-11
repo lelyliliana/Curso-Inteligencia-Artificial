@@ -107,9 +107,9 @@ El historial en memoria conserva como máximo 256 eventos; los contadores acumul
 
 Para `POST /api/predecir`, el [observador](ejemplos/observacion.py) conserva total, respuestas 2xx, rechazos 4xx y fallos/no disponibilidad 5xx. La tasa definida es:
 
-\[
+$$
 \text{tasa 5xx} = \frac{\text{POST de predicción con 5xx}}{\text{todos los POST de predicción terminados}}.
-\]
+$$
 
 También calcula la fracción de respuestas 2xx preparadas en no más de 100 ms sobre ese mismo total. Los rechazos cuentan en el denominador; una respuesta de error muy rápida no se convierte en una respuesta buena. Sin solicitudes, las tasas y la media son `null`: no hay evidencia de una tasa cero.
 

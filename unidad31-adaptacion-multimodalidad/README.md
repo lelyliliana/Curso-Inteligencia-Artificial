@@ -45,15 +45,15 @@ El ajuste necesita ejemplos de entrada y objetivo, una pérdida y una partición
 
 ## 2. LoRA paso a paso
 
-Una capa lineal tiene pesos \(W_0\) de tamaño \(d_{salida}\times d_{entrada}\). LoRA mantiene esos pesos y aprende una actualización factorizada:
+Una capa lineal tiene pesos $W_0$ de tamaño $d_{salida}\times d_{entrada}$. LoRA mantiene esos pesos y aprende una actualización factorizada:
 
-\[
+$$
 W=W_0+\frac{\alpha}{r}BA,\qquad
 A\in\mathbb R^{r\times d_{entrada}},\quad
 B\in\mathbb R^{d_{salida}\times r}.
-\]
+$$
 
-La actualización tiene rango como máximo \(r\) y añade \(r(d_{entrada}+d_{salida})\) parámetros entrenables. El trabajo original aplica esta idea a modelos de lenguaje y estudia distintas matrices y rangos. Aquí se implementa una variante didáctica solo en la proyección final; no se reproducen la escala ni los resultados del artículo. [Artículo de LoRA](https://arxiv.org/abs/2106.09685)
+La actualización tiene rango como máximo $r$ y añade $r(d_{entrada}+d_{salida})$ parámetros entrenables. El trabajo original aplica esta idea a modelos de lenguaje y estudia distintas matrices y rangos. Aquí se implementa una variante didáctica solo en la proyección final; no se reproducen la escala ni los resultados del artículo. [Artículo de LoRA](https://arxiv.org/abs/2106.09685)
 
 Nuestra cabeza convierte 32 características en 26 logits. Con rango 2 necesita `2 × (32 + 26) = 116` parámetros nuevos. El modelo base completo tiene 11.066. El adaptador sin fusionar **sigue necesitando la base** y contiene 11.182 parámetros totales; reducir parámetros entrenables no elimina el costo de cargar el modelo.
 

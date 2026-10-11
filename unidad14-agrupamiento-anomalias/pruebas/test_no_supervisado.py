@@ -12,6 +12,8 @@ from unittest.mock import patch
 
 UNIDAD = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(UNIDAD / "ejemplos"))
+sys.path.insert(0, str(UNIDAD.parent / "herramientas"))
+from comparaciones import assert_resultados
 import flujo_no_supervisado as f
 from figuras import construir_figuras, guardar_figuras, plt
 import numpy as np
@@ -276,7 +278,7 @@ class DatosYSeparacion(unittest.TestCase):
             publicado = json.loads((UNIDAD / "recursos" / nombre / "informe.json").read_text())
             publicado.pop("versiones")
             informe.pop("versiones")
-            self.assertEqual(informe, publicado)
+            assert_resultados(self, informe, publicado)
 
 
 class Graficos(unittest.TestCase):

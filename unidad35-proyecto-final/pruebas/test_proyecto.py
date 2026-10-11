@@ -5,6 +5,7 @@ from datetime import timedelta
 import importlib.util
 import json
 from pathlib import Path
+import platform
 import subprocess
 import sys
 import tempfile
@@ -16,6 +17,8 @@ from sklearn.metrics import mean_absolute_error
 
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "ejemplos"))
+sys.path.insert(0, str(RAIZ.parent / "herramientas"))
+from comparaciones import assert_resultados
 import contrato
 import proyecto
 import servicio
@@ -193,14 +196,26 @@ class VersionYServicio(unittest.TestCase):
             return original(ruta)
         with patch.object(proyecto, "leer", side_effect=leer):
             modelo, informe = proyecto.desarrollar()
-        self.assertEqual(modelo, proyecto.cargar(MODELO))
-        self.assertEqual(informe, proyecto.leer(RAIZ / "recursos/validacion.json"))
+        publicado = proyecto.cargar(MODELO)  # Verifica huella y fuentes originales.
+        self.assertEqual(modelo["sha256"], proyecto.huella({k: v for k, v in modelo.items() if k != "sha256"}))
+        self.assertEqual(modelo["entorno"]["python"], platform.python_version())
+        self.assertEqual({k: v for k, v in modelo["entorno"].items() if k != "python"},
+                         {k: v for k, v in publicado["entorno"].items() if k != "python"})
+        assert_resultados(self,
+                          {k: v for k, v in modelo.items() if k not in ("entorno", "sha256")},
+                          {k: v for k, v in publicado.items() if k not in ("entorno", "sha256")})
+        guardado = proyecto.leer(RAIZ / "recursos/validacion.json")
+        self.assertEqual(informe["modelo_sha256"], modelo["sha256"])
+        self.assertEqual(guardado["modelo_sha256"], publicado["sha256"])
+        assert_resultados(self,
+                          {k: v for k, v in informe.items() if k != "modelo_sha256"},
+                          {k: v for k, v in guardado.items() if k != "modelo_sha256"})
 
     def test_cierre_sin_ajuste_ni_seleccion(self):
         with patch.object(proyecto, "ajustar", side_effect=AssertionError("ajuste")), \
              patch.object(proyecto, "desarrollar", side_effect=AssertionError("selección")):
             r = proyecto.cerrar(MODELO)
-        self.assertEqual(r, proyecto.leer(RAIZ / "recursos/prueba.json"))
+        assert_resultados(self, r, proyecto.leer(RAIZ / "recursos/prueba.json"))
         self.assertEqual([c["id"] for c in r["resultado"]["casos"]], [c["id"] for c in r["referencia"]["casos"]])
 
     def test_huella_modelo_y_fuentes(self):

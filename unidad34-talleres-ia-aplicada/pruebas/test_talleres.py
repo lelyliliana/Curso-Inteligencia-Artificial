@@ -6,6 +6,7 @@ import importlib.util
 import json
 import math
 from pathlib import Path
+import platform
 import subprocess
 import sys
 import tempfile
@@ -20,6 +21,8 @@ from sklearn.preprocessing import StandardScaler
 
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "ejemplos"))
+sys.path.insert(0, str(RAIZ.parent / "herramientas"))
+from comparaciones import assert_resultados
 import ambiente
 import documentos
 import energia
@@ -311,7 +314,15 @@ class EvidenciaYFlujo(unittest.TestCase):
         with patch.object(talleres, "leer", side_effect=lectura):
             for t in talleres.MODULOS:
                 nuevo, informe = talleres.desarrollo(t)
-                self.assertEqual(nuevo, paquete(t))
+                publicado = paquete(t)  # Comprueba las huellas originales.
+                self.assertEqual(nuevo["sha256"], talleres.huella({k: v for k, v in nuevo.items() if k != "sha256"}))
+                self.assertEqual(nuevo["entorno"]["python"], platform.python_version())
+                self.assertEqual({k: v for k, v in nuevo["entorno"].items() if k != "python"},
+                                 {k: v for k, v in publicado["entorno"].items() if k != "python"})
+                assert_resultados(self,
+                                  {k: v for k, v in nuevo.items() if k not in ("entorno", "sha256")},
+                                  {k: v for k, v in publicado.items() if k not in ("entorno", "sha256")})
+                self.assertEqual(informe["modelo_sha256"], nuevo["sha256"])
                 self.assertTrue(informe["recarga_identica"])
 
     def test_cierre_no_ajusta_ni_selecciona(self):
@@ -319,7 +330,7 @@ class EvidenciaYFlujo(unittest.TestCase):
             with patch.object(modulo, "ajustar", side_effect=AssertionError("ajuste prohibido")), \
                  patch.object(modulo, "desarrollar", side_effect=AssertionError("selección prohibida")):
                 r = talleres.cierre(t, RAIZ / "recursos" / t / "modelo.json")
-                self.assertEqual(r, talleres.leer(RAIZ / "recursos" / t / "prueba.json"))
+                assert_resultados(self, r, talleres.leer(RAIZ / "recursos" / t / "prueba.json"))
 
     def test_huellas_alteracion_y_taller_equivocado(self):
         with tempfile.TemporaryDirectory() as d:
@@ -340,8 +351,13 @@ class EvidenciaYFlujo(unittest.TestCase):
 
     def test_informes_reconstruidos(self):
         for t in talleres.MODULOS:
-            _, r = talleres.desarrollo(t)
-            self.assertEqual(r, talleres.leer(RAIZ / "recursos" / t / "validacion.json"))
+            nuevo, r = talleres.desarrollo(t)
+            publicado = talleres.leer(RAIZ / "recursos" / t / "validacion.json")
+            self.assertEqual(r["modelo_sha256"], nuevo["sha256"])
+            self.assertEqual(publicado["modelo_sha256"], paquete(t)["sha256"])
+            assert_resultados(self,
+                              {k: v for k, v in r.items() if k != "modelo_sha256"},
+                              {k: v for k, v in publicado.items() if k != "modelo_sha256"})
 
     def test_demo_sin_entrenar_y_con_identidad(self):
         for t, modulo in talleres.MODULOS.items():

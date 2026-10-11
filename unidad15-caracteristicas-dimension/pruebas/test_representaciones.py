@@ -12,6 +12,8 @@ from unittest.mock import patch
 
 UNIDAD = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(UNIDAD / "ejemplos"))
+sys.path.insert(0, str(UNIDAD.parent / "herramientas"))
+from comparaciones import assert_resultados
 import representaciones as r
 from figuras import construir_figuras, guardar_figuras, plt
 import numpy as np
@@ -251,7 +253,7 @@ class DatosYProtocolo(unittest.TestCase):
             publicado = json.loads((UNIDAD / "recursos" / nombre / "informe.json").read_text())
             actual.pop("versiones")
             publicado.pop("versiones")
-            self.assertEqual(actual, publicado)
+            assert_resultados(self, actual, publicado)
 
 
 class Figuras(unittest.TestCase):

@@ -276,7 +276,7 @@ class Artefactos(unittest.TestCase):
     def test_exportacion_recarga_y_no_sobrescritura(self):
         with tempfile.TemporaryDirectory() as d:
             p = Path(d) / "exportacion"
-            self.assertEqual(tc.exportar(self.informe, p), 0)
+            self.assertLessEqual(abs(tc.exportar(self.informe, p)), 1e-12)
             self.assertFalse((p / "predicciones_prueba.csv").exists())
             self.assertEqual(tc.cargar_modelo(p / "modelo.json"), self.informe["candidatos"]["unigramas"]["estado"])
             with self.assertRaises(FileExistsError):

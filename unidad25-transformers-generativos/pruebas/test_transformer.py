@@ -16,6 +16,8 @@ import torch.nn.functional as F
 
 UNIDAD = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(UNIDAD / "ejemplos"))
+sys.path.insert(0, str(UNIDAD.parent / "herramientas"))
+from comparaciones import assert_resultados
 import atencion as at
 import transformer_curso as tc
 spec = importlib.util.spec_from_file_location("generador_u25", UNIDAD / "datos/generar_datos.py")
@@ -322,10 +324,18 @@ class GeneracionYEstado(unittest.TestCase):
 
     def test_recarga_logits_y_generaciones_originales(self):
         val=tc.evaluar(self.modelo,self.vocab,self.val)
-        self.assertEqual(val,self.informe["candidatos"][self.estado["tipo"]]["validacion"])
+        assert_resultados(self, val, self.informe["candidatos"][self.estado["tipo"]]["validacion"],
+                          rtol=1e-6, atol=1e-7)
+        recargado, vocab = tc.cargar(self.ruta)
+        self.assertEqual(vocab, self.vocab)
         with torch.inference_mode():
-            firma=tc.huella_logits(self.modelo(tc.preparar(self.val,self.vocab)[0]))
-        self.assertEqual(firma,self.informe["logits_validacion_sha256"])
+            x = tc.preparar(self.val, self.vocab)[0]
+            logits, repetidos = self.modelo(x), recargado(x)
+        # Una huella de float32 depende del entorno. La igualdad bit a bit
+        # se comprueba entre dos recargas aquí, no contra otra máquina.
+        torch.testing.assert_close(logits, repetidos, atol=0, rtol=0)
+        self.assertEqual(tc.huella_logits(logits), tc.huella_logits(repetidos))
+        self.assertRegex(self.informe["logits_validacion_sha256"], r"^[0-9a-f]{64}$")
         self.assertEqual(tc.diagnosticar(self.modelo,self.vocab,self.val),self.informe["diagnosticos"])
 
     def test_exportar_y_recargar_bigramas(self):

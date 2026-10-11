@@ -7,7 +7,7 @@
 - Ejecución: 10 de octubre de 2026; Python 3.12.3, Linux x86_64.
 - Servidor: Ollama 0.34.2 local; modelo `bge-m3:567m`, GGUF F16, 566,70 M parámetros, 1024 dimensiones.
 - Digest: `7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab`.
-- Licencia declarada por ficha y metadatos: MIT. [Modelo original](https://huggingface.co/BAAI/bge-m3) · [Licencia](https://huggingface.co/BAAI/bge-m3/blob/main/LICENSE) · [Distribución consultada](https://ollama.com/library/bge-m3).
+- Licencia declarada por ficha y metadatos: MIT. [Modelo original](https://huggingface.co/BAAI/bge-m3) · [Declaración de licencia en la ficha](https://huggingface.co/BAAI/bge-m3/blob/main/README.md) · [Distribución consultada](https://ollama.com/library/bge-m3).
 - Pesos instalados: 1.157.672.605 bytes. Servidor: 1.218.969.598 bytes cargados, VRAM=0, contexto=2048. No es medición de pico de memoria del sistema.
 - CPU solicitada, cuatro hilos, contexto 2048, texto sin prefijos, una entrada por llamada, normalización L2 al indexar y consultar. Sin entrenamiento, APIs pagadas ni paquetes nuevos para inferencia.
 - Transporte reutilizado de la Unidad 26, ampliando su lista de destinos locales con `/api/embed`; sin proxy implícito ni redirecciones, timeout de socket 120 s y respuesta limitada a 1 MiB.

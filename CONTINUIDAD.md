@@ -82,6 +82,8 @@ Antes de desarrollar cada unidad, verificar documentación primaria de las bibli
 
 La ruta original está desarrollada. La última entrega incluye un proyecto completo y una guía de elección para estudiantes; la [revisión final](REVISION_FINAL.md) documenta progresión, navegación, dependencias y reproducción. Se conserva el historial de cada unidad a continuación.
 
+Mantenimiento del 11 de octubre de 2026: se corrigieron comparaciones numéricas entre entornos, la sincronización de una prueba HTTP, la presentación de fórmulas en U30/U31/U33 y un enlace de BGE-M3 en U28. El [alcance de estas correcciones](REVISION_FINAL.md#6-mantenimiento-del-11-de-octubre-de-2026) conserva los hallazgos y tolerancias; el verificador incorpora ocho pruebas de las herramientas comunes. Se mantienen los datos, modelos, capturas y resultados históricos.
+
 Para nuevas versiones:
 
 1. No volver a anunciar una unidad pendiente del programa original; distinguir ampliaciones o mantenimiento.

@@ -43,6 +43,9 @@ def verificar_archivos():
             continue
         # El material usa enlaces Markdown inline; excluimos ejemplos de código.
         prosa = re.sub(r"```.*?```", "", texto, flags=re.DOTALL)
+        matematicas = re.sub(r"`[^`\n]*`", "", prosa)
+        if re.search(r"\\\(|\\\[", matematicas):
+            raise RuntimeError(f"Usa $ o $$ para fórmulas en GitHub: {archivo.relative_to(RAIZ)}")
         for destino in re.findall(r"!?\[[^\]\n]*\]\(([^)\n]+)\)", prosa):
             url = destino.strip().strip("<>")
             partes = urlsplit(url)
@@ -60,6 +63,11 @@ def main():
             or {int(p.name[6:8]) for p in UNIDADES} != set(range(ULTIMA_UNIDAD + 1))):
         raise RuntimeError(f"Se espera una carpeta por unidad, de 0 a {ULTIMA_UNIDAD}.")
     verificar_archivos()
+    salida = ejecutar(["-m", "unittest", "discover", "-s", "herramientas/pruebas", "-v"])
+    resumen = re.search(r"Ran (\d+) tests?", salida)
+    if resumen is None or int(resumen[1]) == 0:
+        raise RuntimeError("No se descubrieron pruebas de las herramientas comunes.")
+    print(f"OK: {resumen[1]} pruebas de herramientas comunes.")
     ejecutados = 0
     for unidad in UNIDADES:
         for carpeta in ("ejemplos", "soluciones"):

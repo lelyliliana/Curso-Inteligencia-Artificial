@@ -18,6 +18,8 @@ from torch import nn
 
 UNIDAD = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(UNIDAD / "ejemplos"))
+sys.path.insert(0, str(UNIDAD.parent / "herramientas"))
+from comparaciones import assert_resultados
 import adaptacion as a
 import multimodal as m
 from comun import cargar, comprobar_familias, configurar, guardar, huella, restaurar_estado
@@ -280,7 +282,8 @@ class PersistenciaTest(unittest.TestCase):
         informe = cargar(UNIDAD / "recursos/adaptacion/informe.json")
         for metodo in a.METODOS:
             modelo, vocab = a.restaurar(cargar(UNIDAD / f"recursos/adaptacion/{metodo}.json"))
-            self.assertEqual(a.evaluar(modelo, vocab, filas), informe["candidatos"][metodo]["validacion"])
+            assert_resultados(self, a.evaluar(modelo, vocab, filas),
+                              informe["candidatos"][metodo]["validacion"], rtol=1e-6, atol=1e-7)
 
     def test_multimodal_config_fuentes_y_estado(self):
         obj = cargar(UNIDAD / "recursos/multimodal/modelo.json")
@@ -293,7 +296,8 @@ class PersistenciaTest(unittest.TestCase):
         informe = cargar(UNIDAD / "recursos/multimodal/informe.json")
         for modo in m.MODOS:
             modelo = m.restaurar(cargar(UNIDAD / f"recursos/multimodal/{modo}.json"))
-            self.assertEqual(m.evaluar(modelo, modo, filas), informe["candidatos"][modo]["validacion"])
+            assert_resultados(self, m.evaluar(modelo, modo, filas),
+                              informe["candidatos"][modo]["validacion"], rtol=1e-6, atol=1e-7)
 
     def test_guardado_json_y_no_finitos(self):
         with tempfile.TemporaryDirectory() as d:
@@ -334,13 +338,15 @@ class ProtocoloYArtefactosTest(unittest.TestCase):
     def test_cierre_adaptacion_sin_entrenar(self):
         with patch.object(a, "adaptar", side_effect=AssertionError("No entrenar")):
             r = a.cerrar(UNIDAD / "recursos/adaptacion/modelo.json")
-        self.assertEqual(r, cargar(UNIDAD / "recursos/adaptacion/cierre.json"))
+        assert_resultados(self, r, cargar(UNIDAD / "recursos/adaptacion/cierre.json"),
+                          rtol=1e-6, atol=1e-7)
         self.assertEqual(r["evaluacion"]["n_exactas"], 24)
 
     def test_cierre_multimodal_sin_entrenar(self):
         with patch.object(m, "entrenar", side_effect=AssertionError("No entrenar")):
             r = m.cerrar(UNIDAD / "recursos/multimodal/modelo.json")
-        self.assertEqual(r, cargar(UNIDAD / "recursos/multimodal/cierre.json"))
+        assert_resultados(self, r, cargar(UNIDAD / "recursos/multimodal/cierre.json"),
+                          rtol=1e-6, atol=1e-7)
         self.assertEqual(r["evaluacion"]["correctas"], 48)
 
     def test_diagnosticos_modalidades(self):
