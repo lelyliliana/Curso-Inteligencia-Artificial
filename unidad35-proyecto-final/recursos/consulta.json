@@ -1,0 +1,13 @@
+{
+  "solicitud_id": "3649a4b0e26740039ca20ff77e372c38",
+  "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+  "politica": "ridge_incremento",
+  "estado": "estimacion",
+  "resultado": {
+    "prediccion_kw": 43.76149316141129,
+    "instante_objetivo": "2026-10-20T11:00:00-05:00",
+    "minutos_hasta_objetivo": 55.0,
+    "estado": "estimacion",
+    "fuera_rango": false
+  }
+}

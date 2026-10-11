@@ -29,7 +29,7 @@ La matemática se explica cuando se necesita, con intuición, ejemplos pequeños
 
 ## Ruta de aprendizaje
 
-La secuencia comprende **36 unidades, de la 0 a la 35**. Los enlaces llevan a material publicado; los nombres sin enlace describen el alcance previsto.
+La secuencia comprende **36 unidades desarrolladas, de la 0 a la 35**. Los enlaces llevan al material de cada unidad.
 
 ### Bloque 1 — Fundamentos y preparación
 
@@ -97,7 +97,7 @@ La unidad 24 contiene dos prácticas independientes. Su propósito es reconocer 
 | 32 | [De un modelo a una aplicación](unidad32-modelo-aplicacion/README.md) |
 | 33 | [Operación, seguridad y observabilidad](unidad33-operacion-seguridad-observabilidad/README.md) |
 | 34 | [Talleres de IA aplicada](unidad34-talleres-ia-aplicada/README.md) |
-| 35 | Proyecto final integrador |
+| 35 | [Proyecto final integrador](unidad35-proyecto-final/README.md) |
 
 ## Cómo estudiar
 
@@ -126,7 +126,7 @@ Los datos de demostración se identificarán como públicos o sintéticos. Un re
 
 ## Material disponible
 
-Las **unidades 0 a 34 están desarrolladas**: 35 de las 36 unidades previstas. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
+Las **36 unidades, de la 0 a la 35, están desarrolladas**. Incluyen explicaciones, ejemplos ejecutables, ejercicios, soluciones y retos. El material disponible cubre:
 
 - **0–4:** entorno, formulación de proyectos, matemática aplicada y probabilidad.
 - **5–9:** búsqueda, reglas, obtención y preparación de datos, exploración y visualización.
@@ -142,10 +142,11 @@ Las **unidades 0 a 34 están desarrolladas**: 35 de las 36 unidades previstas. I
 - **32:** aplicación local con interfaz y API, carga única del modelo, validación de entradas, contratos HTTP y pruebas de integración.
 - **33:** límites de admisión, liveness/readiness, registros acotados, métricas con denominadores, fallos controlados y recuperación local.
 - **34:** talleres de energía/IoT, gestión ambiental y educación/documentos, con datos propios, referencias, cierres congelados, demos y análisis de fallos.
+- **35:** proyecto integrador con datos nuevos, criterio previo, referencia, cierre congelado, aplicación local, operación, informe, defensa y rúbrica de entrega.
 
-La entrega más reciente reúne tres talleres reproducibles: pronóstico horario, propuestas de revisión ambiental y consulta extractiva con citas. Compara referencias, guarda estados elegidos en validación y conserva cierres con cambios de distribución, omisiones y respuestas incorrectas. La **Unidad 35 está pendiente de desarrollo**: proyecto final integrador. Después corresponde la revisión transversal del curso; tener su título definido no equivale a haberlo terminado.
+La última entrega cierra la ruta con un proyecto de referencia y una guía para desarrollar y defender uno propio. La [revisión final](REVISION_FINAL.md) documenta progresión, navegación, dependencias y reproducción en un entorno limpio. El material del curso está completo; el aprendizaje requiere resolver las prácticas, recibir retroalimentación y entregar el proyecto.
 
-El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas pendientes y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 34, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22, 23 y 24 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; la Unidad 25 utiliza también el PyTorch CPU ya incorporado. Las unidades 26, 27, 28, 29 y 30 usan biblioteca estándar y reutilizan los paquetes gráficos opcionalmente; el verificador analiza sus capturas sin iniciar Ollama ni usar claves. La Unidad 28 también contrasta TF-IDF con scikit-learn en sus pruebas; la descarga opcional de BGE-M3 se documenta por separado. La Unidad 29 reutiliza los modelos locales ya incorporados y sus pruebas no necesitan servicios. La Unidad 30 ejecuta además un cliente y un servidor MCP propios en un subproceso local, sin red ni instalación de SDK. La Unidad 31 reutiliza PyTorch CPU y Pillow para adaptación y fusión multimodal, sin descargar pesos externos. Las unidades 32 y 33 reutilizan ese modelo en una aplicación local y su capa de operación; sus ejemplos y pruebas necesitan permitir conexiones a `127.0.0.1`, sin acceder a servicios externos. La Unidad 34 reutiliza NumPy, scikit-learn y Matplotlib para tres talleres sin sockets ni servicios. Las comprobaciones posteriores funcionan sin Internet:
+El [seguimiento de continuidad y calidad](CONTINUIDAD.md) documenta el punto de partida, las entregas y los criterios de revisión. Para comprobar sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 35, ejecuta desde la raíz con el entorno virtual activo. La instalación inicial incorpora las dependencias numéricas y gráficas compartidas con la Unidad 9 y scikit-learn, introducido en la Unidad 13, y PyTorch para CPU, incorporado en la Unidad 20, y Pillow para leer imágenes en la Unidad 21. Las unidades 22, 23 y 24 reutilizan estas dependencias numéricas y gráficas, sin añadir paquetes; la Unidad 25 utiliza también el PyTorch CPU ya incorporado. Las unidades 26, 27, 28, 29 y 30 usan biblioteca estándar y reutilizan los paquetes gráficos opcionalmente; el verificador analiza sus capturas sin iniciar Ollama ni usar claves. La Unidad 28 también contrasta TF-IDF con scikit-learn en sus pruebas; la descarga opcional de BGE-M3 se documenta por separado. La Unidad 29 reutiliza los modelos locales ya incorporados y sus pruebas no necesitan servicios. La Unidad 30 ejecuta además un cliente y un servidor MCP propios en un subproceso local, sin red ni instalación de SDK. La Unidad 31 reutiliza PyTorch CPU y Pillow para adaptación y fusión multimodal, sin descargar pesos externos. Las unidades 32 y 33 reutilizan ese modelo en una aplicación local y su capa de operación; sus ejemplos y pruebas necesitan permitir conexiones a `127.0.0.1`, sin acceder a servicios externos. Las unidades 34 y 35 reutilizan NumPy, scikit-learn y Matplotlib para talleres y proyecto final sin sockets ni servicios. El cierre se comprobó en un entorno virtual limpio; sus resultados y alcance están en la revisión final. Las comprobaciones posteriores funcionan sin Internet:
 
 ```bash
 python -m pip install -r unidad21-vision-computador/requirements.txt

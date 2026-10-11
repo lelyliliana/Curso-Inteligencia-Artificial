@@ -1,0 +1,204 @@
+{
+  "tipo": "comprobacion_funcional_con_casos_conocidos",
+  "respuestas": [
+    {
+      "caso": "valida",
+      "respuesta": {
+        "solicitud_id": "3b736610169d4cf0ae81956db8d0d4ef",
+        "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+        "politica": "ridge_incremento",
+        "estado": "estimacion",
+        "resultado": {
+          "prediccion_kw": 43.76149316141129,
+          "instante_objetivo": "2026-10-20T11:00:00-05:00",
+          "minutos_hasta_objetivo": 55.0,
+          "estado": "estimacion",
+          "fuera_rango": false
+        }
+      }
+    },
+    {
+      "caso": "fuera_rango",
+      "respuesta": {
+        "solicitud_id": "1150b3cc2c994caeb9525051508c4975",
+        "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+        "politica": "ridge_incremento",
+        "estado": "revisar",
+        "resultado": {
+          "prediccion_kw": 151.7614931614113,
+          "instante_objetivo": "2026-10-20T11:00:00-05:00",
+          "minutos_hasta_objetivo": 55.0,
+          "estado": "revisar",
+          "fuera_rango": true
+        }
+      }
+    },
+    {
+      "caso": "negativa",
+      "respuesta": {
+        "solicitud_id": "55d44422702d41a888360e26c5dccd61",
+        "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+        "politica": "ridge_incremento",
+        "estado": "rechazado",
+        "codigo": "potencia_invalida",
+        "mensaje": "Potencia finita requerida dentro del rango del contrato"
+      }
+    },
+    {
+      "caso": "tardia",
+      "respuesta": {
+        "solicitud_id": "42434600b9464248addcef83140da075",
+        "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+        "politica": "ridge_incremento",
+        "estado": "rechazado",
+        "codigo": "lectura_no_disponible",
+        "mensaje": "La lectura todavía no había llegado al decidir"
+      }
+    },
+    {
+      "caso": "json_roto",
+      "respuesta": {
+        "solicitud_id": "daf6222f7ad64d85800161747cf10f6d",
+        "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+        "politica": "ridge_incremento",
+        "estado": "rechazado",
+        "codigo": "json_invalido",
+        "mensaje": "JSON UTF-8 inválido, repetido o no finito"
+      }
+    },
+    {
+      "caso": "exceso",
+      "respuesta": {
+        "solicitud_id": "ec10dcb53b48477cb13bcd3853e63abe",
+        "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+        "politica": "ridge_incremento",
+        "estado": "rechazado",
+        "codigo": "tamano_invalido",
+        "mensaje": "Se admite una entrada de hasta 16 KiB"
+      }
+    },
+    {
+      "caso": "clave_repetida",
+      "respuesta": {
+        "solicitud_id": "00821b14a9fc4503a59513d1b37b13a7",
+        "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+        "politica": "ridge_incremento",
+        "estado": "rechazado",
+        "codigo": "json_invalido",
+        "mensaje": "JSON UTF-8 inválido, repetido o no finito"
+      }
+    },
+    {
+      "caso": "mantenimiento",
+      "respuesta": {
+        "solicitud_id": "08346ed8013e4a90ad3aec3a13601d83",
+        "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+        "politica": "ridge_incremento",
+        "estado": "rechazado",
+        "codigo": "mantenimiento",
+        "mensaje": "Servicio local en mantenimiento"
+      }
+    }
+  ],
+  "eventos": [
+    {
+      "solicitud_id": "3b736610169d4cf0ae81956db8d0d4ef",
+      "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+      "politica": "ridge_incremento",
+      "estado": "estimacion",
+      "codigo": "estimacion",
+      "duracion_ms": 0.100755
+    },
+    {
+      "solicitud_id": "1150b3cc2c994caeb9525051508c4975",
+      "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+      "politica": "ridge_incremento",
+      "estado": "revisar",
+      "codigo": "revisar",
+      "duracion_ms": 0.046255
+    },
+    {
+      "solicitud_id": "55d44422702d41a888360e26c5dccd61",
+      "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+      "politica": "ridge_incremento",
+      "estado": "rechazado",
+      "codigo": "potencia_invalida",
+      "duracion_ms": 0.02733
+    },
+    {
+      "solicitud_id": "42434600b9464248addcef83140da075",
+      "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+      "politica": "ridge_incremento",
+      "estado": "rechazado",
+      "codigo": "lectura_no_disponible",
+      "duracion_ms": 0.020538
+    },
+    {
+      "solicitud_id": "daf6222f7ad64d85800161747cf10f6d",
+      "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+      "politica": "ridge_incremento",
+      "estado": "rechazado",
+      "codigo": "json_invalido",
+      "duracion_ms": 0.021038
+    },
+    {
+      "solicitud_id": "ec10dcb53b48477cb13bcd3853e63abe",
+      "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+      "politica": "ridge_incremento",
+      "estado": "rechazado",
+      "codigo": "tamano_invalido",
+      "duracion_ms": 0.006001
+    },
+    {
+      "solicitud_id": "00821b14a9fc4503a59513d1b37b13a7",
+      "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+      "politica": "ridge_incremento",
+      "estado": "rechazado",
+      "codigo": "json_invalido",
+      "duracion_ms": 0.013364
+    },
+    {
+      "solicitud_id": "08346ed8013e4a90ad3aec3a13601d83",
+      "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+      "politica": "ridge_incremento",
+      "estado": "rechazado",
+      "codigo": "mantenimiento",
+      "duracion_ms": 0.006061
+    }
+  ],
+  "metricas": {
+    "solicitudes": 8,
+    "por_estado": {
+      "estimacion": 1,
+      "revisar": 1,
+      "rechazado": 6
+    },
+    "eventos_conservados": 8,
+    "capacidad_historial": 64,
+    "activo": false,
+    "fraccion_rechazada": 0.75
+  },
+  "referencia_separada": {
+    "solicitud_id": "26d248db32cf4b16b46240fae04386fc",
+    "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+    "politica": "persistencia",
+    "estado": "estimacion",
+    "resultado": {
+      "prediccion_kw": 42.0,
+      "instante_objetivo": "2026-10-20T11:00:00-05:00",
+      "minutos_hasta_objetivo": 55.0,
+      "estado": "estimacion",
+      "fuera_rango": false
+    }
+  },
+  "metricas_referencia": {
+    "solicitudes": 1,
+    "por_estado": {
+      "estimacion": 1
+    },
+    "eventos_conservados": 1,
+    "capacidad_historial": 64,
+    "activo": true,
+    "fraccion_rechazada": 0.0
+  }
+}

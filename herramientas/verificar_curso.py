@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 34.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 35.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa Internet.
 Las unidades 32 y 33 necesitan permitir conexiones HTTP locales a 127.0.0.1.
@@ -15,7 +15,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 34
+ULTIMA_UNIDAD = 35
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -32,7 +32,7 @@ def ejecutar(argumentos, esperado=None):
 
 def verificar_archivos():
     carpetas = [*UNIDADES, RAIZ / "datos", RAIZ / "herramientas"]
-    archivos = [RAIZ / "README.md", RAIZ / "CONTINUIDAD.md"]
+    archivos = [RAIZ / "README.md", RAIZ / "CONTINUIDAD.md", RAIZ / "REVISION_FINAL.md"]
     for carpeta in carpetas:
         archivos.extend(p for p in carpeta.rglob("*") if p.suffix in (".md", ".py"))
     enlaces = 0
@@ -233,6 +233,12 @@ def main():
                     esperado = '"horizonte_horas": 1'
                 elif programa.name == "05_decidir_a_mano.py":
                     esperado = "Decisión manual: MAE=2 kW; costo ambiental=5; costo documental=4; cobertura=2/4."
+                elif programa.name == "01_desarrollar_proyecto.py":
+                    esperado = "Proyecto elegido: ridge_incremento; recarga idéntica; prueba sin abrir."
+                elif programa.name == "02_probar_entrega.py":
+                    esperado = "Entrega local: 8 respuestas y 8 eventos; referencia separada=42 kW."
+                elif programa.name == "03_aceptacion_a_mano.py":
+                    esperado = "Aceptación manual: mejora=25%; cobertura=94%; criterio conjunto=False."
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -584,6 +590,28 @@ def main():
         ejecutar([prefijo + "ejemplos/figuras.py", "--salida", Path(carpeta) / "u34-figuras"], "Figuras U34")
         ejecutados += 1
         ejecutar([prefijo + "soluciones/05_decidir_a_mano.py", "--salida", Path(carpeta) / "u34-manual.json"], "cobertura=2/4")
+        ejecutados += 1
+        prefijo = "unidad35-proyecto-final/"
+        salida = Path(carpeta) / "u35-proyecto"
+        ejecutar([prefijo + "ejemplos/01_desarrollar_proyecto.py", "--salida", salida], "Proyecto elegido: ridge_incremento")
+        ejecutados += 1
+        ejecutar([prefijo + "ejemplos/01_desarrollar_proyecto.py", "--evaluar-prueba", "--modelo", salida / "modelo.json",
+                  "--salida", salida], "Cierre ridge_incremento: MAE=1.2341 kW; admitidas=236/240.")
+        ejecutados += 1
+        ejecutar([prefijo + "ejemplos/02_probar_entrega.py", "--modelo", salida / "modelo.json", "--salida", salida / "entrega.json"],
+                 "8 respuestas y 8 eventos")
+        ejecutados += 1
+        for extras, politica in (([], "ridge_incremento"), (["--referencia"], "persistencia")):
+            ejecutar([prefijo + "ejemplos/predecir.py", "--entrada", prefijo + "datos/consulta.json", "--modelo", salida / "modelo.json",
+                      "--salida", salida / f"consulta-{politica}.json", *extras], f'"politica": "{politica}"')
+            ejecutados += 1
+        ejecutar([prefijo + "soluciones/03_aceptacion_a_mano.py", "--salida", salida / "manual.json"], "criterio conjunto=False")
+        ejecutados += 1
+        ejecutar([prefijo + "datos/generar_datos.py", "--salida", salida / "datos"], "1200 decisiones nuevas")
+        ejecutados += 1
+        ejecutar([prefijo + "ejemplos/figuras.py", "--salida", salida / "figuras"], "MAE y cobertura separados")
+        ejecutados += 1
+        ejecutar(["herramientas/auditar_estructura.py", "--salida", salida / "auditoria.json"], "36 unidades; navegación completa")
         ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

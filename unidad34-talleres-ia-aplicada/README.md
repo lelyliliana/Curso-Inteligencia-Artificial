@@ -136,4 +136,4 @@ Las 43 pruebas cubren regeneración, cortes temporales, zonas/familias, ecuacion
 - [ ] Distingo integridad de archivos, calidad del modelo y preparación para operar.
 - [ ] Preparé una propuesta acotada para el proyecto final.
 
-**Siguiente unidad prevista:** 35 — Proyecto final integrador. El curso aún requiere esa entrega y la revisión transversal final.
+**Siguiente:** [Unidad 35 — Proyecto final integrador](../unidad35-proyecto-final/README.md).

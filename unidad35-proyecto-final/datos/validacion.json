@@ -1,0 +1,2882 @@
+[
+  {
+    "id": "PF0721",
+    "entrada": {
+      "potencia_kw": 32.91405,
+      "medido_en": "2026-10-07T00:00:00-05:00",
+      "recibido_en": "2026-10-07T00:01:00-05:00",
+      "decidir_en": "2026-10-07T00:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T01:00:00-05:00",
+    "objetivo_kw": 29.875144,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0722",
+    "entrada": {
+      "potencia_kw": 29.875144,
+      "medido_en": "2026-10-07T01:00:00-05:00",
+      "recibido_en": "2026-10-07T01:01:00-05:00",
+      "decidir_en": "2026-10-07T01:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T02:00:00-05:00",
+    "objetivo_kw": 33.430023,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0723",
+    "entrada": {
+      "potencia_kw": 33.430023,
+      "medido_en": "2026-10-07T02:00:00-05:00",
+      "recibido_en": "2026-10-07T02:01:00-05:00",
+      "decidir_en": "2026-10-07T02:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T03:00:00-05:00",
+    "objetivo_kw": 35.136392,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0724",
+    "entrada": {
+      "potencia_kw": 35.136392,
+      "medido_en": "2026-10-07T03:00:00-05:00",
+      "recibido_en": "2026-10-07T03:01:00-05:00",
+      "decidir_en": "2026-10-07T03:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T04:00:00-05:00",
+    "objetivo_kw": 33.347319,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0725",
+    "entrada": {
+      "potencia_kw": 33.347319,
+      "medido_en": "2026-10-07T04:00:00-05:00",
+      "recibido_en": "2026-10-07T04:01:00-05:00",
+      "decidir_en": "2026-10-07T04:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T05:00:00-05:00",
+    "objetivo_kw": 36.694163,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0726",
+    "entrada": {
+      "potencia_kw": 36.694163,
+      "medido_en": "2026-10-07T05:00:00-05:00",
+      "recibido_en": "2026-10-07T05:01:00-05:00",
+      "decidir_en": "2026-10-07T05:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T06:00:00-05:00",
+    "objetivo_kw": 38.565831,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0727",
+    "entrada": {
+      "potencia_kw": 38.565831,
+      "medido_en": "2026-10-07T06:00:00-05:00",
+      "recibido_en": "2026-10-07T06:01:00-05:00",
+      "decidir_en": "2026-10-07T06:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T07:00:00-05:00",
+    "objetivo_kw": 40.076031,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0728",
+    "entrada": {
+      "potencia_kw": 40.076031,
+      "medido_en": "2026-10-07T07:00:00-05:00",
+      "recibido_en": "2026-10-07T07:01:00-05:00",
+      "decidir_en": "2026-10-07T07:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T08:00:00-05:00",
+    "objetivo_kw": 44.977798,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0729",
+    "entrada": {
+      "potencia_kw": 44.977798,
+      "medido_en": "2026-10-07T08:00:00-05:00",
+      "recibido_en": "2026-10-07T08:01:00-05:00",
+      "decidir_en": "2026-10-07T08:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T09:00:00-05:00",
+    "objetivo_kw": 47.238573,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0730",
+    "entrada": {
+      "potencia_kw": 47.238573,
+      "medido_en": "2026-10-07T09:00:00-05:00",
+      "recibido_en": "2026-10-07T09:01:00-05:00",
+      "decidir_en": "2026-10-07T09:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T10:00:00-05:00",
+    "objetivo_kw": 49.979644,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0731",
+    "entrada": {
+      "potencia_kw": 49.979644,
+      "medido_en": "2026-10-07T10:00:00-05:00",
+      "recibido_en": "2026-10-07T10:01:00-05:00",
+      "decidir_en": "2026-10-07T10:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T11:00:00-05:00",
+    "objetivo_kw": 52.368473,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0732",
+    "entrada": {
+      "potencia_kw": 52.368473,
+      "medido_en": "2026-10-07T11:00:00-05:00",
+      "recibido_en": "2026-10-07T11:01:00-05:00",
+      "decidir_en": "2026-10-07T11:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T12:00:00-05:00",
+    "objetivo_kw": 51.739822,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0733",
+    "entrada": {
+      "potencia_kw": 51.739822,
+      "medido_en": "2026-10-07T12:00:00-05:00",
+      "recibido_en": "2026-10-07T12:01:00-05:00",
+      "decidir_en": "2026-10-07T12:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T13:00:00-05:00",
+    "objetivo_kw": 53.863664,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0734",
+    "entrada": {
+      "potencia_kw": 53.863664,
+      "medido_en": "2026-10-07T13:00:00-05:00",
+      "recibido_en": "2026-10-07T13:01:00-05:00",
+      "decidir_en": "2026-10-07T13:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T14:00:00-05:00",
+    "objetivo_kw": 52.690018,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0735",
+    "entrada": {
+      "potencia_kw": 52.690018,
+      "medido_en": "2026-10-07T14:00:00-05:00",
+      "recibido_en": "2026-10-07T14:01:00-05:00",
+      "decidir_en": "2026-10-07T14:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T15:00:00-05:00",
+    "objetivo_kw": 50.303844,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0736",
+    "entrada": {
+      "potencia_kw": 50.303844,
+      "medido_en": "2026-10-07T15:00:00-05:00",
+      "recibido_en": "2026-10-07T15:01:00-05:00",
+      "decidir_en": "2026-10-07T15:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T16:00:00-05:00",
+    "objetivo_kw": 48.379506,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0737",
+    "entrada": {
+      "potencia_kw": 48.379506,
+      "medido_en": "2026-10-07T16:00:00-05:00",
+      "recibido_en": "2026-10-07T16:01:00-05:00",
+      "decidir_en": "2026-10-07T16:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T17:00:00-05:00",
+    "objetivo_kw": 47.249849,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0738",
+    "entrada": {
+      "potencia_kw": 47.249849,
+      "medido_en": "2026-10-07T17:00:00-05:00",
+      "recibido_en": "2026-10-07T17:01:00-05:00",
+      "decidir_en": "2026-10-07T17:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T18:00:00-05:00",
+    "objetivo_kw": 47.507746,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0739",
+    "entrada": {
+      "potencia_kw": 47.507746,
+      "medido_en": "2026-10-07T18:00:00-05:00",
+      "recibido_en": "2026-10-07T18:01:00-05:00",
+      "decidir_en": "2026-10-07T18:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T19:00:00-05:00",
+    "objetivo_kw": 44.447462,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0740",
+    "entrada": {
+      "potencia_kw": 44.447462,
+      "medido_en": "2026-10-07T19:00:00-05:00",
+      "recibido_en": "2026-10-07T19:01:00-05:00",
+      "decidir_en": "2026-10-07T19:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T20:00:00-05:00",
+    "objetivo_kw": 38.598168,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0741",
+    "entrada": {
+      "potencia_kw": 38.598168,
+      "medido_en": "2026-10-07T20:00:00-05:00",
+      "recibido_en": "2026-10-07T20:01:00-05:00",
+      "decidir_en": "2026-10-07T20:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T21:00:00-05:00",
+    "objetivo_kw": 35.623163,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0742",
+    "entrada": {
+      "potencia_kw": 35.623163,
+      "medido_en": "2026-10-07T21:00:00-05:00",
+      "recibido_en": "2026-10-07T21:08:00-05:00",
+      "decidir_en": "2026-10-07T21:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T22:00:00-05:00",
+    "objetivo_kw": 35.707897,
+    "incidencia_inyectada": "tardia"
+  },
+  {
+    "id": "PF0743",
+    "entrada": {
+      "potencia_kw": 35.707897,
+      "medido_en": "2026-10-07T22:00:00-05:00",
+      "recibido_en": "2026-10-07T22:01:00-05:00",
+      "decidir_en": "2026-10-07T22:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-07T23:00:00-05:00",
+    "objetivo_kw": 32.81424,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0744",
+    "entrada": {
+      "potencia_kw": 32.81424,
+      "medido_en": "2026-10-07T23:00:00-05:00",
+      "recibido_en": "2026-10-07T23:01:00-05:00",
+      "decidir_en": "2026-10-07T23:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T00:00:00-05:00",
+    "objetivo_kw": 32.239756,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0745",
+    "entrada": {
+      "potencia_kw": 32.239756,
+      "medido_en": "2026-10-08T00:00:00-05:00",
+      "recibido_en": "2026-10-08T00:01:00-05:00",
+      "decidir_en": "2026-10-08T00:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T01:00:00-05:00",
+    "objetivo_kw": 30.470467,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0746",
+    "entrada": {
+      "potencia_kw": 30.470467,
+      "medido_en": "2026-10-08T01:00:00-05:00",
+      "recibido_en": "2026-10-08T01:01:00-05:00",
+      "decidir_en": "2026-10-08T01:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T02:00:00-05:00",
+    "objetivo_kw": 31.258457,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0747",
+    "entrada": {
+      "potencia_kw": 31.258457,
+      "medido_en": "2026-10-08T02:00:00-05:00",
+      "recibido_en": "2026-10-08T02:01:00-05:00",
+      "decidir_en": "2026-10-08T02:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T03:00:00-05:00",
+    "objetivo_kw": 32.067612,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0748",
+    "entrada": {
+      "potencia_kw": 32.067612,
+      "medido_en": "2026-10-08T03:00:00-05:00",
+      "recibido_en": "2026-10-08T03:01:00-05:00",
+      "decidir_en": "2026-10-08T03:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T04:00:00-05:00",
+    "objetivo_kw": 35.269489,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0749",
+    "entrada": {
+      "potencia_kw": 35.269489,
+      "medido_en": "2026-10-08T04:00:00-05:00",
+      "recibido_en": "2026-10-08T04:01:00-05:00",
+      "decidir_en": "2026-10-08T04:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T05:00:00-05:00",
+    "objetivo_kw": 36.673628,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0750",
+    "entrada": {
+      "potencia_kw": 36.673628,
+      "medido_en": "2026-10-08T05:00:00-05:00",
+      "recibido_en": "2026-10-08T05:01:00-05:00",
+      "decidir_en": "2026-10-08T05:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T06:00:00-05:00",
+    "objetivo_kw": 40.063809,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0751",
+    "entrada": {
+      "potencia_kw": 40.063809,
+      "medido_en": "2026-10-08T06:00:00-05:00",
+      "recibido_en": "2026-10-08T06:01:00-05:00",
+      "decidir_en": "2026-10-08T06:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T07:00:00-05:00",
+    "objetivo_kw": 40.805928,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0752",
+    "entrada": {
+      "potencia_kw": 40.805928,
+      "medido_en": "2026-10-08T07:00:00-05:00",
+      "recibido_en": "2026-10-08T07:01:00-05:00",
+      "decidir_en": "2026-10-08T07:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T08:00:00-05:00",
+    "objetivo_kw": 46.465307,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0753",
+    "entrada": {
+      "potencia_kw": 46.465307,
+      "medido_en": "2026-10-08T08:00:00-05:00",
+      "recibido_en": "2026-10-08T08:01:00-05:00",
+      "decidir_en": "2026-10-08T08:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T09:00:00-05:00",
+    "objetivo_kw": 47.129365,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0754",
+    "entrada": {
+      "potencia_kw": 47.129365,
+      "medido_en": "2026-10-08T09:00:00-05:00",
+      "recibido_en": "2026-10-08T09:01:00-05:00",
+      "decidir_en": "2026-10-08T09:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T10:00:00-05:00",
+    "objetivo_kw": 47.665958,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0755",
+    "entrada": {
+      "potencia_kw": 47.665958,
+      "medido_en": "2026-10-08T10:00:00-05:00",
+      "recibido_en": "2026-10-08T10:01:00-05:00",
+      "decidir_en": "2026-10-08T10:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T11:00:00-05:00",
+    "objetivo_kw": 51.648981,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0756",
+    "entrada": {
+      "potencia_kw": 51.648981,
+      "medido_en": "2026-10-08T11:00:00-05:00",
+      "recibido_en": "2026-10-08T11:01:00-05:00",
+      "decidir_en": "2026-10-08T11:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T12:00:00-05:00",
+    "objetivo_kw": 54.509037,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0757",
+    "entrada": {
+      "potencia_kw": 54.509037,
+      "medido_en": "2026-10-08T12:00:00-05:00",
+      "recibido_en": "2026-10-08T12:01:00-05:00",
+      "decidir_en": "2026-10-08T12:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T13:00:00-05:00",
+    "objetivo_kw": 51.638316,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0758",
+    "entrada": {
+      "potencia_kw": 51.638316,
+      "medido_en": "2026-10-08T13:00:00-05:00",
+      "recibido_en": "2026-10-08T13:01:00-05:00",
+      "decidir_en": "2026-10-08T13:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T14:00:00-05:00",
+    "objetivo_kw": 54.127643,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0759",
+    "entrada": {
+      "potencia_kw": 54.127643,
+      "medido_en": "2026-10-08T14:00:00-05:00",
+      "recibido_en": "2026-10-08T14:01:00-05:00",
+      "decidir_en": "2026-10-08T14:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T15:00:00-05:00",
+    "objetivo_kw": 50.166768,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0760",
+    "entrada": {
+      "potencia_kw": 50.166768,
+      "medido_en": "2026-10-08T15:00:00-05:00",
+      "recibido_en": "2026-10-08T15:01:00-05:00",
+      "decidir_en": "2026-10-08T15:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T16:00:00-05:00",
+    "objetivo_kw": 49.185844,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0761",
+    "entrada": {
+      "potencia_kw": 49.185844,
+      "medido_en": "2026-10-08T16:00:00-05:00",
+      "recibido_en": "2026-10-08T16:01:00-05:00",
+      "decidir_en": "2026-10-08T16:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T17:00:00-05:00",
+    "objetivo_kw": 48.936858,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0762",
+    "entrada": {
+      "potencia_kw": 48.936858,
+      "medido_en": "2026-10-08T17:00:00-05:00",
+      "recibido_en": "2026-10-08T17:01:00-05:00",
+      "decidir_en": "2026-10-08T17:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T18:00:00-05:00",
+    "objetivo_kw": 45.721452,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0763",
+    "entrada": {
+      "potencia_kw": 45.721452,
+      "medido_en": "2026-10-08T18:00:00-05:00",
+      "recibido_en": "2026-10-08T18:01:00-05:00",
+      "decidir_en": "2026-10-08T18:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T19:00:00-05:00",
+    "objetivo_kw": 43.167876,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0764",
+    "entrada": {
+      "potencia_kw": 43.167876,
+      "medido_en": "2026-10-08T19:00:00-05:00",
+      "recibido_en": "2026-10-08T19:01:00-05:00",
+      "decidir_en": "2026-10-08T19:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T20:00:00-05:00",
+    "objetivo_kw": 39.495505,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0765",
+    "entrada": {
+      "potencia_kw": 39.495505,
+      "medido_en": "2026-10-08T20:00:00-05:00",
+      "recibido_en": "2026-10-08T20:01:00-05:00",
+      "decidir_en": "2026-10-08T20:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T21:00:00-05:00",
+    "objetivo_kw": 36.162994,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0766",
+    "entrada": {
+      "potencia_kw": 36.162994,
+      "medido_en": "2026-10-08T21:00:00-05:00",
+      "recibido_en": "2026-10-08T21:01:00-05:00",
+      "decidir_en": "2026-10-08T21:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T22:00:00-05:00",
+    "objetivo_kw": 34.391398,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0767",
+    "entrada": {
+      "potencia_kw": 34.391398,
+      "medido_en": "2026-10-08T22:00:00-05:00",
+      "recibido_en": "2026-10-08T22:01:00-05:00",
+      "decidir_en": "2026-10-08T22:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-08T23:00:00-05:00",
+    "objetivo_kw": 33.777999,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0768",
+    "entrada": {
+      "potencia_kw": 33.777999,
+      "medido_en": "2026-10-08T23:00:00-05:00",
+      "recibido_en": "2026-10-08T23:01:00-05:00",
+      "decidir_en": "2026-10-08T23:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T00:00:00-05:00",
+    "objetivo_kw": 30.919215,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0769",
+    "entrada": {
+      "potencia_kw": 30.919215,
+      "medido_en": "2026-10-09T00:00:00-05:00",
+      "recibido_en": "2026-10-09T00:01:00-05:00",
+      "decidir_en": "2026-10-09T00:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T01:00:00-05:00",
+    "objetivo_kw": 29.121786,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0770",
+    "entrada": {
+      "potencia_kw": 29.121786,
+      "medido_en": "2026-10-09T01:00:00-05:00",
+      "recibido_en": "2026-10-09T01:01:00-05:00",
+      "decidir_en": "2026-10-09T01:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T02:00:00-05:00",
+    "objetivo_kw": 31.340635,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0771",
+    "entrada": {
+      "potencia_kw": 31.340635,
+      "medido_en": "2026-10-09T02:00:00-05:00",
+      "recibido_en": "2026-10-09T02:01:00-05:00",
+      "decidir_en": "2026-10-09T02:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T03:00:00-05:00",
+    "objetivo_kw": 30.641005,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0772",
+    "entrada": {
+      "potencia_kw": 30.641005,
+      "medido_en": "2026-10-09T03:00:00-05:00",
+      "recibido_en": "2026-10-09T03:01:00-05:00",
+      "decidir_en": "2026-10-09T03:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T04:00:00-05:00",
+    "objetivo_kw": 34.438714,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0773",
+    "entrada": {
+      "potencia_kw": 34.438714,
+      "medido_en": "2026-10-09T04:00:00-05:00",
+      "recibido_en": "2026-10-09T04:01:00-05:00",
+      "decidir_en": "2026-10-09T04:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T05:00:00-05:00",
+    "objetivo_kw": 37.655368,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0774",
+    "entrada": {
+      "potencia_kw": 37.655368,
+      "medido_en": "2026-10-09T05:00:00-05:00",
+      "recibido_en": "2026-10-09T05:01:00-05:00",
+      "decidir_en": "2026-10-09T05:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T06:00:00-05:00",
+    "objetivo_kw": 38.306228,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0775",
+    "entrada": {
+      "potencia_kw": 38.306228,
+      "medido_en": "2026-10-09T06:00:00-05:00",
+      "recibido_en": "2026-10-09T06:01:00-05:00",
+      "decidir_en": "2026-10-09T06:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T07:00:00-05:00",
+    "objetivo_kw": 41.383731,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0776",
+    "entrada": {
+      "potencia_kw": 41.383731,
+      "medido_en": "2026-10-09T07:00:00-05:00",
+      "recibido_en": "2026-10-09T07:01:00-05:00",
+      "decidir_en": "2026-10-09T07:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T08:00:00-05:00",
+    "objetivo_kw": 44.579495,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0777",
+    "entrada": {
+      "potencia_kw": 44.579495,
+      "medido_en": "2026-10-09T08:00:00-05:00",
+      "recibido_en": "2026-10-09T08:01:00-05:00",
+      "decidir_en": "2026-10-09T08:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T09:00:00-05:00",
+    "objetivo_kw": 48.645994,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0778",
+    "entrada": {
+      "potencia_kw": 48.645994,
+      "medido_en": "2026-10-09T09:00:00-05:00",
+      "recibido_en": "2026-10-09T09:01:00-05:00",
+      "decidir_en": "2026-10-09T09:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T10:00:00-05:00",
+    "objetivo_kw": 50.263286,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0779",
+    "entrada": {
+      "potencia_kw": 50.263286,
+      "medido_en": "2026-10-09T10:00:00-05:00",
+      "recibido_en": "2026-10-09T10:01:00-05:00",
+      "decidir_en": "2026-10-09T10:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T11:00:00-05:00",
+    "objetivo_kw": 48.633282,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0780",
+    "entrada": {
+      "potencia_kw": 48.633282,
+      "medido_en": "2026-10-09T11:00:00-05:00",
+      "recibido_en": "2026-10-09T11:01:00-05:00",
+      "decidir_en": "2026-10-09T11:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T12:00:00-05:00",
+    "objetivo_kw": 51.684257,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0781",
+    "entrada": {
+      "potencia_kw": 51.684257,
+      "medido_en": "2026-10-09T12:00:00-05:00",
+      "recibido_en": "2026-10-09T12:01:00-05:00",
+      "decidir_en": "2026-10-09T12:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T13:00:00-05:00",
+    "objetivo_kw": 53.370142,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0782",
+    "entrada": {
+      "potencia_kw": 53.370142,
+      "medido_en": "2026-10-09T13:00:00-05:00",
+      "recibido_en": "2026-10-09T13:01:00-05:00",
+      "decidir_en": "2026-10-09T13:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T14:00:00-05:00",
+    "objetivo_kw": 50.738658,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0783",
+    "entrada": {
+      "potencia_kw": 50.738658,
+      "medido_en": "2026-10-09T14:00:00-05:00",
+      "recibido_en": "2026-10-09T14:01:00-05:00",
+      "decidir_en": "2026-10-09T14:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T15:00:00-05:00",
+    "objetivo_kw": 50.950658,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0784",
+    "entrada": {
+      "potencia_kw": 50.950658,
+      "medido_en": "2026-10-09T15:00:00-05:00",
+      "recibido_en": "2026-10-09T15:01:00-05:00",
+      "decidir_en": "2026-10-09T15:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T16:00:00-05:00",
+    "objetivo_kw": 52.05879,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0785",
+    "entrada": {
+      "potencia_kw": 52.05879,
+      "medido_en": "2026-10-09T16:00:00-05:00",
+      "recibido_en": "2026-10-09T16:01:00-05:00",
+      "decidir_en": "2026-10-09T16:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T17:00:00-05:00",
+    "objetivo_kw": 46.215958,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0786",
+    "entrada": {
+      "potencia_kw": 46.215958,
+      "medido_en": "2026-10-09T17:00:00-05:00",
+      "recibido_en": "2026-10-09T17:01:00-05:00",
+      "decidir_en": "2026-10-09T17:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T18:00:00-05:00",
+    "objetivo_kw": 45.282488,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0787",
+    "entrada": {
+      "potencia_kw": 45.282488,
+      "medido_en": "2026-10-09T18:00:00-05:00",
+      "recibido_en": "2026-10-09T18:01:00-05:00",
+      "decidir_en": "2026-10-09T18:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T19:00:00-05:00",
+    "objetivo_kw": 41.817741,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0788",
+    "entrada": {
+      "potencia_kw": 41.817741,
+      "medido_en": "2026-10-09T19:00:00-05:00",
+      "recibido_en": "2026-10-09T19:01:00-05:00",
+      "decidir_en": "2026-10-09T19:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T20:00:00-05:00",
+    "objetivo_kw": 39.341822,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0789",
+    "entrada": {
+      "potencia_kw": 39.341822,
+      "medido_en": "2026-10-09T20:00:00-05:00",
+      "recibido_en": "2026-10-09T20:01:00-05:00",
+      "decidir_en": "2026-10-09T20:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T21:00:00-05:00",
+    "objetivo_kw": 36.816541,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0790",
+    "entrada": {
+      "potencia_kw": 36.816541,
+      "medido_en": "2026-10-09T21:00:00-05:00",
+      "recibido_en": "2026-10-09T21:01:00-05:00",
+      "decidir_en": "2026-10-09T21:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T22:00:00-05:00",
+    "objetivo_kw": 35.10566,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0791",
+    "entrada": {
+      "potencia_kw": 35.10566,
+      "medido_en": "2026-10-09T22:00:00-05:00",
+      "recibido_en": "2026-10-09T22:01:00-05:00",
+      "decidir_en": "2026-10-09T22:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-09T23:00:00-05:00",
+    "objetivo_kw": 32.8743,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0792",
+    "entrada": {
+      "potencia_kw": 32.8743,
+      "medido_en": "2026-10-09T23:00:00-05:00",
+      "recibido_en": "2026-10-09T23:01:00-05:00",
+      "decidir_en": "2026-10-09T23:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T00:00:00-05:00",
+    "objetivo_kw": 21.976122,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0793",
+    "entrada": {
+      "potencia_kw": 21.976122,
+      "medido_en": "2026-10-10T00:00:00-05:00",
+      "recibido_en": "2026-10-10T00:01:00-05:00",
+      "decidir_en": "2026-10-10T00:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T01:00:00-05:00",
+    "objetivo_kw": 21.334554,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0794",
+    "entrada": {
+      "potencia_kw": 21.334554,
+      "medido_en": "2026-10-10T01:00:00-05:00",
+      "recibido_en": "2026-10-10T01:01:00-05:00",
+      "decidir_en": "2026-10-10T01:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T02:00:00-05:00",
+    "objetivo_kw": 19.288876,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0795",
+    "entrada": {
+      "potencia_kw": 19.288876,
+      "medido_en": "2026-10-10T02:00:00-05:00",
+      "recibido_en": "2026-10-10T02:01:00-05:00",
+      "decidir_en": "2026-10-10T02:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T03:00:00-05:00",
+    "objetivo_kw": 20.640915,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0796",
+    "entrada": {
+      "potencia_kw": 20.640915,
+      "medido_en": "2026-10-10T03:00:00-05:00",
+      "recibido_en": "2026-10-10T03:01:00-05:00",
+      "decidir_en": "2026-10-10T03:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T04:00:00-05:00",
+    "objetivo_kw": 24.314112,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0797",
+    "entrada": {
+      "potencia_kw": 24.314112,
+      "medido_en": "2026-10-10T04:00:00-05:00",
+      "recibido_en": "2026-10-10T04:01:00-05:00",
+      "decidir_en": "2026-10-10T04:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T05:00:00-05:00",
+    "objetivo_kw": 25.454217,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0798",
+    "entrada": {
+      "potencia_kw": 25.454217,
+      "medido_en": "2026-10-10T05:00:00-05:00",
+      "recibido_en": "2026-10-10T05:01:00-05:00",
+      "decidir_en": "2026-10-10T05:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T06:00:00-05:00",
+    "objetivo_kw": 27.776333,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0799",
+    "entrada": {
+      "potencia_kw": 27.776333,
+      "medido_en": "2026-10-10T06:00:00-05:00",
+      "recibido_en": "2026-10-10T06:01:00-05:00",
+      "decidir_en": "2026-10-10T06:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T07:00:00-05:00",
+    "objetivo_kw": 33.367885,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0800",
+    "entrada": {
+      "potencia_kw": 33.367885,
+      "medido_en": "2026-10-10T07:00:00-05:00",
+      "recibido_en": "2026-10-10T07:01:00-05:00",
+      "decidir_en": "2026-10-10T07:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T08:00:00-05:00",
+    "objetivo_kw": 33.696553,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0801",
+    "entrada": {
+      "potencia_kw": null,
+      "medido_en": "2026-10-10T08:00:00-05:00",
+      "recibido_en": "2026-10-10T08:01:00-05:00",
+      "decidir_en": "2026-10-10T08:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T09:00:00-05:00",
+    "objetivo_kw": 38.197006,
+    "incidencia_inyectada": "ausente"
+  },
+  {
+    "id": "PF0802",
+    "entrada": {
+      "potencia_kw": 38.197006,
+      "medido_en": "2026-10-10T09:00:00-05:00",
+      "recibido_en": "2026-10-10T09:01:00-05:00",
+      "decidir_en": "2026-10-10T09:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T10:00:00-05:00",
+    "objetivo_kw": 39.467242,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0803",
+    "entrada": {
+      "potencia_kw": 39.467242,
+      "medido_en": "2026-10-10T10:00:00-05:00",
+      "recibido_en": "2026-10-10T10:01:00-05:00",
+      "decidir_en": "2026-10-10T10:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T11:00:00-05:00",
+    "objetivo_kw": 43.470466,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0804",
+    "entrada": {
+      "potencia_kw": 43.470466,
+      "medido_en": "2026-10-10T11:00:00-05:00",
+      "recibido_en": "2026-10-10T11:01:00-05:00",
+      "decidir_en": "2026-10-10T11:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T12:00:00-05:00",
+    "objetivo_kw": 43.419749,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0805",
+    "entrada": {
+      "potencia_kw": 43.419749,
+      "medido_en": "2026-10-10T12:00:00-05:00",
+      "recibido_en": "2026-10-10T12:01:00-05:00",
+      "decidir_en": "2026-10-10T12:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T13:00:00-05:00",
+    "objetivo_kw": 44.101512,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0806",
+    "entrada": {
+      "potencia_kw": 44.101512,
+      "medido_en": "2026-10-10T13:00:00-05:00",
+      "recibido_en": "2026-10-10T13:01:00-05:00",
+      "decidir_en": "2026-10-10T13:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T14:00:00-05:00",
+    "objetivo_kw": 43.114252,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0807",
+    "entrada": {
+      "potencia_kw": 43.114252,
+      "medido_en": "2026-10-10T14:00:00-05:00",
+      "recibido_en": "2026-10-10T14:01:00-05:00",
+      "decidir_en": "2026-10-10T14:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T15:00:00-05:00",
+    "objetivo_kw": 42.242699,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0808",
+    "entrada": {
+      "potencia_kw": 42.242699,
+      "medido_en": "2026-10-10T15:00:00-05:00",
+      "recibido_en": "2026-10-10T15:01:00-05:00",
+      "decidir_en": "2026-10-10T15:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T16:00:00-05:00",
+    "objetivo_kw": 38.691983,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0809",
+    "entrada": {
+      "potencia_kw": 38.691983,
+      "medido_en": "2026-10-10T16:00:00-05:00",
+      "recibido_en": "2026-10-10T16:01:00-05:00",
+      "decidir_en": "2026-10-10T16:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T17:00:00-05:00",
+    "objetivo_kw": 36.854196,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0810",
+    "entrada": {
+      "potencia_kw": 36.854196,
+      "medido_en": "2026-10-10T17:00:00-05:00",
+      "recibido_en": "2026-10-10T17:01:00-05:00",
+      "decidir_en": "2026-10-10T17:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T18:00:00-05:00",
+    "objetivo_kw": 33.520594,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0811",
+    "entrada": {
+      "potencia_kw": 33.520594,
+      "medido_en": "2026-10-10T18:00:00-05:00",
+      "recibido_en": "2026-10-10T18:01:00-05:00",
+      "decidir_en": "2026-10-10T18:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T19:00:00-05:00",
+    "objetivo_kw": 32.819148,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0812",
+    "entrada": {
+      "potencia_kw": 32.819148,
+      "medido_en": "2026-10-10T19:00:00-05:00",
+      "recibido_en": "2026-10-10T19:01:00-05:00",
+      "decidir_en": "2026-10-10T19:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T20:00:00-05:00",
+    "objetivo_kw": 29.854947,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0813",
+    "entrada": {
+      "potencia_kw": 29.854947,
+      "medido_en": "2026-10-10T20:00:00-05:00",
+      "recibido_en": "2026-10-10T20:01:00-05:00",
+      "decidir_en": "2026-10-10T20:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T21:00:00-05:00",
+    "objetivo_kw": 25.877521,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0814",
+    "entrada": {
+      "potencia_kw": 25.877521,
+      "medido_en": "2026-10-10T21:00:00-05:00",
+      "recibido_en": "2026-10-10T21:01:00-05:00",
+      "decidir_en": "2026-10-10T21:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T22:00:00-05:00",
+    "objetivo_kw": 23.117003,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0815",
+    "entrada": {
+      "potencia_kw": 23.117003,
+      "medido_en": "2026-10-10T22:00:00-05:00",
+      "recibido_en": "2026-10-10T22:01:00-05:00",
+      "decidir_en": "2026-10-10T22:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-10T23:00:00-05:00",
+    "objetivo_kw": 22.479661,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0816",
+    "entrada": {
+      "potencia_kw": 22.479661,
+      "medido_en": "2026-10-10T23:00:00-05:00",
+      "recibido_en": "2026-10-10T23:01:00-05:00",
+      "decidir_en": "2026-10-10T23:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T00:00:00-05:00",
+    "objetivo_kw": 23.181353,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0817",
+    "entrada": {
+      "potencia_kw": 23.181353,
+      "medido_en": "2026-10-11T00:00:00-05:00",
+      "recibido_en": "2026-10-11T00:01:00-05:00",
+      "decidir_en": "2026-10-11T00:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T01:00:00-05:00",
+    "objetivo_kw": 22.238371,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0818",
+    "entrada": {
+      "potencia_kw": 22.238371,
+      "medido_en": "2026-10-11T01:00:00-05:00",
+      "recibido_en": "2026-10-11T01:01:00-05:00",
+      "decidir_en": "2026-10-11T01:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T02:00:00-05:00",
+    "objetivo_kw": 23.486208,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0819",
+    "entrada": {
+      "potencia_kw": 23.486208,
+      "medido_en": "2026-10-11T02:00:00-05:00",
+      "recibido_en": "2026-10-11T02:01:00-05:00",
+      "decidir_en": "2026-10-11T02:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T03:00:00-05:00",
+    "objetivo_kw": 23.355858,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0820",
+    "entrada": {
+      "potencia_kw": 23.355858,
+      "medido_en": "2026-10-11T03:00:00-05:00",
+      "recibido_en": "2026-10-11T03:01:00-05:00",
+      "decidir_en": "2026-10-11T03:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T04:00:00-05:00",
+    "objetivo_kw": 31.25483,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0821",
+    "entrada": {
+      "potencia_kw": 31.25483,
+      "medido_en": "2026-10-11T04:00:00-05:00",
+      "recibido_en": "2026-10-11T04:01:00-05:00",
+      "decidir_en": "2026-10-11T04:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T05:00:00-05:00",
+    "objetivo_kw": 34.969886,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0822",
+    "entrada": {
+      "potencia_kw": 34.969886,
+      "medido_en": "2026-10-11T05:00:00-05:00",
+      "recibido_en": "2026-10-11T05:01:00-05:00",
+      "decidir_en": "2026-10-11T05:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T06:00:00-05:00",
+    "objetivo_kw": 37.377958,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0823",
+    "entrada": {
+      "potencia_kw": 37.377958,
+      "medido_en": "2026-10-11T06:00:00-05:00",
+      "recibido_en": "2026-10-11T06:01:00-05:00",
+      "decidir_en": "2026-10-11T06:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T07:00:00-05:00",
+    "objetivo_kw": 39.641301,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0824",
+    "entrada": {
+      "potencia_kw": 39.641301,
+      "medido_en": "2026-10-11T07:00:00-05:00",
+      "recibido_en": "2026-10-11T07:01:00-05:00",
+      "decidir_en": "2026-10-11T07:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T08:00:00-05:00",
+    "objetivo_kw": 44.014311,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0825",
+    "entrada": {
+      "potencia_kw": 44.014311,
+      "medido_en": "2026-10-11T08:00:00-05:00",
+      "recibido_en": "2026-10-11T08:01:00-05:00",
+      "decidir_en": "2026-10-11T08:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T09:00:00-05:00",
+    "objetivo_kw": 43.524512,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0826",
+    "entrada": {
+      "potencia_kw": 43.524512,
+      "medido_en": "2026-10-11T09:00:00-05:00",
+      "recibido_en": "2026-10-11T09:01:00-05:00",
+      "decidir_en": "2026-10-11T09:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T10:00:00-05:00",
+    "objetivo_kw": 47.913675,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0827",
+    "entrada": {
+      "potencia_kw": 47.913675,
+      "medido_en": "2026-10-11T10:00:00-05:00",
+      "recibido_en": "2026-10-11T10:01:00-05:00",
+      "decidir_en": "2026-10-11T10:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T11:00:00-05:00",
+    "objetivo_kw": 50.020904,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0828",
+    "entrada": {
+      "potencia_kw": 50.020904,
+      "medido_en": "2026-10-11T11:00:00-05:00",
+      "recibido_en": "2026-10-11T11:01:00-05:00",
+      "decidir_en": "2026-10-11T11:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T12:00:00-05:00",
+    "objetivo_kw": 51.457378,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0829",
+    "entrada": {
+      "potencia_kw": 51.457378,
+      "medido_en": "2026-10-11T12:00:00-05:00",
+      "recibido_en": "2026-10-11T12:01:00-05:00",
+      "decidir_en": "2026-10-11T12:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T13:00:00-05:00",
+    "objetivo_kw": 51.024828,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0830",
+    "entrada": {
+      "potencia_kw": 51.024828,
+      "medido_en": "2026-10-11T13:00:00-05:00",
+      "recibido_en": "2026-10-11T13:01:00-05:00",
+      "decidir_en": "2026-10-11T13:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T14:00:00-05:00",
+    "objetivo_kw": 51.970348,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0831",
+    "entrada": {
+      "potencia_kw": 51.970348,
+      "medido_en": "2026-10-11T14:00:00-05:00",
+      "recibido_en": "2026-10-11T14:01:00-05:00",
+      "decidir_en": "2026-10-11T14:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T15:00:00-05:00",
+    "objetivo_kw": 50.817631,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0832",
+    "entrada": {
+      "potencia_kw": 50.817631,
+      "medido_en": "2026-10-11T15:00:00-05:00",
+      "recibido_en": "2026-10-11T15:01:00-05:00",
+      "decidir_en": "2026-10-11T15:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T16:00:00-05:00",
+    "objetivo_kw": 47.797822,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0833",
+    "entrada": {
+      "potencia_kw": 47.797822,
+      "medido_en": "2026-10-11T16:00:00-05:00",
+      "recibido_en": "2026-10-11T16:01:00-05:00",
+      "decidir_en": "2026-10-11T16:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T17:00:00-05:00",
+    "objetivo_kw": 46.799047,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0834",
+    "entrada": {
+      "potencia_kw": 46.799047,
+      "medido_en": "2026-10-11T17:00:00-05:00",
+      "recibido_en": "2026-10-11T17:01:00-05:00",
+      "decidir_en": "2026-10-11T17:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T18:00:00-05:00",
+    "objetivo_kw": 44.004704,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0835",
+    "entrada": {
+      "potencia_kw": 44.004704,
+      "medido_en": "2026-10-11T18:00:00-05:00",
+      "recibido_en": "2026-10-11T18:01:00-05:00",
+      "decidir_en": "2026-10-11T18:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T19:00:00-05:00",
+    "objetivo_kw": 39.360839,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0836",
+    "entrada": {
+      "potencia_kw": 39.360839,
+      "medido_en": "2026-10-11T19:00:00-05:00",
+      "recibido_en": "2026-10-11T19:01:00-05:00",
+      "decidir_en": "2026-10-11T19:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T20:00:00-05:00",
+    "objetivo_kw": 35.824577,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0837",
+    "entrada": {
+      "potencia_kw": 35.824577,
+      "medido_en": "2026-10-11T20:00:00-05:00",
+      "recibido_en": "2026-10-11T20:01:00-05:00",
+      "decidir_en": "2026-10-11T20:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T21:00:00-05:00",
+    "objetivo_kw": 35.687928,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0838",
+    "entrada": {
+      "potencia_kw": 35.687928,
+      "medido_en": "2026-10-11T21:00:00-05:00",
+      "recibido_en": "2026-10-11T21:01:00-05:00",
+      "decidir_en": "2026-10-11T21:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T22:00:00-05:00",
+    "objetivo_kw": 31.416489,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0839",
+    "entrada": {
+      "potencia_kw": 31.416489,
+      "medido_en": "2026-10-11T22:00:00-05:00",
+      "recibido_en": "2026-10-11T22:01:00-05:00",
+      "decidir_en": "2026-10-11T22:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-11T23:00:00-05:00",
+    "objetivo_kw": 29.016926,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0840",
+    "entrada": {
+      "potencia_kw": 29.016926,
+      "medido_en": "2026-10-11T23:00:00-05:00",
+      "recibido_en": "2026-10-11T23:01:00-05:00",
+      "decidir_en": "2026-10-11T23:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T00:00:00-05:00",
+    "objetivo_kw": 40.019833,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0841",
+    "entrada": {
+      "potencia_kw": 40.019833,
+      "medido_en": "2026-10-12T00:00:00-05:00",
+      "recibido_en": "2026-10-12T00:01:00-05:00",
+      "decidir_en": "2026-10-12T00:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T01:00:00-05:00",
+    "objetivo_kw": 36.510935,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0842",
+    "entrada": {
+      "potencia_kw": 36.510935,
+      "medido_en": "2026-10-12T01:00:00-05:00",
+      "recibido_en": "2026-10-12T01:01:00-05:00",
+      "decidir_en": "2026-10-12T01:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T02:00:00-05:00",
+    "objetivo_kw": 38.301234,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0843",
+    "entrada": {
+      "potencia_kw": 38.301234,
+      "medido_en": "2026-10-12T02:00:00-05:00",
+      "recibido_en": "2026-10-12T02:01:00-05:00",
+      "decidir_en": "2026-10-12T02:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T03:00:00-05:00",
+    "objetivo_kw": 37.47685,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0844",
+    "entrada": {
+      "potencia_kw": 37.47685,
+      "medido_en": "2026-10-12T03:00:00-05:00",
+      "recibido_en": "2026-10-12T03:01:00-05:00",
+      "decidir_en": "2026-10-12T03:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T04:00:00-05:00",
+    "objetivo_kw": 41.906373,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0845",
+    "entrada": {
+      "potencia_kw": 41.906373,
+      "medido_en": "2026-10-12T04:00:00-05:00",
+      "recibido_en": "2026-10-12T04:01:00-05:00",
+      "decidir_en": "2026-10-12T04:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T05:00:00-05:00",
+    "objetivo_kw": 43.517467,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0846",
+    "entrada": {
+      "potencia_kw": 43.517467,
+      "medido_en": "2026-10-12T05:00:00-05:00",
+      "recibido_en": "2026-10-12T05:01:00-05:00",
+      "decidir_en": "2026-10-12T05:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T06:00:00-05:00",
+    "objetivo_kw": 46.649224,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0847",
+    "entrada": {
+      "potencia_kw": 46.649224,
+      "medido_en": "2026-10-12T06:00:00-05:00",
+      "recibido_en": "2026-10-12T06:01:00-05:00",
+      "decidir_en": "2026-10-12T06:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T07:00:00-05:00",
+    "objetivo_kw": 52.566272,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0848",
+    "entrada": {
+      "potencia_kw": 52.566272,
+      "medido_en": "2026-10-12T07:00:00-05:00",
+      "recibido_en": "2026-10-12T07:01:00-05:00",
+      "decidir_en": "2026-10-12T07:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T08:00:00-05:00",
+    "objetivo_kw": 54.433712,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0849",
+    "entrada": {
+      "potencia_kw": 54.433712,
+      "medido_en": "2026-10-12T08:00:00-05:00",
+      "recibido_en": "2026-10-12T08:01:00-05:00",
+      "decidir_en": "2026-10-12T08:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T09:00:00-05:00",
+    "objetivo_kw": 53.232443,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0850",
+    "entrada": {
+      "potencia_kw": 53.232443,
+      "medido_en": "2026-10-12T09:00:00-05:00",
+      "recibido_en": "2026-10-12T09:01:00-05:00",
+      "decidir_en": "2026-10-12T09:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T10:00:00-05:00",
+    "objetivo_kw": 57.724364,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0851",
+    "entrada": {
+      "potencia_kw": 57.724364,
+      "medido_en": "2026-10-12T10:00:00-05:00",
+      "recibido_en": "2026-10-12T10:01:00-05:00",
+      "decidir_en": "2026-10-12T10:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T11:00:00-05:00",
+    "objetivo_kw": 59.975829,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0852",
+    "entrada": {
+      "potencia_kw": 59.975829,
+      "medido_en": "2026-10-12T11:00:00-05:00",
+      "recibido_en": "2026-10-12T11:01:00-05:00",
+      "decidir_en": "2026-10-12T11:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T12:00:00-05:00",
+    "objetivo_kw": 60.380434,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0853",
+    "entrada": {
+      "potencia_kw": 60.380434,
+      "medido_en": "2026-10-12T12:00:00-05:00",
+      "recibido_en": "2026-10-12T12:01:00-05:00",
+      "decidir_en": "2026-10-12T12:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T13:00:00-05:00",
+    "objetivo_kw": 59.832989,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0854",
+    "entrada": {
+      "potencia_kw": 59.832989,
+      "medido_en": "2026-10-12T13:00:00-05:00",
+      "recibido_en": "2026-10-12T13:01:00-05:00",
+      "decidir_en": "2026-10-12T13:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T14:00:00-05:00",
+    "objetivo_kw": 61.610292,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0855",
+    "entrada": {
+      "potencia_kw": 61.610292,
+      "medido_en": "2026-10-12T14:00:00-05:00",
+      "recibido_en": "2026-10-12T14:01:00-05:00",
+      "decidir_en": "2026-10-12T14:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T15:00:00-05:00",
+    "objetivo_kw": 59.18254,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0856",
+    "entrada": {
+      "potencia_kw": 59.18254,
+      "medido_en": "2026-10-12T15:00:00-05:00",
+      "recibido_en": "2026-10-12T15:01:00-05:00",
+      "decidir_en": "2026-10-12T15:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T16:00:00-05:00",
+    "objetivo_kw": 59.324242,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0857",
+    "entrada": {
+      "potencia_kw": 59.324242,
+      "medido_en": "2026-10-12T16:00:00-05:00",
+      "recibido_en": "2026-10-12T16:01:00-05:00",
+      "decidir_en": "2026-10-12T16:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T17:00:00-05:00",
+    "objetivo_kw": 55.422226,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0858",
+    "entrada": {
+      "potencia_kw": 55.422226,
+      "medido_en": "2026-10-12T17:00:00-05:00",
+      "recibido_en": "2026-10-12T17:01:00-05:00",
+      "decidir_en": "2026-10-12T17:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T18:00:00-05:00",
+    "objetivo_kw": 52.41386,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0859",
+    "entrada": {
+      "potencia_kw": 52.41386,
+      "medido_en": "2026-10-12T18:00:00-05:00",
+      "recibido_en": "2026-10-12T18:01:00-05:00",
+      "decidir_en": "2026-10-12T18:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T19:00:00-05:00",
+    "objetivo_kw": 51.245188,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0860",
+    "entrada": {
+      "potencia_kw": 51.245188,
+      "medido_en": "2026-10-12T19:00:00-05:00",
+      "recibido_en": "2026-10-12T19:01:00-05:00",
+      "decidir_en": "2026-10-12T19:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T20:00:00-05:00",
+    "objetivo_kw": 46.602874,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0861",
+    "entrada": {
+      "potencia_kw": 46.602874,
+      "medido_en": "2026-10-12T20:00:00-05:00",
+      "recibido_en": "2026-10-12T20:01:00-05:00",
+      "decidir_en": "2026-10-12T20:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T21:00:00-05:00",
+    "objetivo_kw": 45.453664,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0862",
+    "entrada": {
+      "potencia_kw": 45.453664,
+      "medido_en": "2026-10-12T21:00:00-05:00",
+      "recibido_en": "2026-10-12T21:01:00-05:00",
+      "decidir_en": "2026-10-12T21:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T22:00:00-05:00",
+    "objetivo_kw": 41.144972,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0863",
+    "entrada": {
+      "potencia_kw": 41.144972,
+      "medido_en": "2026-10-12T22:00:00-05:00",
+      "recibido_en": "2026-10-12T22:01:00-05:00",
+      "decidir_en": "2026-10-12T22:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-12T23:00:00-05:00",
+    "objetivo_kw": 40.345131,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0864",
+    "entrada": {
+      "potencia_kw": 40.345131,
+      "medido_en": "2026-10-12T23:00:00-05:00",
+      "recibido_en": "2026-10-12T23:01:00-05:00",
+      "decidir_en": "2026-10-12T23:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T00:00:00-05:00",
+    "objetivo_kw": 39.369633,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0865",
+    "entrada": {
+      "potencia_kw": 39.369633,
+      "medido_en": "2026-10-13T00:00:00-05:00",
+      "recibido_en": "2026-10-13T00:01:00-05:00",
+      "decidir_en": "2026-10-13T00:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T01:00:00-05:00",
+    "objetivo_kw": 40.107963,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0866",
+    "entrada": {
+      "potencia_kw": 40.107963,
+      "medido_en": "2026-10-13T01:00:00-05:00",
+      "recibido_en": "2026-10-13T01:01:00-05:00",
+      "decidir_en": "2026-10-13T01:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T02:00:00-05:00",
+    "objetivo_kw": 41.234396,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0867",
+    "entrada": {
+      "potencia_kw": 41.234396,
+      "medido_en": "2026-10-13T02:00:00-05:00",
+      "recibido_en": "2026-10-13T02:01:00-05:00",
+      "decidir_en": "2026-10-13T02:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T03:00:00-05:00",
+    "objetivo_kw": 40.755392,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0868",
+    "entrada": {
+      "potencia_kw": 40.755392,
+      "medido_en": "2026-10-13T03:00:00-05:00",
+      "recibido_en": "2026-10-13T03:01:00-05:00",
+      "decidir_en": "2026-10-13T03:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T04:00:00-05:00",
+    "objetivo_kw": 43.015014,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0869",
+    "entrada": {
+      "potencia_kw": 43.015014,
+      "medido_en": "2026-10-13T04:00:00-05:00",
+      "recibido_en": "2026-10-13T04:01:00-05:00",
+      "decidir_en": "2026-10-13T04:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T05:00:00-05:00",
+    "objetivo_kw": 45.484297,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0870",
+    "entrada": {
+      "potencia_kw": 45.484297,
+      "medido_en": "2026-10-13T05:00:00-05:00",
+      "recibido_en": "2026-10-13T05:01:00-05:00",
+      "decidir_en": "2026-10-13T05:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T06:00:00-05:00",
+    "objetivo_kw": 46.204614,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0871",
+    "entrada": {
+      "potencia_kw": 46.204614,
+      "medido_en": "2026-10-13T06:00:00-05:00",
+      "recibido_en": "2026-10-13T06:01:00-05:00",
+      "decidir_en": "2026-10-13T06:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T07:00:00-05:00",
+    "objetivo_kw": 49.329703,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0872",
+    "entrada": {
+      "potencia_kw": 49.329703,
+      "medido_en": "2026-10-13T07:00:00-05:00",
+      "recibido_en": "2026-10-13T07:01:00-05:00",
+      "decidir_en": "2026-10-13T07:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T08:00:00-05:00",
+    "objetivo_kw": 52.917122,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0873",
+    "entrada": {
+      "potencia_kw": 52.917122,
+      "medido_en": "2026-10-13T08:00:00-05:00",
+      "recibido_en": "2026-10-13T08:01:00-05:00",
+      "decidir_en": "2026-10-13T08:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T09:00:00-05:00",
+    "objetivo_kw": 56.39344,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0874",
+    "entrada": {
+      "potencia_kw": 56.39344,
+      "medido_en": "2026-10-13T09:00:00-05:00",
+      "recibido_en": "2026-10-13T09:01:00-05:00",
+      "decidir_en": "2026-10-13T09:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T10:00:00-05:00",
+    "objetivo_kw": 57.315524,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0875",
+    "entrada": {
+      "potencia_kw": 57.315524,
+      "medido_en": "2026-10-13T10:00:00-05:00",
+      "recibido_en": "2026-10-13T10:01:00-05:00",
+      "decidir_en": "2026-10-13T10:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T11:00:00-05:00",
+    "objetivo_kw": 61.163617,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0876",
+    "entrada": {
+      "potencia_kw": 61.163617,
+      "medido_en": "2026-10-13T11:00:00-05:00",
+      "recibido_en": "2026-10-13T11:01:00-05:00",
+      "decidir_en": "2026-10-13T11:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T12:00:00-05:00",
+    "objetivo_kw": 59.322182,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0877",
+    "entrada": {
+      "potencia_kw": 59.322182,
+      "medido_en": "2026-10-13T12:00:00-05:00",
+      "recibido_en": "2026-10-13T12:01:00-05:00",
+      "decidir_en": "2026-10-13T12:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T13:00:00-05:00",
+    "objetivo_kw": 61.035242,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0878",
+    "entrada": {
+      "potencia_kw": 61.035242,
+      "medido_en": "2026-10-13T13:00:00-05:00",
+      "recibido_en": "2026-10-13T13:01:00-05:00",
+      "decidir_en": "2026-10-13T13:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T14:00:00-05:00",
+    "objetivo_kw": 59.672442,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0879",
+    "entrada": {
+      "potencia_kw": 59.672442,
+      "medido_en": "2026-10-13T14:00:00-05:00",
+      "recibido_en": "2026-10-13T14:01:00-05:00",
+      "decidir_en": "2026-10-13T14:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T15:00:00-05:00",
+    "objetivo_kw": 58.92461,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0880",
+    "entrada": {
+      "potencia_kw": 58.92461,
+      "medido_en": "2026-10-13T15:00:00-05:00",
+      "recibido_en": "2026-10-13T15:01:00-05:00",
+      "decidir_en": "2026-10-13T15:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T16:00:00-05:00",
+    "objetivo_kw": 58.645035,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0881",
+    "entrada": {
+      "potencia_kw": 58.645035,
+      "medido_en": "2026-10-13T16:00:00-05:00",
+      "recibido_en": "2026-10-13T16:01:00-05:00",
+      "decidir_en": "2026-10-13T16:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T17:00:00-05:00",
+    "objetivo_kw": 54.874203,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0882",
+    "entrada": {
+      "potencia_kw": 54.874203,
+      "medido_en": "2026-10-13T17:00:00-05:00",
+      "recibido_en": "2026-10-13T17:01:00-05:00",
+      "decidir_en": "2026-10-13T17:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T18:00:00-05:00",
+    "objetivo_kw": 51.778192,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0883",
+    "entrada": {
+      "potencia_kw": 51.778192,
+      "medido_en": "2026-10-13T18:00:00-05:00",
+      "recibido_en": "2026-10-13T18:01:00-05:00",
+      "decidir_en": "2026-10-13T18:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T19:00:00-05:00",
+    "objetivo_kw": 51.797577,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0884",
+    "entrada": {
+      "potencia_kw": 51.797577,
+      "medido_en": "2026-10-13T19:00:00-05:00",
+      "recibido_en": "2026-10-13T19:01:00-05:00",
+      "decidir_en": "2026-10-13T19:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T20:00:00-05:00",
+    "objetivo_kw": 48.335135,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0885",
+    "entrada": {
+      "potencia_kw": 48.335135,
+      "medido_en": "2026-10-13T20:00:00-05:00",
+      "recibido_en": "2026-10-13T20:01:00-05:00",
+      "decidir_en": "2026-10-13T20:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T21:00:00-05:00",
+    "objetivo_kw": 44.258284,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0886",
+    "entrada": {
+      "potencia_kw": 44.258284,
+      "medido_en": "2026-10-13T21:00:00-05:00",
+      "recibido_en": "2026-10-13T21:01:00-05:00",
+      "decidir_en": "2026-10-13T21:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T22:00:00-05:00",
+    "objetivo_kw": 43.774139,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0887",
+    "entrada": {
+      "potencia_kw": -3,
+      "medido_en": "2026-10-13T22:00:00-05:00",
+      "recibido_en": "2026-10-13T22:01:00-05:00",
+      "decidir_en": "2026-10-13T22:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-13T23:00:00-05:00",
+    "objetivo_kw": 40.548111,
+    "incidencia_inyectada": "negativa"
+  },
+  {
+    "id": "PF0888",
+    "entrada": {
+      "potencia_kw": 40.548111,
+      "medido_en": "2026-10-13T23:00:00-05:00",
+      "recibido_en": "2026-10-13T23:01:00-05:00",
+      "decidir_en": "2026-10-13T23:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T00:00:00-05:00",
+    "objetivo_kw": 39.106406,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0889",
+    "entrada": {
+      "potencia_kw": 39.106406,
+      "medido_en": "2026-10-14T00:00:00-05:00",
+      "recibido_en": "2026-10-14T00:01:00-05:00",
+      "decidir_en": "2026-10-14T00:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T01:00:00-05:00",
+    "objetivo_kw": 38.744516,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0890",
+    "entrada": {
+      "potencia_kw": 38.744516,
+      "medido_en": "2026-10-14T01:00:00-05:00",
+      "recibido_en": "2026-10-14T01:01:00-05:00",
+      "decidir_en": "2026-10-14T01:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T02:00:00-05:00",
+    "objetivo_kw": 39.658021,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0891",
+    "entrada": {
+      "potencia_kw": 39.658021,
+      "medido_en": "2026-10-14T02:00:00-05:00",
+      "recibido_en": "2026-10-14T02:01:00-05:00",
+      "decidir_en": "2026-10-14T02:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T03:00:00-05:00",
+    "objetivo_kw": 39.509783,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0892",
+    "entrada": {
+      "potencia_kw": 39.509783,
+      "medido_en": "2026-10-14T03:00:00-05:00",
+      "recibido_en": "2026-10-14T03:01:00-05:00",
+      "decidir_en": "2026-10-14T03:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T04:00:00-05:00",
+    "objetivo_kw": 42.104149,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0893",
+    "entrada": {
+      "potencia_kw": 42.104149,
+      "medido_en": "2026-10-14T04:00:00-05:00",
+      "recibido_en": "2026-10-14T04:01:00-05:00",
+      "decidir_en": "2026-10-14T04:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T05:00:00-05:00",
+    "objetivo_kw": 44.013658,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0894",
+    "entrada": {
+      "potencia_kw": 44.013658,
+      "medido_en": "2026-10-14T05:00:00-05:00",
+      "recibido_en": "2026-10-14T05:01:00-05:00",
+      "decidir_en": "2026-10-14T05:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T06:00:00-05:00",
+    "objetivo_kw": 46.68535,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0895",
+    "entrada": {
+      "potencia_kw": 46.68535,
+      "medido_en": "2026-10-14T06:00:00-05:00",
+      "recibido_en": "2026-10-14T06:01:00-05:00",
+      "decidir_en": "2026-10-14T06:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T07:00:00-05:00",
+    "objetivo_kw": 50.493818,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0896",
+    "entrada": {
+      "potencia_kw": 50.493818,
+      "medido_en": "2026-10-14T07:00:00-05:00",
+      "recibido_en": "2026-10-14T07:01:00-05:00",
+      "decidir_en": "2026-10-14T07:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T08:00:00-05:00",
+    "objetivo_kw": 53.274945,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0897",
+    "entrada": {
+      "potencia_kw": 53.274945,
+      "medido_en": "2026-10-14T08:00:00-05:00",
+      "recibido_en": "2026-10-14T08:01:00-05:00",
+      "decidir_en": "2026-10-14T08:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T09:00:00-05:00",
+    "objetivo_kw": 55.26376,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0898",
+    "entrada": {
+      "potencia_kw": 55.26376,
+      "medido_en": "2026-10-14T09:00:00-05:00",
+      "recibido_en": "2026-10-14T09:01:00-05:00",
+      "decidir_en": "2026-10-14T09:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T10:00:00-05:00",
+    "objetivo_kw": 56.889542,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0899",
+    "entrada": {
+      "potencia_kw": 56.889542,
+      "medido_en": "2026-10-14T10:00:00-05:00",
+      "recibido_en": "2026-10-14T10:01:00-05:00",
+      "decidir_en": "2026-10-14T10:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T11:00:00-05:00",
+    "objetivo_kw": 59.023735,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0900",
+    "entrada": {
+      "potencia_kw": 59.023735,
+      "medido_en": "2026-10-14T11:00:00-05:00",
+      "recibido_en": "2026-10-14T11:01:00-05:00",
+      "decidir_en": "2026-10-14T11:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T12:00:00-05:00",
+    "objetivo_kw": 61.559799,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0901",
+    "entrada": {
+      "potencia_kw": 61.559799,
+      "medido_en": "2026-10-14T12:00:00-05:00",
+      "recibido_en": "2026-10-14T12:01:00-05:00",
+      "decidir_en": "2026-10-14T12:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T13:00:00-05:00",
+    "objetivo_kw": 59.444836,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0902",
+    "entrada": {
+      "potencia_kw": 59.444836,
+      "medido_en": "2026-10-14T13:00:00-05:00",
+      "recibido_en": "2026-10-14T13:01:00-05:00",
+      "decidir_en": "2026-10-14T13:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T14:00:00-05:00",
+    "objetivo_kw": 60.594263,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0903",
+    "entrada": {
+      "potencia_kw": 60.594263,
+      "medido_en": "2026-10-14T14:00:00-05:00",
+      "recibido_en": "2026-10-14T14:01:00-05:00",
+      "decidir_en": "2026-10-14T14:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T15:00:00-05:00",
+    "objetivo_kw": 60.14794,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0904",
+    "entrada": {
+      "potencia_kw": 60.14794,
+      "medido_en": "2026-10-14T15:00:00-05:00",
+      "recibido_en": "2026-10-14T15:01:00-05:00",
+      "decidir_en": "2026-10-14T15:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T16:00:00-05:00",
+    "objetivo_kw": 58.263885,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0905",
+    "entrada": {
+      "potencia_kw": 58.263885,
+      "medido_en": "2026-10-14T16:00:00-05:00",
+      "recibido_en": "2026-10-14T16:01:00-05:00",
+      "decidir_en": "2026-10-14T16:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T17:00:00-05:00",
+    "objetivo_kw": 53.526152,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0906",
+    "entrada": {
+      "potencia_kw": 53.526152,
+      "medido_en": "2026-10-14T17:00:00-05:00",
+      "recibido_en": "2026-10-14T17:01:00-05:00",
+      "decidir_en": "2026-10-14T17:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T18:00:00-05:00",
+    "objetivo_kw": 53.076533,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0907",
+    "entrada": {
+      "potencia_kw": 53.076533,
+      "medido_en": "2026-10-14T18:00:00-05:00",
+      "recibido_en": "2026-10-14T18:01:00-05:00",
+      "decidir_en": "2026-10-14T18:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T19:00:00-05:00",
+    "objetivo_kw": 48.164113,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0908",
+    "entrada": {
+      "potencia_kw": 48.164113,
+      "medido_en": "2026-10-14T19:00:00-05:00",
+      "recibido_en": "2026-10-14T19:01:00-05:00",
+      "decidir_en": "2026-10-14T19:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T20:00:00-05:00",
+    "objetivo_kw": 46.386696,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0909",
+    "entrada": {
+      "potencia_kw": 46.386696,
+      "medido_en": "2026-10-14T20:00:00-05:00",
+      "recibido_en": "2026-10-14T20:01:00-05:00",
+      "decidir_en": "2026-10-14T20:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T21:00:00-05:00",
+    "objetivo_kw": 45.452281,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0910",
+    "entrada": {
+      "potencia_kw": 45.452281,
+      "medido_en": "2026-10-14T21:00:00-05:00",
+      "recibido_en": "2026-10-14T21:01:00-05:00",
+      "decidir_en": "2026-10-14T21:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T22:00:00-05:00",
+    "objetivo_kw": 43.262435,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0911",
+    "entrada": {
+      "potencia_kw": 43.262435,
+      "medido_en": "2026-10-14T22:00:00-05:00",
+      "recibido_en": "2026-10-14T22:01:00-05:00",
+      "decidir_en": "2026-10-14T22:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-14T23:00:00-05:00",
+    "objetivo_kw": 39.771231,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0912",
+    "entrada": {
+      "potencia_kw": 39.771231,
+      "medido_en": "2026-10-14T23:00:00-05:00",
+      "recibido_en": "2026-10-14T23:01:00-05:00",
+      "decidir_en": "2026-10-14T23:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T00:00:00-05:00",
+    "objetivo_kw": 39.432677,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0913",
+    "entrada": {
+      "potencia_kw": 39.432677,
+      "medido_en": "2026-10-15T00:00:00-05:00",
+      "recibido_en": "2026-10-15T00:01:00-05:00",
+      "decidir_en": "2026-10-15T00:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T01:00:00-05:00",
+    "objetivo_kw": 40.717295,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0914",
+    "entrada": {
+      "potencia_kw": 40.717295,
+      "medido_en": "2026-10-15T01:00:00-05:00",
+      "recibido_en": "2026-10-15T01:01:00-05:00",
+      "decidir_en": "2026-10-15T01:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T02:00:00-05:00",
+    "objetivo_kw": 40.112149,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0915",
+    "entrada": {
+      "potencia_kw": 40.112149,
+      "medido_en": "2026-10-15T02:00:00-05:00",
+      "recibido_en": "2026-10-15T02:01:00-05:00",
+      "decidir_en": "2026-10-15T02:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T03:00:00-05:00",
+    "objetivo_kw": 40.367768,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0916",
+    "entrada": {
+      "potencia_kw": 40.367768,
+      "medido_en": "2026-10-15T03:00:00-05:00",
+      "recibido_en": "2026-10-15T03:01:00-05:00",
+      "decidir_en": "2026-10-15T03:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T04:00:00-05:00",
+    "objetivo_kw": 41.44771,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0917",
+    "entrada": {
+      "potencia_kw": 41.44771,
+      "medido_en": "2026-10-15T04:00:00-05:00",
+      "recibido_en": "2026-10-15T04:01:00-05:00",
+      "decidir_en": "2026-10-15T04:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T05:00:00-05:00",
+    "objetivo_kw": 43.429506,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0918",
+    "entrada": {
+      "potencia_kw": 43.429506,
+      "medido_en": "2026-10-15T05:00:00-05:00",
+      "recibido_en": "2026-10-15T05:01:00-05:00",
+      "decidir_en": "2026-10-15T05:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T06:00:00-05:00",
+    "objetivo_kw": 46.552605,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0919",
+    "entrada": {
+      "potencia_kw": 46.552605,
+      "medido_en": "2026-10-15T06:00:00-05:00",
+      "recibido_en": "2026-10-15T06:01:00-05:00",
+      "decidir_en": "2026-10-15T06:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T07:00:00-05:00",
+    "objetivo_kw": 50.248157,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0920",
+    "entrada": {
+      "potencia_kw": 50.248157,
+      "medido_en": "2026-10-15T07:00:00-05:00",
+      "recibido_en": "2026-10-15T07:01:00-05:00",
+      "decidir_en": "2026-10-15T07:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T08:00:00-05:00",
+    "objetivo_kw": 51.71806,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0921",
+    "entrada": {
+      "potencia_kw": 51.71806,
+      "medido_en": "2026-10-15T08:00:00-05:00",
+      "recibido_en": "2026-10-15T08:01:00-05:00",
+      "decidir_en": "2026-10-15T08:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T09:00:00-05:00",
+    "objetivo_kw": 54.876146,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0922",
+    "entrada": {
+      "potencia_kw": 54.876146,
+      "medido_en": "2026-10-15T09:00:00-05:00",
+      "recibido_en": "2026-10-15T09:01:00-05:00",
+      "decidir_en": "2026-10-15T09:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T10:00:00-05:00",
+    "objetivo_kw": 59.334097,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0923",
+    "entrada": {
+      "potencia_kw": 59.334097,
+      "medido_en": "2026-10-15T10:00:00-05:00",
+      "recibido_en": "2026-10-15T10:01:00-05:00",
+      "decidir_en": "2026-10-15T10:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T11:00:00-05:00",
+    "objetivo_kw": 58.881796,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0924",
+    "entrada": {
+      "potencia_kw": 58.881796,
+      "medido_en": "2026-10-15T11:00:00-05:00",
+      "recibido_en": "2026-10-15T11:01:00-05:00",
+      "decidir_en": "2026-10-15T11:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T12:00:00-05:00",
+    "objetivo_kw": 58.388497,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0925",
+    "entrada": {
+      "potencia_kw": 58.388497,
+      "medido_en": "2026-10-15T12:00:00-05:00",
+      "recibido_en": "2026-10-15T12:01:00-05:00",
+      "decidir_en": "2026-10-15T12:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T13:00:00-05:00",
+    "objetivo_kw": 60.057129,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0926",
+    "entrada": {
+      "potencia_kw": 60.057129,
+      "medido_en": "2026-10-15T13:00:00-05:00",
+      "recibido_en": "2026-10-15T13:01:00-05:00",
+      "decidir_en": "2026-10-15T13:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T14:00:00-05:00",
+    "objetivo_kw": 61.200892,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0927",
+    "entrada": {
+      "potencia_kw": 61.200892,
+      "medido_en": "2026-10-15T14:00:00-05:00",
+      "recibido_en": "2026-10-15T14:01:00-05:00",
+      "decidir_en": "2026-10-15T14:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T15:00:00-05:00",
+    "objetivo_kw": 59.471436,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0928",
+    "entrada": {
+      "potencia_kw": 59.471436,
+      "medido_en": "2026-10-15T15:00:00-05:00",
+      "recibido_en": "2026-10-15T15:01:00-05:00",
+      "decidir_en": "2026-10-15T15:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T16:00:00-05:00",
+    "objetivo_kw": 59.709358,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0929",
+    "entrada": {
+      "potencia_kw": 59.709358,
+      "medido_en": "2026-10-15T16:00:00-05:00",
+      "recibido_en": "2026-10-15T16:01:00-05:00",
+      "decidir_en": "2026-10-15T16:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T17:00:00-05:00",
+    "objetivo_kw": 56.331244,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0930",
+    "entrada": {
+      "potencia_kw": 56.331244,
+      "medido_en": "2026-10-15T17:00:00-05:00",
+      "recibido_en": "2026-10-15T17:01:00-05:00",
+      "decidir_en": "2026-10-15T17:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T18:00:00-05:00",
+    "objetivo_kw": 55.843509,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0931",
+    "entrada": {
+      "potencia_kw": 55.843509,
+      "medido_en": "2026-10-15T18:00:00-05:00",
+      "recibido_en": "2026-10-15T18:01:00-05:00",
+      "decidir_en": "2026-10-15T18:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T19:00:00-05:00",
+    "objetivo_kw": 52.025951,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0932",
+    "entrada": {
+      "potencia_kw": 52.025951,
+      "medido_en": "2026-10-15T19:00:00-05:00",
+      "recibido_en": "2026-10-15T19:01:00-05:00",
+      "decidir_en": "2026-10-15T19:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T20:00:00-05:00",
+    "objetivo_kw": 47.508896,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0933",
+    "entrada": {
+      "potencia_kw": 47.508896,
+      "medido_en": "2026-10-15T20:00:00-05:00",
+      "recibido_en": "2026-10-15T20:01:00-05:00",
+      "decidir_en": "2026-10-15T20:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T21:00:00-05:00",
+    "objetivo_kw": 45.207423,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0934",
+    "entrada": {
+      "potencia_kw": 45.207423,
+      "medido_en": "2026-10-15T21:00:00-05:00",
+      "recibido_en": "2026-10-15T21:01:00-05:00",
+      "decidir_en": "2026-10-15T21:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T22:00:00-05:00",
+    "objetivo_kw": 41.650137,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0935",
+    "entrada": {
+      "potencia_kw": 41.650137,
+      "medido_en": "2026-10-15T22:00:00-05:00",
+      "recibido_en": "2026-10-15T22:01:00-05:00",
+      "decidir_en": "2026-10-15T22:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-15T23:00:00-05:00",
+    "objetivo_kw": 40.954094,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0936",
+    "entrada": {
+      "potencia_kw": 40.954094,
+      "medido_en": "2026-10-15T23:00:00-05:00",
+      "recibido_en": "2026-10-15T23:01:00-05:00",
+      "decidir_en": "2026-10-15T23:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T00:00:00-05:00",
+    "objetivo_kw": 39.588989,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0937",
+    "entrada": {
+      "potencia_kw": 39.588989,
+      "medido_en": "2026-10-16T00:00:00-05:00",
+      "recibido_en": "2026-10-16T00:01:00-05:00",
+      "decidir_en": "2026-10-16T00:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T01:00:00-05:00",
+    "objetivo_kw": 40.79545,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0938",
+    "entrada": {
+      "potencia_kw": 40.79545,
+      "medido_en": "2026-10-16T01:00:00-05:00",
+      "recibido_en": "2026-10-16T01:01:00-05:00",
+      "decidir_en": "2026-10-16T01:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T02:00:00-05:00",
+    "objetivo_kw": 38.148816,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0939",
+    "entrada": {
+      "potencia_kw": 38.148816,
+      "medido_en": "2026-10-16T02:00:00-05:00",
+      "recibido_en": "2026-10-16T02:01:00-05:00",
+      "decidir_en": "2026-10-16T02:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T03:00:00-05:00",
+    "objetivo_kw": 42.794498,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0940",
+    "entrada": {
+      "potencia_kw": 42.794498,
+      "medido_en": "2026-10-16T03:00:00-05:00",
+      "recibido_en": "2026-10-16T03:01:00-05:00",
+      "decidir_en": "2026-10-16T03:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T04:00:00-05:00",
+    "objetivo_kw": 42.344176,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0941",
+    "entrada": {
+      "potencia_kw": 42.344176,
+      "medido_en": "2026-10-16T04:00:00-05:00",
+      "recibido_en": "2026-10-16T04:01:00-05:00",
+      "decidir_en": "2026-10-16T04:20:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T05:00:00-05:00",
+    "objetivo_kw": 45.000416,
+    "incidencia_inyectada": "caducada"
+  },
+  {
+    "id": "PF0942",
+    "entrada": {
+      "potencia_kw": 45.000416,
+      "medido_en": "2026-10-16T05:00:00-05:00",
+      "recibido_en": "2026-10-16T05:01:00-05:00",
+      "decidir_en": "2026-10-16T05:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T06:00:00-05:00",
+    "objetivo_kw": 47.036229,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0943",
+    "entrada": {
+      "potencia_kw": 47.036229,
+      "medido_en": "2026-10-16T06:00:00-05:00",
+      "recibido_en": "2026-10-16T06:01:00-05:00",
+      "decidir_en": "2026-10-16T06:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T07:00:00-05:00",
+    "objetivo_kw": 50.394361,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0944",
+    "entrada": {
+      "potencia_kw": 50.394361,
+      "medido_en": "2026-10-16T07:00:00-05:00",
+      "recibido_en": "2026-10-16T07:01:00-05:00",
+      "decidir_en": "2026-10-16T07:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T08:00:00-05:00",
+    "objetivo_kw": 53.688448,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0945",
+    "entrada": {
+      "potencia_kw": 53.688448,
+      "medido_en": "2026-10-16T08:00:00-05:00",
+      "recibido_en": "2026-10-16T08:01:00-05:00",
+      "decidir_en": "2026-10-16T08:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T09:00:00-05:00",
+    "objetivo_kw": 53.888685,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0946",
+    "entrada": {
+      "potencia_kw": 53.888685,
+      "medido_en": "2026-10-16T09:00:00-05:00",
+      "recibido_en": "2026-10-16T09:01:00-05:00",
+      "decidir_en": "2026-10-16T09:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T10:00:00-05:00",
+    "objetivo_kw": 57.250335,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0947",
+    "entrada": {
+      "potencia_kw": 57.250335,
+      "medido_en": "2026-10-16T10:00:00-05:00",
+      "recibido_en": "2026-10-16T10:01:00-05:00",
+      "decidir_en": "2026-10-16T10:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T11:00:00-05:00",
+    "objetivo_kw": 60.585731,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0948",
+    "entrada": {
+      "potencia_kw": 60.585731,
+      "medido_en": "2026-10-16T11:00:00-05:00",
+      "recibido_en": "2026-10-16T11:01:00-05:00",
+      "decidir_en": "2026-10-16T11:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T12:00:00-05:00",
+    "objetivo_kw": 60.522738,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0949",
+    "entrada": {
+      "potencia_kw": 60.522738,
+      "medido_en": "2026-10-16T12:00:00-05:00",
+      "recibido_en": "2026-10-16T12:01:00-05:00",
+      "decidir_en": "2026-10-16T12:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T13:00:00-05:00",
+    "objetivo_kw": 61.313074,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0950",
+    "entrada": {
+      "potencia_kw": 61.313074,
+      "medido_en": "2026-10-16T13:00:00-05:00",
+      "recibido_en": "2026-10-16T13:01:00-05:00",
+      "decidir_en": "2026-10-16T13:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T14:00:00-05:00",
+    "objetivo_kw": 60.370392,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0951",
+    "entrada": {
+      "potencia_kw": 60.370392,
+      "medido_en": "2026-10-16T14:00:00-05:00",
+      "recibido_en": "2026-10-16T14:01:00-05:00",
+      "decidir_en": "2026-10-16T14:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T15:00:00-05:00",
+    "objetivo_kw": 60.215428,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0952",
+    "entrada": {
+      "potencia_kw": 60.215428,
+      "medido_en": "2026-10-16T15:00:00-05:00",
+      "recibido_en": "2026-10-16T15:01:00-05:00",
+      "decidir_en": "2026-10-16T15:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T16:00:00-05:00",
+    "objetivo_kw": 58.185542,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0953",
+    "entrada": {
+      "potencia_kw": 58.185542,
+      "medido_en": "2026-10-16T16:00:00-05:00",
+      "recibido_en": "2026-10-16T16:01:00-05:00",
+      "decidir_en": "2026-10-16T16:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T17:00:00-05:00",
+    "objetivo_kw": 56.136517,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0954",
+    "entrada": {
+      "potencia_kw": 56.136517,
+      "medido_en": "2026-10-16T17:00:00-05:00",
+      "recibido_en": "2026-10-16T17:01:00-05:00",
+      "decidir_en": "2026-10-16T17:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T18:00:00-05:00",
+    "objetivo_kw": 54.397803,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0955",
+    "entrada": {
+      "potencia_kw": 54.397803,
+      "medido_en": "2026-10-16T18:00:00-05:00",
+      "recibido_en": "2026-10-16T18:01:00-05:00",
+      "decidir_en": "2026-10-16T18:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T19:00:00-05:00",
+    "objetivo_kw": 51.564547,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0956",
+    "entrada": {
+      "potencia_kw": 51.564547,
+      "medido_en": "2026-10-16T19:00:00-05:00",
+      "recibido_en": "2026-10-16T19:01:00-05:00",
+      "decidir_en": "2026-10-16T19:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T20:00:00-05:00",
+    "objetivo_kw": 47.678641,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0957",
+    "entrada": {
+      "potencia_kw": 47.678641,
+      "medido_en": "2026-10-16T20:00:00-05:00",
+      "recibido_en": "2026-10-16T20:01:00-05:00",
+      "decidir_en": "2026-10-16T20:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T21:00:00-05:00",
+    "objetivo_kw": 45.794794,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0958",
+    "entrada": {
+      "potencia_kw": 45.794794,
+      "medido_en": "2026-10-16T21:00:00-05:00",
+      "recibido_en": "2026-10-16T21:01:00-05:00",
+      "decidir_en": "2026-10-16T21:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T22:00:00-05:00",
+    "objetivo_kw": 43.520759,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0959",
+    "entrada": {
+      "potencia_kw": 43.520759,
+      "medido_en": "2026-10-16T22:00:00-05:00",
+      "recibido_en": "2026-10-16T22:01:00-05:00",
+      "decidir_en": "2026-10-16T22:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-16T23:00:00-05:00",
+    "objetivo_kw": 40.810015,
+    "incidencia_inyectada": null
+  },
+  {
+    "id": "PF0960",
+    "entrada": {
+      "potencia_kw": 40.810015,
+      "medido_en": "2026-10-16T23:00:00-05:00",
+      "recibido_en": "2026-10-16T23:01:00-05:00",
+      "decidir_en": "2026-10-16T23:05:00-05:00"
+    },
+    "instante_objetivo": "2026-10-17T00:00:00-05:00",
+    "objetivo_kw": 29.681518,
+    "incidencia_inyectada": null
+  }
+]

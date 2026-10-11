@@ -1,0 +1,2 @@
+# Entorno de los talleres anteriores; el proyecto no necesita PyTorch ni servicios.
+-r ../unidad34-talleres-ia-aplicada/requirements.txt

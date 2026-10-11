@@ -1,0 +1,20 @@
+{
+  "version": "u35-v1",
+  "fecha": "2026-10-10",
+  "semilla": 3501,
+  "horas": 1201,
+  "ultimo_objetivo_entrenamiento": 720,
+  "ultimo_objetivo_validacion": 960,
+  "candidatos": ["persistencia", "ridge_nivel", "ridge_incremento"],
+  "alpha": 1.0,
+  "criterio": "menor MAE sobre los mismos casos admitidos; empate por orden",
+  "reajuste_tras_seleccion": false,
+  "comparar_en_cierre": ["elegido", "persistencia"],
+  "aceptacion_didactica": {
+    "mae_maximo_kw": 2.0,
+    "reduccion_minima_frente_persistencia": 0.1,
+    "cobertura_minima": 0.95
+  },
+  "contrato": {"potencia_min_kw": 0, "potencia_max_kw": 200, "edad_maxima_minutos": 15},
+  "alcance": "un edificio ficticio; inferencia local, sin control de cargas ni ahorro medido"
+}

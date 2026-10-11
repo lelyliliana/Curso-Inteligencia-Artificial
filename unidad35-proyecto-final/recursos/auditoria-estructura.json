@@ -1,0 +1,272 @@
+{
+  "unidades": [
+    {
+      "unidad": 0,
+      "carpeta": "unidad00-entorno",
+      "titulo": "Unidad 0 — Preparación del entorno y forma de trabajar",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 1,
+      "carpeta": "unidad01-que-es-ia",
+      "titulo": "Unidad 1 — Qué es la inteligencia artificial",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 2,
+      "carpeta": "unidad02-proyecto-ia",
+      "titulo": "Unidad 2 — Del problema al proyecto de IA",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 3,
+      "carpeta": "unidad03-matematica-aplicada",
+      "titulo": "Unidad 3 — Matemática aplicada: vectores, matrices y optimización",
+      "ejemplos_numerados": 3,
+      "navegacion": true
+    },
+    {
+      "unidad": 4,
+      "carpeta": "unidad04-probabilidad-estadistica",
+      "titulo": "Unidad 4 — Probabilidad y estadística",
+      "ejemplos_numerados": 4,
+      "navegacion": true
+    },
+    {
+      "unidad": 5,
+      "carpeta": "unidad05-busqueda-heuristicas",
+      "titulo": "Unidad 5 — Búsqueda, estados y heurísticas",
+      "ejemplos_numerados": 3,
+      "navegacion": true
+    },
+    {
+      "unidad": 6,
+      "carpeta": "unidad06-conocimiento-reglas",
+      "titulo": "Unidad 6 — Conocimiento, reglas y restricciones",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 7,
+      "carpeta": "unidad07-obtencion-datos",
+      "titulo": "Unidad 7 — Obtención y comprensión de datos",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 8,
+      "carpeta": "unidad08-preparacion-datos",
+      "titulo": "Unidad 8 — Calidad y preparación de datos",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 9,
+      "carpeta": "unidad09-exploracion-visualizacion",
+      "titulo": "Unidad 9 — Exploración y visualización",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 10,
+      "carpeta": "unidad10-flujo-lineas-base",
+      "titulo": "Unidad 10 — Flujo de aprendizaje y líneas base",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 11,
+      "carpeta": "unidad11-regresion",
+      "titulo": "Unidad 11 — Regresión",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 12,
+      "carpeta": "unidad12-clasificacion",
+      "titulo": "Unidad 12 — Clasificación",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 13,
+      "carpeta": "unidad13-arboles-ensambles",
+      "titulo": "Unidad 13 — Árboles y ensambles",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 14,
+      "carpeta": "unidad14-agrupamiento-anomalias",
+      "titulo": "Unidad 14 — Agrupamiento y detección de anomalías",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 15,
+      "carpeta": "unidad15-caracteristicas-dimension",
+      "titulo": "Unidad 15 — Características y reducción de dimensión",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 16,
+      "carpeta": "unidad16-validacion-hiperparametros",
+      "titulo": "Unidad 16 — Validación y ajuste de hiperparámetros",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 17,
+      "carpeta": "unidad17-metricas-decisiones",
+      "titulo": "Unidad 17 — Métricas, umbrales y decisiones",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 18,
+      "carpeta": "unidad18-interpretabilidad-responsabilidad",
+      "titulo": "Unidad 18 — Interpretabilidad y responsabilidad",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 19,
+      "carpeta": "unidad19-redes-neuronales",
+      "titulo": "Unidad 19 — Redes neuronales",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 20,
+      "carpeta": "unidad20-pytorch",
+      "titulo": "Unidad 20 — Aprendizaje profundo con PyTorch",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 21,
+      "carpeta": "unidad21-vision-computador",
+      "titulo": "Unidad 21 — Visión por computador",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 22,
+      "carpeta": "unidad22-lenguaje-natural",
+      "titulo": "Unidad 22 — Procesamiento de lenguaje natural",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 23,
+      "carpeta": "unidad23-series-temporales",
+      "titulo": "Unidad 23 — Series temporales y sensores",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 24,
+      "carpeta": "unidad24-recomendacion-refuerzo",
+      "titulo": "Unidad 24 — Introducción a recomendación y aprendizaje por refuerzo",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 25,
+      "carpeta": "unidad25-transformers-generativos",
+      "titulo": "Unidad 25 — Transformers y modelos generativos",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 26,
+      "carpeta": "unidad26-inferencia-servicios",
+      "titulo": "Unidad 26 — Inferencia local y servicios: Ollama y APIs",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 27,
+      "carpeta": "unidad27-prompts-evaluacion",
+      "titulo": "Unidad 27 — Prompts, salidas estructuradas y evaluación",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 28,
+      "carpeta": "unidad28-embeddings-busqueda",
+      "titulo": "Unidad 28 — Embeddings y búsqueda semántica",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 29,
+      "carpeta": "unidad29-rag-documentos",
+      "titulo": "Unidad 29 — RAG con documentos",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 30,
+      "carpeta": "unidad30-herramientas-agentes-mcp",
+      "titulo": "Unidad 30 — Herramientas, agentes y MCP",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 31,
+      "carpeta": "unidad31-adaptacion-multimodalidad",
+      "titulo": "Unidad 31 — Adaptación de modelos y multimodalidad",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 32,
+      "carpeta": "unidad32-modelo-aplicacion",
+      "titulo": "Unidad 32 — De un modelo a una aplicación",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 33,
+      "carpeta": "unidad33-operacion-seguridad-observabilidad",
+      "titulo": "Unidad 33 — Operación, seguridad y observabilidad",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    },
+    {
+      "unidad": 34,
+      "carpeta": "unidad34-talleres-ia-aplicada",
+      "titulo": "Unidad 34 — Talleres de IA aplicada",
+      "ejemplos_numerados": 4,
+      "navegacion": true
+    },
+    {
+      "unidad": 35,
+      "carpeta": "unidad35-proyecto-final",
+      "titulo": "Unidad 35 — Proyecto final integrador",
+      "ejemplos_numerados": 2,
+      "navegacion": true
+    }
+  ],
+  "total_unidades": 36,
+  "fragmentos_locales": 2,
+  "dependencias_directas": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6",
+    "pillow": "12.3.0",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.1+cpu"
+  },
+  "alcance": "estructura, enlaces de navegación, fragmentos Markdown usados y versiones declaradas",
+  "excluye": [
+    "ejecución de programas",
+    "URLs externas",
+    "revisión conceptual exhaustiva",
+    "Windows y macOS"
+  ]
+}

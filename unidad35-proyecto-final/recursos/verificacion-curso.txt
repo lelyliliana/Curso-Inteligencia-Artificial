@@ -1,0 +1,34 @@
+OK: sintaxis y 1776 enlaces a archivos locales (525 archivos revisados).
+OK: 282 ejecuciones de programas y variantes.
+OK: 7 pruebas de unidad05-busqueda-heuristicas.
+OK: 15 pruebas de unidad06-conocimiento-reglas.
+OK: 19 pruebas de unidad07-obtencion-datos.
+OK: 20 pruebas de unidad08-preparacion-datos.
+OK: 21 pruebas de unidad09-exploracion-visualizacion.
+OK: 24 pruebas de unidad10-flujo-lineas-base.
+OK: 26 pruebas de unidad11-regresion.
+OK: 28 pruebas de unidad12-clasificacion.
+OK: 30 pruebas de unidad13-arboles-ensambles.
+OK: 30 pruebas de unidad14-agrupamiento-anomalias.
+OK: 30 pruebas de unidad15-caracteristicas-dimension.
+OK: 30 pruebas de unidad16-validacion-hiperparametros.
+OK: 30 pruebas de unidad17-metricas-decisiones.
+OK: 30 pruebas de unidad18-interpretabilidad-responsabilidad.
+OK: 32 pruebas de unidad19-redes-neuronales.
+OK: 34 pruebas de unidad20-pytorch.
+OK: 36 pruebas de unidad21-vision-computador.
+OK: 38 pruebas de unidad22-lenguaje-natural.
+OK: 41 pruebas de unidad23-series-temporales.
+OK: 44 pruebas de unidad24-recomendacion-refuerzo.
+OK: 46 pruebas de unidad25-transformers-generativos.
+OK: 43 pruebas de unidad26-inferencia-servicios.
+OK: 47 pruebas de unidad27-prompts-evaluacion.
+OK: 48 pruebas de unidad28-embeddings-busqueda.
+OK: 52 pruebas de unidad29-rag-documentos.
+OK: 49 pruebas de unidad30-herramientas-agentes-mcp.
+OK: 45 pruebas de unidad31-adaptacion-multimodalidad.
+OK: 44 pruebas de unidad32-modelo-aplicacion.
+OK: 41 pruebas de unidad33-operacion-seguridad-observabilidad.
+OK: 43 pruebas de unidad34-talleres-ia-aplicada.
+OK: 37 pruebas de unidad35-proyecto-final.
+Verificación completada. No sustituye la revisión conceptual, didáctica o de fuentes.

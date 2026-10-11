@@ -1,0 +1,15 @@
+{
+  "python": "3.12.3",
+  "plataforma": "Linux",
+  "arquitectura": "x86_64",
+  "entorno_aislado": true,
+  "include_system_site_packages": false,
+  "paquetes": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.10.8",
+    "pillow": "12.3.0",
+    "torch": "2.14.1+cpu"
+  }
+}

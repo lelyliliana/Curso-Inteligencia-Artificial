@@ -1,0 +1,4321 @@
+{
+  "fase": "prueba",
+  "elegido": "ridge_incremento",
+  "modelo_sha256": "9576aaeea180344759c4c29613887f7e97fab1b6f3216d5e1dd0e416a59dee7f",
+  "datos_sha256": "37e3ecf9d2c945d5a5d9c6eaaa70aa35e16f1f443c258a1561efb14167ead08f",
+  "reajuste": false,
+  "resultado": {
+    "total": 240,
+    "admitidas": 236,
+    "cobertura": 0.9833333333333333,
+    "rechazadas": [
+      {
+        "id": "PF0995",
+        "codigo": "lectura_no_disponible"
+      },
+      {
+        "id": "PF1033",
+        "codigo": "potencia_invalida"
+      },
+      {
+        "id": "PF1115",
+        "codigo": "potencia_invalida"
+      },
+      {
+        "id": "PF1188",
+        "codigo": "lectura_caducada"
+      }
+    ],
+    "mae_kw": 1.2341274212903268,
+    "sesgo_kw": 0.006077135467618201,
+    "marcadas_revision": 57,
+    "casos": [
+      {
+        "id": "PF0961",
+        "objetivo_kw": 28.07357,
+        "prediccion_kw": 29.307074021218394,
+        "instante_objetivo": "2026-10-17T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0962",
+        "objetivo_kw": 28.99349,
+        "prediccion_kw": 28.454145901507566,
+        "instante_objetivo": "2026-10-17T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0963",
+        "objetivo_kw": 30.270755,
+        "prediccion_kw": 30.103274217263245,
+        "instante_objetivo": "2026-10-17T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0964",
+        "objetivo_kw": 31.519789,
+        "prediccion_kw": 32.0342416268404,
+        "instante_objetivo": "2026-10-17T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0965",
+        "objetivo_kw": 35.051756,
+        "prediccion_kw": 33.81692339132065,
+        "instante_objetivo": "2026-10-17T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0966",
+        "objetivo_kw": 37.228567,
+        "prediccion_kw": 37.7261162974493,
+        "instante_objetivo": "2026-10-17T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0967",
+        "objetivo_kw": 39.424985,
+        "prediccion_kw": 40.09802402311898,
+        "instante_objetivo": "2026-10-17T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0968",
+        "objetivo_kw": 44.235933,
+        "prediccion_kw": 42.29411404888786,
+        "instante_objetivo": "2026-10-17T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0969",
+        "objetivo_kw": 46.5805,
+        "prediccion_kw": 46.90933172565782,
+        "instante_objetivo": "2026-10-17T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0970",
+        "objetivo_kw": 49.107228,
+        "prediccion_kw": 48.8761047514973,
+        "instante_objetivo": "2026-10-17T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0971",
+        "objetivo_kw": 49.261546,
+        "prediccion_kw": 50.86872116141129,
+        "instante_objetivo": "2026-10-17T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0972",
+        "objetivo_kw": 49.339924,
+        "prediccion_kw": 50.36900877760303,
+        "instante_objetivo": "2026-10-17T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0973",
+        "objetivo_kw": 50.118586,
+        "prediccion_kw": 49.71800868989272,
+        "instante_objetivo": "2026-10-17T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0974",
+        "objetivo_kw": 49.206656,
+        "prediccion_kw": 49.74165080960355,
+        "instante_objetivo": "2026-10-17T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0975",
+        "objetivo_kw": 50.822891,
+        "prediccion_kw": 48.10051249384787,
+        "instante_objetivo": "2026-10-17T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0976",
+        "objetivo_kw": 48.796519,
+        "prediccion_kw": 49.06304508427071,
+        "instante_objetivo": "2026-10-17T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0977",
+        "objetivo_kw": 45.093325,
+        "prediccion_kw": 46.50302531979046,
+        "instante_objetivo": "2026-10-17T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0978",
+        "objetivo_kw": 43.339187,
+        "prediccion_kw": 42.422605413661806,
+        "instante_objetivo": "2026-10-17T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0979",
+        "objetivo_kw": 39.18226,
+        "prediccion_kw": 40.47337068799214,
+        "instante_objetivo": "2026-10-17T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0980",
+        "objetivo_kw": 35.585397,
+        "prediccion_kw": 36.31677166222324,
+        "instante_objetivo": "2026-10-17T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0981",
+        "objetivo_kw": 33.327849,
+        "prediccion_kw": 32.9156389854533,
+        "instante_objetivo": "2026-10-17T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0982",
+        "objetivo_kw": 30.935084,
+        "prediccion_kw": 31.035884959613817,
+        "instante_objetivo": "2026-10-17T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0983",
+        "objetivo_kw": 30.686237,
+        "prediccion_kw": 29.17723154969982,
+        "instante_objetivo": "2026-10-17T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0984",
+        "objetivo_kw": 29.58399,
+        "prediccion_kw": 29.58241493350808,
+        "instante_objetivo": "2026-10-18T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0985",
+        "objetivo_kw": 30.818998,
+        "prediccion_kw": 29.209546021218394,
+        "instante_objetivo": "2026-10-18T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0986",
+        "objetivo_kw": 29.627501,
+        "prediccion_kw": 31.199573901507566,
+        "instante_objetivo": "2026-10-18T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0987",
+        "objetivo_kw": 30.923747,
+        "prediccion_kw": 30.737285217263242,
+        "instante_objetivo": "2026-10-18T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0988",
+        "objetivo_kw": 32.266204,
+        "prediccion_kw": 32.687233626840396,
+        "instante_objetivo": "2026-10-18T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0989",
+        "objetivo_kw": 35.190083,
+        "prediccion_kw": 34.563338391320656,
+        "instante_objetivo": "2026-10-18T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0990",
+        "objetivo_kw": 38.599757,
+        "prediccion_kw": 37.864443297449306,
+        "instante_objetivo": "2026-10-18T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0991",
+        "objetivo_kw": 41.127095,
+        "prediccion_kw": 41.46921402311898,
+        "instante_objetivo": "2026-10-18T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0992",
+        "objetivo_kw": 43.312951,
+        "prediccion_kw": 43.99622404888786,
+        "instante_objetivo": "2026-10-18T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0993",
+        "objetivo_kw": 48.149187,
+        "prediccion_kw": 45.98634972565782,
+        "instante_objetivo": "2026-10-18T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0994",
+        "objetivo_kw": 46.203393,
+        "prediccion_kw": 50.4447917514973,
+        "instante_objetivo": "2026-10-18T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0996",
+        "objetivo_kw": 49.176595,
+        "prediccion_kw": 51.80487577760302,
+        "instante_objetivo": "2026-10-18T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0997",
+        "objetivo_kw": 49.692431,
+        "prediccion_kw": 49.554679689892716,
+        "instante_objetivo": "2026-10-18T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0998",
+        "objetivo_kw": 47.868602,
+        "prediccion_kw": 49.31549580960355,
+        "instante_objetivo": "2026-10-18T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0999",
+        "objetivo_kw": 49.543864,
+        "prediccion_kw": 46.76245849384787,
+        "instante_objetivo": "2026-10-18T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1000",
+        "objetivo_kw": 49.447014,
+        "prediccion_kw": 47.78401808427071,
+        "instante_objetivo": "2026-10-18T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1001",
+        "objetivo_kw": 46.224829,
+        "prediccion_kw": 47.15352031979046,
+        "instante_objetivo": "2026-10-18T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1002",
+        "objetivo_kw": 41.650749,
+        "prediccion_kw": 43.554109413661806,
+        "instante_objetivo": "2026-10-18T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1003",
+        "objetivo_kw": 38.24178,
+        "prediccion_kw": 38.78493268799213,
+        "instante_objetivo": "2026-10-18T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1004",
+        "objetivo_kw": 37.661934,
+        "prediccion_kw": 35.37629166222324,
+        "instante_objetivo": "2026-10-18T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1005",
+        "objetivo_kw": 33.148714,
+        "prediccion_kw": 34.9921759854533,
+        "instante_objetivo": "2026-10-18T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1006",
+        "objetivo_kw": 32.205095,
+        "prediccion_kw": 30.856749959613815,
+        "instante_objetivo": "2026-10-18T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1007",
+        "objetivo_kw": 31.317023,
+        "prediccion_kw": 30.44724254969982,
+        "instante_objetivo": "2026-10-18T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1008",
+        "objetivo_kw": 38.702253,
+        "prediccion_kw": 39.85840469217659,
+        "instante_objetivo": "2026-10-19T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1009",
+        "objetivo_kw": 40.885914,
+        "prediccion_kw": 38.32780902121839,
+        "instante_objetivo": "2026-10-19T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1010",
+        "objetivo_kw": 39.245774,
+        "prediccion_kw": 41.26648990150757,
+        "instante_objetivo": "2026-10-19T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1011",
+        "objetivo_kw": 41.293055,
+        "prediccion_kw": 40.355558217263244,
+        "instante_objetivo": "2026-10-19T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1012",
+        "objetivo_kw": 42.31237,
+        "prediccion_kw": 43.0565416268404,
+        "instante_objetivo": "2026-10-19T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1013",
+        "objetivo_kw": 44.427093,
+        "prediccion_kw": 44.609504391320655,
+        "instante_objetivo": "2026-10-19T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1014",
+        "objetivo_kw": 46.479657,
+        "prediccion_kw": 47.101453297449304,
+        "instante_objetivo": "2026-10-19T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1015",
+        "objetivo_kw": 50.817755,
+        "prediccion_kw": 49.349114023118986,
+        "instante_objetivo": "2026-10-19T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1016",
+        "objetivo_kw": 52.948395,
+        "prediccion_kw": 53.68688404888786,
+        "instante_objetivo": "2026-10-19T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1017",
+        "objetivo_kw": 55.989959,
+        "prediccion_kw": 55.62179372565782,
+        "instante_objetivo": "2026-10-19T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1018",
+        "objetivo_kw": 58.660951,
+        "prediccion_kw": 58.2855637514973,
+        "instante_objetivo": "2026-10-19T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1019",
+        "objetivo_kw": 58.603735,
+        "prediccion_kw": 60.422444161411285,
+        "instante_objetivo": "2026-10-19T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1020",
+        "objetivo_kw": 61.127676,
+        "prediccion_kw": 59.711197777603026,
+        "instante_objetivo": "2026-10-19T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1021",
+        "objetivo_kw": 61.502663,
+        "prediccion_kw": 61.50576068989272,
+        "instante_objetivo": "2026-10-19T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1022",
+        "objetivo_kw": 61.018981,
+        "prediccion_kw": 61.125727809603546,
+        "instante_objetivo": "2026-10-19T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1023",
+        "objetivo_kw": 59.936506,
+        "prediccion_kw": 59.91283749384787,
+        "instante_objetivo": "2026-10-19T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1024",
+        "objetivo_kw": 57.026219,
+        "prediccion_kw": 58.176660084270715,
+        "instante_objetivo": "2026-10-19T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1025",
+        "objetivo_kw": 53.415376,
+        "prediccion_kw": 54.732725319790454,
+        "instante_objetivo": "2026-10-19T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1026",
+        "objetivo_kw": 54.015378,
+        "prediccion_kw": 50.74465641366181,
+        "instante_objetivo": "2026-10-19T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1027",
+        "objetivo_kw": 49.48217,
+        "prediccion_kw": 51.14956168799213,
+        "instante_objetivo": "2026-10-19T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1028",
+        "objetivo_kw": 46.286483,
+        "prediccion_kw": 46.61668166222324,
+        "instante_objetivo": "2026-10-19T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1029",
+        "objetivo_kw": 43.575165,
+        "prediccion_kw": 43.616724985453295,
+        "instante_objetivo": "2026-10-19T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1030",
+        "objetivo_kw": 45.003692,
+        "prediccion_kw": 41.283200959613815,
+        "instante_objetivo": "2026-10-19T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1031",
+        "objetivo_kw": 41.972776,
+        "prediccion_kw": 43.24583954969982,
+        "instante_objetivo": "2026-10-19T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1032",
+        "objetivo_kw": 40.081634,
+        "prediccion_kw": 40.86895393350808,
+        "instante_objetivo": "2026-10-20T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1034",
+        "objetivo_kw": 39.406177,
+        "prediccion_kw": 38.14857590150757,
+        "instante_objetivo": "2026-10-20T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1035",
+        "objetivo_kw": 39.978607,
+        "prediccion_kw": 40.515961217263246,
+        "instante_objetivo": "2026-10-20T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1036",
+        "objetivo_kw": 40.721212,
+        "prediccion_kw": 41.74209362684039,
+        "instante_objetivo": "2026-10-20T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1037",
+        "objetivo_kw": 43.247069,
+        "prediccion_kw": 43.018346391320655,
+        "instante_objetivo": "2026-10-20T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1038",
+        "objetivo_kw": 46.125905,
+        "prediccion_kw": 45.92142929744931,
+        "instante_objetivo": "2026-10-20T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1039",
+        "objetivo_kw": 51.087326,
+        "prediccion_kw": 48.995362023118986,
+        "instante_objetivo": "2026-10-20T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1040",
+        "objetivo_kw": 53.29616,
+        "prediccion_kw": 53.95645504888786,
+        "instante_objetivo": "2026-10-20T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1041",
+        "objetivo_kw": 54.915807,
+        "prediccion_kw": 55.96955872565782,
+        "instante_objetivo": "2026-10-20T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1042",
+        "objetivo_kw": 57.332504,
+        "prediccion_kw": 57.2114117514973,
+        "instante_objetivo": "2026-10-20T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1043",
+        "objetivo_kw": 59.078697,
+        "prediccion_kw": 59.09399716141129,
+        "instante_objetivo": "2026-10-20T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1044",
+        "objetivo_kw": 59.650945,
+        "prediccion_kw": 60.186159777603024,
+        "instante_objetivo": "2026-10-20T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1045",
+        "objetivo_kw": 60.548312,
+        "prediccion_kw": 60.02902968989272,
+        "instante_objetivo": "2026-10-20T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1046",
+        "objetivo_kw": 62.844833,
+        "prediccion_kw": 60.17137680960355,
+        "instante_objetivo": "2026-10-20T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1047",
+        "objetivo_kw": 58.991448,
+        "prediccion_kw": 61.73868949384787,
+        "instante_objetivo": "2026-10-20T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1048",
+        "objetivo_kw": 57.662507,
+        "prediccion_kw": 57.23160208427071,
+        "instante_objetivo": "2026-10-20T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1049",
+        "objetivo_kw": 55.946156,
+        "prediccion_kw": 55.369013319790454,
+        "instante_objetivo": "2026-10-20T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1050",
+        "objetivo_kw": 53.648896,
+        "prediccion_kw": 53.27543641366181,
+        "instante_objetivo": "2026-10-20T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1051",
+        "objetivo_kw": 49.417768,
+        "prediccion_kw": 50.783079687992135,
+        "instante_objetivo": "2026-10-20T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1052",
+        "objetivo_kw": 48.942728,
+        "prediccion_kw": 46.55227966222324,
+        "instante_objetivo": "2026-10-20T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1053",
+        "objetivo_kw": 43.947953,
+        "prediccion_kw": 46.2729699854533,
+        "instante_objetivo": "2026-10-20T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1054",
+        "objetivo_kw": 41.29568,
+        "prediccion_kw": 41.655988959613815,
+        "instante_objetivo": "2026-10-20T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1055",
+        "objetivo_kw": 40.205045,
+        "prediccion_kw": 39.53782754969981,
+        "instante_objetivo": "2026-10-20T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1056",
+        "objetivo_kw": 40.557276,
+        "prediccion_kw": 39.101222933508076,
+        "instante_objetivo": "2026-10-21T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1057",
+        "objetivo_kw": 39.039452,
+        "prediccion_kw": 40.182832021218395,
+        "instante_objetivo": "2026-10-21T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1058",
+        "objetivo_kw": 40.268741,
+        "prediccion_kw": 39.42002790150757,
+        "instante_objetivo": "2026-10-21T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1059",
+        "objetivo_kw": 40.093388,
+        "prediccion_kw": 41.378525217263245,
+        "instante_objetivo": "2026-10-21T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1060",
+        "objetivo_kw": 40.561233,
+        "prediccion_kw": 41.856874626840394,
+        "instante_objetivo": "2026-10-21T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1061",
+        "objetivo_kw": 42.696264,
+        "prediccion_kw": 42.858367391320655,
+        "instante_objetivo": "2026-10-21T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1062",
+        "objetivo_kw": 47.036394,
+        "prediccion_kw": 45.370624297449304,
+        "instante_objetivo": "2026-10-21T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1063",
+        "objetivo_kw": 48.520621,
+        "prediccion_kw": 49.905851023118984,
+        "instante_objetivo": "2026-10-21T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1064",
+        "objetivo_kw": 53.181617,
+        "prediccion_kw": 51.38975004888786,
+        "instante_objetivo": "2026-10-21T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1065",
+        "objetivo_kw": 54.597026,
+        "prediccion_kw": 55.85501572565782,
+        "instante_objetivo": "2026-10-21T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1066",
+        "objetivo_kw": 56.871003,
+        "prediccion_kw": 56.8926307514973,
+        "instante_objetivo": "2026-10-21T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1067",
+        "objetivo_kw": 60.159779,
+        "prediccion_kw": 58.63249616141129,
+        "instante_objetivo": "2026-10-21T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1068",
+        "objetivo_kw": 61.647724,
+        "prediccion_kw": 61.267241777603026,
+        "instante_objetivo": "2026-10-21T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1069",
+        "objetivo_kw": 59.51392,
+        "prediccion_kw": 62.02580868989271,
+        "instante_objetivo": "2026-10-21T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1070",
+        "objetivo_kw": 67.071308,
+        "prediccion_kw": 59.13698480960355,
+        "instante_objetivo": "2026-10-21T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1071",
+        "objetivo_kw": 64.805372,
+        "prediccion_kw": 65.96516449384787,
+        "instante_objetivo": "2026-10-21T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1072",
+        "objetivo_kw": 62.337701,
+        "prediccion_kw": 63.04552608427072,
+        "instante_objetivo": "2026-10-21T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1073",
+        "objetivo_kw": 59.301065,
+        "prediccion_kw": 60.04420731979046,
+        "instante_objetivo": "2026-10-21T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1074",
+        "objetivo_kw": 59.448278,
+        "prediccion_kw": 56.63034541366181,
+        "instante_objetivo": "2026-10-21T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1075",
+        "objetivo_kw": 54.505098,
+        "prediccion_kw": 56.58246168799214,
+        "instante_objetivo": "2026-10-21T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1076",
+        "objetivo_kw": 53.28565,
+        "prediccion_kw": 51.639609662223236,
+        "instante_objetivo": "2026-10-21T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1077",
+        "objetivo_kw": 50.029973,
+        "prediccion_kw": 50.615891985453295,
+        "instante_objetivo": "2026-10-21T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1078",
+        "objetivo_kw": 47.979292,
+        "prediccion_kw": 47.738008959613815,
+        "instante_objetivo": "2026-10-21T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1079",
+        "objetivo_kw": 46.566086,
+        "prediccion_kw": 46.22143954969982,
+        "instante_objetivo": "2026-10-21T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1080",
+        "objetivo_kw": 45.809014,
+        "prediccion_kw": 45.462263933508076,
+        "instante_objetivo": "2026-10-22T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1081",
+        "objetivo_kw": 42.896001,
+        "prediccion_kw": 45.43457002121839,
+        "instante_objetivo": "2026-10-22T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1082",
+        "objetivo_kw": 44.749441,
+        "prediccion_kw": 43.27657690150757,
+        "instante_objetivo": "2026-10-22T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1083",
+        "objetivo_kw": 46.514552,
+        "prediccion_kw": 45.859225217263244,
+        "instante_objetivo": "2026-10-22T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1084",
+        "objetivo_kw": 47.79555,
+        "prediccion_kw": 48.2780386268404,
+        "instante_objetivo": "2026-10-22T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1085",
+        "objetivo_kw": 50.977148,
+        "prediccion_kw": 50.09268439132065,
+        "instante_objetivo": "2026-10-22T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1086",
+        "objetivo_kw": 52.663131,
+        "prediccion_kw": 53.651508297449304,
+        "instante_objetivo": "2026-10-22T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1087",
+        "objetivo_kw": 55.600114,
+        "prediccion_kw": 55.53258802311898,
+        "instante_objetivo": "2026-10-22T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1088",
+        "objetivo_kw": 60.816613,
+        "prediccion_kw": 58.46924304888786,
+        "instante_objetivo": "2026-10-22T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1089",
+        "objetivo_kw": 61.624785,
+        "prediccion_kw": 63.490011725657816,
+        "instante_objetivo": "2026-10-22T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1090",
+        "objetivo_kw": 62.907743,
+        "prediccion_kw": 63.920389751497304,
+        "instante_objetivo": "2026-10-22T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1091",
+        "objetivo_kw": 65.670334,
+        "prediccion_kw": 64.66923616141129,
+        "instante_objetivo": "2026-10-22T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1092",
+        "objetivo_kw": 67.211415,
+        "prediccion_kw": 66.77779677760303,
+        "instante_objetivo": "2026-10-22T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1093",
+        "objetivo_kw": 66.512097,
+        "prediccion_kw": 67.58949968989272,
+        "instante_objetivo": "2026-10-22T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1094",
+        "objetivo_kw": 68.858442,
+        "prediccion_kw": 66.13516180960355,
+        "instante_objetivo": "2026-10-22T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1095",
+        "objetivo_kw": 66.52368,
+        "prediccion_kw": 67.75229849384786,
+        "instante_objetivo": "2026-10-22T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1096",
+        "objetivo_kw": 64.453488,
+        "prediccion_kw": 64.76383408427071,
+        "instante_objetivo": "2026-10-22T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1097",
+        "objetivo_kw": 59.808272,
+        "prediccion_kw": 62.15999431979045,
+        "instante_objetivo": "2026-10-22T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1098",
+        "objetivo_kw": 59.127953,
+        "prediccion_kw": 57.13755241366181,
+        "instante_objetivo": "2026-10-22T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1099",
+        "objetivo_kw": 56.535265,
+        "prediccion_kw": 56.26213668799213,
+        "instante_objetivo": "2026-10-22T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1100",
+        "objetivo_kw": 52.185532,
+        "prediccion_kw": 53.66977666222324,
+        "instante_objetivo": "2026-10-22T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1101",
+        "objetivo_kw": 52.053233,
+        "prediccion_kw": 49.5157739854533,
+        "instante_objetivo": "2026-10-22T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1102",
+        "objetivo_kw": 47.913182,
+        "prediccion_kw": 49.761268959613815,
+        "instante_objetivo": "2026-10-22T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1103",
+        "objetivo_kw": 44.645782,
+        "prediccion_kw": 46.155329549699815,
+        "instante_objetivo": "2026-10-22T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1104",
+        "objetivo_kw": 45.459458,
+        "prediccion_kw": 43.541959933508075,
+        "instante_objetivo": "2026-10-23T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1105",
+        "objetivo_kw": 45.500443,
+        "prediccion_kw": 45.08501402121839,
+        "instante_objetivo": "2026-10-23T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1106",
+        "objetivo_kw": 44.54464,
+        "prediccion_kw": 45.88101890150757,
+        "instante_objetivo": "2026-10-23T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1107",
+        "objetivo_kw": 46.286084,
+        "prediccion_kw": 45.65442421726325,
+        "instante_objetivo": "2026-10-23T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1108",
+        "objetivo_kw": 48.710399,
+        "prediccion_kw": 48.0495706268404,
+        "instante_objetivo": "2026-10-23T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1109",
+        "objetivo_kw": 50.988841,
+        "prediccion_kw": 51.007533391320656,
+        "instante_objetivo": "2026-10-23T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1110",
+        "objetivo_kw": 49.752606,
+        "prediccion_kw": 53.663201297449305,
+        "instante_objetivo": "2026-10-23T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1111",
+        "objetivo_kw": 54.569473,
+        "prediccion_kw": 52.62206302311898,
+        "instante_objetivo": "2026-10-23T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1112",
+        "objetivo_kw": 58.31325,
+        "prediccion_kw": 57.438602048887866,
+        "instante_objetivo": "2026-10-23T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1113",
+        "objetivo_kw": 59.981921,
+        "prediccion_kw": 60.986648725657815,
+        "instante_objetivo": "2026-10-23T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1114",
+        "objetivo_kw": 62.873283,
+        "prediccion_kw": 62.2775257514973,
+        "instante_objetivo": "2026-10-23T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1116",
+        "objetivo_kw": 68.94068,
+        "prediccion_kw": 65.43635977760303,
+        "instante_objetivo": "2026-10-23T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1117",
+        "objetivo_kw": 64.583309,
+        "prediccion_kw": 69.31876468989272,
+        "instante_objetivo": "2026-10-23T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1118",
+        "objetivo_kw": 65.495513,
+        "prediccion_kw": 64.20637380960355,
+        "instante_objetivo": "2026-10-23T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1119",
+        "objetivo_kw": 65.901766,
+        "prediccion_kw": 64.38936949384787,
+        "instante_objetivo": "2026-10-23T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1120",
+        "objetivo_kw": 64.332019,
+        "prediccion_kw": 64.14192008427071,
+        "instante_objetivo": "2026-10-23T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1121",
+        "objetivo_kw": 61.844768,
+        "prediccion_kw": 62.03852531979046,
+        "instante_objetivo": "2026-10-23T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1122",
+        "objetivo_kw": 57.347408,
+        "prediccion_kw": 59.17404841366181,
+        "instante_objetivo": "2026-10-23T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1123",
+        "objetivo_kw": 55.762251,
+        "prediccion_kw": 54.481591687992136,
+        "instante_objetivo": "2026-10-23T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1124",
+        "objetivo_kw": 53.915486,
+        "prediccion_kw": 52.89676266222324,
+        "instante_objetivo": "2026-10-23T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1125",
+        "objetivo_kw": 51.632708,
+        "prediccion_kw": 51.2457279854533,
+        "instante_objetivo": "2026-10-23T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1126",
+        "objetivo_kw": 48.49782,
+        "prediccion_kw": 49.34074395961382,
+        "instante_objetivo": "2026-10-23T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1127",
+        "objetivo_kw": 46.979017,
+        "prediccion_kw": 46.73996754969981,
+        "instante_objetivo": "2026-10-23T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1128",
+        "objetivo_kw": 35.323955,
+        "prediccion_kw": 36.22999117483956,
+        "instante_objetivo": "2026-10-24T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1129",
+        "objetivo_kw": 35.744539,
+        "prediccion_kw": 34.94951102121839,
+        "instante_objetivo": "2026-10-24T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1130",
+        "objetivo_kw": 36.149071,
+        "prediccion_kw": 36.12511490150757,
+        "instante_objetivo": "2026-10-24T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1131",
+        "objetivo_kw": 37.187014,
+        "prediccion_kw": 37.258855217263246,
+        "instante_objetivo": "2026-10-24T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1132",
+        "objetivo_kw": 36.989435,
+        "prediccion_kw": 38.950500626840395,
+        "instante_objetivo": "2026-10-24T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1133",
+        "objetivo_kw": 40.876146,
+        "prediccion_kw": 39.286569391320654,
+        "instante_objetivo": "2026-10-24T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1134",
+        "objetivo_kw": 43.242094,
+        "prediccion_kw": 43.5505062974493,
+        "instante_objetivo": "2026-10-24T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1135",
+        "objetivo_kw": 46.821794,
+        "prediccion_kw": 46.111551023118984,
+        "instante_objetivo": "2026-10-24T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1136",
+        "objetivo_kw": 47.387936,
+        "prediccion_kw": 49.69092304888786,
+        "instante_objetivo": "2026-10-24T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1137",
+        "objetivo_kw": 51.092025,
+        "prediccion_kw": 50.06133472565782,
+        "instante_objetivo": "2026-10-24T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1138",
+        "objetivo_kw": 55.423834,
+        "prediccion_kw": 53.3876297514973,
+        "instante_objetivo": "2026-10-24T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1139",
+        "objetivo_kw": 56.537255,
+        "prediccion_kw": 57.18532716141129,
+        "instante_objetivo": "2026-10-24T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1140",
+        "objetivo_kw": 49.278255,
+        "prediccion_kw": 57.64471777760303,
+        "instante_objetivo": "2026-10-24T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1141",
+        "objetivo_kw": 51.452808,
+        "prediccion_kw": 49.65633968989272,
+        "instante_objetivo": "2026-10-24T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1142",
+        "objetivo_kw": 47.686294,
+        "prediccion_kw": 51.075872809603545,
+        "instante_objetivo": "2026-10-24T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1143",
+        "objetivo_kw": 48.365637,
+        "prediccion_kw": 46.58015049384787,
+        "instante_objetivo": "2026-10-24T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1144",
+        "objetivo_kw": 46.977439,
+        "prediccion_kw": 46.60579108427071,
+        "instante_objetivo": "2026-10-24T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1145",
+        "objetivo_kw": 45.435777,
+        "prediccion_kw": 44.68394531979045,
+        "instante_objetivo": "2026-10-24T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1146",
+        "objetivo_kw": 41.078242,
+        "prediccion_kw": 42.76505741366181,
+        "instante_objetivo": "2026-10-24T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1147",
+        "objetivo_kw": 39.700498,
+        "prediccion_kw": 38.21242568799214,
+        "instante_objetivo": "2026-10-24T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1148",
+        "objetivo_kw": 35.681729,
+        "prediccion_kw": 36.83500966222324,
+        "instante_objetivo": "2026-10-24T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1149",
+        "objetivo_kw": 33.330936,
+        "prediccion_kw": 33.011970985453296,
+        "instante_objetivo": "2026-10-24T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1150",
+        "objetivo_kw": 30.981401,
+        "prediccion_kw": 31.038971959613818,
+        "instante_objetivo": "2026-10-24T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1151",
+        "objetivo_kw": 29.932149,
+        "prediccion_kw": 29.22354854969982,
+        "instante_objetivo": "2026-10-24T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1152",
+        "objetivo_kw": 29.901772,
+        "prediccion_kw": 28.82832693350808,
+        "instante_objetivo": "2026-10-25T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1153",
+        "objetivo_kw": 28.727878,
+        "prediccion_kw": 29.527328021218395,
+        "instante_objetivo": "2026-10-25T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1154",
+        "objetivo_kw": 28.920862,
+        "prediccion_kw": 29.108453901507566,
+        "instante_objetivo": "2026-10-25T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1155",
+        "objetivo_kw": 30.741146,
+        "prediccion_kw": 30.030646217263243,
+        "instante_objetivo": "2026-10-25T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1156",
+        "objetivo_kw": 31.327236,
+        "prediccion_kw": 32.5046326268404,
+        "instante_objetivo": "2026-10-25T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1157",
+        "objetivo_kw": 32.306173,
+        "prediccion_kw": 33.62437039132065,
+        "instante_objetivo": "2026-10-25T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1158",
+        "objetivo_kw": 38.043178,
+        "prediccion_kw": 34.980533297449306,
+        "instante_objetivo": "2026-10-25T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1159",
+        "objetivo_kw": 38.386665,
+        "prediccion_kw": 40.91263502311898,
+        "instante_objetivo": "2026-10-25T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1160",
+        "objetivo_kw": 40.452413,
+        "prediccion_kw": 41.255794048887864,
+        "instante_objetivo": "2026-10-25T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1161",
+        "objetivo_kw": 45.798921,
+        "prediccion_kw": 43.12581172565782,
+        "instante_objetivo": "2026-10-25T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1162",
+        "objetivo_kw": 46.274802,
+        "prediccion_kw": 48.0945257514973,
+        "instante_objetivo": "2026-10-25T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1163",
+        "objetivo_kw": 48.174725,
+        "prediccion_kw": 48.03629516141129,
+        "instante_objetivo": "2026-10-25T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1164",
+        "objetivo_kw": 50.457283,
+        "prediccion_kw": 49.28218777760303,
+        "instante_objetivo": "2026-10-25T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1165",
+        "objetivo_kw": 49.319,
+        "prediccion_kw": 50.83536768989271,
+        "instante_objetivo": "2026-10-25T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1166",
+        "objetivo_kw": 50.254562,
+        "prediccion_kw": 48.94206480960355,
+        "instante_objetivo": "2026-10-25T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1167",
+        "objetivo_kw": 47.955826,
+        "prediccion_kw": 49.14841849384787,
+        "instante_objetivo": "2026-10-25T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1168",
+        "objetivo_kw": 46.463995,
+        "prediccion_kw": 46.195980084270715,
+        "instante_objetivo": "2026-10-25T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1169",
+        "objetivo_kw": 46.826155,
+        "prediccion_kw": 44.17050131979045,
+        "instante_objetivo": "2026-10-25T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1170",
+        "objetivo_kw": 42.704115,
+        "prediccion_kw": 44.155435413661806,
+        "instante_objetivo": "2026-10-25T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1171",
+        "objetivo_kw": 39.557196,
+        "prediccion_kw": 39.838298687992136,
+        "instante_objetivo": "2026-10-25T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1172",
+        "objetivo_kw": 37.222604,
+        "prediccion_kw": 36.69170766222324,
+        "instante_objetivo": "2026-10-25T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1173",
+        "objetivo_kw": 32.539156,
+        "prediccion_kw": 34.552845985453295,
+        "instante_objetivo": "2026-10-25T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1174",
+        "objetivo_kw": 31.309089,
+        "prediccion_kw": 30.247191959613815,
+        "instante_objetivo": "2026-10-25T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1175",
+        "objetivo_kw": 29.20752,
+        "prediccion_kw": 29.55123654969982,
+        "instante_objetivo": "2026-10-25T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1176",
+        "objetivo_kw": 37.892713,
+        "prediccion_kw": 37.748901692176595,
+        "instante_objetivo": "2026-10-26T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1177",
+        "objetivo_kw": 38.346338,
+        "prediccion_kw": 37.518269021218394,
+        "instante_objetivo": "2026-10-26T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1178",
+        "objetivo_kw": 39.054927,
+        "prediccion_kw": 38.72691390150757,
+        "instante_objetivo": "2026-10-26T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1179",
+        "objetivo_kw": 37.951241,
+        "prediccion_kw": 40.164711217263246,
+        "instante_objetivo": "2026-10-26T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1180",
+        "objetivo_kw": 38.977794,
+        "prediccion_kw": 39.7147276268404,
+        "instante_objetivo": "2026-10-26T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1181",
+        "objetivo_kw": 43.992339,
+        "prediccion_kw": 41.27492839132066,
+        "instante_objetivo": "2026-10-26T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1182",
+        "objetivo_kw": 47.639632,
+        "prediccion_kw": 46.666699297449306,
+        "instante_objetivo": "2026-10-26T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1183",
+        "objetivo_kw": 48.396645,
+        "prediccion_kw": 50.50908902311898,
+        "instante_objetivo": "2026-10-26T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1184",
+        "objetivo_kw": 50.567383,
+        "prediccion_kw": 51.26577404888786,
+        "instante_objetivo": "2026-10-26T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1185",
+        "objetivo_kw": 55.062263,
+        "prediccion_kw": 53.24078172565782,
+        "instante_objetivo": "2026-10-26T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1186",
+        "objetivo_kw": 56.727471,
+        "prediccion_kw": 57.3578677514973,
+        "instante_objetivo": "2026-10-26T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1187",
+        "objetivo_kw": 59.24977,
+        "prediccion_kw": 58.48896416141129,
+        "instante_objetivo": "2026-10-26T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1189",
+        "objetivo_kw": 61.678895,
+        "prediccion_kw": 60.35591868989272,
+        "instante_objetivo": "2026-10-26T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1190",
+        "objetivo_kw": 59.297206,
+        "prediccion_kw": 61.301959809603545,
+        "instante_objetivo": "2026-10-26T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1191",
+        "objetivo_kw": 59.369887,
+        "prediccion_kw": 58.19106249384787,
+        "instante_objetivo": "2026-10-26T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1192",
+        "objetivo_kw": 57.783132,
+        "prediccion_kw": 57.61004108427071,
+        "instante_objetivo": "2026-10-26T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1193",
+        "objetivo_kw": 54.370662,
+        "prediccion_kw": 55.48963831979046,
+        "instante_objetivo": "2026-10-26T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1194",
+        "objetivo_kw": 52.520543,
+        "prediccion_kw": 51.69994241366181,
+        "instante_objetivo": "2026-10-26T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1195",
+        "objetivo_kw": 46.838182,
+        "prediccion_kw": 49.65472668799214,
+        "instante_objetivo": "2026-10-26T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1196",
+        "objetivo_kw": 44.398532,
+        "prediccion_kw": 43.97269366222324,
+        "instante_objetivo": "2026-10-26T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1197",
+        "objetivo_kw": 43.632465,
+        "prediccion_kw": 41.7287739854533,
+        "instante_objetivo": "2026-10-26T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1198",
+        "objetivo_kw": 41.529641,
+        "prediccion_kw": 41.34050095961382,
+        "instante_objetivo": "2026-10-26T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1199",
+        "objetivo_kw": 38.297844,
+        "prediccion_kw": 39.771788549699814,
+        "instante_objetivo": "2026-10-26T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1200",
+        "objetivo_kw": 38.437462,
+        "prediccion_kw": 37.194021933508076,
+        "instante_objetivo": "2026-10-27T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      }
+    ]
+  },
+  "referencia": {
+    "total": 240,
+    "admitidas": 236,
+    "cobertura": 0.9833333333333333,
+    "rechazadas": [
+      {
+        "id": "PF0995",
+        "codigo": "lectura_no_disponible"
+      },
+      {
+        "id": "PF1033",
+        "codigo": "potencia_invalida"
+      },
+      {
+        "id": "PF1115",
+        "codigo": "potencia_invalida"
+      },
+      {
+        "id": "PF1188",
+        "codigo": "lectura_caducada"
+      }
+    ],
+    "mae_kw": 2.259361474576271,
+    "sesgo_kw": -0.01860966101694914,
+    "marcadas_revision": 57,
+    "casos": [
+      {
+        "id": "PF0961",
+        "objetivo_kw": 28.07357,
+        "prediccion_kw": 29.681518,
+        "instante_objetivo": "2026-10-17T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0962",
+        "objetivo_kw": 28.99349,
+        "prediccion_kw": 28.07357,
+        "instante_objetivo": "2026-10-17T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0963",
+        "objetivo_kw": 30.270755,
+        "prediccion_kw": 28.99349,
+        "instante_objetivo": "2026-10-17T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0964",
+        "objetivo_kw": 31.519789,
+        "prediccion_kw": 30.270755,
+        "instante_objetivo": "2026-10-17T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0965",
+        "objetivo_kw": 35.051756,
+        "prediccion_kw": 31.519789,
+        "instante_objetivo": "2026-10-17T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0966",
+        "objetivo_kw": 37.228567,
+        "prediccion_kw": 35.051756,
+        "instante_objetivo": "2026-10-17T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0967",
+        "objetivo_kw": 39.424985,
+        "prediccion_kw": 37.228567,
+        "instante_objetivo": "2026-10-17T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0968",
+        "objetivo_kw": 44.235933,
+        "prediccion_kw": 39.424985,
+        "instante_objetivo": "2026-10-17T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0969",
+        "objetivo_kw": 46.5805,
+        "prediccion_kw": 44.235933,
+        "instante_objetivo": "2026-10-17T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0970",
+        "objetivo_kw": 49.107228,
+        "prediccion_kw": 46.5805,
+        "instante_objetivo": "2026-10-17T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0971",
+        "objetivo_kw": 49.261546,
+        "prediccion_kw": 49.107228,
+        "instante_objetivo": "2026-10-17T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0972",
+        "objetivo_kw": 49.339924,
+        "prediccion_kw": 49.261546,
+        "instante_objetivo": "2026-10-17T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0973",
+        "objetivo_kw": 50.118586,
+        "prediccion_kw": 49.339924,
+        "instante_objetivo": "2026-10-17T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0974",
+        "objetivo_kw": 49.206656,
+        "prediccion_kw": 50.118586,
+        "instante_objetivo": "2026-10-17T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0975",
+        "objetivo_kw": 50.822891,
+        "prediccion_kw": 49.206656,
+        "instante_objetivo": "2026-10-17T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0976",
+        "objetivo_kw": 48.796519,
+        "prediccion_kw": 50.822891,
+        "instante_objetivo": "2026-10-17T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0977",
+        "objetivo_kw": 45.093325,
+        "prediccion_kw": 48.796519,
+        "instante_objetivo": "2026-10-17T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0978",
+        "objetivo_kw": 43.339187,
+        "prediccion_kw": 45.093325,
+        "instante_objetivo": "2026-10-17T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0979",
+        "objetivo_kw": 39.18226,
+        "prediccion_kw": 43.339187,
+        "instante_objetivo": "2026-10-17T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0980",
+        "objetivo_kw": 35.585397,
+        "prediccion_kw": 39.18226,
+        "instante_objetivo": "2026-10-17T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0981",
+        "objetivo_kw": 33.327849,
+        "prediccion_kw": 35.585397,
+        "instante_objetivo": "2026-10-17T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0982",
+        "objetivo_kw": 30.935084,
+        "prediccion_kw": 33.327849,
+        "instante_objetivo": "2026-10-17T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0983",
+        "objetivo_kw": 30.686237,
+        "prediccion_kw": 30.935084,
+        "instante_objetivo": "2026-10-17T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0984",
+        "objetivo_kw": 29.58399,
+        "prediccion_kw": 30.686237,
+        "instante_objetivo": "2026-10-18T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0985",
+        "objetivo_kw": 30.818998,
+        "prediccion_kw": 29.58399,
+        "instante_objetivo": "2026-10-18T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0986",
+        "objetivo_kw": 29.627501,
+        "prediccion_kw": 30.818998,
+        "instante_objetivo": "2026-10-18T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0987",
+        "objetivo_kw": 30.923747,
+        "prediccion_kw": 29.627501,
+        "instante_objetivo": "2026-10-18T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0988",
+        "objetivo_kw": 32.266204,
+        "prediccion_kw": 30.923747,
+        "instante_objetivo": "2026-10-18T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0989",
+        "objetivo_kw": 35.190083,
+        "prediccion_kw": 32.266204,
+        "instante_objetivo": "2026-10-18T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0990",
+        "objetivo_kw": 38.599757,
+        "prediccion_kw": 35.190083,
+        "instante_objetivo": "2026-10-18T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0991",
+        "objetivo_kw": 41.127095,
+        "prediccion_kw": 38.599757,
+        "instante_objetivo": "2026-10-18T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0992",
+        "objetivo_kw": 43.312951,
+        "prediccion_kw": 41.127095,
+        "instante_objetivo": "2026-10-18T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0993",
+        "objetivo_kw": 48.149187,
+        "prediccion_kw": 43.312951,
+        "instante_objetivo": "2026-10-18T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0994",
+        "objetivo_kw": 46.203393,
+        "prediccion_kw": 48.149187,
+        "instante_objetivo": "2026-10-18T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0996",
+        "objetivo_kw": 49.176595,
+        "prediccion_kw": 50.697413,
+        "instante_objetivo": "2026-10-18T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0997",
+        "objetivo_kw": 49.692431,
+        "prediccion_kw": 49.176595,
+        "instante_objetivo": "2026-10-18T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0998",
+        "objetivo_kw": 47.868602,
+        "prediccion_kw": 49.692431,
+        "instante_objetivo": "2026-10-18T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF0999",
+        "objetivo_kw": 49.543864,
+        "prediccion_kw": 47.868602,
+        "instante_objetivo": "2026-10-18T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1000",
+        "objetivo_kw": 49.447014,
+        "prediccion_kw": 49.543864,
+        "instante_objetivo": "2026-10-18T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1001",
+        "objetivo_kw": 46.224829,
+        "prediccion_kw": 49.447014,
+        "instante_objetivo": "2026-10-18T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1002",
+        "objetivo_kw": 41.650749,
+        "prediccion_kw": 46.224829,
+        "instante_objetivo": "2026-10-18T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1003",
+        "objetivo_kw": 38.24178,
+        "prediccion_kw": 41.650749,
+        "instante_objetivo": "2026-10-18T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1004",
+        "objetivo_kw": 37.661934,
+        "prediccion_kw": 38.24178,
+        "instante_objetivo": "2026-10-18T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1005",
+        "objetivo_kw": 33.148714,
+        "prediccion_kw": 37.661934,
+        "instante_objetivo": "2026-10-18T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1006",
+        "objetivo_kw": 32.205095,
+        "prediccion_kw": 33.148714,
+        "instante_objetivo": "2026-10-18T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1007",
+        "objetivo_kw": 31.317023,
+        "prediccion_kw": 32.205095,
+        "instante_objetivo": "2026-10-18T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1008",
+        "objetivo_kw": 38.702253,
+        "prediccion_kw": 31.317023,
+        "instante_objetivo": "2026-10-19T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1009",
+        "objetivo_kw": 40.885914,
+        "prediccion_kw": 38.702253,
+        "instante_objetivo": "2026-10-19T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1010",
+        "objetivo_kw": 39.245774,
+        "prediccion_kw": 40.885914,
+        "instante_objetivo": "2026-10-19T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1011",
+        "objetivo_kw": 41.293055,
+        "prediccion_kw": 39.245774,
+        "instante_objetivo": "2026-10-19T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1012",
+        "objetivo_kw": 42.31237,
+        "prediccion_kw": 41.293055,
+        "instante_objetivo": "2026-10-19T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1013",
+        "objetivo_kw": 44.427093,
+        "prediccion_kw": 42.31237,
+        "instante_objetivo": "2026-10-19T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1014",
+        "objetivo_kw": 46.479657,
+        "prediccion_kw": 44.427093,
+        "instante_objetivo": "2026-10-19T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1015",
+        "objetivo_kw": 50.817755,
+        "prediccion_kw": 46.479657,
+        "instante_objetivo": "2026-10-19T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1016",
+        "objetivo_kw": 52.948395,
+        "prediccion_kw": 50.817755,
+        "instante_objetivo": "2026-10-19T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1017",
+        "objetivo_kw": 55.989959,
+        "prediccion_kw": 52.948395,
+        "instante_objetivo": "2026-10-19T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1018",
+        "objetivo_kw": 58.660951,
+        "prediccion_kw": 55.989959,
+        "instante_objetivo": "2026-10-19T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1019",
+        "objetivo_kw": 58.603735,
+        "prediccion_kw": 58.660951,
+        "instante_objetivo": "2026-10-19T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1020",
+        "objetivo_kw": 61.127676,
+        "prediccion_kw": 58.603735,
+        "instante_objetivo": "2026-10-19T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1021",
+        "objetivo_kw": 61.502663,
+        "prediccion_kw": 61.127676,
+        "instante_objetivo": "2026-10-19T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1022",
+        "objetivo_kw": 61.018981,
+        "prediccion_kw": 61.502663,
+        "instante_objetivo": "2026-10-19T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1023",
+        "objetivo_kw": 59.936506,
+        "prediccion_kw": 61.018981,
+        "instante_objetivo": "2026-10-19T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1024",
+        "objetivo_kw": 57.026219,
+        "prediccion_kw": 59.936506,
+        "instante_objetivo": "2026-10-19T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1025",
+        "objetivo_kw": 53.415376,
+        "prediccion_kw": 57.026219,
+        "instante_objetivo": "2026-10-19T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1026",
+        "objetivo_kw": 54.015378,
+        "prediccion_kw": 53.415376,
+        "instante_objetivo": "2026-10-19T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1027",
+        "objetivo_kw": 49.48217,
+        "prediccion_kw": 54.015378,
+        "instante_objetivo": "2026-10-19T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1028",
+        "objetivo_kw": 46.286483,
+        "prediccion_kw": 49.48217,
+        "instante_objetivo": "2026-10-19T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1029",
+        "objetivo_kw": 43.575165,
+        "prediccion_kw": 46.286483,
+        "instante_objetivo": "2026-10-19T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1030",
+        "objetivo_kw": 45.003692,
+        "prediccion_kw": 43.575165,
+        "instante_objetivo": "2026-10-19T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1031",
+        "objetivo_kw": 41.972776,
+        "prediccion_kw": 45.003692,
+        "instante_objetivo": "2026-10-19T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1032",
+        "objetivo_kw": 40.081634,
+        "prediccion_kw": 41.972776,
+        "instante_objetivo": "2026-10-20T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1034",
+        "objetivo_kw": 39.406177,
+        "prediccion_kw": 37.768,
+        "instante_objetivo": "2026-10-20T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1035",
+        "objetivo_kw": 39.978607,
+        "prediccion_kw": 39.406177,
+        "instante_objetivo": "2026-10-20T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1036",
+        "objetivo_kw": 40.721212,
+        "prediccion_kw": 39.978607,
+        "instante_objetivo": "2026-10-20T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1037",
+        "objetivo_kw": 43.247069,
+        "prediccion_kw": 40.721212,
+        "instante_objetivo": "2026-10-20T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1038",
+        "objetivo_kw": 46.125905,
+        "prediccion_kw": 43.247069,
+        "instante_objetivo": "2026-10-20T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1039",
+        "objetivo_kw": 51.087326,
+        "prediccion_kw": 46.125905,
+        "instante_objetivo": "2026-10-20T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1040",
+        "objetivo_kw": 53.29616,
+        "prediccion_kw": 51.087326,
+        "instante_objetivo": "2026-10-20T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1041",
+        "objetivo_kw": 54.915807,
+        "prediccion_kw": 53.29616,
+        "instante_objetivo": "2026-10-20T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1042",
+        "objetivo_kw": 57.332504,
+        "prediccion_kw": 54.915807,
+        "instante_objetivo": "2026-10-20T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1043",
+        "objetivo_kw": 59.078697,
+        "prediccion_kw": 57.332504,
+        "instante_objetivo": "2026-10-20T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1044",
+        "objetivo_kw": 59.650945,
+        "prediccion_kw": 59.078697,
+        "instante_objetivo": "2026-10-20T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1045",
+        "objetivo_kw": 60.548312,
+        "prediccion_kw": 59.650945,
+        "instante_objetivo": "2026-10-20T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1046",
+        "objetivo_kw": 62.844833,
+        "prediccion_kw": 60.548312,
+        "instante_objetivo": "2026-10-20T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1047",
+        "objetivo_kw": 58.991448,
+        "prediccion_kw": 62.844833,
+        "instante_objetivo": "2026-10-20T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1048",
+        "objetivo_kw": 57.662507,
+        "prediccion_kw": 58.991448,
+        "instante_objetivo": "2026-10-20T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1049",
+        "objetivo_kw": 55.946156,
+        "prediccion_kw": 57.662507,
+        "instante_objetivo": "2026-10-20T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1050",
+        "objetivo_kw": 53.648896,
+        "prediccion_kw": 55.946156,
+        "instante_objetivo": "2026-10-20T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1051",
+        "objetivo_kw": 49.417768,
+        "prediccion_kw": 53.648896,
+        "instante_objetivo": "2026-10-20T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1052",
+        "objetivo_kw": 48.942728,
+        "prediccion_kw": 49.417768,
+        "instante_objetivo": "2026-10-20T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1053",
+        "objetivo_kw": 43.947953,
+        "prediccion_kw": 48.942728,
+        "instante_objetivo": "2026-10-20T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1054",
+        "objetivo_kw": 41.29568,
+        "prediccion_kw": 43.947953,
+        "instante_objetivo": "2026-10-20T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1055",
+        "objetivo_kw": 40.205045,
+        "prediccion_kw": 41.29568,
+        "instante_objetivo": "2026-10-20T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1056",
+        "objetivo_kw": 40.557276,
+        "prediccion_kw": 40.205045,
+        "instante_objetivo": "2026-10-21T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1057",
+        "objetivo_kw": 39.039452,
+        "prediccion_kw": 40.557276,
+        "instante_objetivo": "2026-10-21T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1058",
+        "objetivo_kw": 40.268741,
+        "prediccion_kw": 39.039452,
+        "instante_objetivo": "2026-10-21T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1059",
+        "objetivo_kw": 40.093388,
+        "prediccion_kw": 40.268741,
+        "instante_objetivo": "2026-10-21T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1060",
+        "objetivo_kw": 40.561233,
+        "prediccion_kw": 40.093388,
+        "instante_objetivo": "2026-10-21T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1061",
+        "objetivo_kw": 42.696264,
+        "prediccion_kw": 40.561233,
+        "instante_objetivo": "2026-10-21T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1062",
+        "objetivo_kw": 47.036394,
+        "prediccion_kw": 42.696264,
+        "instante_objetivo": "2026-10-21T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1063",
+        "objetivo_kw": 48.520621,
+        "prediccion_kw": 47.036394,
+        "instante_objetivo": "2026-10-21T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1064",
+        "objetivo_kw": 53.181617,
+        "prediccion_kw": 48.520621,
+        "instante_objetivo": "2026-10-21T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1065",
+        "objetivo_kw": 54.597026,
+        "prediccion_kw": 53.181617,
+        "instante_objetivo": "2026-10-21T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1066",
+        "objetivo_kw": 56.871003,
+        "prediccion_kw": 54.597026,
+        "instante_objetivo": "2026-10-21T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1067",
+        "objetivo_kw": 60.159779,
+        "prediccion_kw": 56.871003,
+        "instante_objetivo": "2026-10-21T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1068",
+        "objetivo_kw": 61.647724,
+        "prediccion_kw": 60.159779,
+        "instante_objetivo": "2026-10-21T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1069",
+        "objetivo_kw": 59.51392,
+        "prediccion_kw": 61.647724,
+        "instante_objetivo": "2026-10-21T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1070",
+        "objetivo_kw": 67.071308,
+        "prediccion_kw": 59.51392,
+        "instante_objetivo": "2026-10-21T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1071",
+        "objetivo_kw": 64.805372,
+        "prediccion_kw": 67.071308,
+        "instante_objetivo": "2026-10-21T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1072",
+        "objetivo_kw": 62.337701,
+        "prediccion_kw": 64.805372,
+        "instante_objetivo": "2026-10-21T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1073",
+        "objetivo_kw": 59.301065,
+        "prediccion_kw": 62.337701,
+        "instante_objetivo": "2026-10-21T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1074",
+        "objetivo_kw": 59.448278,
+        "prediccion_kw": 59.301065,
+        "instante_objetivo": "2026-10-21T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1075",
+        "objetivo_kw": 54.505098,
+        "prediccion_kw": 59.448278,
+        "instante_objetivo": "2026-10-21T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1076",
+        "objetivo_kw": 53.28565,
+        "prediccion_kw": 54.505098,
+        "instante_objetivo": "2026-10-21T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1077",
+        "objetivo_kw": 50.029973,
+        "prediccion_kw": 53.28565,
+        "instante_objetivo": "2026-10-21T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1078",
+        "objetivo_kw": 47.979292,
+        "prediccion_kw": 50.029973,
+        "instante_objetivo": "2026-10-21T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1079",
+        "objetivo_kw": 46.566086,
+        "prediccion_kw": 47.979292,
+        "instante_objetivo": "2026-10-21T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1080",
+        "objetivo_kw": 45.809014,
+        "prediccion_kw": 46.566086,
+        "instante_objetivo": "2026-10-22T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1081",
+        "objetivo_kw": 42.896001,
+        "prediccion_kw": 45.809014,
+        "instante_objetivo": "2026-10-22T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1082",
+        "objetivo_kw": 44.749441,
+        "prediccion_kw": 42.896001,
+        "instante_objetivo": "2026-10-22T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1083",
+        "objetivo_kw": 46.514552,
+        "prediccion_kw": 44.749441,
+        "instante_objetivo": "2026-10-22T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1084",
+        "objetivo_kw": 47.79555,
+        "prediccion_kw": 46.514552,
+        "instante_objetivo": "2026-10-22T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1085",
+        "objetivo_kw": 50.977148,
+        "prediccion_kw": 47.79555,
+        "instante_objetivo": "2026-10-22T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1086",
+        "objetivo_kw": 52.663131,
+        "prediccion_kw": 50.977148,
+        "instante_objetivo": "2026-10-22T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1087",
+        "objetivo_kw": 55.600114,
+        "prediccion_kw": 52.663131,
+        "instante_objetivo": "2026-10-22T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1088",
+        "objetivo_kw": 60.816613,
+        "prediccion_kw": 55.600114,
+        "instante_objetivo": "2026-10-22T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1089",
+        "objetivo_kw": 61.624785,
+        "prediccion_kw": 60.816613,
+        "instante_objetivo": "2026-10-22T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1090",
+        "objetivo_kw": 62.907743,
+        "prediccion_kw": 61.624785,
+        "instante_objetivo": "2026-10-22T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1091",
+        "objetivo_kw": 65.670334,
+        "prediccion_kw": 62.907743,
+        "instante_objetivo": "2026-10-22T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1092",
+        "objetivo_kw": 67.211415,
+        "prediccion_kw": 65.670334,
+        "instante_objetivo": "2026-10-22T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1093",
+        "objetivo_kw": 66.512097,
+        "prediccion_kw": 67.211415,
+        "instante_objetivo": "2026-10-22T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1094",
+        "objetivo_kw": 68.858442,
+        "prediccion_kw": 66.512097,
+        "instante_objetivo": "2026-10-22T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1095",
+        "objetivo_kw": 66.52368,
+        "prediccion_kw": 68.858442,
+        "instante_objetivo": "2026-10-22T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1096",
+        "objetivo_kw": 64.453488,
+        "prediccion_kw": 66.52368,
+        "instante_objetivo": "2026-10-22T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1097",
+        "objetivo_kw": 59.808272,
+        "prediccion_kw": 64.453488,
+        "instante_objetivo": "2026-10-22T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1098",
+        "objetivo_kw": 59.127953,
+        "prediccion_kw": 59.808272,
+        "instante_objetivo": "2026-10-22T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1099",
+        "objetivo_kw": 56.535265,
+        "prediccion_kw": 59.127953,
+        "instante_objetivo": "2026-10-22T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1100",
+        "objetivo_kw": 52.185532,
+        "prediccion_kw": 56.535265,
+        "instante_objetivo": "2026-10-22T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1101",
+        "objetivo_kw": 52.053233,
+        "prediccion_kw": 52.185532,
+        "instante_objetivo": "2026-10-22T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1102",
+        "objetivo_kw": 47.913182,
+        "prediccion_kw": 52.053233,
+        "instante_objetivo": "2026-10-22T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1103",
+        "objetivo_kw": 44.645782,
+        "prediccion_kw": 47.913182,
+        "instante_objetivo": "2026-10-22T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1104",
+        "objetivo_kw": 45.459458,
+        "prediccion_kw": 44.645782,
+        "instante_objetivo": "2026-10-23T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1105",
+        "objetivo_kw": 45.500443,
+        "prediccion_kw": 45.459458,
+        "instante_objetivo": "2026-10-23T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1106",
+        "objetivo_kw": 44.54464,
+        "prediccion_kw": 45.500443,
+        "instante_objetivo": "2026-10-23T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1107",
+        "objetivo_kw": 46.286084,
+        "prediccion_kw": 44.54464,
+        "instante_objetivo": "2026-10-23T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1108",
+        "objetivo_kw": 48.710399,
+        "prediccion_kw": 46.286084,
+        "instante_objetivo": "2026-10-23T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1109",
+        "objetivo_kw": 50.988841,
+        "prediccion_kw": 48.710399,
+        "instante_objetivo": "2026-10-23T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1110",
+        "objetivo_kw": 49.752606,
+        "prediccion_kw": 50.988841,
+        "instante_objetivo": "2026-10-23T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1111",
+        "objetivo_kw": 54.569473,
+        "prediccion_kw": 49.752606,
+        "instante_objetivo": "2026-10-23T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1112",
+        "objetivo_kw": 58.31325,
+        "prediccion_kw": 54.569473,
+        "instante_objetivo": "2026-10-23T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1113",
+        "objetivo_kw": 59.981921,
+        "prediccion_kw": 58.31325,
+        "instante_objetivo": "2026-10-23T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1114",
+        "objetivo_kw": 62.873283,
+        "prediccion_kw": 59.981921,
+        "instante_objetivo": "2026-10-23T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1116",
+        "objetivo_kw": 68.94068,
+        "prediccion_kw": 64.328897,
+        "instante_objetivo": "2026-10-23T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1117",
+        "objetivo_kw": 64.583309,
+        "prediccion_kw": 68.94068,
+        "instante_objetivo": "2026-10-23T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1118",
+        "objetivo_kw": 65.495513,
+        "prediccion_kw": 64.583309,
+        "instante_objetivo": "2026-10-23T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1119",
+        "objetivo_kw": 65.901766,
+        "prediccion_kw": 65.495513,
+        "instante_objetivo": "2026-10-23T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1120",
+        "objetivo_kw": 64.332019,
+        "prediccion_kw": 65.901766,
+        "instante_objetivo": "2026-10-23T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1121",
+        "objetivo_kw": 61.844768,
+        "prediccion_kw": 64.332019,
+        "instante_objetivo": "2026-10-23T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1122",
+        "objetivo_kw": 57.347408,
+        "prediccion_kw": 61.844768,
+        "instante_objetivo": "2026-10-23T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1123",
+        "objetivo_kw": 55.762251,
+        "prediccion_kw": 57.347408,
+        "instante_objetivo": "2026-10-23T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1124",
+        "objetivo_kw": 53.915486,
+        "prediccion_kw": 55.762251,
+        "instante_objetivo": "2026-10-23T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1125",
+        "objetivo_kw": 51.632708,
+        "prediccion_kw": 53.915486,
+        "instante_objetivo": "2026-10-23T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1126",
+        "objetivo_kw": 48.49782,
+        "prediccion_kw": 51.632708,
+        "instante_objetivo": "2026-10-23T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1127",
+        "objetivo_kw": 46.979017,
+        "prediccion_kw": 48.49782,
+        "instante_objetivo": "2026-10-23T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1128",
+        "objetivo_kw": 35.323955,
+        "prediccion_kw": 46.979017,
+        "instante_objetivo": "2026-10-24T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1129",
+        "objetivo_kw": 35.744539,
+        "prediccion_kw": 35.323955,
+        "instante_objetivo": "2026-10-24T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1130",
+        "objetivo_kw": 36.149071,
+        "prediccion_kw": 35.744539,
+        "instante_objetivo": "2026-10-24T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1131",
+        "objetivo_kw": 37.187014,
+        "prediccion_kw": 36.149071,
+        "instante_objetivo": "2026-10-24T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1132",
+        "objetivo_kw": 36.989435,
+        "prediccion_kw": 37.187014,
+        "instante_objetivo": "2026-10-24T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1133",
+        "objetivo_kw": 40.876146,
+        "prediccion_kw": 36.989435,
+        "instante_objetivo": "2026-10-24T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1134",
+        "objetivo_kw": 43.242094,
+        "prediccion_kw": 40.876146,
+        "instante_objetivo": "2026-10-24T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1135",
+        "objetivo_kw": 46.821794,
+        "prediccion_kw": 43.242094,
+        "instante_objetivo": "2026-10-24T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1136",
+        "objetivo_kw": 47.387936,
+        "prediccion_kw": 46.821794,
+        "instante_objetivo": "2026-10-24T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1137",
+        "objetivo_kw": 51.092025,
+        "prediccion_kw": 47.387936,
+        "instante_objetivo": "2026-10-24T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1138",
+        "objetivo_kw": 55.423834,
+        "prediccion_kw": 51.092025,
+        "instante_objetivo": "2026-10-24T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1139",
+        "objetivo_kw": 56.537255,
+        "prediccion_kw": 55.423834,
+        "instante_objetivo": "2026-10-24T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1140",
+        "objetivo_kw": 49.278255,
+        "prediccion_kw": 56.537255,
+        "instante_objetivo": "2026-10-24T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1141",
+        "objetivo_kw": 51.452808,
+        "prediccion_kw": 49.278255,
+        "instante_objetivo": "2026-10-24T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1142",
+        "objetivo_kw": 47.686294,
+        "prediccion_kw": 51.452808,
+        "instante_objetivo": "2026-10-24T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1143",
+        "objetivo_kw": 48.365637,
+        "prediccion_kw": 47.686294,
+        "instante_objetivo": "2026-10-24T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1144",
+        "objetivo_kw": 46.977439,
+        "prediccion_kw": 48.365637,
+        "instante_objetivo": "2026-10-24T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1145",
+        "objetivo_kw": 45.435777,
+        "prediccion_kw": 46.977439,
+        "instante_objetivo": "2026-10-24T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1146",
+        "objetivo_kw": 41.078242,
+        "prediccion_kw": 45.435777,
+        "instante_objetivo": "2026-10-24T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1147",
+        "objetivo_kw": 39.700498,
+        "prediccion_kw": 41.078242,
+        "instante_objetivo": "2026-10-24T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1148",
+        "objetivo_kw": 35.681729,
+        "prediccion_kw": 39.700498,
+        "instante_objetivo": "2026-10-24T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1149",
+        "objetivo_kw": 33.330936,
+        "prediccion_kw": 35.681729,
+        "instante_objetivo": "2026-10-24T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1150",
+        "objetivo_kw": 30.981401,
+        "prediccion_kw": 33.330936,
+        "instante_objetivo": "2026-10-24T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1151",
+        "objetivo_kw": 29.932149,
+        "prediccion_kw": 30.981401,
+        "instante_objetivo": "2026-10-24T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1152",
+        "objetivo_kw": 29.901772,
+        "prediccion_kw": 29.932149,
+        "instante_objetivo": "2026-10-25T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1153",
+        "objetivo_kw": 28.727878,
+        "prediccion_kw": 29.901772,
+        "instante_objetivo": "2026-10-25T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1154",
+        "objetivo_kw": 28.920862,
+        "prediccion_kw": 28.727878,
+        "instante_objetivo": "2026-10-25T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1155",
+        "objetivo_kw": 30.741146,
+        "prediccion_kw": 28.920862,
+        "instante_objetivo": "2026-10-25T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1156",
+        "objetivo_kw": 31.327236,
+        "prediccion_kw": 30.741146,
+        "instante_objetivo": "2026-10-25T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1157",
+        "objetivo_kw": 32.306173,
+        "prediccion_kw": 31.327236,
+        "instante_objetivo": "2026-10-25T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1158",
+        "objetivo_kw": 38.043178,
+        "prediccion_kw": 32.306173,
+        "instante_objetivo": "2026-10-25T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1159",
+        "objetivo_kw": 38.386665,
+        "prediccion_kw": 38.043178,
+        "instante_objetivo": "2026-10-25T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1160",
+        "objetivo_kw": 40.452413,
+        "prediccion_kw": 38.386665,
+        "instante_objetivo": "2026-10-25T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1161",
+        "objetivo_kw": 45.798921,
+        "prediccion_kw": 40.452413,
+        "instante_objetivo": "2026-10-25T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1162",
+        "objetivo_kw": 46.274802,
+        "prediccion_kw": 45.798921,
+        "instante_objetivo": "2026-10-25T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1163",
+        "objetivo_kw": 48.174725,
+        "prediccion_kw": 46.274802,
+        "instante_objetivo": "2026-10-25T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1164",
+        "objetivo_kw": 50.457283,
+        "prediccion_kw": 48.174725,
+        "instante_objetivo": "2026-10-25T12:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1165",
+        "objetivo_kw": 49.319,
+        "prediccion_kw": 50.457283,
+        "instante_objetivo": "2026-10-25T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1166",
+        "objetivo_kw": 50.254562,
+        "prediccion_kw": 49.319,
+        "instante_objetivo": "2026-10-25T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1167",
+        "objetivo_kw": 47.955826,
+        "prediccion_kw": 50.254562,
+        "instante_objetivo": "2026-10-25T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1168",
+        "objetivo_kw": 46.463995,
+        "prediccion_kw": 47.955826,
+        "instante_objetivo": "2026-10-25T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1169",
+        "objetivo_kw": 46.826155,
+        "prediccion_kw": 46.463995,
+        "instante_objetivo": "2026-10-25T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1170",
+        "objetivo_kw": 42.704115,
+        "prediccion_kw": 46.826155,
+        "instante_objetivo": "2026-10-25T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1171",
+        "objetivo_kw": 39.557196,
+        "prediccion_kw": 42.704115,
+        "instante_objetivo": "2026-10-25T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1172",
+        "objetivo_kw": 37.222604,
+        "prediccion_kw": 39.557196,
+        "instante_objetivo": "2026-10-25T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1173",
+        "objetivo_kw": 32.539156,
+        "prediccion_kw": 37.222604,
+        "instante_objetivo": "2026-10-25T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1174",
+        "objetivo_kw": 31.309089,
+        "prediccion_kw": 32.539156,
+        "instante_objetivo": "2026-10-25T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1175",
+        "objetivo_kw": 29.20752,
+        "prediccion_kw": 31.309089,
+        "instante_objetivo": "2026-10-25T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1176",
+        "objetivo_kw": 37.892713,
+        "prediccion_kw": 29.20752,
+        "instante_objetivo": "2026-10-26T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1177",
+        "objetivo_kw": 38.346338,
+        "prediccion_kw": 37.892713,
+        "instante_objetivo": "2026-10-26T01:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1178",
+        "objetivo_kw": 39.054927,
+        "prediccion_kw": 38.346338,
+        "instante_objetivo": "2026-10-26T02:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1179",
+        "objetivo_kw": 37.951241,
+        "prediccion_kw": 39.054927,
+        "instante_objetivo": "2026-10-26T03:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1180",
+        "objetivo_kw": 38.977794,
+        "prediccion_kw": 37.951241,
+        "instante_objetivo": "2026-10-26T04:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1181",
+        "objetivo_kw": 43.992339,
+        "prediccion_kw": 38.977794,
+        "instante_objetivo": "2026-10-26T05:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1182",
+        "objetivo_kw": 47.639632,
+        "prediccion_kw": 43.992339,
+        "instante_objetivo": "2026-10-26T06:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1183",
+        "objetivo_kw": 48.396645,
+        "prediccion_kw": 47.639632,
+        "instante_objetivo": "2026-10-26T07:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1184",
+        "objetivo_kw": 50.567383,
+        "prediccion_kw": 48.396645,
+        "instante_objetivo": "2026-10-26T08:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1185",
+        "objetivo_kw": 55.062263,
+        "prediccion_kw": 50.567383,
+        "instante_objetivo": "2026-10-26T09:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1186",
+        "objetivo_kw": 56.727471,
+        "prediccion_kw": 55.062263,
+        "instante_objetivo": "2026-10-26T10:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1187",
+        "objetivo_kw": 59.24977,
+        "prediccion_kw": 56.727471,
+        "instante_objetivo": "2026-10-26T11:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1189",
+        "objetivo_kw": 61.678895,
+        "prediccion_kw": 59.977834,
+        "instante_objetivo": "2026-10-26T13:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1190",
+        "objetivo_kw": 59.297206,
+        "prediccion_kw": 61.678895,
+        "instante_objetivo": "2026-10-26T14:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1191",
+        "objetivo_kw": 59.369887,
+        "prediccion_kw": 59.297206,
+        "instante_objetivo": "2026-10-26T15:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1192",
+        "objetivo_kw": 57.783132,
+        "prediccion_kw": 59.369887,
+        "instante_objetivo": "2026-10-26T16:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1193",
+        "objetivo_kw": 54.370662,
+        "prediccion_kw": 57.783132,
+        "instante_objetivo": "2026-10-26T17:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "revisar",
+        "fuera_rango": true
+      },
+      {
+        "id": "PF1194",
+        "objetivo_kw": 52.520543,
+        "prediccion_kw": 54.370662,
+        "instante_objetivo": "2026-10-26T18:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1195",
+        "objetivo_kw": 46.838182,
+        "prediccion_kw": 52.520543,
+        "instante_objetivo": "2026-10-26T19:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1196",
+        "objetivo_kw": 44.398532,
+        "prediccion_kw": 46.838182,
+        "instante_objetivo": "2026-10-26T20:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1197",
+        "objetivo_kw": 43.632465,
+        "prediccion_kw": 44.398532,
+        "instante_objetivo": "2026-10-26T21:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1198",
+        "objetivo_kw": 41.529641,
+        "prediccion_kw": 43.632465,
+        "instante_objetivo": "2026-10-26T22:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1199",
+        "objetivo_kw": 38.297844,
+        "prediccion_kw": 41.529641,
+        "instante_objetivo": "2026-10-26T23:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      },
+      {
+        "id": "PF1200",
+        "objetivo_kw": 38.437462,
+        "prediccion_kw": 38.297844,
+        "instante_objetivo": "2026-10-27T00:00:00-05:00",
+        "minutos_hasta_objetivo": 55.0,
+        "estado": "estimacion",
+        "fuera_rango": false
+      }
+    ]
+  },
+  "aceptacion": {
+    "reduccion_relativa_mae": 0.4537715920283275,
+    "condiciones": {
+      "mae": true,
+      "mejora": true,
+      "cobertura": true
+    },
+    "cumple_criterio_didactico": true,
+    "autoriza_uso_real": false
+  }
+}

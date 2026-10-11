@@ -1,0 +1,14 @@
+{
+  "mae_modelo_kw": 1.5,
+  "mae_referencia_kw": 2.0,
+  "reduccion_relativa": 0.25,
+  "admitidas": 94,
+  "total": 100,
+  "cobertura": 0.94,
+  "condiciones": {
+    "mae": true,
+    "mejora": true,
+    "cobertura": false
+  },
+  "aceptado": false
+}
