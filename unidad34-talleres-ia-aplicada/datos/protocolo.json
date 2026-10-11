@@ -1,0 +1,32 @@
+{
+  "version": "u34-v1",
+  "fijado_antes_de_ejecutar": "2026-10-10",
+  "energia": {
+    "semilla": 3401,
+    "horas": 960,
+    "cortes_objetivo": [576, 768],
+    "candidatos": ["persistencia", "ridge_1"],
+    "criterio": "MAE; empate por orden de candidatos",
+    "reajustar_tras_elegir": false
+  },
+  "ambiente": {
+    "semilla": 3402,
+    "zonas": 12,
+    "filas_por_zona": 40,
+    "candidatos": ["ninguna", "todas", "logistica_0.3", "logistica_0.5", "logistica_0.7"],
+    "costo_fp": 1,
+    "costo_fn": 4,
+    "criterio": "costo total; empate por menos propuestas y luego orden",
+    "reajustar_tras_elegir": false
+  },
+  "documentos": {
+    "candidatos": ["solapamiento", "tfidf_0.0", "tfidf_0.2", "tfidf_0.4"],
+    "costo_respuesta_incorrecta": 3,
+    "costo_abstencion_respondible": 1,
+    "criterio": "costo total; empate por menos respuestas y luego orden",
+    "familias_validacion": ["reserva", "prestamo", "entrega", "wifi", "salud", "pago"],
+    "familias_prueba": ["tutoria", "certificado", "renovacion", "accesibilidad", "beca", "transporte"],
+    "ajuste_tfidf": "solo corpus fijo; sin preguntas ni etiquetas",
+    "reajustar_tras_elegir": false
+  }
+}

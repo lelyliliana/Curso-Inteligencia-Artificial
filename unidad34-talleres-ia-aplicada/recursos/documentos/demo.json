@@ -1,0 +1,16 @@
+{
+  "taller": "documentos",
+  "modelo_sha256": "3625b4a54b4cfc1e4217ebfd229c97614837f75de4ac74295340a51ad3f6d2de",
+  "salida": {
+    "estado": "fragmento",
+    "documento": "D01",
+    "puntuacion": 0.5080281080551913,
+    "respuesta": "Para reservar la sala Aurora, solicita el turno en el formulario de biblioteca. Cada reserva dura dos horas.",
+    "cita": {
+      "documento": "D01",
+      "version": "1",
+      "inicio": 0,
+      "fin": 108
+    }
+  }
+}

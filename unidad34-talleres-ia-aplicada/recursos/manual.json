@@ -1,0 +1,20 @@
+{
+  "energia": {
+    "n": 3,
+    "mae_kw": 2.0
+  },
+  "ambiente": {
+    "n": 4,
+    "fp": 1,
+    "fn": 1,
+    "costo": 5
+  },
+  "documentos": {
+    "n": 4,
+    "respondidas": 2,
+    "aceptadas": 2,
+    "cobertura": 0.5,
+    "precision_respondidas": 0.5,
+    "costo": 4
+  }
+}

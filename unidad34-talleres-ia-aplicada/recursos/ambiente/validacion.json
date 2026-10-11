@@ -1,0 +1,5670 @@
+{
+  "taller": "ambiente",
+  "fase": "validacion",
+  "elegido": "logistica_0.3",
+  "modelo_sha256": "1ef73319f92c716078d6578a2b65510c3db867d8e81dbe053a509371cfe6e30b",
+  "criterio": "costo total; empate por menos propuestas y luego orden",
+  "recarga_identica": true,
+  "resultados": {
+    "ninguna": {
+      "n": 120,
+      "tp": 0,
+      "fp": 0,
+      "fn": 55,
+      "tn": 65,
+      "costo": 220,
+      "costo_por_caso": 1.8333333333333333,
+      "propuestas": 0,
+      "precision": null,
+      "recall": 0.0,
+      "por_zona": {
+        "Z06": {
+          "n": 40,
+          "tp": 0,
+          "fp": 0,
+          "fn": 16,
+          "tn": 24,
+          "costo": 64,
+          "costo_por_caso": 1.6,
+          "propuestas": 0,
+          "precision": null,
+          "recall": 0.0
+        },
+        "Z07": {
+          "n": 40,
+          "tp": 0,
+          "fp": 0,
+          "fn": 15,
+          "tn": 25,
+          "costo": 60,
+          "costo_por_caso": 1.5,
+          "propuestas": 0,
+          "precision": null,
+          "recall": 0.0
+        },
+        "Z08": {
+          "n": 40,
+          "tp": 0,
+          "fp": 0,
+          "fn": 24,
+          "tn": 16,
+          "costo": 96,
+          "costo_por_caso": 2.4,
+          "propuestas": 0,
+          "precision": null,
+          "recall": 0.0
+        }
+      },
+      "casos": [
+        {
+          "id": "A06-00",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-01",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-02",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-03",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-04",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-05",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-06",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-07",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-08",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-09",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-10",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-11",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-12",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-13",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-14",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-15",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-16",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-17",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-18",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-19",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-20",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-21",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-22",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-23",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-24",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-25",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-26",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-27",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-28",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-29",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-30",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-31",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-32",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-33",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-34",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-35",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-36",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-37",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-38",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-39",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-00",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-01",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-02",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-03",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-04",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-05",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-06",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-07",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-08",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-09",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-10",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-11",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-12",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-13",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-14",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-15",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-16",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-17",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-18",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-19",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-20",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-21",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-22",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-23",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-24",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-25",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-26",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-27",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-28",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-29",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-30",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-31",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-32",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-33",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-34",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-35",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-36",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-37",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-38",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-39",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-00",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-01",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-02",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-03",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-04",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-05",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-06",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-07",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-08",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-09",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-10",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-11",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-12",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-13",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-14",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-15",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-16",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-17",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-18",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-19",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-20",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-21",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-22",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-23",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-24",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-25",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-26",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": true,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-27",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-28",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-29",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-30",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-31",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-32",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-33",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-34",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-35",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-36",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-37",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-38",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-39",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        }
+      ]
+    },
+    "todas": {
+      "n": 120,
+      "tp": 55,
+      "fp": 65,
+      "fn": 0,
+      "tn": 0,
+      "costo": 65,
+      "costo_por_caso": 0.5416666666666666,
+      "propuestas": 120,
+      "precision": 0.4583333333333333,
+      "recall": 1.0,
+      "por_zona": {
+        "Z06": {
+          "n": 40,
+          "tp": 16,
+          "fp": 24,
+          "fn": 0,
+          "tn": 0,
+          "costo": 24,
+          "costo_por_caso": 0.6,
+          "propuestas": 40,
+          "precision": 0.4,
+          "recall": 1.0
+        },
+        "Z07": {
+          "n": 40,
+          "tp": 15,
+          "fp": 25,
+          "fn": 0,
+          "tn": 0,
+          "costo": 25,
+          "costo_por_caso": 0.625,
+          "propuestas": 40,
+          "precision": 0.375,
+          "recall": 1.0
+        },
+        "Z08": {
+          "n": 40,
+          "tp": 24,
+          "fp": 16,
+          "fn": 0,
+          "tn": 0,
+          "costo": 16,
+          "costo_por_caso": 0.4,
+          "propuestas": 40,
+          "precision": 0.6,
+          "recall": 1.0
+        }
+      },
+      "casos": [
+        {
+          "id": "A06-00",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-01",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-02",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-03",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-04",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-05",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-06",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-07",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-08",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-09",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-10",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-11",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-12",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-13",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-14",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-15",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-16",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-17",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-18",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-19",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-20",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-21",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-22",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-23",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-24",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-25",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-26",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-27",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-28",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-29",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-30",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-31",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-32",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-33",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-34",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-35",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-36",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-37",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-38",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-39",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-00",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-01",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-02",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-03",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-04",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-05",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-06",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-07",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-08",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-09",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-10",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-11",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-12",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-13",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-14",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-15",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-16",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-17",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-18",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-19",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-20",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-21",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-22",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-23",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-24",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-25",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-26",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-27",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-28",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-29",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-30",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-31",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-32",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-33",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-34",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-35",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-36",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-37",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-38",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-39",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-00",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-01",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-02",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-03",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-04",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-05",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-06",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-07",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-08",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-09",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-10",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-11",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-12",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-13",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-14",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-15",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-16",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-17",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-18",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-19",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-20",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-21",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-22",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-23",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-24",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-25",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-26",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": true,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-27",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-28",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-29",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-30",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-31",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-32",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-33",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-34",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-35",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-36",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-37",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-38",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-39",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": null,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        }
+      ]
+    },
+    "logistica_0.3": {
+      "n": 120,
+      "tp": 46,
+      "fp": 7,
+      "fn": 9,
+      "tn": 58,
+      "costo": 43,
+      "costo_por_caso": 0.35833333333333334,
+      "propuestas": 53,
+      "precision": 0.8679245283018868,
+      "recall": 0.8363636363636363,
+      "por_zona": {
+        "Z06": {
+          "n": 40,
+          "tp": 15,
+          "fp": 2,
+          "fn": 1,
+          "tn": 22,
+          "costo": 6,
+          "costo_por_caso": 0.15,
+          "propuestas": 17,
+          "precision": 0.8823529411764706,
+          "recall": 0.9375
+        },
+        "Z07": {
+          "n": 40,
+          "tp": 13,
+          "fp": 2,
+          "fn": 2,
+          "tn": 23,
+          "costo": 10,
+          "costo_por_caso": 0.25,
+          "propuestas": 15,
+          "precision": 0.8666666666666667,
+          "recall": 0.8666666666666667
+        },
+        "Z08": {
+          "n": 40,
+          "tp": 18,
+          "fp": 3,
+          "fn": 6,
+          "tn": 13,
+          "costo": 27,
+          "costo_por_caso": 0.675,
+          "propuestas": 21,
+          "precision": 0.8571428571428571,
+          "recall": 0.75
+        }
+      },
+      "casos": [
+        {
+          "id": "A06-00",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.09769027938739533,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-01",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9403620647421174,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-02",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06272420107108075,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-03",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.2689085529456511,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-04",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.1150681218568641,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-05",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.15871521333558009,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-06",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.018302631621966523,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-07",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.2928516012006756,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-08",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7604691757664485,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-09",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.843988750078414,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-10",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7094035773938803,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-11",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.16877291764384805,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-12",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.014803685834154846,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-13",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.1303935868367909,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-14",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8291376772402586,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-15",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04243244209748014,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-16",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.27683139123358896,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-17",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.060448105833266604,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-18",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.5918680403400366,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-19",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04242474575804769,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-20",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05188919388384788,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-21",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9580116156504707,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-22",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.7752542029974124,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-23",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05168560268061833,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-24",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8318420887174319,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-25",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.4020771217783434,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-26",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.08911459379295324,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-27",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.25574993162960974,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-28",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.14428626175053427,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-29",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.3719367996158984,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-30",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7972421603838173,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-31",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8161921456794593,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-32",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.09576523962005451,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-33",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.820418222434012,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-34",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06964025487469928,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-35",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8496959620047979,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-36",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0346585790912048,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-37",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.23543361024317894,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-38",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.6797849217695241,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-39",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.7221040936711649,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-00",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0996043109481306,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-01",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9488528122804311,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-02",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.1360281047374885,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-03",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.09047585479840291,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-04",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.5152931871115279,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-05",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8620924853215213,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-06",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.08903175466477753,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-07",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.1696116470817406,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-08",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.008476977513075332,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-09",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.07830364774458942,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-10",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.3627252325887334,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-11",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.03254461725560187,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-12",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05795261323306699,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-13",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.5800052518113277,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-14",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.47311950562348953,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-15",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.5299897071836307,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-16",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04992324106674665,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-17",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7139388668016531,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-18",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05599322129168084,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-19",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.005854778022704646,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-20",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.5503797911907066,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-21",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.44521898248436187,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-22",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.6048735561989396,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-23",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.02740572757080054,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-24",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0669411901430867,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-25",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9751769487271013,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-26",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.12361371126390625,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-27",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06680553396879702,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-28",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0713004069311003,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-29",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.12237641560236091,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-30",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9075898110557419,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-31",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0280323298001162,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-32",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.00998176747709173,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-33",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.08234350943549153,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-34",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9326856293407967,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-35",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06653867869732286,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-36",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8004101795385665,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-37",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.14448475554796114,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-38",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.07748148534239806,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-39",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.025110350058108404,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-00",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.016102434132917672,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-01",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7481679136009826,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-02",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.08794793982415264,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-03",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.038275102527811376,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-04",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.17132369614990992,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-05",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.5703837764407982,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-06",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.3028212193146494,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-07",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7978206791813872,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-08",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.24619964564842486,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-09",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.46504291043586893,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-10",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05170903393692449,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-11",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7092013681211963,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-12",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.6615799461343385,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-13",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.4255440318996834,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-14",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.10018100063102227,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-15",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.4623960440038161,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-16",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7966068540071984,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-17",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8361530408068443,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-18",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.6706673000564674,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-19",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.35766278085134934,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-20",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06789744167057604,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-21",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.14324940102644482,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-22",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.14955130113471304,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-23",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.03139953495385866,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-24",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.722754458309424,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-25",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.458944155207425,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-26",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.041943434292953816,
+          "fuera_rango_entrenamiento": true,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-27",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04902899668458357,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-28",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9887587093001587,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-29",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.42838126745651556,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-30",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8941513267574887,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-31",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.028876780311132763,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-32",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.005304289113286234,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-33",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.012820714277973896,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-34",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7534495711264682,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-35",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.13161007913864337,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-36",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7729266887014103,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-37",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.20291950093161615,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-38",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06559904261837377,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-39",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9485028388891739,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        }
+      ]
+    },
+    "logistica_0.5": {
+      "n": 120,
+      "tp": 38,
+      "fp": 3,
+      "fn": 17,
+      "tn": 62,
+      "costo": 71,
+      "costo_por_caso": 0.5916666666666667,
+      "propuestas": 41,
+      "precision": 0.926829268292683,
+      "recall": 0.6909090909090909,
+      "por_zona": {
+        "Z06": {
+          "n": 40,
+          "tp": 13,
+          "fp": 2,
+          "fn": 3,
+          "tn": 22,
+          "costo": 14,
+          "costo_por_caso": 0.35,
+          "propuestas": 15,
+          "precision": 0.8666666666666667,
+          "recall": 0.8125
+        },
+        "Z07": {
+          "n": 40,
+          "tp": 11,
+          "fp": 1,
+          "fn": 4,
+          "tn": 24,
+          "costo": 17,
+          "costo_por_caso": 0.425,
+          "propuestas": 12,
+          "precision": 0.9166666666666666,
+          "recall": 0.7333333333333333
+        },
+        "Z08": {
+          "n": 40,
+          "tp": 14,
+          "fp": 0,
+          "fn": 10,
+          "tn": 16,
+          "costo": 40,
+          "costo_por_caso": 1.0,
+          "propuestas": 14,
+          "precision": 1.0,
+          "recall": 0.5833333333333334
+        }
+      },
+      "casos": [
+        {
+          "id": "A06-00",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.09769027938739533,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-01",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9403620647421174,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-02",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06272420107108075,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-03",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.2689085529456511,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-04",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.1150681218568641,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-05",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.15871521333558009,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-06",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.018302631621966523,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-07",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.2928516012006756,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-08",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7604691757664485,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-09",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.843988750078414,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-10",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7094035773938803,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-11",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.16877291764384805,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-12",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.014803685834154846,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-13",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.1303935868367909,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-14",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8291376772402586,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-15",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04243244209748014,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-16",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.27683139123358896,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-17",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.060448105833266604,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-18",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.5918680403400366,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-19",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04242474575804769,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-20",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05188919388384788,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-21",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9580116156504707,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-22",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.7752542029974124,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-23",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05168560268061833,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-24",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8318420887174319,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-25",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.4020771217783434,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-26",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.08911459379295324,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-27",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.25574993162960974,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-28",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.14428626175053427,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-29",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.3719367996158984,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-30",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7972421603838173,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-31",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8161921456794593,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-32",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.09576523962005451,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-33",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.820418222434012,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-34",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06964025487469928,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-35",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8496959620047979,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-36",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0346585790912048,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-37",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.23543361024317894,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-38",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.6797849217695241,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-39",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.7221040936711649,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-00",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0996043109481306,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-01",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9488528122804311,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-02",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.1360281047374885,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-03",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.09047585479840291,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-04",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.5152931871115279,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-05",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8620924853215213,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-06",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.08903175466477753,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-07",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.1696116470817406,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-08",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.008476977513075332,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-09",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.07830364774458942,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-10",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.3627252325887334,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-11",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.03254461725560187,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-12",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05795261323306699,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-13",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.5800052518113277,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-14",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.47311950562348953,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-15",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.5299897071836307,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-16",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04992324106674665,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-17",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7139388668016531,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-18",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05599322129168084,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-19",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.005854778022704646,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-20",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.5503797911907066,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-21",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.44521898248436187,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-22",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.6048735561989396,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-23",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.02740572757080054,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-24",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0669411901430867,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-25",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9751769487271013,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-26",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.12361371126390625,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-27",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06680553396879702,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-28",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0713004069311003,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-29",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.12237641560236091,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-30",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9075898110557419,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-31",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0280323298001162,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-32",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.00998176747709173,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-33",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.08234350943549153,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-34",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9326856293407967,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-35",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06653867869732286,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-36",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8004101795385665,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-37",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.14448475554796114,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-38",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.07748148534239806,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-39",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.025110350058108404,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-00",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.016102434132917672,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-01",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7481679136009826,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-02",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.08794793982415264,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-03",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.038275102527811376,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-04",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.17132369614990992,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-05",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.5703837764407982,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-06",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.3028212193146494,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-07",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7978206791813872,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-08",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.24619964564842486,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-09",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.46504291043586893,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-10",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05170903393692449,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-11",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7092013681211963,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-12",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.6615799461343385,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-13",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.4255440318996834,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-14",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.10018100063102227,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-15",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.4623960440038161,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-16",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7966068540071984,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-17",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8361530408068443,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-18",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.6706673000564674,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-19",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.35766278085134934,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-20",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06789744167057604,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-21",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.14324940102644482,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-22",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.14955130113471304,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-23",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.03139953495385866,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-24",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.722754458309424,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-25",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.458944155207425,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-26",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.041943434292953816,
+          "fuera_rango_entrenamiento": true,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-27",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04902899668458357,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-28",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9887587093001587,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-29",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.42838126745651556,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-30",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8941513267574887,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-31",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.028876780311132763,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-32",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.005304289113286234,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-33",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.012820714277973896,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-34",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7534495711264682,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-35",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.13161007913864337,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-36",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7729266887014103,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-37",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.20291950093161615,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-38",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06559904261837377,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-39",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9485028388891739,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        }
+      ]
+    },
+    "logistica_0.7": {
+      "n": 120,
+      "tp": 29,
+      "fp": 2,
+      "fn": 26,
+      "tn": 63,
+      "costo": 106,
+      "costo_por_caso": 0.8833333333333333,
+      "propuestas": 31,
+      "precision": 0.9354838709677419,
+      "recall": 0.5272727272727272,
+      "por_zona": {
+        "Z06": {
+          "n": 40,
+          "tp": 11,
+          "fp": 2,
+          "fn": 5,
+          "tn": 22,
+          "costo": 22,
+          "costo_por_caso": 0.55,
+          "propuestas": 13,
+          "precision": 0.8461538461538461,
+          "recall": 0.6875
+        },
+        "Z07": {
+          "n": 40,
+          "tp": 7,
+          "fp": 0,
+          "fn": 8,
+          "tn": 25,
+          "costo": 32,
+          "costo_por_caso": 0.8,
+          "propuestas": 7,
+          "precision": 1.0,
+          "recall": 0.4666666666666667
+        },
+        "Z08": {
+          "n": 40,
+          "tp": 11,
+          "fp": 0,
+          "fn": 13,
+          "tn": 16,
+          "costo": 52,
+          "costo_por_caso": 1.3,
+          "propuestas": 11,
+          "precision": 1.0,
+          "recall": 0.4583333333333333
+        }
+      },
+      "casos": [
+        {
+          "id": "A06-00",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.09769027938739533,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-01",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9403620647421174,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-02",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06272420107108075,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-03",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.2689085529456511,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-04",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.1150681218568641,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-05",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.15871521333558009,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-06",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.018302631621966523,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-07",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.2928516012006756,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-08",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7604691757664485,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-09",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.843988750078414,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-10",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7094035773938803,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-11",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.16877291764384805,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-12",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.014803685834154846,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-13",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.1303935868367909,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-14",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8291376772402586,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-15",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04243244209748014,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-16",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.27683139123358896,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-17",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.060448105833266604,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-18",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.5918680403400366,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-19",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04242474575804769,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-20",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05188919388384788,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-21",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9580116156504707,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-22",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.7752542029974124,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-23",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05168560268061833,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-24",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8318420887174319,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-25",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.4020771217783434,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-26",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.08911459379295324,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-27",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.25574993162960974,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-28",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.14428626175053427,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-29",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.3719367996158984,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-30",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7972421603838173,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-31",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8161921456794593,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-32",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.09576523962005451,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-33",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.820418222434012,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-34",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06964025487469928,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-35",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8496959620047979,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-36",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0346585790912048,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-37",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.23543361024317894,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-38",
+          "zona": "Z06",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.6797849217695241,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A06-39",
+          "zona": "Z06",
+          "objetivo": 0,
+          "proponer_revision": 1,
+          "puntuacion": 0.7221040936711649,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-00",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0996043109481306,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-01",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9488528122804311,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-02",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.1360281047374885,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-03",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.09047585479840291,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-04",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.5152931871115279,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-05",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8620924853215213,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-06",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.08903175466477753,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-07",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.1696116470817406,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-08",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.008476977513075332,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-09",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.07830364774458942,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-10",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.3627252325887334,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-11",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.03254461725560187,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-12",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05795261323306699,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-13",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.5800052518113277,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-14",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.47311950562348953,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-15",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.5299897071836307,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-16",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04992324106674665,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-17",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7139388668016531,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-18",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05599322129168084,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-19",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.005854778022704646,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-20",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.5503797911907066,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-21",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.44521898248436187,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-22",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.6048735561989396,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-23",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.02740572757080054,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-24",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0669411901430867,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-25",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9751769487271013,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-26",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.12361371126390625,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-27",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06680553396879702,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-28",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0713004069311003,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-29",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.12237641560236091,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-30",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9075898110557419,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-31",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.0280323298001162,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-32",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.00998176747709173,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-33",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.08234350943549153,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-34",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9326856293407967,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-35",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06653867869732286,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-36",
+          "zona": "Z07",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8004101795385665,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-37",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.14448475554796114,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-38",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.07748148534239806,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A07-39",
+          "zona": "Z07",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.025110350058108404,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-00",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.016102434132917672,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-01",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7481679136009826,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-02",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.08794793982415264,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-03",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.038275102527811376,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-04",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.17132369614990992,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-05",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.5703837764407982,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-06",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.3028212193146494,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-07",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7978206791813872,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-08",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.24619964564842486,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-09",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.46504291043586893,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-10",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.05170903393692449,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-11",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7092013681211963,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-12",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.6615799461343385,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-13",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.4255440318996834,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-14",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.10018100063102227,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-15",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.4623960440038161,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-16",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7966068540071984,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-17",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8361530408068443,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-18",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.6706673000564674,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-19",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.35766278085134934,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-20",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06789744167057604,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-21",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.14324940102644482,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-22",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.14955130113471304,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-23",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.03139953495385866,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-24",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.722754458309424,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-25",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.458944155207425,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-26",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.041943434292953816,
+          "fuera_rango_entrenamiento": true,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-27",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.04902899668458357,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-28",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9887587093001587,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-29",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.42838126745651556,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-30",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.8941513267574887,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-31",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.028876780311132763,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-32",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.005304289113286234,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-33",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.012820714277973896,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-34",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7534495711264682,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-35",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.13161007913864337,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-36",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.7729266887014103,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-37",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 0,
+          "puntuacion": 0.20291950093161615,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-38",
+          "zona": "Z08",
+          "objetivo": 0,
+          "proponer_revision": 0,
+          "puntuacion": 0.06559904261837377,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        },
+        {
+          "id": "A08-39",
+          "zona": "Z08",
+          "objetivo": 1,
+          "proponer_revision": 1,
+          "puntuacion": 0.9485028388891739,
+          "fuera_rango_entrenamiento": false,
+          "requiere_revision_humana": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "taller": "energia",
+  "modelo_sha256": "c7b7ed96065634f281b219a24515171d1dcafcd9e88ef7041c3528402c1d43b5",
+  "salida": {
+    "estado": "estimacion",
+    "prediccion_kw": 43.313094896978754,
+    "fuera_rango_consumo": false,
+    "unidad": "kW",
+    "horizonte_horas": 1
+  }
+}

@@ -1,0 +1,1730 @@
+[
+  {
+    "id": "E0768",
+    "origen": "2026-08-06T23:00:00-05:00",
+    "instante_objetivo": "2026-08-07T00:00:00-05:00",
+    "consumo_actual_kw": 29.688938,
+    "hora_siguiente": 0,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 29.951783
+  },
+  {
+    "id": "E0769",
+    "origen": "2026-08-07T00:00:00-05:00",
+    "instante_objetivo": "2026-08-07T01:00:00-05:00",
+    "consumo_actual_kw": 29.951783,
+    "hora_siguiente": 1,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 31.495042
+  },
+  {
+    "id": "E0770",
+    "origen": "2026-08-07T01:00:00-05:00",
+    "instante_objetivo": "2026-08-07T02:00:00-05:00",
+    "consumo_actual_kw": 31.495042,
+    "hora_siguiente": 2,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 30.91876
+  },
+  {
+    "id": "E0771",
+    "origen": "2026-08-07T02:00:00-05:00",
+    "instante_objetivo": "2026-08-07T03:00:00-05:00",
+    "consumo_actual_kw": 30.91876,
+    "hora_siguiente": 3,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 31.782811
+  },
+  {
+    "id": "E0772",
+    "origen": "2026-08-07T03:00:00-05:00",
+    "instante_objetivo": "2026-08-07T04:00:00-05:00",
+    "consumo_actual_kw": 31.782811,
+    "hora_siguiente": 4,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 29.508294
+  },
+  {
+    "id": "E0773",
+    "origen": "2026-08-07T04:00:00-05:00",
+    "instante_objetivo": "2026-08-07T05:00:00-05:00",
+    "consumo_actual_kw": 29.508294,
+    "hora_siguiente": 5,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 32.992326
+  },
+  {
+    "id": "E0774",
+    "origen": "2026-08-07T05:00:00-05:00",
+    "instante_objetivo": "2026-08-07T06:00:00-05:00",
+    "consumo_actual_kw": 32.992326,
+    "hora_siguiente": 6,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 37.530894
+  },
+  {
+    "id": "E0775",
+    "origen": "2026-08-07T06:00:00-05:00",
+    "instante_objetivo": "2026-08-07T07:00:00-05:00",
+    "consumo_actual_kw": 37.530894,
+    "hora_siguiente": 7,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 37.409249
+  },
+  {
+    "id": "E0776",
+    "origen": "2026-08-07T07:00:00-05:00",
+    "instante_objetivo": "2026-08-07T08:00:00-05:00",
+    "consumo_actual_kw": 37.409249,
+    "hora_siguiente": 8,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.722553
+  },
+  {
+    "id": "E0777",
+    "origen": "2026-08-07T08:00:00-05:00",
+    "instante_objetivo": "2026-08-07T09:00:00-05:00",
+    "consumo_actual_kw": 39.722553,
+    "hora_siguiente": 9,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.034951
+  },
+  {
+    "id": "E0778",
+    "origen": "2026-08-07T09:00:00-05:00",
+    "instante_objetivo": "2026-08-07T10:00:00-05:00",
+    "consumo_actual_kw": 39.034951,
+    "hora_siguiente": 10,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 41.305037
+  },
+  {
+    "id": "E0779",
+    "origen": "2026-08-07T10:00:00-05:00",
+    "instante_objetivo": "2026-08-07T11:00:00-05:00",
+    "consumo_actual_kw": 41.305037,
+    "hora_siguiente": 11,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 41.783578
+  },
+  {
+    "id": "E0780",
+    "origen": "2026-08-07T11:00:00-05:00",
+    "instante_objetivo": "2026-08-07T12:00:00-05:00",
+    "consumo_actual_kw": 41.783578,
+    "hora_siguiente": 12,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 45.177351
+  },
+  {
+    "id": "E0781",
+    "origen": "2026-08-07T12:00:00-05:00",
+    "instante_objetivo": "2026-08-07T13:00:00-05:00",
+    "consumo_actual_kw": 45.177351,
+    "hora_siguiente": 13,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.617536
+  },
+  {
+    "id": "E0782",
+    "origen": "2026-08-07T13:00:00-05:00",
+    "instante_objetivo": "2026-08-07T14:00:00-05:00",
+    "consumo_actual_kw": 44.617536,
+    "hora_siguiente": 14,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.625931
+  },
+  {
+    "id": "E0783",
+    "origen": "2026-08-07T14:00:00-05:00",
+    "instante_objetivo": "2026-08-07T15:00:00-05:00",
+    "consumo_actual_kw": 44.625931,
+    "hora_siguiente": 15,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 41.778797
+  },
+  {
+    "id": "E0784",
+    "origen": "2026-08-07T15:00:00-05:00",
+    "instante_objetivo": "2026-08-07T16:00:00-05:00",
+    "consumo_actual_kw": 41.778797,
+    "hora_siguiente": 16,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 43.397128
+  },
+  {
+    "id": "E0785",
+    "origen": "2026-08-07T16:00:00-05:00",
+    "instante_objetivo": "2026-08-07T17:00:00-05:00",
+    "consumo_actual_kw": 43.397128,
+    "hora_siguiente": 17,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.754852
+  },
+  {
+    "id": "E0786",
+    "origen": "2026-08-07T17:00:00-05:00",
+    "instante_objetivo": "2026-08-07T18:00:00-05:00",
+    "consumo_actual_kw": 39.754852,
+    "hora_siguiente": 18,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 41.008002
+  },
+  {
+    "id": "E0787",
+    "origen": "2026-08-07T18:00:00-05:00",
+    "instante_objetivo": "2026-08-07T19:00:00-05:00",
+    "consumo_actual_kw": 41.008002,
+    "hora_siguiente": 19,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 37.736781
+  },
+  {
+    "id": "E0788",
+    "origen": "2026-08-07T19:00:00-05:00",
+    "instante_objetivo": "2026-08-07T20:00:00-05:00",
+    "consumo_actual_kw": 37.736781,
+    "hora_siguiente": 20,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 34.054263
+  },
+  {
+    "id": "E0789",
+    "origen": "2026-08-07T20:00:00-05:00",
+    "instante_objetivo": "2026-08-07T21:00:00-05:00",
+    "consumo_actual_kw": 34.054263,
+    "hora_siguiente": 21,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 33.759572
+  },
+  {
+    "id": "E0790",
+    "origen": "2026-08-07T21:00:00-05:00",
+    "instante_objetivo": "2026-08-07T22:00:00-05:00",
+    "consumo_actual_kw": 33.759572,
+    "hora_siguiente": 22,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 30.716639
+  },
+  {
+    "id": "E0791",
+    "origen": "2026-08-07T22:00:00-05:00",
+    "instante_objetivo": "2026-08-07T23:00:00-05:00",
+    "consumo_actual_kw": 30.716639,
+    "hora_siguiente": 23,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 32.719267
+  },
+  {
+    "id": "E0792",
+    "origen": "2026-08-07T23:00:00-05:00",
+    "instante_objetivo": "2026-08-08T00:00:00-05:00",
+    "consumo_actual_kw": 32.719267,
+    "hora_siguiente": 0,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 21.86396
+  },
+  {
+    "id": "E0793",
+    "origen": "2026-08-08T00:00:00-05:00",
+    "instante_objetivo": "2026-08-08T01:00:00-05:00",
+    "consumo_actual_kw": 21.86396,
+    "hora_siguiente": 1,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 21.431361
+  },
+  {
+    "id": "E0794",
+    "origen": "2026-08-08T01:00:00-05:00",
+    "instante_objetivo": "2026-08-08T02:00:00-05:00",
+    "consumo_actual_kw": 21.431361,
+    "hora_siguiente": 2,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 23.578358
+  },
+  {
+    "id": "E0795",
+    "origen": "2026-08-08T02:00:00-05:00",
+    "instante_objetivo": "2026-08-08T03:00:00-05:00",
+    "consumo_actual_kw": 23.578358,
+    "hora_siguiente": 3,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 22.28188
+  },
+  {
+    "id": "E0796",
+    "origen": "2026-08-08T03:00:00-05:00",
+    "instante_objetivo": "2026-08-08T04:00:00-05:00",
+    "consumo_actual_kw": 22.28188,
+    "hora_siguiente": 4,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 21.604668
+  },
+  {
+    "id": "E0797",
+    "origen": "2026-08-08T04:00:00-05:00",
+    "instante_objetivo": "2026-08-08T05:00:00-05:00",
+    "consumo_actual_kw": 21.604668,
+    "hora_siguiente": 5,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 22.599024
+  },
+  {
+    "id": "E0798",
+    "origen": "2026-08-08T05:00:00-05:00",
+    "instante_objetivo": "2026-08-08T06:00:00-05:00",
+    "consumo_actual_kw": 22.599024,
+    "hora_siguiente": 6,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 26.875462
+  },
+  {
+    "id": "E0799",
+    "origen": "2026-08-08T06:00:00-05:00",
+    "instante_objetivo": "2026-08-08T07:00:00-05:00",
+    "consumo_actual_kw": 26.875462,
+    "hora_siguiente": 7,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 27.197261
+  },
+  {
+    "id": "E0800",
+    "origen": "2026-08-08T07:00:00-05:00",
+    "instante_objetivo": "2026-08-08T08:00:00-05:00",
+    "consumo_actual_kw": 27.197261,
+    "hora_siguiente": 8,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 30.31351
+  },
+  {
+    "id": "E0801",
+    "origen": "2026-08-08T08:00:00-05:00",
+    "instante_objetivo": "2026-08-08T09:00:00-05:00",
+    "consumo_actual_kw": 30.31351,
+    "hora_siguiente": 9,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 31.0056
+  },
+  {
+    "id": "E0802",
+    "origen": "2026-08-08T09:00:00-05:00",
+    "instante_objetivo": "2026-08-08T10:00:00-05:00",
+    "consumo_actual_kw": 31.0056,
+    "hora_siguiente": 10,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 33.111816
+  },
+  {
+    "id": "E0803",
+    "origen": "2026-08-08T10:00:00-05:00",
+    "instante_objetivo": "2026-08-08T11:00:00-05:00",
+    "consumo_actual_kw": 33.111816,
+    "hora_siguiente": 11,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 35.043311
+  },
+  {
+    "id": "E0804",
+    "origen": "2026-08-08T11:00:00-05:00",
+    "instante_objetivo": "2026-08-08T12:00:00-05:00",
+    "consumo_actual_kw": 35.043311,
+    "hora_siguiente": 12,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 32.660646
+  },
+  {
+    "id": "E0805",
+    "origen": "2026-08-08T12:00:00-05:00",
+    "instante_objetivo": "2026-08-08T13:00:00-05:00",
+    "consumo_actual_kw": 32.660646,
+    "hora_siguiente": 13,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 32.854556
+  },
+  {
+    "id": "E0806",
+    "origen": "2026-08-08T13:00:00-05:00",
+    "instante_objetivo": "2026-08-08T14:00:00-05:00",
+    "consumo_actual_kw": 32.854556,
+    "hora_siguiente": 14,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 34.904149
+  },
+  {
+    "id": "E0807",
+    "origen": "2026-08-08T14:00:00-05:00",
+    "instante_objetivo": "2026-08-08T15:00:00-05:00",
+    "consumo_actual_kw": 34.904149,
+    "hora_siguiente": 15,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 34.985239
+  },
+  {
+    "id": "E0808",
+    "origen": "2026-08-08T15:00:00-05:00",
+    "instante_objetivo": "2026-08-08T16:00:00-05:00",
+    "consumo_actual_kw": 34.985239,
+    "hora_siguiente": 16,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 33.120061
+  },
+  {
+    "id": "E0809",
+    "origen": "2026-08-08T16:00:00-05:00",
+    "instante_objetivo": "2026-08-08T17:00:00-05:00",
+    "consumo_actual_kw": 33.120061,
+    "hora_siguiente": 17,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 30.56401
+  },
+  {
+    "id": "E0810",
+    "origen": "2026-08-08T17:00:00-05:00",
+    "instante_objetivo": "2026-08-08T18:00:00-05:00",
+    "consumo_actual_kw": 30.56401,
+    "hora_siguiente": 18,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 28.123893
+  },
+  {
+    "id": "E0811",
+    "origen": "2026-08-08T18:00:00-05:00",
+    "instante_objetivo": "2026-08-08T19:00:00-05:00",
+    "consumo_actual_kw": 28.123893,
+    "hora_siguiente": 19,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 26.365006
+  },
+  {
+    "id": "E0812",
+    "origen": "2026-08-08T19:00:00-05:00",
+    "instante_objetivo": "2026-08-08T20:00:00-05:00",
+    "consumo_actual_kw": 26.365006,
+    "hora_siguiente": 20,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 26.156094
+  },
+  {
+    "id": "E0813",
+    "origen": "2026-08-08T20:00:00-05:00",
+    "instante_objetivo": "2026-08-08T21:00:00-05:00",
+    "consumo_actual_kw": 26.156094,
+    "hora_siguiente": 21,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 24.5253
+  },
+  {
+    "id": "E0814",
+    "origen": "2026-08-08T21:00:00-05:00",
+    "instante_objetivo": "2026-08-08T22:00:00-05:00",
+    "consumo_actual_kw": 24.5253,
+    "hora_siguiente": 22,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 25.315685
+  },
+  {
+    "id": "E0815",
+    "origen": "2026-08-08T22:00:00-05:00",
+    "instante_objetivo": "2026-08-08T23:00:00-05:00",
+    "consumo_actual_kw": 25.315685,
+    "hora_siguiente": 23,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 20.523316
+  },
+  {
+    "id": "E0816",
+    "origen": "2026-08-08T23:00:00-05:00",
+    "instante_objetivo": "2026-08-09T00:00:00-05:00",
+    "consumo_actual_kw": 20.523316,
+    "hora_siguiente": 0,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 22.837929
+  },
+  {
+    "id": "E0817",
+    "origen": "2026-08-09T00:00:00-05:00",
+    "instante_objetivo": "2026-08-09T01:00:00-05:00",
+    "consumo_actual_kw": 22.837929,
+    "hora_siguiente": 1,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 22.465893
+  },
+  {
+    "id": "E0818",
+    "origen": "2026-08-09T01:00:00-05:00",
+    "instante_objetivo": "2026-08-09T02:00:00-05:00",
+    "consumo_actual_kw": 22.465893,
+    "hora_siguiente": 2,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 20.904279
+  },
+  {
+    "id": "E0819",
+    "origen": "2026-08-09T02:00:00-05:00",
+    "instante_objetivo": "2026-08-09T03:00:00-05:00",
+    "consumo_actual_kw": 20.904279,
+    "hora_siguiente": 3,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 22.434149
+  },
+  {
+    "id": "E0820",
+    "origen": "2026-08-09T03:00:00-05:00",
+    "instante_objetivo": "2026-08-09T04:00:00-05:00",
+    "consumo_actual_kw": 22.434149,
+    "hora_siguiente": 4,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 23.156413
+  },
+  {
+    "id": "E0821",
+    "origen": "2026-08-09T04:00:00-05:00",
+    "instante_objetivo": "2026-08-09T05:00:00-05:00",
+    "consumo_actual_kw": 23.156413,
+    "hora_siguiente": 5,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 21.769974
+  },
+  {
+    "id": "E0822",
+    "origen": "2026-08-09T05:00:00-05:00",
+    "instante_objetivo": "2026-08-09T06:00:00-05:00",
+    "consumo_actual_kw": 21.769974,
+    "hora_siguiente": 6,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 27.934963
+  },
+  {
+    "id": "E0823",
+    "origen": "2026-08-09T06:00:00-05:00",
+    "instante_objetivo": "2026-08-09T07:00:00-05:00",
+    "consumo_actual_kw": 27.934963,
+    "hora_siguiente": 7,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 25.314491
+  },
+  {
+    "id": "E0824",
+    "origen": "2026-08-09T07:00:00-05:00",
+    "instante_objetivo": "2026-08-09T08:00:00-05:00",
+    "consumo_actual_kw": 25.314491,
+    "hora_siguiente": 8,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 29.609732
+  },
+  {
+    "id": "E0825",
+    "origen": "2026-08-09T08:00:00-05:00",
+    "instante_objetivo": "2026-08-09T09:00:00-05:00",
+    "consumo_actual_kw": 29.609732,
+    "hora_siguiente": 9,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 29.921835
+  },
+  {
+    "id": "E0826",
+    "origen": "2026-08-09T09:00:00-05:00",
+    "instante_objetivo": "2026-08-09T10:00:00-05:00",
+    "consumo_actual_kw": 29.921835,
+    "hora_siguiente": 10,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 35.126256
+  },
+  {
+    "id": "E0827",
+    "origen": "2026-08-09T10:00:00-05:00",
+    "instante_objetivo": "2026-08-09T11:00:00-05:00",
+    "consumo_actual_kw": 35.126256,
+    "hora_siguiente": 11,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 34.89459
+  },
+  {
+    "id": "E0828",
+    "origen": "2026-08-09T11:00:00-05:00",
+    "instante_objetivo": "2026-08-09T12:00:00-05:00",
+    "consumo_actual_kw": 34.89459,
+    "hora_siguiente": 12,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 33.874371
+  },
+  {
+    "id": "E0829",
+    "origen": "2026-08-09T12:00:00-05:00",
+    "instante_objetivo": "2026-08-09T13:00:00-05:00",
+    "consumo_actual_kw": 33.874371,
+    "hora_siguiente": 13,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 39.568506
+  },
+  {
+    "id": "E0830",
+    "origen": "2026-08-09T13:00:00-05:00",
+    "instante_objetivo": "2026-08-09T14:00:00-05:00",
+    "consumo_actual_kw": 39.568506,
+    "hora_siguiente": 14,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 34.95031
+  },
+  {
+    "id": "E0831",
+    "origen": "2026-08-09T14:00:00-05:00",
+    "instante_objetivo": "2026-08-09T15:00:00-05:00",
+    "consumo_actual_kw": 34.95031,
+    "hora_siguiente": 15,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 34.141514
+  },
+  {
+    "id": "E0832",
+    "origen": "2026-08-09T15:00:00-05:00",
+    "instante_objetivo": "2026-08-09T16:00:00-05:00",
+    "consumo_actual_kw": 34.141514,
+    "hora_siguiente": 16,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 32.408424
+  },
+  {
+    "id": "E0833",
+    "origen": "2026-08-09T16:00:00-05:00",
+    "instante_objetivo": "2026-08-09T17:00:00-05:00",
+    "consumo_actual_kw": 32.408424,
+    "hora_siguiente": 17,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 29.800342
+  },
+  {
+    "id": "E0834",
+    "origen": "2026-08-09T17:00:00-05:00",
+    "instante_objetivo": "2026-08-09T18:00:00-05:00",
+    "consumo_actual_kw": 29.800342,
+    "hora_siguiente": 18,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 30.315653
+  },
+  {
+    "id": "E0835",
+    "origen": "2026-08-09T18:00:00-05:00",
+    "instante_objetivo": "2026-08-09T19:00:00-05:00",
+    "consumo_actual_kw": 30.315653,
+    "hora_siguiente": 19,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 26.988649
+  },
+  {
+    "id": "E0836",
+    "origen": "2026-08-09T19:00:00-05:00",
+    "instante_objetivo": "2026-08-09T20:00:00-05:00",
+    "consumo_actual_kw": 26.988649,
+    "hora_siguiente": 20,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 27.991775
+  },
+  {
+    "id": "E0837",
+    "origen": "2026-08-09T20:00:00-05:00",
+    "instante_objetivo": "2026-08-09T21:00:00-05:00",
+    "consumo_actual_kw": 27.991775,
+    "hora_siguiente": 21,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 26.611407
+  },
+  {
+    "id": "E0838",
+    "origen": "2026-08-09T21:00:00-05:00",
+    "instante_objetivo": "2026-08-09T22:00:00-05:00",
+    "consumo_actual_kw": 26.611407,
+    "hora_siguiente": 22,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 21.931889
+  },
+  {
+    "id": "E0839",
+    "origen": "2026-08-09T22:00:00-05:00",
+    "instante_objetivo": "2026-08-09T23:00:00-05:00",
+    "consumo_actual_kw": 21.931889,
+    "hora_siguiente": 23,
+    "laboral_siguiente": 0,
+    "objetivo_kw": 20.98604
+  },
+  {
+    "id": "E0840",
+    "origen": "2026-08-09T23:00:00-05:00",
+    "instante_objetivo": "2026-08-10T00:00:00-05:00",
+    "consumo_actual_kw": 20.98604,
+    "hora_siguiente": 0,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 35.851735
+  },
+  {
+    "id": "E0841",
+    "origen": "2026-08-10T00:00:00-05:00",
+    "instante_objetivo": "2026-08-10T01:00:00-05:00",
+    "consumo_actual_kw": 35.851735,
+    "hora_siguiente": 1,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 34.208569
+  },
+  {
+    "id": "E0842",
+    "origen": "2026-08-10T01:00:00-05:00",
+    "instante_objetivo": "2026-08-10T02:00:00-05:00",
+    "consumo_actual_kw": 34.208569,
+    "hora_siguiente": 2,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 33.768906
+  },
+  {
+    "id": "E0843",
+    "origen": "2026-08-10T02:00:00-05:00",
+    "instante_objetivo": "2026-08-10T03:00:00-05:00",
+    "consumo_actual_kw": 33.768906,
+    "hora_siguiente": 3,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 33.111415
+  },
+  {
+    "id": "E0844",
+    "origen": "2026-08-10T03:00:00-05:00",
+    "instante_objetivo": "2026-08-10T04:00:00-05:00",
+    "consumo_actual_kw": 33.111415,
+    "hora_siguiente": 4,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 38.156297
+  },
+  {
+    "id": "E0845",
+    "origen": "2026-08-10T04:00:00-05:00",
+    "instante_objetivo": "2026-08-10T05:00:00-05:00",
+    "consumo_actual_kw": 38.156297,
+    "hora_siguiente": 5,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 37.220622
+  },
+  {
+    "id": "E0846",
+    "origen": "2026-08-10T05:00:00-05:00",
+    "instante_objetivo": "2026-08-10T06:00:00-05:00",
+    "consumo_actual_kw": 37.220622,
+    "hora_siguiente": 6,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 38.772103
+  },
+  {
+    "id": "E0847",
+    "origen": "2026-08-10T06:00:00-05:00",
+    "instante_objetivo": "2026-08-10T07:00:00-05:00",
+    "consumo_actual_kw": 38.772103,
+    "hora_siguiente": 7,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 42.471964
+  },
+  {
+    "id": "E0848",
+    "origen": "2026-08-10T07:00:00-05:00",
+    "instante_objetivo": "2026-08-10T08:00:00-05:00",
+    "consumo_actual_kw": 42.471964,
+    "hora_siguiente": 8,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 45.27418
+  },
+  {
+    "id": "E0849",
+    "origen": "2026-08-10T08:00:00-05:00",
+    "instante_objetivo": "2026-08-10T09:00:00-05:00",
+    "consumo_actual_kw": 45.27418,
+    "hora_siguiente": 9,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.76846
+  },
+  {
+    "id": "E0850",
+    "origen": "2026-08-10T09:00:00-05:00",
+    "instante_objetivo": "2026-08-10T10:00:00-05:00",
+    "consumo_actual_kw": 44.76846,
+    "hora_siguiente": 10,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 45.761551
+  },
+  {
+    "id": "E0851",
+    "origen": "2026-08-10T10:00:00-05:00",
+    "instante_objetivo": "2026-08-10T11:00:00-05:00",
+    "consumo_actual_kw": 45.761551,
+    "hora_siguiente": 11,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 46.868276
+  },
+  {
+    "id": "E0852",
+    "origen": "2026-08-10T11:00:00-05:00",
+    "instante_objetivo": "2026-08-10T12:00:00-05:00",
+    "consumo_actual_kw": 46.868276,
+    "hora_siguiente": 12,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 50.672244
+  },
+  {
+    "id": "E0853",
+    "origen": "2026-08-10T12:00:00-05:00",
+    "instante_objetivo": "2026-08-10T13:00:00-05:00",
+    "consumo_actual_kw": 50.672244,
+    "hora_siguiente": 13,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 47.660389
+  },
+  {
+    "id": "E0854",
+    "origen": "2026-08-10T13:00:00-05:00",
+    "instante_objetivo": "2026-08-10T14:00:00-05:00",
+    "consumo_actual_kw": 47.660389,
+    "hora_siguiente": 14,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 48.73882
+  },
+  {
+    "id": "E0855",
+    "origen": "2026-08-10T14:00:00-05:00",
+    "instante_objetivo": "2026-08-10T15:00:00-05:00",
+    "consumo_actual_kw": 48.73882,
+    "hora_siguiente": 15,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 49.617028
+  },
+  {
+    "id": "E0856",
+    "origen": "2026-08-10T15:00:00-05:00",
+    "instante_objetivo": "2026-08-10T16:00:00-05:00",
+    "consumo_actual_kw": 49.617028,
+    "hora_siguiente": 16,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 48.617669
+  },
+  {
+    "id": "E0857",
+    "origen": "2026-08-10T16:00:00-05:00",
+    "instante_objetivo": "2026-08-10T17:00:00-05:00",
+    "consumo_actual_kw": 48.617669,
+    "hora_siguiente": 17,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 45.273552
+  },
+  {
+    "id": "E0858",
+    "origen": "2026-08-10T17:00:00-05:00",
+    "instante_objetivo": "2026-08-10T18:00:00-05:00",
+    "consumo_actual_kw": 45.273552,
+    "hora_siguiente": 18,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 41.546931
+  },
+  {
+    "id": "E0859",
+    "origen": "2026-08-10T18:00:00-05:00",
+    "instante_objetivo": "2026-08-10T19:00:00-05:00",
+    "consumo_actual_kw": 41.546931,
+    "hora_siguiente": 19,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 42.925216
+  },
+  {
+    "id": "E0860",
+    "origen": "2026-08-10T19:00:00-05:00",
+    "instante_objetivo": "2026-08-10T20:00:00-05:00",
+    "consumo_actual_kw": 42.925216,
+    "hora_siguiente": 20,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.965604
+  },
+  {
+    "id": "E0861",
+    "origen": "2026-08-10T20:00:00-05:00",
+    "instante_objetivo": "2026-08-10T21:00:00-05:00",
+    "consumo_actual_kw": 39.965604,
+    "hora_siguiente": 21,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 38.251362
+  },
+  {
+    "id": "E0862",
+    "origen": "2026-08-10T21:00:00-05:00",
+    "instante_objetivo": "2026-08-10T22:00:00-05:00",
+    "consumo_actual_kw": 38.251362,
+    "hora_siguiente": 22,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 38.082744
+  },
+  {
+    "id": "E0863",
+    "origen": "2026-08-10T22:00:00-05:00",
+    "instante_objetivo": "2026-08-10T23:00:00-05:00",
+    "consumo_actual_kw": 38.082744,
+    "hora_siguiente": 23,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 34.853592
+  },
+  {
+    "id": "E0864",
+    "origen": "2026-08-10T23:00:00-05:00",
+    "instante_objetivo": "2026-08-11T00:00:00-05:00",
+    "consumo_actual_kw": 34.853592,
+    "hora_siguiente": 0,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 34.528263
+  },
+  {
+    "id": "E0865",
+    "origen": "2026-08-11T00:00:00-05:00",
+    "instante_objetivo": "2026-08-11T01:00:00-05:00",
+    "consumo_actual_kw": 34.528263,
+    "hora_siguiente": 1,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 34.486679
+  },
+  {
+    "id": "E0866",
+    "origen": "2026-08-11T01:00:00-05:00",
+    "instante_objetivo": "2026-08-11T02:00:00-05:00",
+    "consumo_actual_kw": 34.486679,
+    "hora_siguiente": 2,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 36.541952
+  },
+  {
+    "id": "E0867",
+    "origen": "2026-08-11T02:00:00-05:00",
+    "instante_objetivo": "2026-08-11T03:00:00-05:00",
+    "consumo_actual_kw": 36.541952,
+    "hora_siguiente": 3,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 36.1436
+  },
+  {
+    "id": "E0868",
+    "origen": "2026-08-11T03:00:00-05:00",
+    "instante_objetivo": "2026-08-11T04:00:00-05:00",
+    "consumo_actual_kw": 36.1436,
+    "hora_siguiente": 4,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 36.228538
+  },
+  {
+    "id": "E0869",
+    "origen": "2026-08-11T04:00:00-05:00",
+    "instante_objetivo": "2026-08-11T05:00:00-05:00",
+    "consumo_actual_kw": 36.228538,
+    "hora_siguiente": 5,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.385251
+  },
+  {
+    "id": "E0870",
+    "origen": "2026-08-11T05:00:00-05:00",
+    "instante_objetivo": "2026-08-11T06:00:00-05:00",
+    "consumo_actual_kw": 39.385251,
+    "hora_siguiente": 6,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 43.415891
+  },
+  {
+    "id": "E0871",
+    "origen": "2026-08-11T06:00:00-05:00",
+    "instante_objetivo": "2026-08-11T07:00:00-05:00",
+    "consumo_actual_kw": 43.415891,
+    "hora_siguiente": 7,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 41.913977
+  },
+  {
+    "id": "E0872",
+    "origen": "2026-08-11T07:00:00-05:00",
+    "instante_objetivo": "2026-08-11T08:00:00-05:00",
+    "consumo_actual_kw": 41.913977,
+    "hora_siguiente": 8,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.607113
+  },
+  {
+    "id": "E0873",
+    "origen": "2026-08-11T08:00:00-05:00",
+    "instante_objetivo": "2026-08-11T09:00:00-05:00",
+    "consumo_actual_kw": 44.607113,
+    "hora_siguiente": 9,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.491485
+  },
+  {
+    "id": "E0874",
+    "origen": "2026-08-11T09:00:00-05:00",
+    "instante_objetivo": "2026-08-11T10:00:00-05:00",
+    "consumo_actual_kw": 44.491485,
+    "hora_siguiente": 10,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 46.621888
+  },
+  {
+    "id": "E0875",
+    "origen": "2026-08-11T10:00:00-05:00",
+    "instante_objetivo": "2026-08-11T11:00:00-05:00",
+    "consumo_actual_kw": 46.621888,
+    "hora_siguiente": 11,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 47.597076
+  },
+  {
+    "id": "E0876",
+    "origen": "2026-08-11T11:00:00-05:00",
+    "instante_objetivo": "2026-08-11T12:00:00-05:00",
+    "consumo_actual_kw": 47.597076,
+    "hora_siguiente": 12,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 49.45083
+  },
+  {
+    "id": "E0877",
+    "origen": "2026-08-11T12:00:00-05:00",
+    "instante_objetivo": "2026-08-11T13:00:00-05:00",
+    "consumo_actual_kw": 49.45083,
+    "hora_siguiente": 13,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 49.789192
+  },
+  {
+    "id": "E0878",
+    "origen": "2026-08-11T13:00:00-05:00",
+    "instante_objetivo": "2026-08-11T14:00:00-05:00",
+    "consumo_actual_kw": 49.789192,
+    "hora_siguiente": 14,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 50.926219
+  },
+  {
+    "id": "E0879",
+    "origen": "2026-08-11T14:00:00-05:00",
+    "instante_objetivo": "2026-08-11T15:00:00-05:00",
+    "consumo_actual_kw": 50.926219,
+    "hora_siguiente": 15,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 47.873314
+  },
+  {
+    "id": "E0880",
+    "origen": "2026-08-11T15:00:00-05:00",
+    "instante_objetivo": "2026-08-11T16:00:00-05:00",
+    "consumo_actual_kw": 47.873314,
+    "hora_siguiente": 16,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 46.145433
+  },
+  {
+    "id": "E0881",
+    "origen": "2026-08-11T16:00:00-05:00",
+    "instante_objetivo": "2026-08-11T17:00:00-05:00",
+    "consumo_actual_kw": 46.145433,
+    "hora_siguiente": 17,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 45.733207
+  },
+  {
+    "id": "E0882",
+    "origen": "2026-08-11T17:00:00-05:00",
+    "instante_objetivo": "2026-08-11T18:00:00-05:00",
+    "consumo_actual_kw": 45.733207,
+    "hora_siguiente": 18,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 43.98804
+  },
+  {
+    "id": "E0883",
+    "origen": "2026-08-11T18:00:00-05:00",
+    "instante_objetivo": "2026-08-11T19:00:00-05:00",
+    "consumo_actual_kw": 43.98804,
+    "hora_siguiente": 19,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.777619
+  },
+  {
+    "id": "E0884",
+    "origen": "2026-08-11T19:00:00-05:00",
+    "instante_objetivo": "2026-08-11T20:00:00-05:00",
+    "consumo_actual_kw": 39.777619,
+    "hora_siguiente": 20,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 40.56604
+  },
+  {
+    "id": "E0885",
+    "origen": "2026-08-11T20:00:00-05:00",
+    "instante_objetivo": "2026-08-11T21:00:00-05:00",
+    "consumo_actual_kw": 40.56604,
+    "hora_siguiente": 21,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 35.909078
+  },
+  {
+    "id": "E0886",
+    "origen": "2026-08-11T21:00:00-05:00",
+    "instante_objetivo": "2026-08-11T22:00:00-05:00",
+    "consumo_actual_kw": 35.909078,
+    "hora_siguiente": 22,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 38.559772
+  },
+  {
+    "id": "E0887",
+    "origen": "2026-08-11T22:00:00-05:00",
+    "instante_objetivo": "2026-08-11T23:00:00-05:00",
+    "consumo_actual_kw": 38.559772,
+    "hora_siguiente": 23,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 33.262726
+  },
+  {
+    "id": "E0888",
+    "origen": "2026-08-11T23:00:00-05:00",
+    "instante_objetivo": "2026-08-12T00:00:00-05:00",
+    "consumo_actual_kw": 33.262726,
+    "hora_siguiente": 0,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 35.03687
+  },
+  {
+    "id": "E0889",
+    "origen": "2026-08-12T00:00:00-05:00",
+    "instante_objetivo": "2026-08-12T01:00:00-05:00",
+    "consumo_actual_kw": 35.03687,
+    "hora_siguiente": 1,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 36.065547
+  },
+  {
+    "id": "E0890",
+    "origen": "2026-08-12T01:00:00-05:00",
+    "instante_objetivo": "2026-08-12T02:00:00-05:00",
+    "consumo_actual_kw": 36.065547,
+    "hora_siguiente": 2,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 36.162249
+  },
+  {
+    "id": "E0891",
+    "origen": "2026-08-12T02:00:00-05:00",
+    "instante_objetivo": "2026-08-12T03:00:00-05:00",
+    "consumo_actual_kw": 36.162249,
+    "hora_siguiente": 3,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 34.188949
+  },
+  {
+    "id": "E0892",
+    "origen": "2026-08-12T03:00:00-05:00",
+    "instante_objetivo": "2026-08-12T04:00:00-05:00",
+    "consumo_actual_kw": 34.188949,
+    "hora_siguiente": 4,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 36.158911
+  },
+  {
+    "id": "E0893",
+    "origen": "2026-08-12T04:00:00-05:00",
+    "instante_objetivo": "2026-08-12T05:00:00-05:00",
+    "consumo_actual_kw": 36.158911,
+    "hora_siguiente": 5,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 40.557719
+  },
+  {
+    "id": "E0894",
+    "origen": "2026-08-12T05:00:00-05:00",
+    "instante_objetivo": "2026-08-12T06:00:00-05:00",
+    "consumo_actual_kw": 40.557719,
+    "hora_siguiente": 6,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 40.771029
+  },
+  {
+    "id": "E0895",
+    "origen": "2026-08-12T06:00:00-05:00",
+    "instante_objetivo": "2026-08-12T07:00:00-05:00",
+    "consumo_actual_kw": 40.771029,
+    "hora_siguiente": 7,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 41.968669
+  },
+  {
+    "id": "E0896",
+    "origen": "2026-08-12T07:00:00-05:00",
+    "instante_objetivo": "2026-08-12T08:00:00-05:00",
+    "consumo_actual_kw": 41.968669,
+    "hora_siguiente": 8,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 42.14778
+  },
+  {
+    "id": "E0897",
+    "origen": "2026-08-12T08:00:00-05:00",
+    "instante_objetivo": "2026-08-12T09:00:00-05:00",
+    "consumo_actual_kw": 42.14778,
+    "hora_siguiente": 9,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 46.587752
+  },
+  {
+    "id": "E0898",
+    "origen": "2026-08-12T09:00:00-05:00",
+    "instante_objetivo": "2026-08-12T10:00:00-05:00",
+    "consumo_actual_kw": 46.587752,
+    "hora_siguiente": 10,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.787599
+  },
+  {
+    "id": "E0899",
+    "origen": "2026-08-12T10:00:00-05:00",
+    "instante_objetivo": "2026-08-12T11:00:00-05:00",
+    "consumo_actual_kw": 44.787599,
+    "hora_siguiente": 11,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 49.849728
+  },
+  {
+    "id": "E0900",
+    "origen": "2026-08-12T11:00:00-05:00",
+    "instante_objetivo": "2026-08-12T12:00:00-05:00",
+    "consumo_actual_kw": 49.849728,
+    "hora_siguiente": 12,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 51.482941
+  },
+  {
+    "id": "E0901",
+    "origen": "2026-08-12T12:00:00-05:00",
+    "instante_objetivo": "2026-08-12T13:00:00-05:00",
+    "consumo_actual_kw": 51.482941,
+    "hora_siguiente": 13,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 46.332014
+  },
+  {
+    "id": "E0902",
+    "origen": "2026-08-12T13:00:00-05:00",
+    "instante_objetivo": "2026-08-12T14:00:00-05:00",
+    "consumo_actual_kw": 46.332014,
+    "hora_siguiente": 14,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 48.287192
+  },
+  {
+    "id": "E0903",
+    "origen": "2026-08-12T14:00:00-05:00",
+    "instante_objetivo": "2026-08-12T15:00:00-05:00",
+    "consumo_actual_kw": 48.287192,
+    "hora_siguiente": 15,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 48.482581
+  },
+  {
+    "id": "E0904",
+    "origen": "2026-08-12T15:00:00-05:00",
+    "instante_objetivo": "2026-08-12T16:00:00-05:00",
+    "consumo_actual_kw": 48.482581,
+    "hora_siguiente": 16,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.988858
+  },
+  {
+    "id": "E0905",
+    "origen": "2026-08-12T16:00:00-05:00",
+    "instante_objetivo": "2026-08-12T17:00:00-05:00",
+    "consumo_actual_kw": 44.988858,
+    "hora_siguiente": 17,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 43.754547
+  },
+  {
+    "id": "E0906",
+    "origen": "2026-08-12T17:00:00-05:00",
+    "instante_objetivo": "2026-08-12T18:00:00-05:00",
+    "consumo_actual_kw": 43.754547,
+    "hora_siguiente": 18,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 42.854496
+  },
+  {
+    "id": "E0907",
+    "origen": "2026-08-12T18:00:00-05:00",
+    "instante_objetivo": "2026-08-12T19:00:00-05:00",
+    "consumo_actual_kw": 42.854496,
+    "hora_siguiente": 19,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.817784
+  },
+  {
+    "id": "E0908",
+    "origen": "2026-08-12T19:00:00-05:00",
+    "instante_objetivo": "2026-08-12T20:00:00-05:00",
+    "consumo_actual_kw": 39.817784,
+    "hora_siguiente": 20,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 43.16734
+  },
+  {
+    "id": "E0909",
+    "origen": "2026-08-12T20:00:00-05:00",
+    "instante_objetivo": "2026-08-12T21:00:00-05:00",
+    "consumo_actual_kw": 43.16734,
+    "hora_siguiente": 21,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 40.727832
+  },
+  {
+    "id": "E0910",
+    "origen": "2026-08-12T21:00:00-05:00",
+    "instante_objetivo": "2026-08-12T22:00:00-05:00",
+    "consumo_actual_kw": 40.727832,
+    "hora_siguiente": 22,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 35.195901
+  },
+  {
+    "id": "E0911",
+    "origen": "2026-08-12T22:00:00-05:00",
+    "instante_objetivo": "2026-08-12T23:00:00-05:00",
+    "consumo_actual_kw": 35.195901,
+    "hora_siguiente": 23,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 37.055903
+  },
+  {
+    "id": "E0912",
+    "origen": "2026-08-12T23:00:00-05:00",
+    "instante_objetivo": "2026-08-13T00:00:00-05:00",
+    "consumo_actual_kw": 37.055903,
+    "hora_siguiente": 0,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 36.368016
+  },
+  {
+    "id": "E0913",
+    "origen": "2026-08-13T00:00:00-05:00",
+    "instante_objetivo": "2026-08-13T01:00:00-05:00",
+    "consumo_actual_kw": 36.368016,
+    "hora_siguiente": 1,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 35.713244
+  },
+  {
+    "id": "E0914",
+    "origen": "2026-08-13T01:00:00-05:00",
+    "instante_objetivo": "2026-08-13T02:00:00-05:00",
+    "consumo_actual_kw": 35.713244,
+    "hora_siguiente": 2,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 35.491792
+  },
+  {
+    "id": "E0915",
+    "origen": "2026-08-13T02:00:00-05:00",
+    "instante_objetivo": "2026-08-13T03:00:00-05:00",
+    "consumo_actual_kw": 35.491792,
+    "hora_siguiente": 3,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 35.032385
+  },
+  {
+    "id": "E0916",
+    "origen": "2026-08-13T03:00:00-05:00",
+    "instante_objetivo": "2026-08-13T04:00:00-05:00",
+    "consumo_actual_kw": 35.032385,
+    "hora_siguiente": 4,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 36.817729
+  },
+  {
+    "id": "E0917",
+    "origen": "2026-08-13T04:00:00-05:00",
+    "instante_objetivo": "2026-08-13T05:00:00-05:00",
+    "consumo_actual_kw": 36.817729,
+    "hora_siguiente": 5,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 38.686313
+  },
+  {
+    "id": "E0918",
+    "origen": "2026-08-13T05:00:00-05:00",
+    "instante_objetivo": "2026-08-13T06:00:00-05:00",
+    "consumo_actual_kw": 38.686313,
+    "hora_siguiente": 6,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 41.591033
+  },
+  {
+    "id": "E0919",
+    "origen": "2026-08-13T06:00:00-05:00",
+    "instante_objetivo": "2026-08-13T07:00:00-05:00",
+    "consumo_actual_kw": 41.591033,
+    "hora_siguiente": 7,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 42.410735
+  },
+  {
+    "id": "E0920",
+    "origen": "2026-08-13T07:00:00-05:00",
+    "instante_objetivo": "2026-08-13T08:00:00-05:00",
+    "consumo_actual_kw": 42.410735,
+    "hora_siguiente": 8,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 45.852834
+  },
+  {
+    "id": "E0921",
+    "origen": "2026-08-13T08:00:00-05:00",
+    "instante_objetivo": "2026-08-13T09:00:00-05:00",
+    "consumo_actual_kw": 45.852834,
+    "hora_siguiente": 9,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.774467
+  },
+  {
+    "id": "E0922",
+    "origen": "2026-08-13T09:00:00-05:00",
+    "instante_objetivo": "2026-08-13T10:00:00-05:00",
+    "consumo_actual_kw": 44.774467,
+    "hora_siguiente": 10,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 47.520914
+  },
+  {
+    "id": "E0923",
+    "origen": "2026-08-13T10:00:00-05:00",
+    "instante_objetivo": "2026-08-13T11:00:00-05:00",
+    "consumo_actual_kw": 47.520914,
+    "hora_siguiente": 11,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 48.336074
+  },
+  {
+    "id": "E0924",
+    "origen": "2026-08-13T11:00:00-05:00",
+    "instante_objetivo": "2026-08-13T12:00:00-05:00",
+    "consumo_actual_kw": 48.336074,
+    "hora_siguiente": 12,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 49.086167
+  },
+  {
+    "id": "E0925",
+    "origen": "2026-08-13T12:00:00-05:00",
+    "instante_objetivo": "2026-08-13T13:00:00-05:00",
+    "consumo_actual_kw": 49.086167,
+    "hora_siguiente": 13,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 49.142528
+  },
+  {
+    "id": "E0926",
+    "origen": "2026-08-13T13:00:00-05:00",
+    "instante_objetivo": "2026-08-13T14:00:00-05:00",
+    "consumo_actual_kw": 49.142528,
+    "hora_siguiente": 14,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 48.347859
+  },
+  {
+    "id": "E0927",
+    "origen": "2026-08-13T14:00:00-05:00",
+    "instante_objetivo": "2026-08-13T15:00:00-05:00",
+    "consumo_actual_kw": 48.347859,
+    "hora_siguiente": 15,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.27504
+  },
+  {
+    "id": "E0928",
+    "origen": "2026-08-13T15:00:00-05:00",
+    "instante_objetivo": "2026-08-13T16:00:00-05:00",
+    "consumo_actual_kw": 44.27504,
+    "hora_siguiente": 16,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 50.631716
+  },
+  {
+    "id": "E0929",
+    "origen": "2026-08-13T16:00:00-05:00",
+    "instante_objetivo": "2026-08-13T17:00:00-05:00",
+    "consumo_actual_kw": 50.631716,
+    "hora_siguiente": 17,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 45.770956
+  },
+  {
+    "id": "E0930",
+    "origen": "2026-08-13T17:00:00-05:00",
+    "instante_objetivo": "2026-08-13T18:00:00-05:00",
+    "consumo_actual_kw": 45.770956,
+    "hora_siguiente": 18,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.197927
+  },
+  {
+    "id": "E0931",
+    "origen": "2026-08-13T18:00:00-05:00",
+    "instante_objetivo": "2026-08-13T19:00:00-05:00",
+    "consumo_actual_kw": 44.197927,
+    "hora_siguiente": 19,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 41.738519
+  },
+  {
+    "id": "E0932",
+    "origen": "2026-08-13T19:00:00-05:00",
+    "instante_objetivo": "2026-08-13T20:00:00-05:00",
+    "consumo_actual_kw": 41.738519,
+    "hora_siguiente": 20,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 40.546328
+  },
+  {
+    "id": "E0933",
+    "origen": "2026-08-13T20:00:00-05:00",
+    "instante_objetivo": "2026-08-13T21:00:00-05:00",
+    "consumo_actual_kw": 40.546328,
+    "hora_siguiente": 21,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 40.453933
+  },
+  {
+    "id": "E0934",
+    "origen": "2026-08-13T21:00:00-05:00",
+    "instante_objetivo": "2026-08-13T22:00:00-05:00",
+    "consumo_actual_kw": 40.453933,
+    "hora_siguiente": 22,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 38.070984
+  },
+  {
+    "id": "E0935",
+    "origen": "2026-08-13T22:00:00-05:00",
+    "instante_objetivo": "2026-08-13T23:00:00-05:00",
+    "consumo_actual_kw": 38.070984,
+    "hora_siguiente": 23,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 37.7847
+  },
+  {
+    "id": "E0936",
+    "origen": "2026-08-13T23:00:00-05:00",
+    "instante_objetivo": "2026-08-14T00:00:00-05:00",
+    "consumo_actual_kw": 37.7847,
+    "hora_siguiente": 0,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 36.161806
+  },
+  {
+    "id": "E0937",
+    "origen": "2026-08-14T00:00:00-05:00",
+    "instante_objetivo": "2026-08-14T01:00:00-05:00",
+    "consumo_actual_kw": 36.161806,
+    "hora_siguiente": 1,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 34.59285
+  },
+  {
+    "id": "E0938",
+    "origen": "2026-08-14T01:00:00-05:00",
+    "instante_objetivo": "2026-08-14T02:00:00-05:00",
+    "consumo_actual_kw": 34.59285,
+    "hora_siguiente": 2,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 35.037848
+  },
+  {
+    "id": "E0939",
+    "origen": "2026-08-14T02:00:00-05:00",
+    "instante_objetivo": "2026-08-14T03:00:00-05:00",
+    "consumo_actual_kw": 35.037848,
+    "hora_siguiente": 3,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 35.873128
+  },
+  {
+    "id": "E0940",
+    "origen": "2026-08-14T03:00:00-05:00",
+    "instante_objetivo": "2026-08-14T04:00:00-05:00",
+    "consumo_actual_kw": 35.873128,
+    "hora_siguiente": 4,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.955389
+  },
+  {
+    "id": "E0941",
+    "origen": "2026-08-14T04:00:00-05:00",
+    "instante_objetivo": "2026-08-14T05:00:00-05:00",
+    "consumo_actual_kw": 39.955389,
+    "hora_siguiente": 5,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.679741
+  },
+  {
+    "id": "E0942",
+    "origen": "2026-08-14T05:00:00-05:00",
+    "instante_objetivo": "2026-08-14T06:00:00-05:00",
+    "consumo_actual_kw": 39.679741,
+    "hora_siguiente": 6,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 40.703294
+  },
+  {
+    "id": "E0943",
+    "origen": "2026-08-14T06:00:00-05:00",
+    "instante_objetivo": "2026-08-14T07:00:00-05:00",
+    "consumo_actual_kw": 40.703294,
+    "hora_siguiente": 7,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.088345
+  },
+  {
+    "id": "E0944",
+    "origen": "2026-08-14T07:00:00-05:00",
+    "instante_objetivo": "2026-08-14T08:00:00-05:00",
+    "consumo_actual_kw": 44.088345,
+    "hora_siguiente": 8,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 41.063168
+  },
+  {
+    "id": "E0945",
+    "origen": "2026-08-14T08:00:00-05:00",
+    "instante_objetivo": "2026-08-14T09:00:00-05:00",
+    "consumo_actual_kw": 41.063168,
+    "hora_siguiente": 9,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 46.102439
+  },
+  {
+    "id": "E0946",
+    "origen": "2026-08-14T09:00:00-05:00",
+    "instante_objetivo": "2026-08-14T10:00:00-05:00",
+    "consumo_actual_kw": 46.102439,
+    "hora_siguiente": 10,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 48.059743
+  },
+  {
+    "id": "E0947",
+    "origen": "2026-08-14T10:00:00-05:00",
+    "instante_objetivo": "2026-08-14T11:00:00-05:00",
+    "consumo_actual_kw": 48.059743,
+    "hora_siguiente": 11,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 49.606635
+  },
+  {
+    "id": "E0948",
+    "origen": "2026-08-14T11:00:00-05:00",
+    "instante_objetivo": "2026-08-14T12:00:00-05:00",
+    "consumo_actual_kw": 49.606635,
+    "hora_siguiente": 12,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 47.839955
+  },
+  {
+    "id": "E0949",
+    "origen": "2026-08-14T12:00:00-05:00",
+    "instante_objetivo": "2026-08-14T13:00:00-05:00",
+    "consumo_actual_kw": 47.839955,
+    "hora_siguiente": 13,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 49.931688
+  },
+  {
+    "id": "E0950",
+    "origen": "2026-08-14T13:00:00-05:00",
+    "instante_objetivo": "2026-08-14T14:00:00-05:00",
+    "consumo_actual_kw": 49.931688,
+    "hora_siguiente": 14,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 52.46204
+  },
+  {
+    "id": "E0951",
+    "origen": "2026-08-14T14:00:00-05:00",
+    "instante_objetivo": "2026-08-14T15:00:00-05:00",
+    "consumo_actual_kw": 52.46204,
+    "hora_siguiente": 15,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 47.692849
+  },
+  {
+    "id": "E0952",
+    "origen": "2026-08-14T15:00:00-05:00",
+    "instante_objetivo": "2026-08-14T16:00:00-05:00",
+    "consumo_actual_kw": 47.692849,
+    "hora_siguiente": 16,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 47.292442
+  },
+  {
+    "id": "E0953",
+    "origen": "2026-08-14T16:00:00-05:00",
+    "instante_objetivo": "2026-08-14T17:00:00-05:00",
+    "consumo_actual_kw": 47.292442,
+    "hora_siguiente": 17,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 44.103714
+  },
+  {
+    "id": "E0954",
+    "origen": "2026-08-14T17:00:00-05:00",
+    "instante_objetivo": "2026-08-14T18:00:00-05:00",
+    "consumo_actual_kw": 44.103714,
+    "hora_siguiente": 18,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.196122
+  },
+  {
+    "id": "E0955",
+    "origen": "2026-08-14T18:00:00-05:00",
+    "instante_objetivo": "2026-08-14T19:00:00-05:00",
+    "consumo_actual_kw": 39.196122,
+    "hora_siguiente": 19,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 42.759642
+  },
+  {
+    "id": "E0956",
+    "origen": "2026-08-14T19:00:00-05:00",
+    "instante_objetivo": "2026-08-14T20:00:00-05:00",
+    "consumo_actual_kw": 42.759642,
+    "hora_siguiente": 20,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 42.762986
+  },
+  {
+    "id": "E0957",
+    "origen": "2026-08-14T20:00:00-05:00",
+    "instante_objetivo": "2026-08-14T21:00:00-05:00",
+    "consumo_actual_kw": 42.762986,
+    "hora_siguiente": 21,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 39.990626
+  },
+  {
+    "id": "E0958",
+    "origen": "2026-08-14T21:00:00-05:00",
+    "instante_objetivo": "2026-08-14T22:00:00-05:00",
+    "consumo_actual_kw": 39.990626,
+    "hora_siguiente": 22,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 37.490701
+  },
+  {
+    "id": "E0959",
+    "origen": "2026-08-14T22:00:00-05:00",
+    "instante_objetivo": "2026-08-14T23:00:00-05:00",
+    "consumo_actual_kw": 37.490701,
+    "hora_siguiente": 23,
+    "laboral_siguiente": 1,
+    "objetivo_kw": 37.121876
+  }
+]

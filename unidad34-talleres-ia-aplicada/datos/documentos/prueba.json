@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Q-tutoria-0",
+    "familia": "tutoria",
+    "pregunta": "¿Cuándo es la tutoría de datos?",
+    "documento_esperado": "D05"
+  },
+  {
+    "id": "Q-tutoria-1",
+    "familia": "tutoria",
+    "pregunta": "¿Cómo me inscribo para recibir orientación sobre datos?",
+    "documento_esperado": "D05"
+  },
+  {
+    "id": "Q-certificado-0",
+    "familia": "certificado",
+    "pregunta": "¿Cómo solicito el certificado del taller?",
+    "documento_esperado": "D06"
+  },
+  {
+    "id": "Q-certificado-1",
+    "familia": "certificado",
+    "pregunta": "¿Cuánto demora coordinación en revisar mi certificado?",
+    "documento_esperado": "D06"
+  },
+  {
+    "id": "Q-renovacion-0",
+    "familia": "renovacion",
+    "pregunta": "¿Cómo se solicita la renovación de libros?",
+    "documento_esperado": "D07"
+  },
+  {
+    "id": "Q-renovacion-1",
+    "familia": "renovacion",
+    "pregunta": "¿Puedo extender el tiempo que tengo un libro?",
+    "documento_esperado": "D07"
+  },
+  {
+    "id": "Q-accesibilidad-0",
+    "familia": "accesibilidad",
+    "pregunta": "¿Qué materiales de accesibilidad ofrece el aula?",
+    "documento_esperado": "D08"
+  },
+  {
+    "id": "Q-accesibilidad-1",
+    "familia": "accesibilidad",
+    "pregunta": "¿Cómo pido texto ampliado y transcripciones?",
+    "documento_esperado": "D08"
+  },
+  {
+    "id": "Q-beca-0",
+    "familia": "beca",
+    "pregunta": "¿Cómo se solicita una beca de matrícula?",
+    "documento_esperado": null
+  },
+  {
+    "id": "Q-beca-1",
+    "familia": "beca",
+    "pregunta": "¿El certificado del taller permite obtener una beca?",
+    "documento_esperado": null
+  },
+  {
+    "id": "Q-transporte-0",
+    "familia": "transporte",
+    "pregunta": "¿Qué bus llega a la universidad?",
+    "documento_esperado": null
+  },
+  {
+    "id": "Q-transporte-1",
+    "familia": "transporte",
+    "pregunta": "¿Hay transporte hasta la tutoría de datos?",
+    "documento_esperado": null
+  }
+]

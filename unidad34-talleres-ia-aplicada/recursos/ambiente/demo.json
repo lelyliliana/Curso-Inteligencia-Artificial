@@ -1,0 +1,10 @@
+{
+  "taller": "ambiente",
+  "modelo_sha256": "1ef73319f92c716078d6578a2b65510c3db867d8e81dbe053a509371cfe6e30b",
+  "salida": {
+    "proponer_revision": 1,
+    "puntuacion": 0.6555354599899277,
+    "fuera_rango_entrenamiento": false,
+    "requiere_revision_humana": true
+  }
+}

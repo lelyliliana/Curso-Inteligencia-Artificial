@@ -1,4 +1,4 @@
-"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 33.
+"""Verifica sintaxis, enlaces locales, ejemplos y pruebas de las unidades 0 a 34.
 
 Requiere las dependencias numéricas y gráficas; no instala paquetes ni usa Internet.
 Las unidades 32 y 33 necesitan permitir conexiones HTTP locales a 127.0.0.1.
@@ -15,7 +15,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 
 RAIZ = Path(__file__).resolve().parents[1]
-ULTIMA_UNIDAD = 33
+ULTIMA_UNIDAD = 34
 UNIDADES = sorted(p for p in RAIZ.glob("unidad[0-9][0-9]-*") if int(p.name[6:8]) <= ULTIMA_UNIDAD)
 
 
@@ -223,6 +223,16 @@ def main():
                     esperado = "Fallos controlados: 14 respuestas recibidas; timeout de cliente no cancela el servidor."
                 elif programa.name == "03_operacion_a_mano.py":
                     esperado = "Métricas artificiales: 5 solicitudes; 5xx=2/5; buenas=1/5; media=27.4 ms."
+                elif programa.name == "01_taller_energia.py":
+                    esperado = "Seleccionado energia: ridge_1. Recarga idéntica; prueba sin abrir."
+                elif programa.name == "02_taller_ambiente.py":
+                    esperado = "Seleccionado ambiente: logistica_0.3. Recarga idéntica; prueba sin abrir."
+                elif programa.name == "03_taller_documentos.py":
+                    esperado = "Seleccionado documentos: tfidf_0.4. Recarga idéntica; prueba sin abrir."
+                elif programa.name == "04_demostrar_taller.py":
+                    esperado = '"horizonte_horas": 1'
+                elif programa.name == "05_decidir_a_mano.py":
+                    esperado = "Decisión manual: MAE=2 kW; costo ambiental=5; costo documental=4; cobertura=2/4."
                 ejecutar([programa.relative_to(RAIZ)], esperado)
                 ejecutados += 1
     with tempfile.TemporaryDirectory() as carpeta:
@@ -555,6 +565,25 @@ def main():
         ejecutar([prefijo + "ejemplos/figuras.py", "--salida", Path(carpeta)/"u33-figuras"], "Figura: conteos y denominadores")
         ejecutados += 1
         ejecutar([prefijo + "ejemplos/operacion.py", "--help"], "--mantenimiento")
+        ejecutados += 1
+        prefijo = "unidad34-talleres-ia-aplicada/"
+        for i, taller, esperado in ((1, "energia", "MAE=3.5479 kW; n=192"),
+                                    (2, "ambiente", "costo=76; FP=12; FN=16; n=120"),
+                                    (3, "documentos", "aceptadas=8/12; costo=6; respondidas=6")):
+            salida = Path(carpeta) / f"u34-{taller}"
+            programa = prefijo + f"ejemplos/0{i}_taller_{taller}.py"
+            ejecutar([programa, "--salida", salida], f"Seleccionado {taller}")
+            ejecutados += 1
+            ejecutar([programa, "--evaluar-prueba", "--modelo", salida / "modelo.json", "--salida", salida], esperado)
+            ejecutados += 1
+            ejecutar([prefijo + "ejemplos/04_demostrar_taller.py", "--taller", taller,
+                      "--modelo", salida / "modelo.json", "--salida", salida / "demo.json"], '"modelo_sha256"')
+            ejecutados += 1
+        ejecutar([prefijo + "datos/generar_datos.py", "--salida", Path(carpeta) / "u34-datos"], "959 decisiones")
+        ejecutados += 1
+        ejecutar([prefijo + "ejemplos/figuras.py", "--salida", Path(carpeta) / "u34-figuras"], "Figuras U34")
+        ejecutados += 1
+        ejecutar([prefijo + "soluciones/05_decidir_a_mano.py", "--salida", Path(carpeta) / "u34-manual.json"], "cobertura=2/4")
         ejecutados += 1
     print(f"OK: {ejecutados} ejecuciones de programas y variantes.")
     for unidad in UNIDADES:

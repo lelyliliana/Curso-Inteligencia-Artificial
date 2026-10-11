@@ -1,0 +1,962 @@
+[
+  {
+    "id": "A06-00",
+    "zona": "Z06",
+    "residuos_m2": 2.123,
+    "superficie_afectada_pct": 66.4677,
+    "dias_sin_visita": 20,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-01",
+    "zona": "Z06",
+    "residuos_m2": 11.0115,
+    "superficie_afectada_pct": 79.5125,
+    "dias_sin_visita": 25,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-02",
+    "zona": "Z06",
+    "residuos_m2": 0.1339,
+    "superficie_afectada_pct": 48.9574,
+    "dias_sin_visita": 56,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-03",
+    "zona": "Z06",
+    "residuos_m2": 8.4412,
+    "superficie_afectada_pct": 9.5587,
+    "dias_sin_visita": 18,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-04",
+    "zona": "Z06",
+    "residuos_m2": 5.0843,
+    "superficie_afectada_pct": 8.5775,
+    "dias_sin_visita": 40,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-05",
+    "zona": "Z06",
+    "residuos_m2": 3.3877,
+    "superficie_afectada_pct": 81.7024,
+    "dias_sin_visita": 1,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-06",
+    "zona": "Z06",
+    "residuos_m2": 0.9013,
+    "superficie_afectada_pct": 20.9013,
+    "dias_sin_visita": 31,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-07",
+    "zona": "Z06",
+    "residuos_m2": 6.2836,
+    "superficie_afectada_pct": 43.3568,
+    "dias_sin_visita": 21,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-08",
+    "zona": "Z06",
+    "residuos_m2": 7.9785,
+    "superficie_afectada_pct": 48.0173,
+    "dias_sin_visita": 56,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-09",
+    "zona": "Z06",
+    "residuos_m2": 9.0708,
+    "superficie_afectada_pct": 44.0774,
+    "dias_sin_visita": 60,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-10",
+    "zona": "Z06",
+    "residuos_m2": 6.0744,
+    "superficie_afectada_pct": 69.8932,
+    "dias_sin_visita": 55,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-11",
+    "zona": "Z06",
+    "residuos_m2": 4.3456,
+    "superficie_afectada_pct": 20.6956,
+    "dias_sin_visita": 54,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-12",
+    "zona": "Z06",
+    "residuos_m2": 3.2042,
+    "superficie_afectada_pct": 1.1794,
+    "dias_sin_visita": 7,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-13",
+    "zona": "Z06",
+    "residuos_m2": 4.0936,
+    "superficie_afectada_pct": 49.1846,
+    "dias_sin_visita": 17,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-14",
+    "zona": "Z06",
+    "residuos_m2": 8.3541,
+    "superficie_afectada_pct": 84.7156,
+    "dias_sin_visita": 24,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-15",
+    "zona": "Z06",
+    "residuos_m2": 1.0188,
+    "superficie_afectada_pct": 60.4242,
+    "dias_sin_visita": 15,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-16",
+    "zona": "Z06",
+    "residuos_m2": 5.1417,
+    "superficie_afectada_pct": 56.5164,
+    "dias_sin_visita": 23,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-17",
+    "zona": "Z06",
+    "residuos_m2": 3.6023,
+    "superficie_afectada_pct": 43.5079,
+    "dias_sin_visita": 3,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-18",
+    "zona": "Z06",
+    "residuos_m2": 9.0983,
+    "superficie_afectada_pct": 28.8752,
+    "dias_sin_visita": 32,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-19",
+    "zona": "Z06",
+    "residuos_m2": 1.2653,
+    "superficie_afectada_pct": 61.2494,
+    "dias_sin_visita": 10,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-20",
+    "zona": "Z06",
+    "residuos_m2": 3.4438,
+    "superficie_afectada_pct": 16.163,
+    "dias_sin_visita": 30,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-21",
+    "zona": "Z06",
+    "residuos_m2": 8.7137,
+    "superficie_afectada_pct": 99.2953,
+    "dias_sin_visita": 54,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-22",
+    "zona": "Z06",
+    "residuos_m2": 10.1147,
+    "superficie_afectada_pct": 24.4167,
+    "dias_sin_visita": 49,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-23",
+    "zona": "Z06",
+    "residuos_m2": 2.1573,
+    "superficie_afectada_pct": 9.9497,
+    "dias_sin_visita": 58,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-24",
+    "zona": "Z06",
+    "residuos_m2": 9.1033,
+    "superficie_afectada_pct": 43.5843,
+    "dias_sin_visita": 57,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-25",
+    "zona": "Z06",
+    "residuos_m2": 7.3989,
+    "superficie_afectada_pct": 10.0417,
+    "dias_sin_visita": 55,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-26",
+    "zona": "Z06",
+    "residuos_m2": 4.2571,
+    "superficie_afectada_pct": 49.1658,
+    "dias_sin_visita": 0,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-27",
+    "zona": "Z06",
+    "residuos_m2": 6.9784,
+    "superficie_afectada_pct": 13.2507,
+    "dias_sin_visita": 36,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-28",
+    "zona": "Z06",
+    "residuos_m2": 2.6361,
+    "superficie_afectada_pct": 41.053,
+    "dias_sin_visita": 54,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-29",
+    "zona": "Z06",
+    "residuos_m2": 6.9339,
+    "superficie_afectada_pct": 20.569,
+    "dias_sin_visita": 47,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-30",
+    "zona": "Z06",
+    "residuos_m2": 9.4411,
+    "superficie_afectada_pct": 34.1258,
+    "dias_sin_visita": 54,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-31",
+    "zona": "Z06",
+    "residuos_m2": 10.7652,
+    "superficie_afectada_pct": 28.6892,
+    "dias_sin_visita": 42,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-32",
+    "zona": "Z06",
+    "residuos_m2": 6.7291,
+    "superficie_afectada_pct": 12.9868,
+    "dias_sin_visita": 1,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-33",
+    "zona": "Z06",
+    "residuos_m2": 6.4811,
+    "superficie_afectada_pct": 92.145,
+    "dias_sin_visita": 45,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-34",
+    "zona": "Z06",
+    "residuos_m2": 2.287,
+    "superficie_afectada_pct": 54.4521,
+    "dias_sin_visita": 18,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-35",
+    "zona": "Z06",
+    "residuos_m2": 8.2858,
+    "superficie_afectada_pct": 73.9279,
+    "dias_sin_visita": 42,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-36",
+    "zona": "Z06",
+    "residuos_m2": 1.5593,
+    "superficie_afectada_pct": 31.0197,
+    "dias_sin_visita": 31,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-37",
+    "zona": "Z06",
+    "residuos_m2": 5.0332,
+    "superficie_afectada_pct": 72.5931,
+    "dias_sin_visita": 0,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A06-38",
+    "zona": "Z06",
+    "residuos_m2": 6.7914,
+    "superficie_afectada_pct": 73.0232,
+    "dias_sin_visita": 35,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A06-39",
+    "zona": "Z06",
+    "residuos_m2": 7.2323,
+    "superficie_afectada_pct": 49.5641,
+    "dias_sin_visita": 60,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-00",
+    "zona": "Z07",
+    "residuos_m2": 1.1046,
+    "superficie_afectada_pct": 63.3817,
+    "dias_sin_visita": 41,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-01",
+    "zona": "Z07",
+    "residuos_m2": 11.2832,
+    "superficie_afectada_pct": 57.417,
+    "dias_sin_visita": 50,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-02",
+    "zona": "Z07",
+    "residuos_m2": 0.615,
+    "superficie_afectada_pct": 74.3587,
+    "dias_sin_visita": 49,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-03",
+    "zona": "Z07",
+    "residuos_m2": 2.2481,
+    "superficie_afectada_pct": 43.5941,
+    "dias_sin_visita": 40,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-04",
+    "zona": "Z07",
+    "residuos_m2": 8.2802,
+    "superficie_afectada_pct": 48.3278,
+    "dias_sin_visita": 14,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-05",
+    "zona": "Z07",
+    "residuos_m2": 10.9856,
+    "superficie_afectada_pct": 60.6344,
+    "dias_sin_visita": 15,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-06",
+    "zona": "Z07",
+    "residuos_m2": 3.0719,
+    "superficie_afectada_pct": 58.947,
+    "dias_sin_visita": 9,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-07",
+    "zona": "Z07",
+    "residuos_m2": 3.6734,
+    "superficie_afectada_pct": 27.4584,
+    "dias_sin_visita": 58,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-08",
+    "zona": "Z07",
+    "residuos_m2": 0.483,
+    "superficie_afectada_pct": 24.4186,
+    "dias_sin_visita": 8,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-09",
+    "zona": "Z07",
+    "residuos_m2": 5.7502,
+    "superficie_afectada_pct": 12.8739,
+    "dias_sin_visita": 10,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-10",
+    "zona": "Z07",
+    "residuos_m2": 7.2628,
+    "superficie_afectada_pct": 36.3676,
+    "dias_sin_visita": 23,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-11",
+    "zona": "Z07",
+    "residuos_m2": 4.6976,
+    "superficie_afectada_pct": 5.9433,
+    "dias_sin_visita": 4,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-12",
+    "zona": "Z07",
+    "residuos_m2": 3.0082,
+    "superficie_afectada_pct": 42.9276,
+    "dias_sin_visita": 12,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-13",
+    "zona": "Z07",
+    "residuos_m2": 3.7241,
+    "superficie_afectada_pct": 99.2333,
+    "dias_sin_visita": 43,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-14",
+    "zona": "Z07",
+    "residuos_m2": 7.1892,
+    "superficie_afectada_pct": 34.0686,
+    "dias_sin_visita": 42,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-15",
+    "zona": "Z07",
+    "residuos_m2": 6.4808,
+    "superficie_afectada_pct": 49.1217,
+    "dias_sin_visita": 45,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-16",
+    "zona": "Z07",
+    "residuos_m2": 5.0954,
+    "superficie_afectada_pct": 9.0027,
+    "dias_sin_visita": 9,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-17",
+    "zona": "Z07",
+    "residuos_m2": 6.2337,
+    "superficie_afectada_pct": 85.5868,
+    "dias_sin_visita": 36,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-18",
+    "zona": "Z07",
+    "residuos_m2": 3.3484,
+    "superficie_afectada_pct": 21.9285,
+    "dias_sin_visita": 28,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-19",
+    "zona": "Z07",
+    "residuos_m2": 0.0179,
+    "superficie_afectada_pct": 20.9665,
+    "dias_sin_visita": 7,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-20",
+    "zona": "Z07",
+    "residuos_m2": 10.0634,
+    "superficie_afectada_pct": 17.2068,
+    "dias_sin_visita": 23,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-21",
+    "zona": "Z07",
+    "residuos_m2": 3.6027,
+    "superficie_afectada_pct": 89.8996,
+    "dias_sin_visita": 37,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-22",
+    "zona": "Z07",
+    "residuos_m2": 8.4592,
+    "superficie_afectada_pct": 34.778,
+    "dias_sin_visita": 38,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-23",
+    "zona": "Z07",
+    "residuos_m2": 4.5835,
+    "superficie_afectada_pct": 0.3989,
+    "dias_sin_visita": 6,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-24",
+    "zona": "Z07",
+    "residuos_m2": 1.218,
+    "superficie_afectada_pct": 40.9903,
+    "dias_sin_visita": 49,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-25",
+    "zona": "Z07",
+    "residuos_m2": 11.5057,
+    "superficie_afectada_pct": 80.771,
+    "dias_sin_visita": 46,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-26",
+    "zona": "Z07",
+    "residuos_m2": 0.3727,
+    "superficie_afectada_pct": 74.672,
+    "dias_sin_visita": 49,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-27",
+    "zona": "Z07",
+    "residuos_m2": 0.9857,
+    "superficie_afectada_pct": 47.2204,
+    "dias_sin_visita": 46,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-28",
+    "zona": "Z07",
+    "residuos_m2": 6.1963,
+    "superficie_afectada_pct": 8.4647,
+    "dias_sin_visita": 4,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-29",
+    "zona": "Z07",
+    "residuos_m2": 0.5279,
+    "superficie_afectada_pct": 66.4439,
+    "dias_sin_visita": 55,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-30",
+    "zona": "Z07",
+    "residuos_m2": 8.0192,
+    "superficie_afectada_pct": 90.3902,
+    "dias_sin_visita": 47,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-31",
+    "zona": "Z07",
+    "residuos_m2": 0.1505,
+    "superficie_afectada_pct": 72.3929,
+    "dias_sin_visita": 2,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-32",
+    "zona": "Z07",
+    "residuos_m2": 1.1435,
+    "superficie_afectada_pct": 17.5815,
+    "dias_sin_visita": 10,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-33",
+    "zona": "Z07",
+    "residuos_m2": 5.6258,
+    "superficie_afectada_pct": 13.6991,
+    "dias_sin_visita": 13,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-34",
+    "zona": "Z07",
+    "residuos_m2": 11.0006,
+    "superficie_afectada_pct": 88.5558,
+    "dias_sin_visita": 11,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-35",
+    "zona": "Z07",
+    "residuos_m2": 1.0181,
+    "superficie_afectada_pct": 54.857,
+    "dias_sin_visita": 37,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-36",
+    "zona": "Z07",
+    "residuos_m2": 11.5906,
+    "superficie_afectada_pct": 49.6901,
+    "dias_sin_visita": 2,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A07-37",
+    "zona": "Z07",
+    "residuos_m2": 0.5104,
+    "superficie_afectada_pct": 90.0462,
+    "dias_sin_visita": 36,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-38",
+    "zona": "Z07",
+    "residuos_m2": 1.6915,
+    "superficie_afectada_pct": 58.813,
+    "dias_sin_visita": 27,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A07-39",
+    "zona": "Z07",
+    "residuos_m2": 3.4593,
+    "superficie_afectada_pct": 11.1089,
+    "dias_sin_visita": 10,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-00",
+    "zona": "Z08",
+    "residuos_m2": 0.0448,
+    "superficie_afectada_pct": 40.9727,
+    "dias_sin_visita": 19,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-01",
+    "zona": "Z08",
+    "residuos_m2": 7.3518,
+    "superficie_afectada_pct": 87.6656,
+    "dias_sin_visita": 21,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-02",
+    "zona": "Z08",
+    "residuos_m2": 2.7256,
+    "superficie_afectada_pct": 26.1743,
+    "dias_sin_visita": 50,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-03",
+    "zona": "Z08",
+    "residuos_m2": 1.642,
+    "superficie_afectada_pct": 53.1239,
+    "dias_sin_visita": 9,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-04",
+    "zona": "Z08",
+    "residuos_m2": 1.336,
+    "superficie_afectada_pct": 86.4296,
+    "dias_sin_visita": 33,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-05",
+    "zona": "Z08",
+    "residuos_m2": 7.5905,
+    "superficie_afectada_pct": 70.271,
+    "dias_sin_visita": 9,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-06",
+    "zona": "Z08",
+    "residuos_m2": 7.1664,
+    "superficie_afectada_pct": 24.0151,
+    "dias_sin_visita": 29,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-07",
+    "zona": "Z08",
+    "residuos_m2": 10.4536,
+    "superficie_afectada_pct": 52.7631,
+    "dias_sin_visita": 17,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-08",
+    "zona": "Z08",
+    "residuos_m2": 3.6269,
+    "superficie_afectada_pct": 91.2612,
+    "dias_sin_visita": 5,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-09",
+    "zona": "Z08",
+    "residuos_m2": 6.9337,
+    "superficie_afectada_pct": 33.2955,
+    "dias_sin_visita": 46,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-10",
+    "zona": "Z08",
+    "residuos_m2": 4.265,
+    "superficie_afectada_pct": 8.1166,
+    "dias_sin_visita": 25,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-11",
+    "zona": "Z08",
+    "residuos_m2": 10.3756,
+    "superficie_afectada_pct": 48.3337,
+    "dias_sin_visita": 7,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-12",
+    "zona": "Z08",
+    "residuos_m2": 9.2728,
+    "superficie_afectada_pct": 13.3651,
+    "dias_sin_visita": 56,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-13",
+    "zona": "Z08",
+    "residuos_m2": 3.5631,
+    "superficie_afectada_pct": 82.5333,
+    "dias_sin_visita": 43,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-14",
+    "zona": "Z08",
+    "residuos_m2": 1.2927,
+    "superficie_afectada_pct": 71.7271,
+    "dias_sin_visita": 29,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-15",
+    "zona": "Z08",
+    "residuos_m2": 6.0235,
+    "superficie_afectada_pct": 58.7843,
+    "dias_sin_visita": 33,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-16",
+    "zona": "Z08",
+    "residuos_m2": 8.7047,
+    "superficie_afectada_pct": 43.3996,
+    "dias_sin_visita": 56,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-17",
+    "zona": "Z08",
+    "residuos_m2": 11.7851,
+    "superficie_afectada_pct": 22.9219,
+    "dias_sin_visita": 36,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-18",
+    "zona": "Z08",
+    "residuos_m2": 7.1994,
+    "superficie_afectada_pct": 52.6692,
+    "dias_sin_visita": 49,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-19",
+    "zona": "Z08",
+    "residuos_m2": 7.1044,
+    "superficie_afectada_pct": 44.5342,
+    "dias_sin_visita": 16,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-20",
+    "zona": "Z08",
+    "residuos_m2": 5.9898,
+    "superficie_afectada_pct": 12.7517,
+    "dias_sin_visita": 1,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-21",
+    "zona": "Z08",
+    "residuos_m2": 6.1307,
+    "superficie_afectada_pct": 19.631,
+    "dias_sin_visita": 19,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-22",
+    "zona": "Z08",
+    "residuos_m2": 1.0687,
+    "superficie_afectada_pct": 80.9382,
+    "dias_sin_visita": 38,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-23",
+    "zona": "Z08",
+    "residuos_m2": 0.2675,
+    "superficie_afectada_pct": 31.0547,
+    "dias_sin_visita": 49,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-24",
+    "zona": "Z08",
+    "residuos_m2": 11.7781,
+    "superficie_afectada_pct": 23.4861,
+    "dias_sin_visita": 13,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-25",
+    "zona": "Z08",
+    "residuos_m2": 10.5774,
+    "superficie_afectada_pct": 10.0221,
+    "dias_sin_visita": 10,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-26",
+    "zona": "Z08",
+    "residuos_m2": 0.0107,
+    "superficie_afectada_pct": 44.212,
+    "dias_sin_visita": 49,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-27",
+    "zona": "Z08",
+    "residuos_m2": 3.5539,
+    "superficie_afectada_pct": 21.8282,
+    "dias_sin_visita": 20,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-28",
+    "zona": "Z08",
+    "residuos_m2": 11.5378,
+    "superficie_afectada_pct": 96.8072,
+    "dias_sin_visita": 55,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-29",
+    "zona": "Z08",
+    "residuos_m2": 4.3851,
+    "superficie_afectada_pct": 64.8454,
+    "dias_sin_visita": 49,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-30",
+    "zona": "Z08",
+    "residuos_m2": 7.1573,
+    "superficie_afectada_pct": 97.0643,
+    "dias_sin_visita": 49,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-31",
+    "zona": "Z08",
+    "residuos_m2": 0.3724,
+    "superficie_afectada_pct": 34.1436,
+    "dias_sin_visita": 41,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-32",
+    "zona": "Z08",
+    "residuos_m2": 1.0322,
+    "superficie_afectada_pct": 7.0342,
+    "dias_sin_visita": 2,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-33",
+    "zona": "Z08",
+    "residuos_m2": 0.3787,
+    "superficie_afectada_pct": 42.5399,
+    "dias_sin_visita": 4,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-34",
+    "zona": "Z08",
+    "residuos_m2": 9.3235,
+    "superficie_afectada_pct": 31.8399,
+    "dias_sin_visita": 50,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-35",
+    "zona": "Z08",
+    "residuos_m2": 0.8957,
+    "superficie_afectada_pct": 91.8572,
+    "dias_sin_visita": 24,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-36",
+    "zona": "Z08",
+    "residuos_m2": 10.017,
+    "superficie_afectada_pct": 67.7285,
+    "dias_sin_visita": 3,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-37",
+    "zona": "Z08",
+    "residuos_m2": 1.0457,
+    "superficie_afectada_pct": 76.1422,
+    "dias_sin_visita": 56,
+    "revision_prioritaria": 1
+  },
+  {
+    "id": "A08-38",
+    "zona": "Z08",
+    "residuos_m2": 3.1907,
+    "superficie_afectada_pct": 39.6162,
+    "dias_sin_visita": 17,
+    "revision_prioritaria": 0
+  },
+  {
+    "id": "A08-39",
+    "zona": "Z08",
+    "residuos_m2": 9.4593,
+    "superficie_afectada_pct": 76.7492,
+    "dias_sin_visita": 59,
+    "revision_prioritaria": 1
+  }
+]

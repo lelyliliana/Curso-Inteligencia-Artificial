@@ -1,0 +1,194 @@
+{
+  "taller": "documentos",
+  "fase": "prueba",
+  "elegido": "tfidf_0.4",
+  "modelo_sha256": "3625b4a54b4cfc1e4217ebfd229c97614837f75de4ac74295340a51ad3f6d2de",
+  "datos_sha256": "1d4d5563576052fa10d9d130f0a0690f8aee512f17c2695ce8dd7c74b629bca5",
+  "reajuste": false,
+  "resultado": {
+    "n": 12,
+    "aceptadas": 8,
+    "respondidas": 6,
+    "costo": 6,
+    "cobertura": 0.5,
+    "precision_respondidas": 0.8333333333333334,
+    "familias_completas": 2,
+    "familias": 6,
+    "casos": [
+      {
+        "id": "Q-tutoria-0",
+        "familia": "tutoria",
+        "esperado": "D05",
+        "aceptada": true,
+        "costo": 0,
+        "estado": "fragmento",
+        "documento": "D05",
+        "puntuacion": 0.42643159042328416,
+        "respuesta": "La tutoría de datos se reúne los miércoles a las 15:00 en la sala Roble. La inscripción se realiza en el calendario del curso.",
+        "cita": {
+          "documento": "D05",
+          "version": "1",
+          "inicio": 0,
+          "fin": 126
+        }
+      },
+      {
+        "id": "Q-tutoria-1",
+        "familia": "tutoria",
+        "esperado": "D05",
+        "aceptada": false,
+        "costo": 1,
+        "estado": "sin_evidencia",
+        "documento": null,
+        "puntuacion": 0.3015326693004687,
+        "respuesta": null,
+        "cita": null
+      },
+      {
+        "id": "Q-certificado-0",
+        "familia": "certificado",
+        "esperado": "D06",
+        "aceptada": false,
+        "costo": 1,
+        "estado": "sin_evidencia",
+        "documento": null,
+        "puntuacion": 0.39288862456981233,
+        "respuesta": null,
+        "cita": null
+      },
+      {
+        "id": "Q-certificado-1",
+        "familia": "certificado",
+        "esperado": "D06",
+        "aceptada": true,
+        "costo": 0,
+        "estado": "fragmento",
+        "documento": "D06",
+        "puntuacion": 0.4233360543243143,
+        "respuesta": "El certificado del taller se solicita a coordinación después de entregar el proyecto. La revisión tarda cinco días hábiles.",
+        "cita": {
+          "documento": "D06",
+          "version": "1",
+          "inicio": 0,
+          "fin": 123
+        }
+      },
+      {
+        "id": "Q-renovacion-0",
+        "familia": "renovacion",
+        "esperado": "D07",
+        "aceptada": true,
+        "costo": 0,
+        "estado": "fragmento",
+        "documento": "D07",
+        "puntuacion": 0.5829170572454709,
+        "respuesta": "La renovación de libros se solicita en el catálogo de biblioteca. Solo se permite una renovación si el libro no tiene otra reserva.",
+        "cita": {
+          "documento": "D07",
+          "version": "1",
+          "inicio": 0,
+          "fin": 131
+        }
+      },
+      {
+        "id": "Q-renovacion-1",
+        "familia": "renovacion",
+        "esperado": "D07",
+        "aceptada": false,
+        "costo": 1,
+        "estado": "sin_evidencia",
+        "documento": null,
+        "puntuacion": 0.2647565227211907,
+        "respuesta": null,
+        "cita": null
+      },
+      {
+        "id": "Q-accesibilidad-0",
+        "familia": "accesibilidad",
+        "esperado": "D08",
+        "aceptada": true,
+        "costo": 0,
+        "estado": "fragmento",
+        "documento": "D08",
+        "puntuacion": 0.6249829832264264,
+        "respuesta": "Los materiales de accesibilidad del aula incluyen transcripciones y texto ampliado. Se solicitan al equipo de apoyo por el formulario de accesibilidad.",
+        "cita": {
+          "documento": "D08",
+          "version": "1",
+          "inicio": 0,
+          "fin": 151
+        }
+      },
+      {
+        "id": "Q-accesibilidad-1",
+        "familia": "accesibilidad",
+        "esperado": "D08",
+        "aceptada": true,
+        "costo": 0,
+        "estado": "fragmento",
+        "documento": "D08",
+        "puntuacion": 0.4868039067796974,
+        "respuesta": "Los materiales de accesibilidad del aula incluyen transcripciones y texto ampliado. Se solicitan al equipo de apoyo por el formulario de accesibilidad.",
+        "cita": {
+          "documento": "D08",
+          "version": "1",
+          "inicio": 0,
+          "fin": 151
+        }
+      },
+      {
+        "id": "Q-beca-0",
+        "familia": "beca",
+        "esperado": null,
+        "aceptada": true,
+        "costo": 0,
+        "estado": "sin_evidencia",
+        "documento": null,
+        "puntuacion": 0.22267605781047364,
+        "respuesta": null,
+        "cita": null
+      },
+      {
+        "id": "Q-beca-1",
+        "familia": "beca",
+        "esperado": null,
+        "aceptada": true,
+        "costo": 0,
+        "estado": "sin_evidencia",
+        "documento": null,
+        "puntuacion": 0.31251604344934575,
+        "respuesta": null,
+        "cita": null
+      },
+      {
+        "id": "Q-transporte-0",
+        "familia": "transporte",
+        "esperado": null,
+        "aceptada": true,
+        "costo": 0,
+        "estado": "sin_evidencia",
+        "documento": null,
+        "puntuacion": 0.0,
+        "respuesta": null,
+        "cita": null
+      },
+      {
+        "id": "Q-transporte-1",
+        "familia": "transporte",
+        "esperado": null,
+        "aceptada": false,
+        "costo": 3,
+        "estado": "fragmento",
+        "documento": "D05",
+        "puntuacion": 0.42643159042328416,
+        "respuesta": "La tutoría de datos se reúne los miércoles a las 15:00 en la sala Roble. La inscripción se realiza en el calendario del curso.",
+        "cita": {
+          "documento": "D05",
+          "version": "1",
+          "inicio": 0,
+          "fin": 126
+        }
+      }
+    ]
+  }
+}

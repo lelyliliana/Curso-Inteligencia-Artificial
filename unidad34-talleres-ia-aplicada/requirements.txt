@@ -1,0 +1,2 @@
+# Reutiliza NumPy, Matplotlib y scikit-learn del curso. No necesita PyTorch u Ollama.
+-r ../unidad13-arboles-ensambles/requirements.txt

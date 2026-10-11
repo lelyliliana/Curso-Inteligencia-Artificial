@@ -201,4 +201,4 @@ Las **41 pruebas** cubren admisión, liberación de cupos, mantenimiento, errore
 
 Resuelve los [diez ejercicios](ejercicios.md), consulta las [soluciones](soluciones/README.md) y desarrolla el [reto](reto.md) con la [plantilla](plantillas/informe.md). Revisa [datos y protocolo](datos/README.md), la [ficha del servicio](recursos/ficha-servicio.md) y el [informe de evidencia](recursos/informe.md).
 
-**Siguiente unidad prevista:** 34 — Talleres de IA aplicada; pendiente de desarrollo.
+**Siguiente:** [Unidad 34 — Talleres de IA aplicada](../unidad34-talleres-ia-aplicada/README.md).

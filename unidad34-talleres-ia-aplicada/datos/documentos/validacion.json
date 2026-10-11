@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Q-reserva-0",
+    "familia": "reserva",
+    "pregunta": "¿Cómo reservar la sala Aurora?",
+    "documento_esperado": "D01"
+  },
+  {
+    "id": "Q-reserva-1",
+    "familia": "reserva",
+    "pregunta": "Necesito reservar la sala por un turno, ¿qué hago?",
+    "documento_esperado": "D01"
+  },
+  {
+    "id": "Q-prestamo-0",
+    "familia": "prestamo",
+    "pregunta": "¿Cómo solicito el préstamo de un portátil?",
+    "documento_esperado": "D02"
+  },
+  {
+    "id": "Q-prestamo-1",
+    "familia": "prestamo",
+    "pregunta": "¿Hasta qué hora puedo tener el equipo prestado?",
+    "documento_esperado": "D02"
+  },
+  {
+    "id": "Q-entrega-0",
+    "familia": "entrega",
+    "pregunta": "¿Dónde se hace la entrega del taller de energía?",
+    "documento_esperado": "D03"
+  },
+  {
+    "id": "Q-entrega-1",
+    "familia": "entrega",
+    "pregunta": "¿Qué archivo debo entregar en el buzón del aula virtual?",
+    "documento_esperado": "D03"
+  },
+  {
+    "id": "Q-wifi-0",
+    "familia": "wifi",
+    "pregunta": "¿Cómo se llama la red wifi del aula?",
+    "documento_esperado": "D04"
+  },
+  {
+    "id": "Q-wifi-1",
+    "familia": "wifi",
+    "pregunta": "¿Dónde pido la clave de acceso a wifi?",
+    "documento_esperado": "D04"
+  },
+  {
+    "id": "Q-salud-0",
+    "familia": "salud",
+    "pregunta": "¿Qué medicamento tomo para la fiebre?",
+    "documento_esperado": null
+  },
+  {
+    "id": "Q-salud-1",
+    "familia": "salud",
+    "pregunta": "¿Hay consulta médica en la sala Aurora?",
+    "documento_esperado": null
+  },
+  {
+    "id": "Q-pago-0",
+    "familia": "pago",
+    "pregunta": "¿Cuánto cuesta la matrícula del curso?",
+    "documento_esperado": null
+  },
+  {
+    "id": "Q-pago-1",
+    "familia": "pago",
+    "pregunta": "¿Dónde se paga el préstamo de un portátil?",
+    "documento_esperado": null
+  }
+]

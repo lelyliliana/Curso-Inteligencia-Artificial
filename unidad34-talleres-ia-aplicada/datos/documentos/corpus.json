@@ -1,0 +1,62 @@
+[
+  {
+    "id": "D01",
+    "titulo": "Reserva de sala",
+    "version": "1",
+    "texto": "Para reservar la sala Aurora, solicita el turno en el formulario de biblioteca. Cada reserva dura dos horas."
+  },
+  {
+    "id": "D02",
+    "titulo": "Préstamo de equipo",
+    "version": "1",
+    "texto": "El préstamo de un portátil se solicita en la mesa de tecnología. El equipo se devuelve el mismo día antes de las 18:00."
+  },
+  {
+    "id": "D03",
+    "titulo": "Entrega del taller",
+    "version": "1",
+    "texto": "La entrega del taller de energía se realiza en el buzón del aula virtual. Se acepta un archivo PDF con el informe y un enlace al código."
+  },
+  {
+    "id": "D04",
+    "titulo": "Conexión wifi",
+    "version": "1",
+    "texto": "La red wifi del aula se llama AulaInvitada. La clave de acceso se pide en recepción y cambia cada semana."
+  },
+  {
+    "id": "D05",
+    "titulo": "Tutoría de datos",
+    "version": "1",
+    "texto": "La tutoría de datos se reúne los miércoles a las 15:00 en la sala Roble. La inscripción se realiza en el calendario del curso."
+  },
+  {
+    "id": "D06",
+    "titulo": "Certificado del taller",
+    "version": "1",
+    "texto": "El certificado del taller se solicita a coordinación después de entregar el proyecto. La revisión tarda cinco días hábiles."
+  },
+  {
+    "id": "D07",
+    "titulo": "Renovación de libros",
+    "version": "1",
+    "texto": "La renovación de libros se solicita en el catálogo de biblioteca. Solo se permite una renovación si el libro no tiene otra reserva."
+  },
+  {
+    "id": "D08",
+    "titulo": "Accesibilidad del aula",
+    "version": "1",
+    "texto": "Los materiales de accesibilidad del aula incluyen transcripciones y texto ampliado. Se solicitan al equipo de apoyo por el formulario de accesibilidad."
+  },
+  {
+    "id": "D09",
+    "titulo": "Cancelación de sala",
+    "version": "1",
+    "texto": "Para cancelar la sala Aurora, elimina la reserva en el formulario de biblioteca. Avisa al menos una hora antes del turno."
+  },
+  {
+    "id": "D10",
+    "titulo": "Devolución de equipo dañado",
+    "version": "1",
+    "texto": "Si un portátil presenta daños, interrumpe su uso e informa a la mesa de tecnología. Registra la incidencia antes de devolver el equipo."
+  }
+]
