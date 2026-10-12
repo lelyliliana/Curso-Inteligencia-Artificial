@@ -348,3 +348,11 @@ Las referencias primarias se consultaron el 9 de octubre de 2026. Las explicacio
 - [Datos, esquema y generación](datos/README.md), [figuras y reproducción](recursos/README.md), [soluciones](soluciones/README.md).
 
 [Unidad siguiente](../unidad10-flujo-lineas-base/README.md) · [Volver al índice](../README.md)
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2009%20%C2%B7%20Exploraci%C3%B3n%20y%20visualizaci%C3%B3n%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad09-exploracion-visualizacion%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

@@ -265,3 +265,11 @@ python herramientas/verificar_curso.py
 Las **30 pruebas** incluyen cálculos manuales y referencias de biblioteca, empates, valores indefinidos, sensibilidad a costos, capacidad por lote, separación de información y coherencia de artefactos. No sustituyen una evaluación de utilidad y consecuencias reales.
 
 Continúa con la [Unidad 18 — Interpretabilidad y responsabilidad](../unidad18-interpretabilidad-responsabilidad/README.md).
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2017%20%C2%B7%20M%C3%A9tricas%2C%20umbrales%20y%20decisiones%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad17-metricas-decisiones%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

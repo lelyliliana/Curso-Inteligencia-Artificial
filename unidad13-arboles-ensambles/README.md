@@ -314,3 +314,11 @@ Las **30 pruebas** verifican Gini y cortes contra cálculos independientes, cond
 Antes de continuar, deberías poder explicar un recorrido completo, calcular un corte ponderado, distinguir ajuste de selección, describir cómo se combinan probabilidades y justificar por qué una hoja pura o un bosque grande no certifican calidad fuera del conjunto observado.
 
 Continúa con la [Unidad 14 — Agrupamiento y detección de anomalías](../unidad14-agrupamiento-anomalias/README.md): buscar estructura y casos inusuales sin tratar automáticamente los grupos como etiquetas verdaderas ni las alertas como problemas confirmados.
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2013%20%C2%B7%20%C3%81rboles%20y%20ensambles%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad13-arboles-ensambles%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

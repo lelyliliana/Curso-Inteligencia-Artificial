@@ -240,3 +240,11 @@ El verificador conjunto necesita las dependencias acumuladas del [curso](../READ
 Completa los [diez ejercicios](ejercicios.md), contrasta sus [soluciones](soluciones/README.md) y realiza el [reto](reto.md) con la [plantilla de informe](plantillas/informe_rag.md). Antes de avanzar, explica por qué R03a con k=1 tiene apoyo pero falla el objetivo, y por qué una cita sobre T-24 no respalda un dato de T-42.
 
 Continúa con la [Unidad 30 — Herramientas, agentes y MCP](../unidad30-herramientas-agentes-mcp/README.md): llamadas verificables, permisos, referencia fija, bucle de agente y un laboratorio MCP local.
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2029%20%C2%B7%20RAG%20con%20documentos%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad29-rag-documentos%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

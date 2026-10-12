@@ -160,3 +160,11 @@ Las 37 pruebas del proyecto contrastan ecuaciones, temporalidad, recarga, invari
 - [ ] Mi proyecto propio distingue evidencia nueva de datos ya consultados.
 
 Esta es la última unidad de la ruta, de la 0 a la 35. Cierra la elaboración del material; completar el aprendizaje exige resolver las prácticas, recibir retroalimentación y defender tu propio proyecto.
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2035%20%C2%B7%20Proyecto%20final%20integrador%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad35-proyecto-final%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

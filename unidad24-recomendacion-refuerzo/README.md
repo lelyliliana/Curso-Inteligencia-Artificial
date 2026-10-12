@@ -228,3 +228,11 @@ python herramientas/verificar_curso.py
 Las 44 pruebas contrastan coseno con conjuntos de usuarios, métricas manuales, candidatos, cortes y datos regenerados; transiciones, actualización Q, truncamiento, azar, evaluación sin aprendizaje y recarga. El verificador general requiere el entorno completo explicado en el [índice](../README.md).
 
 Antes de continuar, comprueba que puedes explicar un fallo de arranque en frío, reconstruir una actualización Q y rechazar la afirmación «mayor éxito siempre significa mejor política». Continúa con la [Unidad 25 — Transformers y modelos generativos](../unidad25-transformers-generativos/README.md).
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2024%20%C2%B7%20Introducci%C3%B3n%20a%20recomendaci%C3%B3n%20y%20aprendizaje%20por%20refuerzo%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad24-recomendacion-refuerzo%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

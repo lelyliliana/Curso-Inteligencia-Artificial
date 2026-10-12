@@ -252,3 +252,11 @@ python herramientas/verificar_curso.py
 ```
 
 Las **47 pruebas** de esta unidad funcionan sin red. Comprueban parser, contratos, referencias, familias, construcción de prompts, parámetros, selección, errores, persistencia y correspondencia de capturas. La comprobación conjunta requiere las dependencias acumuladas del [índice](../README.md). Antes de avanzar, comprueba que puedes detectar un error de contenido en JSON válido y explicar por qué un cierre desfavorable se conserva. Continúa con la [Unidad 28 — Embeddings y búsqueda semántica](../unidad28-embeddings-busqueda/README.md).
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2027%20%C2%B7%20Prompts%2C%20salidas%20estructuradas%20y%20evaluaci%C3%B3n%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad27-prompts-evaluacion%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

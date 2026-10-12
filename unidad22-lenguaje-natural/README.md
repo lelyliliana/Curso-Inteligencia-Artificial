@@ -231,3 +231,11 @@ python herramientas/verificar_curso.py
 Las **38 pruebas** contrastan cálculos con referencias escalares y biblioteca, Unicode, duplicados, familias, invariancia de ajuste y selección, vector cero, métricas, regeneración, persistencia y figuras. El verificador común necesita también las dependencias anteriores indicadas en el [índice](../README.md).
 
 Antes de avanzar, comprueba que puedes calcular un vector, explicar el error de una familia y recargar el clasificador sin reaprender vocabulario. Continúa con la [Unidad 23 — Series temporales y sensores](../unidad23-series-temporales/README.md).
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2022%20%C2%B7%20Procesamiento%20de%20lenguaje%20natural%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad22-lenguaje-natural%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

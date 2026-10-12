@@ -272,3 +272,11 @@ python herramientas/verificar_curso.py
 Las **34 pruebas** cubren referencias matemáticas, acumulación, memoria y modos, lotes parciales, repetibilidad, separación, regeneración, recarga y correspondencia de figuras y artefactos. El verificador común requiere las dos instalaciones indicadas en esta unidad.
 
 Antes de avanzar, completa la [plantilla de informe](plantillas/informe_pytorch.md) y compara su alcance con la [ficha de ejemplo](recursos/ficha_modelo.md). Debes poder explicar un paso de actualización, reconstruir el número de lotes y recuperar el estado elegido. Continúa con la [Unidad 21 — Visión por computador](../unidad21-vision-computador/README.md), que introduce píxeles, filtros y una CNN con evaluación por escena.
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2020%20%C2%B7%20Aprendizaje%20profundo%20con%20PyTorch%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad20-pytorch%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

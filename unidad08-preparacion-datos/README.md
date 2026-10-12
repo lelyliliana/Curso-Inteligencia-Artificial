@@ -526,3 +526,11 @@ Los casos, acta sintética, datos, programas y ejercicios son desarrollos educat
 3. Python Software Foundation. [Lectura y escritura de CSV](https://docs.python.org/3.12/library/csv.html) y [mediana con statistics](https://docs.python.org/3.12/library/statistics.html#statistics.median).
 
 [Unidad anterior](../unidad07-obtencion-datos/README.md) · [Unidad siguiente](../unidad09-exploracion-visualizacion/README.md) · [Volver al índice](../README.md)
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2008%20%C2%B7%20Calidad%20y%20preparaci%C3%B3n%20de%20datos%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad08-preparacion-datos%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

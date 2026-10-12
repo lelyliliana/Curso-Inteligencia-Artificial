@@ -244,3 +244,11 @@ python herramientas/verificar_curso.py
 Las **41 pruebas** cubren relojes, conflictos recibidos después, futuro inaccesible, rezagos, objetivos no imputados, cortes, referencia matricial de Ridge, métricas, regeneración, recarga y correspondencia de figuras. La comprobación común necesita el entorno completo indicado en el [índice](../README.md).
 
 Antes de avanzar, comprueba que puedes dibujar origen, decisión y objetivo, detectar una ventana que usa futuro y explicar un fallo durante un cambio. Continúa con la [Unidad 24 — Introducción a recomendación y aprendizaje por refuerzo](../unidad24-recomendacion-refuerzo/README.md), que contiene dos prácticas diferenciadas.
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2023%20%C2%B7%20Series%20temporales%20y%20sensores%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad23-series-temporales%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

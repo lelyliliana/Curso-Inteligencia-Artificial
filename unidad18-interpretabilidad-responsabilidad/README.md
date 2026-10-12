@@ -240,3 +240,11 @@ python herramientas/verificar_curso.py
 Las **30 pruebas** contrastan mínimos cuadrados independientes, reconstrucciones, permutaciones, rutas y fronteras del árbol, agregación de métricas, invariancia del ajuste, regeneración y coherencia de los recursos. No sustituyen una auditoría de un sistema real.
 
 Antes de avanzar, comprueba que puedes explicar una predicción sin convertirla en una afirmación causal, señalar dónde faltan datos y justificar una decisión de uso. Continúa con la [Unidad 19 — Redes neuronales](../unidad19-redes-neuronales/README.md).
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2018%20%C2%B7%20Interpretabilidad%20y%20responsabilidad%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad18-interpretabilidad-responsabilidad%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

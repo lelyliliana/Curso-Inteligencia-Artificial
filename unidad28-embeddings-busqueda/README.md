@@ -233,3 +233,11 @@ python herramientas/verificar_curso.py
 Las **48 pruebas** comprueban geometría, equivalencia con scikit-learn, métricas, familias, capturas, incompatibilidades, selección, huellas y recarga. No llaman a Ollama. Las dos figuras se derivan de los informes JSON; sus versiones [SVG de desarrollo](recursos/desarrollo/recuperacion.svg) y [SVG de cierre](recursos/cierre/recuperacion.svg) permiten ampliar etiquetas. Las fuentes externas se consultaron el 10 de octubre de 2026; sus enlaces y condiciones pueden cambiar.
 
 Antes de avanzar, explica por qué F07a tiene Recall@3=1 y RR@3=0,5, y por qué D19 no demuestra el precio de un curso. Continúa con la [Unidad 29 — RAG con documentos](../unidad29-rag-documentos/README.md).
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2028%20%C2%B7%20Embeddings%20y%20b%C3%BAsqueda%20sem%C3%A1ntica%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad28-embeddings-busqueda%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

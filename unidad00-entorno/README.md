@@ -506,3 +506,11 @@ Continúa con la [Unidad 1 — Qué es la inteligencia artificial](../unidad01-q
 - [Python 3.12: huellas criptográficas](https://docs.python.org/3.12/library/hashlib.html).
 
 [Siguiente unidad: qué es la inteligencia artificial](../unidad01-que-es-ia/README.md) · [Volver al índice](../README.md)
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2000%20%C2%B7%20Preparaci%C3%B3n%20del%20entorno%20y%20forma%20de%20trabajar%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad00-entorno%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

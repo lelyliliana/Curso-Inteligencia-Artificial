@@ -502,3 +502,11 @@ Estas fuentes fundamentan las definiciones y los hitos. Los casos, datos y prác
 8. Vaswani, A. et al. (2017). *Attention Is All You Need*. [Artículo](https://arxiv.org/abs/1706.03762).
 
 [Unidad anterior](../unidad00-entorno/README.md) · [Siguiente unidad: proyecto de IA](../unidad02-proyecto-ia/README.md) · [Volver al índice](../README.md)
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2001%20%C2%B7%20Qu%C3%A9%20es%20la%20inteligencia%20artificial%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad01-que-es-ia%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

@@ -200,3 +200,11 @@ python herramientas/verificar_curso.py
 Las 45 pruebas contrastan matemática de LoRA, gradientes, pesos congelados, fusión, particiones, regeneración, modalidades excluidas, etiquetas fuera de las entradas, rechazos y cierres sin entrenamiento. Las tres figuras se inspeccionaron visualmente. La ejecución correcta no demuestra utilidad en datos reales ni superioridad general de un método.
 
 Continúa con la [Unidad 32 — De un modelo a una aplicación](../unidad32-modelo-aplicacion/README.md): reutilizar el modelo de fusión en un servicio, una API y una interfaz local comprobada.
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2031%20%C2%B7%20Adaptaci%C3%B3n%20de%20modelos%20y%20multimodalidad%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad31-adaptacion-multimodalidad%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

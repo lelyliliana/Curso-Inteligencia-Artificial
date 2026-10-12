@@ -778,3 +778,11 @@ Los ejemplos, datos y desarrollos numéricos son material educativo propio. Las 
 4. Google for Developers. *Machine Learning Crash Course*. [Hiperparámetros y tasa de aprendizaje](https://developers.google.com/machine-learning/crash-course/linear-regression/hyperparameters).
 
 [Unidad anterior](../unidad02-proyecto-ia/README.md) · [Volver al índice](../README.md) · [Siguiente unidad](../unidad04-probabilidad-estadistica/README.md)
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2003%20%C2%B7%20Matem%C3%A1tica%20aplicada%3A%20vectores%2C%20matrices%20y%20optimizaci%C3%B3n%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad03-matematica-aplicada%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

@@ -286,3 +286,11 @@ Las **30 pruebas** incluyen referencias independientes para Lloyd, inercia y sil
 Puedes continuar cuando sepas explicar la geometría elegida, distinguir medida interna de evidencia externa, asignar un caso sin reajustar y reconstruir cómo una puntuación se convirtió en alerta.
 
 Continúa en la [Unidad 15 — Características y reducción de dimensión](../unidad15-caracteristicas-dimension/README.md).
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2014%20%C2%B7%20Agrupamiento%20y%20detecci%C3%B3n%20de%20anomal%C3%ADas%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad14-agrupamiento-anomalias%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)

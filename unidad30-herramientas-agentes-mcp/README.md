@@ -182,3 +182,11 @@ python herramientas/verificar_curso.py
 Las 49 pruebas cubren contratos, recursos restringidos, ausencia, inyección, presupuesto, correlación, errores HTTP simulados, MCP en un subproceso y reconstrucción de las capturas. El verificador no inicia Ollama. Pasar estas pruebas no certifica un agente de producción ni inmunidad a otras inyecciones.
 
 Continúa con la [Unidad 31 — Adaptación de modelos y multimodalidad](../unidad31-adaptacion-multimodalidad/README.md): ajuste completo, LoRA y una práctica de fusión de imagen y texto en CPU.
+
+---
+
+### ¿Necesitas apoyo con este tema?
+
+Si te bloqueaste con la práctica, necesitas revisar tu entorno o adaptar lo aprendido a tu proyecto, podemos trabajarlo en una sesión personalizada.
+
+[**Solicitar asesoría para este tema por WhatsApp**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20estudiando%2030%20%C2%B7%20Herramientas%2C%20agentes%20y%20MCP%20del%20curso%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20%28https%3A%2F%2Fgithub.com%2Flelyliliana%2FCurso-Inteligencia-Artificial%2Ftree%2Fmain%2Funidad30-herramientas-agentes-mcp%29%20y%20necesito%20una%20asesor%C3%ADa%20personalizada.%20Mi%20duda%20es%E2%80%A6)
