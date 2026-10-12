@@ -161,3 +161,15 @@ La instalación CPU indicada se comprobó en Linux x86_64 con Python 3.12. Para 
 **Lely Liliana** — Ingeniera de Sistemas y docente universitaria.
 
 Material educativo para aprender, experimentar y construir proyectos.
+
+---
+
+### ¿Necesitas acompañamiento personalizado?
+
+Puedes estudiar este curso por tu cuenta. Si necesitas apoyo para configurar el entorno, comprender o resolver un error, o aplicar lo aprendido a tu tesis o proyecto, podemos trabajarlo en una sesión individual.
+
+- **Preparar el entorno:** revisar la instalación y configuración de herramientas y dependencias.
+- **Comprender y resolver errores:** analizar lo que ocurre y trabajar en una solución.
+- **Aplicarlo a tu proyecto:** te acompaño a comprender el contenido y adaptarlo a tu caso.
+
+[**Solicitar asesoría sobre este curso**](https://wa.me/573103618296?text=Hola%2C%20Leli.%20Estoy%20revisando%20el%20curso%20de%20Inteligencia%20Artificial%3A%20fundamentos%20y%20aplicaciones%20(lelyliliana%2FCurso-Inteligencia-Artificial)%20y%20me%20interesa%20una%20asesor%C3%ADa%20personalizada.%20Necesito%20apoyo%20con%E2%80%A6)
